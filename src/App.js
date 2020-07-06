@@ -6,6 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 
+import "./assets/css/colors.css";
 import "./App.css";
 import { ReactComponent as Logo } from './assets/img/logo.svg';
 
