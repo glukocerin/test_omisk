@@ -26,7 +26,8 @@ body {
     height: 44px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 .header .logo {
-    height: 44px;;
+    height: 44px;
 }

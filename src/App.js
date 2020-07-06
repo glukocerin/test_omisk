@@ -10,8 +10,9 @@ import "./assets/css/colors.css";
 import "./App.css";
 import { ReactComponent as Logo } from './assets/img/logo.svg';
 
-import Courses from './pages/Courses'
-import Course from './pages/Course'
+import Courses from './pages/Courses';
+import Course from './pages/Course';
+import Landing from './pages/Landing';
 
 function App() {
   return (
@@ -30,9 +31,7 @@ function App() {
       </div>
       <Switch>
         <Route path="/">
-          <div className="main">
-
-          </div>
+          <Landing />
         </Route>
       </Switch>
     </div>
