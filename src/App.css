@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #1362E1;
+}
+
+#root, .App {
+    height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 26px;
+    left: 44px;
+    width: calc(100% - 88px);
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo {
+    height: 44px;;
+}

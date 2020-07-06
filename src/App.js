@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import "./App.css";
+import { ReactComponent as Logo } from './assets/img/logo.svg';
 
 import Courses from './pages/Courses'
 import Course from './pages/Course'
@@ -14,8 +15,8 @@ import Course from './pages/Course'
 function App() {
   return (
     <div className="App">
-      <div>header navigation</div>
-      <Switch>
+      <div className="header">
+        <Logo className="logo" />
         <Route path="/courses">
           <Courses />
         </Route>
@@ -25,13 +26,14 @@ function App() {
         <Route path="/course_two">
           <div>courses two</div>
         </Route>
+      </div>
+      <Switch>
         <Route path="/">
-          <div>
-            main
+          <div className="main">
+
           </div>
         </Route>
       </Switch>
-      <div>footer</div>
     </div>
   );
 }
