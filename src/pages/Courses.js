@@ -11,7 +11,7 @@ export default function Courses() {
       </div>
 
       <div className={style.courses}>
-        <Card />
+        <Card imagePosotion={"right"} />
       </div>
     </div>
   );
