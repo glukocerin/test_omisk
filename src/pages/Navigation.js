@@ -14,13 +14,15 @@ export default function Navigation() {
     return(
         <div className="header">
         <Logo className="logo" />
-        <Link to="/courses">
-          <Courses />
-        </Link>
-        <Link to="/course_one">
-          <Course pageTitle="course one" />
-        </Link>
-        <Link to="/course_two">courses two link</Link>
+        <div className="links">
+            <Link to="/courses">
+            <Courses />
+            </Link>
+            <Link to="/course_one">
+            <Course pageTitle="course one" />
+            </Link>
+            <Link to="/course_two">courses two link</Link>
+        </div>
       </div>
     )
 }
