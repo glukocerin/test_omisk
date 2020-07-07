@@ -17,7 +17,16 @@ import Navigation from "./pages/Navigation";
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <Navigation />
+=======
+      <div className="header">
+        <Logo className="logo" />
+        <Link to="/courses"> courses</Link>
+        <Link to="/course_one">course one</Link>
+        <Link to="/course_two">courses two link</Link>
+      </div>
+>>>>>>> Add Courses component
       <Switch>
         <Route path="/courses">
           <Courses />
