@@ -8,7 +8,6 @@
   height: 100%;
   overflow: hidden;
 }
-
 .dots {
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
   justify-items: center;
   align-items: center;
 }
-
 .dot {
   width: 1rem;
   height: 1rem;
@@ -24,18 +22,15 @@
   background: var(--color-gray-0);
   cursor: pointer;
 }
-
 .dot + .dot {
   margin-top: 1.5rem;
 }
-
 .dot.active {
   width: 2rem;
   height: 2rem;
   border: 9px solid var(--color-gray-0);
   background: transparent;
 }
-
 .left {
   position: absolute;
   left: 0;
@@ -44,11 +39,18 @@
   height: 100%;
   background: var(--color-blue-4);
 }
-
-.left.active {
-  animation: scrolldown 1s forwards;
+.left.two {
+  background: var(--color-green-0);
 }
-
+.left.three {
+  background: var(--color-yellow-2);
+}
+.left.active {
+  animation: scrolldown 500ms ease-in-out forwards;
+}
+.left:not(.active) {
+  animation: scrolloutup ease-in-out 500ms;
+}
 .right {
   position: absolute;
   top: 100%;
@@ -60,9 +62,17 @@
   background-size: cover;
   background-position: center;
 }
-
+.right.two {
+  background-image: url('../img/landing_bg_2.png');
+}
+.right.three {
+  background-image: url('../img/landing_bg_3.png');
+}
 .right.active {
-  animation: scrollup 1s forwards;
+  animation: scrollup 500ms ease-in-out forwards;
+}
+.right:not(.active) {
+  animation: scrolloutdown 500ms ease-in-out;
 }
 
 @keyframes scrolldown {
@@ -73,4 +83,14 @@
 @keyframes scrollup {
   from {top: 100%;}
   to {top: 0;}
+}
+
+@keyframes scrolloutdown {
+  from {top: 0%;}
+  to {top: -100%;}
+}
+
+@keyframes scrolloutup {
+  from {top: 0%;}
+  to {top: 100%;}
 }
