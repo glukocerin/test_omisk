@@ -8,11 +8,11 @@ import {
 
 import "./assets/css/colors.css";
 import "./App.css";
-import { ReactComponent as Logo } from './assets/img/logo.svg';
+import { ReactComponent as Logo } from "./assets/img/logo.svg";
 
-import Courses from './pages/Courses';
-import Course from './pages/Course';
-import Landing from './pages/Landing';
+import Courses from "./pages/Courses";
+import Course from "./pages/Course";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Courses />
         </Route>
         <Route path="/course_one">
-          <Course pageTitle="course one"/>
+          <Course pageTitle="course one" />
         </Route>
         <Route path="/course_two">
           <div>courses two</div>
