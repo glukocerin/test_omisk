@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
   Redirect
 } from "react-router-dom";
 
@@ -19,6 +20,15 @@ function App() {
     <div className="App">
       <div className="header">
         <Logo className="logo" />
+        <Link to="/courses">
+          <Courses />
+        </Link>
+        <Link to="/course_one">
+          <Course pageTitle="course one" />
+        </Link>
+        <Link to="/course_two">courses two link</Link>
+      </div>
+      <Switch>
         <Route path="/courses">
           <Courses />
         </Route>
@@ -28,8 +38,6 @@ function App() {
         <Route path="/course_two">
           <div>courses two</div>
         </Route>
-      </div>
-      <Switch>
         <Route path="/">
           <Landing />
         </Route>
