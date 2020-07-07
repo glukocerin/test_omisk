@@ -3,6 +3,16 @@ import style from "../assets/css/courses.module.css";
 
 import Card from "../components/CourseCard";
 
+import pagesConfig from "../assets/pagesConfig";
+
+const { courses, ...rest } = pagesConfig;
+
+const CourseCards = function() {
+  return courses.cards.map((card, index) => (
+    <Card key={index} details={card} />
+  ));
+};
+
 export default function Courses() {
   return (
     <div className={style.wrapper}>
@@ -11,7 +21,7 @@ export default function Courses() {
       </div>
 
       <div className={style.courses}>
-        <Card imagePosotion={"right"} />
+        <CourseCards />
       </div>
     </div>
   );

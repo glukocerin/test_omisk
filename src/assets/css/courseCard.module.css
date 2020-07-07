@@ -6,11 +6,15 @@
 }
 
 .image-wrapper {
-  background-image: url("../img/muveszeti_torna.png");
+  width: 50%;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
   background-repeat: no-repeat, repeat;
   background-size: cover;
   background-position: center;
-  width: 50%;
 }
 
 .text {
@@ -30,4 +34,16 @@
 .details {
   font-size: 1em;
   font-weight: 200;
+}
+
+.blue {
+  background-color: var(--color-blue-1);
+}
+
+.salmon {
+  background-color: var(--color-pink-0);
+}
+
+.green {
+  background-color: var(--color-green-0);
 }
