@@ -16,6 +16,9 @@
 }
 
 .courses {
-  padding-top: 1.25rem;
+  padding: 1.25rem 5% 0;
   background-color: #fff;
+  /* margin: 1.25rem 10% 0; */
+  display: flex;
+  flex-wrap: wrap;
 }
