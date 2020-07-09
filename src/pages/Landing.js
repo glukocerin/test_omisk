@@ -10,16 +10,18 @@ export default function Landing() {
                 } else if (e.deltaY < 0 && activeDot > 1) {
                     setActiveDot(activeDot - 1);
                 }
-            },
-            isIn = function(numbers, activeDot) {
-                return numbers.includes(activeDot) ? true: false;
-            }
+            };
 
     return(
         <div className="landing" onWheel = {(e) => scroller(e)}>
-            <div className={`left one ${ isIn([1,4,7], activeDot) ? "active": "" }`}></div>
-            <div className={`left two ${ isIn([2,5,8], activeDot) ? "active": "" }`}></div>
-            <div className={`left three ${ isIn([3,6], activeDot) ? "active": "" }`}></div>
+            <div className={`left one ${ activeDot === 1 ? "active": "" }`}></div>
+            <div className={`left two ${ activeDot === 2 ? "active": "" }`}></div>
+            <div className={`left three ${ activeDot === 3 ? "active": "" }`}></div>
+            <div className={`left four ${ activeDot === 4 ? "active": "" }`}></div>
+            <div className={`left five ${ activeDot === 5 ? "active": "" }`}></div>
+            <div className={`left six ${ activeDot === 6 ? "active": "" }`}></div>
+            <div className={`left seven ${ activeDot === 7 ? "active": "" }`}></div>
+            <div className={`left eight ${ activeDot === 8 ? "active": "" }`}></div>
             <div className="dots">
                 <div onClick={() => setActiveDot(1)} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(2)} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
@@ -30,9 +32,14 @@ export default function Landing() {
                 <div onClick={() => setActiveDot(7)} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(8)} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
             </div>
-            <div className={`right one ${ isIn([1,4,7], activeDot) ? "active": "" }`}></div>
-            <div className={`right two ${ isIn([2,5,8], activeDot) ? "active": "" }`}></div>
-            <div className={`right three ${ isIn([3,6], activeDot) ? "active": "" }`}></div>
+            <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
+            <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
+            <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
+            <div className={`right four ${ activeDot === 4 ? "active": "" }`}></div>
+            <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
+            <div className={`right six ${ activeDot === 6 ? "active": "" }`}></div>
+            <div className={`right seven ${ activeDot === 7 ? "active": "" }`}></div>
+            <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
         </div>
     )
 }
