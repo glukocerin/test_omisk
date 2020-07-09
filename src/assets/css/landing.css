@@ -41,12 +41,16 @@
 }
 .left.one {
   background: var(--color-blue-4);
+}
+.left.one .text-block {
+  max-width: 26rem;
+  margin: auto;
+  display: flex;
   flex-direction: column;
-  padding: 18rem 10rem 0rem 12rem;
 }
 .left.one .title {
   color: var(--color-gray-0);
-  max-width: 26rem;
+  
 }
 .left.one .sub-title {
   color: var(--color-gray-0);

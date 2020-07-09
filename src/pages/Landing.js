@@ -15,9 +15,11 @@ export default function Landing() {
     return(
         <div className="landing" onWheel = {(e) => scroller(e)}>
             <div className={`left one ${ activeDot === 1 ? "active": "" }`}>
-                <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
-                <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
-                <label className="text extra-bold size-54">»</label>
+                <div className="text-block">
+                    <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
+                    <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
+                    <label className="text extra-bold size-54">»</label>
+                </div>
             </div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
                 <label className="text extra-bold size-70">1990 óta tudatos testképzés, kreativitás, közösség teremtés</label>
