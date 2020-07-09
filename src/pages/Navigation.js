@@ -11,7 +11,9 @@ import Course from "../pages/Course";
 export default function Navigation() {
   return (
     <div className="header">
-      <Logo className="logo" />
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
       <div className="links">
         <Link to="/courses">Courses</Link>
         <Link to="/course_one">Course one</Link>
