@@ -46,6 +46,7 @@
 }
 .left.one .title {
   color: var(--color-gray-0);
+  max-width: 26rem;
 }
 .left.one .sub-title {
   color: var(--color-gray-0);
@@ -60,6 +61,11 @@
 }
 .left.two {
   background: var(--color-pink-0);
+}
+.left.two .text {
+  color: var(--color-gray-0);
+  max-width: 26rem;
+  margin: auto;
 }
 .left.three {
   background: var(--color-green-0);

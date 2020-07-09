@@ -19,7 +19,9 @@ export default function Landing() {
                 <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
                 <label className="text extra-bold size-54">»</label>
             </div>
-            <div className={`left two ${ activeDot === 2 ? "active": "" }`}></div>
+            <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
+                <label className="text extra-bold size-70">1990 óta tudatos testképzés, kreativitás, közösség teremtés</label>
+            </div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}></div>
             <div className={`left four ${ activeDot === 4 ? "active": "" }`}></div>
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}></div>
