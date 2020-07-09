@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import "./assets/css/colors.css";
+import "./assets/css/texts.css";
 import "./App.css";
 
 import Courses from "./pages/Courses";
