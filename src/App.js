@@ -13,11 +13,13 @@ import Courses from "./pages/Courses";
 import Course from "./pages/Course";
 import Landing from "./pages/Landing";
 import Navigation from "./pages/Navigation";
+import SocialMediaBar from "./pages/SocialMediaBar";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
+      <SocialMediaBar />
       <Switch>
         <Route path="/courses">
           <Courses />
