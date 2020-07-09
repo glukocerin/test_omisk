@@ -31,6 +31,12 @@
   border: 9px solid var(--color-gray-0);
   background: transparent;
 }
+.landing .content-block {
+  max-width: 26rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 .left {
   position: absolute;
   left: 0;
@@ -41,12 +47,6 @@
 }
 .left.one {
   background: var(--color-blue-4);
-}
-.left.one .text-block {
-  max-width: 26rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
 }
 .left.one .title {
   color: var(--color-gray-0);
@@ -73,6 +73,48 @@
 }
 .left.three {
   background: var(--color-green-0);
+}
+.left.three * {
+  color: var(--color-gray-0);
+}
+.left.three .content-block {
+  max-width: 21rem;
+}
+.left.three .article {
+  font-weight: 100;
+  margin-top: 3.75rem;
+}
+.left.three .button-box {
+  margin-top: 3.75rem;
+}
+.left.three .button-box .btn {
+  padding: 19px 25px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 2px solid var(--color-gray-0);
+  transition: border 300ms, background-color 300ms, color 300ms;
+}
+.left.three .button-box .btn:focus {
+  outline: unset;
+}
+.left.three .button-box a + .btn {
+  margin-left: 15px;
+}
+.left.three .button-box .btn-primary {
+  background: transparent;
+}
+.left.three .button-box .btn-primary:hover {
+  color: var(--color-gray-3);
+  border: 2px solid var(--color-gray-3);
+}
+.left.three .button-box .btn-secondary {
+  background: var(--color-gray-0);
+  color: var(--color-green-1);
+}
+.left.three .button-box .btn-secondary:hover {
+  color: var(--color-green-1);
+  background: var(--color-gray-3);
+  border: 2px solid var(--color-gray-3);
 }
 .left.four {
   background: var(--color-gray-3);

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import '../assets/css/landing.css';
 
@@ -15,7 +16,7 @@ export default function Landing() {
     return(
         <div className="landing" onWheel = {(e) => scroller(e)}>
             <div className={`left one ${ activeDot === 1 ? "active": "" }`}>
-                <div className="text-block">
+                <div className="content-block">
                     <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
                     <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
                     <label className="text extra-bold size-54">»</label>
@@ -24,7 +25,19 @@ export default function Landing() {
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
                 <label className="text extra-bold size-70">1990 óta tudatos testképzés, kreativitás, közösség teremtés</label>
             </div>
-            <div className={`left three ${ activeDot === 3 ? "active": "" }`}></div>
+            <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">Kik vagyunk?</label>
+                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                    <div className="button-box">
+                        <Link to="/courses">
+                            <button className="btn btn-secondary">Kurzusaink</button>
+                        </Link>
+                        <button className="btn btn-primary">Programjaink</button>
+                    </div>
+                </div>
+            </div>
             <div className={`left four ${ activeDot === 4 ? "active": "" }`}></div>
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}></div>
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}></div>
