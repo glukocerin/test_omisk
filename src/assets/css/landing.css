@@ -37,9 +37,26 @@
   top: -100%;
   width: 50%;
   height: 100%;
+  display: flex;
 }
 .left.one {
   background: var(--color-blue-4);
+  flex-direction: column;
+  padding: 18rem 10rem 0rem 12rem;
+}
+.left.one .title {
+  color: var(--color-gray-0);
+}
+.left.one .sub-title {
+  color: var(--color-gray-0);
+  white-space: nowrap;
+  margin-top: 2.5rem;
+}
+.left.one .text {
+  margin-top: 5rem;
+  color: var(--color-gray-0);
+  transform: rotate(90deg);
+  width: fit-content;
 }
 .left.two {
   background: var(--color-pink-0);
