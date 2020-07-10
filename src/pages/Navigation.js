@@ -15,9 +15,13 @@ export default function Navigation() {
         <Logo className="logo" />
       </Link>
       <div className="links">
-        <Link to="/courses">Courses</Link>
-        <Link to="/course_one">Course one</Link>
-        <Link to="/course_two">courses two link</Link>
+        <Link to="/courses">+ Kurzusaink</Link>
+        <Link to="/programs">+ Programjaink</Link>
+        <Link to="/teachers">+ Tanáraink</Link>
+        <Link to="/actual">+ Aktuális</Link>
+        <Link to="/operation">+ Működésünk</Link>
+        <Link to="/enrollment">+ Beiratkozás</Link>
+        <Link to="/contact">+ Kapcsolat</Link>
       </div>
     </div>
   );
