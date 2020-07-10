@@ -74,15 +74,22 @@
 .left.three {
   background: var(--color-green-0);
 }
-.left.three * {
+.left.three *,
+.left.six * {
   color: var(--color-gray-0);
 }
-.left.three .content-block {
+.left.three .content-block,
+.left.six .content-block {
   max-width: 21rem;
 }
-.left.three .article {
+.left.three .article:nth-child(2),
+.left.six .article:nth-child(2) {
   font-weight: 100;
   margin-top: 3.75rem;
+}
+.left.three .article + .article,
+.left.six .article + .article {
+  margin-top: 2rem;
 }
 .left.three .button-box {
   margin-top: 3.75rem;
@@ -164,6 +171,22 @@
 }
 .right.six {
   background: var(--color-blue-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right.six .content-block .link-block{
+  margin-top: 3rem;
+  background: var(--color-blue-3);
+  display: flex;
+  justify-content: space-between;
+}
+.right.six .content-block .link-block .link {
+  cursor: pointer;
+  color: var(--color-gray-0);;
+}
+.right.six .content-block .link-block .link.active {
+  font-weight: 600;
 }
 .right.seven {
   background-image: url('../img/landing_bg_7.png');

@@ -5,6 +5,12 @@ import '../assets/css/landing.css';
 
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
+            [activeLink, setActiveLink] = useState(0),
+            youtubeLinks = [
+                'https://www.youtube-nocookie.com/embed/63BHFKUuZZg',
+                'https://www.youtube-nocookie.com/embed/6vE9RN63bms',
+                'https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ',
+            ],
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
@@ -40,7 +46,14 @@ export default function Landing() {
             </div>
             <div className={`left four ${ activeDot === 4 ? "active": "" }`}></div>
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}></div>
-            <div className={`left six ${ activeDot === 6 ? "active": "" }`}></div>
+            <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
+            <div className="content-block">
+                    <label className="title extra-bold size-54">Mit csinálunk az órákon?</label>
+                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                </div>
+            </div>
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}></div>
             <div className={`left eight ${ activeDot === 8 ? "active": "" }`}></div>
             <div className="dots">
@@ -58,7 +71,16 @@ export default function Landing() {
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
             <div className={`right four ${ activeDot === 4 ? "active": "" }`}></div>
             <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
-            <div className={`right six ${ activeDot === 6 ? "active": "" }`}></div>
+            <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
+                <div className="content-block">
+                    <iframe title="video" width="416" height="234" src={youtubeLinks[activeLink]} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="link-block">
+                        <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>Művészi torna</label>
+                        <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>Mozdulatművészet</label>
+                        <label onClick={() => setActiveLink(2)} className={`link size-15 ${ activeLink === 2 && 'active' }`}>Modern tánc</label>
+                    </div>
+                </div>
+            </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" }`}></div>
             <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
         </div>
