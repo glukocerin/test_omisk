@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import LeafletMap from '../components/LeafletMap'
 
 import '../assets/css/landing.css';
 
@@ -203,7 +204,9 @@ export default function Landing() {
                 <div onClick={() => setActiveDot(1)} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(2)} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(3)} className={`dot ${ activeDot === 3 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(4)} className={`dot ${ activeDot === 4 ? "active":""}`}></div>
+                <div onClick={() => setActiveDot(4)} className={`dot ${ activeDot === 4 ? "active":""}`}>
+                 
+                </div>
                 <div onClick={() => setActiveDot(5)} className={`dot ${ activeDot === 5 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(6)} className={`dot ${ activeDot === 6 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(7)} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
@@ -212,7 +215,9 @@ export default function Landing() {
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
-            <div className={`right four ${ activeDot === 4 ? "active": "" }`}></div>
+            <div className={`right four ${ activeDot === 4 ? "active": "" }`}>
+                <LeafletMap />
+            </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">

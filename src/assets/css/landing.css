@@ -213,6 +213,7 @@
 }
 .right.four {
   background: var(--color-gray-3);
+  overflow: hidden;
 }
 .right.five {
   background-image: url('../img/landing_bg_5.png');
