@@ -25,7 +25,7 @@ function App() {
         <Route path="/courses">
           <Courses />
         </Route>
-        <Route path="/course_one">
+        <Route path="/eurhythmics">
           <Course pageTitle="course one" />
         </Route>
         <Route path="/course_two">
