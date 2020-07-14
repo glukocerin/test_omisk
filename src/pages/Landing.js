@@ -226,7 +226,35 @@ export default function Landing() {
                     <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
                 </div>
             </div>
-            <div className={`left seven ${ activeDot === 7 ? "active": "" }`}></div>
+            <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">Mit csinálunk az órák mellett?</label>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Évzáró előadások</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Országos versenyek</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Nyilvános órák</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Omisk gála</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Mozdulatműhely</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Nyári táborok</span>
+                   </div>
+                </div>
+            </div>
             <div className={`left eight ${ activeDot === 8 ? "active": "" }`}></div>
             <div className="dots">
                 <div onClick={() => setActiveDot(1)} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
