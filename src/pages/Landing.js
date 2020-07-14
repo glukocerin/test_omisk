@@ -7,7 +7,7 @@ import '../assets/css/landing.css';
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
-            [activePlace, setActivePlace] = useState(0),
+            [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
             youtubeLinks = [
                 'https://www.youtube-nocookie.com/embed/63BHFKUuZZg',
                 'https://www.youtube-nocookie.com/embed/6vE9RN63bms',
@@ -50,7 +50,7 @@ export default function Landing() {
                 <div className="content-block">
                     <label className="title extra-bold size-54">Helyszíneink</label>
                     <div className="drop-down-list">
-                        <div className={`place ${ activePlace === 1 && 'active' }`} onClick={() => setActivePlace(1) }>
+                        <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace({placeId:1, position: [47.54154, 19.03426], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Óbudai kultúrális központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -67,7 +67,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 2 && 'active' }`} onClick={() => setActivePlace(2) }>
+                        <div className={`place ${ activePlace.placeId === 2 && 'active' }`} onClick={() => setActivePlace({placeId:2, position: [47.59798, 19.05255], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Békásmegyeri Közösségi Ház</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -84,7 +84,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 3 && 'active' }`} onClick={() => setActivePlace(3) }>
+                        <div className={`place ${ activePlace.placeId === 3 && 'active' }`} onClick={() => setActivePlace({placeId:3, position: [47.48967, 19.01836], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Mom Művelődési Központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -101,7 +101,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 4 && 'active' }`} onClick={() => setActivePlace(4) }>
+                        <div className={`place ${ activePlace.placeId === 4 && 'active' }`} onClick={() => setActivePlace({placeId:4, position: [47.51262, 18.99469], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Virányosi Közösségi Ház</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -118,7 +118,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 5 && 'active' }`} onClick={() => setActivePlace(5) }>
+                        <div className={`place ${ activePlace.placeId === 5 && 'active' }`} onClick={() => setActivePlace({placeId:5, position: [47.51262, 18.99469], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Szarvas Gábor Közösségi Tér</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -135,7 +135,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 6 && 'active' }`} onClick={() => setActivePlace(6) }>
+                        <div className={`place ${ activePlace.placeId === 6 && 'active' }`} onClick={() => setActivePlace({placeId:6, position: [47.50055, 19.04011], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Budapest Művelődési Központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -152,7 +152,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 7 && 'active' }`} onClick={() => setActivePlace(7) }>
+                        <div className={`place ${ activePlace.placeId === 7 && 'active' }`} onClick={() => setActivePlace({placeId:7, position: [47.48746, 19.07061], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">Józsefvárosi Galéria és Rendezvényközpont</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -169,7 +169,7 @@ export default function Landing() {
                                 <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
                             </div>
                         </div>
-                        <div className={`place ${ activePlace === 8 && 'active' }`} onClick={() => setActivePlace(8) }>
+                        <div className={`place ${ activePlace.placeId === 8 && 'active' }`} onClick={() => setActivePlace({placeId:8, position: [47.49992,19.068150], zoom: 18}) }>
                             <label className="place-label size-24 extra-bold">VII. Kerületi Táncstúdió</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
@@ -216,7 +216,7 @@ export default function Landing() {
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
             <div className={`right four ${ activeDot === 4 ? "active": "" }`}>
-                <LeafletMap />
+                <LeafletMap props={activePlace}/>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
