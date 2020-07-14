@@ -189,9 +189,37 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className={`left five ${ activeDot === 5 ? "active": "" }`}></div>
+            <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">Milyen óráink vannak?</label>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Művészi torna</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Mozdualtművészet</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Modern tánc</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Jazz tánc</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Klasszikus balett</span>
+                   </div>
+                   <div className="list-item">
+                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <span className="text size-36 extra-bold">Pre balett</span>
+                   </div>
+                </div>
+            </div>
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
-            <div className="content-block">
+                <div className="content-block">
                     <label className="title extra-bold size-54">Mit csinálunk az órákon?</label>
                     <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
                     <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
