@@ -137,6 +137,7 @@
 	}
 .leaflet-right {
 	right: 0;
+	display: none;
 	}
 .leaflet-bottom {
 	bottom: 0;

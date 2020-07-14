@@ -177,6 +177,26 @@
 .left.five {
   background: var(--color-pink-0);
 }
+.left.five .title,
+.left.seven .title {
+  color: var(--color-gray-0);
+  margin-bottom: 2rem;
+}
+.left.five .list-item,
+.left.seven .list-item {
+  color: var(--color-gray-0);
+  border-top: 1px solid var(--color-gray-0);
+  padding: 1rem 0;
+}
+.left.five .list-item:last-child,
+.left.seven .list-item:last-child {
+  border-bottom: 1px solid var(--color-gray-0);
+}
+.left.five .list-item .arrow,
+.left.seven .list-item .arrow {
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
 .left.six {
   background: var(--color-blue-4);
 }
