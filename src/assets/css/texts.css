@@ -84,3 +84,27 @@
 .size-120 {
 	font-size: 120px;
 }
+
+@media screen and (max-width: 767px) {
+	.size-12 {
+		font-size: 15px;
+	}
+	.size-20 {
+		font-size: 14px;
+	}
+	.size-32 {
+		font-size: 16px;
+	}
+	.size-36 {
+		font-size: 24px;
+	}
+	.size-54 {
+		font-size: 28px;
+	}
+	.size-70 {
+		font-size: 28px;
+	}
+	.size-83 {
+		font-size: 49px;
+	}
+}
