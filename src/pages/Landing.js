@@ -7,6 +7,11 @@ import '../assets/css/landing.css';
 import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
 import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
 import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
+import balett from '../assets/img/landing_mobile_extra.png';
+import { ReactComponent as Logo } from "../assets/img/logo.svg";
+import { ReactComponent as Facebook } from "../assets/img/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/img/insta.svg";
+import { ReactComponent as Youtube } from "../assets/img/youtube.svg";
 
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
@@ -312,6 +317,56 @@ export default function Landing() {
                 <div onClick={() => setActiveDot(6)} className={`dot ${ activeDot === 6 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(7)} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(8)} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
+            </div>
+            <div className="mobile-footer">
+                <img className="balett" src={balett} alt=""></img>
+                <div className="content-block">
+                    <div className="content-header">
+                        <Logo className="logo"/>
+                        <label className="text size-12 extra-bold">Óbudai Mozgásművészeti Iskola</label>
+                    </div>
+                    <label className="text size-24 extra-bold">Az omiskról</label>
+                    <label className="article size-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="text size-24 extra-bold">Kapcsolat</label>
+                    <label className="article size-12">
+                        Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol<br/>
+                        hétköznap 10-14 óra között hívhatod.<br/>
+                        Telefon: 06-1-2000-138<br/>
+                        Mobil: 06-20-9460-848<br/>
+                        E-mail: iroda@omisk.hu<br/>
+                        Posta: 1021. Budapest, Széher út 77.<br/>
+                    </label>
+                    <label className="text size-24 extra-bold">Kurzusaink</label>
+                    <label className="article size-12">
+                        Művészi torna<br/>
+                        Mozdulatművészet<br/>
+                        Modern tánc<br/>
+                        Jazz tánc<br/>
+                        Pre balett<br/>
+                        Klasszikus balett
+                    </label>
+                    <label className="text size-24 extra-bold">Helyszíneink</label>
+                    <label className="article size-12">
+                        Óbudai Kulturális Központ<br/>
+                        MOM Művelődési Központ<br/>
+                        Budapest Művelődési központ<br/>
+                        Vll. Kerületi Táncstúdió<br/>
+                        Békásmegyeri Közösségi Ház<br/>
+                        Virányosi Közösségi Ház<br/>
+                        Józsefvárosi Galéria és Rendezvényközpont<br/>
+                    </label>
+                    <div className="sm-icons">
+                        <div className="icon">
+                            <Instagram/>
+                        </div>
+                        <div className="icon">
+                            <Facebook/>
+                        </div>
+                        <div className="icon">
+                            <Youtube/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

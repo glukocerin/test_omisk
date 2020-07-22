@@ -292,6 +292,10 @@
   animation: scrolloutdown 500ms ease-in-out;
 }
 
+.mobile-footer {
+  display: none;
+}
+
 @keyframes scrolldown {
   from {top: -100%;}
   to {top: 0;}
@@ -424,5 +428,63 @@
   .left.three .button-box .btn {
     padding: 10px 22px;
     font-size: 12px;
+  }
+  .mobile-footer {
+    order: 12;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-blue-1);
+    color: var(--color-gray-0);
+  }
+  .mobile-footer .balett {
+    width: 100vw;
+    height: auto;
+  }
+  .mobile-footer .content-block {
+    padding: 3rem 1.625rem;
+    width: 100%;
+    max-width: unset;
+  }
+  .mobile-footer .content-block .content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    max-width: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-footer .content-block .content-header .logo {
+    height: 46px;
+  }
+  .mobile-footer .content-block .content-header .text {
+    margin-left: 1.5rem;
+  }
+  .mobile-footer .content-block .article {
+    margin-bottom: 1.25rem;
+    margin-top: 0.75rem;
+  }
+  .mobile-footer .content-block .sm-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .mobile-footer .content-block .sm-icons .icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gray-0);
+    border-radius: 50%;
+    position: relative;
+  }
+  .mobile-footer .content-block .sm-icons .icon svg .a {
+    stroke: var(--color-blue-1);
+    stroke-width: 2px;
+  }
+  .mobile-footer .content-block .sm-icons .icon + .icon {
+    margin-left: 0.75rem;
   }
 }
