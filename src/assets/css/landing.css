@@ -311,3 +311,118 @@
   from {top: 0%;}
   to {top: 100%;}
 }
+
+@media screen and (max-width: 767px) {
+  .landing {
+    overflow: scroll;
+    flex-direction: column;
+    height: unset;
+  }
+  .left.one {
+    order: 1;
+  }
+  .right.eight {
+    order: 2;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .left.two {
+    order: 3;
+  }
+  .right.two {
+    order: 4;
+  }
+  .left.three {
+    order: 5;
+    padding: 1.75rem;
+  }
+  .right.three {
+    order: 6;
+  }
+  .left.eight {
+    order: 7;
+    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+  }
+  .left.eight .sepa-row {
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .left.eight .sepa-row svg,
+  .left.eight .sepa-row hr {
+    display: none;
+  }
+  .left.eight .sepa-row .text {
+    margin: unset;
+  }
+  .left.seven {
+    order: 8;
+    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+  }
+  .left.five .list-item, 
+  .left.seven .list-item {
+    color: var(--color-gray-7)
+  }
+  .left.five .list-item .arrow, 
+  .left.seven .list-item .arrow {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .right.seven {
+    order: 9;
+  }
+  .left.five {
+    order: 10;
+    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+  }
+  .left.four {
+    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+    order: 11;
+  }
+  .dots,
+  .right.one,
+  .right.four,
+  .right.five,
+  .left.six,
+  .right.six {
+    display: none;
+  }
+  .left {
+    height: unset;
+  }
+  .right {
+    height: 25rem;
+    background-size: 100% auto;
+    background-position: unset;
+  }
+  .left,
+  .right {
+    position: unset;
+    animation: unset;
+    width: 100%;
+  }
+  .landing .content-block,
+  .left.four .content-block {
+    max-width: 20rem;
+  }
+  .left.one .text {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .left.two .text {
+    max-width: 10rem;
+    margin: 1.75rem;
+  }
+  .left.three .article,
+  .left.three .article:nth-child(2) {
+    margin-top: 1rem;
+  }
+  .left.three .button-box {
+    margin-top: 2rem;
+    margin-bottom: 0.875rem;
+  }
+  .left.three .button-box .btn {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
+}
