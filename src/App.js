@@ -8,7 +8,6 @@ import {
 
 import "./assets/css/colors.css";
 import "./assets/css/texts.css";
-import "./App.css";
 
 import Courses from "./pages/Courses";
 import Course from "./pages/Course";
