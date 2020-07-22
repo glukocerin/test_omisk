@@ -23,3 +23,18 @@
 .header .links a+a {
     margin-left: 1rem;
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        position: unset;
+        margin: 18px 28px;
+        width: calc(100% - 56px);
+    }
+    .header .logo {
+        height: 2rem;
+    }
+    /* FIXME: need a hamburger menu*/
+    .header .links {
+        display: none;
+    }
+}
