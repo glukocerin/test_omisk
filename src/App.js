@@ -10,6 +10,7 @@ import "./assets/css/colors.css";
 import "./assets/css/texts.css";
 
 import Courses from "./pages/Courses";
+import Teachers from "./pages/Teachers";
 import Course from "./pages/Course";
 import Landing from "./pages/Landing";
 import Navigation from "./pages/Navigation";
@@ -23,6 +24,9 @@ function App() {
       <Switch>
         <Route path="/courses">
           <Courses />
+        </Route>
+        <Route path="/teachers">
+          <Teachers />
         </Route>
         <Route path="/eurhythmics">
           <Course pageTitle="course one" />
