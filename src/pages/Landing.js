@@ -4,6 +4,10 @@ import LeafletMap from '../components/LeafletMap'
 
 import '../assets/css/landing.css';
 
+import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
+import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
+import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
+
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
@@ -255,7 +259,29 @@ export default function Landing() {
                    </div>
                 </div>
             </div>
-            <div className={`left eight ${ activeDot === 8 ? "active": "" }`}></div>
+            <div className={`left eight ${ activeDot === 8 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">Ami fontos nekünk</label>
+                    <div className="sepa-row">
+                        <Gymnast className="icon" />
+                        <label className="text size-24 extra-bold">Berczik módszer</label>
+                        <hr />
+                    </div>
+                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <div className="sepa-row">
+                        <MusicalNote className="icon" />
+                        <label className="text size-24 extra-bold">Zeneiség</label>
+                        <hr />
+                    </div>
+                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <div className="sepa-row">
+                        <PaintBrush className="icon" />
+                        <label className="text size-24 extra-bold">Alkotómunka</label>
+                        <hr />
+                    </div>
+                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                </div>
+            </div>
             <div className="dots">
                 <div onClick={() => setActiveDot(1)} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
                 <div onClick={() => setActiveDot(2)} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
