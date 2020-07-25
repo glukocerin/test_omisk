@@ -30,7 +30,7 @@ function App() {
         <Route path="/teachers">
           <Teachers />
         </Route>
-        <Route path="/eurhythmics">
+        <Route path="/eurhythmics"></Route>
         <Route path="/courses/eurhythmics">
           <Course pageTitle="course one" />
         </Route>
