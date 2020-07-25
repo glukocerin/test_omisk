@@ -6,7 +6,6 @@
   background: var(--color-gray-0);
   align-items: center;
 }
-
 .teacher .teacher-header {
   position: absolute;
   top: 0;
@@ -37,8 +36,64 @@
   margin-bottom: 4.875rem;
   color: var(--color-gray-0);
 }
-
 .teacher .profile-picture {
   z-index: 2;
   width: 24rem;
+}
+.teacher .columns {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.75rem;
+  margin-bottom: 3.125rem;
+}
+.teacher .column-left,
+.teacher .column-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 40rem;
+}
+.teacher .column-left .name {
+  margin-bottom: 2.5rem;
+  color: var(--color-green-0)
+}
+.teacher .column-left .desc {
+  white-space: pre-wrap;
+  margin-bottom: 1.75rem;
+}
+.teacher .column-left .details {
+  white-space: pre-wrap;
+}
+.teacher .column-right {
+  margin-left: 16rem;
+  padding-top: 1.5rem;
+}
+.teacher .column-right .text {
+  margin-bottom: 1.25rem;
+}
+.teacher .column-right .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+.teacher .column-right .list .list-item::before {
+  content: "\2022";
+  color: var(--color-green-0);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block; 
+  left: -1rem;
+  position: absolute;
+}
+.teacher .column-right .list .list-item {
+  max-width: 15.875rem;
+  line-height: 1.25rem;
+  position: relative;
+}
+.teacher .column-right .list .list-item + .list-item{
+  margin-top: 1.75rem;
+}
+.teacher .column-right .list .list-item:last-child {
+  padding-bottom: 2.75rem;
 }
