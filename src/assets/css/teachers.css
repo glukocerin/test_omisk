@@ -76,4 +76,44 @@
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-  
+
+@media screen and (max-width: 767px) {
+  .teachers {
+    background: var(--color-green-0);
+  }
+  .teachers .teachers-header {
+    display: none;
+  }
+  .teachers .title {
+    margin-top: 6.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .teachers .teacher-cards {
+    display: flex;
+    gap: unset;
+    grid-template-columns: unset;
+    flex-direction: column;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .teachers .teacher-cards .card {
+    border: unset;
+    background: var(--color-gray-0);
+    margin-top: 1.5rem;
+    padding-bottom: 2.25rem;
+  }
+  .teachers .teacher-cards .card img {
+    width: 100%;
+  }
+  .teachers .teacher-cards .card .teacher-name {
+    margin-top: 1.75rem;
+  }
+  .teachers .teacher-cards .card .teacher-desc {
+    margin-bottom: 0;
+  }
+  .teachers .teacher-cards .card .dot-dot-dot {
+    display: none;
+  }
+}
