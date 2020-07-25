@@ -48,6 +48,11 @@
   margin-bottom: 5rem;
 }
 
+.teachers .teacher-cards a {
+  color: unset;
+  text-decoration: unset;
+}
+
 .teachers .teacher-cards .card {
   display: flex;
   flex-direction: column;
@@ -55,6 +60,10 @@
   padding-bottom: 2.75rem;
   border: 1px solid var(--color-gray-3);
   border-top: 0;
+}
+
+.teachers .teacher-cards .card * {
+  cursor: pointer;
 }
 
 .teachers .teacher-cards .card .teacher-name {
