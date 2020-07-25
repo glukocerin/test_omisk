@@ -28,9 +28,11 @@ function App() {
           <Courses />
         </Route>
         <Route path="/teachers">
+          <Navigation/>
           <Teachers />
         </Route>
         <Route path="/teacher">
+          <Navigation/>
           <Teacher/>
         </Route>
         <Route path="/eurhythmics"></Route>
