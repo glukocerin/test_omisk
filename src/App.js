@@ -11,6 +11,7 @@ import "./assets/css/texts.css";
 
 import Courses from "./pages/Courses";
 import Teachers from "./pages/Teachers";
+import Teacher from "./pages/Teacher";
 import Course from "./pages/Course";
 import Landing from "./pages/Landing";
 import Navigation from "./pages/Navigation";
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/teachers">
           <Teachers />
+        </Route>
+        <Route path="/teacher">
+          <Teacher/>
         </Route>
         <Route path="/eurhythmics"></Route>
         <Route path="/courses/eurhythmics">

@@ -48,6 +48,11 @@
   margin-bottom: 5rem;
 }
 
+.teachers .teacher-cards a {
+  color: unset;
+  text-decoration: unset;
+}
+
 .teachers .teacher-cards .card {
   display: flex;
   flex-direction: column;
