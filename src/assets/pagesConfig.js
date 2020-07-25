@@ -133,6 +133,75 @@ const pagesConfig = {
         }
       ]
     }
+  },
+  teachers: {
+    cards: [
+      { 
+        picture: 'julia.png',
+        name: 'Pers Júlia',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'katalin.png',
+        name: 'Benis Katalin',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'krisztina.png',
+        name: 'Mády Krisztina',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'edit.png',
+        name: 'Kalocsai Edit',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'bea.png',
+        name: 'Kovács Bea',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'jenny.png',
+        name: 'P. Ács Vali',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'barbara.png',
+        name: 'Csöngei Barbara',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'eszter.png',
+        name: 'Solti Eszter',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'lilla.png',
+        name: 'Rácz-Lakatos Lilla',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'lilla.png',
+        name: 'Bozsókiné Taylor Jennifer',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'reka.png',
+        name: 'Rózsa Réka',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'reka.png',
+        name: 'Taylor Esther',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+      { 
+        picture: 'reka.png',
+        name: 'Dávid Luca',
+        desc: 'Állami díjas táncpedagógus,\n Művészi torna edző,\n Művészeti vezető'
+      },
+    ]
   }
 };
 
