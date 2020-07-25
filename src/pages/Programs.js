@@ -26,15 +26,21 @@ const ProgramCardsThirdRow = function() {
 
 function Programs() {
   return (
-    <div className={style["wrapper"]}>
-      <div className={style["cards-wrapper"]}>
-        <ProgramCardsFirstRow />
-      </div>
-      <div className={style["cards-wrapper"]}>
-        <ProgramCardsSecondRow />
-      </div>
-      <div className={style["cards-wrapper"]}>
-        <ProgramCardsThirdRow />
+    <div>
+      <div className={style["header"]}></div>
+      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+        Programjaink
+      </h1>
+      <div className={style["wrapper"]}>
+        <div className={style["cards-wrapper"]}>
+          <ProgramCardsFirstRow />
+        </div>
+        <div className={style["cards-wrapper"]}>
+          <ProgramCardsSecondRow />
+        </div>
+        <div className={style["cards-wrapper"]}>
+          <ProgramCardsThirdRow />
+        </div>
       </div>
     </div>
   );

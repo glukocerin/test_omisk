@@ -1,40 +1,51 @@
 .header {
-    position: fixed;
-    top: 26px;
-    left: 44px;
-    width: calc(100% - 88px);
-    height: 44px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 401;
+  width: calc(100% - 88px);
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 401;
 }
+
+.non-fixed {
+  top: 26px;
+  left: 44px;
+  position: absolute;
+}
+
+.fixed {
+  top: 26px;
+  left: 44px;
+  position: fixed;
+}
+
 .header .logo {
-    height: 44px;
+  height: 44px;
 }
+
 .header .links {
-    display: flex;
+  display: flex;
 }
 .header .links a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 800;
-    color: var(--color-gray-7)
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-gray-7);
 }
-.header .links a+a {
-    margin-left: 1rem;
+.header .links a + a {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 767px) {
-    .header {
-        position: unset;
-        margin: 18px 28px;
-        width: calc(100% - 56px);
-    }
-    .header .logo {
-        height: 2rem;
-    }
-    /* FIXME: need a hamburger menu*/
-    .header .links {
-        display: none;
-    }
+  .header {
+    position: unset;
+    margin: 18px 28px;
+    width: calc(100% - 56px);
+  }
+  .header .logo {
+    height: 2rem;
+  }
+  /* FIXME: need a hamburger menu*/
+  .header .links {
+    display: none;
+  }
 }

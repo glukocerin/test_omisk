@@ -21,10 +21,9 @@ import ProgramDetail from "./pages/ProgramDetail";
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <SocialMediaBar />
       <Switch>
-        <Route path="/courses">
+        <Route exact path="/courses">
           <Courses />
         </Route>
         <Route path="/teachers">
@@ -32,15 +31,18 @@ function App() {
         </Route>
         <Route path="/eurhythmics"></Route>
         <Route path="/courses/eurhythmics">
+          <Navigation isFixed="true" />
           <Course pageTitle="course one" />
         </Route>
         <Route path="/programs">
+          <Navigation />
           <Programs />
         </Route>
         <Route path="/programDetail">
           <ProgramDetail />
         </Route>
         <Route path="/">
+          <Navigation isFixed="true" />
           <Landing />
         </Route>
       </Switch>

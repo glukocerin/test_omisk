@@ -8,11 +8,11 @@ import { ReactComponent as Logo } from "../assets/img/logo.svg";
 import Courses from "../pages/Courses";
 import Course from "../pages/Course";
 
-export default function Navigation() {
+export default function Navigation(props) {
   return (
-    <div className="header">
+    <div className={`header ${props.isFixed ? "fixed" : "non-fixed"}`}>
       <Link to="/">
-        <Logo className="logo" />
+        <Logo className={`logo ${props.LogoColor}`} />
       </Link>
       <div className="links">
         <Link to="/courses">+ Kurzusaink</Link>

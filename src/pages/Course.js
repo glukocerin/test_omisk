@@ -11,9 +11,12 @@ import CourseDetailsCard from "../components/CourseDetailsCard";
 export default function Courses(props) {
   return (
     <div>
-      <div className={style["wrapper"]}>
-        <div className={style["title"]}>
-          <h1>Muveszi torna</h1>
+      <div className={style["header-mobile"]}></div>
+      <div className={style["header"]}>
+        <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+          Művészi Torna
+        </h1>
+        <div className={`${style["button-wrapper"]}`}>
           <button className={style["button"]}>Jelentkezem</button>
         </div>
       </div>
@@ -118,7 +121,7 @@ export default function Courses(props) {
         </div>
       </div>
       <div className={style["details"]}>
-        <div className={style["card-wrapper"]}>
+        {/* <div className={style["card-wrapper"]}>
           <div className={style["text"]}>
             <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
             <ul>
@@ -147,9 +150,9 @@ export default function Courses(props) {
           <div className={style["pic"]}>
             <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
           </div>
-        </div>
+        </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
-          <div className={`${style["text"]} ${style["reverse"]}`}>
+          <div className={`${style["text"]}`}>
             <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
             <p className="size-14 thin">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -165,6 +168,46 @@ export default function Courses(props) {
             <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
           </div>
         </div>
+        <div className={`${style["card-wrapper"]}`}>
+          <div className={`${style["text"]}`}>
+            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
+            <p className="size-14 thin">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div className={styleCard["pic"]}>
+            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+          </div>
+        </div>
+        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+          <div className={`${style["text"]}`}>
+            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
+            <p className="size-14 thin">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div className={styleCard["pic"]}>
+            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className={`${style["page-footer"]}`}>
+        <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+          Évközben is tudsz jelentkezni
+        </h4>
+        <button className={style["footer-button"]}>Jelentkezem</button>
       </div>
     </div>
   );
