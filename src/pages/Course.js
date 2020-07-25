@@ -2,6 +2,11 @@ import React from "react";
 
 import style from "../assets/css/course.module.css";
 import styleCard from "../assets/css/courseDetailsCard.module.css";
+import CourseDetailsCard from "../components/CourseDetailsCard";
+
+// const Cards = () => {
+//   <CourseDetailsCard />;
+// };
 
 export default function Courses(props) {
   return (
@@ -113,8 +118,8 @@ export default function Courses(props) {
         </div>
       </div>
       <div className={style["details"]}>
-        <div className={styleCard["card-wrapper"]}>
-          <div className={styleCard["text"]}>
+        <div className={style["card-wrapper"]}>
+          <div className={style["text"]}>
             <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
             <ul>
               <li>
@@ -139,12 +144,12 @@ export default function Courses(props) {
               </li>
             </ul>
           </div>
-          <div className={styleCard["pic"]}>
+          <div className={style["pic"]}>
             <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
           </div>
         </div>
-        <div className={`${styleCard["card-wrapper"]} ${styleCard["reverse"]}`}>
-          <div className={`${styleCard["text"]} ${styleCard["reverse"]}`}>
+        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+          <div className={`${style["text"]} ${style["reverse"]}`}>
             <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
             <p className="size-14 thin">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

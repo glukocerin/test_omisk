@@ -51,7 +51,88 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "green"
       }
+    ],
+    cardDetails: [
+      {
+        title: "Kiknek ajanljuk",
+        image: "eurhythmics_1",
+        textBody: [
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        ],
+        isList: true
+      },
+      {
+        title: "Kiknek ajanljuk",
+        image: "eurhythmics_1",
+        textBody:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+        isList: false
+      },
+      {
+        title: "Kiknek ajanljuk",
+        image: "eurhythmics_1",
+        textBody:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+        isList: false
+      },
+      {
+        title: "Kiknek ajanljuk",
+        image: "eurhythmics_1",
+        textBody:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+        isList: false
+      }
     ]
+  },
+  programs: {
+    programCards: {
+      firstRow: [
+        {
+          title: "Évzáró előadások",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        },
+        {
+          title: "Versenyek",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        }
+      ],
+      secondRow: [
+        {
+          title: "Nyilvános órák",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        },
+        {
+          title: "Mozdulatműhely",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        }
+      ],
+      thirdRow: [
+        {
+          title: "Nyári táborok",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        },
+        {
+          title: "Omisk Gála",
+          image: "eurhythmics_1",
+          textBody:
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+        }
+      ]
+    }
   }
 };
 

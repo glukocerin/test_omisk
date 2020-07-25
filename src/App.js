@@ -15,6 +15,8 @@ import Course from "./pages/Course";
 import Landing from "./pages/Landing";
 import Navigation from "./pages/Navigation";
 import SocialMediaBar from "./pages/SocialMediaBar";
+import Programs from "./pages/Programs";
+import ProgramDetail from "./pages/ProgramDetail";
 
 function App() {
   return (
@@ -29,10 +31,14 @@ function App() {
           <Teachers />
         </Route>
         <Route path="/eurhythmics">
+        <Route path="/courses/eurhythmics">
           <Course pageTitle="course one" />
         </Route>
-        <Route path="/course_two">
-          <div>courses two</div>
+        <Route path="/programs">
+          <Programs />
+        </Route>
+        <Route path="/programDetail">
+          <ProgramDetail />
         </Route>
         <Route path="/">
           <Landing />
