@@ -97,3 +97,50 @@
 .teacher .column-right .list .list-item:last-child {
   padding-bottom: 2.75rem;
 }
+
+@media screen and (max-width: 767px) {
+  .teacher .teacher-header {
+    height: 17rem;
+  }
+  .teacher .state-location {
+    display: none;
+  }
+  .teacher .title {
+    margin-top: 6.25rem;
+    margin-bottom: 2rem;
+  }
+  .teacher .profile-picture {
+    width: 12rem;
+  }
+  .teacher .columns {
+    flex-flow: column-reverse;
+    margin-top: 2.75rem;
+    margin-bottom: 0;
+  }
+  .teacher .column-right {
+    margin-left: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 1.625rem;
+  }
+  .teacher .column-right .list .list-item {
+    max-width: 12.5rem;
+    line-height: 1.25rem;
+    position: relative;
+  }
+  .teacher .column-right .list .list-item + .list-item{
+    margin-top: 0.5rem;
+  }
+  .teacher .column-right .list .list-item:last-child {
+    padding-bottom: 1.125rem;
+  }
+  .teacher .column-left {
+    padding: 2.75rem 1.5rem;
+    margin: unset;
+    border-top: 1rem solid var(--color-green-0);;
+    border-bottom: 2.875rem solid var(--color-green-0);;
+  }
+  .teacher .column-left .name,
+  .teacher .column-left .desc {
+    display: none;
+  }
+}
