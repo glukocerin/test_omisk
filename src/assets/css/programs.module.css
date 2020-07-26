@@ -83,13 +83,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
     margin-top: 0;
   }
 
   .card {
-    width: 37.5rem;
+    width: 100%;
     background-color: #ffffff;
     margin-top: 5rem;
   }
