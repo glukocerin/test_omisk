@@ -1,21 +1,12 @@
 .header {
-  width: calc(100% - 88px);
-  height: 44px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 401;
-}
-
-.non-fixed {
-  top: 26px;
-  left: 44px;
+  padding: 1.625rem 2.75rem;
+  top: 0;
+  left: 0;
   position: absolute;
-}
-
-.fixed {
-  top: 26px;
-  left: 44px;
-  position: fixed;
 }
 
 .header .logo {
@@ -30,6 +21,7 @@
   font-size: 14px;
   font-weight: 800;
   color: var(--color-gray-7);
+  white-space: nowrap;
 }
 .header .links a + a {
   margin-left: 1rem;
@@ -38,18 +30,21 @@
 @media screen and (max-width: 767px) {
   .header {
     position: unset;
-    margin: 18px 28px;
-    width: calc(100% - 56px);
+    padding: 18px 28px;
+    margin: 0;
+    width: 100%;
+    height: unset;
+  }
   .header.background-green {
     background: var(--color-green-0);
   }
   .header.background-blue {
     background: var(--color-blue-4);
   }
-  .header .logo {
+  .header a {
     height: 2rem;
   }
-  /* FIXME: need a hamburger menu*/
+  .header .logo,
   .header .links {
     display: none;
   }
