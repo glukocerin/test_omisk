@@ -40,6 +40,11 @@
     position: unset;
     margin: 18px 28px;
     width: calc(100% - 56px);
+  .header.background-green {
+    background: var(--color-green-0);
+  }
+  .header.background-blue {
+    background: var(--color-blue-4);
   }
   .header .logo {
     height: 2rem;
