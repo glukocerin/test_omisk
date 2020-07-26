@@ -102,7 +102,7 @@
     position: relative;
   }
   .hamburger-menu.toggled .menu-list .sm-icons .icon svg .a {
-    stroke: var(--color-blue-1);
+    stroke: var(--color-blue-4);
     stroke-width: 2px;
   }
   .hamburger-menu.toggled .menu-list .sm-icons .icon + .icon {
