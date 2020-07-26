@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: var(--color-blue-4);
+  color: #fff;
+}
+
+.details-box {
+  width: 320px;
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 6rem;
+  margin-left: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    display: none;
+    /* display: flex;
+    flex-direction: column; */
+  }
+}

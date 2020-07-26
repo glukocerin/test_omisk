@@ -42,6 +42,12 @@ function Programs() {
           <ProgramCardsThirdRow />
         </div>
       </div>
+      <div className={`${style["page-footer"]}`}>
+        <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+          Évközben is tudsz jelentkezni
+        </h4>
+        <button className={style["footer-button"]}>Jelentkezem</button>
+      </div>
     </div>
   );
 }

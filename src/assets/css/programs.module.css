@@ -53,6 +53,31 @@
   color: var(--color-blue-1);
 }
 
+.page-footer {
+  height: 17rem;
+  background-color: var(--color-gray-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  margin-top: 0;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-button {
+  width: 7rem;
+  height: 2.125rem;
+  margin-bottom: 1.0625rem;
+  border: none;
+  background-color: var(--color-blue-4);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 767px) {
   .cards-wrapper {
     display: flex;
