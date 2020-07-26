@@ -84,6 +84,10 @@
     margin-bottom: 2rem;
     height: unset;
   }
+  .hamburger-menu.toggled .menu-list .link.active {
+    padding-bottom: 0.5rem;
+    border-bottom: 5px solid var(--color-gray-0);
+  }
   .hamburger-menu.toggled .menu-list .sm-icons {
     display: flex;
     flex-direction: row;
