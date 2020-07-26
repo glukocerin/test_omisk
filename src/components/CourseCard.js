@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "../assets/css/courseCard.module.css";
 
 export default function Card(props) {
@@ -19,7 +20,11 @@ export default function Card(props) {
         <div className={style["sign-up"]}>
           <span>Jelentkezem</span>
         </div>
-        <div className={style["more-details"]}></div>
+        <Link className={style["link"]} to={`/courses/${props.details.link}`}>
+          <div className={style["more-details"]}>
+            <span className={`${style["dot"]}`}>•••</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

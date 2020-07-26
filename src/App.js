@@ -12,7 +12,12 @@ import "./assets/css/texts.css";
 import Courses from "./pages/Courses";
 import Teachers from "./pages/Teachers";
 import Teacher from "./pages/Teacher";
-import Course from "./pages/Course";
+import Eurhythmics from "./pages/Eurhythmics";
+import Callisthenics from "./pages/Callisthenics";
+import PreBallet from "./pages/PreBallet";
+import Ballet from "./pages/Ballet";
+import Jazz from "./pages/Jazz";
+import Modern from "./pages/Modern";
 import Landing from "./pages/Landing";
 import Navigation from "./pages/Navigation";
 import SocialMediaBar from "./pages/SocialMediaBar";
@@ -25,18 +30,38 @@ function App() {
       <SocialMediaBar />
       <Switch>
         <Route exact path="/courses">
+          <Navigation />
           <Courses />
         </Route>
         <Route path="/teachers">
           <Teachers />
         </Route>
         <Route path="/teacher">
-          <Teacher/>
+          <Teacher />
         </Route>
-        <Route path="/eurhythmics"></Route>
         <Route path="/courses/eurhythmics">
-          <Navigation isFixed="true" />
-          <Course pageTitle="course one" />
+          <Navigation />
+          <Eurhythmics />
+        </Route>
+        <Route path="/courses/callisthenics">
+          <Navigation />
+          <Callisthenics />
+        </Route>
+        <Route path="/courses/pre_ballet">
+          <Navigation />
+          <PreBallet />
+        </Route>
+        <Route path="/courses/ballet">
+          <Navigation />
+          <Ballet />
+        </Route>
+        <Route path="/courses/jazz">
+          <Navigation />
+          <Jazz />
+        </Route>
+        <Route path="/courses/modern">
+          <Navigation />
+          <Modern />
         </Route>
         <Route path="/programs">
           <Navigation />

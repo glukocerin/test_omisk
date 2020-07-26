@@ -9,7 +9,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "blue"
+        backgroundColor: "blue",
+        link: "eurhythmics"
       },
       {
         title: "Mozdulatművészet",
@@ -17,7 +18,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "blue"
+        backgroundColor: "blue",
+        link: "callisthenics"
       },
       {
         title: "Pre balett",
@@ -25,7 +27,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "salmon"
+        backgroundColor: "salmon",
+        link: "pre_ballet"
       },
       {
         title: "Klasszikus balett",
@@ -33,7 +36,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "salmon"
+        backgroundColor: "salmon",
+        link: "ballet"
       },
       {
         title: "Jazz tánc",
@@ -41,7 +45,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "green"
+        backgroundColor: "green",
+        link: "jazz"
       },
       {
         title: "Modern tánc",
@@ -49,7 +54,8 @@ const pagesConfig = {
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
-        backgroundColor: "green"
+        backgroundColor: "green",
+        link: "modern"
       }
     ],
     cardDetails: [
@@ -136,214 +142,240 @@ const pagesConfig = {
   },
   teachers: {
     cards: [
-      { 
-        picture: 'julia.png',
-        name: 'Pers Júlia',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "julia.png",
+        name: "Pers Júlia",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'katalin.png',
-        name: 'Benis Katalin',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "katalin.png",
+        name: "Benis Katalin",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'krisztina.png',
-        name: 'Mády Krisztina',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "krisztina.png",
+        name: "Mády Krisztina",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'edit.png',
-        name: 'Kalocsai Edit',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "edit.png",
+        name: "Kalocsai Edit",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'bea.png',
-        name: 'Kovács Bea',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "bea.png",
+        name: "Kovács Bea",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'jenny.png',
-        name: 'P. Ács Vali',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "jenny.png",
+        name: "P. Ács Vali",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'barbara.png',
-        name: 'Csöngei Barbara',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "barbara.png",
+        name: "Csöngei Barbara",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'eszter.png',
-        name: 'Solti Eszter',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "eszter.png",
+        name: "Solti Eszter",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'lilla.png',
-        name: 'Rácz-Lakatos Lilla',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "lilla.png",
+        name: "Rácz-Lakatos Lilla",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'lilla.png',
-        name: 'Bozsókiné Taylor Jennifer',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "lilla.png",
+        name: "Bozsókiné Taylor Jennifer",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'reka.png',
-        name: 'Rózsa Réka',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "reka.png",
+        name: "Rózsa Réka",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'reka.png',
-        name: 'Taylor Esther',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "reka.png",
+        name: "Taylor Esther",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
       },
-      { 
-        picture: 'reka.png',
-        name: 'Dávid Luca',
-        desc: 'Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető',
-        details: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      {
+        picture: "reka.png",
+        name: "Dávid Luca",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         education: [
-          'Testnevelési Főiskola Edzői szak 1986',
-          'Budapesti Műszaki Egyetem Vegyészmérnök, 1982'
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
         ],
         achievements: [
-          '2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat',
-          '2010 Táncpedagógus Országos Szövetsége Nívódíja',
-          '2006 Berczik Sára Díj',
-          '2005 Réti Piroska Balett Pedagógusi Nívódíj'
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
-      },
+      }
     ]
   }
 };

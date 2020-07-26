@@ -15,13 +15,19 @@ const CourseCards = function() {
 
 export default function Courses() {
   return (
-    <div className={style["wrapper"]}>
-      <div className={style["title"]}>
-        <h1>Kurzusaink</h1>
-      </div>
-
+    <div>
+      <div className={style["header"]}></div>
+      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+        Kurzusaink
+      </h1>
       <div className={style.courses}>
         <CourseCards className={style["cards"]} />
+      </div>
+      <div className={`${style["page-footer"]}`}>
+        <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+          Évközben is tudsz jelentkezni
+        </h4>
+        <button className={style["footer-button"]}>Jelentkezem</button>
       </div>
     </div>
   );

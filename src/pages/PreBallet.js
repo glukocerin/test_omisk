@@ -1,12 +1,7 @@
 import React from "react";
 
-import style from "../assets/css/course.module.css";
+import style from "../assets/css/preBallet.module.css";
 import styleCard from "../assets/css/courseDetailsCard.module.css";
-import CourseDetailsCard from "../components/CourseDetailsCard";
-
-// const Cards = () => {
-//   <CourseDetailsCard />;
-// };
 
 export default function Courses(props) {
   return (
@@ -14,7 +9,7 @@ export default function Courses(props) {
       <div className={style["header-mobile"]}></div>
       <div className={style["header"]}>
         <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-          Művészi Torna
+          Pre Balett
         </h1>
         <div className={`${style["button-wrapper"]}`}>
           <button className={style["button"]}>Jelentkezem</button>
