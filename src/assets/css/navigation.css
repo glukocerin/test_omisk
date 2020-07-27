@@ -4,6 +4,33 @@
   justify-content: space-between;
   z-index: 401;
   padding: 1.625rem 2.75rem;
+
+}
+.header.background-green {
+  background: var(--color-green-0);
+}
+.header.background-blue-1 {
+  background: var(--color-blue-1);
+}
+.header.background-blue-4 {
+  background: var(--color-blue-4);
+}
+/* LANDING RULES!!! */
+.header.background-blue-4.fixed {
+  background: transparent;
+}
+.header.background-blue-4.fixed .links a {
+  background: transparent;
+  color: var(--color-gray-7);
+}
+/*END OF LANDING RULES*/
+
+/* TEACHERS RULE!!! */
+.header.background-green.fixed {
+  background: transparent;
+}
+/*END OF TEACHERS RULE*/
+.header.fixed {
   top: 0;
   left: 0;
   position: absolute;
@@ -20,12 +47,26 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 800;
-  color: var(--color-gray-7);
+  color: var(--color-gray-0);
   white-space: nowrap;
+  height: 1.375rem;
+}
+.header .links a.active {
+  border-bottom: 3px solid var(--color-gray-0);
 }
 .header .links a + a {
   margin-left: 1rem;
 }
+.header .links .plus-sign {
+  position: relative;
+  margin-left: 1.5rem;
+}
+.header .links .plus-sign::before {
+  content: '+';
+  position: absolute;
+  left: -0.75rem;
+}
+
 
 @media screen and (max-width: 767px) {
   .header {
@@ -35,15 +76,19 @@
     width: 100%;
     height: unset;
   }
-  .header.background-green {
-    background: var(--color-green-0);
+  .header.fixed {
+    position: unset;
   }
-  .header.background-blue-1 {
-    background: var(--color-blue-1);
-  }
-  .header.background-blue-4 {
+  /* LANDING RULE!!! */
+  .header.background-blue-4.fixed {
     background: var(--color-blue-4);
   }
+  /*END OF LANDING RULE*/
+  /* TEACHERS RULE!!! */
+  .header.background-green.fixed {
+    background: var(--color-green-0);
+  }
+  /*END OF TEACHERS RULE*/
   .header a {
     height: 2rem;
   }

@@ -25,14 +25,12 @@ import Landing from "./pages/Landing";
 
 import Footer from "./components/Footer";
 import Navigation from "./pages/Navigation";
-import SocialMediaBar from "./pages/SocialMediaBar";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 
 function App() {
   return (
     <div className="App">
-      <SocialMediaBar />
       <Switch>
         <Route exact path="/courses">
           <Navigation BackgroundColor="blue-4"/>
@@ -40,7 +38,7 @@ function App() {
           <Footer />
         </Route>
         <Route path="/teachers">
-          <Navigation BackgroundColor="green"/>
+          <Navigation BackgroundColor="green" isHeaderFixed="true"/>
           <Teachers />
         </Route>
         <Route path="/teacher">
@@ -86,7 +84,7 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation BackgroundColor="blue-4"/>
+          <Navigation BackgroundColor="blue-4" isHeaderFixed="true"/>
           <Landing />
         </Route>
       </Switch>

@@ -368,6 +368,11 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
+            <div className="social-media-bar">
+                <Facebook className="icon" />
+                <Instagram className="icon" />
+                <Youtube className="icon" />
+            </div>
         </div>
     )
 }
