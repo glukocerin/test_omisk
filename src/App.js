@@ -78,7 +78,7 @@ function App() {
           <Footer />
         </Route>
         <Route path="/programs">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Programs />
           <Footer />
         </Route>
