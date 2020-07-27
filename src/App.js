@@ -25,14 +25,12 @@ import Landing from "./pages/Landing";
 
 import Footer from "./components/Footer";
 import Navigation from "./pages/Navigation";
-import SocialMediaBar from "./pages/SocialMediaBar";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 
 function App() {
   return (
     <div className="App">
-      <SocialMediaBar />
       <Switch>
         <Route exact path="/courses">
           <Navigation BackgroundColor="blue-4"/>
