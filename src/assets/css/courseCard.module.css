@@ -10,6 +10,18 @@
   background-color: var(--color-green-0);
 }
 
+.dot-blue {
+  color: var(--color-blue-1);
+}
+
+.dot-salmon {
+  color: var(--color-pink-0);
+}
+
+.dot-green {
+  color: var(--color-green-0);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -105,7 +117,7 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    margin: 0.625rem 1.25rem;
+    margin: 1.125rem 0rem 0rem;
     height: 9rem;
     width: 24rem;
   }

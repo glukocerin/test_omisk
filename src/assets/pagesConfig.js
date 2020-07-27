@@ -10,6 +10,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "blue",
+        dotColor: "dot-blue",
         link: "eurhythmics"
       },
       {
@@ -19,6 +20,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "blue",
+        dotColor: "dot-blue",
         link: "callisthenics"
       },
       {
@@ -28,6 +30,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "salmon",
+        dotColor: "dot-salmon",
         link: "pre_ballet"
       },
       {
@@ -37,6 +40,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "salmon",
+        dotColor: "dot-salmon",
         link: "ballet"
       },
       {
@@ -46,6 +50,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "green",
+        dotColor: "dot-green",
         link: "jazz"
       },
       {
@@ -55,6 +60,7 @@ const pagesConfig = {
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
         backgroundColor: "green",
+        dotColor: "dot-green",
         link: "modern"
       }
     ],
