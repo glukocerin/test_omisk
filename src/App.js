@@ -35,19 +35,20 @@ function App() {
       <SocialMediaBar />
       <Switch>
         <Route exact path="/courses">
-          <Navigation />
+          <Navigation BackgroundColor="blue-4"/>
           <Courses />
           <Footer />
         </Route>
         <Route path="/teachers">
-          <Navigation />
+          <Navigation BackgroundColor="green"/>
           <Teachers />
         </Route>
         <Route path="/teacher">
+          <Navigation BackgroundColor="green"/>
           <Teacher />
         </Route>
         <Route path="/courses/eurhythmics">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Eurhythmics />
           <Footer />
         </Route>
@@ -77,7 +78,7 @@ function App() {
           <Footer />
         </Route>
         <Route path="/programs">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Programs />
           <Footer />
         </Route>
@@ -85,7 +86,7 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation isFixed="true" />
+          <Navigation BackgroundColor="blue-4"/>
           <Landing />
         </Route>
       </Switch>

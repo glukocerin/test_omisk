@@ -8,17 +8,17 @@
   background-color: var(--color-blue-1);
 }
 
-.wrapper {
-  z-index: 444;
+.programs-wrapper {
+  position: relative;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-text {
   width: 100%;
   text-align: center;
-  z-index: 1;
-  margin-top: 8rem;
   color: var(--color-gray-0);
-  z-index: 123;
 }
 
 .cards-wrapper {
@@ -83,13 +83,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
     margin-top: 0;
   }
 
   .card {
-    width: 37.5rem;
+    width: 100%;
     background-color: #ffffff;
     margin-top: 5rem;
   }
