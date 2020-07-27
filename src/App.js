@@ -48,7 +48,7 @@ function App() {
           <Teacher />
         </Route>
         <Route path="/courses/eurhythmics">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Eurhythmics />
           <Footer />
         </Route>
