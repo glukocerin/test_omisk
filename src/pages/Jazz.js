@@ -162,7 +162,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tánc_01.jpg`)} alt="" />
+            <img src={require(`../assets/img/jazz_tanc_01.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
@@ -179,7 +179,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tánc_02.jpg`)} alt="" />
+            <img src={require(`../assets/img/jazz_tanc_02.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
@@ -196,7 +196,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tánc_03.jpg`)} alt="" />
+            <img src={require(`../assets/img/jazz_tanc_03.jpg`)} alt="" />
           </div>
         </div>
       </div>
