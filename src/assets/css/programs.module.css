@@ -8,6 +8,13 @@
   background-color: var(--color-blue-1);
 }
 
+.programs-wrapper {
+  position: relative;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   z-index: 444;
 }
@@ -15,8 +22,6 @@
 .header-text {
   width: 100%;
   text-align: center;
-  z-index: 1;
-  margin-top: 8rem;
   color: var(--color-gray-0);
   z-index: 123;
 }
