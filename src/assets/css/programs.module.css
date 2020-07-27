@@ -23,7 +23,7 @@
 
 .cards-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5rem;
@@ -32,6 +32,14 @@
 .card {
   width: 37.5rem;
   background-color: var(--color-gray-1);
+}
+
+.card:first-child {
+  margin-right: 1.5%;
+}
+
+.card:last-child {
+  margin-left: 1.5%;
 }
 
 .image-wrapper img {
@@ -44,7 +52,7 @@
 
 .text-wrapper {
   margin: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.25rem;
   margin-top: 2.5rem;
 }
 
@@ -79,10 +87,20 @@
 }
 
 @media screen and (max-width: 767px) {
-  .cards-wrapper {
+  .programs-wrapper {
+    background-color: var(--color-blue-1);
+    position: relative;
+    padding-top: 3.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  }
+
+  .programs-wrapper label {
+    margin-bottom: 2rem;
+  }
+
+  .cards-wrapper {
+    display: block;
     margin-left: 0.625rem;
     margin-right: 0.625rem;
     margin-top: 0;
@@ -91,7 +109,6 @@
   .card {
     width: 100%;
     background-color: #ffffff;
-    margin-top: 5rem;
   }
 
   .image-wrapper img {
@@ -103,13 +120,26 @@
   }
 
   .text-wrapper {
-    margin: 1.25rem;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
+    /* margin: 1.25rem; */
+    margin-bottom: 0.625rem;
+    /* margin-top: 2.5rem; */
+    padding-bottom: 1.25rem;
+  }
+
+  .text-wrapper p {
+    margin: 0;
   }
 
   .text-wrapper h4 {
     margin-bottom: 1.25rem;
     color: var(--color-blue-1);
+  }
+
+  .card:first-child {
+    margin-right: 0;
+  }
+
+  .card:last-child {
+    margin-left: 0;
   }
 }

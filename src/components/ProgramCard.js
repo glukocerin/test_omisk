@@ -5,7 +5,7 @@ function ProgramCard(props) {
   return (
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>
-        <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+        <img src={require(`../assets/img/${props.details.img}.jpg`)} alt="" />
       </div>
       <div className={style["text-wrapper"]}>
         <h4 className="size-32 extra-bold">{props.details.title}</h4>

@@ -107,13 +107,15 @@ const pagesConfig = {
           title: "Évzáró előadások",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         },
         {
           title: "Versenyek",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         }
       ],
       secondRow: [
@@ -121,13 +123,15 @@ const pagesConfig = {
           title: "Nyilvános órák",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         },
         {
           title: "Mozdulatműhely",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         }
       ],
       thirdRow: [
@@ -135,13 +139,15 @@ const pagesConfig = {
           title: "Nyári táborok",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         },
         {
           title: "Omisk Gála",
           image: "eurhythmics_1",
           textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd"
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+          img: "evzaro_eloadas"
         }
       ]
     }
