@@ -35,7 +35,7 @@ function App() {
       <SocialMediaBar />
       <Switch>
         <Route exact path="/courses">
-          <Navigation />
+          <Navigation BackgroundColor="blue-4"/>
           <Courses />
           <Footer />
         </Route>
@@ -86,7 +86,7 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation BackgroundColor="blue"/>
+          <Navigation BackgroundColor="blue-4"/>
           <Landing />
         </Route>
       </Switch>

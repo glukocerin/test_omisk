@@ -38,7 +38,10 @@
   .header.background-green {
     background: var(--color-green-0);
   }
-  .header.background-blue {
+  .header.background-blue-1 {
+    background: var(--color-blue-1);
+  }
+  .header.background-blue-4 {
     background: var(--color-blue-4);
   }
   .header a {
