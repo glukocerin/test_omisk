@@ -26,11 +26,11 @@ const ProgramCardsThirdRow = function() {
 
 function Programs() {
   return (
-    <div>
+    <div className={style["programs-wrapper"]}>
       <div className={style["header"]}></div>
-      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+      <label className={`${style["header-text"]} size-90 extra-bold`}>
         Programjaink
-      </h1>
+      </label>
       <div className={style["wrapper"]}>
         <div className={style["cards-wrapper"]}>
           <ProgramCardsFirstRow />

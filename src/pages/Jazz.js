@@ -8,9 +8,9 @@ export default function Courses(props) {
     <div>
       <div className={style["header-mobile"]}></div>
       <div className={style["header"]}>
-        <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+        <label className={`${style["header-text"]} size-90 extra-bold`}>
           Jazz tánc kurzus
-        </h1>
+        </label>
         <div className={`${style["button-wrapper"]}`}>
           <button className={style["button"]}>Jelentkezem</button>
         </div>
