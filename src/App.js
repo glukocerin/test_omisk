@@ -40,7 +40,7 @@ function App() {
           <Footer />
         </Route>
         <Route path="/teachers">
-          <Navigation BackgroundColor="green"/>
+          <Navigation BackgroundColor="green" isHeaderFixed="true"/>
           <Teachers />
         </Route>
         <Route path="/teacher">
@@ -86,7 +86,7 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation BackgroundColor="blue-4"/>
+          <Navigation BackgroundColor="blue-4" isHeaderFixed="true"/>
           <Landing />
         </Route>
       </Switch>
