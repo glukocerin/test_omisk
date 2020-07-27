@@ -1,21 +1,39 @@
 .header {
-  width: calc(100% - 88px);
-  height: 44px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 401;
-}
+  padding: 1.625rem 2.75rem;
 
-.non-fixed {
-  top: 26px;
-  left: 44px;
+}
+.header.background-green {
+  background: var(--color-green-0);
+}
+.header.background-blue-1 {
+  background: var(--color-blue-1);
+}
+.header.background-blue-4 {
+  background: var(--color-blue-4);
+}
+/* LANDING RULES!!! */
+.header.background-blue-4.fixed {
+  background: transparent;
+}
+.header.background-blue-4.fixed .links a {
+  background: transparent;
+  color: var(--color-gray-7);
+}
+/*END OF LANDING RULES*/
+
+/* TEACHERS RULE!!! */
+.header.background-green.fixed {
+  background: transparent;
+}
+/*END OF TEACHERS RULE*/
+.header.fixed {
+  top: 0;
+  left: 0;
   position: absolute;
-}
-
-.fixed {
-  top: 26px;
-  left: 44px;
-  position: fixed;
 }
 
 .header .logo {
@@ -29,22 +47,52 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 800;
-  color: var(--color-gray-7);
+  color: var(--color-gray-0);
+  white-space: nowrap;
+  height: 1.375rem;
+}
+.header .links a.active {
+  border-bottom: 3px solid var(--color-gray-0);
 }
 .header .links a + a {
   margin-left: 1rem;
 }
+.header .links .plus-sign {
+  position: relative;
+  margin-left: 1.5rem;
+}
+.header .links .plus-sign::before {
+  content: '+';
+  position: absolute;
+  left: -0.75rem;
+}
+
 
 @media screen and (max-width: 767px) {
   .header {
     position: unset;
-    margin: 18px 28px;
-    width: calc(100% - 56px);
+    padding: 18px 28px;
+    margin: 0;
+    width: 100%;
+    height: unset;
   }
-  .header .logo {
+  .header.fixed {
+    position: unset;
+  }
+  /* LANDING RULE!!! */
+  .header.background-blue-4.fixed {
+    background: var(--color-blue-4);
+  }
+  /*END OF LANDING RULE*/
+  /* TEACHERS RULE!!! */
+  .header.background-green.fixed {
+    background: var(--color-green-0);
+  }
+  /*END OF TEACHERS RULE*/
+  .header a {
     height: 2rem;
   }
-  /* FIXME: need a hamburger menu*/
+  .header .logo,
   .header .links {
     display: none;
   }

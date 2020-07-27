@@ -22,7 +22,7 @@ export default function Card(props) {
         </div>
         <Link className={style["link"]} to={`/courses/${props.details.link}`}>
           <div className={style["more-details"]}>
-            <span className={`${style["dot"]}`}>•••</span>
+            <span className={`${style[props.details.dotColor]}`}>•••</span>
           </div>
         </Link>
       </div>

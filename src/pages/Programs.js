@@ -26,11 +26,11 @@ const ProgramCardsThirdRow = function() {
 
 function Programs() {
   return (
-    <div>
+    <div className={style["programs-wrapper"]}>
       <div className={style["header"]}></div>
-      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+      <label className={`${style["header-text"]} size-90 extra-bold`}>
         Programjaink
-      </h1>
+      </label>
       <div className={style["wrapper"]}>
         <div className={style["cards-wrapper"]}>
           <ProgramCardsFirstRow />
@@ -41,6 +41,12 @@ function Programs() {
         <div className={style["cards-wrapper"]}>
           <ProgramCardsThirdRow />
         </div>
+      </div>
+      <div className={`${style["page-footer"]}`}>
+        <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+          Évközben is tudsz jelentkezni
+        </h4>
+        <button className={style["footer-button"]}>Jelentkezem</button>
       </div>
     </div>
   );

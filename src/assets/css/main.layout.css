@@ -25,4 +25,8 @@ body {
 #root,
 .App {
   height: 100%;
+  overflow-x: hidden;
+}
+.App {
+  position: relative;
 }

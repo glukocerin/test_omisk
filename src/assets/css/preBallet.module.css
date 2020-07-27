@@ -1,9 +1,8 @@
 .header {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 25rem;
-  background-color: var(--color-blue-1);
+  background-color: var(--color-pink-0);
+  text-align: center;
 }
 
 .header-text {
@@ -16,7 +15,7 @@
 }
 
 .wrapper {
-  background-color: var(--color-blue-1);
+  background-color: var(--color-pink-0);
 }
 
 .title {
@@ -44,13 +43,17 @@
   margin-bottom: 1.0625rem;
   border: none;
   background-color: #fff;
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   cursor: pointer;
   font-weight: bold;
 }
 
 .info .info-item {
   display: flex;
+}
+
+.info ul {
+  position: relative;
 }
 
 .info-item-prop {
@@ -69,6 +72,7 @@
 }
 
 .places ul {
+  position: relative;
   width: 13rem;
   margin-left: 5rem;
 }
@@ -80,6 +84,7 @@
 }
 
 .people-for ul {
+  position: relative;
   max-width: 15rem;
   margin-left: 6.25rem;
 }
@@ -108,7 +113,7 @@
 
 .info ul li::before {
   content: "•";
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   display: inline-block;
   width: 1em;
   margin-top: 9px;
@@ -142,7 +147,7 @@
 
 .people-for ul li::before {
   content: "•";
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   display: inline-block;
   width: 1em;
   margin-top: -3px;
@@ -158,7 +163,7 @@
 
 .places ul li::before {
   content: "•";
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   display: inline-block;
   width: 1em;
   margin-top: -3px;
@@ -193,6 +198,30 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 8.75rem;
+    background-color: var(--color-pink-0);
+  }
+
+  .header-text {
+    padding-top: 1.875rem;
+    width: 100%;
+    text-align: center;
+    color: var(--color-gray-0);
+    z-index: 123;
+  }
+
+  .header-text {
+    margin-bottom: 1rem;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .info .info-item {
     display: flex;
   }
@@ -249,7 +278,7 @@
 
   .info ul li::before {
     content: "•";
-    color: var(--color-blue-1);
+    color: var(--color-pink-0);
     display: inline-block;
     width: 1em;
     margin-top: 9px;
@@ -274,7 +303,7 @@
 
   .people-for ul li::before {
     content: "•";
-    color: var(--color-blue-1);
+    color: var(--color-pink-0);
     display: inline-block;
     width: 1em;
     margin-top: -3px;
@@ -290,7 +319,7 @@
 
   .places ul li::before {
     content: "•";
-    color: var(--color-blue-1);
+    color: var(--color-pink-0);
     display: inline-block;
     width: 1em;
     margin-top: -3px;
@@ -313,8 +342,8 @@
 .text {
   width: 50%;
   margin-top: 10%;
-  padding-right: 8%;
-  padding-left: 18%;
+  padding-right: 10%;
+  padding-left: 16%;
 }
 
 .reverse {
@@ -322,8 +351,8 @@
 }
 
 .reverse .text {
-  padding-right: 18%;
-  padding-left: 8%;
+  padding-right: 16%;
+  padding-left: 10%;
 }
 
 .text p {
@@ -335,7 +364,7 @@
 }
 
 .text h4 {
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   margin-top: 2.0625rem;
 }
 
@@ -382,7 +411,7 @@
   }
 
   .text h4 {
-    color: var(--color-blue-1);
+    color: var(--color-pink-0);
     margin-top: 2.0625rem;
   }
 

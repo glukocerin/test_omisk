@@ -8,9 +8,11 @@ export default function Courses(props) {
     <div>
       <div className={style["header-mobile"]}></div>
       <div className={style["header"]}>
-        <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-          Művészi Torna
-        </h1>
+        <div>
+          <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+            Művészi Torna
+          </h1>
+        </div>
         <div className={`${style["button-wrapper"]}`}>
           <button className={style["button"]}>Jelentkezem</button>
         </div>
@@ -148,8 +150,8 @@ export default function Courses(props) {
         </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <p className="size-14 thin">
+            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <p className="size-20 thin">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -160,13 +162,13 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+            <img src={require(`../assets/img/muveszi_torna_01.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <p className="size-14 thin">
+            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <p className="size-20 thin">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -177,13 +179,13 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+            <img src={require(`../assets/img/muveszi_torna_02.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <p className="size-14 thin">
+            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <p className="size-20 thin">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -194,7 +196,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
+            <img src={require(`../assets/img/muveszi_torna_03.jpg`)} alt="" />
           </div>
         </div>
       </div>

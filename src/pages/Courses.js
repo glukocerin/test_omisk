@@ -15,11 +15,11 @@ const CourseCards = function() {
 
 export default function Courses() {
   return (
-    <div>
+    <div className={style["courses-wrapper"]}>
       <div className={style["header"]}></div>
-      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
+      <label className={`${style["header-text"]} size-90 extra-bold`}>
         Kurzusaink
-      </h1>
+      </label>
       <div className={style.courses}>
         <CourseCards className={style["cards"]} />
       </div>
