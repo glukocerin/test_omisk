@@ -389,6 +389,37 @@ const pagesConfig = {
         ]
       }
     ]
+  },
+  actuals: {
+    cards: [
+      {
+        picture: "actual-one.png",
+        picture_title: "Felhívás",
+        date: "2020. 12. 03.",
+        title: "Járvány helyzet",
+        text: "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
+        details_header: "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
+        details: "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába."
+      },
+      {
+        picture: "actual-two.png",
+        picture_title: "Program",
+        date: "2020. 12. 03.",
+        title: "Nyári tábor",
+        text: "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
+        details_header: "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
+        details: "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába."
+      },
+      {
+        picture: "actual-three.png",
+        picture_title: "Program",
+        date: "2020. 12. 03.",
+        title: "Járvány helyzet",
+        text: "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
+        details_header: "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
+        details: "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába."
+      },
+    ]
   }
 };
 

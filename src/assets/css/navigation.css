@@ -15,6 +15,9 @@
 .header.background-blue-4 {
   background: var(--color-blue-4);
 }
+.header.background-yellow {
+  background: var(--color-yellow-2);
+}
 /* LANDING RULES!!! */
 .header.background-blue-4.fixed {
   background: transparent;
