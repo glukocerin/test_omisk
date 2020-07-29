@@ -5,6 +5,7 @@
   position: relative;
   background: var(--color-gray-0);
   align-items: center;
+  padding: 0 20rem;
 }
 .teacher .teacher-header {
   position: absolute;
@@ -97,16 +98,26 @@
 .teacher .column-right .list .list-item:last-child {
   padding-bottom: 2.75rem;
 }
+.teacher .color-box {
+  background: var(--color-green-0);
+  opacity: 0.32;
+  width: 100%;
+  display: flex;
+  height: 30rem;
+}
 
 @media screen and (max-width: 767px) {
+  .teacher {
+    padding: unset;
+  }
   .teacher .teacher-header {
-    height: 17rem;
+    height: 13rem;
   }
   .teacher .state-location {
     display: none;
   }
   .teacher .title {
-    margin-top: 6.25rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
   .teacher .profile-picture {
@@ -141,6 +152,9 @@
   }
   .teacher .column-left .name,
   .teacher .column-left .desc {
+    display: none;
+  }
+  .teacher .color-box {
     display: none;
   }
 }

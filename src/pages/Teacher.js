@@ -37,6 +37,7 @@ export default function Teacher() {
           </ul>
         </div>
       </div>
+      <div className="color-box"></div>
     </div>
   );
 }
