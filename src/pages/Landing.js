@@ -15,6 +15,7 @@ import { ReactComponent as FacebookTransparent } from "../assets/img/icons/faceb
 import { ReactComponent as InstagramTransparent } from "../assets/img/icons/instagram_transparent.svg";
 import { ReactComponent as YoutubeTransparent } from "../assets/img/icons/youtube_transparent.svg";
 import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
+import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.svg";
 
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
@@ -211,27 +212,27 @@ export default function Landing() {
                 <div className="content-block">
                     <label className="title extra-bold size-54">Milyen óráink vannak?</label>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Művészi torna</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Mozdualtművészet</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Modern tánc</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Jazz tánc</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Klasszikus balett</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Pre balett</span>
                    </div>
                 </div>
@@ -259,27 +260,27 @@ export default function Landing() {
                 <div className="content-block">
                     <label className="title extra-bold size-54">Mit csinálunk az órák mellett?</label>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Évzáró előadások</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Országos versenyek</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Nyilvános órák</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Omisk gála</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Mozdulatműhely</span>
                    </div>
                    <div className="list-item">
-                       <span className="arrow size-36 extra-bold">🡢</span>
+                       <ArrowRight className="arrow"/>
                        <span className="text size-36 extra-bold">Nyári táborok</span>
                    </div>
                 </div>
