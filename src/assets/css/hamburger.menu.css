@@ -101,13 +101,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-gray-0);
-    border-radius: 50%;
     position: relative;
   }
-  .hamburger-menu.toggled .menu-list .sm-icons .icon svg .a {
-    stroke: var(--color-blue-4);
-    stroke-width: 2px;
+  .hamburger-menu.toggled .menu-list .sm-icons .icon .cls-2 {
+    fill: var(--color-blue-4);
   }
   .hamburger-menu.toggled .menu-list .sm-icons .icon + .icon {
     margin-left: 0.75rem;

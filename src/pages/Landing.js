@@ -9,9 +9,12 @@ import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
 import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
 import balett from '../assets/img/landing_mobile_extra.png';
 import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
-import { ReactComponent as Facebook } from "../assets/img/facebook.svg";
-import { ReactComponent as Instagram } from "../assets/img/insta.svg";
-import { ReactComponent as Youtube } from "../assets/img/youtube.svg";
+import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
+import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
+import { ReactComponent as FacebookTransparent } from "../assets/img/icons/facebook_transparent.svg";
+import { ReactComponent as InstagramTransparent } from "../assets/img/icons/instagram_transparent.svg";
+import { ReactComponent as YoutubeTransparent } from "../assets/img/icons/youtube_transparent.svg";
 
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
@@ -369,9 +372,9 @@ export default function Landing() {
                 </div>
             </div>
             <div className="social-media-bar">
-                <Facebook className="icon" />
-                <Instagram className="icon" />
-                <Youtube className="icon" />
+                <FacebookTransparent className="icon" />
+                <InstagramTransparent className="icon" />
+                <YoutubeTransparent className="icon" />
             </div>
         </div>
     )
