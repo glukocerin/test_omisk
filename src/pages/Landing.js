@@ -7,7 +7,6 @@ import '../assets/css/landing.css';
 import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
 import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
 import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
-import balett from '../assets/img/landing_mobile_extra.png';
 import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
 import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
@@ -15,6 +14,7 @@ import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 import { ReactComponent as FacebookTransparent } from "../assets/img/icons/facebook_transparent.svg";
 import { ReactComponent as InstagramTransparent } from "../assets/img/icons/instagram_transparent.svg";
 import { ReactComponent as YoutubeTransparent } from "../assets/img/icons/youtube_transparent.svg";
+import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
 
 export default function Landing() {
     const [activeDot, setActiveDot] = useState(1),
@@ -39,7 +39,7 @@ export default function Landing() {
                 <div className="content-block">
                     <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
                     <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
-                    <label className="text extra-bold size-54">»</label>
+                    <DoubleArrowDown className="double-arrow-down" />
                 </div>
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
@@ -322,7 +322,6 @@ export default function Landing() {
                 <div onClick={() => setActiveDot(8)} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
             </div>
             <div className="mobile-footer">
-                <img className="balett" src={balett} alt=""></img>
                 <div className="content-block">
                     <div className="content-header">
                         <Logo className="logo"/>
