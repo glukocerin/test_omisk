@@ -16,6 +16,8 @@ import Teacher from "./pages/Teacher";
 import Actuals from "./pages/Actuals";
 import Actual from "./pages/Actual";
 
+import Operation from "./pages/Operation";
+
 // courses
 import Eurhythmics from "./pages/Eurhythmics";
 import Callisthenics from "./pages/Callisthenics";
@@ -57,6 +59,10 @@ function App() {
         <Route path="/actual">
           <Navigation BackgroundColor="yellow"/>
           <Actual />
+        </Route>
+        <Route path="/operation">
+          <Navigation BackgroundColor="green"/>
+          <Operation />
         </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="blue-1"/>
