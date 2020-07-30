@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
-  padding: 0 20rem;
 }
 
 .actuals .actual-cards a {
@@ -46,6 +45,7 @@
   background: var(--color-gray-1);
   height: 30.3125rem;
   margin-bottom: 7.5rem;
+  max-width: 80rem;
 }
 
 .actuals .actual-cards .card * {
