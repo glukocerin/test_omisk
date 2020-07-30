@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../assets/css/hamburger.menu.css";
-import { ReactComponent as Logo } from "../assets/img/logo.svg";
-import { ReactComponent as Facebook } from "../assets/img/facebook.svg";
-import { ReactComponent as Instagram } from "../assets/img/insta.svg";
-import { ReactComponent as Youtube } from "../assets/img/youtube.svg";
+import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
+import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
+import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 
 export default function HamburgerMenu() {
   const [toggled, toggle] = useState(false),

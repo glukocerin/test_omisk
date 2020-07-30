@@ -149,7 +149,7 @@ const pagesConfig = {
   teachers: {
     cards: [
       {
-        picture: "julia.png",
+        picture: "pers_julia.jpg",
         name: "Pers Júlia",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -167,7 +167,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "katalin.png",
+        picture: "benis_katalin.jpg",
         name: "Benis Katalin",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -185,7 +185,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "krisztina.png",
+        picture: "mady_krisztina.jpg",
         name: "Mády Krisztina",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -203,7 +203,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "edit.png",
+        picture: "kalocsai_edit.jpg",
         name: "Kalocsai Edit",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -221,7 +221,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "bea.png",
+        picture: "kovacs_bea.jpg",
         name: "Kovács Bea",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -239,7 +239,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "jenny.png",
+        picture: "empty.jpg",
         name: "P. Ács Vali",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -257,7 +257,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "barbara.png",
+        picture: "csongei_barbi.jpg",
         name: "Csöngei Barbara",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -275,7 +275,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "eszter.png",
+        picture: "solti_eszter.jpg",
         name: "Solti Eszter",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -293,7 +293,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "lilla.png",
+        picture: "lakatos_lilla.jpg",
         name: "Rácz-Lakatos Lilla",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -311,25 +311,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "lilla.png",
-        name: "Bozsókiné Taylor Jennifer",
-        desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
-        details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
-        ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
-        ]
-      },
-      {
-        picture: "reka.png",
+        picture: "rozsa_reka.jpg",
         name: "Rózsa Réka",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -347,7 +329,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "reka.png",
+        picture: "taylor_eszti.jpg",
         name: "Taylor Esther",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -365,7 +347,7 @@ const pagesConfig = {
         ]
       },
       {
-        picture: "reka.png",
+        picture: "david_luca.jpg",
         name: "Dávid Luca",
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
@@ -381,7 +363,25 @@ const pagesConfig = {
           "2006 Berczik Sára Díj",
           "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
-      }
+      },
+      {
+        picture: "taylor_jennifer.jpg",
+        name: "Bozsókiné Taylor Jennifer",
+        desc:
+          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+        details:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        education: [
+          "Testnevelési Főiskola Edzői szak 1986",
+          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+        ],
+        achievements: [
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
+          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
+          "2006 Berczik Sára Díj",
+          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        ]
+      },
     ]
   },
   actuals: {
