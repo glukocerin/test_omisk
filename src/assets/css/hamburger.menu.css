@@ -14,6 +14,9 @@
     visibility: visible;
     height: 2rem;
   }
+  .header .hamburger-menu .logo .cls-1 {
+    fill: var(--color-gray-0);
+  }
   .hamburger-menu .menu-header {
     display: flex;
     align-items: center;

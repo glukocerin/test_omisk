@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +16,8 @@ import Teacher from "./pages/Teacher";
 import Actuals from "./pages/Actuals";
 import Actual from "./pages/Actual";
 
+import Operation from "./pages/Operation";
+
 // courses
 import Eurhythmics from "./pages/Eurhythmics";
 import Callisthenics from "./pages/Callisthenics";
@@ -32,6 +34,8 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 
 function App() {
+  const [activeDot, handleDotChange] = useState(1);
+
   return (
     <div className="App">
       <Switch>
@@ -55,6 +59,10 @@ function App() {
         <Route path="/actual">
           <Navigation BackgroundColor="yellow"/>
           <Actual />
+        </Route>
+        <Route path="/operation">
+          <Navigation BackgroundColor="green"/>
+          <Operation />
         </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="blue-1"/>
@@ -95,8 +103,8 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation BackgroundColor="blue-4" isHeaderFixed="true"/>
-          <Landing />
+          <Navigation BackgroundColor="blue-4" isHeaderFixed="true" activeDot={activeDot}/>
+          <Landing dotChange={handleDotChange}/>
         </Route>
       </Switch>
     </div>
