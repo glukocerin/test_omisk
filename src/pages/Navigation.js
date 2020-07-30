@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import HamburgerMenu from "../components/HamburgerMenu";
 
 import "../assets/css/navigation.css";
-import { ReactComponent as Logo } from "../assets/img/logo.svg";
+import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
 
 export default function Navigation(props) {
   const location = useLocation().pathname;

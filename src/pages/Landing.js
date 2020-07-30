@@ -8,7 +8,7 @@ import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
 import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
 import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
 import balett from '../assets/img/landing_mobile_extra.png';
-import { ReactComponent as Logo } from "../assets/img/logo.svg";
+import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
 import { ReactComponent as Facebook } from "../assets/img/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/img/insta.svg";
 import { ReactComponent as Youtube } from "../assets/img/youtube.svg";
