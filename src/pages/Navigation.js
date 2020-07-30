@@ -11,9 +11,9 @@ export default function Navigation(props) {
   const location = useLocation().pathname;
 
   return (
-    <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"}`}>
+    <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"} ${props.activeDot === 1 && 'big'}`}>
       <Link to="/">
-        <Logo className="logo" />
+        <Logo className={`logo ${location === '/' && 'inverse'}`} />
       </Link>
       <div className="links">
         <Link className={`plus-sign ${ location === "/courses" && "active" }`} to="/courses">Kurzusaink</Link>

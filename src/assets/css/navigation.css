@@ -40,7 +40,17 @@
 }
 
 .header .logo {
-  height: 44px;
+  height: 2rem;
+}
+.header .logo .cls-1 {
+  fill: var(--color-gray-0);
+}
+.header .logo.inverse .cls-1 {
+  fill: var(--color-gray-7);
+  stroke: var(--color-gray-7);
+}
+.header.big .logo {
+  height: 3.5rem;
 }
 
 .header .links {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,6 +32,8 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 
 function App() {
+  const [activeDot, handleDotChange] = useState(1);
+
   return (
     <div className="App">
       <Switch>
@@ -95,8 +97,8 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/">
-          <Navigation BackgroundColor="blue-4" isHeaderFixed="true"/>
-          <Landing />
+          <Navigation BackgroundColor="blue-4" isHeaderFixed="true" activeDot={activeDot}/>
+          <Landing dotChange={handleDotChange}/>
         </Route>
       </Switch>
     </div>

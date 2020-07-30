@@ -20,7 +20,7 @@ import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.sv
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
 
-export default function Landing() {
+export default function Landing({ dotChange }) {
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
@@ -32,13 +32,15 @@ export default function Landing() {
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
+                    dotChange(activeDot + 1);
                 } else if (e.deltaY < 0 && activeDot > 1) {
                     setActiveDot(activeDot - 1);
+                    dotChange(activeDot - 1);
                 }
             };
 
     return(
-        <div className="landing" onWheel = {(e) => scroller(e)}>
+        <div className="landing" onWheel = {(e) => scroller(e) }>
             <div className={`left one ${ activeDot === 1 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
@@ -330,16 +332,14 @@ export default function Landing() {
             </div>
             <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
             <div className="dots">
-                <div onClick={() => setActiveDot(1)} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(2)} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(3)} className={`dot ${ activeDot === 3 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(4)} className={`dot ${ activeDot === 4 ? "active":""}`}>
-                 
-                </div>
-                <div onClick={() => setActiveDot(5)} className={`dot ${ activeDot === 5 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(6)} className={`dot ${ activeDot === 6 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(7)} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
-                <div onClick={() => setActiveDot(8)} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(1); dotChange(1); }} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(2); dotChange(2); }} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(3); dotChange(3); }} className={`dot ${ activeDot === 3 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(4); dotChange(4); }} className={`dot ${ activeDot === 4 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(5); dotChange(5); }} className={`dot ${ activeDot === 5 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(6); dotChange(6); }} className={`dot ${ activeDot === 6 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(7); dotChange(7); }} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
+                <div onClick={() => { setActiveDot(8); dotChange(8); }} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
             </div>
             <div className="mobile-footer">
                 <div className="content-block">
