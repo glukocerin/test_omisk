@@ -3,6 +3,7 @@ import '../assets/css/operation.css';
 
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
+import { ReactComponent as DownloadIcon } from "../assets/img/icons/arrow_down.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
@@ -43,6 +44,33 @@ export default function Operations() {
         <div className="drop-down-list">
             <OperationElements menuItem={ActiveMenuItem} setActive={setActiveMenuItem} />
         </div>
+        <label className="downloads size-54 bold">Letöltések</label>
+        <label className="download-title size-24 extra-bold">Hasznos dokumentumok</label>
+        <label className="label-with-icon">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Általános tájékoztató a jelentkezés menetéről és az Iskola rendjéről</label>
+        </label>
+        <label className="label-with-icon">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Tanév rendje</label>
+        </label>
+        <label className="label-with-icon margin-bottom">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Jelentkezéssel kapcsolat hasznos információk</label>
+        </label>
+        <label className="download-title size-24 extra-bold">Jelentkezéshez szükséges dokumentumok</label>
+        <label className="label-with-icon">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Jelentkezési lap a beiratkozáshoz</label>
+        </label>
+        <label className="label-with-icon">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Beleegyező nyilatkozat a beiratkozáshoz</label>
+        </label>
+        <label className="label-with-icon margin-bottom">
+          <DownloadIcon/>
+          <label className="download-text size-20 thin">Tájékoztató kezdő ovis növendékeink szüleinek</label>
+        </label>
       </div>
     </div>
   );

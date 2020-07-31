@@ -107,18 +107,35 @@
 .operation .operation-content .drop-down-list .info .info-informations {
   max-height: 0;
   overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  display: none;
 }
 .operation .operation-content .drop-down-list .info.active .info-informations {
   display: block;
   max-height: 30rem;
   white-space: pre-wrap;
-  transition: max-height 0.3s ease-in-out;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  transition: max-height 0.3s linear;
 }
 .operation .operation-content .drop-down-list .info .info-informations.hidden {
   padding: 0;
+}
+.operation .operation-content .downloads {
+  margin: 5rem 0;
+  text-align: center;
+}
+.operation .operation-content .download-title {
+  margin-bottom: 3.125rem;
+}
+.operation .operation-content .label-with-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.operation .operation-content .label-with-icon.margin-bottom {
+  margin-bottom: 7rem;
+}
+.operation .operation-content .label-with-icon .download-text {
+  margin-left: 1.75rem;
 }
 
 @media screen and (max-width: 767px) {
