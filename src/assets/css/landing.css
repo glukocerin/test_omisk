@@ -156,9 +156,9 @@
 .left.four .drop-down-list .place .plus-sign,
 .left.four .drop-down-list .place .minus-sign {
   position: absolute;
-  left: 1.25rem;
-  top: 0.825rem;
-  width: 2rem;
+  left: 1rem;
+  top: 0.375rem;
+  width: 1.5rem;
   height: 2rem;
   display: block;
 }
@@ -450,8 +450,8 @@
   }
   .left.four .drop-down-list .place .plus-sign,
   .left.four .drop-down-list .place .minus-sign {
-    left: 1.25rem;
-    top: 1rem;
+    left: 0.75rem;
+    top: 0.5rem;
   }
   .right.eight {
     order: 12;

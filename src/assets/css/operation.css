@@ -33,7 +33,7 @@
   z-index: 2;
   width: 100%;
   max-width: 80rem;
-  padding: 3.25rem;
+  padding: 3.25rem 4.25rem;
   background: var(--color-gray-0);
 }
 
@@ -44,15 +44,17 @@
   flex-direction: column;
 }
 .operation .operation-content .drop-down-list .info {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--color-gray-4);
-  padding-left: 3rem;
-  height: 3.75rem;
+  padding-left: 4.25rem;
   display: flex;
   justify-content: center;
   position: relative;
   cursor: pointer;
   user-select: none;
+}
+.operation .operation-content .drop-down-list .info.active {
+  height: unset;
 }
 .operation .operation-content .drop-down-list .info *{
   cursor: pointer;
@@ -61,7 +63,7 @@
 .operation .operation-content .drop-down-list .info .minus-sign {
   position: absolute;
   left: 1.25rem;
-  top: 1.5rem;
+  top: 1rem;
   width: 2.375rem;
   height: 2.375rem;
   display: block;
@@ -81,28 +83,53 @@
 .operation .operation-content .drop-down-list .info .minus-sign .cls-2 {
   stroke: var(--color-gray-7);
   fill: var(--color-gray-7);
-  stroke-width: 0.125rem;
 }
 .operation .operation-content .drop-down-list .info.primary .plus-sign .cls-1,
 .operation .operation-content .drop-down-list .info.primary .plus-sign .cls-1,
 .operation .operation-content .drop-down-list .info.primary .minus-sign * {
   stroke: var(--color-green-0);
 }
-.operation .operation-content .drop-down-list .info .info-label {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 .operation .operation-content .drop-down-list .info.primary .info-label {
   color: var(--color-green-0);
+}
+.operation .operation-content .drop-down-list .info.primary ~ .info:not(.primary) {
+  display: none;
+}
+.operation .operation-content .drop-down-list .info.active.primary ~ .info {
+  display: flex;
 }
 .operation .operation-content .drop-down-list .info .info-informations {
   max-height: 0;
   overflow: hidden;
 }
 .operation .operation-content .drop-down-list .info.active .info-informations {
+  display: block;
   max-height: 30rem;
-  transition: max-height 0.3s ease-in-out;
+  white-space: pre-wrap;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  transition: max-height 0.3s linear;
+}
+.operation .operation-content .drop-down-list .info .info-informations.hidden {
+  padding: 0;
+}
+.operation .operation-content .downloads {
+  margin: 5rem 0;
+  text-align: center;
+}
+.operation .operation-content .download-title {
+  margin-bottom: 3.125rem;
+}
+.operation .operation-content .label-with-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.operation .operation-content .label-with-icon.margin-bottom {
+  margin-bottom: 7rem;
+}
+.operation .operation-content .label-with-icon .download-text {
+  margin-left: 1.75rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -122,7 +149,48 @@
     grid-template-columns: unset;
     flex-direction: column;
     margin: 0;
-    padding: 0 0.625rem;
+    padding: 0 2rem;
     padding-bottom: 2.5rem;
+  }
+  .operation .operation-content .drop-down-list {
+    margin-top: 1rem;
+  }
+  .operation .operation-content .drop-down-list .info {
+    border: 0;
+    padding-left: 2rem;
+  }
+  .operation .operation-content .drop-down-list .info.primary {
+    text-transform: lowercase;
+  }
+  .operation .operation-content .drop-down-list .info .plus-sign,
+  .operation .operation-content .drop-down-list .info .minus-sign {
+    position: absolute;
+    left: 0rem;
+    top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+  }
+  .operation .operation-content .downloads {
+    margin: 2.25rem 0;
+    text-align: center;
+  }
+  .operation .operation-content .download-title {
+    margin-bottom: 1.75rem;
+  }
+  .operation .operation-content .download-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+  }
+  .operation .operation-content .label-with-icon {
+    margin-bottom: 1.125rem;
+  }
+  .operation .operation-content .label-with-icon.margin-bottom {
+    margin-bottom: 2rem;
+  }
+  .operation .operation-content .label-with-icon .download-text {
+    margin-left: 1.25rem;
   }
 }
