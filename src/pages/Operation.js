@@ -10,11 +10,22 @@ const { operations, ...rest } = pagesConfig;
 
 const OperationElements = function(props) {
   return operations.map((operation, index) => (
-    <div className={`info  ${ operation.role === 'primary' && 'primary' } ${ props.menuItem === index+1 && 'active' }`} onClick={() => props.setActive(index+1) } key={index}>
+    <div
+      className={`info  ${ operation.role === 'primary' && 'primary' } ${ (props.menuItem.child === index || operation.id === props.menuItem.parent) && 'active' }`}
+      onClick={() => 
+        props.setActive(
+          {
+            parent: props.menuItem.parent === operation.parentId && operation.role === 'primary' ? null: operation.parentId,
+            child: (props.menuItem.child === operation.id) || (props.menuItem.parent === operation.parentId && operation.role === 'primary') ? null: operation.id
+          }
+        )
+      }
+      key={index}
+    >
         <PlusSign className="plus-sign"/>
         <MinusSign className="minus-sign"/>
         <label className="info-label size-32 extra-bold">{operation.title}</label>
-        <div className="info-informations">
+        <div className={`info-informations ${!operation.description && 'hidden'}`}>
             {operation.description && operation.description}
         </div>
     </div>
@@ -22,7 +33,7 @@ const OperationElements = function(props) {
 };
 
 export default function Operations() {
-  const [ActiveMenuItem, setActiveMenuItem] = useState(null);
+  const [ActiveMenuItem, setActiveMenuItem] = useState({ parent: null, child: null });
 
   return (
     <div className="operation">
