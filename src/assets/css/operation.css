@@ -54,6 +54,9 @@
   cursor: pointer;
   user-select: none;
 }
+.operation .operation-content .drop-down-list .info.active {
+  height: unset;
+}
 .operation .operation-content .drop-down-list .info *{
   cursor: pointer;
 }
@@ -99,8 +102,12 @@
 .operation .operation-content .drop-down-list .info .info-informations {
   max-height: 0;
   overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: none;
 }
 .operation .operation-content .drop-down-list .info.active .info-informations {
+  display: block;
   max-height: 30rem;
   transition: max-height 0.3s ease-in-out;
 }
