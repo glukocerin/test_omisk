@@ -13,7 +13,7 @@ export default function Navigation(props) {
   return (
     <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"} ${props.activeDot === 1 && 'big'}`}>
       <Link to="/">
-        <Logo className={`logo ${location === '/' && 'inverse'}`} />
+        <Logo className={`logo ${location === '/' && props.activeDot !== 1 && 'inverse'}`} />
       </Link>
       <div className="links">
         <Link className={`plus-sign ${ location === "/courses" && "active" }`} to="/courses">Kurzusaink</Link>

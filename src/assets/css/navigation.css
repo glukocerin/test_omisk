@@ -89,6 +89,9 @@
     width: 100%;
     height: unset;
   }
+  .header.big .logo {
+    height: 2rem;
+  }
   .header.fixed {
     position: unset;
   }
