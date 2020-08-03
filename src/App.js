@@ -18,6 +18,8 @@ import Actual from "./pages/Actual";
 
 import Operation from "./pages/Operation";
 
+import Enrollment from "./pages/Enrollment";
+
 // courses
 import Eurhythmics from "./pages/Eurhythmics";
 import Callisthenics from "./pages/Callisthenics";
@@ -64,33 +66,37 @@ function App() {
           <Navigation BackgroundColor="green"/>
           <Operation />
         </Route>
+        <Route path="/enrollment">
+          <Navigation BackgroundColor="blue-1"/>
+          <Enrollment />
+        </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="blue-1"/>
           <Eurhythmics />
           <Footer />
         </Route>
         <Route path="/courses/callisthenics">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Callisthenics />
           <Footer />
         </Route>
         <Route path="/courses/pre_ballet">
-          <Navigation />
+          <Navigation BackgroundColor="pink"/>
           <PreBallet />
           <Footer />
         </Route>
         <Route path="/courses/ballet">
-          <Navigation />
+          <Navigation BackgroundColor="pink"/>
           <Ballet />
           <Footer />
         </Route>
         <Route path="/courses/jazz">
-          <Navigation />
+          <Navigation BackgroundColor="green"/>
           <Jazz />
           <Footer />
         </Route>
         <Route path="/courses/modern">
-          <Navigation />
+          <Navigation BackgroundColor="green"/>
           <Modern />
           <Footer />
         </Route>

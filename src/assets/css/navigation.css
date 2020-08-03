@@ -41,9 +41,11 @@
 
 .header .logo {
   height: 2rem;
+  transition: height 0.3s linear;
 }
 .header .logo .cls-1 {
   fill: var(--color-gray-0);
+  transition: fill 0.3s linear;
 }
 .header .logo.inverse .cls-1 {
   fill: var(--color-gray-7);
@@ -88,6 +90,9 @@
     margin: 0;
     width: 100%;
     height: unset;
+  }
+  .header.big .logo {
+    height: 2rem;
   }
   .header.fixed {
     position: unset;
