@@ -7,7 +7,6 @@ import '../assets/css/landing.css';
 import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
 import { ReactComponent as MusicalNote } from "../assets/img/musical-note.svg";
 import { ReactComponent as PaintBrush } from "../assets/img/paint-brush.svg";
-import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
 import { ReactComponent as LogoWithTitle } from "../assets/img/icons/logo_w_title.svg";
 import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
@@ -20,15 +19,42 @@ import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.sv
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
 
+import pagesConfig from "../assets/pagesConfig";
+
+const { landing, ...rest } = pagesConfig;
+
+const Dots = function({ setActiveDot, dotChange, activeDot }) {
+    const dots = [];
+
+    for(let i = 1; i < 9; i++){
+        dots.push(<div key={i} onClick={() => { setActiveDot(i); dotChange(i); }} className={`dot ${ activeDot === i ? "active":""}`}></div>);
+    }
+
+    return dots;
+}
+
+const CoursesList = function() {
+    return landing['list_courses'].list.map((item, index) => (
+        <Link to={`/courses/${item.link}`} className="list-item" key={index}>
+            <ArrowRight className="arrow"/>
+            <span className="text size-36 extra-bold">{item.text}</span>
+        </Link>
+  ));
+}
+
+const WhatWeDo = function() {
+    return landing['list_what_we_do'].list.map((item, index) => (
+        <div className="list-item" key={index}>
+            <ArrowRight className="arrow"/>
+            <span className="text size-36 extra-bold">{item}</span>
+        </div>
+  ));
+}
+
 export default function Landing({ dotChange }) {
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
-            youtubeLinks = [
-                'https://www.youtube-nocookie.com/embed/63BHFKUuZZg',
-                'https://www.youtube-nocookie.com/embed/6vE9RN63bms',
-                'https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ',
-            ],
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
@@ -231,31 +257,8 @@ export default function Landing({ dotChange }) {
             </div>            
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-54">Milyen óráink vannak?</label>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Művészi torna</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Mozdualtművészet</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Modern tánc</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Jazz tánc</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Klasszikus balett</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Pre balett</span>
-                   </div>
+                    <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
+                    <CoursesList />
                 </div>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
@@ -269,41 +272,18 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
-                    <iframe title="video" width="416" height="234" src={youtubeLinks[activeLink]} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="video" width="416" height="234" src={landing['youtube_links'][activeLink].link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <div className="link-block">
-                        <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>Művészi torna</label>
-                        <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>Mozdulatművészet</label>
-                        <label onClick={() => setActiveLink(2)} className={`link size-15 ${ activeLink === 2 && 'active' }`}>Modern tánc</label>
+                        <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>{landing['youtube_links'][0].text}</label>
+                        <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>{landing['youtube_links'][1].text}</label>
+                        <label onClick={() => setActiveLink(2)} className={`link size-15 ${ activeLink === 2 && 'active' }`}>{landing['youtube_links'][2].text}</label>
                     </div>
                 </div>
             </div>
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-54">Mit csinálunk az órák mellett?</label>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Évzáró előadások</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Országos versenyek</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Nyilvános órák</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Omisk gála</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Mozdulatműhely</span>
-                   </div>
-                   <div className="list-item">
-                       <ArrowRight className="arrow"/>
-                       <span className="text size-36 extra-bold">Nyári táborok</span>
-                   </div>
+                    <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
+                    <WhatWeDo />
                 </div>
             </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" }`}></div>
@@ -332,14 +312,7 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
             <div className="dots">
-                <div onClick={() => { setActiveDot(1); dotChange(1); }} className={`dot ${ activeDot === 1 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(2); dotChange(2); }} className={`dot ${ activeDot === 2 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(3); dotChange(3); }} className={`dot ${ activeDot === 3 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(4); dotChange(4); }} className={`dot ${ activeDot === 4 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(5); dotChange(5); }} className={`dot ${ activeDot === 5 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(6); dotChange(6); }} className={`dot ${ activeDot === 6 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(7); dotChange(7); }} className={`dot ${ activeDot === 7 ? "active":""}`}></div>
-                <div onClick={() => { setActiveDot(8); dotChange(8); }} className={`dot ${ activeDot === 8 ? "active":""}`}></div>
+                <Dots setActiveDot={setActiveDot} dotChange={dotChange} activeDot={activeDot}/>
             </div>
             <div className="mobile-footer">
                 <div className="content-block">

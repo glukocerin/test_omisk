@@ -1,6 +1,61 @@
 const pagesConfig = {
   // ide irhatod a szaros configodat
-  landing: {},
+  landing: {
+    youtube_links: [
+      { 
+        text: 'Művészi torna',
+        link:'https://www.youtube-nocookie.com/embed/63BHFKUuZZg',
+      },
+      { 
+        text: 'Mozdulatművészet',
+        link:'https://www.youtube-nocookie.com/embed/6vE9RN63bms',
+      },
+      { 
+        text: 'Modern tánc',
+        link:'https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ',
+      },
+    ],
+    list_courses: {
+      title: 'Milyen óráink vannak?',
+      list: [
+        {
+          text: 'Művészi torna',
+          link: 'eurhythmics'
+        },
+        {
+          text: 'Mozdualtművészet',
+          link: 'callisthenics'
+        },
+        {
+          text: 'Modern tánc',
+          link: 'modern'
+        },
+        {
+          text: 'Jazz tánc',
+          link: 'jazz'
+        },
+        {
+          text: 'Klasszikus balett',
+          link: 'ballet'
+        },
+        {
+          text: 'Pre balett',
+          link: 'pre_ballet'
+        },
+      ]
+    },
+    list_what_we_do: {
+      title: 'Mit csinálunk az órák mellett?',
+      list: [
+        'Évzáró előadások',
+        'Országos versenyek',
+        'Nyilvános órák',
+        'Omisk gála',
+        'Mozdulatműhely',
+        'Nyári táborok',
+      ]
+    }
+  },
   courses: {
     cards: [
       {
