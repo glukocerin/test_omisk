@@ -70,27 +70,27 @@ function App() {
           <Footer />
         </Route>
         <Route path="/courses/callisthenics">
-          <Navigation />
+          <Navigation BackgroundColor="blue-1"/>
           <Callisthenics />
           <Footer />
         </Route>
         <Route path="/courses/pre_ballet">
-          <Navigation />
+          <Navigation BackgroundColor="pink"/>
           <PreBallet />
           <Footer />
         </Route>
         <Route path="/courses/ballet">
-          <Navigation />
+          <Navigation BackgroundColor="pink"/>
           <Ballet />
           <Footer />
         </Route>
         <Route path="/courses/jazz">
-          <Navigation />
+          <Navigation BackgroundColor="green"/>
           <Jazz />
           <Footer />
         </Route>
         <Route path="/courses/modern">
-          <Navigation />
+          <Navigation BackgroundColor="green"/>
           <Modern />
           <Footer />
         </Route>
