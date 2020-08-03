@@ -543,7 +543,21 @@ const pagesConfig = {
       parentId: 8,
       description: 'A művészi torna órák tananyagát -25 éves tapasztalatunk alapján-úgy állítottuk össze, hogy a gyerekek figyelmét már 4 éves kortól lekösse. Így nem szükséges, hogy a szülők is részt vegyenek az órán, sőt a gyerekek figyelmének fenntartása eredményesebb, ha önállóan „dolgoznak”, ahogy majd az iskolában is kell. A gyerekeknek ez általában nem jelent problémát. Ha először néhányan szokatlannak is érzik, a tanárok könnyen át tudják segíteni őket ezen a kisebb kihíváson. Amennyiben feltétlenül szükséges természetesen átmenetileg a szülői segítségtől sem zárkózunk el, de ezt mindenképpen a tanárokkal kell egyeztetni. Segítséget jelent, ha az első óra előtt otthon megbeszélik, hogy ezen az órán minden kislány egyedül vesz részt, de az anyukák a folyosón várják őket. A gyerekek órai munkájának eredményét a szülők a félévi nyilvános órán illetve a színpadi évzáró előadáson tekinthetik meg.\n\nAz öltözet eleinte bármilyen alkalmas ruha lehet, ami a mozgást nem akadályozza, de később, amikor már beilleszkedtek a gyerekek, egyforma tornadreszt kapnak, amit a bemutatókon, előadáson is viselnek. Váltó cipő már az első alkalommal is szükséges, mert a teremben lévő szőnyegre utcai cipővel nem szabad rálépni. (először esetleg zokni is megteszi, olyan, ami nem csúszik).\n\nKérjük, hogy a gyerekek ne egyenek-igyanak közvetlenül az óra előtt! (A folyadékpótlás természetesen fontos, de a legkisebbeknél az óra közben erre nincs szükség).\n\nAz óráról a tanár engedélye nélkül a gyerekek nem jöhetnek ki, ez alól kivétel, ha mosdóba szeretnének menni. Hogy ez minél ritkábban forduljon elő, kérjük, hogy óra előtt mindig vigyék el a gyerekeket a mosdóba! Kérjük, hogy legyenek tekintettel arra, hogy ha mégis ki kell menni valakinek, akkor legyen ott valaki, aki segíteni tud, mert a tanár nem mehet ki az óráról.\n\nFontosnak tartjuk, hogy a szülők és a tanárok jó kapcsolatban legyenek, nyíltan tudjanak beszélni az esetleges problémáról. Ha bármi észrevétele, kérdése van, forduljon bizalommal a tanár nénihez. Az órák előtt és után nem biztos, hogy van erre elegendő idő, de annyi biztosan van, hogy megbeszéljenek egy alkalmas módot és időt a kapcsolattartásra.\n\nÓbuda Mozgásművészeti Iskola'
     }
-  ]
+  ],
+  enrollment: {
+    columns: [
+      {
+        title: 'Évelején szeretnék beiratkozni!',
+        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nSzeptember folyamán még elfogadunk jelentkezéseket azokba a csoportokba, ahol nem telt be a létszám. csoportba.\n\nLetölthető dokumentmok.Részletekről, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.',
+        button_text: 'Beiratkozás időpontok'
+      },
+      {
+        title: 'Évközben is tudok csatlakozni?',
+        text: 'Év közben a már elindult csoportokhoz lehet csatlakozni , ahol van hely. Természetesen a haladóbb csoportokba csak előképzettséggel rendelkezőket tudunk felvenni és a tanárok segítenek az újaknak felvenni a ritmust és beilleszkedni a csoportba.\n\nLetölthető dokumentmok. A szabad helyekről iskolatitkárunk, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.',
+        button_text: 'Érdeklődöm'
+      }
+    ]
+  }
 };
 
 export default pagesConfig;
