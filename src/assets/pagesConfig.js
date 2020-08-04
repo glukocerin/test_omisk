@@ -2,57 +2,57 @@ const pagesConfig = {
   // ide irhatod a szaros configodat
   landing: {
     youtube_links: [
-      { 
-        text: 'Művészi torna',
-        link:'https://www.youtube-nocookie.com/embed/63BHFKUuZZg',
+      {
+        text: "Művészi torna",
+        link: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg"
       },
-      { 
-        text: 'Mozdulatművészet',
-        link:'https://www.youtube-nocookie.com/embed/6vE9RN63bms',
+      {
+        text: "Mozdulatművészet",
+        link: "https://www.youtube-nocookie.com/embed/6vE9RN63bms"
       },
-      { 
-        text: 'Modern tánc',
-        link:'https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ',
-      },
+      {
+        text: "Modern tánc",
+        link: "https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ"
+      }
     ],
     list_courses: {
-      title: 'Milyen óráink vannak?',
+      title: "Milyen óráink vannak?",
       list: [
         {
-          text: 'Művészi torna',
-          link: 'eurhythmics'
+          text: "Művészi torna",
+          link: "eurhythmics"
         },
         {
-          text: 'Mozdualtművészet',
-          link: 'callisthenics'
+          text: "Mozdualtművészet",
+          link: "callisthenics"
         },
         {
-          text: 'Modern tánc',
-          link: 'modern'
+          text: "Modern tánc",
+          link: "modern"
         },
         {
-          text: 'Jazz tánc',
-          link: 'jazz'
+          text: "Jazz tánc",
+          link: "jazz"
         },
         {
-          text: 'Klasszikus balett',
-          link: 'ballet'
+          text: "Klasszikus balett",
+          link: "ballet"
         },
         {
-          text: 'Pre balett',
-          link: 'pre_ballet'
-        },
+          text: "Pre balett",
+          link: "pre_ballet"
+        }
       ]
     },
     list_what_we_do: {
-      title: 'Mit csinálunk az órák mellett?',
+      title: "Mit csinálunk az órák mellett?",
       list: [
-        'Évzáró előadások',
-        'Országos versenyek',
-        'Nyilvános órák',
-        'Omisk gála',
-        'Mozdulatműhely',
-        'Nyári táborok',
+        "Évzáró előadások",
+        "Országos versenyek",
+        "Nyilvános órák",
+        "Omisk gála",
+        "Mozdulatműhely",
+        "Nyári táborok"
       ]
     }
   },
@@ -199,6 +199,76 @@ const pagesConfig = {
           img: "nyari_tabor"
         }
       ]
+    },
+    programPage: {
+      speechDay: {
+        title: "Évzáró előadások",
+        headerImg: "",
+        detailsOne:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        detailsTwo:
+          "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "",
+        videoAlt: "Video részlet a 2019-es Évzáró",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
+      },
+      competitions: {
+        title: "Versenyek",
+        headerImg: "",
+        detailsOne:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        detailsTwo:
+          "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Verseny",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Verseny",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "",
+        videoAlt: "Video részlet a 2019-es Évzáró",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
+      }
     }
   },
   teachers: {
@@ -436,7 +506,7 @@ const pagesConfig = {
           "2006 Berczik Sára Díj",
           "2005 Réti Piroska Balett Pedagógusi Nívódíj"
         ]
-      },
+      }
     ]
   },
   actuals: {
@@ -482,79 +552,90 @@ const pagesConfig = {
   operations: [
     {
       id: 0,
-      title: 'Általános tájékoztató a jelentkezés menetéről és az Iskola rendjéről',
-      role: 'primary',
+      title:
+        "Általános tájékoztató a jelentkezés menetéről és az Iskola rendjéről",
+      role: "primary",
       parentId: 0,
-      description: '',
+      description: ""
     },
     {
       id: 1,
-      title: 'csatlakozás év közben',
-      role: 'secondary',
+      title: "csatlakozás év közben",
+      role: "secondary",
       parentId: 0,
-      description: 'Iskolánkba szeptemberben lehet beiratkozni, ekkor indulnak el a csoportok . A tanév folyamán is van mód a csatlakozásra a már meglévő csoportokhoz , ha van üres hely.\n\nAz órarendet mindig a beiratkozást követően állítjuk össze növendékeink igényeinek lehetőség szerinti figyelembe vételével. Akik már jártok, azok természetesen eredeti csoportjukkal együtt maradnak, de előfordul, hogy valami miatt az egész csoportnak meg kell változtatni az időpontját. Természetesen az órarend nagy mértékben nem változik egyik évről a másikra, de kis változásokozások mindig vannak.\n\nAz új jelentkezőket pedig életkoruk és tudásszintjük, valamint az időpontra vonatkozó igényük alapján osztjuk be a csoportokba.\n\nA beiratkozás alkalmával a jelentkezők bediktálhatják,hogy milyen időintervallumban tudnának jönni a lehetséges napokon és ennek alapján állítjuk össze a pontos órarendet. A végleges órarendet a beiratkozást követően hirdetjük ki (adatvédelmi okokból nem az interneten, hanem az intézmény bejáratánál kifüggesztett hirdetményben).'
+      description:
+        "Iskolánkba szeptemberben lehet beiratkozni, ekkor indulnak el a csoportok . A tanév folyamán is van mód a csatlakozásra a már meglévő csoportokhoz , ha van üres hely.\n\nAz órarendet mindig a beiratkozást követően állítjuk össze növendékeink igényeinek lehetőség szerinti figyelembe vételével. Akik már jártok, azok természetesen eredeti csoportjukkal együtt maradnak, de előfordul, hogy valami miatt az egész csoportnak meg kell változtatni az időpontját. Természetesen az órarend nagy mértékben nem változik egyik évről a másikra, de kis változásokozások mindig vannak.\n\nAz új jelentkezőket pedig életkoruk és tudásszintjük, valamint az időpontra vonatkozó igényük alapján osztjuk be a csoportokba.\n\nA beiratkozás alkalmával a jelentkezők bediktálhatják,hogy milyen időintervallumban tudnának jönni a lehetséges napokon és ennek alapján állítjuk össze a pontos órarendet. A végleges órarendet a beiratkozást követően hirdetjük ki (adatvédelmi okokból nem az interneten, hanem az intézmény bejáratánál kifüggesztett hirdetményben)."
     },
     {
       id: 2,
-      title: 'tandíjak, befizetés',
-      role: 'secondary',
+      title: "tandíjak, befizetés",
+      role: "secondary",
       parentId: 0,
-      description: 'A tandíjak összegét a kurzusok menüpontban találod az aktuális kurzusoknál. A tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk). Az év eleji befizetéskor másfél havi tandíjat kérünk befizetni, mivel a tanítás szeptember közepén kezdődik. Az év folyamán is, ha hivatalon ünnep vagy a téli szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat.'
+      description:
+        "A tandíjak összegét a kurzusok menüpontban találod az aktuális kurzusoknál. A tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk). Az év eleji befizetéskor másfél havi tandíjat kérünk befizetni, mivel a tanítás szeptember közepén kezdődik. Az év folyamán is, ha hivatalon ünnep vagy a téli szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat."
     },
     {
       id: 3,
-      title: 'engedmények',
-      role: 'secondary',
+      title: "engedmények",
+      role: "secondary",
       parentId: 0,
-      description: 'Testvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- FT/Hó/Fő'
+      description:
+        "Testvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- FT/Hó/Fő"
     },
     {
       id: 4,
-      title: 'hiányzás',
-      role: 'secondary',
+      title: "hiányzás",
+      role: "secondary",
       parentId: 0,
-      description: 'A tandíjból visszatérítést csak huzamosabb idejű és orvosilag igazolt mulasztás esetén tudunk adni. Ha a mulasztott órák száma meghaladja az havi óraszám felét, akkor csak fél havi díjat kell fizetni.'
+      description:
+        "A tandíjból visszatérítést csak huzamosabb idejű és orvosilag igazolt mulasztás esetén tudunk adni. Ha a mulasztott órák száma meghaladja az havi óraszám felét, akkor csak fél havi díjat kell fizetni."
     },
     {
       id: 5,
-      title: 'öltözet',
-      role: 'secondary',
+      title: "öltözet",
+      role: "secondary",
       parentId: 0,
-      description: 'A kurzusokon célszerű öltözet ( ruha és cipő ) a kurzusaink menüpontban található . A gyermek és iskolás csoportok a nyilvános órákon egyforma öltözetben szerepelnek növendékeink, amit itt a helyszínen lehet megvásárolni a készítőtől. Ára a fazontól függő (4000,- Ft-tól). Az évzáró előadáson általában ugyanez a fellépő, esetleg valami kiegészítővel.\n\nFontos, hogy új növendékeinknek nem kell a beiratkozás után rögtön vásárolni tornadresszt, az egyforma dresszeket is ezért csak október- november táján hozza a készítő, amikor már biztosan beilleszkedtek a csapatba.'
+      description:
+        "A kurzusokon célszerű öltözet ( ruha és cipő ) a kurzusaink menüpontban található . A gyermek és iskolás csoportok a nyilvános órákon egyforma öltözetben szerepelnek növendékeink, amit itt a helyszínen lehet megvásárolni a készítőtől. Ára a fazontól függő (4000,- Ft-tól). Az évzáró előadáson általában ugyanez a fellépő, esetleg valami kiegészítővel.\n\nFontos, hogy új növendékeinknek nem kell a beiratkozás után rögtön vásárolni tornadresszt, az egyforma dresszeket is ezért csak október- november táján hozza a készítő, amikor már biztosan beilleszkedtek a csapatba."
     },
     {
       id: 6,
-      title: 'egyéb kiadások',
-      role: 'secondary',
+      title: "egyéb kiadások",
+      role: "secondary",
       parentId: 0,
-      description: 'Egyéb kiadásra csak a színpadi évzáróval kapcsolatban kell számítani, amit az Óbudai Kulturális Központban és a MOM Kulturális Központban rendezünk.'
+      description:
+        "Egyéb kiadásra csak a színpadi évzáróval kapcsolatban kell számítani, amit az Óbudai Kulturális Központban és a MOM Kulturális Központban rendezünk."
     },
     {
       id: 7,
-      title: 'Tanév rendje, 2020',
-      role: 'primary',
+      title: "Tanév rendje, 2020",
+      role: "primary",
       parentId: 7,
-      description: 'Beiratkozási időpontok:\nAugusztus 26-szeptember 9.\n\nÓrarend kihirdetése:\nSzeptember 13.\n\nTanév kezdés:\nSzeptember 17.\n\nTéli szünet:\n2019. december 23-től 2020. január 2-ig\n\nTervezett évzáró:\nMOM Kulturális Központ\nJúnius 7.\nÓbudai Kulturális Központ\nJúnius 13.\njúnius 14.'
+      description:
+        "Beiratkozási időpontok:\nAugusztus 26-szeptember 9.\n\nÓrarend kihirdetése:\nSzeptember 13.\n\nTanév kezdés:\nSzeptember 17.\n\nTéli szünet:\n2019. december 23-től 2020. január 2-ig\n\nTervezett évzáró:\nMOM Kulturális Központ\nJúnius 7.\nÓbudai Kulturális Központ\nJúnius 13.\njúnius 14."
     },
     {
       id: 8,
-      title: 'Tájékoztató kezdő ovis növendékeink szüleinek',
-      role: 'primary',
+      title: "Tájékoztató kezdő ovis növendékeink szüleinek",
+      role: "primary",
       parentId: 8,
-      description: 'A művészi torna órák tananyagát -25 éves tapasztalatunk alapján-úgy állítottuk össze, hogy a gyerekek figyelmét már 4 éves kortól lekösse. Így nem szükséges, hogy a szülők is részt vegyenek az órán, sőt a gyerekek figyelmének fenntartása eredményesebb, ha önállóan „dolgoznak”, ahogy majd az iskolában is kell. A gyerekeknek ez általában nem jelent problémát. Ha először néhányan szokatlannak is érzik, a tanárok könnyen át tudják segíteni őket ezen a kisebb kihíváson. Amennyiben feltétlenül szükséges természetesen átmenetileg a szülői segítségtől sem zárkózunk el, de ezt mindenképpen a tanárokkal kell egyeztetni. Segítséget jelent, ha az első óra előtt otthon megbeszélik, hogy ezen az órán minden kislány egyedül vesz részt, de az anyukák a folyosón várják őket. A gyerekek órai munkájának eredményét a szülők a félévi nyilvános órán illetve a színpadi évzáró előadáson tekinthetik meg.\n\nAz öltözet eleinte bármilyen alkalmas ruha lehet, ami a mozgást nem akadályozza, de később, amikor már beilleszkedtek a gyerekek, egyforma tornadreszt kapnak, amit a bemutatókon, előadáson is viselnek. Váltó cipő már az első alkalommal is szükséges, mert a teremben lévő szőnyegre utcai cipővel nem szabad rálépni. (először esetleg zokni is megteszi, olyan, ami nem csúszik).\n\nKérjük, hogy a gyerekek ne egyenek-igyanak közvetlenül az óra előtt! (A folyadékpótlás természetesen fontos, de a legkisebbeknél az óra közben erre nincs szükség).\n\nAz óráról a tanár engedélye nélkül a gyerekek nem jöhetnek ki, ez alól kivétel, ha mosdóba szeretnének menni. Hogy ez minél ritkábban forduljon elő, kérjük, hogy óra előtt mindig vigyék el a gyerekeket a mosdóba! Kérjük, hogy legyenek tekintettel arra, hogy ha mégis ki kell menni valakinek, akkor legyen ott valaki, aki segíteni tud, mert a tanár nem mehet ki az óráról.\n\nFontosnak tartjuk, hogy a szülők és a tanárok jó kapcsolatban legyenek, nyíltan tudjanak beszélni az esetleges problémáról. Ha bármi észrevétele, kérdése van, forduljon bizalommal a tanár nénihez. Az órák előtt és után nem biztos, hogy van erre elegendő idő, de annyi biztosan van, hogy megbeszéljenek egy alkalmas módot és időt a kapcsolattartásra.\n\nÓbuda Mozgásművészeti Iskola'
+      description:
+        "A művészi torna órák tananyagát -25 éves tapasztalatunk alapján-úgy állítottuk össze, hogy a gyerekek figyelmét már 4 éves kortól lekösse. Így nem szükséges, hogy a szülők is részt vegyenek az órán, sőt a gyerekek figyelmének fenntartása eredményesebb, ha önállóan „dolgoznak”, ahogy majd az iskolában is kell. A gyerekeknek ez általában nem jelent problémát. Ha először néhányan szokatlannak is érzik, a tanárok könnyen át tudják segíteni őket ezen a kisebb kihíváson. Amennyiben feltétlenül szükséges természetesen átmenetileg a szülői segítségtől sem zárkózunk el, de ezt mindenképpen a tanárokkal kell egyeztetni. Segítséget jelent, ha az első óra előtt otthon megbeszélik, hogy ezen az órán minden kislány egyedül vesz részt, de az anyukák a folyosón várják őket. A gyerekek órai munkájának eredményét a szülők a félévi nyilvános órán illetve a színpadi évzáró előadáson tekinthetik meg.\n\nAz öltözet eleinte bármilyen alkalmas ruha lehet, ami a mozgást nem akadályozza, de később, amikor már beilleszkedtek a gyerekek, egyforma tornadreszt kapnak, amit a bemutatókon, előadáson is viselnek. Váltó cipő már az első alkalommal is szükséges, mert a teremben lévő szőnyegre utcai cipővel nem szabad rálépni. (először esetleg zokni is megteszi, olyan, ami nem csúszik).\n\nKérjük, hogy a gyerekek ne egyenek-igyanak közvetlenül az óra előtt! (A folyadékpótlás természetesen fontos, de a legkisebbeknél az óra közben erre nincs szükség).\n\nAz óráról a tanár engedélye nélkül a gyerekek nem jöhetnek ki, ez alól kivétel, ha mosdóba szeretnének menni. Hogy ez minél ritkábban forduljon elő, kérjük, hogy óra előtt mindig vigyék el a gyerekeket a mosdóba! Kérjük, hogy legyenek tekintettel arra, hogy ha mégis ki kell menni valakinek, akkor legyen ott valaki, aki segíteni tud, mert a tanár nem mehet ki az óráról.\n\nFontosnak tartjuk, hogy a szülők és a tanárok jó kapcsolatban legyenek, nyíltan tudjanak beszélni az esetleges problémáról. Ha bármi észrevétele, kérdése van, forduljon bizalommal a tanár nénihez. Az órák előtt és után nem biztos, hogy van erre elegendő idő, de annyi biztosan van, hogy megbeszéljenek egy alkalmas módot és időt a kapcsolattartásra.\n\nÓbuda Mozgásművészeti Iskola"
     }
   ],
   enrollment: {
     columns: [
       {
-        title: 'Évelején szeretnék beiratkozni!',
-        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nSzeptember folyamán még elfogadunk jelentkezéseket azokba a csoportokba, ahol nem telt be a létszám. csoportba.\n\nLetölthető dokumentmok.Részletekről, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.',
-        button_text: 'Beiratkozás időpontok'
+        title: "Évelején szeretnék beiratkozni!",
+        text:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nSzeptember folyamán még elfogadunk jelentkezéseket azokba a csoportokba, ahol nem telt be a létszám. csoportba.\n\nLetölthető dokumentmok.Részletekről, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.",
+        button_text: "Beiratkozás időpontok"
       },
       {
-        title: 'Évközben is tudok csatlakozni?',
-        text: 'Év közben a már elindult csoportokhoz lehet csatlakozni , ahol van hely. Természetesen a haladóbb csoportokba csak előképzettséggel rendelkezőket tudunk felvenni és a tanárok segítenek az újaknak felvenni a ritmust és beilleszkedni a csoportba.\n\nLetölthető dokumentmok. A szabad helyekről iskolatitkárunk, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.',
-        button_text: 'Érdeklődöm'
+        title: "Évközben is tudok csatlakozni?",
+        text:
+          "Év közben a már elindult csoportokhoz lehet csatlakozni , ahol van hely. Természetesen a haladóbb csoportokba csak előképzettséggel rendelkezőket tudunk felvenni és a tanárok segítenek az újaknak felvenni a ritmust és beilleszkedni a csoportba.\n\nLetölthető dokumentmok. A szabad helyekről iskolatitkárunk, Mikusik Márta tud felvilágosítást adni a megjelölt csatornák bármelyikén.",
+        button_text: "Érdeklődöm"
       }
     ]
   }
