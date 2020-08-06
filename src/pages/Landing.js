@@ -292,22 +292,22 @@ export default function Landing({ dotChange }) {
                     <label className="title extra-bold size-54">Ami fontos nekünk</label>
                     <div className="sepa-row">
                         <Gymnast className="icon" />
-                        <label className="text size-24 extra-bold">Berczik módszer</label>
+                        <label className="text size-24 extra-bold">Berczik technika</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A <u>Berczik-technika</u> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
                     <div className="sepa-row">
                         <MusicalNote className="icon" />
                         <label className="text size-24 extra-bold">Zeneiség</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A zene nálunk nem csak kísérő eleme a táncnak. Koreográfiáinkban szoros összhangban egymás hatását erősítik: segít a zene megértésében, és érzékenyít a táncra. Így hozzuk mi mozgásba a zenét.</label>
                     <div className="sepa-row">
                         <PaintBrush className="icon" />
-                        <label className="text size-24 extra-bold">Alkotómunka</label>
+                        <label className="text size-24 extra-bold">Kreativitás</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
                 </div>
             </div>
             <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
