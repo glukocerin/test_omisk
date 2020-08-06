@@ -498,6 +498,7 @@
   .landing .content-block,
   .left.four .content-block {
     max-width: 20rem;
+    margin: auto;
   }
   .left.one .double-arrow-down {
     margin-top: 0;
