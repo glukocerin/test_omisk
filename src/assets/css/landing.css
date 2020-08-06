@@ -318,10 +318,12 @@
 }
 .right.six .content-block .link-block .link {
   cursor: pointer;
-  color: var(--color-gray-0);;
+  color: var(--color-gray-0);
+  opacity: 0.45;
 }
 .right.six .content-block .link-block .link.active {
   font-weight: 600;
+  opacity: 1;
 }
 .right.seven {
   background-image: url('../img/landing_bg_7.png');
