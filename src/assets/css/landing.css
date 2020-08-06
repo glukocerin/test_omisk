@@ -87,12 +87,16 @@
 }
 .left.three .content-block,
 .left.six .content-block {
-  max-width: 21rem;
+  max-width: 29rem;
 }
 .left.three .article:nth-child(2),
 .left.six .article:nth-child(2) {
   font-weight: 100;
   margin-top: 3.75rem;
+}
+.left.three .article,
+.left.six .article {
+  line-height: 28px;
 }
 .left.three .article + .article,
 .left.six .article + .article {
@@ -135,7 +139,7 @@
 }
 .left.four .content-block,
 .left.eight .content-block {
-  max-width: 30rem;
+  max-width: 32rem;
 }
 .left.four .drop-down-list {
   margin-top: 2rem;
@@ -245,6 +249,9 @@
 }
 .left.eight * {
   color: var(--color-gray-0);
+}
+.left.eight .article {
+  line-height: 28px;
 }
 .left.eight .sepa-row {
   display: flex;
