@@ -36,8 +36,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-left: 15rem;
-  margin-top: 12.875rem;
+  margin-left: 12.500vw;
+  margin-top: 19vh;
 }
 .left {
   position: absolute;
@@ -75,8 +75,8 @@
   color: var(--color-gray-0);
   max-width: 26rem;
   margin: auto;
-  margin-left: 15rem;
-  margin-top: 12.875rem;
+  margin-left: 12.500vw;
+  margin-top: 19vh;
 }
 .left.three {
   background: var(--color-green-0);
@@ -139,7 +139,7 @@
 }
 .left.four .content-block,
 .left.eight .content-block {
-  max-width: 32rem;
+  max-width: 34rem;
 }
 .left.four .drop-down-list {
   margin-top: 2rem;
@@ -277,6 +277,7 @@
 }
 .left:not(.active) {
   animation: scrolloutup ease-in-out 500ms;
+  overflow: hidden;
 }
 .right {
   position: absolute;
