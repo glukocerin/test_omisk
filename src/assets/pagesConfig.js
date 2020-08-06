@@ -8,7 +8,7 @@ const pagesConfig = {
       },
       {
         text: "Mozdulatművészet",
-        link: "https://www.youtube-nocookie.com/embed/6vE9RN63bms"
+        link: "https://www.youtube-nocookie.com/embed/FT6PC4fx9YU"
       },
       {
         text: "Modern tánc",
@@ -16,7 +16,7 @@ const pagesConfig = {
       }
     ],
     list_courses: {
-      title: "Milyen óráink vannak?",
+      title: "Milyen kurzusaink vannak?",
       list: [
         {
           text: "Művészi torna",
@@ -39,19 +39,19 @@ const pagesConfig = {
           link: "ballet"
         },
         {
-          text: "Pre balett",
+          text: "Pre balett / EN",
           link: "pre_ballet"
         }
       ]
     },
     list_what_we_do: {
-      title: "Mit csinálunk az órák mellett?",
+      title: "És az órákon kívül……",
       list: [
         "Évzáró előadások",
         "Országos versenyek",
         "Nyilvános órák",
-        "Omisk gála",
-        "Mozdulatműhely",
+        "OMISK Gála",
+        "OMISK Mozdulatműhely",
         "Nyári táborok"
       ]
     }
