@@ -36,6 +36,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  margin-left: 15rem;
+  margin-top: 12.875rem;
 }
 .left {
   position: absolute;
@@ -73,6 +75,8 @@
   color: var(--color-gray-0);
   max-width: 26rem;
   margin: auto;
+  margin-left: 15rem;
+  margin-top: 12.875rem;
 }
 .left.three {
   background: var(--color-green-0);
