@@ -76,14 +76,14 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">1990 óta tudatos testképzés, kreativitás, közösség teremtés</label>
+                <label className="text extra-bold size-70">Mozgásművészeti képzés 1990 óta Budapest 5 kerületében</label>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
-                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                    <label className="article size-20">Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?</label>
+                    <label className="article size-20">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
                         <Link to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
