@@ -279,232 +279,205 @@ const pagesConfig = {
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, amit igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Testnevelési Főiskola (ma Testnevelési Egyetem), ritmikusgimnasztika-edző",
+          "Budapesti Műszaki Egyetem, vegyészmérnök"
         ],
         achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+          "2011 Magyar Köztársaság Érdemkereszt Ezüst Fokozat",
+          "2010 Táncpedagógusok Országos Szövetsége Nívódíja",
+          "2016 Berczik Sára Díj",
+          "2015 Réti Piroska Balett Pedagógusi Nívódíj"
+        ],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "benis_katalin.jpg",
         name: "Benis Katalin",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "Nívódíjas táncpedagógus,\nMűvészitorna-edző",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Testnevelési Főiskola (ma Testnevelési Egyetem), ritmikusgimnasztika-edző"
         ],
         achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+          "2009 Berczik Sára Díj",
+          "2015 Táncpedagógusok Országos Szövetsége Nívódíj",
+        ],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "mady_krisztina.jpg",
         name: "Mády Krisztina",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "Nívódíjas táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Hároméves koromban kezdtem művészi tornázni, húsz éven át tanultam Berczik Sári nénitől és Szollás Erzsébettől. Nagyszüleim és édesanyám sport iránti szeretete és igénye indított arra, hogy hivatásomként a művészi torna oktatását válasszam. Az Óbuda Mozgásművészeti Iskolában 1998 óta tanítok művészi tornát és mozdulatművészetet, amelyet csak másik hivatásom – három gyermekem nevelése – szakított meg hosszabb-rövidebb időre.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Testnevelési Egyetem, testnevelő és ritmikus gimnasztika edzői szak",
+          "Szegedi Juhász Gyula Tanárképző Főiskola, francia nyelvtanár szak"
         ],
         achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+          "2012 Berczik Sára Díj",
+          "2017 Táncpedagógusok Országos Szövetsége Nívódíj",
+        ],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "kalocsai_edit.jpg",
         name: "Kalocsai Edit",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "Állami-díjas balettmester",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Táncos pályafutásomat a győri Kisfaludy Színháznál kezdtem. A gyermekem megszületése után az Állami Balettintézet pedagógus tagozatán végeztem klasszikus balett tanszakon, 1980- ban. Külföldi és hazai mesterek jazztánc- és kortárstánc-kurzusán sajátítottam el a modern technikákat.  1990-ben Gyöngyösön művészeti iskolát hoztam létre, ahol klasszikus balettet tanítottam. 2009-től a Kispesti Alapfokú Művészeti Iskola igazgatóhelyetteseként dolgoztam. Az Óbuda Mozgásművészeti Iskolában 1996 óta klasszikus balett és modern jazz órákat tartok.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Állami Balett Intézet (ma Táncművészeti Egyetem), klasszikusbalett-pedagógus",
         ],
         achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+          "1992 Réti Piroska Balett Pedagógusi Nívódíj",
+          "1998 Táncpedagógusok Országos Szövetsége Balettpedagógus Nívódíj",
+          "2006 Gyöngyös Város Kultúrájáért Kitüntetés",
+          "2006 Magyar Köztársasági Ezüst Érdemkereszt"
+        ],
+        courses: [
+          "klasszikus balett, jazztánc"
         ]
       },
       {
         picture: "kovacs_bea.jpg",
         name: "Kovács Bea",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "Berczik-díjas művészitorna-edző",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "ELTE, testnevelés-biológia szakos tanár",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
-        ]
-      },
-      {
-        picture: "empty.jpg",
-        name: "P. Ács Vali",
-        desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
-        details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "2014 Berczik Sára Díj",
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "csongei_barbi.jpg",
         name: "Csöngei Barbara",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Ötévesen művészi tornát, majd klasszikus balettet tanultam – a Pannon Várszínház táncosa voltam. Húszévesen elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói tanfolyamát, és a Bailart színházi táncos képzését, majd Földi Béla ELIT képzésére jártam, és az Inversedance tagja lettem. Mindig is fontos volt számomra a fegyelmezett, kitartó munka, tanítványaimat is arra ösztönzöm. 2013 óta tanítok klasszikus balettet és modern táncot az iskolában. Csoportjaim rendszeresen vesznek részt országos táncversenyeken.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "ELTE TÓK, óvodapedagógus ",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "modern tánc, klasszikus balett"
         ]
       },
       {
         picture: "solti_eszter.jpg",
         name: "Solti Eszter",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Négyéves koromban kezdtem művészi tornázni Pers Júlia növendékeként. A közösség tagjává váltam, a tánc hobbi volt, egészen egyetemista koromig, amikor eljött a felismerés, hogy tanárként is tagja szeretnék lenni az iskolának. Résztvevője voltam a Bethlen Dance Workshopnak 2016-ban, majd 2017-től a Budapest Táncszínház Elite Tréning Programjába nyertem felvételt. 2012 óta vagyok az iskola tanára, óráimon szeretném átadni tanítványaimnak mindazt, amit számomra jelent a tánc. Fontosnak tartom, hogy növendékeim kialakítsák saját önkifejezési módjukat.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "ELTE, szociálpedagógia és neveléstudomány",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "lakatos_lilla.jpg",
         name: "Rácz-Lakatos Lilla",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "A tánc felszabadít és kikapcsol. Először művészi tornára jártam, később balettot, mozdulatművészetet, modern, majd kortárs táncot tanultam. 2012 óta tanítok az OMISK-ban, növendékeim sikereket érnek el az országos versenyeken. 2016-ban részt vettem az OMISK Mozdulatműhely első projektjében, két évvel később pedig színpadra állíthattuk első darabomat. A táncórának saját tere és ideje van. Ha belépek egy órára, minden problémámat leteszem arra az időre, akkor csak az számít, ami ott történik. Ezt az élményt szeretném továbbadni tanítványaimnak is. ",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Schola Europa Akadémia, médiamoderátor",
+          "Pázmány Péter Katolikus Egyetem, magyartanár",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "rozsa_reka.jpg",
-        name: "Rózsa Réka",
+        name: "Markolt-Rózsa Réka",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Négy évesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "KRE, tanító",
+          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       },
       {
         picture: "taylor_eszti.jpg",
         name: "Taylor Esther",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Négyéves koromban írattak be a szüleim Pers Júliához. Nagyon tetszett, hogy az órák nemcsak a táncról, hanem a kreativitásról is szóltak. Szerettem volna tovább adni a gyerekeknek, amit  a művészi torna adott nekem. Ezért végeztem el egyetem mellett a Táncpedagógusok Országos Szövetségének képzését 2018-ban. 2019 óta tanítok művészi tornát, és mivel kétnyelvű családban nőttem fel, így angol nyelven is tartok órákat. Számomra nagyon fontos a sport, úgy gondolom, hogy gyermekkorban kell elkezdeni a rendszeres mozgást, és erre tökéletes a művészi torna.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
+          "Testnevelési Egyetem, testnevelő-gyógytestnevelő-egészségfejlesztő tanár"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "művészi torna, mozdulatművészet, pre-balett"
         ]
       },
       {
         picture: "david_luca.jpg",
         name: "Dávid Luca",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "látványtervező, művésztanár",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Óvodás koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában. Ez a hely a második otthonommá vált. Húsz éven át tanulhattam Pers Júlia szárnyai alatt, egy kivételesen kreatív és tehetséges táncosokból álló csapatban. Az Omisk Mozdulatműhely, Miró képei táncban elbeszélve című előadásában látványtervezőként és táncosként is részt vehettem. Egy éven át tanultam különböző testtudati technikákról és azoknak a gyerekekkel való alkalmazási lehetőségeiről. 2015 óta óta önkénteskesem a Bátor Tábor alapítványnál,  és három éve vagyok kézműves szakértő. Jelenleg egy alternatív iskola hálózatban tanulásszervezőként és művésztanárként tanítok és tanulok együtt a gyerekekkel. Az Omisk nyári táboraiban szabadtánc és barkács foglalkozást tartok a gyerekeknek. Fő célom, hogy teret adjak a gyerekeknek a szabad alkotásra és önkifejezésre.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "Magyar Képzőművészeti Egyetem, látványtervező",
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
-        ]
+        achievements: [],
+        courses: []
       },
       {
         picture: "taylor_jennifer.jpg",
         name: "Bozsókiné Taylor Jennifer",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "táncpedagógus",
         details:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "Kilenc éves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
         education: [
-          "Testnevelési Főiskola Edzői szak 1986",
-          "Budapesti Műszaki Egyetem Vegyészmérnök, 1982"
+          "ELTE, tanító szak",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
-        achievements: [
-          "2011 Magyar Köztársaság Érdemkereszt Ezüst fokozat",
-          "2010 Táncpedagógus Országos Szövetsége Nívódíja",
-          "2006 Berczik Sára Díj",
-          "2005 Réti Piroska Balett Pedagógusi Nívódíj"
+        achievements: [],
+        courses: [
+          "művészi torna, mozdulatművészet"
         ]
       }
     ]

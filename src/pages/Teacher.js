@@ -27,13 +27,17 @@ export default function Teacher() {
           <label className="details size-20">{ teacher.details }</label>
         </div>
         <div className="column-right">
-          <label className="text size-24 bold">Végzettségek</label>
+          <label className="text size-24 bold">Végzettség:</label>
           <ul className="list">
             <ListItems list={teacher.education} />
           </ul>
-          <label className="text size-24 bold">Eredmények</label>
+          <label className={`text size-24 bold ${teacher.achievements.length === 0 && 'hidden'}`}>Kitüntetések, díjak:</label>
           <ul className="list">
             <ListItems list={teacher.achievements} />
+          </ul>
+          <label className={`text size-24 bold ${teacher.courses.length === 0 && 'hidden'}`}>Óratípusok:</label>
+          <ul className="list">
+            <ListItems list={teacher.courses} />
           </ul>
         </div>
       </div>
