@@ -1,0 +1,114 @@
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #14c1ae;
+  z-index: -1000;
+  background-image: url("../img/teachers/header.jpg");
+}
+
+.header-text {
+  width: 100%;
+  text-align: center;
+  color: var(--color-gray-0);
+  margin-bottom: 18rem;
+}
+
+.body {
+  padding-top: 6.625rem;
+  max-width: 80rem;
+  margin: 0 16.667%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.details {
+  max-width: 40rem;
+}
+
+.event-wrapper {
+  width: 24rem;
+  height: 11rem;
+  background-color: var(--color-gray-1);
+  margin-top: 1.5rem;
+  padding: 2rem;
+}
+
+.event-wrapper p,
+h5 {
+  margin: 0;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-title {
+  margin-top: 1.5rem;
+}
+
+.event-wrapper:first-child {
+  margin-top: 0;
+}
+
+.event-body {
+  margin-top: 1.5rem;
+}
+
+.main-pic-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.main-pic {
+  width: 52rem;
+  height: 29.25rem;
+}
+
+.alt-text {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.images {
+  margin-top: 7.75rem;
+  background-color: var(--color-gray-1);
+  width: 100%;
+}
+
+.images-title {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.images-title h5 {
+  margin: 0;
+}
+
+.logos {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  padding-top: 4rem;
+  margin: 0 16.667%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  margin-bottom: 1.375rem;
+}

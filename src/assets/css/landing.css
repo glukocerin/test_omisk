@@ -36,6 +36,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  margin-left: 12.500vw;
+  margin-top: 19vh;
 }
 .left {
   position: absolute;
@@ -71,8 +73,10 @@
 }
 .left.two .text {
   color: var(--color-gray-0);
-  max-width: 26rem;
+  max-width: 19rem;
   margin: auto;
+  margin-left: 12.500vw;
+  margin-top: 19vh;
 }
 .left.three {
   background: var(--color-green-0);
@@ -83,12 +87,16 @@
 }
 .left.three .content-block,
 .left.six .content-block {
-  max-width: 21rem;
+  max-width: 29rem;
 }
 .left.three .article:nth-child(2),
 .left.six .article:nth-child(2) {
   font-weight: 100;
   margin-top: 3.75rem;
+}
+.left.three .article,
+.left.six .article {
+  line-height: 28px;
 }
 .left.three .article + .article,
 .left.six .article + .article {
@@ -131,7 +139,7 @@
 }
 .left.four .content-block,
 .left.eight .content-block {
-  max-width: 30rem;
+  max-width: 34rem;
 }
 .left.four .drop-down-list {
   margin-top: 2rem;
@@ -190,6 +198,13 @@
   max-height: 0;
   overflow: hidden;
 }
+.left.four .drop-down-list .place .place-address {
+  margin-top: 0.625rem;
+  margin-bottom: 1rem;
+}
+.left.four .drop-down-list .place .title {
+  margin-top: 0.25rem;
+}
 .left.four .drop-down-list .place.active .place-informations {
   max-height: 30rem;
   transition: max-height 0.3s ease-in-out;
@@ -210,6 +225,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 .left.five .list-item:last-child,
 .left.seven .list-item:last-child {
@@ -241,6 +257,9 @@
 .left.eight * {
   color: var(--color-gray-0);
 }
+.left.eight .article {
+  line-height: 28px;
+}
 .left.eight .sepa-row {
   display: flex;
   align-items: center;
@@ -265,6 +284,7 @@
 }
 .left:not(.active) {
   animation: scrolloutup ease-in-out 500ms;
+  overflow: hidden;
 }
 .right {
   position: absolute;
@@ -306,10 +326,12 @@
 }
 .right.six .content-block .link-block .link {
   cursor: pointer;
-  color: var(--color-gray-0);;
+  color: var(--color-gray-0);
+  opacity: 0.45;
 }
 .right.six .content-block .link-block .link.active {
   font-weight: 600;
+  opacity: 1;
 }
 .right.seven {
   background-image: url('../img/landing_bg_7.png');
@@ -484,6 +506,7 @@
   .landing .content-block,
   .left.four .content-block {
     max-width: 20rem;
+    margin: auto;
   }
   .left.one .double-arrow-down {
     margin-top: 0;

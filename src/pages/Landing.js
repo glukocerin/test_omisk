@@ -76,14 +76,14 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">1990 óta tudatos testképzés, kreativitás, közösség teremtés</label>
+                <label className="text extra-bold size-70">Mozgásművészeti képzés 1990 óta Budapest 5 kerületében</label>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
-                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                    <label className="article size-20">Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?</label>
+                    <label className="article size-20">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
                         <Link to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
@@ -95,7 +95,7 @@ export default function Landing({ dotChange }) {
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
             <div className={`left four ${ activeDot === 4 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-54">Helyszíneink</label>
+                    <label className="title extra-bold size-54">Hol vagyunk?</label>
                     <div className="drop-down-list">
                         <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 1 ? {placeId: null, position: null} : {placeId:1, position: [47.54154, 19.03426], zoom: 18}) }>
                             <PlusSign className="plus-sign"/>
@@ -103,17 +103,24 @@ export default function Landing({ dotChange }) {
                             <label className="place-label size-24 extra-bold">Óbudai kultúrális központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">hétfő I kedd I szerda I csütörtök I péntek</label>
+                                <label className="place-program-row size-15 thin">Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Taylor Esther</label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">hétfő I kedd I szerda I péntek</label>
+                                <label className="place-program-row size-15 thin">Benis Katalin I Kovács Bea I Pers Júlia I Rácz-Lakatos Lilla</label>
+                                <label className="place-program-row size-15 thin title">Modern tánc</label>
+                                <label className="place-program-row size-15 thin">hétfő </label>
+                                <label className="place-program-row size-15 thin">Solti Eszter</label>
+                                <label className="place-program-row size-15 thin title">Jazztánc</label>
+                                <label className="place-program-row size-15 thin">hétfő I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Kalocsai Edit</label>
+                                <label className="place-program-row size-15 thin title">Klasszikus balett</label>
+                                <label className="place-program-row size-15 thin">hétfő I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Kalocsai Edit</label>
+                                <label className="place-program-row size-15 thin title">Pre ballet/EN</label>
+                                <label className="place-program-row size-15 thin">péntek     </label>
+                                <label className="place-program-row size-15 thin">Taylor Esther</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 2 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 2 ? {placeId: null, position: null} : {placeId:2, position: [47.59798, 19.05255], zoom: 18}) }>
@@ -121,18 +128,19 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Békásmegyeri Közösségi Ház</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">III. Csobánka tér 5</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">kedd I csütörtök I péntek</label>
+                                <label className="place-program-row size-15 thin">Kovács Bea I Rácz-Lakatos Lilla </label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">kedd I csütörtök I péntek</label>
+                                <label className="place-program-row size-15 thin">Kovács Bea I Rácz-Lakatos Lilla </label>
+                                <label className="place-program-row size-15 thin title">Modern tánc</label>
+                                <label className="place-program-row size-15 thin">kedd I szerda I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Csöngei Barbara</label>
+                                <label className="place-program-row size-15 thin title">Klasszikus balett</label>
+                                <label className="place-program-row size-15 thin">kedd I szerda I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Csöngei Barbara</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 3 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 3 ? {placeId: null, position: null} : {placeId:3, position: [47.48967, 19.01836], zoom: 18}) }>
@@ -140,18 +148,20 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Mom Művelődési Központ</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">XII. Csörsz u. 18</label>
+                                <label className="place-address size-15 extra-bold">XII. Böszörményi  út 24</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">hétfő I kedd I  csütörtök </label>
+                                <label className="place-program-row size-15 thin">Benis Katalin I Solti Eszter</label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">hétfő I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Benis Katalin</label>
+                                <label className="place-program-row size-15 thin title">Modern tánc</label>
+                                <label className="place-program-row size-15 thin">hétfő I péntek</label>
+                                <label className="place-program-row size-15 thin">Csöngei Barbara </label>
+                                <label className="place-program-row size-15 thin title">Klasszikus balett</label>
+                                <label className="place-program-row size-15 thin">hétfő I péntek</label>
+                                <label className="place-program-row size-15 thin">Csöngei Barbara</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 4 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 4 ? {placeId: null, position: null} : {placeId:4, position: [47.51262, 18.99469], zoom: 18}) }>
@@ -159,18 +169,13 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Virányosi Közösségi Ház</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
+                                <label className="place-address size-15 extra-bold">XII. Szarvas Gábor út 8/c</label>
                                 <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-program-row size-15 thin">kedd I csütörtök</label>
+                                <label className="place-program-row size-15 thin">Rózsa Réka</label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">kedd I csütörtök </label>
+                                <label className="place-program-row size-15 thin">Rózsa Réka</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 5 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 5 ? {placeId: null, position: null} : {placeId:5, position: [47.51262, 18.99469], zoom: 18}) }>
@@ -178,18 +183,12 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Szarvas Gábor Közösségi Tér</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">XII. Szarvas Gábor út 22</label>
+                                <label className="place-program-row size-15 thin">hétfő I kedd I szerda I csütörtök </label>
+                                <label className="place-program-row size-15 thin">Mády Krisztina </label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">hétfő I kedd I szerda I csütörtök </label>
+                                <label className="place-program-row size-15 thin">Mády Krisztina </label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 6 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 6 ? {placeId: null, position: null} : {placeId:6, position: [47.50055, 19.04011], zoom: 18}) }>
@@ -197,18 +196,13 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Budapest Művelődési Központ</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">XI. Etele út 55/a</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">Taylor Esther</label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">Taylor Esther</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 7 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 7 ? {placeId: null, position: null} : {placeId:7, position: [47.48746, 19.07061], zoom: 18}) }>
@@ -216,18 +210,13 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">Józsefvárosi Galéria és Rendezvényközpont</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">VIII. József krt. 70</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">Solti Eszter</label>
+                                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">Solti Eszter</label>
                             </div>
                         </div>
                         <div className={`place ${ activePlace.placeId === 8 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 8 ? {placeId: null, position: null} : {placeId:8, position: [47.49992,19.068150], zoom: 18}) }>
@@ -235,18 +224,16 @@ export default function Landing({ dotChange }) {
                             <MinusSign className="minus-sign"/>                            
                             <label className="place-label size-24 extra-bold">VII. Kerületi Táncstúdió</label>
                             <div className="place-informations">
-                                <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                                <label className="place-program-row size-15 thin">Művészi torna</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | csütörtök | péntek</label>
-                                <label className="place-program-row size-15 thin">Benis Katalin | Pers Júlia | Taylor Esther | Rózsa Réka</label>
-                                <label className="place-program-row size-15 thin">mozdulatművészet</label>
-                                <label className="place-program-row size-15 thin">hétfő | kedd | szerda | péntek | Pers Júlia | Benis Katalin</label>
-                                <label className="place-program-row size-15 thin">modern tánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | szerda | Solti Eszter</label>
-                                <label className="place-program-row size-15 thin">balett</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök| Kalocsai Edit</label>
-                                <label className="place-program-row size-15 thin">jazztánc</label>
-                                <label className="place-program-row size-15 thin">hétfő | csütörtök | Kalocsai Edit</label>
+                                <label className="place-address size-15 extra-bold">VII. Wesselényi u. 41</label>
+                                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">P.Ács Vali</label>
+                                <label className="place-program-row size-15 thin title">Klasszikus balett</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda</label>
+                                <label className="place-program-row size-15 thin">P.Ács Vali</label>
+                                <label className="place-program-row size-15 thin title">Klasszikus balett</label>
+                                <label className="place-program-row size-15 thin">hétfő I szerda </label>
+                                <label className="place-program-row size-15 thin">Csöngei Barbara</label>
                             </div>
                         </div>
                     </div>
@@ -265,9 +252,7 @@ export default function Landing({ dotChange }) {
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Mit csinálunk az órákon?</label>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
-                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
-                    <label className="article size-20">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</label>
+                    <label className="article size-20">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
                 </div>
             </div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
@@ -292,22 +277,22 @@ export default function Landing({ dotChange }) {
                     <label className="title extra-bold size-54">Ami fontos nekünk</label>
                     <div className="sepa-row">
                         <Gymnast className="icon" />
-                        <label className="text size-24 extra-bold">Berczik módszer</label>
+                        <label className="text size-24 extra-bold">Berczik technika</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A <u>Berczik-technika</u> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
                     <div className="sepa-row">
                         <MusicalNote className="icon" />
                         <label className="text size-24 extra-bold">Zeneiség</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A zene nálunk nem csak kísérő eleme a táncnak. Koreográfiáinkban szoros összhangban egymás hatását erősítik: segít a zene megértésében, és érzékenyít a táncra. Így hozzuk mi mozgásba a zenét.</label>
                     <div className="sepa-row">
                         <PaintBrush className="icon" />
-                        <label className="text size-24 extra-bold">Alkotómunka</label>
+                        <label className="text size-24 extra-bold">Kreativitás</label>
                         <hr />
                     </div>
-                    <label className="article size-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
                 </div>
             </div>
             <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
