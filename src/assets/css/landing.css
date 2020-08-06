@@ -198,6 +198,13 @@
   max-height: 0;
   overflow: hidden;
 }
+.left.four .drop-down-list .place .place-address {
+  margin-top: 0.625rem;
+  margin-bottom: 1rem;
+}
+.left.four .drop-down-list .place .title {
+  margin-top: 0.25rem;
+}
 .left.four .drop-down-list .place.active .place-informations {
   max-height: 30rem;
   transition: max-height 0.3s ease-in-out;
