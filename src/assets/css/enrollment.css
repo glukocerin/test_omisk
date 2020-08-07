@@ -151,6 +151,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 28px;
 }
 .enrollment .places-content .drop-down-list .place .place-informations {
   max-height: 0;
@@ -232,7 +233,7 @@
   .enrollment .places-content .drop-down-list .place .plus-sign,
   .enrollment .places-content .drop-down-list .place .minus-sign {
     left: 0.75rem;
-    top: 0.5rem;
+    top: 0.825rem;
   }
   .enrollment .places-content .map {
     display: none;
