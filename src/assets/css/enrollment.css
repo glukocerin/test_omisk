@@ -57,6 +57,7 @@
 .enrollment .enrollment-content .enrollment-columns .enrollment-text {
   margin-bottom: 2rem;
   white-space: pre-wrap;
+  line-height: 28px;
 }
 
 .enrollment .enrollment-content .enrollment-columns .btn {
