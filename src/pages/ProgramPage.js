@@ -35,7 +35,10 @@ export default function ProgramPage(props) {
   return (
     <div>
       <div className={style["header-image"]}>
-        {/* <img src={require(`../assets/img/${props.details.image}.png`)} alt="" /> */}
+        <img
+          src={require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)}
+          alt=""
+        />
       </div>
       <h4 className={`${style["header-text"]} size-90 extra-bold`}>
         {props.opt.title}
@@ -45,20 +48,30 @@ export default function ProgramPage(props) {
           <div className={style["details"]}>
             <p>{props.opt.detailsOne}</p>
             <p>{props.opt.detailsTwo}</p>
+            <p>{props.opt.detailsThree || ""}</p>
+            <p>{props.opt.detailsFour || ""}</p>
           </div>
           <div className={style["events"]}>
             <Events list={props.opt.events} />
           </div>
         </div>
         <div className={style["main-pic-wrapper"]}>
-          <img
-            className={style["main-pic"]}
-            src={require(`../assets/img/jazz_tanc_01.jpg`)}
-            alt=""
-          />
+          {props.opt.youtubeLink ? (
+            <iframe
+              title="video"
+              width="832"
+              height="468"
+              src="https://www.youtube-nocookie.com/embed/63BHFKUuZZg"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            ""
+          )}
         </div>
         <div className={style["alt-text"]}>
-          <p>{props.opt.videoAlt}</p>
+          <p>{props.opt.videoAlt || ""}</p>
         </div>
       </div>
       <div className={style["images"]}>

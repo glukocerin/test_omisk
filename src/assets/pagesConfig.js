@@ -203,11 +203,11 @@ const pagesConfig = {
     programPage: {
       speechDay: {
         title: "Évzáró előadások",
-        headerImg: "",
+        headerImg: "evzaro_eloadas",
         detailsOne:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "A tanévet mindig színpadi előadással zárjuk a MOM Kulturális Központ és az Óbudai Kulturális Központ színháztermében. 1990  óta hagyomány, hogy az előadásokon minden tanítványunk fellép a kezdő óvodásoktól a felnőtt versenyző csoportokig.",
         detailsTwo:
-          "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet.",
+          "A program betekintést enged iskolánk munkájába, bemutatva az iskolán belül választható műfajokat, felfedve a fejlődés távlatait. A szereplők egyben nézők is: a kisebbek lelkesen figyelik, hogy mit fognak később tanulni, a nagyok pedig nosztalgiával emlékeznek a kezdetekre. A koreográfiákat a tanáraink állítják össze – nagyobbaknál mindez több hónapos műhelymunka eredménye, amelyben tanítványaink is évről évre egyre több szerepet kapnak. A korcsoportok, műfajok és stílusok összehangolásával mindig változatos, pergő műsort állítunk össze, amely az évek alatt igazi családi programmá vált.",
         events: [
           {
             date: "2020. 12. 03.",
@@ -222,7 +222,7 @@ const pagesConfig = {
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
           }
         ],
-        youtubeLink: "",
+        youtubeLink: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg",
         videoAlt: "Video részlet a 2019-es Évzáró",
         gallery: [
           "group5",
@@ -237,11 +237,15 @@ const pagesConfig = {
       },
       competitions: {
         title: "Versenyek",
-        headerImg: "",
+        headerImg: "versenyek",
         detailsOne:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "Egyes csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
         detailsTwo:
-          "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus estLorem ipsum dolor sit amet.",
+          "A táncművészeti fesztiválok nagyrészt tavasszal kerülnek megrendezésre. A versenyekre minden évben egyedi koreográfiák készülnek, amelynek létrehozása izgalmas feladat, igazi alkotómunka, amelyben mindenki részt vesz.  8-9 éves korban kezdünk versenyezni azokkal a csoportokkal, ahol úgy látjuk, hogy erre mindenkinek van igénye, szívesen fektetnek ebbe több energiát, mint amit a heti két alkalom megkövetel.",
+        detailsThree:
+          "A szakma legnívósabb tánc és művészi gimnasztika versenyein 2001 óta veszünk részt csapatainkkal kíváló eredménnyel (link eredményeinkre)",
+        detailsFour:
+          "A Táncpedagógusok Országos Szövetsége által szervezett Országos Táncművészeti Fesztiválon elért kiváló eredményeink elismeréseképpen a Szövetség a Kiváló Együttes Díj Ezüst Fokozatát (2005), majd Arany Fokozatát (2010) adományozta iskolánknak.",
         events: [
           {
             date: "2020. 12. 03.",
@@ -257,7 +261,42 @@ const pagesConfig = {
           }
         ],
         youtubeLink: "",
-        videoAlt: "Video részlet a 2019-es Évzáró",
+        videoAlt: "",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
+      },
+      omisk: {
+        title: "Omisk Gála",
+        headerImg: "omisk_gala",
+        detailsOne: "2015 óta évente megrendezzük az Omisk Gálát.",
+        detailsTwo:
+          "Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
+        detailsThree:
+          "Előadásainkat kifejezetten ajánljuk a nem versenyző csoportjaink tagjainak, mert a műsorszámok motiválóak a hétköznapi munkafolyamatokban is – az itt fellépő csoportok az órák során már egyfajta alkotóműhelyként működnek. Az Omisk Gála nagyon jó lehetőség versenyző csapatainknak, hogy színpadi rutinjukat növeljék, a kisebbek pedig remek alkalom arra, hogy elejétől a végéig meg tudjanak nézni egy előadást, hiszen az évzárókon – mivel ők maguk is szerepelnek – erre nincs lehetőségük.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "",
+        videoAlt: "",
         gallery: [
           "group5",
           "group1",

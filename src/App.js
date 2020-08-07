@@ -112,13 +112,18 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/programs/speech_day">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation />
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
         </Route>
         <Route exact path="/programs/competitions">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation />
           <ProgramPage opt={programs.programPage.competitions} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/omisk">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.omisk} />
           <Footer />
         </Route>
         <Route path="/programDetail">
