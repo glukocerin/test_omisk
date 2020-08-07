@@ -18,7 +18,7 @@
   background-color: var(--color-blue-1);
 }
 
-.enrollment .title {
+.enrollment .page-title {
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -159,6 +159,13 @@
 .enrollment .places-content .drop-down-list .place.active .place-informations {
   max-height: 30rem;
   transition: max-height 0.3s ease-in-out;
+}
+.enrollment .places-content .drop-down-list .place .place-address {
+  margin-top: 0.625rem;
+  margin-bottom: 1rem;
+}
+.enrollment .places-content .drop-down-list .place .title {
+  margin-top: 0.25rem;
 }
 .enrollment .places-content .map {
   display: flex;
