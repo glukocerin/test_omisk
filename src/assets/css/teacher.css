@@ -64,6 +64,7 @@
 }
 .teacher .column-left .details {
   white-space: pre-wrap;
+  line-height: 28px;
 }
 .teacher .column-right {
   margin-left: 16rem;
@@ -71,6 +72,9 @@
 }
 .teacher .column-right .text {
   margin-bottom: 1.25rem;
+}
+.teacher .column-right .text.hidden {
+  display: none;
 }
 .teacher .column-right .list {
   list-style: none;
