@@ -14,7 +14,7 @@
   z-index: 2;
   width: 100%;
   max-width: 80rem;
-  padding: 3.25rem 4.25rem;
+  padding: 3rem 4.25rem;
 }
 
 .contact .faq {
@@ -113,6 +113,10 @@
 .contact .contact-content .contact-columns .contact-box img {
   width: 22.656vw;
   margin-left: auto;
+}
+.contact .contact-content .contact-columns .contact-box .contact-row {
+  display: block;
+  margin-top: 0.75rem;
 }
 .contact .contact-content .contact-columns .contact-box .content-title {
   margin-bottom: 2rem;

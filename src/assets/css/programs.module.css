@@ -4,13 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 25rem;
+  height: 25.75rem;
   background-color: var(--color-blue-1);
 }
 
 .programs-wrapper {
   position: relative;
-  padding-top: 8rem;
+  padding-top: 5.75rem;
   display: flex;
   flex-direction: column;
 }

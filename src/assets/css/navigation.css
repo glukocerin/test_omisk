@@ -17,6 +17,9 @@
 .header.background-yellow {
   background: var(--color-yellow-2);
 }
+.header.background-pink {
+  background: var(--color-pink-0);
+}
 /* LANDING RULES!!! */
 .header.background-blue-4.fixed {
   background: transparent;
