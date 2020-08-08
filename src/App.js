@@ -31,6 +31,7 @@ import Modern from "./pages/Modern";
 //programs
 import pagesConfig from "./assets/pagesConfig";
 import ProgramPage from "./pages/ProgramPage";
+import Achievement from "./pages/Achievement";
 
 import Landing from "./pages/Landing";
 
@@ -124,6 +125,26 @@ function App() {
         <Route exact path="/programs/omisk">
           <Navigation />
           <ProgramPage opt={programs.programPage.omisk} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/public_class">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.publicClass} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/callisthenics">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.callisthenics} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/camp">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.camp} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/achievements">
+          <Navigation BackgroundColor="blue-1" />
+          <Achievement />
           <Footer />
         </Route>
         <Route path="/programDetail">

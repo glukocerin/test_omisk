@@ -61,7 +61,7 @@ export default function ProgramPage(props) {
               title="video"
               width="832"
               height="468"
-              src="https://www.youtube-nocookie.com/embed/63BHFKUuZZg"
+              src={`${props.opt.youtubeLink}`}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

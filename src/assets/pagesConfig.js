@@ -162,7 +162,8 @@ const pagesConfig = {
           title: "Nyilvános órák",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "nyilvanos_ora"
+          img: "nyilvanos_ora",
+          link: ""
         },
         {
           title: "Versenyek",
@@ -307,6 +308,107 @@ const pagesConfig = {
           "group6",
           "group8"
         ]
+      },
+      publicClass: {
+        title: "Nyilvános órák",
+        headerImg: "nyilvanos_ora",
+        detailsOne:
+          "A tanév folyamán 1 alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
+        detailsTwo:
+          "Az első félév mindig az alapozással telik, az órák nagyobb részében, olykor teljes időtartamban tréningezünk növendékeinkkel. Ennek a folyamatnak a vége a legmegfelelőbb időpont arra, hogy óvodás és iskolás csoportjaink bemutassák az addig tanultakat.",
+        detailsThree:
+          "A második félévben már egyre nagyobb hangsúlyt kap a koreográfiák tanulása, amelyeket az évzáró előadásokon mutatnak be a csoportjaink.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "https://www.youtube.com/embed/4SPgJV2Pc7c",
+        videoAlt: "Bemutató óra | OMISK | 2018",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
+      },
+      callisthenics: {
+        title: "Mozdulatműhely",
+        headerImg: "mozdulatmuhely",
+        detailsOne:
+          "Az Omisk Mozdulatműhely az iskola felnőtt növendékeiből alakult együttes, amelynek tagjai számára a tánc több mint hobbi – bár hivatásukat az élet különböző területein képzelik el. Van köztük gyógytornász és építész hallgató, moderntánc-pedagógus, tanítónő, rekreációs szakember, bölcsész és van, aki még csak gimnazista. De egy közös pont biztosan van bennük: a tánc szeretete. Pers Júlia készítette az OMISK Mozdulatműhely első egész estés színpadi produkcióját, MIKÉP – Miro képei táncban elbeszélve (2016). A darabban Miro játékos, absztrakt képei elevenednek meg a 20. század elején párhuzamosan fejlődő avantgárd képzőművészet és mozdulatművészet találkozásával. A jelmezeket Dávid Luca tervei alapján Joób Adrienne készítette. A produkciót a Nemzeti Kulturális Alap támogatta. Tánc és zene kapcsolatával foglalkozik a Mozdulatra hangolva (2018) című előadásunk. A hang testet ölt a táncban, a test zenét komponál a mozdulatok sorával. A darab az OMISK Mozdulatműhely és a Koizé Énekegyüttes közös produkciója. A koreográfiát Rácz-Lakatos Lilla készítette.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "https://www.youtube.com/embed/rKBmBZxAej4",
+        videoAlt:
+          "Mikép - Miró képei táncban elbeszélve | OMISK Mouzdulatműhely | 2016",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
+      },
+      camp: {
+        title: "Nyári táborok",
+        headerImg: "nyari_tabor",
+        detailsOne:
+          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  tovább fejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt. A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
+        events: [
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          },
+          {
+            date: "2020. 12. 03.",
+            title: "Évzáró előadás",
+            body:
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+          }
+        ],
+        youtubeLink: "https://www.youtube.com/embed/q2eUUTYWTI4",
+        videoAlt: "Szabad Tánc | OMISK Tábor | 2018",
+        gallery: [
+          "group5",
+          "group1",
+          "group2",
+          "group4",
+          "group3",
+          "group7",
+          "group6",
+          "group8"
+        ]
       }
     }
   },
@@ -329,15 +431,12 @@ const pagesConfig = {
           "2016 Berczik Sára Díj",
           "2015 Réti Piroska Balett Pedagógusi Nívódíj"
         ],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "benis_katalin.jpg",
         name: "Benis Katalin",
-        desc:
-          "Nívódíjas táncpedagógus,\nMűvészitorna-edző",
+        desc: "Nívódíjas táncpedagógus,\nMűvészitorna-edző",
         details:
           "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
         education: [
@@ -345,17 +444,14 @@ const pagesConfig = {
         ],
         achievements: [
           "2009 Berczik Sára Díj",
-          "2015 Táncpedagógusok Országos Szövetsége Nívódíj",
+          "2015 Táncpedagógusok Országos Szövetsége Nívódíj"
         ],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "mady_krisztina.jpg",
         name: "Mády Krisztina",
-        desc:
-          "Nívódíjas táncpedagógus",
+        desc: "Nívódíjas táncpedagógus",
         details:
           "Hároméves koromban kezdtem művészi tornázni, húsz éven át tanultam Berczik Sári nénitől és Szollás Erzsébettől. Nagyszüleim és édesanyám sport iránti szeretete és igénye indított arra, hogy hivatásomként a művészi torna oktatását válasszam. Az Óbuda Mozgásművészeti Iskolában 1998 óta tanítok művészi tornát és mozdulatművészetet, amelyet csak másik hivatásom – három gyermekem nevelése – szakított meg hosszabb-rövidebb időre.",
         education: [
@@ -364,21 +460,18 @@ const pagesConfig = {
         ],
         achievements: [
           "2012 Berczik Sára Díj",
-          "2017 Táncpedagógusok Országos Szövetsége Nívódíj",
+          "2017 Táncpedagógusok Országos Szövetsége Nívódíj"
         ],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "kalocsai_edit.jpg",
         name: "Kalocsai Edit",
-        desc:
-          "Állami-díjas balettmester",
+        desc: "Állami-díjas balettmester",
         details:
           "Táncos pályafutásomat a győri Kisfaludy Színháznál kezdtem. A gyermekem megszületése után az Állami Balettintézet pedagógus tagozatán végeztem klasszikus balett tanszakon, 1980- ban. Külföldi és hazai mesterek jazztánc- és kortárstánc-kurzusán sajátítottam el a modern technikákat.  1990-ben Gyöngyösön művészeti iskolát hoztam létre, ahol klasszikus balettet tanítottam. 2009-től a Kispesti Alapfokú Művészeti Iskola igazgatóhelyetteseként dolgoztam. Az Óbuda Mozgásművészeti Iskolában 1996 óta klasszikus balett és modern jazz órákat tartok.",
         education: [
-          "Állami Balett Intézet (ma Táncművészeti Egyetem), klasszikusbalett-pedagógus",
+          "Állami Balett Intézet (ma Táncművészeti Egyetem), klasszikusbalett-pedagógus"
         ],
         achievements: [
           "1992 Réti Piroska Balett Pedagógusi Nívódíj",
@@ -386,33 +479,25 @@ const pagesConfig = {
           "2006 Gyöngyös Város Kultúrájáért Kitüntetés",
           "2006 Magyar Köztársasági Ezüst Érdemkereszt"
         ],
-        courses: [
-          "klasszikus balett, jazztánc"
-        ]
+        courses: ["klasszikus balett, jazztánc"]
       },
       {
         picture: "kovacs_bea.jpg",
         name: "Kovács Bea",
-        desc:
-          "Berczik-díjas művészitorna-edző",
+        desc: "Berczik-díjas művészitorna-edző",
         details:
           "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
         education: [
           "ELTE, testnevelés-biológia szakos tanár",
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
-        achievements: [
-          "2014 Berczik Sára Díj",
-        ],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        achievements: ["2014 Berczik Sára Díj"],
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "csongei_barbi.jpg",
         name: "Csöngei Barbara",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "Ötévesen művészi tornát, majd klasszikus balettet tanultam – a Pannon Várszínház táncosa voltam. Húszévesen elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói tanfolyamát, és a Bailart színházi táncos képzését, majd Földi Béla ELIT képzésére jártam, és az Inversedance tagja lettem. Mindig is fontos volt számomra a fegyelmezett, kitartó munka, tanítványaimat is arra ösztönzöm. 2013 óta tanítok klasszikus balettet és modern táncot az iskolában. Csoportjaim rendszeresen vesznek részt országos táncversenyeken.",
         education: [
@@ -420,15 +505,12 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: [
-          "modern tánc, klasszikus balett"
-        ]
+        courses: ["modern tánc, klasszikus balett"]
       },
       {
         picture: "solti_eszter.jpg",
         name: "Solti Eszter",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "Négyéves koromban kezdtem művészi tornázni Pers Júlia növendékeként. A közösség tagjává váltam, a tánc hobbi volt, egészen egyetemista koromig, amikor eljött a felismerés, hogy tanárként is tagja szeretnék lenni az iskolának. Résztvevője voltam a Bethlen Dance Workshopnak 2016-ban, majd 2017-től a Budapest Táncszínház Elite Tréning Programjába nyertem felvételt. 2012 óta vagyok az iskola tanára, óráimon szeretném átadni tanítványaimnak mindazt, amit számomra jelent a tánc. Fontosnak tartom, hogy növendékeim kialakítsák saját önkifejezési módjukat.",
         education: [
@@ -436,15 +518,12 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "lakatos_lilla.jpg",
         name: "Rácz-Lakatos Lilla",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "A tánc felszabadít és kikapcsol. Először művészi tornára jártam, később balettot, mozdulatművészetet, modern, majd kortárs táncot tanultam. 2012 óta tanítok az OMISK-ban, növendékeim sikereket érnek el az országos versenyeken. 2016-ban részt vettem az OMISK Mozdulatműhely első projektjében, két évvel később pedig színpadra állíthattuk első darabomat. A táncórának saját tere és ideje van. Ha belépek egy órára, minden problémámat leteszem arra az időre, akkor csak az számít, ami ott történik. Ezt az élményt szeretném továbbadni tanítványaimnak is. ",
         education: [
@@ -453,15 +532,12 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "rozsa_reka.jpg",
         name: "Markolt-Rózsa Réka",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "Négy évesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
         education: [
@@ -470,15 +546,12 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető"
         ],
         achievements: [],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       },
       {
         picture: "taylor_eszti.jpg",
         name: "Taylor Esther",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "Négyéves koromban írattak be a szüleim Pers Júliához. Nagyon tetszett, hogy az órák nemcsak a táncról, hanem a kreativitásról is szóltak. Szerettem volna tovább adni a gyerekeknek, amit  a művészi torna adott nekem. Ezért végeztem el egyetem mellett a Táncpedagógusok Országos Szövetségének képzését 2018-ban. 2019 óta tanítok művészi tornát, és mivel kétnyelvű családban nőttem fel, így angol nyelven is tartok órákat. Számomra nagyon fontos a sport, úgy gondolom, hogy gyermekkorban kell elkezdeni a rendszeres mozgást, és erre tökéletes a művészi torna.",
         education: [
@@ -486,28 +559,22 @@ const pagesConfig = {
           "Testnevelési Egyetem, testnevelő-gyógytestnevelő-egészségfejlesztő tanár"
         ],
         achievements: [],
-        courses: [
-          "művészi torna, mozdulatművészet, pre-balett"
-        ]
+        courses: ["művészi torna, mozdulatművészet, pre-balett"]
       },
       {
         picture: "david_luca.jpg",
         name: "Dávid Luca",
-        desc:
-          "látványtervező, művésztanár",
+        desc: "látványtervező, művésztanár",
         details:
           "Óvodás koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában. Ez a hely a második otthonommá vált. Húsz éven át tanulhattam Pers Júlia szárnyai alatt, egy kivételesen kreatív és tehetséges táncosokból álló csapatban. Az Omisk Mozdulatműhely, Miró képei táncban elbeszélve című előadásában látványtervezőként és táncosként is részt vehettem. Egy éven át tanultam különböző testtudati technikákról és azoknak a gyerekekkel való alkalmazási lehetőségeiről. 2015 óta óta önkénteskesem a Bátor Tábor alapítványnál,  és három éve vagyok kézműves szakértő. Jelenleg egy alternatív iskola hálózatban tanulásszervezőként és művésztanárként tanítok és tanulok együtt a gyerekekkel. Az Omisk nyári táboraiban szabadtánc és barkács foglalkozást tartok a gyerekeknek. Fő célom, hogy teret adjak a gyerekeknek a szabad alkotásra és önkifejezésre.",
-        education: [
-          "Magyar Képzőművészeti Egyetem, látványtervező",
-        ],
+        education: ["Magyar Képzőművészeti Egyetem, látványtervező"],
         achievements: [],
         courses: []
       },
       {
         picture: "taylor_jennifer.jpg",
         name: "Bozsókiné Taylor Jennifer",
-        desc:
-          "táncpedagógus",
+        desc: "táncpedagógus",
         details:
           "Kilenc éves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
         education: [
@@ -515,9 +582,7 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: [
-          "művészi torna, mozdulatművészet"
-        ]
+        courses: ["művészi torna, mozdulatművészet"]
       }
     ]
   },
