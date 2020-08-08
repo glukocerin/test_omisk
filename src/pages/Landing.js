@@ -44,10 +44,10 @@ const CoursesList = function() {
 
 const WhatWeDo = function() {
     return landing['list_what_we_do'].list.map((item, index) => (
-        <div className="list-item" key={index}>
+        <Link to={`/programs/${item.link}`} className="list-item" key={index}>
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item}</span>
-        </div>
+            <span className="text size-36 extra-bold">{item.text}</span>
+        </Link>
   ));
 }
 
