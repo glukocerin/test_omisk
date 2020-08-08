@@ -64,7 +64,7 @@ export default function Courses(props) {
           </ul>
         </div>
         <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Helyszíneink</h4>
+          <h4 className="size-16 extra-bold">Helyszíneink:</h4>
           <ul>
             <li>
               <p className="size-12 thin">
