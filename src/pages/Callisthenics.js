@@ -24,25 +24,24 @@ export default function Courses(props) {
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Korosztaly</p>
+                  <p className="size-12 extra-bold">Korosztály: </p>
                 </div>
                 <div className={style["age-group-value"]}>
-                  <p className="size-12 thin">4 - 10éves kortól</p>
-                  <p className="size-12 thin">korcsopotonként</p>
+                  <p className="size-12 thin">10éves kortól</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Tandij</p>
+                  <p className="size-12 extra-bold">Tandíj:</p>
                 </div>
                 <div>
                   <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
+                    Heti 2 x 60 perc: 11000-11300 Ft /hó
                   </p>
                   <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
+                    Heti 2 x 90 perc: 13100-14500 Ft /hó
                   </p>
                 </div>
               </div>
@@ -50,14 +49,14 @@ export default function Courses(props) {
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Kedvezmeny</p>
+                  <p className="size-12 extra-bold">Kedvezmények:</p>
                 </div>
                 <div>
                   <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
+                    2 testvér esetén 2000,-Ft/fő/hó
                   </p>
                   <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
+                    3 testvér esetén 3000,- Ft/fő/hó
                   </p>
                 </div>
               </div>
@@ -65,100 +64,145 @@ export default function Courses(props) {
           </ul>
         </div>
         <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Helyszineink</h4>
+          <h4 className="size-16 extra-bold">Helyszíneink</h4>
           <ul>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Óbudai Kulturális Központ (hétfő,kedd-szerda-péntek)
+              </p>
             </li>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Békásmegyeri Közösségi Ház (kedd,csütörtök,péntek)
+              </p>
             </li>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                {" "}
+                MOM Kulturális Központ (hétfő,kedd,csütörtök)
+              </p>
             </li>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Virányosi Közösségi Ház (hétfő,szerda, kedd,csütörtök)
+              </p>
             </li>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Szarvas Gábor Közösségi Tér (hétfő, kedd, szerda , csütörtök)
+              </p>
             </li>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Budapest Művelődési Központ (hétfő-szerda)
+              </p>
+            </li>
+            <li>
+              <p className="size-12 thin">
+                Józsefvárosi Galéria és Rendezvényközpont (hétfő-szerda)
+              </p>
+            </li>
+            <li>
+              <p className="size-12 thin">
+                VII. ker. Táncstúdió (VII. Wesselényi u. 41)
+                (hétfő,szerda,péntek)
+              </p>
             </li>
           </ul>
+          <div className={`${style["teachers-wrapper"]}`}>
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/benis_katalin.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/taylor_jennifer.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/kovacs_bea.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/mady_krisztina.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/empty.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/pers_julia.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/lakatos_lilla.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/rozsa_reka.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/solti_eszter.jpg`)}
+              alt=""
+            />
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/taylor_eszti.jpg`)}
+              alt=""
+            />
+          </div>
         </div>
         <div className={style["people-for"]}>
-          <h4 className="size-16 extra-bold">Kiknek ajánljuk?</h4>
+          <h4 className="size-16 extra-bold">Neked ajánljuk, ha...</h4>
           <ul>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...a mozgást nem utánozni, hanem tanulni szeretnéd.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...nyitott vagy egy finom, harmonikus mozgásformára.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...szereted a klasszikus és kortárs zenét.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...szeretsz másokkal közösen alkotni, szeretnél egy állandó
+                közösség tagja lenni.
               </p>
             </li>
           </ul>
         </div>
       </div>
       <div className={style["details"]}>
-        {/* <div className={style["card-wrapper"]}>
-          <div className={style["text"]}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <ul>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className={style["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
-          </div>
-        </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Mi a mozdulatművészet?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              Az általunk tanított mozdulatművészet a gimnasztika precizitására
+              épülő – de annál szabadabb –, a zenével szoros összhangban
+              létrejövő táncstílus. Magában foglalja a klasszikus balett és a
+              különböző modern technikák alapelemeit, megtartva azt az alapvető
+              szellemiséget, amely a test természetes adottságaihoz illeszkedő
+              esztétikus és kifejező mozgást keresi. A koreográfiát a zenével
+              szoros összhangban készítjük el, így zene és tánc egymás hatását
+              erősítik: még szebbnek látjuk a táncot és jobban megértjük a
+              zenét.
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -170,15 +214,19 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Hogyan tudok csatlakozni?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              Kurzusunk a művészi torna szerves folytatásának tekinthetők, így
+              ebben a műfajban nincsenek teljesen kezdő tanfolyamaink. A
+              kifejező mozgás egyre nagyobb hangsúlyt kap az ovisok és
+              kisiskolások óráin, és 10 éves kor környékén már
+              mozdulatművészetet tanul, aki korábban művészi tornára iratkozott
+              be. Ennek ellenére menet közben is lehet csatlakozni. Előny, ha
+              rendelkezel valamilyen táncos előképzettséggel, de ha nem, akkor
+              is megpróbálhatod az életkorodnak megfelelő csoportban. Nem kell
+              hozzá speciális adottság, a tanárok segítenek a felzárkózásban,
+              nyugodtan csatlakozhatsz. Nem kell hozzá speciális adottság,
+              tanáraink majd segítenek a felzárkózásban.
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -190,15 +238,17 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Hogyan épül fel az óra?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfia
+              tanulásból áll. A tréningezéssel elsajátítjuk a mozdulatművészet
+              formanyelvét és megszerezzük azokat a készségelemeket, amik
+              alkalmassá tesznek a koreográfiák előadásra. A mozdulatművészetre
+              leginkább az jellemző, hogy kifejező mozdulatokból építkezik. A
+              táncok elkészítése műhelymunka szerűen zajlik. Tanítványaink
+              kreatívan vesznek részt az alkotómunka minden fázisában a
+              koncepció kialakításától és a zenekiválasztásától a mozdulatok
+              megalkotásán keresztül a produkció színpadra állításáig.
             </p>
           </div>
           <div className={styleCard["pic"]}>
