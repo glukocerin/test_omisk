@@ -88,7 +88,9 @@ export default function Landing({ dotChange }) {
                         <Link to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
                         </Link>
-                        <button className="btn btn-primary">Programjaink</button>
+                        <Link className="btn-programs" to="/programs">
+                            <button className="btn btn-primary">Programjaink</button>
+                        </Link>
                     </div>
                 </div>
             </div>

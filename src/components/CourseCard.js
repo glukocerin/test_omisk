@@ -6,7 +6,10 @@ export default function Card(props) {
   return (
     <div className={`${style.wrapper} ${style[props.details.backgroundColor]}`}>
       <div className={style["image-wrapper"]}>
-        <img src={require(`../assets/img/${props.details.image}.png`)} alt="" />
+        <img
+          src={require(`../assets/img/courses/${props.details.image}.jpg`)}
+          alt=""
+        />
       </div>
       <div className={style["content"]}>
         <div className={style["text"]}>

@@ -60,7 +60,7 @@ const pagesConfig = {
     cards: [
       {
         title: "Művészeti torna",
-        image: "muveszeti_torna",
+        image: "muveszi_torna",
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
@@ -80,7 +80,7 @@ const pagesConfig = {
       },
       {
         title: "Pre balett",
-        image: "pre_balett",
+        image: "pre_ballet",
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
@@ -90,7 +90,7 @@ const pagesConfig = {
       },
       {
         title: "Klasszikus balett",
-        image: "klasszikus_balett",
+        image: "klasszikus_balett_1",
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
@@ -110,7 +110,7 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern_tanc",
+        image: "modern_tanc1",
         age: "4 év felett",
         districts: "ll., lll., lX., Xll., Xlll.",
         bottomText: "kerületekben",
@@ -163,13 +163,14 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyilvanos_ora",
-          link: ""
+          link: "public_class"
         },
         {
           title: "Versenyek",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "versenyek"
+          img: "versenyek",
+          link: "competitions"
         }
       ],
       secondRow: [
@@ -177,13 +178,15 @@ const pagesConfig = {
           title: "Évzáró előadások",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "evzaro_eloadas"
+          img: "evzaro_eloadas",
+          link: "speech_day"
         },
         {
           title: "Omisk gála",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "gala"
+          img: "gala",
+          link: "omisk"
         }
       ],
       thirdRow: [
@@ -191,13 +194,15 @@ const pagesConfig = {
           title: "Mozdulat műhely",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "mozdulatmuhely"
+          img: "mozdulatmuhely",
+          link: "callisthenics"
         },
         {
           title: "Nyári táborok",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "nyari_tabor"
+          img: "nyari_tabor",
+          link: "camp"
         }
       ]
     },
@@ -629,8 +634,7 @@ const pagesConfig = {
   operations: [
     {
       id: 0,
-      title:
-        "Általános tájékoztató iskolánk működéséről",
+      title: "Általános tájékoztató iskolánk működéséről",
       role: "primary",
       parentId: 0,
       description: ""
@@ -657,7 +661,7 @@ const pagesConfig = {
       role: "secondary",
       parentId: 0,
       description:
-      "A tandíj összegét a kurzusok menüpontban alatt találod.\nA tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak, Mikusik Mártának  az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk).\nTestvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- Ft/hó/fő\nAz aktuális tandíjat mindig a megtartott órák alapján számítjuk ki, tehát  ha hivatalos ünnep vagy  szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat.\nNéhány alkalmas hiányzást pótolni lehet egy párhuzamos csoport óráján. Huzamosabb idejű és orvosilag igazolt mulasztás esetén  a tandíjból visszatérítést tudunk adni. Erre vonatkozó igényt az iskola vezetőjének címzett e-mailben kérjük bejelenteni ( pers.julia@omisk.hu ). Ha a mulasztott órák száma meghaladja az havi óraszám felét , akkor fél hónapi díjat jóvá tudunk írni a következő befizetéskor.\nÁtmenetileg lehet heti 1 alkalommal is  járni, de hosszabb távon ezt nem javasoljuk, mert a tananyaggal minden órán haladunk. Különösen a második félévben jelent problémát, amikor a koreográfiákat tanuljuk. "
+        "A tandíj összegét a kurzusok menüpontban alatt találod.\nA tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak, Mikusik Mártának  az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk).\nTestvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- Ft/hó/fő\nAz aktuális tandíjat mindig a megtartott órák alapján számítjuk ki, tehát  ha hivatalos ünnep vagy  szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat.\nNéhány alkalmas hiányzást pótolni lehet egy párhuzamos csoport óráján. Huzamosabb idejű és orvosilag igazolt mulasztás esetén  a tandíjból visszatérítést tudunk adni. Erre vonatkozó igényt az iskola vezetőjének címzett e-mailben kérjük bejelenteni ( pers.julia@omisk.hu ). Ha a mulasztott órák száma meghaladja az havi óraszám felét , akkor fél hónapi díjat jóvá tudunk írni a következő befizetéskor.\nÁtmenetileg lehet heti 1 alkalommal is  járni, de hosszabb távon ezt nem javasoljuk, mert a tananyaggal minden órán haladunk. Különösen a második félévben jelent problémát, amikor a koreográfiákat tanuljuk. "
     },
     {
       id: 4,
