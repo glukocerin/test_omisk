@@ -19,45 +19,39 @@ export default function Courses(props) {
       </div>
       <div className={style["info-box"]}>
         <div className={style["info"]}>
-          <h4 className="size-16 extra-bold">Hasznos info</h4>
+          <h4 className="size-16 extra-bold">Important information</h4>
           <ul>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Korosztaly</p>
+                  <p className="size-12 extra-bold">Age group:</p>
                 </div>
                 <div className={style["age-group-value"]}>
-                  <p className="size-12 thin">4 - 10éves kortól</p>
-                  <p className="size-12 thin">korcsopotonként</p>
+                  <p className="size-12 thin">4-6 years</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Tandij</p>
+                  <p className="size-12 extra-bold">Cost:</p>
                 </div>
                 <div>
-                  <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
-                  </p>
-                  <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
-                  </p>
+                  <p className="size-12 thin">300,-/week 1x45min</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Kedvezmeny</p>
+                  <p className="size-12 extra-bold">Discounts:</p>
                 </div>
                 <div>
                   <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
+                    For 2 siblings: - 2000.-/month/person
                   </p>
                   <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
+                    For 3 siblings - 3000,-/month/person
                   </p>
                 </div>
               </div>
@@ -65,100 +59,61 @@ export default function Courses(props) {
           </ul>
         </div>
         <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Helyszineink</h4>
+          <h4 className="size-16 extra-bold">Location:</h4>
           <ul>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Óbudai Kulturális Központ (III. San Marco út 81)
+              </p>
             </li>
           </ul>
+          <div className={`${style["teachers-wrapper"]}`}>
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/taylor_eszti.jpg`)}
+              alt=""
+            />
+          </div>
         </div>
         <div className={style["people-for"]}>
-          <h4 className="size-16 extra-bold">Kiknek ajánljuk?</h4>
+          <h4 className="size-16 extra-bold">We suggest this for you...</h4>
           <ul>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...If you would like to learn dance playfully
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...If you would like to learn English this way as well
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...If it would be good to learn English and dance at the same
+                time
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...If you would like to make new friends
               </p>
             </li>
           </ul>
         </div>
       </div>
       <div className={style["details"]}>
-        {/* <div className={style["card-wrapper"]}>
-          <div className={style["text"]}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <ul>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className={style["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
-          </div>
-        </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">What is Pre-ballet?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              Pre-Ballet is an introduction to the very basics of dance,
+              gymnastics and ballet. Usually in ballet the routines are done in
+              standing position, we make it easier and start in a seated
+              position. The repeated commands during the recurring training
+              actions make easier to incorporate them into childres' vocabulary
+              in a native way. We hope that children will discover creative
+              expression, and experience the fun of dance during these classes!
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -167,15 +122,12 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">At what age can you start?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              The classes are for ages 4-6. Our teacher Esther, who speaks
+              native English demonstrates everything to the students. So it is
+              not a problem if your child is still new to English. After the age
+              of six, you can continue in one of our gymnastics classes.
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -184,15 +136,16 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">What do we do during class?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              We start every class with a few walking exercises, skips, ect.
+              Then we continue with our gymnastics routines, and some jumps.
+              Finally we usually have a short game, and we finish our class with
+              stretches. During the class we encourage children to only speak in
+              English. We learn a few basic words in the beginning that they can
+              use, and later on several dance related expressions. While we
+              dance, the children repeat all the instructions given by the
+              teacher, and this makes learning easy and fun!
             </p>
           </div>
           <div className={styleCard["pic"]}>

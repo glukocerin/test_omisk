@@ -1,14 +1,18 @@
 import React from "react";
 import style from "../assets/css/programs.module.css";
+import { Link } from "react-router-dom";
 
 function ProgramCard(props) {
+  console.log(props);
   return (
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>
-        <img
-          src={require(`../assets/img/programs/${props.details.img}.jpg`)}
-          alt=""
-        />
+        <Link to={`/programs/${props.details.link}`}>
+          <img
+            src={require(`../assets/img/programs/${props.details.img}.jpg`)}
+            alt=""
+          />
+        </Link>
       </div>
       <div className={style["text-wrapper"]}>
         <h4 className="size-32 extra-bold">{props.details.title}</h4>

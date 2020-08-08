@@ -44,10 +44,10 @@ const CoursesList = function() {
 
 const WhatWeDo = function() {
     return landing['list_what_we_do'].list.map((item, index) => (
-        <div className="list-item" key={index}>
+        <Link to={`/programs/${item.link}`} className="list-item" key={index}>
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item}</span>
-        </div>
+            <span className="text size-36 extra-bold">{item.text}</span>
+        </Link>
   ));
 }
 
@@ -55,6 +55,8 @@ export default function Landing({ dotChange }) {
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
+            [activeFiveSwitch, setActiveFiveSwitch] = useState('no-one'),
+            [activeSevenSwitch, setActiveSevenSwitch] = useState('no-one'),
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
@@ -88,7 +90,9 @@ export default function Landing({ dotChange }) {
                         <Link to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
                         </Link>
-                        <button className="btn btn-primary">Programjaink</button>
+                        <Link className="btn-programs" to="/programs">
+                            <button className="btn btn-primary">Programjaink</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -248,7 +252,16 @@ export default function Landing({ dotChange }) {
                     <CoursesList />
                 </div>
             </div>
-            <div className={`right five ${ activeDot === 5 ? "active": "" }`}></div>
+            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch}`}>
+                <div className="image-switch">
+                    <div onClick={() => setActiveFiveSwitch('no-one')} className={`switch ${ activeFiveSwitch === 'no-one' && "active" }`}></div>
+                    <div onClick={() => setActiveFiveSwitch('no-two')} className={`switch ${ activeFiveSwitch === 'no-two' && "active" }`}></div>
+                    <div onClick={() => setActiveFiveSwitch('no-three')} className={`switch ${ activeFiveSwitch === 'no-three' && "active" }`}></div>
+                    <div onClick={() => setActiveFiveSwitch('no-four')} className={`switch ${ activeFiveSwitch === 'no-four' && "active" }`}></div>
+                    <div onClick={() => setActiveFiveSwitch('no-five')} className={`switch ${ activeFiveSwitch === 'no-five' && "active" }`}></div>
+                    <div onClick={() => setActiveFiveSwitch('no-fix')} className={`switch ${ activeFiveSwitch === 'no-fix' && "active" }`}></div>
+                </div>
+            </div>
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Mit csinálunk az órákon?</label>
@@ -271,7 +284,16 @@ export default function Landing({ dotChange }) {
                     <WhatWeDo />
                 </div>
             </div>
-            <div className={`right seven ${ activeDot === 7 ? "active": "" }`}></div>
+            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch}`}>
+                <div className="image-switch">
+                    <div onClick={() => setActiveSevenSwitch('no-one')} className={`switch ${ activeSevenSwitch === 'no-one' && "active" }`}></div>
+                    <div onClick={() => setActiveSevenSwitch('no-two')} className={`switch ${ activeSevenSwitch === 'no-two' && "active" }`}></div>
+                    <div onClick={() => setActiveSevenSwitch('no-three')} className={`switch ${ activeSevenSwitch === 'no-three' && "active" }`}></div>
+                    <div onClick={() => setActiveSevenSwitch('no-four')} className={`switch ${ activeSevenSwitch === 'no-four' && "active" }`}></div>
+                    <div onClick={() => setActiveSevenSwitch('no-five')} className={`switch ${ activeSevenSwitch === 'no-five' && "active" }`}></div>
+                    <div onClick={() => setActiveSevenSwitch('no-fix')} className={`switch ${ activeSevenSwitch === 'no-fix' && "active" }`}></div>
+                </div>
+            </div>
             <div className={`left eight ${ activeDot === 8 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Ami fontos nekünk</label>

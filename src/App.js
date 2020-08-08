@@ -20,6 +20,8 @@ import Operation from "./pages/Operation";
 
 import Enrollment from "./pages/Enrollment";
 
+import Contact from "./pages/Contact";
+
 // courses
 import Eurhythmics from "./pages/Eurhythmics";
 import Callisthenics from "./pages/Callisthenics";
@@ -31,6 +33,7 @@ import Modern from "./pages/Modern";
 //programs
 import pagesConfig from "./assets/pagesConfig";
 import ProgramPage from "./pages/ProgramPage";
+import Achievement from "./pages/Achievement";
 
 import Landing from "./pages/Landing";
 
@@ -76,6 +79,10 @@ function App() {
           <Navigation BackgroundColor="blue-1" />
           <Enrollment />
         </Route>
+        <Route path="/contact">
+          <Navigation BackgroundColor="blue-4" />
+          <Contact />
+        </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="blue-1" />
           <Eurhythmics />
@@ -112,13 +119,38 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/programs/speech_day">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation />
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
         </Route>
         <Route exact path="/programs/competitions">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation />
           <ProgramPage opt={programs.programPage.competitions} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/omisk">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.omisk} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/public_class">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.publicClass} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/callisthenics">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.callisthenics} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/camp">
+          <Navigation />
+          <ProgramPage opt={programs.programPage.camp} />
+          <Footer />
+        </Route>
+        <Route exact path="/programs/achievements">
+          <Navigation BackgroundColor="blue-1" />
+          <Achievement />
           <Footer />
         </Route>
         <Route path="/programDetail">

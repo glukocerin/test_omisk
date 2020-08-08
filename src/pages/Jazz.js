@@ -10,7 +10,7 @@ export default function Courses(props) {
       <div className={style["header"]}>
         <div>
           <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-            Jazz tánc kurzus
+            Jazztánc kurzus
           </h1>
         </div>
         <div className={`${style["button-wrapper"]}`}>
@@ -19,45 +19,39 @@ export default function Courses(props) {
       </div>
       <div className={style["info-box"]}>
         <div className={style["info"]}>
-          <h4 className="size-16 extra-bold">Hasznos info</h4>
+          <h4 className="size-16 extra-bold">Hasznos infók:</h4>
           <ul>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Korosztaly</p>
+                  <p className="size-12 extra-bold">Korosztály:</p>
                 </div>
                 <div className={style["age-group-value"]}>
-                  <p className="size-12 thin">4 - 10éves kortól</p>
-                  <p className="size-12 thin">korcsopotonként</p>
+                  <p className="size-12 thin">6 éves kortól</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Tandij</p>
+                  <p className="size-12 extra-bold">Tandíj:</p>
                 </div>
                 <div>
-                  <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
-                  </p>
-                  <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
-                  </p>
+                  <p className="size-12 thin">Heti 2x60 perc: 11300,- /hó</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Kedvezmeny</p>
+                  <p className="size-12 extra-bold">Kedvezmények:</p>
                 </div>
                 <div>
                   <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
+                    2 testvér esetén 2000,-Ft/fő/hó
                   </p>
                   <p className="size-12 thin">
-                    Heti 2 x 60 perc 10700-11000 Ft / hó
+                    3 testvér esetén 3000,- Ft/fő/hó
                   </p>
                 </div>
               </div>
@@ -68,97 +62,60 @@ export default function Courses(props) {
           <h4 className="size-16 extra-bold">Helyszineink</h4>
           <ul>
             <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
-            </li>
-            <li>
-              <p className="size-12 thin">Óbudai Kulturális</p>
+              <p className="size-12 thin">
+                Óbudai Kulturális Központ (hétfő, csütörtök)
+              </p>
             </li>
           </ul>
+          <div className={`${style["teachers-wrapper"]}`}>
+            <img
+              className={`${style["teacher-image"]}`}
+              src={require(`../assets/img/teachers/kalocsai_edit.jpg`)}
+              alt=""
+            />
+          </div>
         </div>
         <div className={style["people-for"]}>
-          <h4 className="size-16 extra-bold">Kiknek ajánljuk?</h4>
+          <h4 className="size-16 extra-bold">Neked ajánljuk, ha...</h4>
           <ul>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...egy könnyed, laza, látványos műfajt keresel.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...szereted a modern, pörgős zenéket.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...suli után jó társaságban, tánccal szeretnéd leadni a
+                felgyülemlett stresszt.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem
-                ipsum dolor sit
+                ...szeretnéd jobban megismerni a tested határait.
               </p>
             </li>
           </ul>
         </div>
       </div>
       <div className={style["details"]}>
-        {/* <div className={style["card-wrapper"]}>
-          <div className={style["text"]}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <ul>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className={style["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
-          </div>
-        </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Mi a jazztánc?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              A jazztánc az Amerikai Egyesült Államokból, New Orleansból
+              származik, az afro-amerikaiak autentikus táncában gyökerezik. A
+              jazz zenével együtt fejlődött, kiegészült a balett és a modern
+              tánc elemeivel. Jellegzetessége az izolációs technika, ami az
+              egyes testrészek egymástól független mozgatását jelenti. A
+              mozgásközpontjai: fej-nyak, vállak, mellkas, medence, a kezek és a
+              lábak. A mozgás lényege a “policentrikusság”, ez azt jelenti, hogy
+              legalább kettő – a fentebb említett – mozgásközpont egymástól
+              függetlenül mozog. Felszabadult, látványos táncstílus.
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -167,15 +124,16 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Mikor tudom elkezdeni?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség
+              csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló
+              alapot ad, de a jelentkezéshez az is elég, ha valamilyen műfajban
+              táncoltál vagy sportoltál már. Aki hobbiból űzi ezt a tánc
+              stílust, az a ritmikus gimnasztika és a táncsport nagyszerű
+              elegyére lel benne. Népszerűsége annak is köszönhető, hogy
+              teljesen nyitott minden mozgás beépítésére, ami stílusában
+              megfelelő.
             </p>
           </div>
           <div className={styleCard["pic"]}>
@@ -184,15 +142,18 @@ export default function Courses(props) {
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Kiknek ajanljuk</h4>
+            <h4 className="size-36 extra-bold">Hogyan épül fel az óra?</h4>
             <p className="size-20 thin">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet.
+              Az órák első felében tréningezünk mai, divatos zenére. Egymást
+              követik az izolációs, erősítő és koordinációt fejlesztő
+              gyakorlatok. Kezdőknél a tréning még csak izolációs majd
+              koordinációs gyakorlatokat tartalmaz. Haladóknál a modern balett
+              elemei is bekerülnek a tananyagba. Majdnem minden típusú mozgás
+              engedélyezett. Hosszú, nyújtott testvonalat, diagonális
+              feszességet és hosszú egyensúlyi helyzeteket használ, és a
+              felsőtestet teszi mindannak köz éppontjává, ami a testtel
+              történik. Az óra második része a már megtanult technikai elemeket
+              tartalmazó koreográfiák tanulásával telik.
             </p>
           </div>
           <div className={styleCard["pic"]}>

@@ -36,7 +36,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-left: 12.500vw;
+  margin-left: 12.5vw;
   margin-top: 19vh;
 }
 .left {
@@ -75,7 +75,7 @@
   color: var(--color-gray-0);
   max-width: 19rem;
   margin: auto;
-  margin-left: 12.500vw;
+  margin-left: 12.5vw;
   margin-top: 19vh;
 }
 .left.three {
@@ -86,7 +86,8 @@
   color: var(--color-gray-0);
 }
 .left.three .content-block,
-.left.six .content-block {
+.left.six .content-block,
+.left.seven .content-block {
   max-width: 29rem;
 }
 .left.three .article:nth-child(2),
@@ -115,7 +116,7 @@
 .left.three .button-box .btn:focus {
   outline: unset;
 }
-.left.three .button-box a + .btn {
+.left.three .button-box a + .btn-programs {
   margin-left: 15px;
 }
 .left.three .button-box .btn-primary {
@@ -146,7 +147,7 @@
 }
 .left.four .drop-down-list,
 .left.four .drop-down-list .place,
-.left.four .drop-down-list .place .place-informations{
+.left.four .drop-down-list .place .place-informations {
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +159,7 @@
   cursor: pointer;
   user-select: none;
 }
-.left.four .drop-down-list .place *{
+.left.four .drop-down-list .place * {
   cursor: pointer;
 }
 .left.four .drop-down-list .place .plus-sign,
@@ -193,6 +194,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 28px;
 }
 .left.four .drop-down-list .place .place-informations {
   max-height: 0;
@@ -238,7 +240,7 @@
 .left.five .list-item .arrow .cls-1,
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
-  stroke-width: 2px;;
+  stroke-width: 2px;
 }
 .left.five .list-item .arrow .cls-2,
 .left.seven .list-item .arrow .cls-2 {
@@ -297,20 +299,35 @@
   background-position: center;
 }
 .right.one {
-  background-image: url('../img/landing_bg_1.png');
+  background-image: url("../img/landing_bg_1.png");
 }
 .right.two {
-  background-image: url('../img/landing_bg_2.png');
+  background-image: url("../img/landing_bg_2.png");
 }
 .right.three {
-  background-image: url('../img/landing_bg_3.png');
+  background-image: url("../img/landing_bg_3.png");
 }
 .right.four {
   background: var(--color-gray-3);
   overflow: hidden;
 }
-.right.five {
-  background-image: url('../img/landing_bg_5.png');
+.right.five.no-one {
+  background-image: url('../img/courses/muveszi_torna.jpg');
+}
+.right.five.no-two {
+  background-image: url('../img/courses/mozdulatmuveszet.jpg');
+}
+.right.five.no-three {
+  background-image: url('../img/courses/pre_ballet.jpg');
+}
+.right.five.no-four {
+  background-image: url('../img/courses/klasszikus_balett_1.jpg');
+}
+.right.five.no-five {
+  background-image: url('../img/courses/jazz_tanc.jpg');
+}
+.right.five.no-fix {
+  background-image: url('../img/courses/modern_tanc1.jpg');
 }
 .right.six {
   background: var(--color-blue-3);
@@ -318,7 +335,7 @@
   justify-content: center;
   align-items: center;
 }
-.right.six .content-block .link-block{
+.right.six .content-block .link-block {
   margin-top: 3rem;
   background: var(--color-blue-3);
   display: flex;
@@ -333,17 +350,55 @@
   font-weight: 600;
   opacity: 1;
 }
-.right.seven {
-  background-image: url('../img/landing_bg_7.png');
+.right.seven.no-one {
+  background-image: url('../img/programs/nyilvanos_ora.jpg');
+}
+.right.seven.no-two {
+  background-image: url('../img/programs/versenyek.jpg');
+}
+.right.seven.no-three {
+  background-image: url('../img/programs/evzaro_eloadas.jpg');
+}
+.right.seven.no-four {
+  background-image: url('../img/programs/gala.jpg');
+}
+.right.seven.no-five {
+  background-image: url('../img/programs/mozdulatmuhely.jpg');
+}
+.right.seven.no-fix {
+  background-image: url('../img/programs/nyari_tabor.jpg');
 }
 .right.eight {
-  background-image: url('../img/landing_bg_8.png');
+  background-image: url("../img/landing_bg_8.png");
 }
 .right.active {
   animation: scrollup 500ms ease-in-out forwards;
 }
 .right:not(.active) {
   animation: scrolloutdown 500ms ease-in-out;
+}
+.right .image-switch {
+  display: none;
+}
+.right.active .image-switch {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 3.375rem;
+  left: 50%;
+  width: 50%;
+}
+.right.active .image-switch .switch {
+  border-top: 3px solid var(--color-gray-0);
+  width: 4.75rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.right.active .image-switch .switch.active {
+  border-top: 7px solid var(--color-gray-0);
+}
+.right.active .image-switch .switch + .switch {
+  margin-left: 0.5rem;
 }
 
 .social-media-bar {
@@ -357,38 +412,54 @@
   align-items: center;
 }
 .social-media-bar .icon {
- cursor: pointer;
+  cursor: pointer;
 }
-.social-media-bar .icon+.icon {
+.social-media-bar .icon + .icon {
   margin-top: 25px;
 }
 
 .social-media-bar .icon .cls-2 {
   stroke: unset;
- }
+}
 
 .mobile-footer {
   display: none;
 }
 
 @keyframes scrolldown {
-  from {top: -100%;}
-  to {top: 0;}
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
 }
 
 @keyframes scrollup {
-  from {top: 100%;}
-  to {top: 0;}
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
 }
 
 @keyframes scrolloutdown {
-  from {top: 0%;}
-  to {top: -100%;}
+  from {
+    top: 0%;
+  }
+  to {
+    top: -100%;
+  }
 }
 
 @keyframes scrolloutup {
-  from {top: 0%;}
-  to {top: 100%;}
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -436,9 +507,9 @@
     order: 8;
     padding: 1.75rem 1.75rem 3.5rem 1.75rem;
   }
-  .left.five .list-item, 
+  .left.five .list-item,
   .left.seven .list-item {
-    color: var(--color-gray-7)
+    color: var(--color-gray-7);
   }
   .left.five .list-item .arrow,
   .left.seven .list-item .arrow {
@@ -474,7 +545,7 @@
   .left.four .drop-down-list .place .plus-sign,
   .left.four .drop-down-list .place .minus-sign {
     left: 0.75rem;
-    top: 0.5rem;
+    top: 0.825rem;
   }
   .right.eight {
     order: 12;
@@ -557,7 +628,7 @@
   }
   .mobile-footer .content-block .content-header .logo .cls-1,
   .mobile-footer .content-block .content-header .logo .cls-2 {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
   }
