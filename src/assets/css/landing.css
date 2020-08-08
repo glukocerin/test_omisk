@@ -312,22 +312,22 @@
   overflow: hidden;
 }
 .right.five.no-one {
-  background-image: url('../img/landing_bg_5.png');
+  background-image: url('../img/courses/muveszi_torna.jpg');
 }
 .right.five.no-two {
-  background-image: url('../img/mozdulatmuveszet.png');
+  background-image: url('../img/courses/mozdulatmuveszet.jpg');
 }
 .right.five.no-three {
-  background-image: url('../img/pre_balett.png');
+  background-image: url('../img/courses/pre_ballet.jpg');
 }
 .right.five.no-four {
-  background-image: url('../img/klasszikus_balett.png');
+  background-image: url('../img/courses/klasszikus_balett_1.jpg');
 }
 .right.five.no-five {
-  background-image: url('../img/jazz_tanc.png');
+  background-image: url('../img/courses/jazz_tanc.jpg');
 }
 .right.five.no-fix {
-  background-image: url('../img/modern_tanc.png');
+  background-image: url('../img/courses/modern_tanc1.jpg');
 }
 .right.six {
   background: var(--color-blue-3);
