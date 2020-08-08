@@ -184,36 +184,6 @@ export default function Courses(props) {
         </div>
       </div>
       <div className={style["details"]}>
-        {/* <div className={style["card-wrapper"]}>
-          <div className={style["text"]}>
-            <h4 className="size-16 extra-bold">Kiknek ajanljuk</h4>
-            <ul>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-              <li>
-                <p className="size-14 thin">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className={style["pic"]}>
-            <img src={require(`../assets/img/eurhythmics_1.png`)} alt="" />
-          </div>
-        </div> */}
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">Mi a művészi torna?</h4>
