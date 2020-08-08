@@ -104,11 +104,12 @@
 }
 .operation .operation-content .drop-down-list .info.active .info-informations {
   display: block;
-  max-height: 30rem;
+  max-height: 50rem;
   white-space: pre-wrap;
   padding-top: 2rem;
   padding-bottom: 4rem;
   transition: max-height 0.3s linear;
+  line-height: 28px;
 }
 .operation .operation-content .drop-down-list .info .info-informations.hidden {
   padding: 0;

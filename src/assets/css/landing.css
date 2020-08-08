@@ -193,6 +193,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 28px;
 }
 .left.four .drop-down-list .place .place-informations {
   max-height: 0;
@@ -474,7 +475,7 @@
   .left.four .drop-down-list .place .plus-sign,
   .left.four .drop-down-list .place .minus-sign {
     left: 0.75rem;
-    top: 0.5rem;
+    top: 0.825rem;
   }
   .right.eight {
     order: 12;

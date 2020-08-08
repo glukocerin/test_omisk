@@ -20,6 +20,8 @@ import Operation from "./pages/Operation";
 
 import Enrollment from "./pages/Enrollment";
 
+import Contact from "./pages/Contact";
+
 // courses
 import Eurhythmics from "./pages/Eurhythmics";
 import Callisthenics from "./pages/Callisthenics";
@@ -76,6 +78,10 @@ function App() {
         <Route path="/enrollment">
           <Navigation BackgroundColor="blue-1" />
           <Enrollment />
+        </Route>
+        <Route path="/contact">
+          <Navigation BackgroundColor="blue-4" />
+          <Contact />
         </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="blue-1" />
