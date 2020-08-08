@@ -22,18 +22,10 @@ export default function Contact() {
             <label className="content-title size-54 extra-bold">Kérdéseidre válaszolunk!</label>
             <label className="content-text size-20">
               Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol hétköznap 10-14 óra között hívhatod.
-              <br/>
-              <br/>
-              Telefon: <b>06-1-2000-138</b>
-              <br/>
-              <br/>
-              Mobil: <b>06-20-9460-848</b>
-              <br/>
-              <br/>
-              E-mail: <b><a href="mailto:iroda@omisk.hu">iroda@omisk.hu</a></b>
-              <br/>
-              <br/>
-              Posta: <b>1021. Budapest, Széher út 77.</b>
+              <span className="contact-row">Telefon: <b>06-1-2000-138</b></span>
+              <span className="contact-row">Mobil: <b>06-20-9460-848</b></span>
+              <span className="contact-row">E-mail: <b><a href="mailto:iroda@omisk.hu">iroda@omisk.hu</a></b></span>
+              <span className="contact-row">Posta: <b>1021. Budapest, Széher út 77.</b></span>
             </label>
           </div>
         </div>
