@@ -71,14 +71,14 @@ export default function Landing({ dotChange }) {
         <div className="landing" onWheel = {(e) => scroller(e) }>
             <div className={`left one ${ activeDot === 1 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-83">Mozgásba hozzuk a zenét!</label>
+                    <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét!`}</label>
                     <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
                     <DoubleArrowDown className="double-arrow-down" />
                 </div>
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">Mozgásművészeti képzés 1990 óta Budapest 5 kerületében</label>
+                <label className="text extra-bold size-70">{`Mozgásművészeti\nképzés\n1990 óta Budapest\n5 kerületében`}</label>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
@@ -264,7 +264,7 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-54">Mit csinálunk az órákon?</label>
+                    <label className="title extra-bold size-54">{`Mit csinálunk\naz órákon?`}</label>
                     <label className="article size-20">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
                 </div>
             </div>
