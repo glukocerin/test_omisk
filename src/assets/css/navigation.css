@@ -103,12 +103,19 @@
   .header.background-blue-4.fixed {
     background: var(--color-blue-4);
   }
-  /*END OF LANDING RULE*/
-  /* TEACHERS RULE!!! */
   .header.background-green.fixed {
     background: var(--color-green-0);
   }
-  /*END OF TEACHERS RULE*/
+  .header.background-blue-1.fixed {
+    background: var(--color-blue-1);
+  }
+  .header.background-yellow.fixed {
+    background: var(--color-yellow-2);
+  }
+  .header.background-pink.fixed {
+    background: var(--color-pink-0);
+  }
+  /*END OF LANDING RULE*/
   .header a {
     height: 2rem;
   }
