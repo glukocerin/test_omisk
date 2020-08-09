@@ -3,7 +3,6 @@ import style from "../assets/css/programs.module.css";
 import { Link } from "react-router-dom";
 
 function ProgramCard(props) {
-  console.log(props);
   return (
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>

@@ -5,8 +5,8 @@ import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
 import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 
 const Events = function(props) {
-  return props.list.map(event => (
-    <div className={style["event-wrapper"]}>
+  return props.list.map((event, index) => (
+    <div key={index} className={style["event-wrapper"]}>
       <div className={style["event-header"]}>
         <div className={style["event-date"]}>
           <p>{event.date}</p>
@@ -26,9 +26,17 @@ const Events = function(props) {
 };
 
 const Images = function(props) {
-  return props.list.map(img => (
-    <img src={require(`../assets/img/speech_days/${img}.jpg`)} alt="" />
-  ));
+  return props.list.map((img, index) => {
+    var link = `../assets/img/programs/${img}.jpg`;
+
+    return (
+      <img
+        key={index}
+        src={require(`../assets/img/programs/${img}.jpg`)}
+        alt=""
+      />
+    );
+  });
 };
 
 export default function ProgramPage(props) {
