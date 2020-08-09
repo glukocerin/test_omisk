@@ -35,7 +35,7 @@ export default function LeafletMap(props) {
       
       <Marker position={[47.48967, 19.01836]} onclick={() => setPosition({ position: [47.48967, 19.01836], zoom: 18 }) }>
         <Popup>
-          MOM Művelődési Központ
+          MOM Kulturális Központ
         </Popup>
       </Marker>
       

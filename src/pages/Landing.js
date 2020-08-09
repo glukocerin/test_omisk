@@ -150,7 +150,7 @@ export default function Landing({ dotChange }) {
                         <div className={`place ${ activePlace.placeId === 3 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 3 ? {placeId: null, position: null} : {placeId:3, position: [47.48967, 19.01836], zoom: 18}) }>
                             <PlusSign className="plus-sign"/>
                             <MinusSign className="minus-sign"/>                            
-                            <label className="place-label size-24 extra-bold">Mom Művelődési Központ</label>
+                            <label className="place-label size-24 extra-bold">MOM Kulturális Központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">XII. Csörsz u. 18</label>
                                 <label className="place-address size-15 extra-bold">XII. Böszörményi  út 24</label>
@@ -349,7 +349,7 @@ export default function Landing({ dotChange }) {
                     <label className="text size-24 extra-bold">Helyszíneink</label>
                     <label className="article size-12">
                         Óbudai Kulturális Központ<br/>
-                        MOM Művelődési Központ<br/>
+                        MOM Kulturális Központ<br/>
                         Budapest Művelődési központ<br/>
                         Vll. Kerületi Táncstúdió<br/>
                         Békásmegyeri Közösségi Ház<br/>
