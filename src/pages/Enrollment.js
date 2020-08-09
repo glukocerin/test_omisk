@@ -37,7 +37,7 @@ export default function Enrollment() {
         <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 1 ? {placeId: null, position: null} : {placeId:1, position: [47.54154, 19.03426], zoom: 18}) }>
             <PlusSign className="plus-sign"/>
             <MinusSign className="minus-sign"/>
-            <label className="place-label size-24 extra-bold">Óbudai kultúrális központ</label>
+            <label className="place-label size-24 extra-bold">Óbudai Kulturális Központ</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
                 <label className="place-program-row size-15 thin">Művészi  torna</label>

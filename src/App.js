@@ -119,32 +119,32 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/programs/speech_day">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
         </Route>
         <Route exact path="/programs/competitions">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.competitions} />
           <Footer />
         </Route>
         <Route exact path="/programs/omisk">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.omisk} />
           <Footer />
         </Route>
         <Route exact path="/programs/public_class">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.publicClass} />
           <Footer />
         </Route>
         <Route exact path="/programs/callisthenics">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.callisthenics} />
           <Footer />
         </Route>
         <Route exact path="/programs/camp">
-          <Navigation />
+          <Navigation isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.camp} />
           <Footer />
         </Route>
