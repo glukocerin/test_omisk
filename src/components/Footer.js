@@ -1,7 +1,8 @@
 import React from "react";
 import style from "../assets/css/footer.module.css";
+import "../assets/css/footer.icons.css";
 
-import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
+import { ReactComponent as LogoWithTitle } from "../assets/img/icons/logo_w_title.svg";
 import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
 import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
@@ -10,16 +11,11 @@ export default function Footer() {
   return (
     <div className={style["wrapper"]}>
       <div className={style["icons-wrapper"]}>
-        <Logo className={style["logo"]} />
-        <div className={style["text-wrapper"]}>
-          <p className={`size-15 extra-bold`}>Óbuda</p>
-          <p className={`size-15 extra-bold`}>Mozgásművészeti</p>
-          <p className={`size-15 extra-bold`}>Iskola</p>
-        </div>
+        <LogoWithTitle className='footer-logo' />
         <div className={style["social-media"]}>
-          <Instagram className={style["social-insta"]} />
-          <Facebook className={style["social-fb"]} />
-          <Youtube />
+          <Instagram className='footer-icon' />
+          <Facebook className='footer-icon' />
+          <Youtube className='footer-icon'/>
         </div>
       </div>
       <div className={style["details-wrapper"]}>
