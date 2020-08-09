@@ -84,12 +84,12 @@ function App() {
           <Contact />
         </Route>
         <Route path="/courses/eurhythmics">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation isHeaderFixed="true" />
           <Eurhythmics />
           <Footer />
         </Route>
         <Route path="/courses/callisthenics">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation isHeaderFixed="true" />
           <Callisthenics />
           <Footer />
         </Route>
@@ -99,22 +99,22 @@ function App() {
           <Footer />
         </Route>
         <Route path="/courses/ballet">
-          <Navigation BackgroundColor="pink" />
+          <Navigation isHeaderFixed="true" />
           <Ballet />
           <Footer />
         </Route>
         <Route path="/courses/jazz">
-          <Navigation BackgroundColor="green" />
+          <Navigation isHeaderFixed="true" />
           <Jazz />
           <Footer />
         </Route>
         <Route path="/courses/modern">
-          <Navigation BackgroundColor="green" />
+          <Navigation isHeaderFixed="true" />
           <Modern />
           <Footer />
         </Route>
         <Route exact path="/programs">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation isHeaderFixed="true" />
           <Programs />
           <Footer />
         </Route>

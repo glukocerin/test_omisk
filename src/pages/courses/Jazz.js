@@ -1,22 +1,17 @@
 import React from "react";
-
+import CoursesHeader from "./CoursesHeader";
 import style from "../../assets/css/jazz.module.css";
 import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
-export default function Courses(props) {
+export default function Courses() {
+  const opt = {
+    courseName: "Jazztánc",
+    color: "green",
+    img: "jazz"
+  };
   return (
     <div>
-      <div className={style["header-mobile"]}></div>
-      <div className={style["header"]}>
-        <div>
-          <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-            Jazztánc kurzus
-          </h1>
-        </div>
-        <div className={`${style["button-wrapper"]}`}>
-          <button className={style["button"]}>Jelentkezem</button>
-        </div>
-      </div>
+      <CoursesHeader opt={opt} />
       <div className={style["info-box"]}>
         <div className={style["info"]}>
           <h4 className="size-16 extra-bold">Hasznos infók:</h4>
