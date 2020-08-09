@@ -23,7 +23,7 @@ export default function LeafletMap(props) {
       />
       <Marker position={[47.54154, 19.03426]} onclick={() => setPosition({ position: [47.54154, 19.03426], zoom: 18 }) }>
         <Popup>
-          Óbudai Kultúrális Központ
+          Óbudai Kulturális Központ
         </Popup>
       </Marker>
 

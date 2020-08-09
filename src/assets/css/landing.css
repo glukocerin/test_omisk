@@ -94,6 +94,7 @@
 .left.six .article:nth-child(2) {
   font-weight: 100;
   margin-top: 3.75rem;
+  white-space: pre-wrap;
 }
 .left.three .article,
 .left.six .article {
