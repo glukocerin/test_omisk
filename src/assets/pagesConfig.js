@@ -47,12 +47,30 @@ const pagesConfig = {
     list_what_we_do: {
       title: "És az órákon kívül……",
       list: [
-        "Évzáró előadások",
-        "Országos versenyek",
-        "Nyilvános órák",
-        "OMISK Gála",
-        "OMISK Mozdulatműhely",
-        "Nyári táborok"
+        {
+          text: "Évzáró előadások",
+          link: 'speech_day'
+        },
+        {
+          text: "Országos versenyek",
+          link: 'competitions'
+        },
+        {
+          text: "Nyilvános órák",
+          link: 'public_class'
+        },
+        {
+          text: "OMISK Gála",
+          link: 'omisk'
+        },
+        {
+          text: "OMISK Mozdulatműhely",
+          link: 'callisthenics'
+        },
+        {
+          text: "Nyári táborok",
+          link: 'camp'
+        }
       ]
     }
   },
