@@ -52,6 +52,7 @@
 }
 .left.one .title {
   color: var(--color-gray-0);
+  white-space: pre-wrap;
 }
 .left.one .sub-title {
   color: var(--color-gray-0);
@@ -73,10 +74,9 @@
 }
 .left.two .text {
   color: var(--color-gray-0);
-  max-width: 19rem;
-  margin: auto;
   margin-left: 12.5vw;
   margin-top: 19vh;
+  white-space: pre-wrap;
 }
 .left.three {
   background: var(--color-green-0);
@@ -250,6 +250,9 @@
 .left.six {
   background: var(--color-blue-4);
 }
+.left.six .content-block .title {
+  white-space: pre-wrap;
+}
 .left.seven {
   background: var(--color-yellow-2);
 }
@@ -312,22 +315,22 @@
   overflow: hidden;
 }
 .right.five.no-one {
-  background-image: url('../img/courses/muveszi_torna.jpg');
+  background-image: url('../img/landing_sub/five-one.png');
 }
 .right.five.no-two {
-  background-image: url('../img/courses/mozdulatmuveszet.jpg');
+  background-image: url('../img/landing_sub/five-two.jpg');
 }
 .right.five.no-three {
-  background-image: url('../img/courses/pre_ballet.jpg');
+  background-image: url('../img/landing_sub/five-three.jpg');
 }
 .right.five.no-four {
-  background-image: url('../img/courses/klasszikus_balett_1.jpg');
+  background-image: url('../img/landing_sub/five-four.jpg');
 }
 .right.five.no-five {
-  background-image: url('../img/courses/jazz_tanc.jpg');
+  background-image: url('../img/landing_sub/five-five.jpg');
 }
 .right.five.no-fix {
-  background-image: url('../img/courses/modern_tanc1.jpg');
+  background-image: url('../img/landing_sub/five-six.jpg');
 }
 .right.six {
   background: var(--color-blue-3);
@@ -351,22 +354,22 @@
   opacity: 1;
 }
 .right.seven.no-one {
-  background-image: url('../img/programs/nyilvanos_ora.jpg');
+  background-image: url('../img/landing_sub/seven-one.jpg');
 }
 .right.seven.no-two {
-  background-image: url('../img/programs/versenyek.jpg');
+  background-image: url('../img/landing_sub/seven-two.jpg');
 }
 .right.seven.no-three {
-  background-image: url('../img/programs/evzaro_eloadas.jpg');
+  background-image: url('../img/landing_sub/seven-three.jpg');
 }
 .right.seven.no-four {
-  background-image: url('../img/programs/gala.jpg');
+  background-image: url('../img/landing_sub/seven-four.jpg');
 }
 .right.seven.no-five {
-  background-image: url('../img/programs/mozdulatmuhely.jpg');
+  background-image: url('../img/landing_sub/seven-five.jpg');
 }
 .right.seven.no-fix {
-  background-image: url('../img/programs/nyari_tabor.jpg');
+  background-image: url('../img/landing_sub/seven-six.jpg');
 }
 .right.eight {
   background-image: url("../img/landing_bg_8.png");
@@ -526,8 +529,10 @@
   .left.seven .list-item .arrow .cls-2 {
     stroke: var(--color-gray-7);
   }
-  .right.seven {
+  .right.seven.no-one {
     order: 9;
+    background: url("../img/landing_bg_7.png");
+    background-size: 100% auto;
   }
   .left.five {
     order: 10;
@@ -600,6 +605,9 @@
     font-size: 12px;
   }
   .social-media-bar {
+    display: none;
+  }
+  .right.active .image-switch {
     display: none;
   }
   .mobile-footer {

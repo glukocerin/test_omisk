@@ -44,7 +44,7 @@ export default function Footer() {
           <h5 className={`size-20 extra-bold`}>Helyszineink</h5>
           <p className={`size-15 thin`}>
             Óbudai Kulturális Központ <br />
-            MOM Művelődési Központ <br />
+            MOM Kulturális Központ<br />
             Budapest Művelődési központ <br />
             Vll. Kerületi Táncstúdió <br />
             Békásmegyeri Közösségi Ház <br />
