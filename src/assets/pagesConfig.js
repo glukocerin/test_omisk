@@ -49,27 +49,27 @@ const pagesConfig = {
       list: [
         {
           text: "Évzáró előadások",
-          link: 'speech_day'
+          link: "speech_day"
         },
         {
           text: "Országos versenyek",
-          link: 'competitions'
+          link: "competitions"
         },
         {
           text: "Nyilvános órák",
-          link: 'public_class'
+          link: "public_class"
         },
         {
           text: "OMISK Gála",
-          link: 'omisk'
+          link: "omisk"
         },
         {
           text: "OMISK Mozdulatműhely",
-          link: 'callisthenics'
+          link: "callisthenics"
         },
         {
           text: "Nyári táborok",
-          link: 'camp'
+          link: "camp"
         }
       ]
     }
@@ -95,16 +95,6 @@ const pagesConfig = {
         backgroundColor: "blue",
         dotColor: "dot-blue",
         link: "callisthenics"
-      },
-      {
-        title: "Pre balett",
-        image: "pre_ballet",
-        age: "",
-        districts: "III. kerület",
-        bottomText: "kerületekben",
-        backgroundColor: "salmon",
-        dotColor: "dot-salmon",
-        link: "pre_ballet"
       },
       {
         title: "Klasszikus balett",
@@ -135,6 +125,16 @@ const pagesConfig = {
         backgroundColor: "green",
         dotColor: "dot-green",
         link: "modern"
+      },
+      {
+        title: "Pre balett",
+        image: "pre_ballet",
+        age: "",
+        districts: "III. kerület",
+        bottomText: "kerületekben",
+        backgroundColor: "salmon",
+        dotColor: "dot-salmon",
+        link: "pre_ballet"
       }
     ],
     cardDetails: [

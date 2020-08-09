@@ -31,16 +31,10 @@ function Programs() {
       <label className={`${style["header-text"]} size-90 extra-bold`}>
         Programjaink
       </label>
-      <div className={style["wrapper"]}>
-        <div className={style["cards-wrapper"]}>
-          <ProgramCardsFirstRow />
-        </div>
-        <div className={style["cards-wrapper"]}>
-          <ProgramCardsSecondRow />
-        </div>
-        <div className={style["cards-wrapper"]}>
-          <ProgramCardsThirdRow />
-        </div>
+      <div className={style["cards-wrapper"]}>
+        <ProgramCardsFirstRow />
+        <ProgramCardsSecondRow />
+        <ProgramCardsThirdRow />
       </div>
       <div className={`${style["page-footer"]}`}>
         <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>

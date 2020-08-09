@@ -4,6 +4,8 @@ import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
 import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 
+import { Link } from "react-router-dom";
+
 const Events = function(props) {
   return props.list.map((event, index) => (
     <div key={index} className={style["event-wrapper"]}>
@@ -27,8 +29,6 @@ const Events = function(props) {
 
 const Images = function(props) {
   return props.list.map((img, index) => {
-    var link = `../assets/img/programs/${img}.jpg`;
-
     return (
       <img
         key={index}
@@ -40,17 +40,19 @@ const Images = function(props) {
 };
 
 export default function ProgramPage(props) {
+  var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`);
+
   return (
-    <div>
-      <div className={style["header-image"]}>
-        <img
-          src={require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)}
-          alt=""
-        />
+    <div style={{ position: 'relative' }}>
+      <div className={style["header-wrapper"]}>
+        <div className={style["header"]} style ={ { backgroundImage: "url("+backgroundImage+")" } }></div>
+        <label className={`${style["state-location"]} size-13`}>
+          <Link to="/programs">Prograimjaink</Link> > {props.opt.title}
+        </label>
+        <label className={`${style["header-title"]} size-90 extra-bold`}>
+          {props.opt.title}
+        </label>
       </div>
-      <h4 className={`${style["header-text"]} size-90 extra-bold`}>
-        {props.opt.title}
-      </h4>
       <div className={style["body"]}>
         <div className={style["info"]}>
           <div className={style["details"]}>

@@ -78,13 +78,13 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">{`Mozgásművészeti\nképzés\n1990 óta Budapest\n5 kerületében`}</label>
+                <label className="text extra-bold size-70">{`Mozgásművészeti képzés\n1990 óta\nBudapest\nöt kerületében`}</label>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-20">Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?</label>
+                    <label className="article size-20">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg.\nTánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
                     <label className="article size-20">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
                         <Link to="/courses">
@@ -104,7 +104,7 @@ export default function Landing({ dotChange }) {
                         <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 1 ? {placeId: null, position: null} : {placeId:1, position: [47.54154, 19.03426], zoom: 18}) }>
                             <PlusSign className="plus-sign"/>
                             <MinusSign className="minus-sign"/>
-                            <label className="place-label size-24 extra-bold">Óbudai kultúrális központ</label>
+                            <label className="place-label size-24 extra-bold">Óbudai Kulturális Központ</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
                                 <label className="place-program-row size-15 thin">Művészi  torna</label>
