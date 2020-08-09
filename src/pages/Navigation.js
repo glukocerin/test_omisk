@@ -16,10 +16,10 @@ export default function Navigation(props) {
         <Logo className={`logo ${location === '/' && props.activeDot !== 1 && 'inverse'}`} />
       </Link>
       <div className="links">
-        <Link className={`plus-sign ${ location === "/courses" && "active" }`} to="/courses">Kurzusaink</Link>
-        <Link className={`plus-sign ${ location === "/programs" && "active" }`} to="/programs">Programjaink</Link>
-        <Link className={`${ location === "/teachers" && "active" }`} to="/teachers">Tanáraink</Link>
-        <Link className={`${ location === "/actuals" && "active" }`} to="/actuals">Aktuális</Link>
+        <Link className={`plus-sign ${ location.includes("course") && "active" }`} to="/courses">Kurzusaink</Link>
+        <Link className={`plus-sign ${ location.includes("program") && "active" }`} to="/programs">Programjaink</Link>
+        <Link className={`${ location.includes("teacher") && "active" }`} to="/teachers">Tanáraink</Link>
+        <Link className={`${ location.includes("actual") && "active" }`} to="/actuals">Aktuális</Link>
         <Link className={`${ location === "/operation" && "active" }`} to="/operation">Működésünk</Link>
         <Link className={`${ location === "/enrollment" && "active" }`} to="/enrollment">Beiratkozás</Link>
         <Link className={`${ location === "/contact" && "active" }`} to="/contact">Kapcsolat</Link>
