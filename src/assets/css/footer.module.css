@@ -30,18 +30,6 @@
   margin-right: 0.75rem;
 }
 
-.logo {
-  display: block;
-  visibility: visible;
-  height: 3.75rem;
-  fill: var(--color-gray-0);
-  background-color: white;
-}
-
-.logo svg .cls-1 {
-  fill: var(--color-gray-7) !important;
-}
-
 .details-box {
   width: 320px;
 }

@@ -84,32 +84,32 @@ function App() {
           <Contact />
         </Route>
         <Route path="/courses/eurhythmics">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Eurhythmics />
           <Footer />
         </Route>
         <Route path="/courses/callisthenics">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Callisthenics />
           <Footer />
         </Route>
         <Route path="/courses/pre_ballet">
-          <Navigation isHeaderFixed="true" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <PreBallet />
           <Footer />
         </Route>
         <Route path="/courses/ballet">
-          <Navigation BackgroundColor="pink" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Ballet />
           <Footer />
         </Route>
         <Route path="/courses/jazz">
-          <Navigation BackgroundColor="green" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Jazz />
           <Footer />
         </Route>
         <Route path="/courses/modern">
-          <Navigation BackgroundColor="green" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Modern />
           <Footer />
         </Route>
@@ -119,32 +119,32 @@ function App() {
           <Footer />
         </Route>
         <Route exact path="/programs/speech_day">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
         </Route>
         <Route exact path="/programs/competitions">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.competitions} />
           <Footer />
         </Route>
         <Route exact path="/programs/omisk">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.omisk} />
           <Footer />
         </Route>
         <Route exact path="/programs/public_class">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.publicClass} />
           <Footer />
         </Route>
         <Route exact path="/programs/callisthenics">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.callisthenics} />
           <Footer />
         </Route>
         <Route exact path="/programs/camp">
-          <Navigation isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <ProgramPage opt={programs.programPage.camp} />
           <Footer />
         </Route>

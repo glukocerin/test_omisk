@@ -30,11 +30,12 @@
 }
 /*END OF LANDING RULES*/
 
-/* TEACHERS RULE!!! */
-.header.background-green.fixed {
+/* FIXED RULES!!! */
+.header.background-green.fixed,
+.header.background-blue-1.fixed {
   background: transparent;
 }
-/*END OF TEACHERS RULE*/
+/*END OF FIXED RULES*/
 .header.fixed {
   top: 0;
   left: 0;

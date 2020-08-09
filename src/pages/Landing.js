@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import LeafletMap from '../components/LeafletMap'
+import { useSelector, useDispatch } from "react-redux";
+
+import {updatePageindex} from '../actions/navigation'
 
 import '../assets/css/landing.css';
 
@@ -33,18 +36,20 @@ const Dots = function({ setActiveDot, dotChange, activeDot }) {
     return dots;
 }
 
-const CoursesList = function() {
+const CoursesList = function(activeDot) {
+    const dispatch = useDispatch();
     return landing['list_courses'].list.map((item, index) => (
-        <Link to={`/courses/${item.link}`} className="list-item" key={index}>
+        <Link onClick={()=> dispatch(updatePageindex({payload: activeDot.activeDot}))} to={`/courses/${item.link}`} className="list-item" key={index}>
             <ArrowRight className="arrow"/>
             <span className="text size-36 extra-bold">{item.text}</span>
         </Link>
   ));
 }
 
-const WhatWeDo = function() {
+const WhatWeDo = function(activeDot) {
+    const dispatch = useDispatch();
     return landing['list_what_we_do'].list.map((item, index) => (
-        <Link to={`/programs/${item.link}`} className="list-item" key={index}>
+        <Link onClick={()=> dispatch(updatePageindex({payload: activeDot.activeDot}))} to={`/programs/${item.link}`} className="list-item" key={index}>
             <ArrowRight className="arrow"/>
             <span className="text size-36 extra-bold">{item.text}</span>
         </Link>
@@ -52,6 +57,22 @@ const WhatWeDo = function() {
 }
 
 export default function Landing({ dotChange }) {
+    const pageIndex = useSelector(store => store.navigation.landingPageIndex);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        console.log()
+        if (pageIndex === 0 || !pageIndex) {
+            setActiveDot(1)
+        } else {
+            setActiveDot(pageIndex)
+        }
+        return function() {
+            // dispatch({ type: "SET_PREV_STEP", payload: stepName });
+        };
+    }, [pageIndex]);
+
+
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
@@ -87,10 +108,10 @@ export default function Landing({ dotChange }) {
                     <label className="article size-20">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg.\nTánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
                     <label className="article size-20">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
-                        <Link to="/courses">
+                        <Link onClick={()=> {dispatch(updatePageindex({payload: activeDot}))}} to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
                         </Link>
-                        <Link className="btn-programs" to="/programs">
+                        <Link onClick={()=> dispatch(updatePageindex({payload: activeDot}))} className="btn-programs" to="/programs">
                             <button className="btn btn-primary">Programjaink</button>
                         </Link>
                     </div>
@@ -249,7 +270,7 @@ export default function Landing({ dotChange }) {
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
-                    <CoursesList />
+                    <CoursesList activeDot={activeDot} />
                 </div>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch}`}>
@@ -281,7 +302,7 @@ export default function Landing({ dotChange }) {
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
-                    <WhatWeDo />
+                    <WhatWeDo activeDot={activeDot} />
                 </div>
             </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch}`}>
