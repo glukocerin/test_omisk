@@ -24,8 +24,8 @@
 .cards-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 16.667%;
+  margin-right: 16.667%;
   margin-top: 5rem;
 }
 
