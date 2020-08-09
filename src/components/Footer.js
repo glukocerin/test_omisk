@@ -1,10 +1,27 @@
 import React from "react";
 import style from "../assets/css/footer.module.css";
 
+import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
+import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/img/icons/instagram.svg";
+import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
+
 export default function Footer() {
   return (
     <div className={style["wrapper"]}>
-      <div></div>
+      <div className={style["icons-wrapper"]}>
+        <Logo className={style["logo"]} />
+        <div className={style["text-wrapper"]}>
+          <p className={`size-15 extra-bold`}>Óbuda</p>
+          <p className={`size-15 extra-bold`}>Mozgásművészeti</p>
+          <p className={`size-15 extra-bold`}>Iskola</p>
+        </div>
+        <div className={style["social-media"]}>
+          <Instagram className={style["social-insta"]} />
+          <Facebook className={style["social-fb"]} />
+          <Youtube />
+        </div>
+      </div>
       <div className={style["details-wrapper"]}>
         <div className={style["details-box"]}>
           <h5 className={`size-20 extra-bold`}>Az Omiskrol</h5>
@@ -44,7 +61,8 @@ export default function Footer() {
           <h5 className={`size-20 extra-bold`}>Helyszineink</h5>
           <p className={`size-15 thin`}>
             Óbudai Kulturális Központ <br />
-            MOM Kulturális Központ<br />
+            MOM Kulturális Központ
+            <br />
             Budapest Művelődési központ <br />
             Vll. Kerületi Táncstúdió <br />
             Békásmegyeri Közösségi Ház <br />
