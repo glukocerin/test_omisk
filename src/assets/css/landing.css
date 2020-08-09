@@ -339,16 +339,28 @@
   justify-content: center;
   align-items: center;
 }
+.right.six .content-block {
+  margin-left: auto;
+  max-width: unset;
+}
+.right.six .content-block iframe {
+  margin-top: calc(9vh + 3.75rem);
+  width: 32.344vw;
+  height: 32vh;
+}
 .right.six .content-block .link-block {
   margin-top: 3rem;
   background: var(--color-blue-3);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .right.six .content-block .link-block .link {
   cursor: pointer;
   color: var(--color-gray-0);
   opacity: 0.45;
+}
+.right.six .content-block .link-block .link + .link {
+  margin-left: 1rem;
 }
 .right.six .content-block .link-block .link.active {
   font-weight: 600;
