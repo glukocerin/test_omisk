@@ -61,8 +61,8 @@ const pagesConfig = {
       {
         title: "Művészeti torna",
         image: "muveszi_torna",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III.,VII., VIII., XI., XII. kerületek",
         bottomText: "kerületekben",
         backgroundColor: "blue",
         dotColor: "dot-blue",
@@ -71,8 +71,8 @@ const pagesConfig = {
       {
         title: "Mozdulatművészet",
         image: "mozdulatmuveszet",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III., VIII., XI., XII. kerületek",
         bottomText: "kerületekben",
         backgroundColor: "blue",
         dotColor: "dot-blue",
@@ -81,8 +81,8 @@ const pagesConfig = {
       {
         title: "Pre balett",
         image: "pre_ballet",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III. kerület",
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
@@ -91,18 +91,18 @@ const pagesConfig = {
       {
         title: "Klasszikus balett",
         image: "klasszikus_balett_1",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III., VII., XII. kerület",
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
         link: "ballet"
       },
       {
-        title: "Jazz tánc",
+        title: "Jazztánc",
         image: "jazz_tanc",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III. kerület",
         bottomText: "kerületekben",
         backgroundColor: "green",
         dotColor: "dot-green",
@@ -111,8 +111,8 @@ const pagesConfig = {
       {
         title: "Modern tánc",
         image: "modern_tanc1",
-        age: "4 év felett",
-        districts: "ll., lll., lX., Xll., Xlll.",
+        age: "",
+        districts: "III.,VII., VIII., XII. kerületek    ",
         bottomText: "kerületekben",
         backgroundColor: "green",
         dotColor: "dot-green",
@@ -231,14 +231,14 @@ const pagesConfig = {
         youtubeLink: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg",
         videoAlt: "Video részlet a 2019-es Évzáró",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       },
       competitions: {
@@ -269,14 +269,14 @@ const pagesConfig = {
         youtubeLink: "",
         videoAlt: "",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       },
       omisk: {
@@ -304,14 +304,14 @@ const pagesConfig = {
         youtubeLink: "",
         videoAlt: "",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       },
       publicClass: {
@@ -340,14 +340,14 @@ const pagesConfig = {
         youtubeLink: "https://www.youtube.com/embed/4SPgJV2Pc7c",
         videoAlt: "Bemutató óra | OMISK | 2018",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       },
       callisthenics: {
@@ -373,14 +373,14 @@ const pagesConfig = {
         videoAlt:
           "Mikép - Miró képei táncban elbeszélve | OMISK Mouzdulatműhely | 2016",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       },
       camp: {
@@ -405,14 +405,14 @@ const pagesConfig = {
         youtubeLink: "https://www.youtube.com/embed/q2eUUTYWTI4",
         videoAlt: "Szabad Tánc | OMISK Tábor | 2018",
         gallery: [
-          "group5",
-          "group1",
-          "group2",
-          "group4",
-          "group3",
-          "group7",
-          "group6",
-          "group8"
+          "competitions/veresenyek1",
+          "competitions/veresenyek2",
+          "competitions/veresenyek3",
+          "competitions/veresenyek4",
+          "competitions/veresenyek5",
+          "competitions/veresenyek6",
+          "competitions/veresenyek7",
+          "competitions/veresenyek8"
         ]
       }
     }

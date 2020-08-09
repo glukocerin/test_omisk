@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../assets/css/courses.module.css";
+import { Link } from "react-router-dom";
 
 import Card from "../components/CourseCard";
 
@@ -27,7 +28,9 @@ export default function Courses() {
         <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
           Évközben is tudsz jelentkezni
         </h4>
-        <button className={style["footer-button"]}>Jelentkezem</button>
+        <Link to={"/enrollment"}>
+          <button className={style["footer-button"]}>Jelentkezem</button>
+        </Link>
       </div>
     </div>
   );
