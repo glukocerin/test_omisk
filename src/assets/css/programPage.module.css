@@ -1,22 +1,46 @@
-.header-image img {
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background: var(--color-gray-0);
+  align-items: center;
+  height: 31.25rem;
+  background: transparent;
+}
+
+.header {
   position: absolute;
+  z-index: -100;
   top: 0;
   left: 0;
   width: 100%;
-  height: 37.5rem;
+  height: 31.25rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-color: #14c1ae;
-  z-index: -1000;
-  background-image: url("../img/teachers/header.jpg");
 }
 
-.header-text {
-  width: 100%;
+.state-location {
   text-align: center;
+  z-index: 1;
+  margin-top: 10rem;
   color: var(--color-gray-0);
-  margin-bottom: 18rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dotted var(--color-gray-0);
+}
+
+.state-location a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.header-title {
+  height: 10.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-gray-0);
 }
 
 .body {
