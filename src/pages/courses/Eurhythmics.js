@@ -1,7 +1,7 @@
 import React from "react";
 
-import style from "../assets/css/callisthenics.module.css";
-import styleCard from "../assets/css/courseDetailsCard.module.css";
+import style from "../../assets/css/eurhythmics.module.css";
+import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
 export default function Courses(props) {
   return (
@@ -10,7 +10,7 @@ export default function Courses(props) {
       <div className={style["header"]}>
         <div>
           <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-            Mozdulatművészet kurzus
+            Művészi Torna
           </h1>
         </div>
         <div className={`${style["button-wrapper"]}`}>
@@ -24,24 +24,24 @@ export default function Courses(props) {
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Korosztály: </p>
+                  <p className="size-12 extra-bold">Korosztaly</p>
                 </div>
                 <div className={style["age-group-value"]}>
-                  <p className="size-12 thin">10éves kortól</p>
+                  <p className="size-12 thin">4 éves kortól</p>
                 </div>
               </div>
             </li>
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Tandíj:</p>
+                  <p className="size-12 extra-bold">Tandij</p>
                 </div>
                 <div>
                   <p className="size-12 thin">
-                    Heti 2 x 60 perc: 11000-11300 Ft /hó
+                    Heti 2 x 45 perc 9700-10000 Ft / hó
                   </p>
                   <p className="size-12 thin">
-                    Heti 2 x 90 perc: 13100-14500 Ft /hó
+                    Heti 2 x 60 perc 11000-11300 Ft / hó
                   </p>
                 </div>
               </div>
@@ -49,22 +49,18 @@ export default function Courses(props) {
             <li>
               <div className={style["info-item"]}>
                 <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Kedvezmények:</p>
+                  <p className="size-12 extra-bold">Kedvezmeny</p>
                 </div>
                 <div>
-                  <p className="size-12 thin">
-                    2 testvér esetén 2000,-Ft/fő/hó
-                  </p>
-                  <p className="size-12 thin">
-                    3 testvér esetén 3000,- Ft/fő/hó
-                  </p>
+                  <p className="size-12 thin">2 testvér esetén 2000,-/fő/hó</p>
+                  <p className="size-12 thin">3 testvér esetén 3000,-/fő/hó</p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Helyszíneink:</h4>
+          <h4 className="size-16 extra-bold">Helyszinek, Tanárok</h4>
           <ul>
             <li>
               <p className="size-12 thin">
@@ -104,60 +100,59 @@ export default function Courses(props) {
             </li>
             <li>
               <p className="size-12 thin">
-                VII. ker. Táncstúdió (VII. Wesselényi u. 41)
-                (hétfő,szerda,péntek)
+                VII. ker. Táncstúdió (hétfő,szerda,péntek)
               </p>
             </li>
           </ul>
           <div className={`${style["teachers-wrapper"]}`}>
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/benis_katalin.jpg`)}
+              src={require(`../../assets/img/teachers/benis_katalin.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/taylor_jennifer.jpg`)}
+              src={require(`../../assets/img/teachers/taylor_jennifer.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/kovacs_bea.jpg`)}
+              src={require(`../../assets/img/teachers/kovacs_bea.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/mady_krisztina.jpg`)}
+              src={require(`../../assets/img/teachers/mady_krisztina.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/empty.jpg`)}
+              src={require(`../../assets/img/teachers/empty.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/pers_julia.jpg`)}
+              src={require(`../../assets/img/teachers/pers_julia.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/lakatos_lilla.jpg`)}
+              src={require(`../../assets/img/teachers/lakatos_lilla.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/rozsa_reka.jpg`)}
+              src={require(`../../assets/img/teachers/rozsa_reka.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/solti_eszter.jpg`)}
+              src={require(`../../assets/img/teachers/solti_eszter.jpg`)}
               alt=""
             />
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/taylor_eszti.jpg`)}
+              src={require(`../../assets/img/teachers/taylor_eszti.jpg`)}
               alt=""
             />
           </div>
@@ -167,24 +162,23 @@ export default function Courses(props) {
           <ul>
             <li>
               <p className="size-12 thin">
-                ...a mozgást nem utánozni, hanem tanulni szeretnéd.
+                …szeretnél szép testtartást, és ügyesebben mozogni.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                ...nyitott vagy egy finom, harmonikus mozgásformára.
+                …olyan mozgást keresel, ami akkor is hasznodra válik, ha végül
+                nem a táncnál, hanem az úszásnál kötsz ki.
               </p>
             </li>
             <li>
               <p className="size-12 thin">
-                ...szereted a klasszikus és kortárs zenét.
+                …óvodásként kiváncsi vagy, milyen lesz majd az iskolában egy 45
+                perces tanóra.
               </p>
             </li>
             <li>
-              <p className="size-12 thin">
-                ...szeretsz másokkal közösen alkotni, szeretnél egy állandó
-                közösség tagja lenni.
-              </p>
+              <p className="size-12 thin">…szeretnél új barátokat szerezni.</p>
             </li>
           </ul>
         </div>
@@ -192,46 +186,45 @@ export default function Courses(props) {
       <div className={style["details"]}>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Mi a mozdulatművészet?</h4>
+            <h4 className="size-36 extra-bold">Mi a művészi torna?</h4>
             <p className="size-20 thin">
-              Az általunk tanított mozdulatművészet a gimnasztika precizitására
-              épülő – de annál szabadabb –, a zenével szoros összhangban
-              létrejövő táncstílus. Magában foglalja a klasszikus balett és a
-              különböző modern technikák alapelemeit, megtartva azt az alapvető
-              szellemiséget, amely a test természetes adottságaihoz illeszkedő
-              esztétikus és kifejező mozgást keresi. A koreográfiát a zenével
-              szoros összhangban készítjük el, így zene és tánc egymás hatását
-              erősítik: még szebbnek látjuk a táncot és jobban megértjük a
-              zenét.
+              Művészi torna tanfolyamunk alapja Berczik Sára esztétikus
+              testképző és mozgásfejlesztő technikája. A módszer lényege a
+              tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást
+              könnyebbé tesz. A legkisebbek számára is jól érthető és
+              értelmezhető, így hosszabb távon is leköti a figyelmüket. A
+              gyakorlatok összeállításának meghatározó szempontja az esztétikus
+              rendezettség. A koreográfiákhoz használt klasszikus zene
+              fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá
+              speciális adottság, a helyesen végzett, szép mozdulatok
+              mindenkinek sikerélményt adnak
             </p>
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../assets/img/mozdulatmuveszet_01.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_01.jpg`)}
               alt=""
             />
           </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">Hogyan tudok csatlakozni?</h4>
+            <h4 className="size-36 extra-bold">Mikor tudom elkezdeni?</h4>
             <p className="size-20 thin">
-              Kurzusunk a művészi torna szerves folytatásának tekinthetők, így
-              ebben a műfajban nincsenek teljesen kezdő tanfolyamaink. A
-              kifejező mozgás egyre nagyobb hangsúlyt kap az ovisok és
-              kisiskolások óráin, és 10 éves kor környékén már
-              mozdulatművészetet tanul, aki korábban művészi tornára iratkozott
-              be. Ennek ellenére menet közben is lehet csatlakozni. Előny, ha
-              rendelkezel valamilyen táncos előképzettséggel, de ha nem, akkor
-              is megpróbálhatod az életkorodnak megfelelő csoportban. Nem kell
-              hozzá speciális adottság, a tanárok segítenek a felzárkózásban,
-              nyugodtan csatlakozhatsz. Nem kell hozzá speciális adottság,
-              tanáraink majd segítenek a felzárkózásban.
+              Iskolánk képzési rendszere 4 éves korban kezdődik művészi
+              tornával. A tudatos mozgás elsajátítása – ami folyamatos
+              gondolkodásra és koncentrációra késztet – leghamarabb ebben az
+              életkorban lehetséges. Később is el lehet kezdeni, mindenkit az
+              életkorának megfelelő csoportba kerül, ahol a tanárok segítenek
+              bekapcsolódni a tanulásba. A művészi torna szerves folytatása a
+              mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a
+              kreativitás . Iskolás kortól más műfajok is választhatók, amikhez
+              a művészi torna ugyanúgy kiváló alapot ad.
             </p>
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../assets/img/mozdulatmuveszet_02.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_02.jpg`)}
               alt=""
             />
           </div>
@@ -240,20 +233,21 @@ export default function Courses(props) {
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">Hogyan épül fel az óra?</h4>
             <p className="size-20 thin">
-              A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfia
-              tanulásból áll. A tréningezéssel elsajátítjuk a mozdulatművészet
-              formanyelvét és megszerezzük azokat a készségelemeket, amik
-              alkalmassá tesznek a koreográfiák előadásra. A mozdulatművészetre
-              leginkább az jellemző, hogy kifejező mozdulatokból építkezik. A
-              táncok elkészítése műhelymunka szerűen zajlik. Tanítványaink
-              kreatívan vesznek részt az alkotómunka minden fázisában a
-              koncepció kialakításától és a zenekiválasztásától a mozdulatok
-              megalkotásán keresztül a produkció színpadra állításáig.
+              A Berczik-módszer a mozgást alapelemeire bontja, különböző
+              testrészeink mozdulatait egymástól függetlenítve tanítja, majd
+              illeszti össze. Az órák koncentrikusan épülnek egymásra,
+              ismételve, elmélyítve és bővítve a megtanult mozgásanyagot.
+              Rendszeresen használunk kéziszereket (például labda, karika,
+              szalag), amik nemcsak változatossá teszik az órát, de segítik a
+              mozgástanulást és ügyessé tesznek. Az óvodásoknál kiemelt szerepe
+              van a tartásjavító gyakorlatoknak, mivel erre az életkorra esik a
+              testtartás beidegződése. Fontosnak tartjuk az igényes zene
+              választást, mind a koreográfiák, mind a tréning kisérőjeként.
             </p>
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../assets/img/mozdulatmuveszet_03.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_03.jpg`)}
               alt=""
             />
           </div>

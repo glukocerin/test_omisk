@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import style from "../assets/css/preBallet.module.css";
-import styleCard from "../assets/css/courseDetailsCard.module.css";
+import style from "../../assets/css/preBallet.module.css";
+import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
-export default function Courses(props) {
+export default function Courses() {
   return (
     <div>
-      <div className={style["header-mobile"]}></div>
-      <div className={style["header"]}>
-        <div>
-          <h1 className={`${style["header-text"]} size-90 extra-bold`}>
-            Pre balett kurzus
-          </h1>
-        </div>
-        <div className={`${style["button-wrapper"]}`}>
-          <button className={style["button"]}>Jelentkezem</button>
-        </div>
+      <div className={style["header-wrapper"]}>
+        <div className={style["header"]}></div>
+        <label className={`${style["state-location"]} size-13"`}>
+          <Link to="/courses">Kurzusaink</Link> > Pre balett kurzus
+        </label>
+        <label className={`${style["header-title"]} size-90 extra-bold`}>
+          Pre balett kurzus
+        </label>
+        <button className={style["button"]}>Jelentkezem</button>
       </div>
+
       <div className={style["info-box"]}>
         <div className={style["info"]}>
           <h4 className="size-16 extra-bold">Important information</h4>
@@ -70,7 +71,7 @@ export default function Courses(props) {
           <div className={`${style["teachers-wrapper"]}`}>
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/taylor_eszti.jpg`)}
+              src={require(`../../assets/img/teachers/taylor_eszti.jpg`)}
               alt=""
             />
           </div>
@@ -117,7 +118,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/pre_balett_01.jpg`)} alt="" />
+            <img src={require(`../../assets/img/pre_balett_01.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
@@ -131,7 +132,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/pre_balett_02.jpg`)} alt="" />
+            <img src={require(`../../assets/img/pre_balett_02.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
@@ -149,7 +150,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/pre_balett_03.jpg`)} alt="" />
+            <img src={require(`../../assets/img/pre_balett_03.jpg`)} alt="" />
           </div>
         </div>
       </div>

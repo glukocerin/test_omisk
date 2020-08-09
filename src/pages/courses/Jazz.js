@@ -1,7 +1,7 @@
 import React from "react";
 
-import style from "../assets/css/jazz.module.css";
-import styleCard from "../assets/css/courseDetailsCard.module.css";
+import style from "../../assets/css/jazz.module.css";
+import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
 export default function Courses(props) {
   return (
@@ -70,7 +70,7 @@ export default function Courses(props) {
           <div className={`${style["teachers-wrapper"]}`}>
             <img
               className={`${style["teacher-image"]}`}
-              src={require(`../assets/img/teachers/kalocsai_edit.jpg`)}
+              src={require(`../../assets/img/teachers/kalocsai_edit.jpg`)}
               alt=""
             />
           </div>
@@ -119,7 +119,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tanc_01.jpg`)} alt="" />
+            <img src={require(`../../assets/img/jazz_tanc_01.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
@@ -137,7 +137,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tanc_02.jpg`)} alt="" />
+            <img src={require(`../../assets/img/jazz_tanc_02.jpg`)} alt="" />
           </div>
         </div>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
@@ -157,7 +157,7 @@ export default function Courses(props) {
             </p>
           </div>
           <div className={styleCard["pic"]}>
-            <img src={require(`../assets/img/jazz_tanc_03.jpg`)} alt="" />
+            <img src={require(`../../assets/img/jazz_tanc_03.jpg`)} alt="" />
           </div>
         </div>
       </div>

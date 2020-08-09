@@ -23,12 +23,12 @@ import Enrollment from "./pages/Enrollment";
 import Contact from "./pages/Contact";
 
 // courses
-import Eurhythmics from "./pages/Eurhythmics";
-import Callisthenics from "./pages/Callisthenics";
-import PreBallet from "./pages/PreBallet";
-import Ballet from "./pages/Ballet";
-import Jazz from "./pages/Jazz";
-import Modern from "./pages/Modern";
+import Eurhythmics from "./pages/courses/Eurhythmics";
+import Callisthenics from "./pages/courses/Callisthenics";
+import PreBallet from "./pages/courses/PreBallet";
+import Ballet from "./pages/courses/Ballet";
+import Jazz from "./pages/courses/Jazz";
+import Modern from "./pages/courses/Modern";
 
 //programs
 import pagesConfig from "./assets/pagesConfig";
@@ -94,7 +94,7 @@ function App() {
           <Footer />
         </Route>
         <Route path="/courses/pre_ballet">
-          <Navigation BackgroundColor="pink" />
+          <Navigation isHeaderFixed="true" />
           <PreBallet />
           <Footer />
         </Route>
