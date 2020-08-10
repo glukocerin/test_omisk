@@ -21,6 +21,7 @@
   border-radius: 1rem;
   background: var(--color-gray-0);
   cursor: pointer;
+  transition: width 0.3s, height 0.3s;
 }
 .dot + .dot {
   margin-top: 3rem;
