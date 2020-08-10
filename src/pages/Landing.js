@@ -99,14 +99,18 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">{`Mozgásművészeti képzés\n1990 óta\nBudapest\nöt kerületében`}</label>
+                <label className="text extra-bold size-70">
+                    {`Mozgásművészeti\nképzés\n1990 óta\nBudapest\nöt kerületében`}
+                    <br/>
+                    <label className="text size-24 thin">Pers Júlia</label>
+                </label>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-20">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg.\nTánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
-                    <label className="article size-20">Gyere, nézd meg, mi így működünk!</label>
+                    <label className="article size-24">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg.\n\nTánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
+                    <label className="article size-24 extra-bold">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
                         <Link onClick={()=> {dispatch(updatePageindex({payload: activeDot}))}} to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
@@ -322,19 +326,16 @@ export default function Landing({ dotChange }) {
                     <div className="sepa-row">
                         <Gymnast className="icon" />
                         <label className="text size-24 extra-bold">Berczik technika</label>
-                        <hr />
                     </div>
                     <label className="article size-20">A <u>Berczik-technika</u> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
                     <div className="sepa-row">
                         <MusicalNote className="icon" />
                         <label className="text size-24 extra-bold">Zeneiség</label>
-                        <hr />
                     </div>
                     <label className="article size-20">A zene nálunk nem csak kísérő eleme a táncnak. Koreográfiáinkban szoros összhangban egymás hatását erősítik: segít a zene megértésében, és érzékenyít a táncra. Így hozzuk mi mozgásba a zenét.</label>
                     <div className="sepa-row">
                         <PaintBrush className="icon" />
                         <label className="text size-24 extra-bold">Kreativitás</label>
-                        <hr />
                     </div>
                     <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
                 </div>
