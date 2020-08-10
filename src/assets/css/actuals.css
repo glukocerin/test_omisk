@@ -87,6 +87,9 @@
   padding: 6.25rem 4.25rem;
   position: relative;
 }
+.actuals .actual-cards .card .text-box .actual-text {
+  line-height: 1.75rem;
+}
 .actuals .actual-cards .card .text-box .actual-date {
   margin-bottom: 2.125rem;
 }
