@@ -71,7 +71,11 @@
   bottom: 5.25rem;
   padding-left: 1rem;
   padding-bottom: 0.5rem;
-  background: linear-gradient(90deg, var(--color-yellow-2) 87%, transparent 87%);
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow-2) 87%,
+    transparent 87%
+  );
 }
 .actuals .actual-cards .card .text-box {
   display: flex;
