@@ -209,7 +209,8 @@ export default function Landing({ dotChange }) {
                             <label className="place-label size-24 extra-bold">Szarvas Gábor Közösségi Tér</label>
                             <div className="place-informations">
                                 <label className="place-address size-15 extra-bold">XII. Szarvas Gábor út 22</label>
-                                <label className="place-program-row size-17 thin title">hétfő I kedd I szerda I csütörtök </label>
+                                <label className="place-program-row size-17 thin title">Művészi torna</label>
+                                <label className="place-program-row size-17 thin">hétfő I kedd I szerda I csütörtök </label>
                                 <label className="place-program-row size-17 thin">Mády Krisztina </label>
                                 <label className="place-program-row size-17 thin title">Mozdulatművészet</label>
                                 <label className="place-program-row size-17 thin">hétfő I kedd I szerda I csütörtök </label>
