@@ -207,6 +207,11 @@
 .left.four .drop-down-list .place .title {
   margin-top: 0.25rem;
 }
+.left.four .drop-down-list .place.active .title:before {
+  content: "•";
+  position: absolute;
+  left: 35px;
+}
 .left.four .drop-down-list .place.active .place-informations {
   max-height: 30rem;
   transition: max-height 0.3s ease-in-out;
@@ -318,22 +323,22 @@
   overflow: hidden;
 }
 .right.five.no-one {
-  background-image: url('../img/landing_sub/five-one.png');
+  background-image: url("../img/landing_sub/five-one.png");
 }
 .right.five.no-two {
-  background-image: url('../img/landing_sub/five-two.jpg');
+  background-image: url("../img/landing_sub/five-two.jpg");
 }
 .right.five.no-three {
-  background-image: url('../img/landing_sub/five-three.jpg');
+  background-image: url("../img/landing_sub/five-three.jpg");
 }
 .right.five.no-four {
-  background-image: url('../img/landing_sub/five-four.jpg');
+  background-image: url("../img/landing_sub/five-four.jpg");
 }
 .right.five.no-five {
-  background-image: url('../img/landing_sub/five-five.jpg');
+  background-image: url("../img/landing_sub/five-five.jpg");
 }
 .right.five.no-fix {
-  background-image: url('../img/landing_sub/five-six.jpg');
+  background-image: url("../img/landing_sub/five-six.jpg");
 }
 .right.six {
   background: var(--color-blue-3);
@@ -369,22 +374,22 @@
   opacity: 1;
 }
 .right.seven.no-one {
-  background-image: url('../img/landing_sub/seven-one.jpg');
+  background-image: url("../img/landing_sub/seven-one.jpg");
 }
 .right.seven.no-two {
-  background-image: url('../img/landing_sub/seven-two.jpg');
+  background-image: url("../img/landing_sub/seven-two.jpg");
 }
 .right.seven.no-three {
-  background-image: url('../img/landing_sub/seven-three.jpg');
+  background-image: url("../img/landing_sub/seven-three.jpg");
 }
 .right.seven.no-four {
-  background-image: url('../img/landing_sub/seven-four.jpg');
+  background-image: url("../img/landing_sub/seven-four.jpg");
 }
 .right.seven.no-five {
-  background-image: url('../img/landing_sub/seven-five.jpg');
+  background-image: url("../img/landing_sub/seven-five.jpg");
 }
 .right.seven.no-fix {
-  background-image: url('../img/landing_sub/seven-six.jpg');
+  background-image: url("../img/landing_sub/seven-six.jpg");
 }
 .right.eight {
   background-image: url("../img/landing_bg_8.png");
