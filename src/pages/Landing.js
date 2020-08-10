@@ -380,22 +380,22 @@ export default function Landing({ dotChange }) {
                         Józsefvárosi Galéria és Rendezvényközpont<br/>
                     </label>
                     <div className="sm-icons">
-                        <div className="icon">
+                        <a href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer" className="icon">
                             <Instagram/>
-                        </div>
-                        <div className="icon">
+                        </a>
+                        <a href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer" className="icon">
                             <Facebook/>
-                        </div>
-                        <div className="icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer" className="icon">
                             <Youtube/>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="social-media-bar">
-                <FacebookTransparent className="icon" />
-                <InstagramTransparent className="icon" />
-                <YoutubeTransparent className="icon" />
+                <a className="icon" href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer"><FacebookTransparent /></a>
+                <a className="icon" href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer"><InstagramTransparent /></a>
+                <a className="icon" href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer"><YoutubeTransparent /></a>
             </div>
         </div>
     )
