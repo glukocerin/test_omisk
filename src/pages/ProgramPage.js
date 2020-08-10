@@ -89,15 +89,15 @@ export default function ProgramPage(props) {
           <h5 className="size-36">Kovess minket</h5>
         </div>
         <div className={style["logos"]}>
-          <div className="icon">
+          <a href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer" className={style["icon"]}>
             <Instagram />
-          </div>
-          <div className="icon">
+          </a>
+          <a href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer" className={style["icon"]}>
             <Facebook />
-          </div>
-          <div className="icon">
+          </a>
+          <a href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer" className={style["icon"]}>
             <Youtube />
-          </div>
+          </a>
         </div>
         <div className={style["gallery"]}>
           <Images list={props.opt.gallery} />

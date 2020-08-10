@@ -13,9 +13,9 @@ export default function Footer() {
       <div className={style["icons-wrapper"]}>
         <LogoWithTitle className='footer-logo' />
         <div className={style["social-media"]}>
-          <Instagram className='footer-icon' />
-          <Facebook className='footer-icon' />
-          <Youtube className='footer-icon'/>
+          <a className='footer-icon' href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer"><Instagram /></a>
+          <a className='footer-icon' href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer"><Facebook /></a>
+          <a className='footer-icon' href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer"><Youtube/></a>
         </div>
       </div>
       <div className={style["details-wrapper"]}>
@@ -42,7 +42,7 @@ export default function Footer() {
           </p>
         </div>
         <div className={style["details-box"]}>
-          <h5 className={`size-20 extra-bold`}>Kurzusaink</h5>
+          <h5 className={`size-20 extra-bold`} onClick={()=>{egg()}}>Kurzusaink</h5>
           <p className={`size-15 thin`}>
             Művészi torna <br />
             Mozdulatművészet <br />
@@ -68,4 +68,30 @@ export default function Footer() {
       </div>
     </div>
   );
+}
+
+let k = 0;
+
+function egg() {
+  k++;
+
+  if (k === 1) {
+    console.warn('K');
+  } else if (k === 2) {
+    console.warn('I');
+  } else if (k === 3) {
+    console.warn('S');
+  } else if (k === 4) {
+    console.warn('F');
+  } else if (k === 5) {
+    console.warn('A');
+  } else if (k === 6) {
+    console.warn('S');
+  } else if (k === 7) {
+    console.warn('Z');
+  } else if (k === 8) {
+    console.warn('O');
+  } else if (k === 9) {
+    console.warn('M');
+  }
 }

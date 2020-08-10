@@ -32,15 +32,15 @@ export default function HamburgerMenu() {
         <Link className={`link size-36 extra-bold ${ location === "/enrollment" && "active" }`} onClick={() => toggle(!toggled)} to="/enrollment">Beiratkozás</Link>
         <Link className={`link size-36 extra-bold ${ location === "/contact" && "active" }`} onClick={() => toggle(!toggled)} to="/contact">Kapcsolat</Link>
         <div className="sm-icons">
-            <div className="icon">
+            <a href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer" className="icon">
                 <Instagram/>
-            </div>
-            <div className="icon">
+            </a>
+            <a href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer" className="icon">
                 <Facebook/>
-            </div>
-            <div className="icon">
+            </a>
+            <a href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer" className="icon">
                 <Youtube/>
-            </div>
+            </a>
         </div>
       </div>
     </div>
