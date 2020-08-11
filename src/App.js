@@ -165,7 +165,7 @@ function App() {
         </Route>
         <Route path="/">
           <Navigation
-            BackgroundColor="blue-4"
+            BackgroundColor="gray-erohw"
             isHeaderFixed="true"
             activeDot={activeDot}
           />

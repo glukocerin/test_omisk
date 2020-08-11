@@ -40,7 +40,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Óbudai Kulturális Központ</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">III. San Marco u. 81.</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">hétfő I kedd I szerda I csütörtök I péntek</label>
                 <label className="place-program-row size-15 thin">Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Taylor Esther</label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -66,7 +66,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Békásmegyeri Közösségi Ház</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">III. Csobánka tér 5</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">kedd I csütörtök I péntek</label>
                 <label className="place-program-row size-15 thin">Kovács Bea I Rácz-Lakatos Lilla </label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -87,7 +87,7 @@ export default function Enrollment() {
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">XII. Csörsz u. 18</label>
                 <label className="place-address size-15 extra-bold">XII. Böszörményi  út 24</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">hétfő I kedd I  csütörtök </label>
                 <label className="place-program-row size-15 thin">Benis Katalin I Solti Eszter</label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -107,7 +107,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Virányosi Közösségi Ház</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">XII. Szarvas Gábor út 8/c</label>
-                <label className="place-program-row size-15 thin">Művészi torna</label>
+                <label className="place-program-row size-15 thin title">Művészi torna</label>
                 <label className="place-program-row size-15 thin">kedd I csütörtök</label>
                 <label className="place-program-row size-15 thin">Rózsa Réka</label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -121,6 +121,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Szarvas Gábor Közösségi Tér</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">XII. Szarvas Gábor út 22</label>
+                <label className="place-program-row size-15 thin title">Művészi torna</label>
                 <label className="place-program-row size-15 thin">hétfő I kedd I szerda I csütörtök </label>
                 <label className="place-program-row size-15 thin">Mády Krisztina </label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -134,7 +135,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Budapest Művelődési Központ</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">XI. Etele út 55/a</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">hétfő I szerda</label>
                 <label className="place-program-row size-15 thin">Taylor Esther</label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -148,7 +149,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">Józsefvárosi Galéria és Rendezvényközpont</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">VIII. József krt. 70</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">hétfő I szerda</label>
                 <label className="place-program-row size-15 thin">Solti Eszter</label>
                 <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
@@ -162,7 +163,7 @@ export default function Enrollment() {
             <label className="place-label size-24 extra-bold">VII. Kerületi Táncstúdió</label>
             <div className="place-informations">
                 <label className="place-address size-15 extra-bold">VII. Wesselényi u. 41</label>
-                <label className="place-program-row size-15 thin">Művészi  torna</label>
+                <label className="place-program-row size-15 thin title">Művészi  torna</label>
                 <label className="place-program-row size-15 thin">hétfő I szerda</label>
                 <label className="place-program-row size-15 thin">P.Ács Vali</label>
                 <label className="place-program-row size-15 thin title">Klasszikus balett</label>

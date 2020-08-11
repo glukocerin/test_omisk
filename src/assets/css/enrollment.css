@@ -116,6 +116,11 @@
   cursor: pointer;
   user-select: none;
 }
+.enrollment .drop-down-list .place.active .title:before {
+  content: "•";
+  position: absolute;
+  left: 35px;
+}
 .enrollment .places-content .drop-down-list .place *{
   cursor: pointer;
 }

@@ -126,6 +126,10 @@ h5 {
   justify-content: center;
 }
 
+.icon + .icon {
+  margin-left: 0.75rem;
+}
+
 .gallery {
   padding-top: 4rem;
   margin: 0 16.667%;

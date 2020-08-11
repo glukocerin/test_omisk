@@ -21,10 +21,10 @@
   background: var(--color-pink-0);
 }
 /* LANDING RULES!!! */
-.header.background-blue-4.fixed {
+.header.background-erohw.fixed {
   background: transparent;
 }
-.header.background-blue-4.fixed .links a {
+.header.background-erohw.fixed .links a {
   background: transparent;
   color: var(--color-gray-7);
 }
@@ -101,8 +101,8 @@
     position: unset;
   }
   /* LANDING RULE!!! */
-  .header.background-blue-4.fixed {
-    background: var(--color-blue-4);
+  .header.background-gray-erohw.fixed {
+    background: var(--color-gray-new-0);
   }
   .header.background-green.fixed {
     background: var(--color-green-0);
