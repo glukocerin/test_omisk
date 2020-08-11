@@ -98,7 +98,7 @@ const pagesConfig = {
       },
       {
         title: "Klasszikus balett",
-        image: "klasszikus_balett_1",
+        image: "klasszikus_balett",
         age: "",
         districts: "III., VII., XII. kerület",
         bottomText: "kerületekben",
@@ -118,7 +118,7 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern_tanc1",
+        image: "modern_tanc",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
         bottomText: "kerületekben",
