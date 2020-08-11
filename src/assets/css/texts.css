@@ -1,119 +1,125 @@
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../font/gilroy-light.woff') format('woff');
-	font-weight: 100;
-	font-style: normal;
+  font-family: "Gilroy";
+  src: url("../font/gilroy-light.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../font/gilroy-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Gilroy";
+  src: url("../font/gilroy-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../font/gilroy-semibold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
+  font-family: "Gilroy";
+  src: url("../font/gilroy-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../font/gilroy-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
+  font-family: "Gilroy";
+  src: url("../font/gilroy-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../font/gilroy-extrabold.woff') format('woff');
-	font-weight: 800;
-	font-style: normal;
+  font-family: "Gilroy";
+  src: url("../font/gilroy-extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 }
 /* WEIGHTS */
 .thin {
-	font-weight: 100;
+  font-weight: 100;
 }
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .extra-bold {
-	font-weight: 800;
+  font-weight: 800;
 }
 /* SIZES */
 .size-12 {
-	font-size: 0.625vw;
+  font-size: 0.625vw;
 }
 .size-13 {
-	font-size: 0.677vw;
+  font-size: 0.677vw;
 }
 .size-14 {
-	font-size: 0.729vw;
+  font-size: 0.729vw;
 }
 .size-15 {
-	font-size: 0.781vw;
+  font-size: 0.781vw;
 }
 .size-16 {
-	font-size: 0.833vw;
+  font-size: 0.833vw;
 }
 .size-20 {
-	font-size: 1.042vw;
+  font-size: 1.042vw;
 }
 .size-24 {
-	font-size: 1.250vw;
+  font-size: 1.25vw;
+}
+.size-28 {
+  font-size: 1.458vw;
 }
 .size-32 {
-	font-size: 1.667vw;
+  font-size: 1.667vw;
 }
 .size-34 {
-	font-size: 1.771vw;
+  font-size: 1.771vw;
 }
 .size-36 {
-	font-size: 1.875vw;
+  font-size: 1.875vw;
 }
 .size-54 {
-	font-size: 2.813vw;
+  font-size: 2.813vw;
 }
 .size-70 {
-	font-size: 3.646vw;
+  font-size: 3.646vw;
 }
 .size-83 {
-	font-size: 4.323vw;
+  font-size: 4.323vw;
 }
 .size-90 {
-	font-size: 4.688vw;
+  font-size: 4.688vw;
 }
 .size-120 {
-	font-size: 6.250vw;
+  font-size: 6.25vw;
 }
 
 @media screen and (max-width: 767px) {
-	.size-12 {
-		font-size: 12px;
-	}
-	.size-15 {
-		font-size: 12px;
-	}
-	.size-20 {
-		font-size: 14px;
-	}
-	.size-24 {
-		font-size: 16px;
-	}
-	.size-32 {
-		font-size: 16px;
-	}
-	.size-36 {
-		font-size: 24px;
-	}
-	.size-54 {
-		font-size: 28px;
-	}
-	.size-70 {
-		font-size: 28px;
-	}
-	.size-83 {
-		font-size: 49px;
-	}
-	.size-90 {
-		font-size: 36px;
-	}
+  .size-12 {
+    font-size: 12px;
+  }
+  .size-15 {
+    font-size: 12px;
+  }
+  .size-20 {
+    font-size: 14px;
+  }
+  .size-24 {
+    font-size: 16px;
+  }
+  .size-28 {
+    font-size: 37px;
+  }
+  .size-32 {
+    font-size: 16px;
+  }
+  .size-36 {
+    font-size: 24px;
+  }
+  .size-54 {
+    font-size: 28px;
+  }
+  .size-70 {
+    font-size: 28px;
+  }
+  .size-83 {
+    font-size: 49px;
+  }
+  .size-90 {
+    font-size: 36px;
+  }
 }
