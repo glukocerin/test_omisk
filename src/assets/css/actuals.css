@@ -43,9 +43,9 @@
   flex-direction: row;
   align-items: center;
   background: var(--color-gray-1);
-  height: 30.3125rem;
+  height: 37.3125rem;
   margin-bottom: 7.5rem;
-  max-width: 80rem;
+  max-width: 58rem;
 }
 
 .actuals .actual-cards .card * {
