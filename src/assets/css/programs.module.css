@@ -23,18 +23,17 @@
 
 .cards-wrapper {
   display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(2, 40rem);
+  gap: 3.25rem;
+  grid-template-columns: repeat(2, 27.25rem);
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 0rem;
   margin-bottom: 5rem;
 }
 
 .card {
   /* width: 37.5rem; */
-  background-color: var(--color-gray-1);
 }
 
 .card:first-child {
@@ -54,19 +53,18 @@
 }
 
 .text-wrapper {
-  margin: 1.25rem;
-  margin-bottom: 3.25rem;
-  margin-top: 2.5rem;
+  text-align: center;
+  margin-top: 1.875rem;
 }
 
 .text-wrapper h4 {
-  margin-bottom: 1.25rem;
-  color: var(--color-blue-1);
+  margin: 0;
+  /* margin-bottom: 1.25rem; */
+  color: var(--color-gray-new-1);
 }
 
 .page-footer {
   height: 17rem;
-  background-color: var(--color-gray-1);
   display: flex;
   flex-direction: column;
   align-items: center;

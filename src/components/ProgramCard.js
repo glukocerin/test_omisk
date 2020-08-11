@@ -14,8 +14,7 @@ function ProgramCard(props) {
         </Link>
       </div>
       <div className={style["text-wrapper"]}>
-        <h4 className="size-32 extra-bold">{props.details.title}</h4>
-        <p className="size-20 thin">{props.details.textBody}</p>
+        <h4 className="size-28 extra-bold">{props.details.title}</h4>
       </div>
     </div>
   );
