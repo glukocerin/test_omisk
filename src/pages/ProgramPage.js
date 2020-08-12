@@ -156,7 +156,7 @@ export default function ProgramPage(props) {
         </div>
       </div>
       <div className="actuals">
-        <h2 class={`${style["actual-title"]} size-48`}>Eseményeink</h2>
+        <h2 className={`${style["actual-title"]} size-48`}>Eseményeink</h2>
         <div className="actual-cards">
           <ActualCard />
         </div>
