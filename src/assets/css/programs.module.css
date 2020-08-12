@@ -23,26 +23,13 @@
 
 .cards-wrapper {
   display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(2, 40rem);
+  gap: 3.25rem;
+  grid-template-columns: repeat(2, 27.25rem);
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.card {
-  /* width: 37.5rem; */
-  background-color: var(--color-gray-1);
-}
-
-.card:first-child {
-  /* margin-right: 1.5%; */
-}
-
-.card:last-child {
-  /* margin-left: 1.5%; */
 }
 
 .image-wrapper img {
@@ -54,19 +41,18 @@
 }
 
 .text-wrapper {
-  margin: 1.25rem;
-  margin-bottom: 3.25rem;
-  margin-top: 2.5rem;
+  text-align: center;
+  margin-top: 1.875rem;
 }
 
 .text-wrapper h4 {
-  margin-bottom: 1.25rem;
-  color: var(--color-blue-1);
+  margin: 0;
+  /* margin-bottom: 1.25rem; */
+  color: var(--color-gray-new-1);
 }
 
 .page-footer {
   height: 17rem;
-  background-color: var(--color-gray-1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,11 +77,20 @@
 
 @media screen and (max-width: 767px) {
   .programs-wrapper {
-    background-color: var(--color-blue-1);
     position: relative;
     padding-top: 3.5rem;
     display: flex;
     flex-direction: column;
+  }
+
+  .header {
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    background-color: var(--color-blue-1);
   }
 
   .programs-wrapper label {
@@ -124,9 +119,9 @@
 
   .text-wrapper {
     /* margin: 1.25rem; */
-    margin-bottom: 0.625rem;
-    /* margin-top: 2.5rem; */
-    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    /* padding-bottom: 1.25rem; */
   }
 
   .text-wrapper p {
@@ -135,7 +130,7 @@
 
   .text-wrapper h4 {
     margin-bottom: 1.25rem;
-    color: var(--color-blue-1);
+    color: var(--color-gray-new-1);
   }
 
   .card:first-child {

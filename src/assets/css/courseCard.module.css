@@ -24,28 +24,20 @@
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  margin: 0rem 0rem 6rem;
-  height: 33.25rem;
-  width: 24rem;
+  justify-content: center;
+  width: 17.31rem;
+  position: relative;
 }
 
 .image-wrapper img {
   width: 100%;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.9375rem;
-  margin-top: 1.25rem;
-  color: white;
+  border-radius: 1.5rem;
 }
 
 .title {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0.625rem;
+  position: absolute;
+  margin-top: 3px;
+  color: var(--color-gray-0);
 }
 
 .details {
@@ -69,9 +61,6 @@
 .buttons div {
   width: 7.5rem;
   height: 2.5rem;
-}
-.buttons div:hover {
-  /* background-color: blue; */
 }
 
 .sign-up {
@@ -114,25 +103,17 @@
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 1.125rem 0rem 0rem;
-    height: 9rem;
-    width: 24rem;
+    width: 100%;
   }
 
   .buttons {
     display: none;
   }
 
-  .image-wrapper {
-    width: 50%;
-  }
-
   .title {
-    font-size: 1em;
-    font-weight: 700;
-    margin-bottom: 0.625rem;
+    left: 2.25rem;
+    top: 1.5rem;
+    margin-top: 0;
   }
 
   .details {
@@ -145,5 +126,8 @@
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
+  }
+  .image-wrapper {
+    width: 100%;
   }
 }

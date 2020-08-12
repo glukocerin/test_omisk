@@ -28,7 +28,6 @@
   width: 100%;
   text-align: center;
   color: var(--color-gray-0);
-  margin-bottom: 5rem;
   background-color: var(--color-blue-4);
 }
 
@@ -46,8 +45,8 @@
 
 .courses {
   display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(3, 24rem);
+  gap: 3rem;
+  grid-template-columns: repeat(3, 17.31rem);
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
@@ -92,7 +91,11 @@
   }
 
   .courses {
-    display: block;
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: repeat(1, 24.5rem);
+    margin-top: 2rem;
+    z-index: 2;
   }
 
   .courses-wrapper {
