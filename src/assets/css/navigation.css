@@ -27,6 +27,9 @@
 .header.background-erohw.fixed {
   background: transparent;
 }
+.header.background-green-1.fixed {
+  background: transparent;
+}
 .header.background-erohw.fixed .links a {
   background: transparent;
   color: var(--color-gray-7);
