@@ -405,16 +405,14 @@
   }
 
   .text {
-    min-width: 100%;
-    /* margin-left: 1.4375rem; */
-    margin-right: 1.4375rem;
-    margin-bottom: 1.4375rem;
-    padding-left: 0;
+    width: 100%;
+    margin: unset;
+    padding: 2rem 1.5rem;
   }
 
   .reverse .text {
-    padding-right: 18%;
-    padding-left: 0;
+    padding: 2rem 1.5rem;
+    margin: 0;
   }
 
   .text p {
@@ -427,7 +425,7 @@
 
   .text h4 {
     color: var(--color-green-0);
-    margin-top: 2.0625rem;
+    margin-top: 0;
   }
 
   .pic {

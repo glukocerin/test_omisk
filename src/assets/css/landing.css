@@ -64,6 +64,7 @@
 .left.one .double-arrow-down .cls-1 {
   fill: var(--color-gray-new-0);
   stroke-width: 0.25rem;
+  stroke: var(--color-gray-new-1);
 }
 .left.one .double-arrow-down .cls-2 {
   stroke: unset;
@@ -687,8 +688,8 @@
     order: 12;
     display: flex;
     flex-direction: column;
-    background: var(--color-blue-1);
-    color: var(--color-gray-0);
+    background: var(--color-gray-3);
+    color: var(--color-gray-7);
   }
   .mobile-footer .balett {
     width: 100vw;
@@ -698,20 +699,22 @@
     padding: 3rem 1.625rem;
     width: 100%;
     max-width: unset;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-footer .content-block .content-header {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
     max-width: 16rem;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   .mobile-footer .content-block .content-header .logo .cls-1,
   .mobile-footer .content-block .content-header .logo .cls-2 {
     font-family: "Gilroy";
-    fill: var(--color-gray-0);
-    stroke: var(--color-gray-0);
+    fill: var(--color-gray-7);
+    stroke: var(--color-gray-7);
   }
   .mobile-footer .content-block .article {
     margin-bottom: 1.25rem;
@@ -721,7 +724,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     margin-top: 0.5rem;
   }
   .mobile-footer .content-block .sm-icons .icon {
@@ -735,7 +737,11 @@
   .mobile-footer .content-block .sm-icons .icon + .icon {
     margin-left: 0.75rem;
   }
+  .mobile-footer .content-block .sm-icons .icon .cls-1 {
+    fill: var(--color-gray-7);
+  }
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
-    fill: var(--color-blue-1);
+    fill: var(--color-gray-0);
+    stroke: var(--color-gray-0);
   }
 }
