@@ -248,16 +248,7 @@ const pagesConfig = {
         ],
         youtubeLink: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg",
         videoAlt: "Video részlet a 2019-es Évzáró",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["evzaroeloadas/1", "evzaroeloadas/2", "evzaroeloadas/3"]
       },
       competitions: {
         title: "Versenyek",
@@ -286,16 +277,7 @@ const pagesConfig = {
         ],
         youtubeLink: "",
         videoAlt: "",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["versenyek/1", "versenyek/2", "versenyek/3"]
       },
       omisk: {
         title: "Omisk Gála",
@@ -348,16 +330,7 @@ const pagesConfig = {
         ],
         youtubeLink: "https://www.youtube.com/embed/4SPgJV2Pc7c",
         videoAlt: "Bemutató óra | OMISK | 2018",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["nyilvanosora/1", "nyilvanosora/2", "nyilvanosora/3"]
       },
       callisthenics: {
         title: "Mozdulatműhely",
@@ -381,16 +354,7 @@ const pagesConfig = {
         youtubeLink: "https://www.youtube.com/embed/rKBmBZxAej4",
         videoAlt:
           "Mikép - Miró képei táncban elbeszélve | OMISK Mouzdulatműhely | 2016",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2", "mozdulatmuhely/3"]
       },
       camp: {
         title: "Nyári táborok",
@@ -413,16 +377,7 @@ const pagesConfig = {
         ],
         youtubeLink: "https://www.youtube.com/embed/q2eUUTYWTI4",
         videoAlt: "Szabad Tánc | OMISK Tábor | 2018",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["taborok/1", "taborok/2", "taborok/3"]
       }
     }
   },
