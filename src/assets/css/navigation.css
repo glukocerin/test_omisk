@@ -8,6 +8,9 @@
 .header.background-green {
   background: var(--color-green-0);
 }
+.header.background-green-1 {
+  background: var(--color-green-1);
+}
 .header.background-blue-1 {
   background: var(--color-blue-1);
 }
@@ -80,11 +83,10 @@
   margin-left: 1.5rem;
 }
 .header .links .plus-sign::before {
-  content: '+';
+  content: "+";
   position: absolute;
   left: -0.75rem;
 }
-
 
 @media screen and (max-width: 767px) {
   .header {
@@ -106,6 +108,9 @@
   }
   .header.background-green.fixed {
     background: var(--color-green-0);
+  }
+  .header.background-green-1.fixed {
+    background: var(--color-green-1);
   }
   .header.background-blue-1.fixed {
     background: var(--color-blue-1);

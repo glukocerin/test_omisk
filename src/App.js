@@ -51,7 +51,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/courses">
-          <Navigation BackgroundColor="blue-4" />
+          <Navigation BackgroundColor="green-1" />
           <Courses />
           <Footer />
         </Route>
