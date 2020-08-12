@@ -56,12 +56,12 @@ function App() {
           <Footer />
         </Route>
         <Route path="/teachers">
-          <Navigation BackgroundColor="green" isHeaderFixed="true" />
+          <Navigation BackgroundColor="pink" isHeaderFixed="true" />
           <Teachers />
           <Footer />
         </Route>
         <Route path="/teacher">
-          <Navigation BackgroundColor="green" />
+          <Navigation BackgroundColor="pink" />
           <Teacher />
           <Footer />
         </Route>

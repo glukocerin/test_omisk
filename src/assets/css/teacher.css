@@ -5,7 +5,7 @@
   position: relative;
   background: var(--color-gray-0);
   align-items: center;
-  padding: 0 20rem;
+  padding: 0 31rem;
 }
 .teacher .teacher-header {
   position: absolute;
@@ -16,7 +16,8 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  background-color: #14C1AE;
+  background-color: var(--color-pink-0);
+  background-image: url("../img/teachers/teachers_header.svg");
 }
 .teacher .state-location {
   text-align: center;
@@ -24,7 +25,7 @@
   margin-top: 4.5rem;
   color: var(--color-gray-0);
   padding-bottom: 0.5rem;
-  border-bottom: 2px dotted var(--color-gray-0); 
+  border-bottom: 2px dotted var(--color-gray-0);
 }
 .teacher .state-location a {
   color: unset;
@@ -44,8 +45,9 @@
 .teacher .columns {
   display: flex;
   justify-content: center;
-  margin-top: 5.75rem;
-  margin-bottom: 3.125rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
 }
 .teacher .column-left,
 .teacher .column-right {
@@ -56,19 +58,21 @@
 }
 .teacher .column-left .name {
   margin-bottom: 2.5rem;
-  color: var(--color-green-0)
+  color: var(--color-green-0);
 }
 .teacher .column-left .desc {
   white-space: pre-wrap;
   margin-bottom: 1.75rem;
+  line-height: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .teacher .column-left .details {
   white-space: pre-wrap;
   line-height: 28px;
 }
 .teacher .column-right {
-  margin-left: 16rem;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 .teacher .column-right .text {
   margin-bottom: 1.25rem;
@@ -87,7 +91,7 @@
   color: var(--color-green-0);
   font-weight: bold;
   font-size: 1.5rem;
-  display: inline-block; 
+  display: inline-block;
   left: -1rem;
   position: absolute;
 }
@@ -96,8 +100,8 @@
   line-height: 1.25rem;
   position: relative;
 }
-.teacher .column-right .list .list-item + .list-item{
-  margin-top: 1.75rem;
+.teacher .column-right .list .list-item + .list-item {
+  margin-top: 1rem;
 }
 .teacher .column-right .list .list-item:last-child {
   padding-bottom: 2.75rem;
@@ -142,7 +146,7 @@
     line-height: 1.25rem;
     position: relative;
   }
-  .teacher .column-right .list .list-item + .list-item{
+  .teacher .column-right .list .list-item + .list-item {
     margin-top: 0.5rem;
   }
   .teacher .column-right .list .list-item:last-child {
@@ -151,8 +155,8 @@
   .teacher .column-left {
     padding: 2.75rem 1.5rem;
     margin: unset;
-    border-top: 1rem solid var(--color-green-0);;
-    border-bottom: 2.875rem solid var(--color-green-0);;
+    border-top: 1rem solid var(--color-green-0);
+    border-bottom: 2.875rem solid var(--color-green-0);
   }
   .teacher .column-left .name,
   .teacher .column-left .desc {
