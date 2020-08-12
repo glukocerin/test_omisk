@@ -698,6 +698,8 @@
     padding: 3rem 1.625rem;
     width: 100%;
     max-width: unset;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-footer .content-block .content-header {
     display: flex;
