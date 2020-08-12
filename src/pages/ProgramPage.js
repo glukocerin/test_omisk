@@ -32,15 +32,13 @@ const Events = function(props) {
   ));
 };
 
-const Images = function(props) {
-  return props.list.map((img, index) => {
-    return (
-      <img
-        key={index}
-        src={require(`../assets/img/programs/${img}.jpg`)}
-        alt=""
-      />
-    );
+const ImageGallery = function(props) {
+  const images = props.list.map((img, inde) => {
+    return require(`../assets/img/programs/${img}.jpg`);
+  });
+
+  return images.map((img, index) => {
+    return <img key={index} src={img} alt="" />;
   });
 };
 
@@ -125,7 +123,7 @@ export default function ProgramPage(props) {
       </div>
       <div className={style["images"]}>
         <div className={style["images-title"]}>
-          <h5 className="size-36">Kovess minket</h5>
+          <h5 className="size-36">Kövess minket</h5>
         </div>
         <div className={style["logos"]}>
           <a
@@ -154,11 +152,11 @@ export default function ProgramPage(props) {
           </a>
         </div>
         <div className={style["gallery"]}>
-          {/* <Images list={props.opt.gallery} /> */}
+          <ImageGallery list={props.opt.gallery} />
         </div>
       </div>
       <div className="actuals">
-        <h2 class={`${style["actual-title"]} size-48`}>Eseményeink</h2>
+        <h2 className={`${style["actual-title"]} size-48`}>Eseményeink</h2>
         <div className="actual-cards">
           <ActualCard />
         </div>
