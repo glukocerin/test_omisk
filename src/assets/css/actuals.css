@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  background-color: var(--color-yellow-2);
+  background-image: url("../img/actuals/actuals_header.svg");
 }
 
 .actuals .title {

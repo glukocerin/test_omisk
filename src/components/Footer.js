@@ -134,6 +134,8 @@ function egg() {
 let y = 0;
 
 function egg2() {
+  y++;
+
   if (y === 9) {
     console.log(
       "check this hot milf ;) ( ͡❛ ‿ ͡❛) <3 <3 http://bitly.com/98K8eH"
