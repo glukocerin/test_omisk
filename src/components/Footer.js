@@ -11,11 +11,32 @@ export default function Footer() {
   return (
     <div className={style["wrapper"]}>
       <div className={style["icons-wrapper"]}>
-        <LogoWithTitle className='footer-logo' />
+        <LogoWithTitle className="footer-logo" />
         <div className={style["social-media"]}>
-          <a className='footer-icon' href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer"><Instagram /></a>
-          <a className='footer-icon' href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer"><Facebook /></a>
-          <a className='footer-icon' href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer"><Youtube/></a>
+          <a
+            className="footer-icon"
+            href="https://www.instagram.com/o_m_i_s_k/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </a>
+          <a
+            className="footer-icon"
+            href="https://www.facebook.com/omisk.hu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </a>
+          <a
+            className="footer-icon"
+            href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Youtube />
+          </a>
         </div>
       </div>
       <div className={style["details-wrapper"]}>
@@ -42,7 +63,14 @@ export default function Footer() {
           </p>
         </div>
         <div className={style["details-box"]}>
-          <h5 className={`size-20 extra-bold`} onClick={()=>{egg()}}>Kurzusaink</h5>
+          <h5
+            className={`size-20 extra-bold`}
+            onClick={() => {
+              egg();
+            }}
+          >
+            Kurzusaink
+          </h5>
           <p className={`size-15 thin`}>
             Művészi torna <br />
             Mozdulatművészet <br />
@@ -54,7 +82,14 @@ export default function Footer() {
           </p>
         </div>
         <div className={style["details-box"]}>
-          <h5 className={`size-20 extra-bold`}>Helyszineink</h5>
+          <h5
+            className={`size-20 extra-bold`}
+            onClick={() => {
+              egg2();
+            }}
+          >
+            Helyszineink
+          </h5>
           <p className={`size-15 thin`}>
             Óbudai Kulturális Központ <br />
             MOM Kulturális Központ
@@ -76,22 +111,32 @@ function egg() {
   k++;
 
   if (k === 1) {
-    console.warn('K');
+    console.warn("K");
   } else if (k === 2) {
-    console.warn('I');
+    console.warn("I");
   } else if (k === 3) {
-    console.warn('S');
+    console.warn("S");
   } else if (k === 4) {
-    console.warn('F');
+    console.warn("F");
   } else if (k === 5) {
-    console.warn('A');
+    console.warn("A");
   } else if (k === 6) {
-    console.warn('S');
+    console.warn("S");
   } else if (k === 7) {
-    console.warn('Z');
+    console.warn("Z");
   } else if (k === 8) {
-    console.warn('O');
+    console.warn("O");
   } else if (k === 9) {
-    console.warn('M');
+    console.warn("M");
+  }
+}
+
+let y = 0;
+
+function egg2() {
+  if (y === 9) {
+    console.log(
+      "check this hot milf ;) ( ͡❛ ‿ ͡❛) <3 <3 http://bitly.com/98K8eH"
+    );
   }
 }
