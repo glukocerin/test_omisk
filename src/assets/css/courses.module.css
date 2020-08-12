@@ -92,7 +92,7 @@
   .courses {
     display: grid;
     gap: 0.625rem;
-    grid-template-columns: repeat(1, 24.5rem);
+    grid-template-columns: repeat(1, 100%);
     margin-top: 2rem;
     z-index: 2;
   }
@@ -109,5 +109,9 @@
     margin-top: 0rem;
     padding-bottom: 0;
     margin-bottom: 1.25rem;
+  }
+
+  .page-footer {
+    display: none;
   }
 }
