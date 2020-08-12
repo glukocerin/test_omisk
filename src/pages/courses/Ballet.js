@@ -6,7 +6,7 @@ import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
 export default function Courses() {
   const opt = {
-    courseName: "Pre balett",
+    courseName: "Klasszikus balett",
     color: "pink",
     img: "balett"
   };
