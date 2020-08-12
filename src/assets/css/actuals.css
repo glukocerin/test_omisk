@@ -43,7 +43,7 @@
   flex-direction: row;
   align-items: center;
   background: var(--color-gray-1);
-  height: 37.3125rem;
+  height: 22rem;
   margin-bottom: 7.5rem;
   max-width: 58rem;
 }
@@ -84,11 +84,11 @@
   height: 100%;
   min-width: 50%;
   max-width: 40rem;
-  padding: 6.25rem 4.25rem;
+  padding: 3.25rem 4rem;
   position: relative;
 }
 .actuals .actual-cards .card .text-box .actual-text {
-  line-height: 1.75rem;
+  line-height: 1.25rem;
 }
 .actuals .actual-cards .card .text-box .actual-date {
   margin-bottom: 2.125rem;
@@ -97,7 +97,7 @@
   margin-bottom: 1rem;
   position: absolute;
   transform: rotate(90deg);
-  top: 5.75rem;
+  top: 2.75rem;
   right: 4.25rem;
 }
 .actuals .actual-cards .card .text-box .actual-desc {

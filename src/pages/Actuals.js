@@ -13,7 +13,7 @@ const ActualsCards = function() {
       <div className="card">
         <div className="picture-box">
           <img src={require(`../assets/img/actuals/${card.picture}`)} alt="" />
-          <label className="picture-title size-36 extra-bold">
+          <label className="picture-title size-28 extra-bold">
             {card.picture_title}
           </label>
         </div>
@@ -21,7 +21,7 @@ const ActualsCards = function() {
           <label className="actual-date size-15 extra-bold">{card.date}</label>
           <label className="dot-dot-dot size-36 extra-bold">...</label>
           <label className="actual-desc size-24 extra-bold">{card.title}</label>
-          <label className="actual-text size-20 thin">{card.text}</label>
+          <label className="actual-text size-15 thin">{card.text}</label>
         </div>
       </div>
     </Link>

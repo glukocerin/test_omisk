@@ -44,19 +44,24 @@
 }
 
 .body {
-  padding-top: 6.625rem;
-  max-width: 80rem;
-  margin: 0 16.667%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background: var(--color-gray-0);
+  align-items: center;
+  padding: 0 31rem;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 5.72rem;
 }
 
-.details {
-  max-width: 40rem;
+.details p {
+  line-height: 28px;
 }
 
 .event-wrapper {
@@ -140,4 +145,9 @@ h5 {
 .gallery img {
   margin-bottom: 0.7rem;
   margin-left: 0.7rem;
+}
+
+.actual-title {
+  margin-top: 7.625rem;
+  margin-bottom: 5.625rem;
 }
