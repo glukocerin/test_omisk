@@ -321,16 +321,7 @@ const pagesConfig = {
         ],
         youtubeLink: "",
         videoAlt: "",
-        gallery: [
-          "competitions/veresenyek1",
-          "competitions/veresenyek2",
-          "competitions/veresenyek3",
-          "competitions/veresenyek4",
-          "competitions/veresenyek5",
-          "competitions/veresenyek6",
-          "competitions/veresenyek7",
-          "competitions/veresenyek8"
-        ]
+        gallery: ["gala/1", "gala/2", "gala/3"]
       },
       publicClass: {
         title: "Nyilvános órák",
