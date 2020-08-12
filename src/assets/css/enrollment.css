@@ -32,7 +32,7 @@
   flex-direction: column;
   z-index: 2;
   width: 100%;
-  max-width: 80rem;
+  max-width: 58rem;
   padding: 3.25rem 4.25rem;
   background: var(--color-gray-0);
   margin-bottom: 13.125rem;
@@ -47,7 +47,11 @@
   flex-direction: column;
   flex: 1;
 }
-.enrollment .enrollment-content .enrollment-columns .enrollment-box + .enrollment-box {
+.enrollment
+  .enrollment-content
+  .enrollment-columns
+  .enrollment-box
+  + .enrollment-box {
   margin-left: 4rem;
 }
 .enrollment .enrollment-content .enrollment-columns .enrollment-title {
@@ -104,7 +108,7 @@
 }
 .enrollment .places-content .drop-down-list,
 .enrollment .places-content .drop-down-list .place,
-.enrollment .places-content .drop-down-list .place .place-informations{
+.enrollment .places-content .drop-down-list .place .place-informations {
   display: flex;
   flex-direction: column;
 }
@@ -121,7 +125,7 @@
   position: absolute;
   left: 35px;
 }
-.enrollment .places-content .drop-down-list .place *{
+.enrollment .places-content .drop-down-list .place * {
   cursor: pointer;
 }
 .enrollment .places-content .drop-down-list .place .plus-sign,
@@ -211,7 +215,11 @@
   .enrollment .enrollment-content .enrollment-columns .enrollment-box {
     margin-bottom: 3.875rem;
   }
-  .enrollment .enrollment-content .enrollment-columns .enrollment-box + .enrollment-box {
+  .enrollment
+    .enrollment-content
+    .enrollment-columns
+    .enrollment-box
+    + .enrollment-box {
     margin-left: 0;
   }
   .enrollment .enrollment-content .enrollment-columns .enrollment-title {
