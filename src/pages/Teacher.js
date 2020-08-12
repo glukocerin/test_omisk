@@ -28,8 +28,9 @@ export default function Teacher() {
       />
       <div className="columns">
         <div className="column-left">
-          <label className="name size-36 extra-bold">{teacher.name}</label>
-          <label className="desc size-15 thin">{teacher.desc}</label>
+          <label className="desc size-20 thin">{teacher.desc || ""}</label>
+          <label className="desc size-20 thin">{teacher.desc_2 || ""}</label>
+          <label className="desc size-20 thin">{teacher.desc_3 || ""}</label>
           <label className="details size-20">{teacher.details}</label>
         </div>
         <div className="column-right">
