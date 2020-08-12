@@ -151,3 +151,50 @@ h5 {
   margin-top: 7.625rem;
   margin-bottom: 5.625rem;
 }
+
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    padding: unset;
+    height: unset;
+  }
+  .header {
+    background-image: unset!important;
+    height: unset;
+  }
+  .header-title {
+    height: unset;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: unset;
+    background: var(--color-blue-1);
+  }
+  .state-location {
+    display: none;
+  }
+  .body {
+    padding: 2rem;
+  }
+  .info {
+    margin-top: 0;
+  }
+  .main-pic-wrapper,
+  .alt-text,
+  .images-title,
+  .logos {
+    display: none;
+  }
+  .images {
+    margin-top: 0;
+  }
+  .gallery {
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+  }
+}

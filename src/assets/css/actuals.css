@@ -105,15 +105,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .actuals {
-    background: var(--color-yellow-2);
-  }
   .actuals .actuals-header {
     display: none;
   }
   .actuals .title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: unset;
+    background: var(--color-yellow-2);
   }
   .actuals .actual-cards {
     display: flex;
@@ -141,6 +140,7 @@
   .actuals .actual-cards .card .picture-box .picture-title {
     left: 1.5rem;
     bottom: 1.5rem;
+    font-size: 21px;
   }
   .actuals .actual-cards .card .text-box {
     display: flex;

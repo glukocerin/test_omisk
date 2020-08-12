@@ -73,14 +73,16 @@
     padding: unset;
   }
   .actual .actual-header {
-    height: 13rem;
+    height: unset;
   }
   .actual .state-location {
     display: none;
   }
   .actual .title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: unset;
+    background: var(--color-yellow-2);
   }
   .actual .actual-box {
     padding: 2rem;

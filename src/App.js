@@ -91,32 +91,32 @@ function App() {
           <Footer />
         </Route>
         <Route path="/courses/eurhythmics">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Eurhythmics />
           <Footer />
         </Route>
         <Route path="/courses/callisthenics">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Callisthenics />
           <Footer />
         </Route>
         <Route path="/courses/pre_ballet">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <PreBallet />
           <Footer />
         </Route>
         <Route path="/courses/ballet">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Ballet />
           <Footer />
         </Route>
         <Route path="/courses/jazz">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Jazz />
           <Footer />
         </Route>
         <Route path="/courses/modern">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Modern />
           <Footer />
         </Route>

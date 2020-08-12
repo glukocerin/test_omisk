@@ -79,7 +79,7 @@
 @media screen and (max-width: 767px) {
   .programs-wrapper {
     position: relative;
-    padding-top: 3.5rem;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -90,19 +90,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 7.5rem;
-    background-color: var(--color-blue-1);
+    height: unset;
   }
 
   .programs-wrapper label {
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: unset;
+    background: var(--color-blue-1);
   }
 
   .cards-wrapper {
     display: block;
     margin-left: 0.625rem;
     margin-right: 0.625rem;
-    margin-top: 0;
+    margin-top: 0.625rem;
   }
 
   .card {
@@ -140,5 +142,9 @@
 
   .card:last-child {
     margin-left: 0;
+  }
+
+  .page-footer {
+    display: none;
   }
 }

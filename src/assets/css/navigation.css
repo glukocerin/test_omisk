@@ -109,8 +109,9 @@
   .header.background-green.fixed {
     background: var(--color-green-0);
   }
+  /* green 1 sucks*/
   .header.background-green-1.fixed {
-    background: var(--color-green-1);
+    background: var(--color-green-0);
   }
   .header.background-blue-1.fixed {
     background: var(--color-blue-1);
