@@ -5,9 +5,9 @@ import style from "../assets/css/courseCard.module.css";
 export default function Card(props) {
   return (
     <Link to={`/courses/${props.details.link}`} className={`${style.wrapper}`}>
-      <labe className={`${style.title} size-28 extra-bold`}>
+      <label className={`${style.title} size-28 extra-bold`}>
         {props.details.title}
-      </labe>
+      </label>
       <div className={style["image-wrapper"]}>
         <img
           src={require(`../assets/img/courses/${props.details.image}.jpg`)}
