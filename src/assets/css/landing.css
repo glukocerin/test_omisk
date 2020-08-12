@@ -530,7 +530,8 @@
   }
   .right.one {
     order: 2;
-    height: 17rem;
+    background-size: auto 100%;
+    background-position: center;
   }
   .left.two {
     order: 3;

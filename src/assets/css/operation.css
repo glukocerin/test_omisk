@@ -136,6 +136,9 @@
 .operation .operation-content .label-with-icon .download-text {
   margin-left: 1.75rem;
 }
+.operation .operation-content .download-icon .cls-1 {
+  fill: var(--color-green-0);
+}
 
 @media screen and (max-width: 767px) {
   .operation {
