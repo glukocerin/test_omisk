@@ -18,7 +18,7 @@ export default function CoursesHeader(props) {
         style={{ backgroundImage: "url(" + backgroundImage + ")" }}
       ></div>
       <label className={`${style["state-location"]} size-13`}>
-        <Link to="/courses">kurzusaink</Link> > {props.opt.courseName}
+        <Link to="/courses">Kurzusaink</Link> > {props.opt.courseName}
       </label>
       <label className={`${style["header-title"]} size-90 extra-bold`}>
         {props.opt.courseName}
