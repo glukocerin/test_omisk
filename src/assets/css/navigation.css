@@ -66,8 +66,10 @@
 
 .header .links {
   display: flex;
+  position: relative;
 }
-.header .links a {
+.header .links a,
+.header .links label.plus-sign {
   text-decoration: none;
   font-size: 14px;
   font-weight: 800;
@@ -75,10 +77,54 @@
   white-space: nowrap;
   height: 1.375rem;
 }
-.header .links a.active {
+.header .links a.active,
+.header .links label.active.plus-sign {
   border-bottom: 3px solid var(--color-gray-0);
 }
+.header .links .dropdown-menu {
+  position: absolute;
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+  flex-direction: column;
+  padding: 1.5rem 1.875rem;
+  top: 1.425rem;
+  left: -8rem;
+  opacity: 0;
+  background: var(--color-gray-0);
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.header .links .programs .dropdown-menu {
+  left: -10rem;
+}
+.header .links label.active:hover .dropdown-menu {
+  display: flex;
+  z-index: 10;
+  opacity: 1;
+  transform: scaleY(1);
+}
+.header .links .dropdown-menu .row {
+  display: flex;
+}
+.header .links .dropdown-menu .row + .row {
+  margin-top: 1rem;
+}
+.header .links .dropdown-menu .row a {
+  display: flex;
+  flex-direction: column;
+  height: unset;
+  width: 7.5rem;
+  cursor: pointer;
+}
+.header .links .dropdown-menu .row a + a {
+  margin-left: 1.875rem;
+}
+.header .links .dropdown-menu .row a span {
+  color: var(--color-gray-7);
+}
 .header .links a + a {
+  margin-left: 1rem;
+}
+.header .links label + a {
   margin-left: 1rem;
 }
 .header .links .plus-sign {
