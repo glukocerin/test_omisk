@@ -21,6 +21,7 @@ import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_ar
 import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.svg";
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
+import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
@@ -94,6 +95,10 @@ export default function Landing({ dotChange }) {
                 <div className="content-block">
                     <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét!`}</label>
                     <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
+                    <div className="stamp-box">
+                        <Stamp className="stamp"/>
+                        <div className="mask"></div>
+                    </div>
                     <DoubleArrowDown className="double-arrow-down" />
                 </div>
             </div>
