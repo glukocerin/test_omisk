@@ -100,6 +100,7 @@ export default function Landing({ dotChange }) {
                         <div className="mask"></div>
                     </div>
                     <DoubleArrowDown className="double-arrow-down" />
+                    <label className="size-12 thin">Görgess lefelé</label>
                 </div>
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>

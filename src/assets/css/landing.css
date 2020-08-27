@@ -58,6 +58,7 @@
   color: var(--color-gray-new-1);
   white-space: nowrap;
   margin-top: 2.5rem;
+  line-height: 2.25rem;
 }
 .left.one .stamp-box {
   display: flex;
@@ -97,11 +98,28 @@
 }
 .left.one .double-arrow-down {
   margin-top: 5rem;
+  margin-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  animation: sdb04 2s infinite;
+}
+@keyframes sdb04 {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 2vh);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+}
+.left.one .double-arrow-down .cls-1:first-child {
+  display: none;
 }
 .left.one .double-arrow-down .cls-1 {
   fill: var(--color-gray-new-0);
   stroke-width: 0.25rem;
-  stroke: var(--color-gray-new-1);
+  stroke: var(--color-gray-3);
 }
 .left.one .double-arrow-down .cls-2 {
   stroke: unset;
