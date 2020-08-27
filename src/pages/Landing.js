@@ -353,7 +353,7 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
-                    <iframe title="video" src={landing['youtube_links'][activeLink].link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="video" src={activeDot === 6 && landing['youtube_links'][activeLink].link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <div className="link-block">
                         <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>{landing['youtube_links'][0].text}</label>
                         <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>{landing['youtube_links'][1].text}</label>

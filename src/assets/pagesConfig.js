@@ -4,15 +4,15 @@ const pagesConfig = {
     youtube_links: [
       {
         text: "Művészi torna",
-        link: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg"
+        link: "https://www.youtube-nocookie.com/embed/63BHFKUuZZg?autoplay=1"
       },
       {
         text: "Mozdulatművészet",
-        link: "https://www.youtube-nocookie.com/embed/FT6PC4fx9YU"
+        link: "https://www.youtube-nocookie.com/embed/FT6PC4fx9YU?autoplay=1"
       },
       {
         text: "Modern tánc",
-        link: "https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ"
+        link: "https://www.youtube-nocookie.com/embed/Iga3_QcwvUQ?autoplay=1"
       }
     ],
     list_courses: {
