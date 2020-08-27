@@ -57,6 +57,54 @@ const WhatWeDo = function(activeDot) {
   ));
 }
 
+const keyHelper = [
+    'no-one',
+    'no-two',
+    'no-three',
+    'no-four',
+    'no-five',
+    'no-fix',
+];
+let intervalFive, imageIndexFive, intervalSeven, imageIndexSeven;
+
+function timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch) {
+    imageIndexFive = keyHelper.indexOf(activeFiveSwitch);
+
+    if(activeDot === 5 && !intervalFive) {
+        intervalFive = setInterval(()=>{
+            if (imageIndexFive > 4) {
+                imageIndexFive = 0;
+            } else {
+                imageIndexFive++;
+            }
+
+            setActiveFiveSwitch(keyHelper[imageIndexFive]);
+        }, 3000)
+    } else if (activeDot !== 5){
+        clearInterval(intervalFive);
+        intervalFive = null;
+    }
+}
+
+function timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch) {
+    imageIndexSeven = keyHelper.indexOf(activeSevenSwitch);
+
+    if(activeDot === 7 && !intervalSeven) {
+        intervalSeven = setInterval(()=>{
+            if (imageIndexSeven > 4) {
+                imageIndexSeven = 0;
+            } else {
+                imageIndexSeven++;
+            }
+
+            setActiveSevenSwitch(keyHelper[imageIndexSeven]);
+        }, 3000)
+    } else if (activeDot !== 7){
+        clearInterval(intervalSeven);
+        intervalSeven = null;
+    }
+}
+
 export default function Landing({ dotChange }) {
     const pageIndex = useSelector(store => store.navigation.landingPageIndex);
     const dispatch = useDispatch();
@@ -88,6 +136,9 @@ export default function Landing({ dotChange }) {
                     dotChange(activeDot - 1);
                 }
             };
+
+    timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch);
+    timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch);
 
     return(
         <div className="landing" onWheel = {(e) => scroller(e) }>
