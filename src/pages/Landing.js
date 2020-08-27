@@ -81,7 +81,8 @@ function timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch) {
             setActiveFiveSwitch(keyHelper[imageIndexFive]);
         }, 3000)
     } else if (activeDot !== 5){
-        clearInterval(intervalFive)
+        clearInterval(intervalFive);
+        intervalFive = null;
     }
 }
 
@@ -99,7 +100,8 @@ function timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch) {
             setActiveSevenSwitch(keyHelper[imageIndexSeven]);
         }, 3000)
     } else if (activeDot !== 7){
-        clearInterval(intervalSeven)
+        clearInterval(intervalSeven);
+        intervalSeven = null;
     }
 }
 
@@ -135,8 +137,8 @@ export default function Landing({ dotChange }) {
                 }
             };
 
-    timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch)
-    timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch)
+    timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch);
+    timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch);
 
     return(
         <div className="landing" onWheel = {(e) => scroller(e) }>
