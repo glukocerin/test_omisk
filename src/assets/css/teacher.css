@@ -57,8 +57,6 @@
 .teacher .column-right {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  max-width: 40rem;
 }
 .teacher .column-left .name {
   margin-bottom: 2.5rem;
