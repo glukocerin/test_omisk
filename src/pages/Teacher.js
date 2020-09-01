@@ -28,10 +28,13 @@ export default function Teacher() {
       />
       <div className="columns">
         <div className="column-left">
-          <label className="desc size-20 thin">{teacher.desc || ""}</label>
-          <label className="desc size-20 thin">{teacher.desc_2 || ""}</label>
-          <label className="desc size-20 thin">{teacher.desc_3 || ""}</label>
+          <label className="desc size-20 thin">{teacher.desc}</label>
           <label className="details size-20">{teacher.details}</label>
+          <img
+            className="action-picture"
+            src={ teacher.hasActionPicture ? require(`../assets/img/teachers/action/${teacher.picture}`):undefined}
+            alt=""
+          />
         </div>
         <div className="column-right">
           <label className="text size-24 bold">Végzettség:</label>
@@ -58,7 +61,6 @@ export default function Teacher() {
           </ul>
         </div>
       </div>
-      <div className="color-box"></div>
     </div>
   );
 }

@@ -386,8 +386,7 @@ const pagesConfig = {
       {
         picture: "pers_julia.jpg",
         name: "Pers Júlia",
-        asdd: [],
-        descssss:
+        desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
         details:
           "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, amit igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
@@ -401,7 +400,8 @@ const pagesConfig = {
           "2016 Berczik Sára Díj",
           "2015 Réti Piroska Balett Pedagógusi Nívódíj"
         ],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       },
       {
         picture: "benis_katalin.jpg",
@@ -416,7 +416,8 @@ const pagesConfig = {
           "2009 Berczik Sára Díj",
           "2015 Táncpedagógusok Országos Szövetsége Nívódíj"
         ],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       },
       {
         picture: "mady_krisztina.jpg",
@@ -432,7 +433,8 @@ const pagesConfig = {
           "2012 Berczik Sára Díj",
           "2017 Táncpedagógusok Országos Szövetsége Nívódíj"
         ],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: false
       },
       {
         picture: "kalocsai_edit.jpg",
@@ -449,7 +451,8 @@ const pagesConfig = {
           "2006 Gyöngyös Város Kultúrájáért Kitüntetés",
           "2006 Magyar Köztársasági Ezüst Érdemkereszt"
         ],
-        courses: ["klasszikus balett, jazztánc"]
+        courses: ["klasszikus balett, jazztánc"],
+        hasActionPicture: false
       },
       {
         picture: "kovacs_bea.jpg",
@@ -462,7 +465,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: ["2014 Berczik Sára Díj"],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       },
       {
         picture: "csongei_barbi.jpg",
@@ -475,7 +479,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: ["modern tánc, klasszikus balett"]
+        courses: ["modern tánc, klasszikus balett"],
+        hasActionPicture: true
       },
       {
         picture: "solti_eszter.jpg",
@@ -488,7 +493,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       },
       {
         picture: "lakatos_lilla.jpg",
@@ -502,7 +508,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: false
       },
       {
         picture: "rozsa_reka.jpg",
@@ -516,7 +523,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető"
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       },
       {
         picture: "taylor_eszti.jpg",
@@ -529,7 +537,8 @@ const pagesConfig = {
           "Testnevelési Egyetem, testnevelő-gyógytestnevelő-egészségfejlesztő tanár"
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet, pre-balett"]
+        courses: ["művészi torna, mozdulatművészet, pre-balett"],
+        hasActionPicture: false
       },
       {
         picture: "david_luca.jpg",
@@ -539,7 +548,8 @@ const pagesConfig = {
           "Óvodás koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában. Ez a hely a második otthonommá vált. Húsz éven át tanulhattam Pers Júlia szárnyai alatt, egy kivételesen kreatív és tehetséges táncosokból álló csapatban. Az Omisk Mozdulatműhely, Miró képei táncban elbeszélve című előadásában látványtervezőként és táncosként is részt vehettem. Egy éven át tanultam különböző testtudati technikákról és azoknak a gyerekekkel való alkalmazási lehetőségeiről. 2015 óta óta önkénteskesem a Bátor Tábor alapítványnál,  és három éve vagyok kézműves szakértő. Jelenleg egy alternatív iskola hálózatban tanulásszervezőként és művésztanárként tanítok és tanulok együtt a gyerekekkel. Az Omisk nyári táboraiban szabadtánc és barkács foglalkozást tartok a gyerekeknek. Fő célom, hogy teret adjak a gyerekeknek a szabad alkotásra és önkifejezésre.",
         education: ["Magyar Képzőművészeti Egyetem, látványtervező"],
         achievements: [],
-        courses: []
+        courses: [],
+        hasActionPicture: true
       },
       {
         picture: "taylor_jennifer.jpg",
@@ -552,7 +562,8 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés"
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet"]
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true
       }
     ]
   },
