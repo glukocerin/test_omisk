@@ -31,9 +31,9 @@ export default function Enrollment() {
           <EnrollmentColumns />
         </div>
       </div>
-      <label className="sub-title extra-bold size-54">Helyszíneink</label>
       <div className="places-content">
       <div className="drop-down-list">
+        <label className="sub-title extra-bold size-36">Helyszíneink</label>
         <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 1 ? {placeId: null, position: null} : {placeId:1, position: [47.54154, 19.03426], zoom: 17}) }>
             <PlusSign className="plus-sign"/>
             <MinusSign className="minus-sign"/>
