@@ -28,9 +28,7 @@ export default function Teacher() {
       />
       <div className="columns">
         <div className="column-left">
-          <label className="desc size-20 thin">{teacher.desc || ""}</label>
-          <label className="desc size-20 thin">{teacher.desc_2 || ""}</label>
-          <label className="desc size-20 thin">{teacher.desc_3 || ""}</label>
+          <label className="desc size-20 thin">{teacher.desc}</label>
           <label className="details size-20">{teacher.details}</label>
         </div>
         <div className="column-right">
@@ -58,7 +56,6 @@ export default function Teacher() {
           </ul>
         </div>
       </div>
-      <div className="color-box"></div>
     </div>
   );
 }
