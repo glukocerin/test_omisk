@@ -35,7 +35,6 @@
   max-width: 58rem;
   padding: 3.25rem 4.25rem;
   background: var(--color-gray-0);
-  margin-bottom: 13.125rem;
 }
 
 .enrollment .enrollment-content .enrollment-columns {
@@ -86,25 +85,32 @@
 }
 
 .enrollment .sub-title {
-  max-width: 80rem;
-  width: 80rem;
-  text-align: center;
-  padding-top: 6.625rem;
-  padding-bottom: 8.125rem;
-  background: var(--color-gray-1);
+  padding-bottom: 3.25rem;
+  padding-left: 1rem;
+  color: var(--color-gray-new-1);
 }
 .enrollment .places-content {
   display: flex;
   z-index: 2;
   width: 100%;
-  max-width: 80rem;
-  padding: 0 4.25rem;
-  padding-bottom: 3.25rem;
+  height: 60rem;
+  margin-bottom: 9rem;
   background: var(--color-gray-1);
   position: relative;
 }
 .enrollment .places-content .drop-down-list {
-  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  left: 10vw;
+  top: 8vh;
+}
+.enrollment .places-content .drop-down-list * {
+  color: var(--color-gray-new-1);
+}
+.enrollment .places-content .drop-down-list .size-15 {
+  font-size: 0.781vw;
 }
 .enrollment .places-content .drop-down-list,
 .enrollment .places-content .drop-down-list .place,
@@ -175,9 +181,9 @@
 }
 .enrollment .places-content .map {
   display: flex;
-  width: calc(50% - 4.25rem);
+  width: 50%;
   left: 50%;
-  height: calc(100% - 3.25rem);
+  height: 100%;
   position: absolute;
 }
 .enrollment .places-content .map .leaflet-container {
@@ -225,15 +231,21 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background: var(--color-gray-0);
-    border-top: 1.5rem solid var(--color-gray-1);
   }
   .enrollment .places-content {
     padding: 0rem 2rem;
     padding-bottom: 5rem;
+    height: unset;
+    margin-bottom: 0;
     background: var(--color-gray-0);
+    border-top: 1.5rem solid var(--color-gray-1)
   }
   .enrollment .places-content .drop-down-list {
     width: 100%;
+    position: unset;
+  }
+  .enrollment .places-content .drop-down-list .size-15 {
+    font-size: 15px;
   }
   .enrollment .places-content .drop-down-list .place {
     padding: 1rem 0;
