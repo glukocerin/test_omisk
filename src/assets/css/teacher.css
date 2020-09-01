@@ -42,6 +42,10 @@
   z-index: 2;
   width: 24rem;
 }
+.teacher .action-picture {
+  width: 100%;
+  margin: 5.625rem 0;
+}
 .teacher .columns {
   display: flex;
   justify-content: center;
