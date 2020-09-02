@@ -18,7 +18,7 @@ export default function Teacher() {
     <div className="teacher">
       <div className="teacher-header"></div>
       <label className="state-location size-13">
-        <Link to="/teachers">Tanáraink</Link> > {teacher.name}
+        <Link to="/teachers">Vissza tanárainkra</Link>
       </label>
       <label className="title size-90 extra-bold">{teacher.name}</label>
       <img
