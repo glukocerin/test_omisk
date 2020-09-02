@@ -94,7 +94,7 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/contact">
-          <Navigation BackgroundColor="blue-4" />
+          <Navigation BackgroundColor="blue-1" />
           <Contact />
           <Footer />
           <FooterMobile />

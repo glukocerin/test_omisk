@@ -3,8 +3,12 @@
   flex-direction: column;
   width: 100%;
   position: relative;
-  background: var(--color-blue-4);
+  background: var(--color-blue-1);
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  background-image: url("../img/contact_header.svg");
 }
 
 .contact .contact-content,
@@ -17,11 +21,17 @@
   padding: 3rem 4.25rem;
 }
 
+.contact .contact-content {
+  padding: 0 18.833vw;
+  max-width: unset;
+  margin: 9.75rem 0;
+}
+
 .contact .faq {
   background: var(--color-gray-0);
   text-align: center;
   max-width: unset;
-  padding: 3.25rem 20vw;
+  padding: 7rem 18vw;
 }
 
 .contact .faq .drop-down-list {
@@ -36,11 +46,13 @@
 }
 .contact .faq .drop-down-list .question {
   padding: 0.5rem 0;
-  border-top: 1px solid var(--color-gray-4);
   padding-left: 3rem;
   position: relative;
   cursor: pointer;
   user-select: none;
+}
+.contact .faq .drop-down-list .question + .question {
+  margin-top: 3vh;
 }
 .contact .faq .drop-down-list .question *{
   cursor: pointer;
@@ -68,13 +80,9 @@
 .contact .faq .drop-down-list .question .minus-sign .cls-2,
 .contact .faq .drop-down-list .question .minus-sign .cls-2 {
   stroke: var(--color-gray-7);
-  stroke-width: 0.125rem;
-}
-.contact .faq .drop-down-list .question:last-child {
-  border-bottom: 1px solid var(--color-gray-4);
+  stroke-width: 1px;
 }
 .contact .faq .drop-down-list .question .question-label {
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 28px;
@@ -82,6 +90,10 @@
 .contact .faq .drop-down-list .question .question-informations {
   max-height: 0;
   overflow: hidden;
+}
+.contact .faq .drop-down-list .question .question-informations .answer{
+  margin: 3rem 0;
+  line-height: 28px;
 }
 .contact .faq .drop-down-list .question .question-address {
   margin-top: 0.625rem;
@@ -102,17 +114,16 @@
 .contact .contact-content .contact-columns .contact-box {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 .contact .contact-content .contact-columns .contact-box + .contact-box {
-  margin-left: 10.625vw;
+  margin-left: 7.625vw;
 }
 .contact .contact-content .contact-columns .contact-box * {
   color: var(--color-gray-0);
 }
 .contact .contact-content .contact-columns .contact-box img {
   width: 22.656vw;
-  margin-left: auto;
+  transform: rotateY(180deg);
 }
 .contact .contact-content .contact-columns .contact-box .contact-row {
   display: block;

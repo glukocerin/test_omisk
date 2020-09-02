@@ -679,6 +679,118 @@ const pagesConfig = {
         button_text: "Érdeklődöm"
       }
     ]
+  },
+  contact: {
+    gyik: [
+      {
+        question: "Pontosan 4 éves kortól lehet beiratkozni?",
+        answer: "A legnagyobb kihívás ilyen kicsi korban, hogy 45 percig folyamatosan figyelni kell az óráinkon. Nem egyformán fejlődnek a gyerekek, ezért előfordulhat, hogy valaki már korábban megérett a feladatra. Több évtizedes tapasztalatunk alapján 3,5 éves kor alatt nem érdemes még beiratkozni."
+      },
+      {
+        question: "Van felvételi?",
+        answer: "Nincs. Tanfolyamainkhoz nem kell semmilyen speciális adottság. A tanév folyamán kiderül, hogy növendékeink megszeretik-e a választott mozgásformát. Ha idősebb tanítványaink más stílusra vágynak, lehetőség van iskolánkon belül műfajt váltani."
+      },
+      {
+        question: "Hogyan tudjuk eldönteni, hogy melyik műfajt válasszuk?",
+        answer: "A kurzusaink menüpontban megtalálhatók a nálunk tanított műfajok, és az is, hogy kiknek ajánljuk őket. A beiratkozás még nem véglegesíti a választott műfajt. Ha néhány hét után úgy érzed, valami más stílust tanulnál inkább, lehetőséged van váltani iskolánkon belül."
+      },
+      {
+        question: "Fiúk jöhetnek? ",
+        answer: "Igen, de mivel nagyon kevés fiú iratkozik be, ezért 1-2 kivétellel iskolánkba lányok járnak."
+      },
+      {
+        question: "Lehet csak heti egyszer járni?",
+        answer: "Átmenetileg igen, de az órák egymásra épülnek, növendékünk azt tapasztalhatja, hogy a többiek ügyesebben, gyorsabban haladnak az anyag elsajátításával – nem meglepő, hiszen ebben az esetben pontosan kétszer annyi lehetőségük van erre –, így hosszú távon kudarcélményhez vezethet, és elveheti az amúgy tehetséges, szorgalmas gyermekek önbizalmát. Ha valaki mégis így dönt, számukra a tandíjból 30% kedvezményt tudunk adni."
+      },
+      {
+        question: "Miért kell egyenruhát vásárolni?",
+        answer: "Iskolánkban minden csoportnak egyenruhája van. Tanítványaink a nyilvános órákon és évzáró előadásokon ezekben a dresszekben lépnek fel. Mi azonban tanév közben is szorgalmazzuk az egyforma ruhák viselését, mert azon felül, hogy dresszek esetében tanáraink jobban látják a korrigálandó hibákat, fokozza növendékeink összetartozás érzését, így erősíti a közösséget."
+      },
+      {
+        question: "Miben jöjjek órára, amíg nincs meg a csoport egyenruhája?",
+        answer: "Egy testhez simuló felső, cicanadrág és – nem csúszós – pamutzokni minden műfajhoz tökéletes választás. Gyakorlócipőt azelőtt nem érdemes beszerezni, hogy a tanárral egyeztetnénk, mert tanáraink a különböző műfajoktól függően más színt és kialakítást preferálnak."
+      },
+      {
+        question: "Mikor kell új egyenruhát vásárolni?",
+        answer: "A dresszeket évente-kétévente cseréljük. A döntés tanárainké, de sok minden befolyásolja: az elmúlt év óta mennyit nőttek a gyerekek, hány új gyermek érkezett a csoportba, milyen állapotban vannak a meglévő ruhák. Versenyzős csapatainknak a koreográfiához illő ruhát készíttetünk, így az ő esetükben többnyire minden koreográfiához új ruha kell."
+      },
+      {
+        question: "Szülők bejöhetnek az órákra?",
+        answer: "Iskolánkban a szülők  nem jönnek be az órákra. Így tudjuk biztosítani, hogy növendékeink  elsősorban a tanárra és a feladatokra figyeljenek.  A kezdőknél érdemes ezt az első óra előtt, otthon megbeszélni a gyerekekkel.  Biztonságot ad a kicsiknek, ha az első alkalmak alatt a szülők a helyszínen várakoznak, igaz, hogy nem bent, de a közelben vannak, ha mosdóba kell menni, el tudják kísérni őket. Egyes esetekben, amikor valaki több próbálkozás után sem mer egyedül bejönni az órára, tanáraink – belátásuk szerint – tehetnek kivételt, néhány órára beengedhetik a szülőt."
+      },
+      {
+        question: "Milyen napokon vannak az órák? Van órarend?",
+        answer: "Az órarendet minden évben a beiratkozás függvényében állítjuk össze, ezzel tudjuk biztosítani, hogy mindenki saját korosztályában és saját szintjén tanulhasson tovább. Az, hogy mely órák milyen napokon lesznek, ezért biztosan csak beiratkozás után derül ki. A tanév közben csatlakozók számára, az adott évre kialakult órarendről iskolatitkárunk tud bővebb tájékoztatást adni."
+      },
+      {
+        question: "Egy ismerősöm már OMISK-os, járhatok vele egy csoportba?",
+        answer: "Nincs akadálya, beiratkozásnál figyelembe vesszük az ilyen jellegű kéréseket, ha az élekor és  a tudásszint megfelelő."
+      },
+      {
+        question: "Milyen hosszúak az órák?",
+        answer: "Az órák életkortól függően óvodásoknak 45, iskolásoknak 60 vagy 90 percesek."
+      },
+      {
+        question: "Mennyibe kerülnek az órák?",
+        answer: "A tanfolyamok díja helyszíntől, műfajtól és az órák hosszától függően változik. Árainkat a kurzusaink menüpontnál találod a választott műfajnál."
+      },
+      {
+        question: "Mi a helyzet betegség, hiányzás esetén? Pótlásra van lehetőség?",
+        answer: "A tandíjból visszatérítést csak huzamosabb idejű és orvos által igazolt mulasztás esetén tudunk adni. Ha a mulasztott órák száma meghaladja a havi óraszám felét, félhavi díjat számolunk csak fel. Pótlásra azonos műfajban, hasonló korcsoportban van lehetőség – az időpontokról iskolatitkárunk, Mikusik Márta  tud bővebb információt adni."
+      },
+      {
+        question: "Szabadidős tevékenység vagy versenysport?",
+        answer: "Alapvetően szabadidős tevékenység. Azok számára, akik komolyabban szeretnének a választott műfajjal foglalkozni, versenyzős csoportjainkban biztosítunk fejlődést és több fellépési lehetőséget. Ez azonban bár több munkát és elkötelezettséget igényel, nem kívánja növendékeink minden szabadidejét – a heti 2-3 óra mellett évi 2-5 táncművészeti fesztivált és versenyt jelent, így nem hasonlítható a versenysportokhoz."
+      },
+      {
+        question: "Milyen fellépési lehetőségek vannak?",
+        answer: "Minden növendékünknek biztosítunk évi egy fellépési lehetőséget az évzáró előadáson. Ezen felül idősebb, haladó növendékeink korográfiáiból állítjuk össze az éves OMISK Gála műsorát. Aki ennél többre vágyik, kipróbálhatja magát versenyzős csoportjainkban, ami évi 2-5 extra fellépést jelent. Ezek közé tartoznak – a teljesség igénye nélkül – az Országos Táncművészeti Fesztiválok, a Berczik Sára Emlékverseny, a Tánc-kiállítás, a balatonfüredi Sirály Táncfesztivál és az Országos Táncjáték Fesztivál."
+      },
+      {
+        question: "Hány fő jár egy csoportba?",
+        answer: "Csoportjaink általában 15 fővel indulnak."
+      },
+      {
+        question: "Mi a különbség a ritmikus gimnasztika és a művészi torna között?",
+        answer: "Mindkettőnek közös az alapja, melyet Berczi Sára alakított ki, de a  ritmikus gimnasztika a versenysport irányába ment el, míg a művészi torna elsősorban szabadidős tevékenység maradt . A művészi torna ugyanakkor  fejlesztő hatású, kiváló alapot a különböző táncműfajokhoz. Míg a ritmikus gimnasztika bizonyos adottságokat kíván, a művészi torna mindenkinek sikerélményt ad."
+      },
+      {
+        question: "A kislányom balettra akar járni, de még túl kicsi a baletthoz. Biztosan tetszeni fog neki a művészi torna?",
+        answer: "Az óvodásoknak meghirdetett balett mindig csak  előkészítést jelent  – térbeli tájékozódás és ritmusérzék fejlesztése, testtudat kialakítása alapvetően gimnasztikus gyakorlatokkal. Mindezt magában foglalja művészi torna kurzusunk azzal az extrával, hogy a Berczik-technikán alapul, ezért a baletthez szükséges erősítések és lazítások mellett erősíti a törzsizmokat is, és kéziszerekkel fejleszti a koordinációt."
+      },
+      {
+        question: "A gyermekem nagyon mozgékony, lefárasztja majd a művészi torna?",
+        answer: "Aki precízen és odafigyeléssel hajtja végre a feladatokat, biztosan elfárad az óra végére. Ez persze nem jelenti azt, hogy a gyerekek ne igényelnének adott esetben egy kiadós rohangálást óra után – a kettőnek teljesen más a funkciója. Az óra megadott keretek között folyik, sok energiát igényel, erősítéssel, nyújtással, pulzusemelő gyakorlatokkal, de mindez akkor, és úgy, ahogy a tanár kéri. Az önfeledt szaladgálást viszont semmilyen irányított tevékenység nem pótolhatja."
+      },
+      {
+        question: "Élő zene van az órák alatt?",
+        answer: "Nem, az órákat kísérő zene lejátszóról megy. Műfajhoz és korosztályhoz illő gondosan összeállított lejátszási listával készülünk az órákra."
+      },
+      {
+        question: "Mikortól használnak kéziszert az órákon?",
+        answer: "Már második évfolyamtól, azaz 5-6 éves kortól lehetőség van különböző kéziszerek használatára, erről minden csoportnál tanáraink döntenek megítélésük szerint."
+      },
+      {
+        question: "Eddig művészi tornára jártam, de valami dinamikusabbat szeretnék.",
+        answer: "A jazztánc pörgős, dinamikus, csajos műfaj. Bővebb információ a kurzusaink menüpontban található róla."
+      },
+      {
+        question: "Hogy néz ki egy óra?",
+        answer: "Az órák műfajtól függetlenül tréningből, kombináció- és koreográfiatanulásból, nyújtásból állnak."
+      },
+      {
+        question: "Hány tanár van az órán?",
+        answer: "Minden órát egy tanár vezet. Előfordulhat, hogy egy csoportot két tanár tanít, de ebben az esetben a hét egyik napján egyikőjük, a másik alkalmon másikuk tartja a foglalkozást."
+      },
+      {
+        question: "Mi a különbség a modern tánc és a jazztánc között?",
+        answer: "Modern tánc tanfolyamunk Matt Mattox technikájára és a balett alapjaira épül, míg a jazztánc legkarakteresebb vonása a jazz nélkülözhetetlen könnyedsége és lazasága."
+      },
+      {
+        question: "Melyik kurzusra hány évesen lehet beiratkozni?",
+        answer: "A kurusaink menüpontban minden műfajnál megtalálható a javasolt alsó korhatár."
+      }
+    ]
   }
 };
 
