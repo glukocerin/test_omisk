@@ -138,10 +138,32 @@
 .contact .contact-content .contact-columns .contact-box .content-text a{
   text-decoration: none;
 }
-
+.contact .contact-content .contact-columns .contact-box .mobil-title {
+  display: none;
+}
+.contact .contact-content .btn {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 24px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: background-color 300ms;
+  color: var(--color-gray-0);
+  border: unset;
+}
+.contact .contact-content .btn:focus {
+  outline: unset;
+}
+.contact .contact-content .btn-primary {
+  background: var(--color-gray-new-1);
+}
+.contact .contact-content .btn-primary:hover {
+  background: var(--color-gray-7);
+}
 @media screen and (max-width: 767px) {
   .contact {
-    background: var(--color-blue-4);
+    background-image: none;
   }
   .contact .contact-content {
     display: flex;
@@ -151,6 +173,13 @@
     margin: 0;
     padding: 1.75rem 1rem;
     padding-bottom: 1.375rem;
+    padding-top: 0;
+  }
+  .contact .contact-content .contact-columns .contact-box .mobil-title {
+    display: block;
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 36px;
   }
   .contact .contact-content .contact-columns .contact-box img {
     width: 12rem;
@@ -161,7 +190,7 @@
     flex-flow: column-reverse;
   }
   .contact .contact-content .contact-columns .contact-box {
-    margin-bottom: 3.875rem;
+    margin-bottom: 2rem;
   }
   .contact .contact-content .contact-columns .contact-box + .contact-box {
     margin-left: 0;
@@ -171,5 +200,8 @@
   }
   .contact .faq .drop-down-list {
     margin-top: 3rem;
+  }
+  .contact .faq .drop-down-list .question + .question {
+    margin-top: 0;
   }
 }
