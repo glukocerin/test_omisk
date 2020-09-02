@@ -20,8 +20,13 @@ const Gyik = function() {
           <label className="answer size-20 thin">{ item.answer }</label>
         </div>
     </div>
-));
+  ));
 }
+
+const sendMail = function() {
+  fetch('http://omisk.hu/test.php?message=szia&to=bestrapboy@gmail.com&subject=jajj');
+}
+
 
 export default function Contact() {
   return (
@@ -43,6 +48,7 @@ export default function Contact() {
             </label>
           </div>
         </div>
+        <button type="btn button" className="btn btn-primary email-sender" onClick={sendMail}>Elküldöm</button>
       </div>
       <div className="faq">
         <label className="size-54 extra-bold">Gyakori kérdések</label>

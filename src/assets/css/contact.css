@@ -141,7 +141,26 @@
 .contact .contact-content .contact-columns .contact-box .mobil-title {
   display: none;
 }
-
+.contact .contact-content .btn {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 24px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: background-color 300ms;
+  color: var(--color-gray-0);
+  border: unset;
+}
+.contact .contact-content .btn:focus {
+  outline: unset;
+}
+.contact .contact-content .btn-primary {
+  background: var(--color-gray-new-1);
+}
+.contact .contact-content .btn-primary:hover {
+  background: var(--color-gray-7);
+}
 @media screen and (max-width: 767px) {
   .contact {
     background-image: none;
