@@ -32,6 +32,7 @@ export default function Contact() {
             <img src={require(`../assets/img/kapcsolat.jpg`)} alt="" />
           </div>
           <div className="contact-box">
+            <label className="extra-bold mobil-title">Beiratkozás</label>
             <label className="content-title size-54 extra-bold">Kérdéseidre válaszolunk!</label>
             <label className="content-text size-20">
               Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol hétköznap 10-14 óra között hívhatod.
