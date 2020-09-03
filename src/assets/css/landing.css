@@ -1,6 +1,6 @@
 .landing {
   position: relative;
-  background: black;
+  background: var(--color-gray-0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +126,9 @@
 }
 .left.two {
   background: var(--color-pink-0);
+}
+.left.two.active {
+  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
 }
 .left.two .text {
   color: var(--color-gray-0);
@@ -399,6 +402,13 @@
 }
 .right.two {
   background-image: url("../img/landing_bg_2.jpg");
+}
+.right.two.active {
+  animation: scrollup 500ms ease-in-out forwards, fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0.4;}
+  100% {opacity:1;}
 }
 .right.three {
   background-image: url("../img/landing_bg_3.png");
