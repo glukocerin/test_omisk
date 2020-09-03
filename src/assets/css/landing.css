@@ -328,10 +328,15 @@
   animation: typing 2s steps(100, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
+  transition: transform 0.3s ease-in-out;
 }
 @keyframes typing {
   from { width: 44px; }
   to { width: 100%; }
+}
+.left.five.active .list-item:hover,
+.left.seven.active .list-item:hover {
+  transform: translateX(58px);
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
