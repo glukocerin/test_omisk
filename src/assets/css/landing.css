@@ -325,6 +325,21 @@
 .left.seven .list-item .arrow {
   margin-right: 1rem;
 }
+.left.five.active .list-item .arrow,
+.left.seven.active .list-item .arrow {
+  margin-right: 1rem;
+  animation: grow linear 1s;
+}
+@keyframes grow {
+  0% {
+    transform: scale(0.2);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
 .left.five .list-item .arrow .cls-1,
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
