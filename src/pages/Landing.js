@@ -411,7 +411,7 @@ export default function Landing({ dotChange }) {
                     <label className="text size-24 extra-bold">Kapcsolat</label>
                     <label className="article size-12">
                         Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol<br/>
-                        hétköznap 10-14 óra között hívhatod.<br/>
+                        hétköznap 10-14 óra között hívhatod.<br/><br/>
                         Telefon: 06-1-2000-138<br/>
                         Mobil: 06-20-9460-848<br/>
                         E-mail: iroda@omisk.hu<br/>
