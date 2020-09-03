@@ -37,26 +37,6 @@ const Dots = function({ setActiveDot, dotChange, activeDot }) {
     return dots;
 }
 
-const CoursesList = function(activeDot) {
-    const dispatch = useDispatch();
-    return landing['list_courses'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: activeDot.activeDot}))} to={`/courses/${item.link}`} className="list-item" key={index}>
-            <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
-        </Link>
-  ));
-}
-
-const WhatWeDo = function(activeDot) {
-    const dispatch = useDispatch();
-    return landing['list_what_we_do'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: activeDot.activeDot}))} to={`/programs/${item.link}`} className="list-item" key={index}>
-            <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
-        </Link>
-  ));
-}
-
 const keyHelper = [
     'no-one',
     'no-two',
@@ -65,44 +45,26 @@ const keyHelper = [
     'no-five',
     'no-fix',
 ];
-let intervalFive, imageIndexFive, intervalSeven, imageIndexSeven;
 
-function timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch) {
-    imageIndexFive = keyHelper.indexOf(activeFiveSwitch);
+const CoursesList = function(props) {
+    const dispatch = useDispatch();
 
-    if(activeDot === 5 && !intervalFive) {
-        intervalFive = setInterval(()=>{
-            if (imageIndexFive > 4) {
-                imageIndexFive = 0;
-            } else {
-                imageIndexFive++;
-            }
-
-            setActiveFiveSwitch(keyHelper[imageIndexFive]);
-        }, 3000)
-    } else if (activeDot !== 5){
-        clearInterval(intervalFive);
-        intervalFive = null;
-    }
+    return landing['list_courses'].list.map((item, index) => (
+        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])} to={`/courses/${item.link}`} className="list-item" key={index}>
+            <ArrowRight className="arrow"/>
+            <span className="text size-36 extra-bold">{item.text}</span>
+        </Link>
+  ));
 }
 
-function timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch) {
-    imageIndexSeven = keyHelper.indexOf(activeSevenSwitch);
-
-    if(activeDot === 7 && !intervalSeven) {
-        intervalSeven = setInterval(()=>{
-            if (imageIndexSeven > 4) {
-                imageIndexSeven = 0;
-            } else {
-                imageIndexSeven++;
-            }
-
-            setActiveSevenSwitch(keyHelper[imageIndexSeven]);
-        }, 3000)
-    } else if (activeDot !== 7){
-        clearInterval(intervalSeven);
-        intervalSeven = null;
-    }
+const WhatWeDo = function(props) {
+    const dispatch = useDispatch();
+    return landing['list_what_we_do'].list.map((item, index) => (
+        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])} to={`/programs/${item.link}`} className="list-item" key={index}>
+            <ArrowRight className="arrow"/>
+            <span className="text size-36 extra-bold">{item.text}</span>
+        </Link>
+  ));
 }
 
 export default function Landing({ dotChange }) {
@@ -136,9 +98,6 @@ export default function Landing({ dotChange }) {
                     dotChange(activeDot - 1);
                 }
             };
-
-    timerFive(activeDot, activeFiveSwitch, setActiveFiveSwitch);
-    timerSeven(activeDot, activeSevenSwitch, setActiveSevenSwitch);
 
     return(
         <div className="landing" onWheel = {(e) => scroller(e) }>
@@ -332,7 +291,7 @@ export default function Landing({ dotChange }) {
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
-                    <CoursesList activeDot={activeDot} />
+                    <CoursesList activeDot={activeDot} setActiveFiveSwitch={setActiveFiveSwitch}/>
                 </div>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch}`}>
@@ -364,7 +323,7 @@ export default function Landing({ dotChange }) {
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
-                    <WhatWeDo activeDot={activeDot} />
+                    <WhatWeDo activeDot={activeDot} setActiveSevenSwitch={setActiveSevenSwitch} />
                 </div>
             </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch}`}>
@@ -411,7 +370,7 @@ export default function Landing({ dotChange }) {
                     <label className="text size-24 extra-bold">Kapcsolat</label>
                     <label className="article size-12">
                         Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol<br/>
-                        hétköznap 10-14 óra között hívhatod.<br/>
+                        hétköznap 10-14 óra között hívhatod.<br/><br/>
                         Telefon: 06-1-2000-138<br/>
                         Mobil: 06-20-9460-848<br/>
                         E-mail: iroda@omisk.hu<br/>

@@ -1,6 +1,6 @@
 .landing {
   position: relative;
-  background: black;
+  background: var(--color-gray-0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +126,9 @@
 }
 .left.two {
   background: var(--color-pink-0);
+}
+.left.two.active {
+  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
 }
 .left.two .text {
   color: var(--color-gray-0);
@@ -311,26 +314,60 @@
 }
 .left.five .list-item,
 .left.seven .list-item {
-  color: var(--color-gray-new-1);
+  color: var(--color-gray-0);
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
   text-decoration: none;
   white-space: nowrap;
+  overflow: hidden;
+}
+.left.five.active .list-item,
+.left.seven.active .list-item {
+  width: 44px;
+  animation: typing 2s steps(100, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes typing {
+  from { width: 44px; }
+  to { width: 100%; }
+}
+.left.five.active .list-item:hover,
+.left.seven.active .list-item:hover {
+  transform: translateX(58px);
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
   margin-right: 1rem;
 }
+.left.five.active .list-item .arrow,
+.left.seven.active .list-item .arrow {
+  margin-right: 1rem;
+  animation: grow linear 1s;
+  min-width: 44px;
+}
+@keyframes grow {
+  0% {
+    transform: scale(0.2);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
 .left.five .list-item .arrow .cls-1,
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
   stroke-width: 2px;
+  stroke: var(--color-gray-new-1);
 }
 .left.five .list-item .arrow .cls-2,
 .left.seven .list-item .arrow .cls-2 {
   stroke-width: 2px;
-  stroke: var(--color-gray-0);
+  stroke: var(--color-gray-new-1);
 }
 .left.six {
   background: var(--color-blue-4);
@@ -399,6 +436,13 @@
 }
 .right.two {
   background-image: url("../img/landing_bg_2.jpg");
+}
+.right.two.active {
+  animation: scrollup 500ms ease-in-out forwards, fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0.4;}
+  100% {opacity:1;}
 }
 .right.three {
   background-image: url("../img/landing_bg_3.png");
