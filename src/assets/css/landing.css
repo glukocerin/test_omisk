@@ -314,12 +314,24 @@
 }
 .left.five .list-item,
 .left.seven .list-item {
-  color: var(--color-gray-new-1);
+  color: var(--color-gray-0);
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
   text-decoration: none;
   white-space: nowrap;
+  overflow: hidden;
+}
+.left.five.active .list-item,
+.left.seven.active .list-item {
+  width: 44px;
+  animation: typing 2s steps(100, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes typing {
+  from { width: 44px; }
+  to { width: 100%; }
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
@@ -329,6 +341,7 @@
 .left.seven.active .list-item .arrow {
   margin-right: 1rem;
   animation: grow linear 1s;
+  min-width: 44px;
 }
 @keyframes grow {
   0% {
@@ -344,11 +357,12 @@
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
   stroke-width: 2px;
+  stroke: var(--color-gray-new-1);
 }
 .left.five .list-item .arrow .cls-2,
 .left.seven .list-item .arrow .cls-2 {
   stroke-width: 2px;
-  stroke: var(--color-gray-0);
+  stroke: var(--color-gray-new-1);
 }
 .left.six {
   background: var(--color-blue-4);
