@@ -23,18 +23,54 @@ const Gyik = function() {
   ));
 }
 
-const sendMail = function() {
-  fetch('http://omisk.hu/test.php?message=szia&to=bestrapboy@gmail.com&subject=jajj');
+const sendMail = function(mail) {
+  const mailTo = "bestrapboy@gmail.com", // modify this!
+        mailSubject = 'Webes kapcsolatba lépés',
+        message = "Név: " + mail.name +
+                  "\nE-mail: " + mail.email +
+                  "\nMobil: " + mail.phone +
+                  "\nMegjegyzés: " + mail.comment,
+        requestOptions = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            to: mailTo,
+            subject: mailSubject,
+            msg: message
+          })
+        };
+
+  fetch('http://omisk.hu/test.php', requestOptions);
 }
 
 
 export default function Contact() {
+  const [mail, setForm] = useState({ name: '', email: '', phone: '', comment: '', gdpr: false }),
+    updateField = e => {
+      setForm({
+      ...mail,
+      [e.target.name]: e.target.name === 'gdpr' ? e.target.checked : e.target.value
+    });
+  };
+
   return (
     <div className="contact">
       <div className="contact-content">
         <div className="contact-columns">
           <div className="contact-box" >
             <img src={require(`../assets/img/kapcsolat.jpg`)} alt="" />
+            <label className="size-54 extra-bold">Lépj kapcsolatba Velünk</label>
+            <form className="send-mail-form" onSubmit={(event)=> {event.preventDefault();sendMail(mail)}}>
+              <input className="form-row-input size-20" name="name" type="text" required placeholder="Név" onInput={updateField} />
+              <input className="form-row-input size-20" name="email" type="email" required placeholder="E-mail" onInput={updateField} />
+              <input className="form-row-input size-20" name="phone" type="tel" placeholder="Mobil (opcionális)" onInput={updateField} />
+              <input className="form-row-input size-20" name="comment" type="text" required placeholder="Megjegyzés" onInput={updateField} />
+              <label className="checkbox-row">
+                <input type="checkbox" required name="gdpr" onInput={updateField}/>
+                <span className="size-16 thin">Ezennel hozzájárulok, hogy a fent megadott adataimat a omisk.hu-t üzemeltető Omisk a GDPR előírásaival összhangban kezelje <a className="extra-bold" href="http://omisk.hu">Adatvédelmi tájékoztató</a></span>
+              </label>
+              <button type="submit" className="btn btn-primary email-sender">Elküldöm</button>
+            </form>
           </div>
           <div className="contact-box">
             <label className="extra-bold mobil-title">Beiratkozás</label>
@@ -48,7 +84,6 @@ export default function Contact() {
             </label>
           </div>
         </div>
-        <button type="btn button" className="btn btn-primary email-sender" onClick={sendMail}>Elküldöm</button>
       </div>
       <div className="faq">
         <label className="size-54 extra-bold">Gyakori kérdések</label>

@@ -1,0 +1,1 @@
+Másold a szerver public_html rootra
