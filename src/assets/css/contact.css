@@ -154,6 +154,8 @@
   width: 1px;
   height: 1px;
   position: relative;
+  appearance: none;
+  outline: none;
 }
 /* hack autofill */
 input:-webkit-autofill,
