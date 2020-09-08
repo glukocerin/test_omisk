@@ -16,7 +16,7 @@ export default function Navigation(props) {
   const dispatch = useDispatch();
 
   return (
-    <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"} ${props.activeDot === 1 && 'big'}`}>
+    <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"} ${props.activeDot === 1 && 'big'} ${location === '/' && 'text-inverse'}`}>
       <Link onClick={()=> dispatch(updatePageindex({payload: 1}))} to="/">
         <Logo className={`logo ${location === '/' && props.activeDot !== 1 && 'inverse'}`} />
       </Link>
