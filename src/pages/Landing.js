@@ -50,7 +50,7 @@ const CoursesList = function(props) {
     const dispatch = useDispatch();
 
     return landing['list_courses'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])} to={`/courses/${item.link}`} className="list-item" key={index}>
+        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])} to={`/courses/${item.link}`} className={`list-item ${props.activeFiveSwitch === keyHelper[index] && 'active'}`} key={index}>
             <ArrowRight className="arrow"/>
             <span className="text size-36 extra-bold">{item.text}</span>
         </Link>
@@ -60,7 +60,7 @@ const CoursesList = function(props) {
 const WhatWeDo = function(props) {
     const dispatch = useDispatch();
     return landing['list_what_we_do'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])} to={`/programs/${item.link}`} className="list-item" key={index}>
+        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])} to={`/programs/${item.link}`} className={`list-item ${props.activeSevenSwitch === keyHelper[index] && 'active'}`} key={index}>
             <ArrowRight className="arrow"/>
             <span className="text size-36 extra-bold">{item.text}</span>
         </Link>
@@ -115,11 +115,16 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">
-                    {`Mozgásművészeti\nképzés\n1990 óta\nBudapest\nöt kerületében`}
-                    <br/>
-                    <label className="text size-24 thin">Pers Júlia</label>
-                </label>
+                <div className="text-box">
+                    <label className="text extra-bold size-48">„A tanítás első lépése</label>
+                    <label className="text extra-bold size-48">megszerettetni</label>
+                    <label className="text extra-bold size-48">a mozgástanulást,</label>
+                    <label className="text extra-bold size-48">amely nem más, mint</label>
+                    <label className="text extra-bold size-48">az ösztönös mozgásnak</label>
+                    <label className="text extra-bold size-48">a fokozatos átalakítása</label>
+                    <label className="text extra-bold size-48">a tudatos felé.”</label>
+                    <label className="text size-24 thin">Berczik Sára</label>
+                </div>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
@@ -291,7 +296,7 @@ export default function Landing({ dotChange }) {
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
-                    <CoursesList activeDot={activeDot} setActiveFiveSwitch={setActiveFiveSwitch}/>
+                    <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch}/>
                 </div>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch}`}>
@@ -323,7 +328,7 @@ export default function Landing({ dotChange }) {
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
-                    <WhatWeDo activeDot={activeDot} setActiveSevenSwitch={setActiveSevenSwitch} />
+                    <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} />
                 </div>
             </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch}`}>
