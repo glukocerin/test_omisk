@@ -334,8 +334,16 @@
   from { width: 44px; }
   to { width: 100%; }
 }
+.left.five.active .list-item.active,
+.left.seven.active .list-item.active {
+  transition-delay: 2.3s;
+  transform: translateX(58px);
+}
 .left.five.active .list-item:hover,
-.left.seven.active .list-item:hover {
+.left.seven.active .list-item:hover,
+.left.five.active .list-item.active:hover,
+.left.seven.active .list-item.active:hover {
+  transition-delay: 0s;
   transform: translateX(58px);
 }
 .left.five .list-item .arrow,
