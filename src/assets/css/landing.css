@@ -126,34 +126,74 @@
 }
 .left.two {
   background: var(--color-pink-0);
-}
-.left.two.active {
-  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.left.two.active .text-box {
+.left.two.active {
+  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
+}
+.left.two .text-box {
   display: flex;
   flex-direction: column;
+  min-width: 27.604vw;
 }
 .left.two .text {
   color: var(--color-gray-0);
+}
+.left.two.active .text {
+  color: var(--color-gray-0);
   white-space: pre-wrap;
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  animation: typewriter 0.75s steps(100, end);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
-.left.two .text.thin {
+.left.two.active .text:nth-child(2) {
+  animation-delay: 1s;
+}
+.left.two.active .text:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.left.two.active .text:nth-child(4) {
+  animation-delay: 2s;
+}
+.left.two.active .text:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.left.two.active .text:nth-child(6) {
+  animation-delay: 3s;
+}
+.left.two.active .text:nth-child(7) {
+  animation-delay: 3.5s;
+}
+.left.two.active .text:nth-child(9) {
+  animation-delay: 4s;
+}
+@keyframes typewriter {
+  from { width: 0px; }
+  to { width: 100%; }
+}
+.left.two.active .text.thin {
   color: var(--color-gray-new-1);
-  position: relative;
-  margin-top: 5.25rem;
+  margin-top: 1rem;
 }
-.left.two .text.thin::before {
-  position: absolute;
-  content: ' ';
-  top: -1.5rem;
-  height: 4px;
-  width: 3.5vw;
+.left.two.active .separator {
+  animation: sepa-grow 0.75s steps(100, end);
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+  margin-top: 5.25rem;
+  height: 6px;
+  width: 0px;
   background: var(--color-gray-new-1);
+}
+@keyframes sepa-grow {
+  from { width: 0px; }
+  to { width: 3.5vw; }
 }
 .left.three {
   background: var(--color-green-0);
@@ -330,6 +370,9 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.left.seven .list-item {
+  color: var(--color-gray-new-1);
+}
 .left.five.active .list-item,
 .left.seven.active .list-item {
   width: 44px;
@@ -362,7 +405,8 @@
 .left.seven.active .list-item .arrow {
   margin-right: 1rem;
   animation: grow linear 1s;
-  min-width: 44px;
+  min-width: 1.75rem;
+  max-width: 1.75rem;
 }
 @keyframes grow {
   0% {
@@ -377,13 +421,19 @@
 .left.five .list-item .arrow .cls-1,
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
-  stroke-width: 2px;
+  stroke-width: 4px;
   stroke: var(--color-gray-new-1);
+}
+.left.seven .list-item .arrow .cls-1 {
+  stroke: var(--color-gray-0);
 }
 .left.five .list-item .arrow .cls-2,
 .left.seven .list-item .arrow .cls-2 {
-  stroke-width: 2px;
+  stroke-width: 4px;
   stroke: var(--color-gray-new-1);
+}
+.left.seven .list-item .arrow .cls-2 {
+  stroke: var(--color-gray-0);
 }
 .left.six {
   background: var(--color-blue-4);
@@ -808,6 +858,7 @@
   }
   .left.two .text.thin {
     margin-top: 3rem;
+    position: relative;
   }
   .left.two .text.thin::before {
     position: absolute;

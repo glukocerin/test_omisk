@@ -52,7 +52,7 @@ const CoursesList = function(props) {
     return landing['list_courses'].list.map((item, index) => (
         <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])} to={`/courses/${item.link}`} className={`list-item ${props.activeFiveSwitch === keyHelper[index] && 'active'}`} key={index}>
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
+            <span className="text size-28 extra-bold">{item.text}</span>
         </Link>
   ));
 }
@@ -62,7 +62,7 @@ const WhatWeDo = function(props) {
     return landing['list_what_we_do'].list.map((item, index) => (
         <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])} to={`/programs/${item.link}`} className={`list-item ${props.activeSevenSwitch === keyHelper[index] && 'active'}`} key={index}>
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
+            <span className="text size-28 extra-bold">{item.text}</span>
         </Link>
   ));
 }
@@ -123,6 +123,7 @@ export default function Landing({ dotChange }) {
                     <label className="text extra-bold size-48">az ösztönös mozgásnak</label>
                     <label className="text extra-bold size-48">a fokozatos átalakítása</label>
                     <label className="text extra-bold size-48">a tudatos felé.”</label>
+                    <div className="separator"></div>
                     <label className="text size-24 thin">Berczik Sára</label>
                 </div>
             </div>
