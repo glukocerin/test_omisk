@@ -129,17 +129,25 @@
 }
 .left.two.active {
   animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left.two.active .text-box {
+  display: flex;
+  flex-direction: column;
 }
 .left.two .text {
   color: var(--color-gray-0);
-  margin: auto;
   white-space: pre-wrap;
 }
-.left.two .text .text {
+.left.two .text.thin {
   color: var(--color-gray-new-1);
   position: relative;
+  margin-top: 5.25rem;
 }
-.left.two .text .text::before {
+.left.two .text.thin::before {
   position: absolute;
   content: ' ';
   top: -1.5rem;

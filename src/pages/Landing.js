@@ -115,11 +115,16 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
-                <label className="text extra-bold size-70">
-                    {`Mozgásművészeti\nképzés\n1990 óta\nBudapest\nöt kerületében`}
-                    <br/>
-                    <label className="text size-24 thin">Pers Júlia</label>
-                </label>
+                <div className="text-box">
+                    <label className="text extra-bold size-48">„A tanítás első lépése</label>
+                    <label className="text extra-bold size-48">megszerettetni</label>
+                    <label className="text extra-bold size-48">a mozgástanulást,</label>
+                    <label className="text extra-bold size-48">amely nem más, mint</label>
+                    <label className="text extra-bold size-48">az ösztönös mozgásnak</label>
+                    <label className="text extra-bold size-48">a fokozatos átalakítása</label>
+                    <label className="text extra-bold size-48">a tudatos felé.”</label>
+                    <label className="text size-24 thin">Berczik Sára</label>
+                </div>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
