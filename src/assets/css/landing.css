@@ -434,12 +434,15 @@
 .left.seven .list-item .arrow {
   margin-right: 1rem;
 }
+.left.five .list-item .arrow,
+.left.seven .list-item .arrow {
+  min-width: 1.75rem;
+  max-width: 1.75rem;
+}
 .left.five.active .list-item .arrow,
 .left.seven.active .list-item .arrow {
   margin-right: 1rem;
   animation: grow linear 1s;
-  min-width: 1.75rem;
-  max-width: 1.75rem;
 }
 @keyframes grow {
   0% {
