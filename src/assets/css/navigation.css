@@ -159,9 +159,12 @@
   .header.fixed {
     position: unset;
   }
+  .header.fixed.text-inverse {
+    position: absolute;
+  }
   /* LANDING RULE!!! */
   .header.background-gray-erohw.fixed {
-    background: var(--color-gray-new-0);
+    background: transparent;
   }
   .header.background-green.fixed {
     background: var(--color-green-0);
