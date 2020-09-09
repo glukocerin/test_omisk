@@ -46,6 +46,7 @@
   width: 50%;
   height: 100%;
   display: flex;
+  z-index: 2;
 }
 .left.one {
   background: var(--color-gray-new-0);
@@ -549,8 +550,13 @@
   background: var(--color-gray-3);
   overflow: hidden;
 }
-.right.five {
-  transition: background-image 0.3s ease-in-out;
+.right.five,
+.right.seven {
+  transition: background-image 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+.right.five.zoomed,
+.right.seven.zoomed {
+  transform: scale(1.5);
 }
 .right.five.no-one {
   background-image: url("../img/landing_sub/five-one.png");
@@ -602,9 +608,6 @@
 .right.six .content-block .link-block .link.active {
   font-weight: 600;
   opacity: 1;
-}
-.right.seven {
-  transition: background-image 0.3s ease-in-out;
 }
 .right.seven.no-one {
   background-image: url("../img/landing_sub/seven-one.jpg");
