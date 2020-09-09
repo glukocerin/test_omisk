@@ -202,13 +202,45 @@
 .left.six * {
   color: var(--color-gray-0);
 }
-.left.three .title {
-  color: var(--color-gray-new-1);
+.left.three .title,
+.left.four .title,
+.left.five .title,
+.left.six .title,
+.left.seven .title,
+.left.eight .title {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.left.three :not(.title),
+.left.four :not(.title),
+.left.five :not(.title),
+.left.six :not(.title),
+.left.seven :not(.title),
+.left.eight :not(.title) {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.left.three.active .title,
+.left.four.active .title,
+.left.five.active .title,
+.left.six.active .title,
+.left.seven.active .title,
+.left.eight.active .title {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.left.three.active :not(.title),
+.left.four.active :not(.title),
+.left.five.active :not(.title),
+.left.six.active :not(.title),
+.left.seven.active :not(.title),
+.left.eight.active :not(.title) {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
 }
 .left.three .article:nth-child(2)::first-letter {
   font-size: 2.813vw;
   font-weight: 800;
-  color: var(--color-gray-new-1);
 }
 .left.three .content-block,
 .left.six .content-block,
