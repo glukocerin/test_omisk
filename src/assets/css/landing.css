@@ -926,6 +926,24 @@
   .right.active .image-switch {
     display: none;
   }
+  .left.three .title,
+  .left.four .title,
+  .left.five .title,
+  .left.six .title,
+  .left.seven .title,
+  .left.eight .title {
+    opacity: 1;
+    transition: unset;
+  }
+  .left.three :not(.title),
+  .left.four :not(.title),
+  .left.five :not(.title),
+  .left.six :not(.title),
+  .left.seven :not(.title),
+  .left.eight :not(.title) {
+    opacity: 1;
+    transition: unset;
+  }
   .mobile-footer {
     order: 12;
     display: flex;
@@ -985,5 +1003,9 @@
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
+  }
+
+  .landing .size-28 {
+    font-size: 28px;
   }
 }
