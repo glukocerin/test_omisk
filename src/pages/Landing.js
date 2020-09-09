@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import DelayLink from '../components/DelayLink'
 import LeafletMap from '../components/LeafletMap'
 import { useSelector, useDispatch } from "react-redux";
 
@@ -50,20 +51,41 @@ const CoursesList = function(props) {
     const dispatch = useDispatch();
 
     return landing['list_courses'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])} to={`/courses/${item.link}`} className={`list-item ${props.activeFiveSwitch === keyHelper[index] && 'active'}`} key={index}>
+        <DelayLink
+            onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])}
+            to={`/courses/${item.link}`}
+            className={`list-item ${props.activeFiveSwitch === keyHelper[index] && 'active'}`}
+            key={index}
+            delay={500}
+            onDelayStart={() => { 
+                dispatch(updatePageindex({payload: props.activeDot}));
+                props.setZoom(true) 
+            }}
+        >
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
-        </Link>
+            <span className="text size-28 extra-bold">{item.text}</span>
+        </DelayLink>
   ));
 }
 
 const WhatWeDo = function(props) {
     const dispatch = useDispatch();
     return landing['list_what_we_do'].list.map((item, index) => (
-        <Link onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))} onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])} to={`/programs/${item.link}`} className={`list-item ${props.activeSevenSwitch === keyHelper[index] && 'active'}`} key={index}>
+        <DelayLink
+            onClick={()=> dispatch(updatePageindex({payload: props.activeDot}))}
+            onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])}
+            to={`/programs/${item.link}`}
+            className={`list-item ${props.activeSevenSwitch === keyHelper[index] && 'active'}`}
+            key={index}
+            delay={500}
+            onDelayStart={() => { 
+                dispatch(updatePageindex({payload: props.activeDot}));
+                props.setZoom(true) 
+            }}
+        >
             <ArrowRight className="arrow"/>
-            <span className="text size-36 extra-bold">{item.text}</span>
-        </Link>
+            <span className="text size-28 extra-bold">{item.text}</span>
+        </DelayLink>
   ));
 }
 
@@ -89,6 +111,7 @@ export default function Landing({ dotChange }) {
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
             [activeFiveSwitch, setActiveFiveSwitch] = useState('no-one'),
             [activeSevenSwitch, setActiveSevenSwitch] = useState('no-one'),
+            [zoom, setZoom] = useState(false),
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
@@ -123,6 +146,7 @@ export default function Landing({ dotChange }) {
                     <label className="text extra-bold size-48">az ösztönös mozgásnak</label>
                     <label className="text extra-bold size-48">a fokozatos átalakítása</label>
                     <label className="text extra-bold size-48">a tudatos felé.”</label>
+                    <div className="separator"></div>
                     <label className="text size-24 thin">Berczik Sára</label>
                 </div>
             </div>
@@ -296,10 +320,10 @@ export default function Landing({ dotChange }) {
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
-                    <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch}/>
+                    <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch} setZoom={setZoom} />
                 </div>
             </div>
-            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch}`}>
+            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}>
                 <div className="image-switch">
                     <div onClick={() => setActiveFiveSwitch('no-one')} className={`switch ${ activeFiveSwitch === 'no-one' && "active" }`}></div>
                     <div onClick={() => setActiveFiveSwitch('no-two')} className={`switch ${ activeFiveSwitch === 'no-two' && "active" }`}></div>
@@ -328,10 +352,10 @@ export default function Landing({ dotChange }) {
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
-                    <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} />
+                    <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} setZoom={setZoom} />
                 </div>
             </div>
-            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch}`}>
+            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}>
                 <div className="image-switch">
                     <div onClick={() => setActiveSevenSwitch('no-one')} className={`switch ${ activeSevenSwitch === 'no-one' && "active" }`}></div>
                     <div onClick={() => setActiveSevenSwitch('no-two')} className={`switch ${ activeSevenSwitch === 'no-two' && "active" }`}></div>

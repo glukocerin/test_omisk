@@ -46,6 +46,7 @@
   width: 50%;
   height: 100%;
   display: flex;
+  z-index: 2;
 }
 .left.one {
   background: var(--color-gray-new-0);
@@ -126,34 +127,74 @@
 }
 .left.two {
   background: var(--color-pink-0);
-}
-.left.two.active {
-  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.left.two.active .text-box {
+.left.two.active {
+  animation: scrolldown 500ms ease-in-out forwards, fadeIn ease 3s;
+}
+.left.two .text-box {
   display: flex;
   flex-direction: column;
+  min-width: 27.604vw;
 }
 .left.two .text {
   color: var(--color-gray-0);
+}
+.left.two.active .text {
+  color: var(--color-gray-0);
   white-space: pre-wrap;
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  animation: typewriter 0.75s steps(100, end);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
-.left.two .text.thin {
+.left.two.active .text:nth-child(2) {
+  animation-delay: 1s;
+}
+.left.two.active .text:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.left.two.active .text:nth-child(4) {
+  animation-delay: 2s;
+}
+.left.two.active .text:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.left.two.active .text:nth-child(6) {
+  animation-delay: 3s;
+}
+.left.two.active .text:nth-child(7) {
+  animation-delay: 3.5s;
+}
+.left.two.active .text:nth-child(9) {
+  animation-delay: 4s;
+}
+@keyframes typewriter {
+  from { width: 0px; }
+  to { width: 100%; }
+}
+.left.two.active .text.thin {
   color: var(--color-gray-new-1);
-  position: relative;
-  margin-top: 5.25rem;
+  margin-top: 1rem;
 }
-.left.two .text.thin::before {
-  position: absolute;
-  content: ' ';
-  top: -1.5rem;
-  height: 4px;
-  width: 3.5vw;
+.left.two.active .separator {
+  animation: sepa-grow 0.75s steps(100, end);
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+  margin-top: 5.25rem;
+  height: 6px;
+  width: 0px;
   background: var(--color-gray-new-1);
+}
+@keyframes sepa-grow {
+  from { width: 0px; }
+  to { width: 3.5vw; }
 }
 .left.three {
   background: var(--color-green-0);
@@ -162,13 +203,45 @@
 .left.six * {
   color: var(--color-gray-0);
 }
-.left.three .title {
-  color: var(--color-gray-new-1);
+.left.three .title,
+.left.four .title,
+.left.five .title,
+.left.six .title,
+.left.seven .title,
+.left.eight .title {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.left.three :not(.title),
+.left.four :not(.title),
+.left.five :not(.title),
+.left.six :not(.title),
+.left.seven :not(.title),
+.left.eight :not(.title) {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.left.three.active .title,
+.left.four.active .title,
+.left.five.active .title,
+.left.six.active .title,
+.left.seven.active .title,
+.left.eight.active .title {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.left.three.active :not(.title),
+.left.four.active :not(.title),
+.left.five.active :not(.title),
+.left.six.active :not(.title),
+.left.seven.active :not(.title),
+.left.eight.active :not(.title) {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
 }
 .left.three .article:nth-child(2)::first-letter {
   font-size: 2.813vw;
   font-weight: 800;
-  color: var(--color-gray-new-1);
 }
 .left.three .content-block,
 .left.six .content-block,
@@ -330,6 +403,9 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.left.seven .list-item {
+  color: var(--color-gray-new-1);
+}
 .left.five.active .list-item,
 .left.seven.active .list-item {
   width: 44px;
@@ -345,14 +421,14 @@
 .left.five.active .list-item.active,
 .left.seven.active .list-item.active {
   transition-delay: 2.3s;
-  transform: translateX(58px);
+  transform: translateX(2.5rem);
 }
 .left.five.active .list-item:hover,
 .left.seven.active .list-item:hover,
 .left.five.active .list-item.active:hover,
 .left.seven.active .list-item.active:hover {
   transition-delay: 0s;
-  transform: translateX(58px);
+  transform: translateX(2.5rem);
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
@@ -362,7 +438,8 @@
 .left.seven.active .list-item .arrow {
   margin-right: 1rem;
   animation: grow linear 1s;
-  min-width: 44px;
+  min-width: 1.75rem;
+  max-width: 1.75rem;
 }
 @keyframes grow {
   0% {
@@ -377,13 +454,19 @@
 .left.five .list-item .arrow .cls-1,
 .left.seven .list-item .arrow .cls-1 {
   fill: transparent;
-  stroke-width: 2px;
+  stroke-width: 4px;
   stroke: var(--color-gray-new-1);
+}
+.left.seven .list-item .arrow .cls-1 {
+  stroke: var(--color-gray-0);
 }
 .left.five .list-item .arrow .cls-2,
 .left.seven .list-item .arrow .cls-2 {
-  stroke-width: 2px;
+  stroke-width: 4px;
   stroke: var(--color-gray-new-1);
+}
+.left.seven .list-item .arrow .cls-2 {
+  stroke: var(--color-gray-0);
 }
 .left.six {
   background: var(--color-blue-4);
@@ -467,8 +550,13 @@
   background: var(--color-gray-3);
   overflow: hidden;
 }
-.right.five {
-  transition: background-image 0.3s ease-in-out;
+.right.five,
+.right.seven {
+  transition: background-image 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+.right.five.zoomed,
+.right.seven.zoomed {
+  transform: scale(1.5);
 }
 .right.five.no-one {
   background-image: url("../img/landing_sub/five-one.png");
@@ -520,9 +608,6 @@
 .right.six .content-block .link-block .link.active {
   font-weight: 600;
   opacity: 1;
-}
-.right.seven {
-  transition: background-image 0.3s ease-in-out;
 }
 .right.seven.no-one {
   background-image: url("../img/landing_sub/seven-one.jpg");
@@ -808,6 +893,7 @@
   }
   .left.two .text.thin {
     margin-top: 3rem;
+    position: relative;
   }
   .left.two .text.thin::before {
     position: absolute;
@@ -839,6 +925,24 @@
   }
   .right.active .image-switch {
     display: none;
+  }
+  .left.three .title,
+  .left.four .title,
+  .left.five .title,
+  .left.six .title,
+  .left.seven .title,
+  .left.eight .title {
+    opacity: 1;
+    transition: unset;
+  }
+  .left.three :not(.title),
+  .left.four :not(.title),
+  .left.five :not(.title),
+  .left.six :not(.title),
+  .left.seven :not(.title),
+  .left.eight :not(.title) {
+    opacity: 1;
+    transition: unset;
   }
   .mobile-footer {
     order: 12;
@@ -899,5 +1003,9 @@
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
+  }
+
+  .landing .size-28 {
+    font-size: 28px;
   }
 }
