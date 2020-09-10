@@ -846,6 +846,21 @@
     padding-left: 3rem;
     border-bottom: 2px solid var(--color-gray-3);
   }
+  .left.four .drop-down-list .place .place-address {
+    margin-bottom: 0;
+  }
+  .left.four .drop-down-list .place .place-informations * {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .left.four .drop-down-list .place .place-informations .title {
+    display: block;
+    text-decoration: underline;
+    margin-top: 1rem;
+  }
+  .left.four .drop-down-list .place .place-informations .title::before {
+    display: none;
+  }
   .left.four .drop-down-list .place .plus-sign,
   .left.four .drop-down-list .place .minus-sign {
     left: 0.75rem;
@@ -1179,7 +1194,6 @@
   .mobile-card.one.toggled ~ .right.two,
   .mobile-card.two.toggled + .left.three,
   .mobile-card.two.toggled ~ .right.three,
-  .mobile-card.three.toggled ~ .left.four,
   .mobile-card.four.toggled + .left.five,
   .mobile-card.four.toggled ~ .right.five,
   .mobile-card.five.toggled + .left.six,
@@ -1188,8 +1202,9 @@
   .mobile-card.six.toggled ~ .right.seven {
     max-height: 30rem;
   }
+  .mobile-card.three.toggled ~ .left.four,
   .mobile-card.seven.toggled + .left.eight {
-    max-height: 60rem;
+    max-height: 70rem;
   }
 
   /* DON NOT DISPLAYS */
