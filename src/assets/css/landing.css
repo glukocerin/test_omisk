@@ -774,6 +774,9 @@
   .left.two {
     order: 3;
   }
+  .left.two.active {
+    animation: unset;
+  }
   .right.two {
     order: 4;
   }
