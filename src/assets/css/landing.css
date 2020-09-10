@@ -684,6 +684,7 @@
   stroke: unset;
 }
 
+.mobile-card,
 .mobile-footer {
   display: none;
 }
@@ -768,6 +769,11 @@
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
   }
+  .mobile-card.one {
+    order: 3;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
+  }
   .left.two {
     order: 3;
   }
@@ -786,6 +792,11 @@
     background-color: var(--color-pink-0);
     animation: unset;
     height: 30rem;
+  }
+  .mobile-card.two {
+    order: 5;
+    background: var(--color-green-0);
+    filter: contrast(80%);
   }
   .left.three {
     order: 5;
@@ -816,6 +827,11 @@
     padding: 10px 22px;
     font-size: 12px;
   }
+  .mobile-card.three {
+    order: 7;
+    background: var(--color-gray-3);
+    filter: contrast(80%);
+  }
   .left.four {
     padding: 1.75rem;
     padding-bottom: 3rem;
@@ -834,6 +850,11 @@
   .left.four .drop-down-list .place .minus-sign {
     left: 0.75rem;
     top: 0.825rem;
+  }
+  .mobile-card.four {
+    order: 8;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
   }
   .left.five {
     order: 8;
@@ -876,6 +897,11 @@
     animation: unset;
     height: 20rem;
   }
+  .mobile-card.five {
+    order: 10;
+    background: var(--color-blue-4);
+    filter: contrast(80%);
+  }
   .left.six {
     order: 10;
     padding: 1.75rem 3.5rem;
@@ -896,6 +922,11 @@
     background-image: url("../img/landing_mobile_bg_6.png");
     animation: unset;
     height: 20rem;
+  }
+  .mobile-card.six {
+    order: 12;
+    background: var(--color-green-0);
+    filter: contrast(80%);
   }
   .left.seven {
     order: 12;
@@ -932,6 +963,11 @@
     background-repeat: no-repeat;
     background-position: center 0;
     height: 30rem;
+  }
+  .mobile-card.seven {
+    order: 14;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
   }
   .left.eight {
     order: 14;
@@ -1079,6 +1115,81 @@
 
   .landing .size-28 {
     font-size: 28px;
+  }
+  /* CARD RULES */
+  .mobile-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+  }
+  .mobile-card .plus-sign,
+  .mobile-card .minus-sign {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .mobile-card .plus-sign .cls-1,
+  .mobile-card .plus-sign .cls-1,
+  .mobile-card .minus-sign .cls-2,
+  .mobile-card .minus-sign .cls-2 {
+    stroke: var(--color-gray-7);
+    stroke-width: 0.125rem;
+  }
+  .mobile-card.inverse .plus-sign .cls-1,
+  .mobile-card.inverse .plus-sign .cls-1,
+  .mobile-card.inverse .minus-sign #Path_5569,
+  .mobile-card.inverse .minus-sign #Path_5569 {
+    stroke: var(--color-gray-0);
+    stroke-width: 0.125rem;
+  }
+  .mobile-card .plus-sign,
+  .mobile-card.toggled .minus-sign {
+    display: block;
+  }
+  .mobile-card .minus-sign,
+  .mobile-card.toggled .plus-sign {
+    display: none;
+  }
+  .mobile-card .text {
+    font-size: 20px;
+  }
+  .mobile-card.inverse .text {
+    color: var(--color-gray-0);
+  }
+  .mobile-card.one:not(.toggled) + .left.two,
+  .mobile-card.one:not(.toggled) ~ .right.two,
+  .mobile-card.two:not(.toggled) + .left.three,
+  .mobile-card.two:not(.toggled) ~ .right.three,
+  .mobile-card.three:not(.toggled) ~ .left.four,
+  .mobile-card.four:not(.toggled) + .left.five,
+  .mobile-card.four:not(.toggled) ~ .right.five,
+  .mobile-card.five:not(.toggled) + .left.six,
+  .mobile-card.five:not(.toggled) ~ .right.six,
+  .mobile-card.six:not(.toggled) + .left.seven,
+  .mobile-card.six:not(.toggled) ~ .right.seven,
+  .mobile-card.seven:not(.toggled) + .left.eight {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mobile-card.one.toggled + .left.two,
+  .mobile-card.one.toggled ~ .right.two,
+  .mobile-card.two.toggled + .left.three,
+  .mobile-card.two.toggled ~ .right.three,
+  .mobile-card.three.toggled ~ .left.four,
+  .mobile-card.four.toggled + .left.five,
+  .mobile-card.four.toggled ~ .right.five,
+  .mobile-card.five.toggled + .left.six,
+  .mobile-card.five.toggled ~ .right.six,
+  .mobile-card.six.toggled + .left.seven,
+  .mobile-card.six.toggled ~ .right.seven {
+    max-height: 30rem;
+  }
+  .mobile-card.seven.toggled + .left.eight {
+    max-height: 60rem;
   }
 
   /* DON NOT DISPLAYS */

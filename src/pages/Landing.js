@@ -112,6 +112,7 @@ export default function Landing({ dotChange }) {
             [activeFiveSwitch, setActiveFiveSwitch] = useState('no-one'),
             [activeSevenSwitch, setActiveSevenSwitch] = useState('no-one'),
             [zoom, setZoom] = useState(false),
+            [activeCard, setActiveCard] = useState(0),
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setActiveDot(activeDot + 1);
@@ -137,6 +138,11 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
+            <div className={`mobile-card one ${activeCard === 1 && 'toggled'}`} onClick={() => activeCard === 1 ? setActiveCard(0):setActiveCard(1)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Küldetésünk</label>
+            </div>
             <div className={`left two ${ activeDot === 2 ? "active": "" }`}>
                 <div className="text-box">
                     <label className="text extra-bold size-48">„A tanítás első lépése</label>
@@ -151,6 +157,11 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
+            <div className={`mobile-card inverse two ${activeCard === 2 && 'toggled'}`} onClick={() => activeCard === 2 ? setActiveCard(0):setActiveCard(2)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Kik vagyunk?</label>
+            </div>
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
@@ -167,6 +178,11 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
+            <div className={`mobile-card three ${activeCard === 3 && 'toggled'}`} onClick={() => activeCard === 3 ? setActiveCard(0):setActiveCard(3)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Hol vagyunk?</label>
+            </div>
             <div className={`left four ${ activeDot === 4 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Hol vagyunk?</label>
@@ -316,6 +332,11 @@ export default function Landing({ dotChange }) {
             </div>
             <div className={`right four ${ activeDot === 4 ? "active": "" }`}>
                 <LeafletMap props={activePlace}/>
+            </div>
+            <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={() => activeCard === 4 ? setActiveCard(0):setActiveCard(4)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Milyen kurzusaink vannak?</label>
             </div>            
             <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
                 <div className="content-block">
@@ -333,6 +354,11 @@ export default function Landing({ dotChange }) {
                     <div onClick={() => setActiveFiveSwitch('no-fix')} className={`switch ${ activeFiveSwitch === 'no-fix' && "active" }`}></div>
                 </div>
             </div>
+            <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={() => activeCard === 5 ? setActiveCard(0):setActiveCard(5)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Mit csinálunk az órákon?</label>
+            </div> 
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{`Mit csinálunk\naz órákon?`}</label>
@@ -349,6 +375,11 @@ export default function Landing({ dotChange }) {
                     </div>
                 </div>
             </div>
+            <div className={`mobile-card inverse six ${activeCard === 6 && 'toggled'}`} onClick={() => activeCard === 6 ? setActiveCard(0):setActiveCard(6)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">És az órákon kívül...</label>
+            </div> 
             <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
@@ -365,6 +396,11 @@ export default function Landing({ dotChange }) {
                     <div onClick={() => setActiveSevenSwitch('no-fix')} className={`switch ${ activeSevenSwitch === 'no-fix' && "active" }`}></div>
                 </div>
             </div>
+            <div className={`mobile-card seven ${activeCard === 7 && 'toggled'}`} onClick={() => activeCard === 7 ? setActiveCard(0):setActiveCard(7)}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Ami fontos számunkra</label>
+            </div> 
             <div className={`left eight ${ activeDot === 8 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Ami fontos nekünk</label>
