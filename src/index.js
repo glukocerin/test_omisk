@@ -4,6 +4,8 @@ import "./assets/css/main.layout.css";
 import { Provider } from "react-redux";
 import App from "./App";
 import store from "./store";
+import ScrollIntoView from "./components/ScrollIntoView";
+
 
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -12,7 +14,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App />
+        <ScrollIntoView>
+          <App />
+        </ScrollIntoView>
       </Router>
     </Provider>
   </React.StrictMode>,
