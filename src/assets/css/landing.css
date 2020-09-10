@@ -1186,7 +1186,7 @@
   .mobile-card.seven:not(.toggled) + .left.eight {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: none;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1201,6 +1201,7 @@
   .mobile-card.six.toggled + .left.seven,
   .mobile-card.six.toggled ~ .right.seven {
     max-height: 30rem;
+    transition: max-height 0.3s ease-in-out;
   }
   .mobile-card.three.toggled ~ .left.four,
   .mobile-card.seven.toggled + .left.eight {
