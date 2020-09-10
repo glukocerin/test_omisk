@@ -684,6 +684,7 @@
   stroke: unset;
 }
 
+.mobile-card,
 .mobile-footer {
   display: none;
 }
@@ -744,9 +745,6 @@
   .left.one .content-block{
     margin-left: unset;
   }
-  .left.one .content-block .sub-title {
-    display: none;
-  }
   .left.one .content-block .stamp-box {
     width: 7rem;
     height: 7rem;
@@ -771,40 +769,172 @@
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
   }
+  .mobile-card.one {
+    order: 3;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
+  }
   .left.two {
     order: 3;
   }
+  .left.two.active {
+    animation: unset;
+  }
+  .left.two.active .text {
+    animation: unset;
+    width: 100%;
+  }
+  .right.two.active,
   .right.two {
     order: 4;
+    background-size: 80% auto;
+    background-position: center 1rem;
+    background-color: var(--color-pink-0);
+    animation: unset;
+    height: 30rem;
+  }
+  .mobile-card.two {
+    order: 5;
+    background: var(--color-green-0);
+    filter: contrast(80%);
   }
   .left.three {
     order: 5;
-    padding: 1.75rem;
+    padding: 1.75rem 3rem;
   }
   .right.three {
     order: 6;
+    background-size: 80% auto;
+    background-position: center 0;
+    background-color: var(--color-green-0);
+    background-image: url("../img/landing_bg_3.jpg");
+    animation: unset;
+    height: 30rem;
   }
-  .left.eight {
+  .left.three .article,
+  .left.three .article:nth-child(2) {
+    margin-top: 0;
+  }
+  .left.three .article:nth-child(2)::first-letter {
+    font-size: 32px;
+    color: var(--color-gray-new-1);
+  }
+  .left.three .button-box {
+    margin-top: 2rem;
+    margin-bottom: 0.875rem;
+  }
+  .left.three .button-box .btn {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
+  .mobile-card.three {
     order: 7;
-    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+    background: var(--color-gray-3);
+    filter: contrast(80%);
   }
-  .left.eight .content-block {
-    max-width: 20rem;
+  .left.four {
+    padding: 1.75rem;
+    padding-bottom: 3rem;
+    order: 7;
+    background: var(--color-gray-2);
   }
-  .left.eight .sepa-row {
-    margin-top: 1.75rem;
-    margin-bottom: 1.25rem;
+  .left.four .drop-down-list {
+    margin-top: 0;
   }
-  .left.eight .sepa-row svg,
-  .left.eight .sepa-row hr {
-    display: none;
+  .left.four .drop-down-list .place {
+    padding: 1rem 0;
+    padding-left: 3rem;
+    border-bottom: 2px solid var(--color-gray-3);
   }
-  .left.eight .sepa-row .text {
-    margin: unset;
+  .left.four .drop-down-list .place .plus-sign,
+  .left.four .drop-down-list .place .minus-sign {
+    left: 0.75rem;
+    top: 0.825rem;
+  }
+  .mobile-card.four {
+    order: 8;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
+  }
+  .left.five {
+    order: 8;
+    padding: 1.75rem 4rem;
+    padding-top: 2rem;
+  }
+  .left.five .content-block {
+    margin: 0;
+  }
+  .left.five.active .list-item .arrow,
+  .left.seven.active .list-item .arrow {
+    animation: unset;
+  }
+  .left.five.active .list-item.active,
+  .left.seven.active .list-item.active {
+    transition: unset;
+    transform: unset;
+  }
+  .left.five.active .list-item:hover,
+  .left.seven.active .list-item:hover,
+  .left.five.active .list-item.active:hover,
+  .left.seven.active .list-item.active:hover {
+    transform: unset;
+  }
+  .left.five.active .list-item,
+  .left.seven.active .list-item {
+    animation: unset;
+    width: 100%;
+  }
+  .left.five .list-item .text,
+  .left.seven .list-item .text{
+    font-size: 16px;
+  }
+  .right.five {
+    order: 9;
+    background-size: 80% auto;
+    background-position: center 0;
+    background-color: var(--color-pink-0);
+    background-image: url("../img/courses/muveszi_torna.jpg")!important;
+    animation: unset;
+    height: 20rem;
+  }
+  .mobile-card.five {
+    order: 10;
+    background: var(--color-blue-4);
+    filter: contrast(80%);
+  }
+  .left.six {
+    order: 10;
+    padding: 1.75rem 3.5rem;
+  }
+  .left.six .article:nth-child(2) {
+    margin-top: 0;
+  }
+  .left.six .article:nth-child(2)::first-letter {
+    font-size: 32px;
+    color: var(--color-gray-new-1);
+  }
+  .right.six {
+    order: 11;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: var(--color-blue-4);
+    background-image: url("../img/landing_mobile_bg_6.png");
+    animation: unset;
+    height: 20rem;
+  }
+  .mobile-card.six {
+    order: 12;
+    background: var(--color-green-0);
+    filter: contrast(80%);
   }
   .left.seven {
-    order: 8;
-    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+    order: 12;
+    padding: 1.75rem 4rem;
+    padding-top: 2rem;
+  }
+  .left.seven .content-block{
+    margin: 0;
   }
   .left.five .list-item,
   .left.seven .list-item {
@@ -813,53 +943,45 @@
   .left.five .list-item .arrow,
   .left.seven .list-item .arrow {
     width: 1.5rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
   .left.five .list-item .arrow .cls-1,
   .left.seven .list-item .arrow .cls-1 {
-    fill: var(--color-gray-7);
-    stroke: var(--color-gray-7);
+    fill: var(--color-gray-0);
+    stroke: var(--color-gray-0);
     stroke-width: 0.3px;
   }
   .left.five .list-item .arrow .cls-2,
   .left.seven .list-item .arrow .cls-2 {
-    stroke: var(--color-gray-7);
+    stroke: var(--color-gray-0);
   }
-  .right.seven.no-one {
-    order: 9;
-    background: url("../img/landing_bg_7.png");
-    background-size: 100% auto;
+  .right.seven {
+    order: 13;
+    background-color: var(--color-green-0);
+    background-image: url("../img/landing_sub/seven-one.jpg")!important;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 30rem;
   }
-  .left.five {
-    order: 10;
-    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
+  .mobile-card.seven {
+    order: 14;
+    background: var(--color-pink-0);
+    filter: contrast(80%);
   }
-  .left.four {
-    padding: 1.75rem 1.75rem 3.5rem 1.75rem;
-    order: 11;
-    background: var(--color-gray-0);
+  .left.eight {
+    order: 14;
+    padding: 0.5rem 3.5rem 7rem 3.5rem;
   }
-  .left.four .drop-down-list .place {
-    padding: 1rem 0;
-    padding-left: 3rem;
+  .left.eight .content-block {
+    max-width: 20rem;
   }
-  .left.four .drop-down-list .place .plus-sign,
-  .left.four .drop-down-list .place .minus-sign {
-    left: 0.75rem;
-    top: 0.825rem;
+  .left.eight .sepa-row {
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
   }
-  .right.eight {
-    order: 12;
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .dots,
-  .right.four,
-  .right.five,
-  .left.six,
-  .right.six {
-    display: none;
+  .left.eight .sepa-row .text {
+    color: var(--color-gray-0);
   }
   .left {
     height: unset;
@@ -894,10 +1016,14 @@
     display: flex;
     flex-direction: column;
   }
+  .left.two.active .text.thin,
   .left.two .text.thin {
     margin-top: 3rem;
     position: relative;
+    overflow: visible;
+    color: var(--color-gray-new-1);
   }
+  .left.two.active .text.thin::before,
   .left.two .text.thin::before {
     position: absolute;
     content: ' ';
@@ -906,28 +1032,6 @@
     height: 4px;
     width: 3rem;
     background: var(--color-gray-new-1);
-  }
-  .left.three .article,
-  .left.three .article:nth-child(2) {
-    margin-top: 1rem;
-  }
-  .left.three .article:nth-child(2)::first-letter {
-    font-weight: 100;
-    color: var(--color-gray-0);
-  }
-  .left.three .button-box {
-    margin-top: 2rem;
-    margin-bottom: 0.875rem;
-  }
-  .left.three .button-box .btn {
-    padding: 10px 22px;
-    font-size: 12px;
-  }
-  .social-media-bar {
-    display: none;
-  }
-  .right.active .image-switch {
-    display: none;
   }
   .left.three .title,
   .left.four .title,
@@ -947,8 +1051,9 @@
     opacity: 1;
     transition: unset;
   }
+
   .mobile-footer {
-    order: 12;
+    order: 15;
     display: flex;
     flex-direction: column;
     background: var(--color-gray-3);
@@ -1010,5 +1115,100 @@
 
   .landing .size-28 {
     font-size: 28px;
+  }
+  /* CARD RULES */
+  .mobile-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+  }
+  .mobile-card .plus-sign,
+  .mobile-card .minus-sign {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .mobile-card .plus-sign .cls-1,
+  .mobile-card .plus-sign .cls-1,
+  .mobile-card .minus-sign .cls-2,
+  .mobile-card .minus-sign .cls-2 {
+    stroke: var(--color-gray-7);
+    stroke-width: 0.125rem;
+  }
+  .mobile-card.inverse .plus-sign .cls-1,
+  .mobile-card.inverse .plus-sign .cls-1,
+  .mobile-card.inverse .minus-sign #Path_5569,
+  .mobile-card.inverse .minus-sign #Path_5569 {
+    stroke: var(--color-gray-0);
+    stroke-width: 0.125rem;
+  }
+  .mobile-card .plus-sign,
+  .mobile-card.toggled .minus-sign {
+    display: block;
+  }
+  .mobile-card .minus-sign,
+  .mobile-card.toggled .plus-sign {
+    display: none;
+  }
+  .mobile-card .text {
+    font-size: 20px;
+  }
+  .mobile-card.inverse .text {
+    color: var(--color-gray-0);
+  }
+  .mobile-card.one:not(.toggled) + .left.two,
+  .mobile-card.one:not(.toggled) ~ .right.two,
+  .mobile-card.two:not(.toggled) + .left.three,
+  .mobile-card.two:not(.toggled) ~ .right.three,
+  .mobile-card.three:not(.toggled) ~ .left.four,
+  .mobile-card.four:not(.toggled) + .left.five,
+  .mobile-card.four:not(.toggled) ~ .right.five,
+  .mobile-card.five:not(.toggled) + .left.six,
+  .mobile-card.five:not(.toggled) ~ .right.six,
+  .mobile-card.six:not(.toggled) + .left.seven,
+  .mobile-card.six:not(.toggled) ~ .right.seven,
+  .mobile-card.seven:not(.toggled) + .left.eight {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mobile-card.one.toggled + .left.two,
+  .mobile-card.one.toggled ~ .right.two,
+  .mobile-card.two.toggled + .left.three,
+  .mobile-card.two.toggled ~ .right.three,
+  .mobile-card.three.toggled ~ .left.four,
+  .mobile-card.four.toggled + .left.five,
+  .mobile-card.four.toggled ~ .right.five,
+  .mobile-card.five.toggled + .left.six,
+  .mobile-card.five.toggled ~ .right.six,
+  .mobile-card.six.toggled + .left.seven,
+  .mobile-card.six.toggled ~ .right.seven {
+    max-height: 30rem;
+  }
+  .mobile-card.seven.toggled + .left.eight {
+    max-height: 60rem;
+  }
+
+  /* DON NOT DISPLAYS */
+  .left.one .content-block .sub-title,
+  .left.two.active .separator,
+  .left.three .title,
+  .left.three .article:nth-child(3),
+  .left.four .title,
+  .left.five .title,
+  .left.six .title,
+  .left.seven .title,
+  .left.eight .title,
+  .left.eight .sepa-row hr,
+  .dots,
+  .right.four,
+  .right.six .content-block,
+  .right.eight,
+  .social-media-bar,
+  .right.active .image-switch {
+    display: none;
   }
 }
