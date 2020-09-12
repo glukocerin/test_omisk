@@ -24,9 +24,6 @@ export default function CoursesHeader(props) {
         {props.opt.courseName}
         <p className={`${style["course"]} size-90 extra-bold`}>kurzus</p>
       </label>
-      <button className={style["button"]} style={{ color: color }}>
-        Jelentkezem
-      </button>
     </div>
   );
 }
