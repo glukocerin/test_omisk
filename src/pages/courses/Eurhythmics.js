@@ -1,186 +1,206 @@
-import React from "react";
+import React, { useState } from "react";
 
 import CoursesHeader from "./CoursesHeader";
 import style from "../../assets/css/eurhythmics.module.css";
 import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
 export default function Courses() {
+  const [activeTab, setActiveTab] = useState("info");
+
   const opt = {
     courseName: "Művészi torna",
     color: "blue",
     img: "muveszetitorna"
   };
+  const onTabHeaderClickHandler = activeTab => {
+    setActiveTab(activeTab);
+  };
   return (
     <div>
       <CoursesHeader opt={opt} />
       <div className={style["info-box"]}>
-        <div className={style["info"]}>
-          <h4 className="size-16 extra-bold">Hasznos info</h4>
-          <ul>
-            <li>
-              <div className={style["info-item"]}>
-                <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Korosztaly</p>
-                </div>
-                <div className={style["age-group-value"]}>
-                  <p className="size-12 thin">4 éves kortól</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className={style["info-item"]}>
-                <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Tandij</p>
-                </div>
-                <div>
-                  <p className="size-12 thin">
-                    Heti 2 x 45 perc 9700-10000 Ft / hó
-                  </p>
-                  <p className="size-12 thin">
-                    Heti 2 x 60 perc 11000-11300 Ft / hó
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className={style["info-item"]}>
-                <div className={style["info-item-prop"]}>
-                  <p className="size-12 extra-bold">Kedvezmeny</p>
-                </div>
-                <div>
-                  <p className="size-12 thin">2 testvér esetén 2000,-/fő/hó</p>
-                  <p className="size-12 thin">3 testvér esetén 3000,-/fő/hó</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div className={`${style["info-box-header"]}`}>
+          <h3
+            onClick={e => onTabHeaderClickHandler("info")}
+            className={` ${
+              activeTab === "info" ? style["active-header-tab"] : ""
+            }  size-36 extra-bold`}
+          >
+            Hasznos infók
+          </h3>
+          <h3
+            onClick={e => onTabHeaderClickHandler("location")}
+            className={` ${
+              activeTab === "location" ? style["active-header-tab"] : ""
+            }  size-36 extra-bold`}
+          >
+            Helyszíneink
+          </h3>
         </div>
-        <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Helyszinek, Tanárok</h4>
-          <ul>
-            <li>
-              <p className="size-12 thin">
-                Óbudai Kulturális Központ (hétfő,kedd-szerda-péntek)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                Békásmegyeri Közösségi Ház (kedd,csütörtök,péntek)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                {" "}
-                MOM Kulturális Központ (hétfő,kedd,csütörtök)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                Virányosi Közösségi Ház (hétfő,szerda, kedd,csütörtök)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                Szarvas Gábor Közösségi Tér (hétfő, kedd, szerda , csütörtök)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                Budapest Művelődési Központ (hétfő-szerda)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                Józsefvárosi Galéria és Rendezvényközpont (hétfő-szerda)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                VII. ker. Táncstúdió (hétfő,szerda,péntek)
-              </p>
-            </li>
-          </ul>
-          <div className={`${style["teachers-wrapper"]}`}>
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/benis_katalin.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/taylor_jennifer.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/kovacs_bea.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/mady_krisztina.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/empty.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/pers_julia.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/lakatos_lilla.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/rozsa_reka.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/solti_eszter.jpg`)}
-              alt=""
-            />
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/taylor_eszti.jpg`)}
-              alt=""
-            />
+        <div
+          className={` ${activeTab !== "info" ? style["inactive-tab"] : ""} ${
+            style["info"]
+          }`}
+        >
+          <div className={style["info-item"]}>
+            <div className={style["column-first"]}>
+              <p className="size-20 extra-bold">Tandíj</p>
+            </div>
+            <div className={style["column-second"]}>
+              <p className="size-20 thin">Heti 2 x 45 perc</p>
+              <p className="size-20 thin">Heti 2 x 60 perc</p>
+            </div>
+            <div className={style["column-third"]}>
+              <p className="size-20 thin">9700-10000 Ft / hó</p>
+              <p className="size-20 thin">10700-11000 Ft / hó</p>
+            </div>
+          </div>
+          <div className={style["info-item"]}>
+            <div className={style["column-first"]}>
+              <p className="size-20 extra-bold">Kedvezmény</p>
+            </div>
+            <div className={style["column-second"]}>
+              <p className="size-20 thin">2 testvér esetén</p>
+              <p className="size-20 thin">3 testvér esetén</p>
+            </div>
+            <div className={style["column-third"]}>
+              <p className="size-20 thin">2000.- /hó/fő</p>
+              <p className="size-20 thin">3000.- /hó/fő</p>
+            </div>
+          </div>
+          <div className={style["info-item"]}>
+            <div className={style["column-first"]}>
+              <p className="size-20 extra-bold">Korosztály</p>
+            </div>
+            <div className={style["column-second"]}>
+              <p className="size-20 thin">4 - 10éves kortól</p>
+              <p className="size-20 thin">korcsopotonként</p>
+            </div>
+            <div className={style["column-third"]}></div>
           </div>
         </div>
-        <div className={style["people-for"]}>
-          <h4 className="size-16 extra-bold">Neked ajánljuk, ha...</h4>
-          <ul>
-            <li>
-              <p className="size-12 thin">
-                …szeretnél szép testtartást, és ügyesebben mozogni.
+        <div
+          className={` ${
+            activeTab !== "location" ? style["inactive-tab"] : ""
+          } ${style["places"]}`}
+        >
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">Virányosi Közösségi Ház</p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                XII. ker. Szarvas Gábor út 8/c
               </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                …olyan mozgást keresel, ami akkor is hasznodra válik, ha végül
-                nem a táncnál, hanem az úszásnál kötsz ki.
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Szerda</p>
+              <p className="size-20 thin">Kedd+Csütörtök</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">
+                Óbudai Kulturális Központ
               </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                …óvodásként kiváncsi vagy, milyen lesz majd az iskolában egy 45
-                perces tanóra.
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                III. San Marco út 81
               </p>
-            </li>
-            <li>
-              <p className="size-12 thin">…szeretnél új barátokat szerezni.</p>
-            </li>
-          </ul>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Szerda</p>
+              <p className="size-20 thin">Kedd+Csütörtök</p>
+              <p className="size-20 thin">Hétfő+Pentek</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">
+                Budapest Művelődési Központ
+              </p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                XI. Etele út 55/a
+              </p>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Szerda</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">MOM Kulturális Központ </p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                XII. ker. Csörsz út 18
+              </p>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Csütörtök</p>
+              <p className="size-20 thin">Kedd+Csütörtök</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">
+                Békásmegyeri Közösségi Ház
+              </p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                III. Csobánka tér 5
+              </p>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Kedd+Csütörtök</p>
+              <p className="size-20 thin">Kedd+Péntek</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">
+                Józsefvárosi Galéria és Rendezvény Központ
+              </p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                VIII. József krt. 70
+              </p>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Szerda</p>
+            </div>
+          </div>
+          <div className={`${style["place-item-wrapper"]}`}>
+            <div className={`${style["place-date"]}`}>
+              <p className="extra-bold size-20 thin">VII. ker. Táncstúdió</p>
+              <p className={`${style["address"]} extra-bold size-20 thin`}>
+                VII. Wesselényi u. 41
+              </p>
+            </div>
+            <div className={`${style["place-appointment"]}`}>
+              <p className="size-20 thin">Hétfő+Szerda</p>
+              <p className="size-20 thin">Péntek</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className={style["details"]}>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+          <div className={`${style["text"]}`}>
+            <h4 className="size-36 extra-bold">Kiknek ajánljuk?</h4>
+            <p className="size-20 thin">
+              Művészi torna tanfolyamunk alapja Berczik Sára esztétikus
+              testképző és mozgásfejlesztő technikája. A módszer lényege a
+              tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást
+              könnyebbé tesz. A legkisebbek számára is jól érthető és
+              értelmezhető, így hosszabb távon is leköti a figyelmüket. A
+              gyakorlatok összeállításának meghatározó szempontja az esztétikus
+              rendezettség. A koreográfiákhoz használt klasszikus zene
+              fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá
+              speciális adottság, a helyesen végzett, szép mozdulatok
+              mindenkinek sikerélményt adnak
+            </p>
+          </div>
+          <img
+            className={`${style["pic"]}`}
+            src={require(`../../assets/img/muveszi_torna_01.jpg`)}
+            alt=""
+          />
+        </div>
+        <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">Mi a művészi torna?</h4>
             <p className="size-20 thin">
@@ -198,12 +218,12 @@ export default function Courses() {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/muveszi_torna_01.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_02.jpg`)}
               alt=""
             />
           </div>
         </div>
-        <div className={`${style["card-wrapper"]}`}>
+        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">Mikor tudom elkezdeni?</h4>
             <p className="size-20 thin">
@@ -220,12 +240,12 @@ export default function Courses() {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/muveszi_torna_02.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_03.jpg`)}
               alt=""
             />
           </div>
         </div>
-        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+        <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">Hogyan épül fel az óra?</h4>
             <p className="size-20 thin">
@@ -243,7 +263,7 @@ export default function Courses() {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/muveszi_torna_03.jpg`)}
+              src={require(`../../assets/img/muveszi_torna_04.jpg`)}
               alt=""
             />
           </div>
@@ -251,9 +271,14 @@ export default function Courses() {
       </div>
       <div className={`${style["page-footer"]}`}>
         <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
-          Évközben is tudsz jelentkezni
+          Szeretnél csatlakozni?
         </h4>
-        <button className={style["footer-button"]}>Jelentkezem</button>
+        <div className={style["footer-buttons-wrapper"]}>
+          <button className={style["footer-button-details"]}>Érdeklődöm</button>
+          <button className={style["footer-button-sign-up"]}>
+            Jelentkezem
+          </button>
+        </div>
       </div>
     </div>
   );

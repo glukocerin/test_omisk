@@ -1,21 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CoursesHeader from "./CoursesHeader";
 
 import style from "../../assets/css/preBallet.module.css";
 import styleCard from "../../assets/css/courseDetailsCard.module.css";
 
 export default function Courses() {
+  const [activeTab, setActiveTab] = useState("info");
+
   const opt = {
     courseName: "Pre balett",
     color: "pink",
     img: "prebalett"
   };
+
+  const onTabHeaderClickHandler = activeTab => {
+    setActiveTab(activeTab);
+  };
+
   return (
     <div>
       <CoursesHeader opt={opt} />
-      <div className={style["info-box"]}>
-        <div className={style["info"]}>
-          <h4 className="size-16 extra-bold">Important information</h4>
+      <div className={`${style["info-box"]}`}>
+        <div className={`${style["info-box-header"]}`}>
+          <h3
+            onClick={e => onTabHeaderClickHandler("info")}
+            className={` ${
+              activeTab === "info" ? style["active-header-tab"] : ""
+            }  size-36 extra-bold`}
+          >
+            Hasznos infók
+          </h3>
+          <h3
+            onClick={e => onTabHeaderClickHandler("location")}
+            className={` ${
+              activeTab === "location" ? style["active-header-tab"] : ""
+            }  size-36 extra-bold`}
+          >
+            Helyszíneink
+          </h3>
+        </div>
+        <div
+          className={` ${activeTab !== "info" ? style["inactive-tab"] : ""} ${
+            style["info"]
+          }`}
+        >
           <ul>
             <li>
               <div className={style["info-item"]}>
@@ -54,45 +82,15 @@ export default function Courses() {
             </li>
           </ul>
         </div>
-        <div className={style["places"]}>
-          <h4 className="size-16 extra-bold">Location:</h4>
+        <div
+          className={` ${
+            activeTab !== "location" ? style["inactive-tab"] : ""
+          } ${style["places"]}`}
+        >
           <ul>
             <li>
               <p className="size-12 thin">
                 Óbudai Kulturális Központ (III. San Marco út 81)
-              </p>
-            </li>
-          </ul>
-          <div className={`${style["teachers-wrapper"]}`}>
-            <img
-              className={`${style["teacher-image"]}`}
-              src={require(`../../assets/img/teachers/taylor_eszti.jpg`)}
-              alt=""
-            />
-          </div>
-        </div>
-        <div className={style["people-for"]}>
-          <h4 className="size-16 extra-bold">We suggest this for you...</h4>
-          <ul>
-            <li>
-              <p className="size-12 thin">
-                ...If you would like to learn dance playfully
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                ...If you would like to learn English this way as well
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                ...If it would be good to learn English and dance at the same
-                time
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
-                ...If you would like to make new friends
               </p>
             </li>
           </ul>

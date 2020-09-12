@@ -100,7 +100,11 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/courses/eurhythmics">
+<<<<<<< HEAD
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
+=======
+          <Navigation BackgroundColor="green" isHeaderFixed="true" />
+>>>>>>> Update courses page
           <Eurhythmics />
           <Footer />
           <FooterMobile />

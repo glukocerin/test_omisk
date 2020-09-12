@@ -5,7 +5,6 @@
   position: relative;
   background: var(--color-gray-0);
   align-items: center;
-  padding: 0 20rem;
   background: transparent;
 }
 
@@ -15,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 31.25rem;
+  height: 36.25rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -79,6 +78,7 @@
 
 @media screen and (max-width: 767px) {
   .header-wrapper {
+<<<<<<< HEAD
     padding: unset;
   }
   .header {
@@ -93,5 +93,44 @@
   .button {
     margin-top: 1rem;
     margin-bottom: 1rem;
+=======
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background: var(--color-gray-0);
+    align-items: center;
+    background: transparent;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+  }
+
+  .header {
+    background-image: none !important;
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #14c1ae;
+  }
+
+  .state-location {
+    display: none;
+    text-align: center;
+    z-index: 1;
+    margin-top: 0rem;
+    color: var(--color-gray-0);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px dotted var(--color-gray-0);
+  }
+
+  .course {
+    display: none;
+>>>>>>> Update courses page
   }
 }
