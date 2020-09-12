@@ -31,7 +31,7 @@
 }
 
 .state-location::before {
-  content: ' ';
+  content: " ";
   left: -0.625rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -78,22 +78,6 @@
 
 @media screen and (max-width: 767px) {
   .header-wrapper {
-<<<<<<< HEAD
-    padding: unset;
-  }
-  .header {
-    background-image: unset!important;
-  }
-  .state-location {
-    display: none;
-  }
-  .header-title {
-    margin-top: 2rem;
-  }
-  .button {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-=======
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -131,6 +115,5 @@
 
   .course {
     display: none;
->>>>>>> Update courses page
   }
 }
