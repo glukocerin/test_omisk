@@ -119,18 +119,6 @@
   padding-left: 1.4375rem;
 }
 
-.places h4 {
-  margin-left: 4rem;
-  padding-top: 1.375rem;
-  padding-left: 1.4375rem;
-}
-
-.places ul {
-  position: relative;
-  width: 13rem;
-  margin-left: 5rem;
-}
-
 .people-for h4 {
   padding-top: 1.375rem;
   padding-left: 1.4375rem;
@@ -143,21 +131,40 @@
   margin-left: 6.25rem;
 }
 
+.active-header-tab {
+  border-bottom: 4px solid var(--color-green-1);
+}
+
+.inactive-tab {
+  display: none !important;
+}
+
 .info-box {
-  display: flex;
-  width: 80rem;
+  width: 58rem;
   background-color: var(--color-gray-1);
   margin: 0 auto;
   margin-top: 7.25rem;
   margin-bottom: 7rem;
 }
 
+.info-box-header {
+  display: flex;
+  justify-content: center;
+}
+
+.info-box-header h3 {
+  margin: 2rem 1rem;
+}
+
 .info-box ul {
+  margin-top: 0;
   padding-left: 2.3125rem;
 }
 
 .info {
   min-width: 26rem;
+  display: flex;
+  justify-content: center;
 }
 
 .info ul li {
@@ -165,20 +172,10 @@
   margin-bottom: 0.2rem;
 }
 
-.info ul li::before {
-  content: "•";
-  color: var(--color-pink-0);
-  display: inline-block;
-  width: 1em;
-  margin-top: 9px;
-  margin-left: -14px;
-  font-weight: 900;
-  position: absolute;
-}
-
 .places {
-  background-color: var(--color-gray-2);
-  min-width: 25.5625rem;
+  min-width: 26rem;
+  display: flex;
+  justify-content: center;
 }
 
 .places p {
@@ -188,6 +185,16 @@
 
 .places ul {
   padding-bottom: 1.375rem;
+}
+
+.places ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.places ul {
+  position: relative;
+  width: 13rem;
 }
 
 .people-for ul {
@@ -200,22 +207,6 @@
 }
 
 .people-for ul li::before {
-  content: "•";
-  color: var(--color-pink-0);
-  display: inline-block;
-  width: 1em;
-  margin-top: -3px;
-  margin-left: -14px;
-  font-weight: 900;
-  position: absolute;
-}
-
-.places ul li {
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.places ul li::before {
   content: "•";
   color: var(--color-pink-0);
   display: inline-block;

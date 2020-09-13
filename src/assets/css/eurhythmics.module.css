@@ -1,8 +1,48 @@
-.header {
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 25.75rem;
-  background-color: var(--color-blue-1);
+  position: relative;
+  background: var(--color-gray-0);
+  align-items: center;
+  padding: 0 20rem;
+  background: transparent;
+}
+
+.header {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 31.25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: #14c1ae;
+  background-image: url("../img/teachers/header.svg");
+}
+
+.state-location {
   text-align: center;
+  z-index: 1;
+  margin-top: 10rem;
+  color: var(--color-gray-0);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dotted var(--color-gray-0);
+}
+
+.state-location a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 4.875rem;
+  color: var(--color-gray-0);
 }
 
 .header-text {
@@ -29,15 +69,15 @@
 }
 
 .wrapper {
-  background-color: var(--color-blue-1);
+  background-color: var(--color-pink-0);
 }
 
-.title {
+.header-title {
   height: 10.9375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6.0625rem;
+  /* margin-top: 0.0625rem; */
 }
 
 .title h1 {
@@ -57,13 +97,24 @@
   margin-bottom: 1.0625rem;
   border: none;
   background-color: #fff;
-  color: var(--color-blue-1);
+  color: var(--color-pink-0);
   cursor: pointer;
   font-weight: bold;
 }
 
 .info .info-item {
   display: flex;
+  justify-content: space-between;
+}
+
+.info .column-first {
+  min-width: 7.5rem;
+}
+.info .column-second {
+  min-width: 9rem;
+}
+.info .column-third {
+  min-width: 12rem;
 }
 
 .info ul {
@@ -79,45 +130,38 @@
   padding-left: 1.4375rem;
 }
 
-.places h4 {
-  margin-left: 4rem;
-  padding-top: 1.375rem;
-  padding-left: 1.4375rem;
+.active-header-tab {
+  border-bottom: 4px solid var(--color-green-1);
 }
 
-.places ul {
-  position: relative;
-  width: 13rem;
-  margin-left: 5rem;
-}
-
-.people-for h4 {
-  padding-top: 1.375rem;
-  padding-left: 1.4375rem;
-  margin-left: 5.25rem;
-}
-
-.people-for ul {
-  position: relative;
-  max-width: 15rem;
-  margin-left: 6.25rem;
+.inactive-tab {
+  display: none !important;
 }
 
 .info-box {
-  display: flex;
-  width: 80rem;
-  background-color: var(--color-gray-1);
+  width: 58rem;
   margin: 0 auto;
   margin-top: 7.25rem;
   margin-bottom: 7rem;
+  background-color: #fff;
+}
+
+.info-box-header {
+  display: flex;
+  justify-content: center;
+}
+
+.info-box-header h3 {
+  margin: 2rem 1rem;
 }
 
 .info-box ul {
+  margin-top: 0;
   padding-left: 2.3125rem;
 }
 
 .info {
-  min-width: 26rem;
+  padding: 0 11.25rem;
 }
 
 .info ul li {
@@ -125,57 +169,39 @@
   margin-bottom: 0.2rem;
 }
 
-.info ul li::before {
-  content: "•";
-  color: var(--color-blue-1);
-  display: inline-block;
-  width: 1em;
-  margin-top: 9px;
-  margin-left: -14px;
-  font-weight: 900;
-  position: absolute;
+.places {
+  min-width: 26rem;
+  padding: 0 10rem;
 }
 
-.places {
-  background-color: var(--color-gray-2);
-  min-width: 25.5625rem;
+.place-date p {
+  width: 290px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.place-appointment {
+  width: 160px;
+}
+
+.address p {
+  width: 250px;
 }
 
 .places p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.people-for ul li {
-  list-style: none;
-  margin-bottom: 0.2rem;
+.place-item-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.people-for ul li::before {
-  content: "•";
-  color: var(--color-blue-1);
-  display: inline-block;
-  width: 1em;
-  margin-top: -3px;
-  margin-left: -14px;
-  font-weight: 900;
-  position: absolute;
-}
-
-.places ul li {
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.places ul li::before {
-  content: "•";
-  color: var(--color-blue-1);
-  display: inline-block;
-  width: 1em;
-  margin-top: -3px;
-  margin-left: -14px;
-  font-weight: 900;
-  position: absolute;
+.places .address {
+  color: #b2b2b2;
+  margin-bottom: 1.5rem;
+  margin-top: 4px;
 }
 
 .page-footer {
@@ -192,12 +218,30 @@
   margin-bottom: 2rem;
 }
 
-.footer-button {
+.footer-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button-details {
   width: 7rem;
   height: 2.125rem;
   margin-bottom: 1.0625rem;
+  margin-right: 1rem;
+  border: 1px solid var(--color-green-1);
+  background-color: #fff;
+  color: var(--color-green-1);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-button-sign-up {
+  width: 7rem;
+  height: 2.125rem;
+  margin-bottom: 1.0625rem;
+  margin-left: 1rem;
   border: none;
-  background-color: var(--color-blue-4);
+  background-color: var(--color-green-1);
   color: #fff;
   cursor: pointer;
   font-weight: bold;
@@ -207,7 +251,7 @@
   .header {
     width: 100%;
     height: 8.75rem;
-    background-color: var(--color-blue-1);
+    background-color: var(--color-pink-0);
   }
 
   .header-text {
@@ -228,12 +272,12 @@
     align-items: center;
   }
 
-  .info .info-item {
-    display: flex;
+  .info {
+    padding: 0;
   }
 
-  .info-item-prop {
-    width: 7.5rem;
+  .info .info-item {
+    display: flex;
   }
 
   .info h4 {
@@ -241,14 +285,10 @@
     padding-left: 1.4375rem;
   }
 
-  .places h4 {
-    margin-left: 0;
-    padding-top: 1.375rem;
-    padding-left: 1.4375rem;
-  }
-
   .places {
-    background-color: var(--color-gray-2);
+    min-width: 100%;
+    background-color: #fff;
+    padding: 0;
   }
 
   .places p {
@@ -256,83 +296,23 @@
     margin-bottom: 0;
   }
 
-  .places ul {
-    padding-bottom: 1.375rem;
-    margin-left: 0rem;
-  }
-
-  .people-for h4 {
-    padding-top: 1.375rem;
-    padding-left: 1.4375rem;
+  .place-appointment {
+    width: 100px;
   }
 
   .info-box {
-    display: flex;
-    flex-direction: column;
     max-width: 25.875rem;
-    background-color: var(--color-gray-1);
+    background-color: #fff;
     margin: 0 auto;
   }
-  .info-box ul {
-    padding-left: 2.3125rem;
+
+  .place-date p {
+    width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .info ul li {
-    list-style: none;
-    margin-bottom: 0.2rem;
-  }
-
-  .info ul li::before {
-    content: "•";
-    color: var(--color-blue-1);
-    display: inline-block;
-    width: 1em;
-    margin-top: 9px;
-    margin-left: -14px;
-    font-weight: 900;
-    position: absolute;
-  }
-
-  .people-for ul {
-    padding-bottom: 1.375rem;
-    margin-left: 0;
-  }
-
-  .people-for h4 {
-    margin-left: 0;
-  }
-
-  .people-for ul li {
-    list-style: none;
-    margin-bottom: 0.2rem;
-  }
-
-  .people-for ul li::before {
-    content: "•";
-    color: var(--color-blue-1);
-    display: inline-block;
-    width: 1em;
-    margin-top: -3px;
-    margin-left: -14px;
-    font-weight: 900;
-    position: absolute;
-  }
-
-  .places ul li {
-    list-style: none;
-    margin-bottom: 0.2rem;
-  }
-
-  .places ul li::before {
-    content: "•";
-    color: var(--color-blue-1);
-    display: inline-block;
-    width: 1em;
-    margin-top: -3px;
-    margin-left: -14px;
-    font-weight: 900;
-    position: absolute;
-  }
   .details {
     max-width: 79.875rem;
   }
@@ -347,23 +327,17 @@
 
 .text {
   width: 50%;
+  padding: 0 10%;
   margin-top: 10%;
-  padding-right: 10%;
-  padding-left: 16%;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-.reverse .text {
-  padding-right: 16%;
-  padding-left: 10%;
-}
-
 .text p {
   margin-bottom: 0;
-  line-height: 1.75rem;
+  line-height: 1.75;
 }
 
 .text ul {
@@ -371,11 +345,23 @@
 }
 
 .text h4 {
-  color: var(--color-blue-1);
   margin-top: 2.0625rem;
 }
 
 .pic {
+  max-width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.pic-second {
+  width: 50%;
+}
+.pic-third {
+  width: 50%;
+}
+.pic-fourth {
   width: 50%;
 }
 
@@ -389,35 +375,31 @@
 
 @media screen and (max-width: 767px) {
   .card-wrapper {
-    width: 25.875rem;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #fff;
   }
 
   .text {
-    width: 100%;
-    margin: unset;
-    padding: 2rem 1.5rem;
+    padding: 0 5%;
+    min-width: 100%;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
   }
 
   .reverse .text {
-    padding: 2rem 1.5rem;
-    margin: 0;
+    padding: 0 5%;
   }
 
   .text p {
     margin-bottom: 0;
   }
 
-  .text ul {
-    margin-top: 1.0625rem;
-  }
-
   .text h4 {
-    color: var(--color-blue-1);
-    margin-top: 0;
+    margin-top: 2.0625rem;
+    text-align: center;
   }
 
   .pic {
@@ -430,5 +412,8 @@
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
+  }
+  .footer-button-details {
+    display: none;
   }
 }
