@@ -79,6 +79,7 @@ const pagesConfig = {
       {
         title: "Művészeti torna",
         image: "muveszi_torna",
+        bg_mobile: "yellow",
         age: "",
         districts: "III.,VII., VIII., XI., XII. kerületek",
         bottomText: "kerületekben",
@@ -89,6 +90,7 @@ const pagesConfig = {
       {
         title: "Mozdulatművészet",
         image: "mozdulatmuveszet",
+        bg_mobile: "yellow",
         age: "",
         districts: "III., VIII., XI., XII. kerületek",
         bottomText: "kerületekben",
@@ -99,6 +101,7 @@ const pagesConfig = {
       {
         title: "Klasszikus balett",
         image: "klasszikus_balett",
+        bg_mobile: "pink",
         age: "",
         districts: "III., VII., XII. kerület",
         bottomText: "kerületekben",
@@ -109,6 +112,7 @@ const pagesConfig = {
       {
         title: "Jazztánc",
         image: "jazz_tanc",
+        bg_mobile: "blue",
         age: "",
         districts: "III. kerület",
         bottomText: "kerületekben",
@@ -119,6 +123,7 @@ const pagesConfig = {
       {
         title: "Modern tánc",
         image: "modern_tanc",
+        bg_mobile: "pink",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
         bottomText: "kerületekben",
@@ -129,6 +134,7 @@ const pagesConfig = {
       {
         title: "Pre balett",
         image: "pre_ballet",
+        bg_mobile: "turquoise",
         age: "",
         districts: "III. kerület",
         bottomText: "kerületekben",
