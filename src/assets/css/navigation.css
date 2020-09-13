@@ -24,9 +24,8 @@
   background: var(--color-pink-0);
 }
 /* LANDING RULES!!! */
-.header.background-erohw.fixed {
-  background: transparent;
-}
+.header.background-pink.fixed,
+.header.background-erohw.fixed,
 .header.background-green-1.fixed {
   background: transparent;
 }

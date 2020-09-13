@@ -133,7 +133,7 @@ export default function Landing({ dotChange }) {
                         <Stamp className="stamp"/>
                         <div className="mask"></div>
                     </div>
-                    <DoubleArrowDown className="double-arrow-down" />
+                    <DoubleArrowDown className="double-arrow-down" onClick={() => setActiveDot(2)}/>
                     <label className="size-12 thin">Görgess lefelé</label>
                 </div>
             </div>
@@ -165,7 +165,7 @@ export default function Landing({ dotChange }) {
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-24">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Képzéseinket  Berczik-technikával alapozzuk meg.\n\nTánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
+                    <label className="article size-24">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
                     <label className="article size-24 extra-bold">Gyere, nézd meg, mi így működünk!</label>
                     <div className="button-box">
                         <Link onClick={()=> {dispatch(updatePageindex({payload: activeDot}))}} to="/courses">

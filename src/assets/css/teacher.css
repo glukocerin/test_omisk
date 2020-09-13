@@ -15,7 +15,7 @@
   height: 25.75rem;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center;
+  background-position: top;
   background-color: var(--color-pink-0);
   background-image: url("../img/teachers/teachers_header.svg");
 }
@@ -103,7 +103,7 @@
 }
 .teacher .column-right .list .list-item::before {
   content: "\2022";
-  color: var(--color-green-0);
+  color: var(--color-pink-0);
   font-weight: bold;
   font-size: 1.5rem;
   display: inline-block;
