@@ -102,6 +102,7 @@
   margin-left: 1.25rem;
   margin-bottom: 1.5rem;
   animation: sdb04 2s infinite;
+  cursor: pointer;
 }
 @keyframes sdb04 {
   0% {

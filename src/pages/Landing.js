@@ -133,7 +133,7 @@ export default function Landing({ dotChange }) {
                         <Stamp className="stamp"/>
                         <div className="mask"></div>
                     </div>
-                    <DoubleArrowDown className="double-arrow-down" />
+                    <DoubleArrowDown className="double-arrow-down" onClick={() => setActiveDot(2)}/>
                     <label className="size-12 thin">Görgess lefelé</label>
                 </div>
             </div>
