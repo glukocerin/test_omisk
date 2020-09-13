@@ -10,6 +10,7 @@ export default function Card(props) {
       </label>
       <div className={style["image-wrapper"]}>
         <img
+          className={`${style[props.details.bg_mobile]}`}
           src={require(`../assets/img/courses/${props.details.image}.jpg`)}
           alt=""
         />
