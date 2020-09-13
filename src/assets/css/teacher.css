@@ -15,7 +15,7 @@
   height: 25.75rem;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center;
+  background-position: top;
   background-color: var(--color-pink-0);
   background-image: url("../img/teachers/teachers_header.svg");
 }
