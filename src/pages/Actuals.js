@@ -19,7 +19,6 @@ const ActualsCards = function() {
         </div>
         <div className="text-box">
           <label className="actual-date size-15 extra-bold">{card.date}</label>
-          <label className="dot-dot-dot size-36 extra-bold">...</label>
           <label className="actual-desc size-24 extra-bold">{card.title}</label>
           <label className="actual-text size-15 thin">{card.text}</label>
         </div>
