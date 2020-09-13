@@ -52,7 +52,7 @@
   user-select: none;
 }
 .contact .faq .drop-down-list .question + .question {
-  margin-top: 3vh;
+  margin-top: 0.5vh;
 }
 .contact .faq .drop-down-list .question *{
   cursor: pointer;
@@ -92,7 +92,7 @@
   overflow: hidden;
 }
 .contact .faq .drop-down-list .question .question-informations .answer{
-  margin: 3rem 0;
+  margin: 1rem 0;
   line-height: 28px;
 }
 .contact .faq .drop-down-list .question .question-address {

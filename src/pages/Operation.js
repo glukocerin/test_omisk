@@ -33,9 +33,11 @@ const OperationElements = function(props) {
       }
       key={index}
     >
-      <PlusSign className="plus-sign" />
-      <MinusSign className="minus-sign" />
-      <label className="info-label size-32 extra-bold">{operation.title}</label>
+      <div className="info-title">
+        <PlusSign className={`plus-sign ${operation.role === "secondary" && 'small'}`} />
+        <MinusSign className={`minus-sign ${operation.role === "secondary" && 'small'}`} />
+        <label className={`info-label extra-bold ${operation.role === "primary" ? 'size-32': 'size-24'}`}>{operation.title}</label>
+      </div>
       <div
         className={`info-informations ${!operation.description &&
           "hidden"} size-20 thin`}
