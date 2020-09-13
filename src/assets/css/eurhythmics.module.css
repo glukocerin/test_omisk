@@ -235,6 +235,26 @@
   font-weight: bold;
 }
 
+.footer-button-details:hover {
+  border: 1px solid #2ebdae;
+  color: #2ebdae;
+}
+
+.footer-button-details:active {
+  outline: none;
+  border: 1px solid #63cec2;
+  color: #63cec2;
+}
+
+.footer-button-sign-up:hover {
+  background-color: #2ebdae;
+}
+
+.footer-button-sign-up:active {
+  outline: none;
+  background-color: #63cec2;
+}
+
 .footer-button-sign-up {
   width: 7rem;
   height: 2.125rem;
