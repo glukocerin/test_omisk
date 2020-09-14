@@ -1,0 +1,80 @@
+.modal {
+  width: 100%;
+  padding: 20px 4rem;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  z-index: 403;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  display: flex;
+  flex-flow: row;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.closed {
+  display: none;
+}
+
+.close-button {
+  border: none;
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 402;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-guts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.years {
+  margin-top: 4rem;
+}
+
+.year {
+  margin: 0 1rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.selected-year {
+  color: black;
+}
+
+.modal-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
