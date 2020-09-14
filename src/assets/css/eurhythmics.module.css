@@ -114,7 +114,7 @@
   min-width: 9rem;
 }
 .info .column-third {
-  min-width: 12rem;
+  min-width: 16rem;
 }
 
 .info ul {
@@ -182,7 +182,7 @@
 }
 
 .place-appointment {
-  width: 160px;
+  width: 275px;
 }
 
 .address p {
@@ -233,6 +233,26 @@
   color: var(--color-green-1);
   cursor: pointer;
   font-weight: bold;
+}
+
+.footer-button-details:hover {
+  border: 1px solid #2ebdae;
+  color: #2ebdae;
+}
+
+.footer-button-details:active {
+  outline: none;
+  border: 1px solid #63cec2;
+  color: #63cec2;
+}
+
+.footer-button-sign-up:hover {
+  background-color: #2ebdae;
+}
+
+.footer-button-sign-up:active {
+  outline: none;
+  background-color: #63cec2;
 }
 
 .footer-button-sign-up {
