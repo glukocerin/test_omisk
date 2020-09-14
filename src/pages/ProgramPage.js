@@ -36,7 +36,7 @@ export default function ProgramPage(props) {
           className={style["header"]}
           style={{ backgroundImage: "url(" + backgroundImage + ")" }}
         ></div>
-        <label className="">
+        <label className={`${style["state-location"]} size-13`}>
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
         <label className={`${style["header-title"]} size-90 extra-bold`}>
