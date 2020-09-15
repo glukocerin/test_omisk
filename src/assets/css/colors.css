@@ -32,4 +32,7 @@
     --color-btn-normal-green: var(--color-green-1);
     --color-btn-hover-green: #2EBDAE;
     --color-btn-active-green: #63CEC2;
+    --color-btn-normal-green-2: #FFFFFF;
+    --color-btn-hover-green-2:#DCF4F1;
+    --color-btn-active-green-2: #A7E3DD;
 }
