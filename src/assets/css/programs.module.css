@@ -134,6 +134,7 @@
   .text-wrapper h4 {
     margin-bottom: 1.25rem;
     color: var(--color-gray-new-1);
+    font-size: 24px;
   }
 
   .card:first-child {
