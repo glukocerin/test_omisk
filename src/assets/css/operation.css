@@ -60,12 +60,11 @@
 }
 .operation .operation-content .drop-down-list .info-title {
   display: flex;
-  align-items: center;
 }
 .operation .operation-content .drop-down-list .info .plus-sign,
 .operation .operation-content .drop-down-list .info .minus-sign {
-  width: 2.375rem;
-  height: 2.375rem;
+  width: 1.979vw;
+  height: 1.979vw;
   display: block;
 }
 .operation .operation-content .drop-down-list .info .plus-sign.small,
@@ -175,10 +174,10 @@
   }
   .operation .operation-content .drop-down-list .info .plus-sign,
   .operation .operation-content .drop-down-list .info .minus-sign {
-    width: 1.5rem;
-    height: 1.5rem;
-    min-width: 1.5rem;
-    min-height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
     display: block;
   }
   .operation .operation-content .drop-down-list .info .plus-sign.small,
