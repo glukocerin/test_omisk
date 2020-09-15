@@ -277,8 +277,7 @@
   padding: 1vh 1.302vw;
   font-size: 0.781vw;
   font-weight: 800;
-  border: 2px solid var(--color-gray-0);
-  transition: border 300ms, background-color 300ms, color 300ms;
+  transition: border-color 300ms, background-color 300ms, color 300ms;
 }
 .left.three .button-box .btn:focus {
   outline: unset;
@@ -288,19 +287,29 @@
 }
 .left.three .button-box .btn-primary {
   background: transparent;
+  color: var(--color-btn-normal-green-2);
+  border: 2px solid var(--color-btn-normal-green-2);
 }
 .left.three .button-box .btn-primary:hover {
-  color: var(--color-gray-3);
-  border: 2px solid var(--color-gray-3);
+  color: var(--color-btn-hover-green-2);
+  border: 2px solid var(--color-btn-hover-green-2);
+}
+.left.three .button-box .btn-primary:active {
+  color: var(--color-btn-active-green-2);
+  border: 2px solid var(--color-btn-active-green-2);
 }
 .left.three .button-box .btn-secondary {
-  background: var(--color-gray-0);
-  color: var(--color-green-1);
+  color: var(--color-btn-normal-green);
+  background: var(--color-btn-normal-green-2);
+  border: 2px solid var(--color-btn-normal-green-2);
 }
 .left.three .button-box .btn-secondary:hover {
-  color: var(--color-green-1);
-  background: var(--color-gray-3);
-  border: 2px solid var(--color-gray-3);
+  background: var(--color-btn-hover-green-2);
+  border: 2px solid var(--color-btn-hover-green-2);
+}
+.left.three .button-box .btn-secondary:active {
+  background: var(--color-btn-active-green-2);
+  border: 2px solid var(--color-btn-active-green-2);
 }
 .left.four {
   background: var(--color-gray-3);

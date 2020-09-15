@@ -36,7 +36,7 @@ export default function ({ isOpen, setModalOpen, videos }) {
               className={`${style["close-button"]}`}
               onClick={() => setModalOpen(false)}
             >
-              x
+              &#215;
             </button>
           </div>
           <div className={`${style["modal-body"]} `}>

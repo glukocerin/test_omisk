@@ -68,19 +68,20 @@
   font-weight: 800;
   border: 0;
   color: var(--color-gray-0);
-  background: var(--color-blue-1);
+  background: var(--color-btn-normal-blue);
   transition: background-color 300ms;
   cursor: pointer;
   width: 13.875rem;
   margin-top: auto;
-}
-.enrollment .enrollment-content .enrollment-columns .btn:focus {
   outline: unset;
-  background: var(--color-blue-2);
 }
 .enrollment .enrollment-content .enrollment-columns .btn:hover {
+  outline: unset;
+  background: var(--color-btn-hover-blue);
+}
+.enrollment .enrollment-content .enrollment-columns .btn:active {
   border: unset;
-  background: var(--color-blue-2);
+  background: var(--color-btn-active-blue);
 }
 
 .enrollment .sub-title {

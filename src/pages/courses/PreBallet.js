@@ -149,9 +149,14 @@ export default function Courses() {
       </div>
       <div className={`${style["page-footer"]}`}>
         <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
-          Évközben is tudsz jelentkezni
+          Szeretnél csatlakozni?
         </h4>
-        <button className={style["footer-button"]}>Jelentkezem</button>
+        <div className={style["footer-buttons-wrapper"]}>
+          <button className={style["footer-button-details"]}>Érdeklődöm</button>
+          <button className={style["footer-button-sign-up"]}>
+            Jelentkezem
+          </button>
+        </div>
       </div>
     </div>
   );
