@@ -8,10 +8,12 @@
   z-index: 403;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   background: white;
   display: flex;
   flex-flow: row;
+  transition: opacity 0.25s ease-in-out,transform 0.75s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  opacity: 1;
 }
 
 .modal-header {
@@ -21,7 +23,8 @@
 }
 
 .closed {
-  display: none;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
 }
 
 .close-button {
