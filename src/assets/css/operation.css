@@ -167,7 +167,7 @@
   }
   .operation .operation-content .drop-down-list .info {
     border: 0;
-    padding-left: 2rem;
+    padding-left: 0;
   }
   .operation .operation-content .drop-down-list .info.primary {
     text-transform: lowercase;
