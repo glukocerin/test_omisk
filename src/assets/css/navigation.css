@@ -94,20 +94,22 @@
   flex-direction: column;
   padding: 1.5rem 1.875rem;
   top: 1.425rem;
-  left: -8rem;
   opacity: 0;
   background: var(--color-gray-0);
-  transform: scaleY(0);
+  transform: scaleY(0) translateX(-38%);
   transform-origin: top;
 }
-.header .links .programs .dropdown-menu {
-  left: -10rem;
-}
-.header .links label.active:hover .dropdown-menu {
+.header .links label:hover .dropdown-menu {
   display: flex;
   z-index: 10;
   opacity: 1;
-  transform: scaleY(1);
+  transform: scaleY(1) translateX(-38%);
+}
+.header .links label.programs .dropdown-menu {
+  transform: scaleY(0) translateX(-30%);
+}
+.header .links label.programs:hover .dropdown-menu {
+  transform: scaleY(1) translateX(-30%);
 }
 .header .links .dropdown-menu .row {
   display: flex;

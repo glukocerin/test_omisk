@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import style from "../assets/css/modal.module.css";
 
 const Years = function ({ videos, setVideo, selectedVideo }) {
@@ -18,7 +18,20 @@ const Years = function ({ videos, setVideo, selectedVideo }) {
 };
 
 export default function ({ isOpen, setModalOpen, videos }) {
-  const [actualVideo, setVideo] = useState(videos[0]["link"]);
+  const [actualVideo, setVideo] = useState(videos[0]["link"]),
+        escFunction = useCallback((event) => {
+          if(event.keyCode === 27) {
+            setModalOpen(false);
+          }
+        }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", escFunction, false);
+    };
+  }, []);
 
   return (
     <div>
