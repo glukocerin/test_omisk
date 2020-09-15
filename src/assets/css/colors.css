@@ -26,4 +26,10 @@
     --color-yellow-3: #CB972F;
     --color-yellow-4: #FC5819;
 
+    --color-btn-normal-blue: var(--color-blue-1);
+    --color-btn-hover-blue: #39BDFC;
+    --color-btn-active-blue: #6BCEFD;
+    --color-btn-normal-green: var(--color-green-1);
+    --color-btn-hover-green: #2EBDAE;
+    --color-btn-active-green: #63CEC2;
 }

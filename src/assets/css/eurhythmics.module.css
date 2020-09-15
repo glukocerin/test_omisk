@@ -153,6 +153,7 @@
 
 .info-box-header h3 {
   margin: 2rem 1rem;
+  cursor: pointer;
 }
 
 .info-box ul {

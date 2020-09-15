@@ -736,6 +736,7 @@
   }
   .left {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .right.active,
   .left.active,
@@ -794,7 +795,7 @@
   .right.two {
     order: 4;
     background-size: 80% auto;
-    background-position: center 1rem;
+    background-position: center 0;
     background-color: var(--color-pink-0);
     animation: unset;
     height: 30rem;
@@ -850,7 +851,6 @@
   .left.four .drop-down-list .place {
     padding: 1rem 0;
     padding-left: 3rem;
-    border-bottom: 2px solid var(--color-gray-3);
   }
   .left.four .drop-down-list .place .place-address {
     margin-bottom: 0;
@@ -960,10 +960,12 @@
   }
   .left.seven .content-block{
     margin: 0;
+    max-width: unset;
   }
   .left.five .list-item,
   .left.seven .list-item {
     color: var(--color-gray-7);
+    padding: 0;
   }
   .left.five .list-item .arrow,
   .left.seven .list-item .arrow {
