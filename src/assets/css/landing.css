@@ -79,10 +79,10 @@
 }
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .left.one .mask {
@@ -179,8 +179,12 @@
   animation-delay: 4s;
 }
 @keyframes typewriter {
-  from { width: 0px; }
-  to { width: 100%; }
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
 }
 .left.two.active .text.thin {
   color: var(--color-gray-new-1);
@@ -196,8 +200,12 @@
   background: var(--color-gray-new-1);
 }
 @keyframes sepa-grow {
-  from { width: 0px; }
-  to { width: 3.5vw; }
+  from {
+    width: 0px;
+  }
+  to {
+    width: 3.5vw;
+  }
 }
 .left.three {
   background: var(--color-green-0);
@@ -317,7 +325,7 @@
 .left.four .content-block {
   max-width: 26vw;
 }
-.left.four .content-block *{
+.left.four .content-block * {
   color: var(--color-gray-new-1);
 }
 .left.four .drop-down-list {
@@ -426,8 +434,12 @@
   transition: transform 0.3s ease-in-out;
 }
 @keyframes typing {
-  from { width: 44px; }
-  to { width: 100%; }
+  from {
+    width: 44px;
+  }
+  to {
+    width: 100%;
+  }
 }
 .left.five.active .list-item.active,
 .left.seven.active .list-item.active {
@@ -555,8 +567,12 @@
   animation: scrollup 500ms ease-in-out forwards, fadeIn ease 3s;
 }
 @keyframes fadeIn {
-  0% {opacity:0.4;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .right.three {
   background-image: url("../img/landing_bg_3.png");
@@ -574,7 +590,7 @@
   transform: scale(1.5);
 }
 .right.five.no-one {
-  background-image: url("../img/landing_sub/five-one.png");
+  background-image: url("../img/landing_sub/five-one.jpg");
 }
 .right.five.no-two {
   background-image: url("../img/landing_sub/five-two.jpg");
@@ -758,7 +774,7 @@
     padding: 1.5rem 1.75rem;
     position: relative;
   }
-  .left.one .content-block{
+  .left.one .content-block {
     margin-left: unset;
   }
   .left.one .content-block .stamp-box {
@@ -915,7 +931,7 @@
     width: 100%;
   }
   .left.five .list-item .text,
-  .left.seven .list-item .text{
+  .left.seven .list-item .text {
     font-size: 16px;
   }
   .right.five {
@@ -923,7 +939,7 @@
     background-size: 80% auto;
     background-position: center 0;
     background-color: var(--color-pink-0);
-    background-image: url("../img/courses/muveszi_torna.jpg")!important;
+    background-image: url("../img/courses/muveszi_torna.jpg") !important;
     animation: unset;
     height: 20rem;
   }
@@ -967,7 +983,7 @@
     padding: 1.75rem 4rem;
     padding-top: 2rem;
   }
-  .left.seven .content-block{
+  .left.seven .content-block {
     margin: 0;
     max-width: unset;
   }
@@ -994,7 +1010,7 @@
   .right.seven {
     order: 13;
     background-color: var(--color-green-0);
-    background-image: url("../img/landing_sub/seven-one.jpg")!important;
+    background-image: url("../img/landing_sub/seven-one.jpg") !important;
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center 0;
@@ -1063,7 +1079,7 @@
   .left.two.active .text.thin::before,
   .left.two .text.thin::before {
     position: absolute;
-    content: ' ';
+    content: " ";
     left: 0;
     top: -0.75rem;
     height: 4px;

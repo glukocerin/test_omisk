@@ -63,16 +63,20 @@ export default function ({ isOpen, setModalOpen, videos }) {
             </button>
           </div>
           <div className={`${style["modal-body"]} `}>
-            <iframe
-              title="video"
-              width="832"
-              height="468"
-              src={actualVideo}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            `
+            {isOpen ? (
+              <iframe
+                title="video"
+                width="832"
+                height="468"
+                src={actualVideo}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              ""
+            )}
+
             <div className={`${style["years"]}`}>
               <Years
                 videos={videos}
@@ -80,7 +84,6 @@ export default function ({ isOpen, setModalOpen, videos }) {
                 selectedVideo={actualVideo}
               />
             </div>
-            `
           </div>
           <div className={`${style["modal-footer"]} `}>
             <div className={`${style["modal-footer-left-wrapper"]} `}></div>
