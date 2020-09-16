@@ -183,4 +183,20 @@
   .video-wrapper {
     display: none;
   }
+
+  .images {
+    position: static;
+    height: 100% !important;
+    margin-bottom: 20vh;
+  }
+
+  .image-0 {
+    position: static;
+    width: 100%;
+  }
+
+  .image-1 {
+    position: static;
+    width: 100%;
+  }
 }
