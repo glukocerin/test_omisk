@@ -1,11 +1,21 @@
 import React, { useState, useEffect, useCallback } from "react";
 import style from "../assets/css/modal.module.css";
 
+function compare(a, b) {
+  if (a.year < b.year) {
+    return -1;
+  }
+  if (a.year > b.year) {
+    return 1;
+  }
+  return 0;
+}
+
 const Years = function ({ videos, setVideo, selectedVideo }) {
-  return videos.map((el, idx) => {
+  return videos.sort(compare).map((el, idx) => {
     return (
       <span
-        key={el.year}
+        key={el.year + "-" + idx}
         onClick={() => setVideo(el.link)}
         className={`${style["year"]} ${
           el.link === selectedVideo ? style["selected-year"] : ""
@@ -19,11 +29,11 @@ const Years = function ({ videos, setVideo, selectedVideo }) {
 
 export default function ({ isOpen, setModalOpen, videos }) {
   const [actualVideo, setVideo] = useState(videos[0]["link"]),
-        escFunction = useCallback((event) => {
-          if(event.keyCode === 27) {
-            setModalOpen(false);
-          }
-        }, []);
+    escFunction = useCallback((event) => {
+      if (event.keyCode === 27) {
+        setModalOpen(false);
+      }
+    }, []);
 
   useEffect(() => {
     document.addEventListener("keydown", escFunction, false);

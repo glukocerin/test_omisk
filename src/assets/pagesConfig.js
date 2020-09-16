@@ -234,6 +234,7 @@ const pagesConfig = {
       speechDay: {
         title: "Évzáró előadások",
         headerImg: "evzaro_eloadas",
+        videoImg: "evzaroeloadas/evzaro_eloadasok_bg",
         detailsOne:
           "A tanévet mindig színpadi előadással zárjuk a MOM Kulturális Központ és az Óbudai Kulturális Központ színháztermében. 1990  óta hagyomány, hogy az előadásokon minden tanítványunk fellép a kezdő óvodásoktól a felnőtt versenyző csoportokig.",
         detailsTwo:
@@ -264,11 +265,15 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/yYoEu4vGvm4",
           },
         ],
-        gallery: ["evzaroeloadas/1", "evzaroeloadas/2", "evzaroeloadas/3"],
+        gallery: [
+          "evzaroeloadas/evzaro_eloadasok_1",
+          "evzaroeloadas/evzaro_eloadasok_2",
+        ],
       },
       competitions: {
         title: "Versenyek",
         headerImg: "versenyek",
+        videoImg: "versenyek/bg",
         detailsOne:
           "Egyes csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
         detailsTwo:
@@ -291,35 +296,81 @@ const pagesConfig = {
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
           },
         ],
-        youtubeLink: "",
-        videoAlt: "",
-        gallery: ["versenyek/1", "versenyek/2", "versenyek/3"],
+        videos: [
+          {
+            year: 2009,
+            link: "https://www.youtube.com/embed/DTEJ5kXAPUs",
+          },
+          {
+            year: 2014,
+            link: "https://www.youtube.com/embed/W_2ZFuBCu7g",
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/TwMjiQwSvWg",
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/B76U-zmPbPQ",
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/BOMn9NIIyMQ",
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/_qWPElwMwcE",
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/JPl0fLsqAqc",
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/_qWPElwMwcE",
+          },
+        ],
+        gallery: ["versenyek/1", "versenyek/2"],
       },
       omisk: {
         title: "Omisk Gála",
         headerImg: "omisk_gala",
-        detailsOne: "2015 óta évente megrendezzük az Omisk Gálát.",
+        videoImg: "versenyek/bg",
+        detailsOne:
+          "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:
-          "Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
-        detailsThree:
           "Előadásainkat kifejezetten ajánljuk a nem versenyző csoportjaink tagjainak, mert a műsorszámok motiválóak a hétköznapi munkafolyamatokban is – az itt fellépő csoportok az órák során már egyfajta alkotóműhelyként működnek. Az Omisk Gála nagyon jó lehetőség versenyző csapatainknak, hogy színpadi rutinjukat növeljék, a kisebbek pedig remek alkalom arra, hogy elejétől a végéig meg tudjanak nézni egy előadást, hiszen az évzárókon – mivel ők maguk is szerepelnek – erre nincs lehetőségük.",
-        events: [
+        videos: [
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2020,
+            link: "https://www.youtube.com/embed/m4HyWKk4K1g",
           },
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2019,
+            link: "https://www.youtube.com/embed/Uqh4xDiO8lc",
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/xHR0W2TGKNo",
+          },
+          {
+            year: 2020,
+            link: "https://www.youtube.com/embed/cLZd9pwPlBg",
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/JPeTCtEbW5M",
+          },
+          {
+            year: 2020,
+            link: "https://www.youtube.com/embed/N919Q4f7ONY",
+          },
+          {
+            year: 2020,
+            link: "https://www.youtube.com/embed/tirz52xuTCM",
           },
         ],
-        youtubeLink: "",
-        videoAlt: "",
-        gallery: ["gala/1", "gala/2", "gala/3"],
+        gallery: ["gala/1", "gala/2"],
       },
       publicClass: {
         title: "Nyilvános órák",
