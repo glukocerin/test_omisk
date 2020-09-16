@@ -20,10 +20,40 @@ const Images = function ({ gallery }) {
   });
 };
 
+const getWidth = () => window.innerWidth 
+  || document.documentElement.clientWidth 
+  || document.body.clientWidth;
+
+function useCurrentWitdh() {
+  // save current window width in the state object
+  let [width, setWidth] = useState(getWidth());
+
+  // in this case useEffect will execute only once because
+  // it does not have any dependencies.
+  useEffect(() => {
+    const resizeListener = () => {
+      // change width from the state object
+      setWidth(getWidth())
+    };
+    // set resize listener
+    window.addEventListener('resize', resizeListener);
+
+    // clean up function
+    return () => {
+      // remove resize listener
+      window.removeEventListener('resize', resizeListener);
+    }
+  }, [])
+
+  return width;
+}
+
 export default function ProgramPage(props) {
   var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`);
 
   const [isModalOpen, setModalOpen] = useState(false);
+
+  let width = useCurrentWitdh();
 
   let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`);
   return (
@@ -101,7 +131,7 @@ export default function ProgramPage(props) {
           </div>
         </div>
       </div>
-      <div className={style["images"]}>
+      <div className={style["images"]} style={{ height: width/2 }}>
         <Images gallery={props.opt.gallery} />
       </div>
     </div>

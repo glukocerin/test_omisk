@@ -128,16 +128,24 @@
 }
 
 .images {
-  display: flex;
-  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  margin-bottom: 20vh;
 }
 
 .image-0 {
-  position: relative;
+  position: absolute;
+  width: 35vw;
+  top: 0;
+  z-index: 1;
+  left: 6vw;
 }
 
 .image-1 {
-  position: relative;
+  position: absolute;
+  width: 55vw;
+  bottom: 0;
+  right: 6vw;
 }
 
 @media screen and (max-width: 767px) {
