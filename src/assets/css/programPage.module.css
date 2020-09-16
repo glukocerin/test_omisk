@@ -137,15 +137,19 @@
   position: absolute;
   width: 35vw;
   top: 0;
+  bottom: unset!important;
   z-index: 1;
   left: 6vw;
+  transition: top 0.3s linear;
 }
 
 .image-1 {
   position: absolute;
   width: 55vw;
   bottom: 0;
+  top: unset!important;
   right: 6vw;
+  transition: bottom 0.3s linear;
 }
 
 @media screen and (max-width: 767px) {
