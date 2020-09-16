@@ -13,9 +13,11 @@ const Images = function ({ gallery }) {
     return require(`../assets/img/programs/${img}.jpg`);
   });
 
+  let top = useCurrentScrollTop();
+
   return images.map((img, index) => {
     return (
-      <img className={style[`image-${index}`]} key={index} src={img} alt="" />
+      <img className={style[`image-${index}`]} style={{ top: top / 10, bottom: top / 10 }} key={index} src={img} alt="" />
     );
   });
 };
@@ -47,6 +49,32 @@ function useCurrentWitdh() {
   }, []);
 
   return width;
+}
+
+const getScrollTop = () => document.getElementById("root").scrollTop;
+
+function useCurrentScrollTop() {
+  // save current window width in the state object
+  let [top, setTop] = useState(getScrollTop());
+
+  // in this case useEffect will execute only once because
+  // it does not have any dependencies.
+  useEffect(() => {
+    const scrollListener = () => {
+      // change width from the state object
+      setTop(document.querySelector(".App").scrollTop || getScrollTop());
+    };
+    // set resize listener
+    window.addEventListener("wheel", scrollListener);
+
+    // clean up function
+    return () => {
+      // remove resize listener
+      window.removeEventListener("wheel", scrollListener);
+    };
+  }, []);
+
+  return top;
 }
 
 export default function ProgramPage(props) {
@@ -133,7 +161,7 @@ export default function ProgramPage(props) {
         </div>
       </div>
       <div className={style["images"]} style={{ height: width / 2 }}>
-        <Images gallery={props.opt.gallery} />
+        <Images gallery={props.opt.gallery}/>
       </div>
     </div>
   );
