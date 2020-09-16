@@ -40,7 +40,7 @@ const sendMail = function(mail) {
           })
         };
 
-  fetch('http://omisk.hu/test.php', requestOptions);
+  fetch('/sendmail.php', requestOptions);
 }
 
 

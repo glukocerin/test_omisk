@@ -70,10 +70,18 @@
 }
 
 .details-text {
-  padding: 5.5rem 10.25rem;
+  padding: 0.5rem 10.25rem;
   margin: 0 auto;
   width: 58rem;
   background-color: #fff;
+}
+
+.padding-top {
+  padding-top: 5.5rem;
+}
+
+.padding-bottom {
+  padding-bottom: 5.5rem;
 }
 
 .first-paragraph::first-letter {
@@ -119,6 +127,27 @@
   background-position: center;
 }
 
+.images {
+  height: 100%;
+  position: relative;
+  margin-bottom: 20vh;
+}
+
+.image-0 {
+  position: absolute;
+  width: 35vw;
+  top: 0;
+  z-index: 1;
+  left: 6vw;
+}
+
+.image-1 {
+  position: absolute;
+  width: 55vw;
+  bottom: 0;
+  right: 6vw;
+}
+
 @media screen and (max-width: 767px) {
   .header-wrapper {
     padding: unset;
@@ -153,5 +182,21 @@
 
   .video-wrapper {
     display: none;
+  }
+
+  .images {
+    position: static;
+    height: 100% !important;
+    margin-bottom: 20vh;
+  }
+
+  .image-0 {
+    position: static;
+    width: 100%;
+  }
+
+  .image-1 {
+    position: static;
+    width: 100%;
   }
 }

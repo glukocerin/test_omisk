@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-color: #14c1ae;
+  background-color: var(--color-green-0);
   background-image: url("../img/teachers/header.svg");
 }
 

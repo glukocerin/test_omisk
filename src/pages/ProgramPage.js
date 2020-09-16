@@ -8,22 +8,55 @@ import Modal from "../components/Modal";
 
 const { actuals, ...rest } = pagesConfig;
 
-const ImageGallery = function (props) {
-  const images = props.list.map((img, inde) => {
+const Images = function ({ gallery }) {
+  const images = gallery.map((img, index) => {
     return require(`../assets/img/programs/${img}.jpg`);
   });
 
   return images.map((img, index) => {
-    return <img key={index} src={img} alt="" />;
+    return (
+      <img className={style[`image-${index}`]} key={index} src={img} alt="" />
+    );
   });
 };
+
+const getWidth = () =>
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+
+function useCurrentWitdh() {
+  // save current window width in the state object
+  let [width, setWidth] = useState(getWidth());
+
+  // in this case useEffect will execute only once because
+  // it does not have any dependencies.
+  useEffect(() => {
+    const resizeListener = () => {
+      // change width from the state object
+      setWidth(getWidth());
+    };
+    // set resize listener
+    window.addEventListener("resize", resizeListener);
+
+    // clean up function
+    return () => {
+      // remove resize listener
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, []);
+
+  return width;
+}
 
 export default function ProgramPage(props) {
   var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`);
 
   const [isModalOpen, setModalOpen] = useState(false);
 
-  let bg = require(`../assets/img/programs/evzaroeloadas/evzaro_eloadasok_bg.jpg`);
+  let width = useCurrentWitdh();
+
+  let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`);
   return (
     <div style={{ position: "relative" }}>
       <Modal
@@ -47,7 +80,7 @@ export default function ProgramPage(props) {
         <div className={style["info"]}>
           <div className={style["details"]}>
             <p
-              className={`${style["details-text"]} ${style["first-paragraph"]} size-20`}
+              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
             >
               {props.opt.detailsOne}
             </p>
@@ -69,19 +102,39 @@ export default function ProgramPage(props) {
                 alt="super meaningfull text"
               />
             </div>
-            <p className={`${style["details-text"]} size-20`}>
+            <p
+              className={`${style["details-text"]} ${style["padding-top"]} ${
+                !!props.opt.detailsThree ? "" : style["padding-bottom"]
+              } size-20`}
+            >
               {props.opt.detailsTwo}
             </p>
-            <p className={`${style["details-text"]} size-20`}>
-              {props.opt.detailsThree || ""}
-            </p>
-            <p className={`${style["details-text"]} size-20`}>
-              {props.opt.detailsFour || ""}
-            </p>
+            {props.opt.detailsThree ? (
+              <p
+                className={`${style["details-text"]} ${
+                  !!props.opt.detailsFour ? "" : style["padding-bottom"]
+                } size-20`}
+              >
+                {props.opt.detailsThree || ""}
+              </p>
+            ) : (
+              ""
+            )}
+            {props.opt.detailsFour ? (
+              <p
+                className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
+              >
+                {props.opt.detailsFour || ""}
+              </p>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
-      <div className={style["images"]}></div>
+      <div className={style["images"]} style={{ height: width / 2 }}>
+        <Images gallery={props.opt.gallery} />
+      </div>
     </div>
   );
 }
