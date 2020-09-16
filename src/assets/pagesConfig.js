@@ -374,6 +374,7 @@ const pagesConfig = {
       },
       publicClass: {
         title: "Nyilvános órák",
+        videoImg: "nyilvanosora/bg",
         headerImg: "nyilvanos_ora",
         detailsOne:
           "A tanév folyamán 1 alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
@@ -381,70 +382,53 @@ const pagesConfig = {
           "Az első félév mindig az alapozással telik, az órák nagyobb részében, olykor teljes időtartamban tréningezünk növendékeinkkel. Ennek a folyamatnak a vége a legmegfelelőbb időpont arra, hogy óvodás és iskolás csoportjaink bemutassák az addig tanultakat.",
         detailsThree:
           "A második félévben már egyre nagyobb hangsúlyt kap a koreográfiák tanulása, amelyeket az évzáró előadásokon mutatnak be a csoportjaink.",
-        events: [
+        videos: [
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-          },
-          {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2017,
+            link: "https://www.youtube.com/embed/4SPgJV2Pc7c",
           },
         ],
-        youtubeLink: "https://www.youtube.com/embed/4SPgJV2Pc7c",
-        videoAlt: "Bemutató óra | OMISK | 2018",
-        gallery: ["nyilvanosora/1", "nyilvanosora/2", "nyilvanosora/3"],
+        gallery: ["nyilvanosora/1", "nyilvanosora/2"],
       },
       callisthenics: {
         title: "Mozdulatműhely",
         headerImg: "mozdulatmuhely",
+        videoImg: "mozdulatmuhely/bg",
         detailsOne:
-          "Az Omisk Mozdulatműhely az iskola felnőtt növendékeiből alakult együttes, amelynek tagjai számára a tánc több mint hobbi – bár hivatásukat az élet különböző területein képzelik el. Van köztük gyógytornász és építész hallgató, moderntánc-pedagógus, tanítónő, rekreációs szakember, bölcsész és van, aki még csak gimnazista. De egy közös pont biztosan van bennük: a tánc szeretete. Pers Júlia készítette az OMISK Mozdulatműhely első egész estés színpadi produkcióját, MIKÉP – Miro képei táncban elbeszélve (2016). A darabban Miro játékos, absztrakt képei elevenednek meg a 20. század elején párhuzamosan fejlődő avantgárd képzőművészet és mozdulatművészet találkozásával. A jelmezeket Dávid Luca tervei alapján Joób Adrienne készítette. A produkciót a Nemzeti Kulturális Alap támogatta. Tánc és zene kapcsolatával foglalkozik a Mozdulatra hangolva (2018) című előadásunk. A hang testet ölt a táncban, a test zenét komponál a mozdulatok sorával. A darab az OMISK Mozdulatműhely és a Koizé Énekegyüttes közös produkciója. A koreográfiát Rácz-Lakatos Lilla készítette.",
-        events: [
+          "Az Omisk Mozdulatműhely az iskola felnőtt növendékeiből alakult együttes, amelynek tagjai számára a tánc több mint hobbi – bár hivatásukat az élet különböző területein képzelik el. Van köztük gyógytornász és építész hallgató, moderntánc-pedagógus, tanítónő, rekreációs szakember, bölcsész és van, aki még csak gimnazista. De egy közös pont biztosan van bennük: a tánc szeretete.",
+        detailsTwo:
+          "Pers Júlia készítette az OMISK Mozdulatműhely első egész estés színpadi produkcióját, MIKÉP – Miro képei táncban elbeszélve (2016). A darabban Miro játékos, absztrakt képei elevenednek meg a 20. század elején párhuzamosan fejlődő avantgárd képzőművészet és mozdulatművészet találkozásával. A jelmezeket Dávid Luca tervei alapján Joób Adrienne készítette. A produkciót a Nemzeti Kulturális Alap támogatta. Tánc és zene kapcsolatával foglalkozik a Mozdulatra hangolva (2018) című előadásunk. A hang testet ölt a táncban, a test zenét komponál a mozdulatok sorával. A darab az OMISK Mozdulatműhely és a Koizé Énekegyüttes közös produkciója. A koreográfiát Rácz-Lakatos Lilla készítette.",
+        videos: [
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-          },
-          {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2016,
+            link: "https://www.youtube.com/embed/rKBmBZxAej4",
           },
         ],
-        youtubeLink: "https://www.youtube.com/embed/rKBmBZxAej4",
-        videoAlt:
-          "Mikép - Miró képei táncban elbeszélve | OMISK Mouzdulatműhely | 2016",
-        gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2", "mozdulatmuhely/3"],
+        gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2"],
       },
       camp: {
         title: "Nyári táborok",
         headerImg: "nyari_tabor",
+        videoImg: "taborok/bg",
         detailsOne:
-          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  tovább fejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt. A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
-        events: [
+          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  tovább fejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt.",
+        detailsTwo:
+          "A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
+        videos: [
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2016,
+            link: "https://www.youtube.com/embed/q2eUUTYWTI4",
           },
           {
-            date: "2020. 12. 03.",
-            title: "Évzáró előadás",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            year: 2016,
+            link: "https://www.youtube.com/embed/P6pkAmEuqQo",
+          },
+          {
+            year: 2016,
+            link: "https://www.youtube.com/embed/Qo_hQJgNgXk",
           },
         ],
-        youtubeLink: "https://www.youtube.com/embed/q2eUUTYWTI4",
-        videoAlt: "Szabad Tánc | OMISK Tábor | 2018",
-        gallery: ["taborok/1", "taborok/2", "taborok/3"],
+        gallery: ["taborok/1", "taborok/2"],
       },
     },
   },
