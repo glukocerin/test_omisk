@@ -71,6 +71,11 @@
   flex-direction: column;
 }
 
+.video {
+  width: 66.667vw;
+  height: 37.500vw;
+}
+
 .years {
   margin-top: 4rem;
 }

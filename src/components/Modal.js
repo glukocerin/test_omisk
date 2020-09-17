@@ -65,6 +65,7 @@ export default function ({ isOpen, setModalOpen, videos }) {
           <div className={`${style["modal-body"]} `}>
             {isOpen ? (
               <iframe
+                className={`${style["video"]} `}
                 title="video"
                 width="832"
                 height="468"
