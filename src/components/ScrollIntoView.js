@@ -5,8 +5,10 @@ class ScrollIntoView extends PureComponent {
   componentDidMount = () => window.scrollTo(0, 0);
 
   componentDidUpdate = prevProps => {
+    document.querySelector('.App').classList.remove('loading');
     if (this.props.location !== prevProps.location) {
         document.querySelector('.App').scrollTop = 0;
+        document.querySelector('.App').classList.add('loading');
     }
   };
 
