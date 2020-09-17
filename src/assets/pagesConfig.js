@@ -23,7 +23,7 @@ const pagesConfig = {
           link: "eurhythmics",
         },
         {
-          text: "Mozdualtművészet",
+          text: "Mozdulatművészet",
           link: "callisthenics",
         },
         {
@@ -77,7 +77,7 @@ const pagesConfig = {
   courses: {
     cards: [
       {
-        title: "Művészeti torna",
+        title: "Művészi torna",
         image: "muveszi_torna",
         bg_mobile: "yellow",
         age: "",
