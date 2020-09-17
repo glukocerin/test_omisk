@@ -53,40 +53,30 @@ export default function ({ isOpen, setModalOpen, videos }) {
         className={`${style["modal"]} ${isOpen ? "" : style["closed"]}`}
         id="modal"
       >
-        <div className={`${style["modal-guts"]} `}>
-          <div className={`${style["modal-header"]} `}>
-            <button
-              className={`${style["close-button"]}`}
-              onClick={() => setModalOpen(false)}
-            >
-              &#215;
-            </button>
-          </div>
-          <div className={`${style["modal-body"]} `}>
-            {isOpen ? (
-              <iframe
-                title="video"
-                width="832"
-                height="468"
-                src={actualVideo}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            ) : (
-              ""
-            )}
-
-            <div className={`${style["years"]}`}>
-              <Years
-                videos={videos}
-                setVideo={setVideo}
-                selectedVideo={actualVideo}
-              />
-            </div>
-          </div>
-          <div className={`${style["modal-footer"]} `}>
-            <div className={`${style["modal-footer-left-wrapper"]} `}></div>
+        <div className={`${style["modal-header"]} `}>
+          <button
+            className={`${style["close-button"]}`}
+            onClick={() => setModalOpen(false)}
+          >
+            &#215;
+          </button>
+        </div>
+        <div className={`${style["modal-body"]} `}>
+          {isOpen && <iframe
+            className={`${style["video"]} `}
+            title="video"
+            src={actualVideo}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            ></iframe>
+          }
+          <div className={`${style["years"]}`}>
+            <Years
+              videos={videos}
+              setVideo={setVideo}
+              selectedVideo={actualVideo}
+            />
           </div>
         </div>
       </div>

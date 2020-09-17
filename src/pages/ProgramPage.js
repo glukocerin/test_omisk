@@ -14,7 +14,10 @@ const Images = function ({ gallery }) {
   });
 
   let top = useCurrentScrollTop(),
-      topToApply = top > 1400 ? (top -1400) / 4 : 0;
+      imageWrapper = document.querySelector('[class*="images"]'),
+      imageWrapperTop = imageWrapper ? imageWrapper.offsetTop : 0,
+      imageWrapperHeight = imageWrapper ? imageWrapper.offsetHeight : 0,
+      topToApply = top > (imageWrapperTop - imageWrapperHeight + imageWrapperHeight / 3) ? (top - imageWrapperHeight - imageWrapperHeight / 3)/5 : 0;
 
   return images.map((img, index) => {
     return (
