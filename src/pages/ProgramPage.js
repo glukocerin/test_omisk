@@ -13,11 +13,12 @@ const Images = function ({ gallery }) {
     return require(`../assets/img/programs/${img}.jpg`);
   });
 
-  let top = useCurrentScrollTop();
+  let top = useCurrentScrollTop(),
+      topToApply = top > 1400 ? (top -1400) / 4 : 0;
 
   return images.map((img, index) => {
     return (
-      <img className={style[`image-${index}`]} style={{ top: top / 10, bottom: top / 10 }} key={index} src={img} alt="" />
+      <img className={style[`image-${index}`]} style={{ top: topToApply, bottom: topToApply }} key={index} src={img} alt="" />
     );
   });
 };
