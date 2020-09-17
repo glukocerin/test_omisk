@@ -344,16 +344,7 @@ export default function Landing({ dotChange }) {
                     <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch} setZoom={setZoom} />
                 </div>
             </div>
-            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}>
-                <div className="image-switch">
-                    <div onClick={() => setActiveFiveSwitch('no-one')} className={`switch ${ activeFiveSwitch === 'no-one' && "active" }`}></div>
-                    <div onClick={() => setActiveFiveSwitch('no-two')} className={`switch ${ activeFiveSwitch === 'no-two' && "active" }`}></div>
-                    <div onClick={() => setActiveFiveSwitch('no-three')} className={`switch ${ activeFiveSwitch === 'no-three' && "active" }`}></div>
-                    <div onClick={() => setActiveFiveSwitch('no-four')} className={`switch ${ activeFiveSwitch === 'no-four' && "active" }`}></div>
-                    <div onClick={() => setActiveFiveSwitch('no-five')} className={`switch ${ activeFiveSwitch === 'no-five' && "active" }`}></div>
-                    <div onClick={() => setActiveFiveSwitch('no-fix')} className={`switch ${ activeFiveSwitch === 'no-fix' && "active" }`}></div>
-                </div>
-            </div>
+            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}></div>
             <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={() => activeCard === 5 ? setActiveCard(0):setActiveCard(5)}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
@@ -386,16 +377,7 @@ export default function Landing({ dotChange }) {
                     <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} setZoom={setZoom} />
                 </div>
             </div>
-            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}>
-                <div className="image-switch">
-                    <div onClick={() => setActiveSevenSwitch('no-one')} className={`switch ${ activeSevenSwitch === 'no-one' && "active" }`}></div>
-                    <div onClick={() => setActiveSevenSwitch('no-two')} className={`switch ${ activeSevenSwitch === 'no-two' && "active" }`}></div>
-                    <div onClick={() => setActiveSevenSwitch('no-three')} className={`switch ${ activeSevenSwitch === 'no-three' && "active" }`}></div>
-                    <div onClick={() => setActiveSevenSwitch('no-four')} className={`switch ${ activeSevenSwitch === 'no-four' && "active" }`}></div>
-                    <div onClick={() => setActiveSevenSwitch('no-five')} className={`switch ${ activeSevenSwitch === 'no-five' && "active" }`}></div>
-                    <div onClick={() => setActiveSevenSwitch('no-fix')} className={`switch ${ activeSevenSwitch === 'no-fix' && "active" }`}></div>
-                </div>
-            </div>
+            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}></div>
             <div className={`mobile-card seven ${activeCard === 7 && 'toggled'}`} onClick={() => activeCard === 7 ? setActiveCard(0):setActiveCard(7)}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
