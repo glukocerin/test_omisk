@@ -667,29 +667,6 @@
 .right:not(.active) {
   animation: scrolloutdown 500ms ease-in-out;
 }
-.right .image-switch {
-  display: none;
-}
-.right.active .image-switch {
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  bottom: 3.375rem;
-  left: 50%;
-  width: 50%;
-}
-.right.active .image-switch .switch {
-  border-top: 3px solid var(--color-gray-0);
-  width: 4.75rem;
-  padding: 0.5rem 0;
-  cursor: pointer;
-}
-.right.active .image-switch .switch.active {
-  border-top: 7px solid var(--color-gray-0);
-}
-.right.active .image-switch .switch + .switch {
-  margin-left: 0.5rem;
-}
 
 .social-media-bar {
   position: fixed;
@@ -1261,8 +1238,7 @@
   .right.four,
   .right.six .content-block,
   .right.eight,
-  .social-media-bar,
-  .right.active .image-switch {
+  .social-media-bar {
     display: none;
   }
 }
