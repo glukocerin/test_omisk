@@ -19,8 +19,6 @@ const Images = function ({ gallery }) {
       imageWrapperHeight = imageWrapper ? imageWrapper.offsetHeight : 0,
       topToApply = top > (imageWrapperTop - imageWrapperHeight + imageWrapperHeight / 3) ? (top - imageWrapperHeight - imageWrapperHeight / 3)/5 : 0;
 
-      console.log(top , imageWrapperTop , imageWrapperHeight)
-
   return images.map((img, index) => {
     return (
       <img className={style[`image-${index}`]} style={{ top: topToApply, bottom: topToApply }} key={index} src={img} alt="" />
