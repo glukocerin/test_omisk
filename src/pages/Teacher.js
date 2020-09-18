@@ -37,7 +37,7 @@ export default function Teacher() {
           />
         </div>
         <div className="column-right">
-          <label className="text size-24 bold">Végzettség:</label>
+          <label className="text size-24 bold">Végzettségek:</label>
           <ul className="list">
             <ListItems list={teacher.education} />
           </ul>
