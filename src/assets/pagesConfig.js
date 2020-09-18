@@ -242,27 +242,27 @@ const pagesConfig = {
         videos: [
           {
             year: 2014,
-            link: "https://www.youtube.com/embed/EpXIMRe-Pa8",
+            link: "https://www.youtube.com/embed/EpXIMRe-Pa8?autoplay=1",
           },
           {
             year: 2015,
-            link: "https://www.youtube.com/embed/4mJMxl06y2A",
+            link: "https://www.youtube.com/embed/4mJMxl06y2A?autoplay=1",
           },
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/6e-0eF4Ngs",
+            link: "https://www.youtube.com/embed/6e-0eF4Ngs?autoplay=1",
           },
           {
             year: 2017,
-            link: "https://www.youtube.com/embed/WriWLXRNMg8",
+            link: "https://www.youtube.com/embed/WriWLXRNMg8?autoplay=1",
           },
           {
             year: 2018,
-            link: "https://www.youtube.com/embed/o6rBmIiLpyM",
+            link: "https://www.youtube.com/embed/o6rBmIiLpyM?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/yYoEu4vGvm4",
+            link: "https://www.youtube.com/embed/yYoEu4vGvm4?autoplay=1",
           },
         ],
         gallery: [
@@ -299,35 +299,35 @@ const pagesConfig = {
         videos: [
           {
             year: 2009,
-            link: "https://www.youtube.com/embed/DTEJ5kXAPUs",
+            link: "https://www.youtube.com/embed/DTEJ5kXAPUs?autoplay=1",
           },
           {
             year: 2014,
-            link: "https://www.youtube.com/embed/W_2ZFuBCu7g",
+            link: "https://www.youtube.com/embed/W_2ZFuBCu7g?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/TwMjiQwSvWg",
+            link: "https://www.youtube.com/embed/TwMjiQwSvWg?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/B76U-zmPbPQ",
+            link: "https://www.youtube.com/embed/B76U-zmPbPQ?autoplay=1",
           },
           {
             year: 2013,
-            link: "https://www.youtube.com/embed/BOMn9NIIyMQ",
+            link: "https://www.youtube.com/embed/BOMn9NIIyMQ?autoplay=1",
           },
           {
             year: 2013,
-            link: "https://www.youtube.com/embed/_qWPElwMwcE",
+            link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
           },
           {
             year: 2013,
-            link: "https://www.youtube.com/embed/JPl0fLsqAqc",
+            link: "https://www.youtube.com/embed/JPl0fLsqAqc?autoplay=1",
           },
           {
             year: 2013,
-            link: "https://www.youtube.com/embed/_qWPElwMwcE",
+            link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
           },
         ],
         gallery: ["versenyek/1", "versenyek/2"],
@@ -343,31 +343,31 @@ const pagesConfig = {
         videos: [
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/m4HyWKk4K1g",
+            link: "https://www.youtube.com/embed/m4HyWKk4K1g?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/Uqh4xDiO8lc",
+            link: "https://www.youtube.com/embed/Uqh4xDiO8lc?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/xHR0W2TGKNo",
+            link: "https://www.youtube.com/embed/xHR0W2TGKNo?autoplay=1",
           },
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/cLZd9pwPlBg",
+            link: "https://www.youtube.com/embed/cLZd9pwPlBg?autoplay=1",
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/JPeTCtEbW5M",
+            link: "https://www.youtube.com/embed/JPeTCtEbW5M?autoplay=1",
           },
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/N919Q4f7ONY",
+            link: "https://www.youtube.com/embed/N919Q4f7ONY?autoplay=1",
           },
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/tirz52xuTCM",
+            link: "https://www.youtube.com/embed/tirz52xuTCM?autoplay=1",
           },
         ],
         gallery: ["gala/1", "gala/2"],
@@ -385,7 +385,7 @@ const pagesConfig = {
         videos: [
           {
             year: 2017,
-            link: "https://www.youtube.com/embed/4SPgJV2Pc7c",
+            link: "https://www.youtube.com/embed/4SPgJV2Pc7c?autoplay=1",
           },
         ],
         gallery: ["nyilvanosora/1", "nyilvanosora/2"],
@@ -401,7 +401,7 @@ const pagesConfig = {
         videos: [
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/rKBmBZxAej4",
+            link: "https://www.youtube.com/embed/rKBmBZxAej4?autoplay=1",
           },
         ],
         gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2"],
@@ -417,15 +417,15 @@ const pagesConfig = {
         videos: [
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/q2eUUTYWTI4",
+            link: "https://www.youtube.com/embed/q2eUUTYWTI4?autoplay=1",
           },
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/P6pkAmEuqQo",
+            link: "https://www.youtube.com/embed/P6pkAmEuqQo?autoplay=1",
           },
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/Qo_hQJgNgXk",
+            link: "https://www.youtube.com/embed/Qo_hQJgNgXk?autoplay=1",
           },
         ],
         gallery: ["taborok/1", "taborok/2"],
