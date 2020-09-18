@@ -544,7 +544,7 @@ const pagesConfig = {
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
         ],
         achievements: [],
-        courses: ["művészi torna, mozdulatművészet"],
+        courses: ["modern tánc, művészi torna, mozdulatművészet"],
         hasActionPicture: true,
       },
       {
