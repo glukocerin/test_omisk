@@ -85,7 +85,7 @@ export default function Navigation(props) {
           </div>
         </label>
         <Link className={`${ location.includes("teacher") && "active" }`} to="/teachers">Tanáraink</Link>
-        <Link className={`${ location.includes("actual") && "active" }`} to="/actuals">Aktuális</Link>
+        <Link className={`${ location.includes("actual") && "active" }`} to="/actuals">Blog</Link>
         <Link className={`${ location === "/operation" && "active" }`} to="/operation">Működésünk</Link>
         <Link className={`${ location === "/enrollment" && "active" }`} to="/enrollment">Beiratkozás</Link>
         <Link className={`${ location === "/contact" && "active" }`} to="/contact">Kapcsolat</Link>

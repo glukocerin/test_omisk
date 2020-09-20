@@ -35,7 +35,7 @@ export default function Actuals() {
   return (
     <div className="actuals">
       <div className="actuals-header"></div>
-      <label className="title size-90 extra-bold">Aktuális</label>
+      <label className="title size-90 extra-bold">Blog</label>
       <div className="actual-cards">
         <ActualsCards />
       </div>

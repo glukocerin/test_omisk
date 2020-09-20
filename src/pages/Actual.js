@@ -10,7 +10,7 @@ export default function Actual() {
     <div className="actual">
       <div className="actual-header"></div>
       <label className="state-location size-13">
-        <Link to="/actuals">Vissza az aktuálisra</Link>
+        <Link to="/actuals">Vissza a blogra</Link>
       </label>
       <label className="title size-90 extra-bold">{ actual.title }</label>
       <div className="actual-box">

@@ -27,7 +27,7 @@ export default function HamburgerMenu() {
         <Link className={`link size-36 extra-bold ${ location.includes("course") && "active" }`} onClick={() => toggle(!toggled)} to="/courses">Kurzusaink</Link>
         <Link className={`link size-36 extra-bold ${ location.includes("program") && "active" }`} onClick={() => toggle(!toggled)} to="/programs">Programjaink</Link>
         <Link className={`link size-36 extra-bold ${ location.includes("teacher") && "active" }`} onClick={() => toggle(!toggled)} to="/teachers">Tanáraink</Link>
-        <Link className={`link size-36 extra-bold ${ location.includes("actual") && "active" }`} onClick={() => toggle(!toggled)} to="/actuals">Aktuális</Link>
+        <Link className={`link size-36 extra-bold ${ location.includes("actual") && "active" }`} onClick={() => toggle(!toggled)} to="/actuals">Blog</Link>
         <Link className={`link size-36 extra-bold ${ location === "/operation" && "active" }`} onClick={() => toggle(!toggled)} to="/operation">Működésünk</Link>
         <Link className={`link size-36 extra-bold ${ location === "/enrollment" && "active" }`} onClick={() => toggle(!toggled)} to="/enrollment">Beiratkozás</Link>
         <Link className={`link size-36 extra-bold ${ location === "/contact" && "active" }`} onClick={() => toggle(!toggled)} to="/contact">Kapcsolat</Link>
