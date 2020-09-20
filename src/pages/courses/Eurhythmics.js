@@ -12,6 +12,16 @@ function Paragraph({ opt }) {
   ));
 }
 
+function ForWhomList({ opt }) {
+  return opt.map((el, index) => (
+    <li key={index}>
+      <p className="size-20 thin" key={`${el}-${index}`}>
+        {el}
+      </p>
+    </li>
+  ));
+}
+
 function Places({ opt }) {
   return opt.map((el, index) => {
     return (
@@ -111,11 +121,13 @@ export default function Courses({ pageConfig }) {
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
             <h4 className="size-36 extra-bold">{pageConfig.forWhom.title}</h4>
-            <p className="size-20 thin">{pageConfig.forWhom.description}</p>
+            <ul>
+              <ForWhomList opt={pageConfig.forWhom.description} />
+            </ul>
           </div>
           <img
             className={`${style["pic"]}`}
-            src={require(`../../assets/img/${pageConfig.forWhom.img}`)}
+            src={require(`../../assets/img/courses/${pageConfig.forWhom.img}`)}
             alt=""
           />
         </div>
@@ -128,7 +140,7 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/${pageConfig.aboutCourse.img}`)}
+              src={require(`../../assets/img/courses/${pageConfig.aboutCourse.img}`)}
               alt=""
             />
           </div>
@@ -140,7 +152,7 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/${pageConfig.whenStart.img}`)}
+              src={require(`../../assets/img/courses/${pageConfig.whenStart.img}`)}
               alt=""
             />
           </div>
@@ -152,7 +164,7 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/${pageConfig.structure.img}`)}
+              src={require(`../../assets/img/courses/${pageConfig.structure.img}`)}
               alt=""
             />
           </div>

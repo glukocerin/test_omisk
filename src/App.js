@@ -108,13 +108,13 @@ function App() {
         </Route>
         <Route path="/courses/callisthenics">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Callisthenics />
+          <Eurhythmics pageConfig={courses.pages.callisthenics} />
           <Footer />
           <FooterMobile />
         </Route>
         <Route path="/courses/pre_ballet">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <PreBallet />
+          <Eurhythmics pageConfig={courses.pages.preBallet} />
           <Footer />
           <FooterMobile />
         </Route>
@@ -126,13 +126,13 @@ function App() {
         </Route>
         <Route path="/courses/jazz">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Jazz />
+          <Eurhythmics pageConfig={courses.pages.jazz} />
           <Footer />
           <FooterMobile />
         </Route>
         <Route path="/courses/modern">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Modern />
+          <Eurhythmics pageConfig={courses.pages.modern} />
           <Footer />
           <FooterMobile />
         </Route>
