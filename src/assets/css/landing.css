@@ -755,6 +755,9 @@
   .left.one .content-block {
     margin-left: unset;
   }
+  .left.one .sub-title {
+    margin-top: 1rem;
+  }
   .left.one .content-block .stamp-box {
     width: 7rem;
     height: 7rem;
@@ -778,6 +781,8 @@
     order: 1;
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
+    background-position: center;
+    height: 50vh;
   }
   .mobile-card.one {
     order: 3;
@@ -1032,15 +1037,6 @@
     max-width: 20rem;
     margin: auto;
   }
-  .left.one .double-arrow-down {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-  }
-  .left.one .double-arrow-down + .thin {
-    color: var(--color-gray-new-1);
-    margin-bottom: 1.5rem;
-  }
   .left.two .text-box {
     margin: 2rem 3rem;
     display: flex;
@@ -1151,7 +1147,7 @@
   .mobile-card {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
   }
   .mobile-card .plus-sign,
@@ -1225,7 +1221,8 @@
   }
 
   /* DON NOT DISPLAYS */
-  .left.one .content-block .sub-title,
+  .left.one .double-arrow-down,
+  .left.one .size-12.thin,
   .left.two.active .separator,
   .left.three .title,
   .left.three .article:nth-child(3),
