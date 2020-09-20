@@ -286,6 +286,7 @@
   font-size: 0.781vw;
   font-weight: 800;
   transition: border-color 300ms, background-color 300ms, color 300ms;
+  cursor: pointer;
 }
 .left.three .button-box .btn:focus {
   outline: unset;
@@ -415,7 +416,7 @@
 .left.five .list-item,
 .left.seven .list-item {
   color: var(--color-gray-0);
-  padding: 0.5rem 0;
+  padding: 0.417vw 0;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -427,7 +428,7 @@
 }
 .left.five.active .list-item,
 .left.seven.active .list-item {
-  width: 44px;
+  width: 2.292vw;
   animation: typing 2s steps(100, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -435,7 +436,7 @@
 }
 @keyframes typing {
   from {
-    width: 44px;
+    width: 2.292vw;
   }
   to {
     width: 100%;
@@ -444,27 +445,27 @@
 .left.five.active .list-item.active,
 .left.seven.active .list-item.active {
   transition-delay: 2.3s;
-  transform: translateX(2.5rem);
+  transform: translateX(2.083vw);
 }
 .left.five.active .list-item:hover,
 .left.seven.active .list-item:hover,
 .left.five.active .list-item.active:hover,
 .left.seven.active .list-item.active:hover {
   transition-delay: 0s;
-  transform: translateX(2.5rem);
+  transform: translateX(2.083vw);
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
-  margin-right: 1rem;
+  margin-right: 0.833vw;
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
-  min-width: 1.75rem;
-  max-width: 1.75rem;
+  min-width: 1.458vw;
+  max-width: 1.458vw;
 }
 .left.five.active .list-item .arrow,
 .left.seven.active .list-item .arrow {
-  margin-right: 1rem;
+  margin-right: 0.833vw;
   animation: grow linear 1s;
 }
 @keyframes grow {
@@ -690,6 +691,7 @@
 }
 
 .mobile-card,
+.mobile-floating,
 .mobile-footer {
   display: none;
 }
@@ -754,6 +756,9 @@
   .left.one .content-block {
     margin-left: unset;
   }
+  .left.one .sub-title {
+    margin-top: 1rem;
+  }
   .left.one .content-block .stamp-box {
     width: 7rem;
     height: 7rem;
@@ -777,6 +782,8 @@
     order: 1;
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
+    background-position: center;
+    height: 50vh;
   }
   .mobile-card.one {
     order: 3;
@@ -1031,15 +1038,6 @@
     max-width: 20rem;
     margin: auto;
   }
-  .left.one .double-arrow-down {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-  }
-  .left.one .double-arrow-down + .thin {
-    color: var(--color-gray-new-1);
-    margin-bottom: 1.5rem;
-  }
   .left.two .text-box {
     margin: 2rem 3rem;
     display: flex;
@@ -1113,6 +1111,7 @@
     font-family: "Gilroy";
     fill: var(--color-gray-7);
     stroke: var(--color-gray-7);
+    stroke-width: 1px;
   }
   .mobile-footer .content-block .article {
     margin-bottom: 1.25rem;
@@ -1137,10 +1136,12 @@
   }
   .mobile-footer .content-block .sm-icons .icon .cls-1 {
     fill: var(--color-gray-7);
+    stroke-width: 0.3px;
   }
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
+    stroke-width: 0.3px;
   }
 
   .landing .size-28 {
@@ -1150,28 +1151,28 @@
   .mobile-card {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
   }
   .mobile-card .plus-sign,
   .mobile-card .minus-sign {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
   }
   .mobile-card .plus-sign .cls-1,
   .mobile-card .plus-sign .cls-1,
   .mobile-card .minus-sign .cls-2,
   .mobile-card .minus-sign .cls-2 {
     stroke: var(--color-gray-7);
-    stroke-width: 0.125rem;
+    stroke-width: 1px;
   }
   .mobile-card.inverse .plus-sign .cls-1,
   .mobile-card.inverse .plus-sign .cls-1,
   .mobile-card.inverse .minus-sign #Path_5569,
   .mobile-card.inverse .minus-sign #Path_5569 {
     stroke: var(--color-gray-0);
-    stroke-width: 0.125rem;
+    stroke-width: 1px;
   }
   .mobile-card .plus-sign,
   .mobile-card.toggled .minus-sign {
@@ -1223,8 +1224,43 @@
     max-height: 70rem;
   }
 
+  .mobile-floating {
+    display: flex;
+    position: fixed;
+    bottom: 0.5rem;
+    z-index: 1000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: var(--color-gray-0);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mobile-floating.active {
+    opacity: 1;
+  }
+  .mobile-floating .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(-90deg);
+    margin: auto;
+  }
+  .mobile-floating .arrow .cls-1 {
+    fill: transparent;
+    stroke-width: 6px;
+    stroke: var(--color-gray-7);
+  }
+  .mobile-floating .arrow .cls-1 {
+    stroke: var(--color-gray-7);
+  }
+  .mobile-floating .arrow .cls-2 {
+    stroke-width: 6px;
+    stroke: var(--color-gray-7);
+  }
+
   /* DON NOT DISPLAYS */
-  .left.one .content-block .sub-title,
+  .left.one .double-arrow-down,
+  .left.one .size-12.thin,
   .left.two.active .separator,
   .left.three .title,
   .left.three .article:nth-child(3),

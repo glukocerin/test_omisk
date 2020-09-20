@@ -48,6 +48,14 @@ const keyHelper = [
     'no-fix',
 ];
 
+const MobileFloating = function(props) {
+    return (
+        <div className={`mobile-floating ${props.scrollTop > 0 && 'active'}`} onClick={ () => document.querySelector('.App').scrollTop = 0}>
+            <ArrowRight className="arrow"/>
+        </div>
+    );
+}
+
 const CoursesList = function(props) {
     const dispatch = useDispatch();
 
@@ -88,6 +96,25 @@ const WhatWeDo = function(props) {
             <span className="text size-28 extra-bold">{item.text}</span>
         </DelayLink>
   ));
+}
+
+const getScrollTop = () => document.getElementById("root").scrollTop;
+
+function useCurrentScrollTop() {
+    let [top, setTop] = useState(getScrollTop());
+  
+    useEffect(() => {
+      const scrollListener = () => {
+        setTop(document.querySelector(".App").scrollTop || getScrollTop());
+      };
+      window.addEventListener("scroll", scrollListener, true);
+  
+      return () => {
+        window.removeEventListener("scroll", scrollListener, true);
+      };
+    }, []);
+  
+    return top;
 }
 
 export default function Landing({ dotChange }) {
@@ -461,6 +488,7 @@ export default function Landing({ dotChange }) {
                 <a className="icon" href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer"><InstagramTransparent /></a>
                 <a className="icon" href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer"><YoutubeTransparent /></a>
             </div>
+            <MobileFloating scrollTop={useCurrentScrollTop()}/>
         </div>
     )
 }
