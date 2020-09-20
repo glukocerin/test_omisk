@@ -691,6 +691,7 @@
 }
 
 .mobile-card,
+.mobile-floating,
 .mobile-footer {
   display: none;
 }
@@ -1110,6 +1111,7 @@
     font-family: "Gilroy";
     fill: var(--color-gray-7);
     stroke: var(--color-gray-7);
+    stroke-width: 1px;
   }
   .mobile-footer .content-block .article {
     margin-bottom: 1.25rem;
@@ -1134,10 +1136,12 @@
   }
   .mobile-footer .content-block .sm-icons .icon .cls-1 {
     fill: var(--color-gray-7);
+    stroke-width: 0.3px;
   }
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
+    stroke-width: 0.3px;
   }
 
   .landing .size-28 {
@@ -1218,6 +1222,40 @@
   .mobile-card.three.toggled ~ .left.four,
   .mobile-card.seven.toggled + .left.eight {
     max-height: 70rem;
+  }
+
+  .mobile-floating {
+    display: flex;
+    position: fixed;
+    bottom: 0.5rem;
+    z-index: 1000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: var(--color-gray-0);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mobile-floating.active {
+    opacity: 1;
+  }
+  .mobile-floating .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(-90deg);
+    margin: auto;
+  }
+  .mobile-floating .arrow .cls-1 {
+    fill: transparent;
+    stroke-width: 6px;
+    stroke: var(--color-gray-7);
+  }
+  .mobile-floating .arrow .cls-1 {
+    stroke: var(--color-gray-7);
+  }
+  .mobile-floating .arrow .cls-2 {
+    stroke-width: 6px;
+    stroke: var(--color-gray-7);
   }
 
   /* DON NOT DISPLAYS */
