@@ -228,7 +228,11 @@
   justify-content: space-between;
 }
 
-.footer-buttons-wrapper button {
+.footer-buttons-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 7rem;
   height: 2.125rem;
   margin-bottom: 1.0625rem;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import CoursesHeader from "./CoursesHeader";
 import style from "../../assets/css/eurhythmics.module.css";
@@ -175,10 +176,12 @@ export default function Courses({ pageConfig }) {
           Szeretnél csatlakozni?
         </h4>
         <div className={style["footer-buttons-wrapper"]}>
-          <button className={style["footer-button-details"]}>Érdeklődöm</button>
-          <button className={style["footer-button-sign-up"]}>
+          <Link className={style["footer-button-details"]} to="/contact">
+            Érdeklődöm
+          </Link>
+          <Link className={style["footer-button-sign-up"]} to="/enrollment">
             Jelentkezem
-          </button>
+          </Link>
         </div>
       </div>
     </div>
