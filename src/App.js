@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 
 import "./assets/css/colors.css";
@@ -44,6 +44,7 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 
 const { programs, ...rest } = pagesConfig;
+const { courses } = pagesConfig;
 
 function App() {
   const [activeDot, handleDotChange] = useState(1);
@@ -101,7 +102,7 @@ function App() {
         </Route>
         <Route path="/courses/eurhythmics">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics />
+          <Eurhythmics pageConfig={courses.pages.eurhythmics} />
           <Footer />
           <FooterMobile />
         </Route>

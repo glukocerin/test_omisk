@@ -75,6 +75,92 @@ const pagesConfig = {
     },
   },
   courses: {
+    pages: {
+      eurhythmics: {
+        opt: {
+          courseName: "Művészi torna",
+          color: "blue",
+          img: "muveszetitorna",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: ["Heti 2 x 45 perc", "Heti 2 x 60 perc"],
+            prices: ["9700-10000 Ft / hó", "10700-11000 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["2 testvér esetén", "3 testvér esetén"],
+            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["4 - 10éves kortól", "korcsopotonként"],
+          },
+        },
+        places: [
+          {
+            name: "Virányosi Közösségi Ház",
+            address: "XII. ker. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő+Szerda", "Kedd+Csütörtök"],
+          },
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["Hétfő+Szerda", "Kedd+Csütörtök", "Hétfő+Pentek"],
+          },
+          {
+            name: "Budapest Művelődési Központ",
+            address: "XI. Etele út 55/a",
+            appointments: ["Hétfő+Szerda"],
+          },
+          {
+            name: "MOM Kulturális Központ",
+            address: "XII. ker. Csörsz út 18",
+            appointments: ["Hétfő+Csütörtök", "kedd+Csütörtök"],
+          },
+          {
+            name: "Békásmegyeri Közösségi Ház",
+            address: "III. Csobánka tér 5",
+            appointments: ["Kedd+Csütörtök", "Kedd+Péntek"],
+          },
+          {
+            name: "Józsefvárosi Galéria és Rendezvény Központ",
+            address: "VIII. József krt. 70",
+            appointments: ["Hétfő+Szerda"],
+          },
+          {
+            name: "VII. ker. Táncstúdió",
+            address: "VII. Wesselényi u. 41",
+            appointments: ["Hétfő+Szerda", "Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Kiknek ajánljuk?",
+          img: "muveszi_torna_01.jpg",
+          description:
+            "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak",
+        },
+        aboutCourse: {
+          title: "Mi a művészi torna?",
+          img: "muveszi_torna_02.jpg",
+          description:
+            "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak",
+        },
+        whenStart: {
+          title: "Mikor tudom elkezdeni?",
+          img: "muveszi_torna_03.jpg",
+          description:
+            "Iskolánk képzési rendszere 4 éves korban kezdődik művészi tornával. A tudatos mozgás elsajátítása – ami folyamatos gondolkodásra és koncentrációra késztet – leghamarabb ebben az életkorban lehetséges. Később is el lehet kezdeni, mindenkit az életkorának megfelelő csoportba kerül, ahol a tanárok segítenek bekapcsolódni a tanulásba. A művészi torna szerves folytatása a mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a kreativitás . Iskolás kortól más műfajok is választhatók, amikhez a művészi torna ugyanúgy kiváló alapot ad.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "muveszi_torna_04.jpg",
+          description:
+            "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást és ügyessé tesznek. Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel erre az életkorra esik a testtartás beidegződése. Fontosnak tartjuk az igényes zene választást, mind a koreográfiák, mind a tréning kisérőjeként.",
+        },
+      },
+    },
     cards: [
       {
         title: "Művészi torna",
