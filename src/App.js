@@ -120,7 +120,7 @@ function App() {
         </Route>
         <Route path="/courses/ballet">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Ballet />
+          <Eurhythmics pageConfig={courses.pages.ballet} />
           <Footer />
           <FooterMobile />
         </Route>
