@@ -70,7 +70,7 @@
 .header .links a,
 .header .links label.plus-sign {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.8vw;
   font-weight: 800;
   color: var(--color-gray-0);
   white-space: nowrap;
@@ -131,7 +131,7 @@
   color: var(--color-gray-7);
 }
 .header .links a + a {
-  margin-left: 1rem;
+  margin-left: 0.833vw;
 }
 .header .links label + a {
   margin-left: 1rem;
