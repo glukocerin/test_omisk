@@ -59,7 +59,7 @@
 .enrollment .enrollment-content .enrollment-columns .enrollment-text {
   margin-bottom: 2rem;
   white-space: pre-wrap;
-  line-height: 28px;
+  line-height: 1.75;
 }
 
 .enrollment .enrollment-content .enrollment-columns .btn {
@@ -162,7 +162,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-height: 28px;
+  line-height: 1.75;
 }
 .enrollment .places-content .drop-down-list .place .place-informations {
   max-height: 0;
@@ -235,7 +235,7 @@
     height: unset;
     margin-bottom: 0;
     background: var(--color-gray-0);
-    border-top: 1.5rem solid var(--color-gray-1)
+    border-top: 1.5rem solid var(--color-gray-1);
   }
   .enrollment .places-content .drop-down-list {
     width: 100%;
