@@ -137,7 +137,7 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha…",
-          img: "pages/muveszetitorna/muveszi_torna_01.jpg",
+          img: "pages/muveszetitorna/1.jpg",
           description: [
             "szeretnél szép testtartást, és ügyesebben mozogni.",
             "olyan mozgást keresel, ami akkor is hasznodra válik, ha végül nem a táncnál hanem az úszásnál kötsz ki.",
@@ -146,19 +146,19 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a művészi torna?",
-          img: "pages/muveszetitorna/muveszi_torna_02.jpg",
+          img: "pages/muveszetitorna/2.jpg",
           description:
             "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/muveszetitorna/muveszi_torna_03.jpg",
+          img: "pages/muveszetitorna/3.jpg",
           description:
             "Iskolánk képzési rendszere 4 éves korban kezdődik művészi tornával. A tudatos mozgás elsajátítása – ami folyamatos gondolkodásra és koncentrációra késztet – leghamarabb ebben az életkorban lehetséges. Később is el lehet kezdeni, mindenkit az életkorának megfelelő csoportba kerül, ahol a tanárok segítenek bekapcsolódni a tanulásba. A művészi torna szerves folytatása a mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a kreativitás . Iskolás kortól más műfajok is választhatók, amikhez a művészi torna ugyanúgy kiváló alapot ad.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/muveszetitorna/muveszi_torna_04.jpg",
+          img: "pages/muveszetitorna/4.jpg",
           description:
             "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást és ügyessé tesznek. Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel erre az életkorra esik a testtartás beidegződése. Fontosnak tartjuk az igényes zene választást, mind a koreográfiák, mind a tréning kisérőjeként.",
         },
