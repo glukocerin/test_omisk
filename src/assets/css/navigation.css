@@ -54,12 +54,11 @@
 .header .logo .cls-1 {
   fill: var(--color-gray-7);
   transition: fill 0.3s linear;
-  stroke: var(--color-gray-7);
-  stroke-width: unset;
+  stroke: unset;
 }
 .header .logo.inverse .cls-1 {
   fill: var(--color-gray-7);
-  stroke: var(--color-gray-7);
+  stroke: unset
 }
 .header.big .logo {
   height: 2.917vw;
@@ -158,9 +157,6 @@
   }
   .header.big .logo {
     height: 2rem;
-  }
-  .header .logo .cls-1 {
-    stroke: unset;
   }
   .header.fixed {
     position: unset;
