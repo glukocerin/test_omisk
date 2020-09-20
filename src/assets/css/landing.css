@@ -1152,23 +1152,23 @@
   }
   .mobile-card .plus-sign,
   .mobile-card .minus-sign {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
   }
   .mobile-card .plus-sign .cls-1,
   .mobile-card .plus-sign .cls-1,
   .mobile-card .minus-sign .cls-2,
   .mobile-card .minus-sign .cls-2 {
     stroke: var(--color-gray-7);
-    stroke-width: 0.125rem;
+    stroke-width: 1px;
   }
   .mobile-card.inverse .plus-sign .cls-1,
   .mobile-card.inverse .plus-sign .cls-1,
   .mobile-card.inverse .minus-sign #Path_5569,
   .mobile-card.inverse .minus-sign #Path_5569 {
     stroke: var(--color-gray-0);
-    stroke-width: 0.125rem;
+    stroke-width: 1px;
   }
   .mobile-card .plus-sign,
   .mobile-card.toggled .minus-sign {
