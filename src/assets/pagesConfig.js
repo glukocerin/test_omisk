@@ -480,7 +480,7 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/mozdulatmuveszet/1.jpg",
+          img: "pages/ballet/2.jpg",
           description: [
             "kecses, finom, légies mozgásformát keresel.",
             "nem ijedsz meg a kemény munkától.",
