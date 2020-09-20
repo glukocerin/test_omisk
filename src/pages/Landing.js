@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import DelayLink from '../components/DelayLink'
 import LeafletMap from '../components/LeafletMap'
 import { useSelector, useDispatch } from "react-redux";
+import FindByProp from '../components/FindByProp'
 
 import {updatePageindex} from '../actions/navigation'
 
@@ -390,7 +391,7 @@ export default function Landing({ dotChange }) {
                         <Gymnast className="icon" />
                         <label className="text size-32 extra-bold">Berczik technika</label>
                     </div>
-                    <label className="article size-20">A <u>Berczik-technika</u> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
+                    <label className="article size-20">A <Link to={{ pathname: "/blog_entry", state: FindByProp('blog', 'cards', 'index', 'berczik') }}>Berczik-technika</Link> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
                     <div className="sepa-row">
                         <MusicalNote className="icon" />
                         <label className="text size-32 extra-bold">Zeneiség</label>
