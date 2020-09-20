@@ -286,6 +286,7 @@
   font-size: 0.781vw;
   font-weight: 800;
   transition: border-color 300ms, background-color 300ms, color 300ms;
+  cursor: pointer;
 }
 .left.three .button-box .btn:focus {
   outline: unset;
@@ -415,7 +416,7 @@
 .left.five .list-item,
 .left.seven .list-item {
   color: var(--color-gray-0);
-  padding: 0.5rem 0;
+  padding: 0.417vw 0;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -427,7 +428,7 @@
 }
 .left.five.active .list-item,
 .left.seven.active .list-item {
-  width: 44px;
+  width: 2.292vw;
   animation: typing 2s steps(100, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -435,7 +436,7 @@
 }
 @keyframes typing {
   from {
-    width: 44px;
+    width: 2.292vw;
   }
   to {
     width: 100%;
@@ -444,27 +445,27 @@
 .left.five.active .list-item.active,
 .left.seven.active .list-item.active {
   transition-delay: 2.3s;
-  transform: translateX(2.5rem);
+  transform: translateX(2.083vw);
 }
 .left.five.active .list-item:hover,
 .left.seven.active .list-item:hover,
 .left.five.active .list-item.active:hover,
 .left.seven.active .list-item.active:hover {
   transition-delay: 0s;
-  transform: translateX(2.5rem);
+  transform: translateX(2.083vw);
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
-  margin-right: 1rem;
+  margin-right: 0.833vw;
 }
 .left.five .list-item .arrow,
 .left.seven .list-item .arrow {
-  min-width: 1.75rem;
-  max-width: 1.75rem;
+  min-width: 1.458vw;
+  max-width: 1.458vw;
 }
 .left.five.active .list-item .arrow,
 .left.seven.active .list-item .arrow {
-  margin-right: 1rem;
+  margin-right: 0.833vw;
   animation: grow linear 1s;
 }
 @keyframes grow {

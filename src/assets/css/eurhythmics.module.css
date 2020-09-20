@@ -132,7 +132,7 @@
 
 .active-header-tab {
   border-bottom: 4px solid var(--color-green-1);
-  opacity: 1!important;
+  opacity: 1 !important;
 }
 
 .inactive-tab {
@@ -236,7 +236,8 @@
   cursor: pointer;
   font-weight: bold;
   outline: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
 }
 
 .footer-button-details {
@@ -348,6 +349,10 @@
   margin: 0 auto;
   display: flex;
   background-color: #fff;
+}
+
+.card-wrapper ul p {
+  margin-top: 0;
 }
 
 .text {

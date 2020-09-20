@@ -48,11 +48,11 @@
 }
 
 .header .logo {
-  height: 2rem;
+  height: 1.667vw;
   transition: height 0.3s linear;
 }
 .header .logo .cls-1 {
-  fill: var(--color-gray-0);
+  fill: var(--color-gray-7);
   transition: fill 0.3s linear;
 }
 .header .logo.inverse .cls-1 {
@@ -60,7 +60,7 @@
   stroke: var(--color-gray-7);
 }
 .header.big .logo {
-  height: 3.5rem;
+  height: 2.917vw;
 }
 
 .header .links {
@@ -70,7 +70,7 @@
 .header .links a,
 .header .links label.plus-sign {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.8vw;
   font-weight: 800;
   color: var(--color-gray-0);
   white-space: nowrap;
@@ -131,7 +131,7 @@
   color: var(--color-gray-7);
 }
 .header .links a + a {
-  margin-left: 1rem;
+  margin-left: 0.833vw;
 }
 .header .links label + a {
   margin-left: 1rem;

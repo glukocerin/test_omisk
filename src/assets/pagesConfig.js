@@ -78,7 +78,7 @@ const pagesConfig = {
     pages: {
       eurhythmics: {
         opt: {
-          courseName: "Művészi torna",
+          courseName: "Művészeti torna",
           color: "blue",
           img: "muveszetitorna",
         },
@@ -136,28 +136,375 @@ const pagesConfig = {
           },
         ],
         forWhom: {
-          title: "Kiknek ajánljuk?",
-          img: "muveszi_torna_01.jpg",
-          description:
-            "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak",
+          title: "Neked ajánljuk, ha…",
+          img: "pages/muveszetitorna/1.jpg",
+          description: [
+            "szeretnél szép testtartást, és ügyesebben mozogni.",
+            "olyan mozgást keresel, ami akkor is hasznodra válik, ha végül nem a táncnál hanem az úszásnál kötsz ki.",
+            "óvodásként kiváncsi vagy, milyen lesz majd az iskolában egy 45 perces tanóra.",
+          ],
         },
         aboutCourse: {
           title: "Mi a művészi torna?",
-          img: "muveszi_torna_02.jpg",
+          img: "pages/muveszetitorna/2.jpg",
           description:
             "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "muveszi_torna_03.jpg",
+          img: "pages/muveszetitorna/3.jpg",
           description:
             "Iskolánk képzési rendszere 4 éves korban kezdődik művészi tornával. A tudatos mozgás elsajátítása – ami folyamatos gondolkodásra és koncentrációra késztet – leghamarabb ebben az életkorban lehetséges. Később is el lehet kezdeni, mindenkit az életkorának megfelelő csoportba kerül, ahol a tanárok segítenek bekapcsolódni a tanulásba. A művészi torna szerves folytatása a mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a kreativitás . Iskolás kortól más műfajok is választhatók, amikhez a művészi torna ugyanúgy kiváló alapot ad.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "muveszi_torna_04.jpg",
+          img: "pages/muveszetitorna/4.jpg",
           description:
             "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást és ügyessé tesznek. Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel erre az életkorra esik a testtartás beidegződése. Fontosnak tartjuk az igényes zene választást, mind a koreográfiák, mind a tréning kisérőjeként.",
+        },
+      },
+      callisthenics: {
+        opt: {
+          courseName: "Mozdulatművészet",
+          color: "blue",
+          img: "mozdulatmuveszet",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
+            prices: ["11000-11300 Ft / hó", "13100-14500 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["2 testvér esetén", "3 testvér esetén"],
+            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["10éves kortól", "korcsopotonként"],
+          },
+        },
+        places: [
+          {
+            name: "Virányosi Közösségi Ház",
+            address: "XII. ker. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő", "Szerda", "Kedd", "Csütörtök"],
+          },
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["Hétfő", "Kedd+Szerda+Péntek"],
+          },
+          {
+            name: "Budapest Művelődési Központ",
+            address: "XI. Etele út 55/a",
+            appointments: ["Hétfő", "Szerda"],
+          },
+          {
+            name: "MOM Kulturális Központ",
+            address: "XII. ker. Csörsz út 18",
+            appointments: ["Hétfő", "kedd", "Csütörtök"],
+          },
+          {
+            name: "Békásmegyeri Közösségi Ház",
+            address: "III. Csobánka tér 5",
+            appointments: ["Kedd", "Csütörtök", "Péntek"],
+          },
+          {
+            name: "Józsefvárosi Galéria és Rendezvény Központ",
+            address: "VIII. József krt. 70",
+            appointments: ["Hétfő", "Szerda", "Péntek"],
+          },
+          {
+            name: "VII. ker. Táncstúdió",
+            address: "VII. Wesselényi u. 41",
+            appointments: ["Hétfő+Szerda", "Péntek"],
+          },
+          {
+            name: "Szarvas Gábor Közösségi Tér",
+            address: "XII. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő", "kedd", "Szerda", "Csütörtök"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/mozdulatmuveszet/1.jpg",
+          description: [
+            "a mozgást nem utánozni, hanem tanulni szeretnéd.",
+            "nyitott vagy egy finom, harmonikus mozgásformára.",
+            "szereted a klasszikus és kortárs zenét.",
+            "szeretsz másokkal közösen alkotni, szeretnél egy állandó közösség tagja lenni.",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a mozdulatművészet?",
+          img: "pages/mozdulatmuveszet/2.jpg",
+          description:
+            "Az általunk tanított mozdulatművészet a gimnasztika precizitására épülő – de annál szabadabb –, a zenével szoros összhangban létrejövő táncstílus. Magában foglalja a klasszikus balett és a különböző modern technikák alapelemeit, megtartva azt az alapvető szellemiséget, amely a test természetes adottságaihoz illeszkedő esztétikus és kifejező mozgást keresi. A koreográfiát a zenével szoros összhangban készítjük el, így zene és tánc egymás hatását erősítik: még szebbnek látjuk a táncot és jobban megértjük a zenét.",
+        },
+        whenStart: {
+          title: "Hogyan tudok csatlakozni?",
+          img: "pages/mozdulatmuveszet/3.jpg",
+          description:
+            "Kurzusunk a művészi torna szerves folytatásának tekinthetők, így ebben a műfajban nincsenek teljesen kezdő tanfolyamaink. A kifejező mozgás egyre nagyobb hangsúlyt kap az ovisok és kisiskolások óráin, és 10 éves kor környékén már mozdulatművészetet tanul, aki korábban művészi tornára iratkozott be. Ennek ellenére menet közben is lehet csatlakozni. Előny, ha rendelkezel valamilyen táncos előképzettséggel, de ha nem, akkor is megpróbálhatod az életkorodnak megfelelő csoportban. Nem kell hozzá speciális adottság, a tanárok segítenek a felzárkózásban, nyugodtan csatlakozhatsz. Nem kell hozzá speciális adottság, tanáraink majd segítenek a felzárkózásban.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/mozdulatmuveszet/4.jpg",
+          description:
+            "A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfia tanulásból áll. A tréningezéssel elsajátítjuk a mozdulatművészet formanyelvét és megszerezzük azokat a készségelemeket, amik alkalmassá tesznek a koreográfiák előadásra. A mozdulatművészetre leginkább az jellemző, hogy kifejező mozdulatokból építkezik. A táncok elkészítése műhelymunka szerűen zajlik. Tanítványaink kreatívan vesznek részt az alkotómunka minden fázisában a koncepció kialakításától és a zenekiválasztásától a mozdulatok megalkotásán keresztül a produkció színpadra állításáig.",
+        },
+      },
+      preBallet: {
+        opt: {
+          courseName: "Pre balett",
+          color: "pink",
+          img: "prebalett",
+        },
+        info: {
+          cost: {
+            name: "Cost",
+            occasions: ["Weekly 1 x 45 perc"],
+            prices: ["10300-11300 Ft / month"],
+          },
+          discount: {
+            name: "Discounts",
+            sibling: ["For 2 siblings", "For 3 siblings"],
+            prices: ["2000.- /month/person", "3000.- /month/person"],
+          },
+          ages: {
+            name: "Age group",
+            ageGroup: ["4-6 years"],
+          },
+        },
+        places: [
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["??", "??"],
+          },
+        ],
+        forWhom: {
+          title: "We suggest this for you...",
+          img: "pages/preballet/1.jpg",
+          description: [
+            "If you would like to learn dance playfully",
+            "If you would like to learn English this way as well",
+            "If it would be good to learn English and dance at the same time",
+            "If you would like to make new friends",
+          ],
+        },
+        aboutCourse: {
+          title: "What is pre-ballet?",
+          img: "pages/preballet/2.jpg",
+          description:
+            "Pre-Ballet is an introduction to the very basics of dance.  Usually in ballet the routines are done in standing position, we make it easier and start in a seated position. The repeated commands during the recurring training actions make easier to incorporate them into childres' vocabulary in a native way.  We hope that children will discover creative expression, and experience the fun of dance during these classes!",
+        },
+        whenStart: {
+          title: "At what age can you start?",
+          img: "pages/preballet/3.jpg",
+          description:
+            "The classes are for ages 4-6. Our teacher Esther, who speaks native English demonstrates everything to the students. So it is not a problem if your child is still new to English. After the age of six, you can continue in one of our gymnastics classes.",
+        },
+        structure: {
+          title: "What do we do during class?",
+          img: "pages/preballet/4.jpg",
+          description:
+            "We start every class with a few walking exercises, skips, ect. Then we continue with our gymnastics routines, and some jumps. Finally we usually have a short game, and we finish our class with stretches. During the class we encourage children to only speak in English. We learn a few basic words in the beginning that they can use, and later on several dance related expressions. While we dance, the children repeat all the instructions given by the teacher, and this makes learning easy and fun!",
+        },
+      },
+      modern: {
+        opt: {
+          courseName: "Modern tánc",
+          color: "green",
+          img: "modern",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: ["Heti 2 x 60 perc"],
+            prices: ["11000-11300 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["2 testvér esetén", "3 testvér esetén"],
+            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["8 éves kortól", "korcsopotonként"],
+          },
+        },
+        places: [
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["Hétfő"],
+          },
+          {
+            name: "Békásmegyeri Közösségi Ház",
+            address: "III. Csobánka tér 5",
+            appointments: ["Kedd", "Csütörtök"],
+          },
+          {
+            name: "VII. ker. Táncstúdió",
+            address: "VII. Wesselényi u. 41",
+            appointments: ["Hétfő", "Szerda", "Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/modern/1.jpg",
+          description: [
+            "elmúltál 10 éves, szereted a kihívásokat.Van táncos előképzettséged, vagy eddig valahol huzamosabb ideig sportoltál.",
+            "készen állsz a kemény munkára, amiért látványos fejlődésben lesz részed.",
+            "olyan tudást szeretnél, amivel más tánckurzusokon is bátran az első sorban állhatsz.",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a mozdulatművészet?",
+          img: "pages/modern/2.jpg",
+          description:
+            "Ellenerők keresése, dinamikai váltások, feszítettség és elengedés összhangja. –  Ezáltal válik a modern tánc izgalmas és szemet gyönyörködtető műfajjá a színpadon, ezekre kell ráérezni tanítványainknak az órák során. Bár a klasszikus balett alapjaira épül, annak szabály rendszerével szembe megy: a természetes mozgáson alapul, használja a gravitációt, a mozdulatokat belülről indítja. Nem elsősorban a forma, hanem a mozdulat fizikai valósága által válik kifejezővé. A régebbi jazztánchoz képest a folyamatosságon, folyékonyságon, puhaságon van a hangsúly.",
+        },
+        whenStart: {
+          title: "Mikor tudom elkezdeni?",
+          img: "pages/modern/3.jpg",
+          description:
+            "A modern tánc elsajátítása magasabb szintű tudatosságot igényel, amelyre 10 éves koruk környékén érnek meg a gyerekek. Azoknak, akik még nem érték el ezt az életkort, de már alig várják, hogy el tudják kezdeni az órákat, 8 éves kortól előkészítő csoportot indítunk. Ez nem előfeltétele a későbbi jelentkezésnek, hiszen nagyon jó előképzettséget jelent a művész torna, a klasszikus balett, de nem kizáró tényező az sem, ha valamilyen sportról váltanál.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/modern/4.jpg",
+          description:
+            "Az óra alapos bemelegítéssel indul, majd ezt követi a tréning, melynek fő célja a formanyelv technikai elemeinek elsajátítása. Ennek a mozgásnak lényege a testközpontból és a törzsből elnyújtott hosszú mozdulatok és dinamikai váltások alkalmazása. Ennek elsajátítása elmélyült és kitartó gyakorlást igényel, hosszú távon növeli a testtudatot és önfegyelemre tanít. A tréning  tetőtől talpig átmozgatja és formálja a testet. Az óra második felében a koreográfia gyakorlása következik, amely a tréning során megtanult kombinációkból  épül fel.",
+        },
+      },
+      jazz: {
+        opt: {
+          courseName: "Jazztánc",
+          color: "green",
+          img: "jazz",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: ["Heti 2 x 60 perc"],
+            prices: ["11300 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["2 testvér esetén", "3 testvér esetén"],
+            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["6 éves kortól", "korcsopotonként"],
+          },
+        },
+        places: [
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["Hétfő", "Kedd+Szerda+Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/jazz/1.jpg",
+          description: [
+            "egy könnyed, laza, látványos műfajt keresel.",
+            "szereted a modern, pörgős zenéket.",
+            "suli után jó társaságban, tánccal szeretnéd leadni a felgyülemlett stresszt.",
+            "szeretnéd jobban megismerni a tested határait.",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a jazztánc?",
+          img: "pages/jazz/2.jpg",
+          description:
+            "A jazztánc az Amerikai Egyesült Államokból, New Orleansból származik, az afro-amerikaiak autentikus táncában gyökerezik. A jazz zenével együtt fejlődött, kiegészült a balett és a modern tánc elemeivel. Jellegzetessége az izolációs technika, ami az egyes testrészek egymástól független mozgatását jelenti. A mozgásközpontjai: fej-nyak, vállak, mellkas, medence, a kezek és a lábak. A mozgás lényege a “policentrikusság”, ez azt jelenti, hogy legalább kettő – a fentebb említett – mozgásközpont egymástól függetlenül mozog. Felszabadult, látványos táncstílus.",
+        },
+        whenStart: {
+          title: "Mikor tudom elkezdeni?",
+          img: "pages/jazz/3.jpg",
+          description:
+            "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de a jelentkezéshez az is elég, ha valamilyen műfajban táncoltál vagy sportoltál már. Aki hobbiból űzi ezt a tánc stílust, az a ritmikus gimnasztika és a táncsport nagyszerű elegyére lel benne.  Népszerűsége  annak is köszönhető, hogy teljesen nyitott minden mozgás beépítésére, ami stílusában megfelelő.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/jazz/4.jpg",
+          description:
+            "Az órák első felében tréningezünk mai, divatos  zenére.  Egymást követik az izolációs, erősítő és koordinációt fejlesztő gyakorlatok.  Kezdőknél a tréning még csak izolációs majd koordinációs gyakorlatokat tartalmaz. Haladóknál a modern balett elemei is bekerülnek a tananyagba. Majdnem minden típusú mozgás engedélyezett. Hosszú, nyújtott testvonalat, diagonális feszességet és hosszú egyensúlyi helyzeteket használ, és a felsőtestet teszi mindannak középpontjává, ami a testtel történik. Az óra második része a már megtanult technikai elemeket tartalmazó koreográfiák tanulásával telik.",
+        },
+      },
+      ballet: {
+        opt: {
+          courseName: "Klasszikus balett",
+          color: "pink",
+          img: "balett",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: ["Heti 2 x 60 perc"],
+            prices: ["11000-11300 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["2 testvér esetén", "3 testvér esetén"],
+            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["6éves kortól", "korcsopotonként"],
+          },
+        },
+        places: [
+          {
+            name: "Óbudai Kulturális Központ",
+            address: "III. San Marco út 81",
+            appointments: ["Hétfő", "Kedd+Szerda+Péntek"],
+          },
+          {
+            name: "Békásmegyeri Közösségi Ház",
+            address: "III. Csobánka tér 5",
+            appointments: ["Kedd", "Csütörtök", "Péntek"],
+          },
+          {
+            name: "VII. ker. Táncstúdió",
+            address: "VII. Wesselényi u. 41",
+            appointments: ["Hétfő+Szerda", "Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/ballet/2.jpg",
+          description: [
+            "kecses, finom, légies mozgásformát keresel.",
+            "nem ijedsz meg a kemény munkától.",
+            "kitartó, szorgalmas és elszánt vagy.",
+            "mindig is tudni akartad, milyen egy igazi balett óra.",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a klasszikus balett?",
+          img: "pages/ballet/2.jpg",
+          description:
+            "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
+        },
+        whenStart: {
+          title: "Mikor tudom  elkezdeni?",
+          img: "pages/ballet/3.jpg",
+          description:
+            "Iskolás kortól ajánljuk. A balettgyakorlatok nagy önfegyelmet és koncentrációt igényelnek, fizikai terhelhetőséget kívánnak.  A művészi torna jó előkészítés óvodás korban, mert a gimnasztika különböző tehermentesített helyzetekben készíti elő a később állásban elvégzendő feladatokat.  Iskolás kortól előképzettség nélkül is lehet jelentkezni.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/ballet/4.jpg",
+          description:
+            "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
       },
     },
@@ -711,6 +1058,7 @@ const pagesConfig = {
         picture_title: "Berczik Sára",
         date: "2020. 09. 18.",
         title: "A Berczik módszerről",
+        index: "berczik",
         text:
           "Az OMISK - ot  ezelőtt 30 évvel azért alapítottuk, hogy a Berczik technikát tanítsuk gyerekeknek. Ahogy tanítványaink  nőttek, velük együtt fejlődött  az iskola is. Sok más műfaj is helyet kapott, de ma is a Berczik technikát tartjuk a legfontosabb kiindulási pontnak. Az OMISK-ba jelentkező óvodások most is ezzel kezdenek nálunk.\n\nA gyermek életének alapeleme a mozgás. Önként és örömmel csinál mindent, ami közel áll természetes mozgás igényéhez és ez megalapozza szellemi-fizikai fejlődését.  A Berczik módszer ebből az ösztönös mozgásból indul ki és alakítja tudatossá. Így az órai gyakorlatok mindig az életkornak megfelelőek, a tudatosság pedig biztos alapokra helyez bármilyen későbbi mozgástanulást.\n\nAz órákon mindig arra törekszünk , hogy már a legkisebbek is értsék, amit csinálnak . A mozgást nem utánozni kell a gyerekeknek, hanem tanulni. Ha tudják, hogy mikor végzik helyesen, akkor nagyobb örömet okoz, ha ez sikerül nekik. A sikerélmény pedig további tanulásra ösztönzi a gyereket, így a figyelmük hosszú időn keresztül fenntartható.\n\nA Berczik módszer fontos  alapelve a mozdulatok elemekre bontása és  azok egymástól független kidolgozása, ami ezért pontosságra is nevel. Alkalmazza a sokirányú ráhatás elvét is, ami ugyanannak a testképző feladatnak a különböző testhelyzetekben történő végrehajtását jelenti. Az állandóan változó helyzetek segítik a tudás elmélyítését  azáltal, hogy  nem válik rutinná  a gyakorlás. A Berczik gimnasztika nem kíván speciális fizikai adottságokat, az adott testi lehetőségeken belül mindenkit fejleszt, így mindenkinek sikerélményt ad.\nA  Berczik technika nem egy szigorú, zárt rendszer, bármilyen mozgás megengedett, ami esztétikus. Ez nem mond ellent a precizitásra való törekvésnek, mert minden újító mozdulatnak pontosan leírhatónak, ezáltal reprodukálhatónak kell lenni. A fenti keretek között végzett gyakorlás  felébreszti a gyerekekben az alkotás iránti vágyat és maguk is kreatívan bekapcsolódnak a munkába\n\nA Berczik gimnasztika szívesen használ eszközöket, ezeknek kettős funkciója van. A kéziszer egyrészt, a test meghosszabbításaként segít megérteni, vizualizálni az irányokat, síkokat. Ugyanakkor változatosabbá teszi a gimnasztikát és mivel bármilyek eszköz használata megengedett, újabb teret nyit az alkotó fantáziának.\n\nA Berczik technikán alapuló koreográfiákban a zene nem csak kisérőeleme a táncnak, hanem annak tartalmát is kiemeli. Ha a koreográfiát a zenével szoros összhangban készítjük el, akkor a zene és a tánc egymás hatását erősítik. Még szebbnek látjuk a táncot és jobban megértjük a zenét. Ezért lett iskolánk mottója:  mozgásba hozzuk a zenét.\n\nPers Júlia",
       },
@@ -719,8 +1067,9 @@ const pagesConfig = {
         picture_title: "Tájékoztató",
         date: "2020. 09. 17.",
         title: "COVID tájékoztató",
+        index: "covid",
         text:
-          "Iskolánkban az alábbi óvintézkedéseket hoztuk mindannyiunk érdekében:\n\n<ol><li className='number'>A csoportok elkülönülve öltözködnek, mindenki mindig csak a saját csapattársaival együtt. Az első foglalkozáson kiírjuk , illetve a tanárok is elmondják, hogy melyik öltözőt használják ezentúl a csoportok.</li><li className='number'>Kérjük, hogy aki teheti, otthon vegye fel a tornadresszet , hogy  minél kevesebben  és minél rövidebb ideig használják az öltözőt!</li><li className='number'>A tanárok maszkot viselnek, ha közel mennek a gyerekekhez.  A közös helyiségekben iskolás kortól kötelező a maszk viselése.  Az órákon a gyerekek maguk döntik el, hogy viselik-e a maszkot.</li><li className='number'>A termek folyamatos szellőztetéséről gondoskodunk. Ha az időjárás miatt az ablakok állandó nyitvatartása nem lehetséges, akkor az órák között alaposan kiszellőztetünk.</li><li className='number'>A terembe belépés előtt és kilépés után felhívjuk a figyelmet a kézfertőtlenítő használatára és/vagy az alapos kézmosásra. A tanároknál is van kézfertőtlenítő és az órák között a rudakat fertőtlenítő kendővel áttörlik.</li><li className='number'>Készülünk az online tanításra is többféle módon is.Ennek részleteit hamarosan közzétesszük.</li><li className='number'>Mulasztás esetén kérjük, hogy tájékoztassák iskolánkat és betegség után orvosi igazolást kérünk most mindenkitől !  Covid fertőzés esetén gyors értesítést kérünk, hogy a csoport többi tagját tájékoztatni tudjuk!</li></ol>Köszönjük szépen a fentiek betartását. Bízunk abban, ezzel is hozzájárulunk ahhoz, hogy minél hamarabb visszatérhessünk a  megszokott életünkhöz!"
+          "Iskolánkban az alábbi óvintézkedéseket hoztuk mindannyiunk érdekében:\n\n<ol><li className='number'>A csoportok elkülönülve öltözködnek, mindenki mindig csak a saját csapattársaival együtt. Az első foglalkozáson kiírjuk , illetve a tanárok is elmondják, hogy melyik öltözőt használják ezentúl a csoportok.</li><li className='number'>Kérjük, hogy aki teheti, otthon vegye fel a tornadresszet , hogy  minél kevesebben  és minél rövidebb ideig használják az öltözőt!</li><li className='number'>A tanárok maszkot viselnek, ha közel mennek a gyerekekhez.  A közös helyiségekben iskolás kortól kötelező a maszk viselése.  Az órákon a gyerekek maguk döntik el, hogy viselik-e a maszkot.</li><li className='number'>A termek folyamatos szellőztetéséről gondoskodunk. Ha az időjárás miatt az ablakok állandó nyitvatartása nem lehetséges, akkor az órák között alaposan kiszellőztetünk.</li><li className='number'>A terembe belépés előtt és kilépés után felhívjuk a figyelmet a kézfertőtlenítő használatára és/vagy az alapos kézmosásra. A tanároknál is van kézfertőtlenítő és az órák között a rudakat fertőtlenítő kendővel áttörlik.</li><li className='number'>Készülünk az online tanításra is többféle módon is.Ennek részleteit hamarosan közzétesszük.</li><li className='number'>Mulasztás esetén kérjük, hogy tájékoztassák iskolánkat és betegség után orvosi igazolást kérünk most mindenkitől !  Covid fertőzés esetén gyors értesítést kérünk, hogy a csoport többi tagját tájékoztatni tudjuk!</li></ol>Köszönjük szépen a fentiek betartását. Bízunk abban, ezzel is hozzájárulunk ahhoz, hogy minél hamarabb visszatérhessünk a  megszokott életünkhöz!",
       },
       {
         picture: "entry-three.jpg",
@@ -728,7 +1077,7 @@ const pagesConfig = {
         date: "2020. 08. 10.",
         title: "Ha nyár, akkor OMISK tábor!",
         text:
-          "Első turnusunk véget ért, de nincs ok aggodalomra, augusztus utolsó hetében jön a második felvonás.\n\nA kezdeti érdeklődésre alapozva idén már harmadszor ifjúsági turnust is indítottunk. Bár ők a gyermek korosztálytól elkülönítve, magasabb óraszámban táncolhatnak a tábor alatt, mégis vannak olyan időszakok, amikor közösen tölthetik az időt. Öröm látni, hogy idősebb növendékeink milyen gondoskodással, szeretettel fordulnak a kisebbek felé. Az a közösség, ami ilyenkor épül, nem csak egy nyárra érvényes. Ha lemaradtál az augusztusi jelentkezésről, ne búsulj. Várunk jövőre! …addig is pedig még sok dolgunk van szeptembertől."
+          "Első turnusunk véget ért, de nincs ok aggodalomra, augusztus utolsó hetében jön a második felvonás.\n\nA kezdeti érdeklődésre alapozva idén már harmadszor ifjúsági turnust is indítottunk. Bár ők a gyermek korosztálytól elkülönítve, magasabb óraszámban táncolhatnak a tábor alatt, mégis vannak olyan időszakok, amikor közösen tölthetik az időt. Öröm látni, hogy idősebb növendékeink milyen gondoskodással, szeretettel fordulnak a kisebbek felé. Az a közösség, ami ilyenkor épül, nem csak egy nyárra érvényes. Ha lemaradtál az augusztusi jelentkezésről, ne búsulj. Várunk jövőre! …addig is pedig még sok dolgunk van szeptembertől.",
       },
       {
         picture: "entry-four.jpg",
@@ -736,7 +1085,7 @@ const pagesConfig = {
         date: "2020. 06. 08.",
         title: "Omisk tábor",
         text:
-          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:\n\n<ul><li>2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter</li><li>2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter</li></ul>\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.00 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.\n\nOnline kérdőív kitöltése után jelentkezésetek a tábor teljes árának átutalása után válik véglegessé, fizetési határidő július 10!\n\nA befizetésről jelentkezést követő visszaigazoló e-mailünkben küldünk további tájékoztatást.\n\nIdén a vírus okozta rendkívüli helyzet miatt a tábor menetrendje némileg eltér a korábbi években megszokottól. Ezzel kapcsolatos információkat részletesen a tábor előtti hetekben küldjük. Természetesen a mindenkori higiéniás feltételeknek megfelelően járunk el.\n<strong>Gyermek turnus programja:</strong>\nA tábor minden reggel 9-kor kezdődik, érkezni 8 órától lehet, reggeli tornával és csapatépítéssel kezdjük a programot. A nap során a gyerekeknek művészi torna és kéziszer órákat tartunk, koreográfiákat tanulnak valamint szabad tánc és kézműves foglalkozásokon vesznek részt. Délután nyújtással zárjuk 16:30-kor a programot. A hetet pedig egy nyilvános bemutatóval fejezzük be.\n<strong>Ifjúsági turnus programja:</strong>\nKülönböző típusú órákon vesznek részt: mozdulatművészet és modern technikai alapok, kéziszer, előadói és improvizációs készségek fejlesztése, koreográfiatanulás, nyújtás. A délelőtt során két foglalkozás lesz, közte tízórai szünet, ebéd után kis pihenés és kézműves foglalkozás után egy hosszabb órával és nyújtással fejezzük be a napot. A foglalkozások minden nap 9 órától 16:30-ig tartanak.\nTovábbi információkkal a tábor indulása előtt jelentkezünk, addig is bármilyen kérdéssel kapcsolatban keress nyugodtan az elérhetőségeinken.\n\nReméljük, velünk tartotok nyári programjainkon!"
+          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:\n\n<ul><li>2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter</li><li>2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter</li></ul>\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.00 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.\n\nOnline kérdőív kitöltése után jelentkezésetek a tábor teljes árának átutalása után válik véglegessé, fizetési határidő július 10!\n\nA befizetésről jelentkezést követő visszaigazoló e-mailünkben küldünk további tájékoztatást.\n\nIdén a vírus okozta rendkívüli helyzet miatt a tábor menetrendje némileg eltér a korábbi években megszokottól. Ezzel kapcsolatos információkat részletesen a tábor előtti hetekben küldjük. Természetesen a mindenkori higiéniás feltételeknek megfelelően járunk el.\n<strong>Gyermek turnus programja:</strong>\nA tábor minden reggel 9-kor kezdődik, érkezni 8 órától lehet, reggeli tornával és csapatépítéssel kezdjük a programot. A nap során a gyerekeknek művészi torna és kéziszer órákat tartunk, koreográfiákat tanulnak valamint szabad tánc és kézműves foglalkozásokon vesznek részt. Délután nyújtással zárjuk 16:30-kor a programot. A hetet pedig egy nyilvános bemutatóval fejezzük be.\n<strong>Ifjúsági turnus programja:</strong>\nKülönböző típusú órákon vesznek részt: mozdulatművészet és modern technikai alapok, kéziszer, előadói és improvizációs készségek fejlesztése, koreográfiatanulás, nyújtás. A délelőtt során két foglalkozás lesz, közte tízórai szünet, ebéd után kis pihenés és kézműves foglalkozás után egy hosszabb órával és nyújtással fejezzük be a napot. A foglalkozások minden nap 9 órától 16:30-ig tartanak.\nTovábbi információkkal a tábor indulása előtt jelentkezünk, addig is bármilyen kérdéssel kapcsolatban keress nyugodtan az elérhetőségeinken.\n\nReméljük, velünk tartotok nyári programjainkon!",
       },
       {
         picture: "entry-five.jpg",
