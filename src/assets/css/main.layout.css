@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 .App.loading {
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 0.5s ease-in-out;
 }
 @keyframes fadeIn {
   0% {

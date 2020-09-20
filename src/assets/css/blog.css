@@ -1,4 +1,4 @@
-.actuals {
+.blog {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -6,7 +6,7 @@
   background: var(--color-gray-0);
   align-items: center;
 }
-.actuals .actuals-header {
+.blog .blog-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,10 +15,10 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  background-image: url("../img/actuals/actuals_header.svg");
+  background-image: url("../img/blog/entry_header.svg");
 }
 
-.actuals .title {
+.blog .title {
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -27,18 +27,18 @@
   color: var(--color-gray-0);
 }
 
-.actuals .actual-cards {
+.blog .blog-cards {
   display: flex;
   flex-direction: column;
   z-index: 2;
 }
 
-.actuals .actual-cards a {
+.blog .blog-cards a {
   color: unset;
   text-decoration: unset;
 }
 
-.actuals .actual-cards .card {
+.blog .blog-cards .card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,11 +48,11 @@
   max-width: 58rem;
 }
 
-.actuals .actual-cards .card * {
+.blog .blog-cards .card * {
   cursor: pointer;
 }
 
-.actuals .actual-cards .card .picture-box {
+.blog .blog-cards .card .picture-box {
   display: flex;
   flex: 1;
   height: 100%;
@@ -60,12 +60,12 @@
   max-width: 40rem;
   min-width: 50%;
 }
-.actuals .actual-cards .card .picture-box img {
+.blog .blog-cards .card .picture-box img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.actuals .actual-cards .card .picture-box .picture-title {
+.blog .blog-cards .card .picture-box .picture-title {
   position: absolute;
   left: 4rem;
   bottom: 5.25rem;
@@ -77,7 +77,7 @@
     transparent 87%
   );
 }
-.actuals .actual-cards .card .text-box {
+.blog .blog-cards .card .text-box {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -87,27 +87,29 @@
   padding: 3.25rem 4rem;
   position: relative;
 }
-.actuals .actual-cards .card .text-box .actual-text {
+.blog .blog-cards .card .text-box .blog-entry-text {
   line-height: 1.25rem;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
-.actuals .actual-cards .card .text-box .actual-date {
+.blog .blog-cards .card .text-box .blog-entry-date {
   margin-bottom: 2.125rem;
 }
-.actuals .actual-cards .card .text-box .actual-desc {
+.blog .blog-cards .card .text-box .blog-entry-desc {
   margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 767px) {
-  .actuals .actuals-header {
+  .blog .blog-header {
     display: none;
   }
-  .actuals .title {
+  .blog .title {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: unset;
     background: var(--color-yellow-2);
   }
-  .actuals .actual-cards {
+  .blog .blog-cards {
     display: flex;
     gap: unset;
     grid-template-columns: unset;
@@ -116,12 +118,12 @@
     padding: 0 0.625rem;
     padding-bottom: 2.5rem;
   }
-  .actuals .actual-cards .card {
+  .blog .blog-cards .card {
     flex-direction: column;
     height: unset;
     margin-bottom: 1rem;
   }
-  .actuals .actual-cards .card .picture-box {
+  .blog .blog-cards .card .picture-box {
     display: flex;
     flex: unset;
     width: 100%;
@@ -130,12 +132,12 @@
     max-width: unset;
     min-width: unset;
   }
-  .actuals .actual-cards .card .picture-box .picture-title {
+  .blog .blog-cards .card .picture-box .picture-title {
     left: 1.5rem;
     bottom: 1.5rem;
     font-size: 21px;
   }
-  .actuals .actual-cards .card .text-box {
+  .blog .blog-cards .card .text-box {
     display: flex;
     flex: unset;
     flex-direction: column;
@@ -147,17 +149,17 @@
     padding-bottom: 3rem;
     position: relative;
   }
-  .actuals .actual-cards .card .text-box .actual-desc {
+  .blog .blog-cards .card .text-box .blog-entry-desc {
     font-size: 24px;
   }
-  .actuals .actual-cards .card .text-box .actual-text {
+  .blog .blog-cards .card .text-box .blog-entry-text {
     font-size: 13px;
     height: 2.625rem;
     line-height: 1.375rem;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .actuals .actual-cards .card .text-box .actual-date {
+  .blog .blog-cards .card .text-box .blog-entry-date {
     display: none;
   }
 }
