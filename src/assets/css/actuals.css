@@ -89,6 +89,8 @@
 }
 .actuals .actual-cards .card .text-box .actual-text {
   line-height: 1.25rem;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
 .actuals .actual-cards .card .text-box .actual-date {
   margin-bottom: 2.125rem;

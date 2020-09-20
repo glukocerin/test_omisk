@@ -16,10 +16,13 @@ export default function Actual() {
       <div className="actual-box">
         <label className="date size-15 bold">{ actual.date }</label>
         <label className="box-title size-36 extra-bold">{ actual.picture_title }</label>
-        <label className="details-header size-36 thin">{ actual.details_header }</label>
-        <label className="details size-20 thin">{ actual.details }</label>
+        <label className="details size-20 thin" dangerouslySetInnerHTML={createMarkup(actual.text)}></label>
       </div>
       <div className="color-box"></div>
     </div>
   );
+}
+
+function createMarkup(markup) {
+  return {__html: markup};
 }

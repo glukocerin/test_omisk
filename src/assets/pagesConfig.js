@@ -707,40 +707,68 @@ const pagesConfig = {
   actuals: {
     cards: [
       {
-        picture: "actual-one.png",
-        picture_title: "Felhívás",
-        date: "2020. 12. 03.",
-        title: "Járvány helyzet",
+        picture: "actual-two.jpg",
+        picture_title: "Berczik Sára",
+        date: "2020. 09. 18.",
+        title: "A Berczik módszerről",
         text:
-          "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
-        details_header:
-          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
-        details:
-          "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.",
+          "Az OMISK - ot  ezelőtt 30 évvel azért alapítottuk, hogy a Berczik technikát tanítsuk gyerekeknek. Ahogy tanítványaink  nőttek, velük együtt fejlődött  az iskola is. Sok más műfaj is helyet kapott, de ma is a Berczik technikát tartjuk a legfontosabb kiindulási pontnak. Az OMISK-ba jelentkező óvodások most is ezzel kezdenek nálunk.\n\nA gyermek életének alapeleme a mozgás. Önként és örömmel csinál mindent, ami közel áll természetes mozgás igényéhez és ez megalapozza szellemi-fizikai fejlődését.  A Berczik módszer ebből az ösztönös mozgásból indul ki és alakítja tudatossá. Így az órai gyakorlatok mindig az életkornak megfelelőek, a tudatosság pedig biztos alapokra helyez bármilyen későbbi mozgástanulást.\n\nAz órákon mindig arra törekszünk , hogy már a legkisebbek is értsék, amit csinálnak . A mozgást nem utánozni kell a gyerekeknek, hanem tanulni. Ha tudják, hogy mikor végzik helyesen, akkor nagyobb örömet okoz, ha ez sikerül nekik. A sikerélmény pedig további tanulásra ösztönzi a gyereket, így a figyelmük hosszú időn keresztül fenntartható.\n\nA Berczik módszer fontos  alapelve a mozdulatok elemekre bontása és  azok egymástól független kidolgozása, ami ezért pontosságra is nevel. Alkalmazza a sokirányú ráhatás elvét is, ami ugyanannak a testképző feladatnak a különböző testhelyzetekben történő végrehajtását jelenti. Az állandóan változó helyzetek segítik a tudás elmélyítését  azáltal, hogy  nem válik rutinná  a gyakorlás. A Berczik gimnasztika nem kíván speciális fizikai adottságokat, az adott testi lehetőségeken belül mindenkit fejleszt, így mindenkinek sikerélményt ad.\nA  Berczik technika nem egy szigorú, zárt rendszer, bármilyen mozgás megengedett, ami esztétikus. Ez nem mond ellent a precizitásra való törekvésnek, mert minden újító mozdulatnak pontosan leírhatónak, ezáltal reprodukálhatónak kell lenni. A fenti keretek között végzett gyakorlás  felébreszti a gyerekekben az alkotás iránti vágyat és maguk is kreatívan bekapcsolódnak a munkába\n\nA Berczik gimnasztika szívesen használ eszközöket, ezeknek kettős funkciója van. A kéziszer egyrészt, a test meghosszabbításaként segít megérteni, vizualizálni az irányokat, síkokat. Ugyanakkor változatosabbá teszi a gimnasztikát és mivel bármilyek eszköz használata megengedett, újabb teret nyit az alkotó fantáziának.\n\nA Berczik technikán alapuló koreográfiákban a zene nem csak kisérőeleme a táncnak, hanem annak tartalmát is kiemeli. Ha a koreográfiát a zenével szoros összhangban készítjük el, akkor a zene és a tánc egymás hatását erősítik. Még szebbnek látjuk a táncot és jobban megértjük a zenét. Ezért lett iskolánk mottója:  mozgásba hozzuk a zenét.\n\nPers Júlia",
       },
       {
-        picture: "actual-two.png",
-        picture_title: "Program",
-        date: "2020. 12. 03.",
-        title: "Nyári tábor",
+        picture: "actual-one.jpg",
+        picture_title: "Tájékoztató",
+        date: "2020. 09. 17.",
+        title: "COVID tájékoztató",
         text:
-          "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
-        details_header:
-          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
-        details:
-          "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.",
+          "Iskolánkban az alábbi óvintézkedéseket hoztuk mindannyiunk érdekében:\n\n<ol><li className='number'>A csoportok elkülönülve öltözködnek, mindenki mindig csak a saját csapattársaival együtt. Az első foglalkozáson kiírjuk , illetve a tanárok is elmondják, hogy melyik öltözőt használják ezentúl a csoportok.</li><li className='number'>Kérjük, hogy aki teheti, otthon vegye fel a tornadresszet , hogy  minél kevesebben  és minél rövidebb ideig használják az öltözőt!</li><li className='number'>A tanárok maszkot viselnek, ha közel mennek a gyerekekhez.  A közös helyiségekben iskolás kortól kötelező a maszk viselése.  Az órákon a gyerekek maguk döntik el, hogy viselik-e a maszkot.</li><li className='number'>A termek folyamatos szellőztetéséről gondoskodunk. Ha az időjárás miatt az ablakok állandó nyitvatartása nem lehetséges, akkor az órák között alaposan kiszellőztetünk.</li><li className='number'>A terembe belépés előtt és kilépés után felhívjuk a figyelmet a kézfertőtlenítő használatára és/vagy az alapos kézmosásra. A tanároknál is van kézfertőtlenítő és az órák között a rudakat fertőtlenítő kendővel áttörlik.</li><li className='number'>Készülünk az online tanításra is többféle módon is.Ennek részleteit hamarosan közzétesszük.</li><li className='number'>Mulasztás esetén kérjük, hogy tájékoztassák iskolánkat és betegség után orvosi igazolást kérünk most mindenkitől !  Covid fertőzés esetén gyors értesítést kérünk, hogy a csoport többi tagját tájékoztatni tudjuk!</li></ol>Köszönjük szépen a fentiek betartását. Bízunk abban, ezzel is hozzájárulunk ahhoz, hogy minél hamarabb visszatérhessünk a  megszokott életünkhöz!"
       },
       {
-        picture: "actual-three.png",
-        picture_title: "Program",
-        date: "2020. 12. 03.",
-        title: "Járvány helyzet",
+        picture: "actual-three.jpg",
+        picture_title: "Nyári tábor",
+        date: "2020. 08. 10.",
+        title: "Ha nyár, akkor OMISK tábor!",
         text:
-          "Tisztelt Szülők! Kedves Növendékeink! A járványügyi vészhelyzet miatt március 16-tól valamennyi helyszínünkön szüneteltetjük a tanítást. A folytatás időpontját sajnos nem tudjuk, ahogyan az iskolák bezárása is határozatlan időre szól. Minden változásról itt és honlapunkon adunk tájékoztatást.",
-        details_header:
-          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:",
-        details:
-          "2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter. 2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.",
+          "Első turnusunk véget ért, de nincs ok aggodalomra, augusztus utolsó hetében jön a második felvonás.\n\nA kezdeti érdeklődésre alapozva idén már harmadszor ifjúsági turnust is indítottunk. Bár ők a gyermek korosztálytól elkülönítve, magasabb óraszámban táncolhatnak a tábor alatt, mégis vannak olyan időszakok, amikor közösen tölthetik az időt. Öröm látni, hogy idősebb növendékeink milyen gondoskodással, szeretettel fordulnak a kisebbek felé. Az a közösség, ami ilyenkor épül, nem csak egy nyárra érvényes. Ha lemaradtál az augusztusi jelentkezésről, ne búsulj. Várunk jövőre! …addig is pedig még sok dolgunk van szeptembertől."
+      },
+      {
+        picture: "actual-four.jpg",
+        picture_title: "Program",
+        date: "2020. 06. 08.",
+        title: "Omisk tábor",
+        text:
+          "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:\n\n<ul><li>2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter</li><li>2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter</li></ul>\n\nKét külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.00 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.\n\nOnline kérdőív kitöltése után jelentkezésetek a tábor teljes árának átutalása után válik véglegessé, fizetési határidő július 10!\n\nA befizetésről jelentkezést követő visszaigazoló e-mailünkben küldünk további tájékoztatást.\n\nIdén a vírus okozta rendkívüli helyzet miatt a tábor menetrendje némileg eltér a korábbi években megszokottól. Ezzel kapcsolatos információkat részletesen a tábor előtti hetekben küldjük. Természetesen a mindenkori higiéniás feltételeknek megfelelően járunk el.\n<strong>Gyermek turnus programja:</strong>\nA tábor minden reggel 9-kor kezdődik, érkezni 8 órától lehet, reggeli tornával és csapatépítéssel kezdjük a programot. A nap során a gyerekeknek művészi torna és kéziszer órákat tartunk, koreográfiákat tanulnak valamint szabad tánc és kézműves foglalkozásokon vesznek részt. Délután nyújtással zárjuk 16:30-kor a programot. A hetet pedig egy nyilvános bemutatóval fejezzük be.\n<strong>Ifjúsági turnus programja:</strong>\nKülönböző típusú órákon vesznek részt: mozdulatművészet és modern technikai alapok, kéziszer, előadói és improvizációs készségek fejlesztése, koreográfiatanulás, nyújtás. A délelőtt során két foglalkozás lesz, közte tízórai szünet, ebéd után kis pihenés és kézműves foglalkozás után egy hosszabb órával és nyújtással fejezzük be a napot. A foglalkozások minden nap 9 órától 16:30-ig tartanak.\nTovábbi információkkal a tábor indulása előtt jelentkezünk, addig is bármilyen kérdéssel kapcsolatban keress nyugodtan az elérhetőségeinken.\n\nReméljük, velünk tartotok nyári programjainkon!"
+      },
+      {
+        picture: "actual-five.jpg",
+        picture_title: "Versenyek",
+        date: "2020. 05. 12.",
+        title: "I. Országos Online Szólótánc Verseny ",
+        text:
+          "A hagyományos országos táncversenyek a rendkívüli helyzet miatt idén tavasszal elmaradtak. A Táncpedagógusok Országos Szövetsége viszont új versenyt hirdetett, hogy a résztvevőknek ki se kelljen mozdulniuk otthonról. Az I. Országos Online Szólótánc Versenyen iskolánk tizenegy növendéke indult – Bajnok Luca, Banadics Linda, Banadics Villő, Bánkuti Lili, Buday Virág, Kisfaludy Emese, Matlári Nóra, Sájer Adél, Szilágyi Csenge, Tomka Dorottya és Tóth Adrienn. A versenyzőknek megadott zenére kellett önálló koreográfiát készíteni, felvenni videóra, és elküldeni a zsűrinek értékelésre.\n\nBüszkék vagyunk rá, hogy növendékeink bár konzultálhattak tanáraikkal, mindannyian önállóan, kreatív módon oldották meg a feladatot – legtöbben most készítették el első koreográfiájukat.\n\nBánkuti Lili produkcióját a zsűri külön dicséretben részesítette. Gratulálunk!\n\n\nNövendékeink koreográfiáiból összefoglaló itt: <a href='https://www.youtube.com/watch?v=aJbXdmSIkjk' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/watch?v=aJbXdmSIkjk</a>",
+      },
+      {
+        picture: "actual-six.jpg",
+        picture_title: "Gála",
+        date: "2020. 02. 25.",
+        title: "Gála",
+        text:
+          "Régi produkciók új köntösben – Nosztalgiázhattunk is a 2020-as OMISK Gálán\n\nMűfaji változatosság, zenei sokszínűség. Ahogy megszokhattuk, az idei és elmúlt évek legsikeresebb koreográfiái kerültek színpadra február 22-én, az Óbudai Kulturális Központban. Az aktuális versenykoreográfiákon felül viszont több régi, klasszikus produkció új szereposztásban, jelenlegi tanítványainkkal került bemutatásra, az egykori előadók – ma már feleségek, anyukák – pedig a közönség soraiból nosztalgiázhattak. Vendégeinknek köszönjük az érdeklődést, növendékeinknek pedig gratulálunk!",
+      },
+      {
+        picture: "actual-six.jpg",
+        picture_title: "Gála",
+        date: "2020. 01. 10.",
+        title: "OMISK klasszikusok a színpadon",
+        text:
+          "Vannak olyan koreográfiák, amiket lehetetlen megunni. A sok új, versenyre készült produkció mellett ezeket az örök klasszikusokat is újranézheted a 2020-as OMISK Gálán. Haladó növendékeink az elmúlt évek legsikeresebb koreográfiáit mutatják be gálaműsorunkon. Várunk szeretettel!\n\nJegyek előjegyezhetők iskolatitkárunknál.",
+      },
+      {
+        picture: "actual-six.jpg",
+        picture_title: "Verseny",
+        date: "2019. 12. 01.",
+        title: "Adventi Művészi Gimnasztika Gála - Törökbálint",
+        text:
+          "December 1-én  harmadik alkalommal vettünk részt Művészi Gimnasztika Szövetség hagyományos versenyén. Nagyon jól szerepeltünk, minden csapatunk  arany minősítést szerzett és  az összesített legmagasabb pontszámot is mi kaptuk.\n\n<strong>KÁNON</strong> – arany minősítés – koreográfia Pers Júlia – serdülő – művészi gimnasztika szabadon\n\nDétári Borbála, Marton Dóra, Matlári Júlia, Matlári Nóra, Mihályi Jázmin, Munkácsi Alíz, Munkácsi Réka, Pék Laura, Sata Emese, Takács Réka\n\n<strong>ÖRDÖGLAKAT</strong> – arany minősítés – koreográfia Pers Júlia – ifjúsági – művészi gimnasztika szabadon\n\nBanadics Dorottya, Bazsa Edina, Duca Anasztázia, Kiss Emília, Márkus Hanna, Sájer Adél, Stoffán Virág, Tatár Dorottya, Tóth Adrienn, Tóth Petra Lilla\n\n<strong>OLVADÁS</strong> – arany minősítés – koreográfia Mády Krisztina – ifjúsági – labda kéziszer\n\nBajnok Luca, Finta Kincső, Horányi Róza, Horváth Luca, Illényi Johanna, Ilyés Hanna, Imre Dorottya, Márkus Adél, Nagy Lilla, Werner Júlia, Werner Mária, Zombori Márta\n\n<strong>KÉT VÍZ KÖZÖTT</strong> – arany minősítés – koreográfia Mády Krisztina – felnőtt – szalag kéziszer\n\nBartók Natália, Csillag Emese, Ecseri Katalin, Jakabffy Lili, Márkus Réka, Somfai Réka",
       },
     ],
   },

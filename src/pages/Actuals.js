@@ -20,12 +20,16 @@ const ActualsCards = function() {
         <div className="text-box">
           <label className="actual-date size-15 extra-bold">{card.date}</label>
           <label className="actual-desc size-24 extra-bold">{card.title}</label>
-          <label className="actual-text size-15 thin">{card.text}</label>
+          <label className="actual-text size-15 thin" dangerouslySetInnerHTML={createMarkup(card.text)}></label>
         </div>
       </div>
     </Link>
   ));
 };
+
+function createMarkup(markup) {
+  return {__html: markup};
+}
 
 export default function Actuals() {
   return (
