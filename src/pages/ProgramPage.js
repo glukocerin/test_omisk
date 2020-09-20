@@ -69,12 +69,12 @@ function useCurrentScrollTop() {
       setTop(document.querySelector(".App").scrollTop || getScrollTop());
     };
     // set resize listener
-    window.addEventListener("wheel", scrollListener);
+    window.addEventListener("scroll", scrollListener, true);
 
     // clean up function
     return () => {
       // remove resize listener
-      window.removeEventListener("wheel", scrollListener);
+      window.removeEventListener("scroll", scrollListener, true);
     };
   }, []);
 
