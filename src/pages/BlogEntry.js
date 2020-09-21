@@ -15,7 +15,6 @@ export default function BlogEntry() {
       <label className="title size-90 extra-bold">{ blogEntry.title }</label>
       <div className="blog-entry-box">
         <label className="date size-15 bold">{ blogEntry.date }</label>
-        <label className="box-title size-36 extra-bold">{ blogEntry.picture_title }</label>
         <label className="details size-20 thin" dangerouslySetInnerHTML={createMarkup(blogEntry.text)}></label>
       </div>
       <div className="color-box"></div>
