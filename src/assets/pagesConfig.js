@@ -993,7 +993,7 @@ const pagesConfig = {
         ],
         achievements: [],
         courses: ["művészi torna, mozdulatművészet"],
-        hasActionPicture: false,
+        hasActionPicture: true,
       },
       {
         picture: "rozsa_reka.jpg",
@@ -1022,7 +1022,7 @@ const pagesConfig = {
         ],
         achievements: [],
         courses: ["művészi torna, mozdulatművészet, pre-balett"],
-        hasActionPicture: false,
+        hasActionPicture: true,
       },
       {
         picture: "david_luca.jpg",
