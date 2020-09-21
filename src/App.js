@@ -36,6 +36,7 @@ import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import BlogModal from "./components/BlogModal";
+import Cookies from "./components/Cookies";
 
 const { programs } = pagesConfig;
 const { courses } = pagesConfig;
@@ -46,6 +47,7 @@ function App() {
   return (
     <div className="App">
       <BlogModal opt={{ isOpen: true }} />
+      <Cookies />
       <Switch>
         <Route exact path="/courses">
           <Navigation BackgroundColor="green-1" />
