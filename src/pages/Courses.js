@@ -8,7 +8,7 @@ import pagesConfig from "../assets/pagesConfig";
 
 const { courses, ...rest } = pagesConfig;
 
-const CourseCards = function() {
+const CourseCards = function () {
   return courses.cards.map((card, index) => (
     <Card key={index} details={card} />
   ));
@@ -29,10 +29,15 @@ export default function Courses() {
           Szeretnél csatlakozni?
         </h4>
         <div className={style["footer-buttons-wrapper"]}>
-          <button className={style["footer-button-details"]}>Érdeklődöm</button>
-          <button className={style["footer-button-sign-up"]}>
+          <Link
+            className={`${style["footer-button-details"]} size-15`}
+            to="/contact"
+          >
+            Érdeklődöm
+          </Link>
+          <Link className={style["footer-button-sign-up"]} to="/enrollment">
             Jelentkezem
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -72,7 +72,12 @@
   justify-content: space-between;
 }
 
-.footer-buttons-wrapper button {
+.footer-buttons-wrapper a {
+  padding: 0 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 7rem;
   height: 2.125rem;
   margin-bottom: 1.0625rem;
@@ -80,7 +85,7 @@
   cursor: pointer;
   font-weight: bold;
   outline: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease- border 0.3s ease-in-out;
 }
 
 .footer-button-details {

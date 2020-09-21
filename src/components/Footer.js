@@ -43,10 +43,7 @@ export default function Footer() {
         <div className={style["details-box"]}>
           <h5 className={`size-20 extra-bold`}>Az Omiskrol</h5>
           <p className={`size-15 thin`}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata
+            4 éves kortól kezdve - Berczik Sára módszerével alapozva - iskolánkban többféle műfajt tanítunk iskolaszerűen egymásra épülő évfolyamokban. A zene nálunk nem csak kísérőeleme a táncnak, hanem szoros összhagban egymás hatását erősítii.  Így hozzuk mi mozgásba a zenét.
           </p>
         </div>
         <div className={style["details-box"]}>

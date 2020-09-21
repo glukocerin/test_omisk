@@ -4,9 +4,10 @@
   fill: var(--color-gray-7);
   stroke: var(--color-gray-7);
 }
-.footer-icon {
+.footer-icon svg {
   width: 2.375rem;
   height: 2.375rem;
+  border-radius: 2.375rem;
 }
 .footer-icon + .footer-icon {
   margin-left: 0.625rem;
