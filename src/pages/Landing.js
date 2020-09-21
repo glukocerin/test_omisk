@@ -117,6 +117,11 @@ function useCurrentScrollTop() {
     return top;
 }
 
+function restoreScrollTop(event) {
+    event.persist();
+    document.querySelector(".App").scrollTop = event.currentTarget.offsetTop;
+}
+
 export default function Landing({ dotChange }) {
     const pageIndex = useSelector(store => store.navigation.landingPageIndex);
     const dispatch = useDispatch();
@@ -166,7 +171,7 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right one ${ activeDot === 1 ? "active": "" }`}></div>
-            <div className={`mobile-card one ${activeCard === 1 && 'toggled'}`} onClick={() => activeCard === 1 ? setActiveCard(0):setActiveCard(1)}>
+            <div className={`mobile-card one ${activeCard === 1 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 1 ? setActiveCard(0):setActiveCard(1)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Küldetésünk</label>
@@ -185,7 +190,7 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right two ${ activeDot === 2 ? "active": "" }`}></div>
-            <div className={`mobile-card inverse two ${activeCard === 2 && 'toggled'}`} onClick={() => activeCard === 2 ? setActiveCard(0):setActiveCard(2)}>
+            <div className={`mobile-card inverse two ${activeCard === 2 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 2 ? setActiveCard(0):setActiveCard(2)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Kik vagyunk?</label>
@@ -206,7 +211,7 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
-            <div className={`mobile-card three ${activeCard === 3 && 'toggled'}`} onClick={() => activeCard === 3 ? setActiveCard(0):setActiveCard(3)}>
+            <div className={`mobile-card three ${activeCard === 3 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 3 ? setActiveCard(0):setActiveCard(3)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Hol vagyunk?</label>
@@ -361,7 +366,7 @@ export default function Landing({ dotChange }) {
             <div className={`right four ${ activeDot === 4 ? "active": "" }`}>
                 <LeafletMap props={activePlace}/>
             </div>
-            <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={() => activeCard === 4 ? setActiveCard(0):setActiveCard(4)}>
+            <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 4 ? setActiveCard(0):setActiveCard(4)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Milyen kurzusaink vannak?</label>
@@ -373,7 +378,7 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}></div>
-            <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={() => activeCard === 5 ? setActiveCard(0):setActiveCard(5)}>
+            <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 5 ? setActiveCard(0):setActiveCard(5)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Mit csinálunk az órákon?</label>
@@ -394,7 +399,7 @@ export default function Landing({ dotChange }) {
                     </div>
                 </div>
             </div>
-            <div className={`mobile-card inverse six ${activeCard === 6 && 'toggled'}`} onClick={() => activeCard === 6 ? setActiveCard(0):setActiveCard(6)}>
+            <div className={`mobile-card inverse six ${activeCard === 6 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 6 ? setActiveCard(0):setActiveCard(6)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">És az órákon kívül...</label>
@@ -406,7 +411,7 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}></div>
-            <div className={`mobile-card seven ${activeCard === 7 && 'toggled'}`} onClick={() => activeCard === 7 ? setActiveCard(0):setActiveCard(7)}>
+            <div className={`mobile-card seven ${activeCard === 7 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 7 ? setActiveCard(0):setActiveCard(7)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Ami fontos számunkra</label>

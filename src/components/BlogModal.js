@@ -50,8 +50,8 @@ export default function () {
               &#215;
             </button>
             <div className={`${style["text-body"]}`}>
-              <h2 className={`size-54 extra-bold`}>COVID tájékoztató</h2>
-              <p className={`size-20`}>
+              <h2 className={`size-54 extra-bold ${style["text-body-title"]}`}>COVID tájékoztató</h2>
+              <p className={`size-20 ${style["text-body-paragraph"]}`}>
                 Iskolánkban óvintézkedéseket tettünk , hogy foglalkozásainkon is
                 csökkentsük a fertőzés továbbadásának lehetőségét. Köszönjük,
                 hogy betartják a COVID tájékoztatóban szereplő előírásokat!
