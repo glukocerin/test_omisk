@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 
 import "./assets/css/colors.css";
@@ -24,11 +22,6 @@ import Contact from "./pages/Contact";
 
 // courses
 import Eurhythmics from "./pages/courses/Eurhythmics";
-import Callisthenics from "./pages/courses/Callisthenics";
-import PreBallet from "./pages/courses/PreBallet";
-import Ballet from "./pages/courses/Ballet";
-import Jazz from "./pages/courses/Jazz";
-import Modern from "./pages/courses/Modern";
 
 //programs
 import pagesConfig from "./assets/pagesConfig";
@@ -44,7 +37,7 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import BlogModal from "./components/BlogModal";
 
-const { programs, ...rest } = pagesConfig;
+const { programs } = pagesConfig;
 const { courses } = pagesConfig;
 
 function App() {

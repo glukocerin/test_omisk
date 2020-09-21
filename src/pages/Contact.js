@@ -6,7 +6,7 @@ import pagesConfig from "../assets/pagesConfig";
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
 
-const { contact, ...rest } = pagesConfig;
+const { contact } = pagesConfig;
 
 const Gyik = function() {
   const [activeFaq, setActiveFaq] = useState(null);

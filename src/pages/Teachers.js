@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { teachers, ...rest } = pagesConfig;
+const { teachers } = pagesConfig;
 
 const TeacherCards = function() {
   return teachers.cards.map((card, index) => (

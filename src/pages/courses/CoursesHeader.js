@@ -4,12 +4,6 @@ import style from "../../assets/css/coursesHeader.module.css";
 
 export default function CoursesHeader(props) {
   const backgroundImage = require(`../../assets/img/courses/header/${props.opt.img}.jpg`);
-  const colors = {
-    pink: "#F4A7B7",
-    blue: "#19B3FC",
-    green: "#0CB3A1"
-  };
-  const color = colors[props.opt.color];
 
   return (
     <div className={style["header-wrapper"]}>
