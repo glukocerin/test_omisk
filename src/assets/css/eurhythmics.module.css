@@ -229,6 +229,7 @@
 }
 
 .footer-buttons-wrapper a {
+  padding: 0 4.2rem;
   display: flex;
   align-items: center;
   justify-content: center;

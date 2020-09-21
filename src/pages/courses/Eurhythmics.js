@@ -176,7 +176,10 @@ export default function Courses({ pageConfig }) {
           Szeretnél csatlakozni?
         </h4>
         <div className={style["footer-buttons-wrapper"]}>
-          <Link className={style["footer-button-details"]} to="/contact">
+          <Link
+            className={`${style["footer-button-details"]} size-15`}
+            to="/contact"
+          >
             Érdeklődöm
           </Link>
           <Link className={style["footer-button-sign-up"]} to="/enrollment">
