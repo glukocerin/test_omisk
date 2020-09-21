@@ -584,7 +584,7 @@
   }
 }
 .right.three {
-  background-image: url("../img/landing_bg_3.png");
+  background-image: url("../img/landing_bg_3.jpg");
 }
 .right.four {
   background: var(--color-gray-3);
@@ -608,7 +608,7 @@
   background-image: url("../img/landing_sub/five-three.jpg");
 }
 .right.five.no-four {
-  background-image: url("../img/landing_sub/five-four.jpg");
+  background-image: url("../img/landing_sub/five-four.png");
 }
 .right.five.no-five {
   background-image: url("../img/landing_sub/five-five.jpg");
@@ -800,6 +800,7 @@
     background-color: var(--color-gray-new-0);
     background-position: center;
     height: 50vh;
+    background-image: url("../img/landing_bg_1_mobil.jpg");
   }
   .mobile-card.one {
     order: 3;
