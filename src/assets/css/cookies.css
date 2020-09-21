@@ -1,0 +1,67 @@
+.cookies-block {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 401;
+    background: var(--color-green-1);
+    padding: 1.5rem;
+    align-items: center;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom;
+}
+.cookies-block.hidden {
+    transform: scaleY(0);
+}
+.cookies-block * {
+    color: var(--color-gray-0);
+    white-space: nowrap;
+}
+.cookies-block .btn.close {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 5vw;
+    font-size: 32px;
+    height: 2rem;
+    cursor: pointer;
+}
+.cookies-block .btn.close:hover {
+    color: var(--color-btn-hover-green-2);;
+}
+.cookies-block .btn.close:active {
+    color: var(--color-btn-active-green-2);;
+}
+.cookies-block .size-20.thin strong {
+    font-weight: 800;
+}
+.cookies-block .size-20.thin {
+    margin-right: 1.042vw;
+}
+.cookies-block .link {
+    font-size: 1.042vw;
+    font-weight: 100;
+}
+.cookies-block .btn.accept {
+    background: transparent;
+    outline: 0;
+    margin-left: 1.042vw;
+    font-size: 0.781vw;
+    padding: 10px 29px;
+    font-weight: 800;
+    transition: border-color 300ms, background-color 300ms, color 300ms;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-btn-normal-green-2);
+    border: 1px solid var(--color-btn-normal-green-2);
+  }
+  .cookies-block .btn.accept:hover {
+    color: var(--color-btn-hover-green-2);
+    border: 1px solid var(--color-btn-hover-green-2);
+  }
+  .cookies-block .btn.accept:active {
+    color: var(--color-btn-active-green-2);
+    border: 1px solid var(--color-btn-active-green-2);
+  }
