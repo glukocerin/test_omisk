@@ -441,7 +441,7 @@ export default function Landing({ dotChange }) {
                         <LogoWithTitle className="logo"/>
                     </div>
                     <label className="text size-24 extra-bold">Az omiskról</label>
-                    <label className="article size-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</label>
+                    <label className="article size-12">4 éves kortól kezdve - Berczik Sára módszerével alapozva - iskolánkban többféle műfajt tanítunk iskolaszerűen egymásra épülő évfolyamokban. A zene nálunk nem csak kísérőeleme a táncnak, hanem szoros összhagban egymás hatását erősítii.  Így hozzuk mi mozgásba a zenét.</label>
                     <label className="text size-24 extra-bold">Kapcsolat</label>
                     <label className="article size-12">
                         Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol<br/>
