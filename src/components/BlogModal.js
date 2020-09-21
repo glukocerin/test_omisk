@@ -26,7 +26,7 @@ export default function () {
     return () => {
       document.removeEventListener("keydown", escFunction, false);
     };
-  }, []);
+  }, [escFunction]);
 
   return (
     <div>

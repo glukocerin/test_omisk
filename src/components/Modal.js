@@ -33,7 +33,7 @@ export default function ({ isOpen, setModalOpen, videos }) {
       if (event.keyCode === 27) {
         setModalOpen(false);
       }
-    }, []);
+    }, [setModalOpen]);
 
   useEffect(() => {
     document.addEventListener("keydown", escFunction, false);
@@ -41,7 +41,7 @@ export default function ({ isOpen, setModalOpen, videos }) {
     return () => {
       document.removeEventListener("keydown", escFunction, false);
     };
-  }, []);
+  }, [escFunction]);
 
   return (
     <div>

@@ -3,10 +3,7 @@ import style from "../assets/css/programPage.module.css";
 import "../assets/css/blog.css";
 
 import { Link } from "react-router-dom";
-import pagesConfig from "../assets/pagesConfig";
 import Modal from "../components/Modal";
-
-const { blog, ...rest } = pagesConfig;
 
 const Images = function ({ gallery }) {
   const images = gallery.map((img, index) => {

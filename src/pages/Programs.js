@@ -4,7 +4,7 @@ import style from "../assets/css/programs.module.css";
 import ProgramCard from "../components/ProgramCard";
 import pagesConfig from "../assets/pagesConfig";
 
-const { programs, ...rest } = pagesConfig;
+const { programs } = pagesConfig;
 
 const ProgramCardsFirstRow = function() {
   return programs.programCards.firstRow.map((card, index) => (

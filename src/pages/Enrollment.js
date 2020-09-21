@@ -7,7 +7,7 @@ import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { enrollment, ...rest } = pagesConfig;
+const { enrollment } = pagesConfig;
 
 const EnrollmentColumns = function(props) {
   return enrollment.columns.map((item, index) => (
