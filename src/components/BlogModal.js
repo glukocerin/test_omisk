@@ -52,8 +52,9 @@ export default function () {
             <div className={`${style["text-body"]}`}>
               <h2 className={`size-54 extra-bold`}>COVID tájékoztató</h2>
               <p className={`size-20`}>
-                Iskolánkban az alábbi óvintézkedésket tettük mindannyiunk
-                érdekében: A csoportok elkülönülve öltözködnek
+                Iskolánkban óvintézkedéseket tettünk , hogy foglalkozásainkon is
+                csökkentsük a fertőzés továbbadásának lehetőségét. Köszönjük,
+                hogy betartják a COVID tájékoztatóban szereplő előírásokat!
               </p>
               <Link
                 className={`${style["button"]} size-16 extra-bold`}
