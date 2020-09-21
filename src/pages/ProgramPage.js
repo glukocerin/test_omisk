@@ -69,12 +69,12 @@ function useCurrentScrollTop() {
       setTop(document.querySelector(".App").scrollTop || getScrollTop());
     };
     // set resize listener
-    window.addEventListener("scroll", scrollListener, true);
+    window.addEventListener("scroll", scrollListener, true  );
 
     // clean up function
     return () => {
       // remove resize listener
-      window.removeEventListener("scroll", scrollListener, true);
+      window.removeEventListener("scroll", scrollListener, true );
     };
   }, []);
 
@@ -124,7 +124,7 @@ export default function ProgramPage(props) {
                 <label
                   className={`${style["open-video-label"]} size-36 extra-bold`}
                 >
-                  Évzáró előadások
+                  {props.opt.title}
                 </label>
                 <span className="size-15 extra-bold">Videó lejátszása</span>
               </button>
