@@ -212,7 +212,7 @@
     padding-bottom: 1.375rem;
   }
   .enrollment .enrollment-content .enrollment-columns {
-    flex-flow: column-reverse;
+    flex-direction: column;
   }
   .enrollment .enrollment-content .enrollment-columns .enrollment-box {
     margin-bottom: 3.875rem;
