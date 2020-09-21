@@ -122,11 +122,13 @@
 }
 .operation .operation-content .download-title {
   margin-bottom: 3.125rem;
+  margin-left: 4.25rem;
 }
 .operation .operation-content .label-with-icon {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
+  margin-left: 4.25rem;
 }
 .operation .operation-content .label-with-icon .download-icon {
   width: 1.4375rem;
@@ -206,6 +208,7 @@
   }
   .operation .operation-content .download-title {
     margin-bottom: 1.75rem;
+    margin-left: 0;
   }
   .operation .operation-content .download-icon {
     width: 1.5rem;
@@ -215,6 +218,7 @@
   }
   .operation .operation-content .label-with-icon {
     margin-bottom: 1.125rem;
+    margin-left: 0;
   }
   .operation .operation-content .label-with-icon.margin-bottom {
     margin-bottom: 2rem;
