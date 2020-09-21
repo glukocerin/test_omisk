@@ -68,6 +68,7 @@
 }
 .blog-entry .blog-entry-box .details {
   white-space: pre-wrap;
+  line-height: 1.75;
 }
 .blog-entry .blog-entry-box .details strong {
   font-weight: 800;

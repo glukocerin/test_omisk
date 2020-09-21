@@ -37,6 +37,9 @@
   font-weight: 100;
   outline: none;
   cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+  box-shadow: unset;
   transition: opacity 0.3s ease-in-out;
 }
 .close-button:hover,

@@ -120,7 +120,7 @@
   }
   .hamburger-menu.toggled .menu-list .sm-icons .icon .cls-2 {
     fill: var(--color-gray-0);
-    stroke: var(--color-gray-7);
+    stroke: unset;
   }
   .hamburger-menu.toggled .menu-list .sm-icons .icon + .icon {
     margin-left: 0.75rem;
