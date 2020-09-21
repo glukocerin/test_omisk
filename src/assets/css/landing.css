@@ -99,11 +99,13 @@
   height: 3.833vw;
 }
 .left.one .double-arrow-down {
-  margin-top: 8.5vh;
-  margin-left: 1.25rem;
-  margin-bottom: 2.5vh;
+  position: absolute;
+  bottom: 13vh;
+  left: 13vw;
   animation: sdb04 2s infinite;
   cursor: pointer;
+  width: 2.292vw;
+  height: 2.292vw;
 }
 @keyframes sdb04 {
   0% {
@@ -126,6 +128,12 @@
 }
 .left.one .double-arrow-down .cls-2 {
   stroke: unset;
+}
+.left.one .double-arrow-down + .thin {
+  position: absolute;
+  font-size: 0.625vw;
+  bottom: 10vh;
+  left: 12vw;
 }
 .left.two {
   background: var(--color-pink-0);
@@ -756,6 +764,9 @@
   .left.one .content-block {
     margin-left: unset;
   }
+  .left.one .title {
+    font-size: 38px;
+  }
   .left.one .sub-title {
     margin-top: 1rem;
   }
@@ -763,8 +774,8 @@
     width: 7rem;
     height: 7rem;
     position: absolute;
-    top: 5rem;
-    right: 2rem;
+    top: 2rem;
+    right: 1.5rem;
   }
   .left.one .content-block .stamp-box .a {
     fill: var(--color-gray-7);
@@ -979,6 +990,8 @@
   .left.five .list-item .arrow,
   .left.seven .list-item .arrow {
     width: 1.5rem;
+    min-width: 1.5rem;
+    max-width: 1.5rem;
     margin-right: 1rem;
   }
   .left.five .list-item .arrow .cls-1,
