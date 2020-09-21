@@ -88,6 +88,7 @@
   margin-top: 0;
   line-height: 28px;
   color: var(--color-gray-7);
+  margin-bottom: 2rem;
 }
 
 .button {
@@ -117,10 +118,40 @@
 }
 @media screen and (max-width: 767px) {
   .modal {
+    bottom: 0;
+    top: unset;
+    transform: unset;
+    left: 0;
+    width: 100%;
+  }
+
+  .close-button {
+    margin-top: 0.5rem;
+    height: 1rem;
+    font-size: 36px;
+  }
+
+  .modal-body {
+    width: 100%;
+  }
+
+  .image {
     display: none;
+  }
+  .text-body-title {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .text-body {
+    padding: 3rem;
+    padding-top: 1rem;
+  }
+
+  .text-body-paragraph {
+    font-size: 18px;
   }
 
   .modal-overlay {
-    display: none;
+    background: transparent;
   }
 }
