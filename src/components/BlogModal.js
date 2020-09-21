@@ -21,13 +21,12 @@ export default function () {
     if (isModalShowed === "showed") {
       setModalOpen(false);
     }
-    console.log(window.sessionStorage);
     document.addEventListener("keydown", escFunction, false);
 
     return () => {
       document.removeEventListener("keydown", escFunction, false);
     };
-  }, []);
+  }, [escFunction]);
 
   return (
     <div>

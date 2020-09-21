@@ -6,7 +6,7 @@ import Card from "../components/CourseCard";
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { courses, ...rest } = pagesConfig;
+const { courses } = pagesConfig;
 
 const CourseCards = function () {
   return courses.cards.map((card, index) => (

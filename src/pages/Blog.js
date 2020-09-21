@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { blog, ...rest } = pagesConfig;
+const { blog } = pagesConfig;
 
 const BlogCards = function() {
   return blog.cards.map((card, index) => (

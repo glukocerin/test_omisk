@@ -512,11 +512,11 @@ const pagesConfig = {
       {
         title: "Művészi torna",
         image: "muveszi_torna",
-        bg_mobile: "yellow",
+        bg_mobile: "turquoise",
         age: "",
         districts: "III.,VII., VIII., XI., XII. kerületek",
         bottomText: "kerületekben",
-        backgroundColor: "blue",
+        backgroundColor: "turquoise",
         dotColor: "dot-blue",
         link: "eurhythmics",
       },

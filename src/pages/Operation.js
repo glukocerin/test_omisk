@@ -7,7 +7,7 @@ import { ReactComponent as DownloadIcon } from "../assets/img/icons/arrow_down.s
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { operations, ...rest } = pagesConfig;
+const { operations } = pagesConfig;
 
 const OperationElements = function(props) {
   return operations.map((operation, index) => (

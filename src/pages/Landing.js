@@ -27,7 +27,7 @@ import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
-const { landing, ...rest } = pagesConfig;
+const { landing } = pagesConfig;
 
 const Dots = function({ setActiveDot, dotChange, activeDot }) {
     const dots = [];
