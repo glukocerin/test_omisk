@@ -228,7 +228,11 @@
   justify-content: space-between;
 }
 
-.footer-buttons-wrapper button {
+.footer-buttons-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 7rem;
   height: 2.125rem;
   margin-bottom: 1.0625rem;
@@ -241,19 +245,19 @@
 }
 
 .footer-button-details {
-  border: 1px solid var(--color-btn-normal-green);
+  border: 2px solid var(--color-btn-normal-green);
   background-color: #fff;
   color: var(--color-btn-normal-green);
 }
 
 .footer-button-details:hover {
-  border: 1px solid var(--color-btn-hover-green);
+  border: 2px solid var(--color-btn-hover-green);
   color: var(--color-btn-hover-green);
 }
 
 .footer-button-details:active {
   outline: none;
-  border: 1px solid var(--color-btn-active-green);
+  border: 2px solid var(--color-btn-active-green);
   color: var(--color-btn-active-green);
 }
 
