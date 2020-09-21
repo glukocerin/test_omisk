@@ -214,18 +214,21 @@ input:-webkit-autofill:active  {
   padding: 15px 24px;
   font-size: 15px;
   font-weight: 800;
-  transition: background-color 300ms;
-  color: var(--color-gray-0);
-  border: unset;
+  border: 0;
+  background: var(--color-gray-0);
+  color: var(--color-btn-normal-blue);
+  transition: color 0.3s ease-in-out;
+}
+.contact .contact-content .btn-primary:hover {
+  color: var(--color-btn-hover-blue);
+  background: var(--color-gray-0);
+}
+.contact .contact-content .btn-primary:active {
+  color: var(--color-btn-active-blue);
+  background: var(--color-gray-0);
 }
 .contact .contact-content .btn:focus {
   outline: unset;
-}
-.contact .contact-content .btn-primary {
-  background: var(--color-gray-new-1);
-}
-.contact .contact-content .btn-primary:hover {
-  background: var(--color-gray-7);
 }
 @media screen and (max-width: 767px) {
   .contact {
@@ -258,19 +261,6 @@ input:-webkit-autofill:active  {
   }
   .contact .contact-content .contact-columns .contact-box + .contact-box {
     margin-left: 0;
-  }
-  .contact .contact-content .btn-primary {
-    background: var(--color-gray-0);
-    color: var(--color-btn-normal-blue);
-    transition: color 0.3s ease-in-out;
-  }
-  .contact .contact-content .btn-primary:hover {
-    color: var(--color-btn-hover-blue);
-    background: var(--color-gray-0);
-  }
-  .contact .contact-content .btn-primary:active {
-    color: var(--color-btn-active-blue);
-    background: var(--color-gray-0);
   }
   .contact .faq {
     padding: 2rem;
