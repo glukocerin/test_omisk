@@ -694,6 +694,11 @@
   margin-top: 25px;
 }
 
+.social-media-bar .icon .cls-1 {
+  fill: var(--color-gray-0);
+}
+
+.social-media-bar .icon .cls-1,
 .social-media-bar .icon .cls-2 {
   stroke: unset;
 }
