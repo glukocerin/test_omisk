@@ -71,11 +71,23 @@
 .header .links a,
 .header .links label.plus-sign {
   text-decoration: none;
-  font-size: 0.8vw;
+  font-size: 0.729vw;
   font-weight: 800;
   color: var(--color-gray-0);
   white-space: nowrap;
   height: 1.375rem;
+}
+@media screen and (max-width: 1600px) {
+  .header .links a,
+  .header .links label.plus-sign {
+    font-size: 0.85vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .header .links a,
+  .header .links label.plus-sign {
+    font-size: 0.9vw;
+  }
 }
 .header .links a.active,
 .header .links label.active.plus-sign {
