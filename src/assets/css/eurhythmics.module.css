@@ -400,13 +400,13 @@
   width: 50%;
 }
 
-.pic img {
+/* .pic img {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat, repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .card-wrapper {
