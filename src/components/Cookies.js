@@ -14,7 +14,7 @@ export default function Cookies() {
         <div className={`cookies-block ${(closed || localCookies) && 'hidden' }`}>
             <button className="btn close" onClick={()=> cloeCookies(true) }>&#215;</button>
             <label className="size-20 thin">A weboldal <strong>sütiket (cookie-kat)</strong> használ, hogy biztonságos böngészés mellett a legjobb felhasználói élményt nyújtsa.</label>
-            <a href={Pdf} className="link" target="_blank">Részletes információ a sütikről.</a>
+            <a href={Pdf} className="link" target="_blank" rel="noopener noreferrer">Részletes információ a sütikről.</a>
             <button className="btn accept" onClick={()=> { cloeCookies(true);setCookies()}}>Tudomásul vettem</button>
         </div>
     );

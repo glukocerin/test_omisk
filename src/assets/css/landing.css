@@ -42,7 +42,7 @@
 .left {
   position: absolute;
   left: 0;
-  top: -100%;
+  top: 100%;
   width: 50%;
   height: 100%;
   display: flex;
@@ -550,15 +550,15 @@
   border-top: 1px solid var(--color-gray-0);
 }
 .left.active {
-  animation: scrolldown 500ms ease-in-out forwards;
+  animation: scrollup 500ms ease-in-out forwards;
 }
 .left:not(.active) {
-  animation: scrolloutup ease-in-out 500ms;
+  animation: scrolloutdown ease-in-out 500ms;
   overflow: hidden;
 }
 .right {
   position: absolute;
-  top: 100%;
+  top: -100%;
   left: 50%;
   width: 50%;
   height: 100%;
@@ -671,10 +671,10 @@
   background-image: url("../img/landing_bg_8.png");
 }
 .right.active {
-  animation: scrollup 500ms ease-in-out forwards;
+  animation: scrolldown 500ms ease-in-out forwards;
 }
 .right:not(.active) {
-  animation: scrolloutdown 500ms ease-in-out;
+  animation: scrolloutup 500ms ease-in-out;
 }
 
 .social-media-bar {
@@ -798,7 +798,8 @@
     order: 1;
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
-    background-position: center;
+    background-position: top;
+    top: 0;
     height: 50vh;
     background-image: url("../img/landing_bg_1_mobil.jpg");
   }
