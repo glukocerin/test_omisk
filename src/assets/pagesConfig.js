@@ -1104,7 +1104,7 @@ const pagesConfig = {
           "Régi produkciók új köntösben – Nosztalgiázhattunk is a 2020-as OMISK Gálán\n\nMűfaji változatosság, zenei sokszínűség. Ahogy megszokhattuk, az idei és elmúlt évek legsikeresebb koreográfiái kerültek színpadra február 22-én, az Óbudai Kulturális Központban. Az aktuális versenykoreográfiákon felül viszont több régi, klasszikus produkció új szereposztásban, jelenlegi tanítványainkkal került bemutatásra, az egykori előadók – ma már feleségek, anyukák – pedig a közönség soraiból nosztalgiázhattak. Vendégeinknek köszönjük az érdeklődést, növendékeinknek pedig gratulálunk!",
       },
       {
-        picture: "entry-six.jpg",
+        picture: "entry-seven.jpg",
         picture_title: "Gála",
         date: "2020. 01. 10.",
         title: "OMISK klasszikusok a színpadon",
@@ -1112,7 +1112,7 @@ const pagesConfig = {
           "Vannak olyan koreográfiák, amiket lehetetlen megunni. A sok új, versenyre készült produkció mellett ezeket az örök klasszikusokat is újranézheted a 2020-as OMISK Gálán. Haladó növendékeink az elmúlt évek legsikeresebb koreográfiáit mutatják be gálaműsorunkon. Várunk szeretettel!\n\nJegyek előjegyezhetők iskolatitkárunknál.",
       },
       {
-        picture: "entry-six.jpg",
+        picture: "entry-eight.jpg",
         picture_title: "Verseny",
         date: "2019. 12. 01.",
         title: "Adventi Művészi Gimnasztika Gála - Törökbálint",

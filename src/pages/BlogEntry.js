@@ -17,7 +17,7 @@ export default function BlogEntry() {
         <label className="date size-15 bold">{ blogEntry.date }</label>
         <label className="details size-20 thin" dangerouslySetInnerHTML={createMarkup(blogEntry.text)}></label>
       </div>
-      <div className="color-box"></div>
+      <img src={require(`../assets/img/blog/${blogEntry.picture}`)} alt="" />
     </div>
   );
 }

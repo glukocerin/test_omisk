@@ -65,11 +65,10 @@
 .blog-entry .blog-entry-box .details strong {
   font-weight: 800;
 }
-.blog-entry .color-box {
-  background: var(--color-yellow-0);
+.blog-entry img {
   width: 100%;
-  display: flex;
-  height: 30rem;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -98,8 +97,11 @@
     border-bottom: 2.5rem solid var(--color-yellow-2);
   }
   .blog-entry .blog-entry-box .date,
-  .blog-entry .blog-entry-box .details-header,
-  .blog-entry .color-box {
+  .blog-entry .blog-entry-box .details-header {
     display: none;
+  }
+  .blog-entry img {
+    margin-bottom: 0;
+    border-bottom: 2.5rem solid var(--color-yellow-2);
   }
 }
