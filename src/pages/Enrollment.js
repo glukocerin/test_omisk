@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import '../assets/css/enrollment.css';
+import { Link } from "react-router-dom";
 import LeafletMap from '../components/LeafletMap'
 
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
@@ -14,7 +15,9 @@ const EnrollmentColumns = function(props) {
     <div className="enrollment-box" key={index}>
       <label className="enrollment-title size-36 extra-bold">{item.title}</label>
       <label className="enrollment-text size-20 thin">{item.text}</label>
-      <button className="btn">{item.button_text}</button>
+      <Link to={`/${item.link}`}>
+        <button className="btn">{item.button_text}</button>
+      </Link>
     </div>
   ));
 };
