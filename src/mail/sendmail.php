@@ -10,10 +10,8 @@
 
 	if(!$result) {   
 		http_response_code(404);
-		echo 'fail';
 	} else {
 		http_response_code(200);
-		echo 'success';
 	}
 
 ?>
