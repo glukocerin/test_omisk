@@ -798,7 +798,8 @@
     order: 1;
     background-size: 100% auto;
     background-color: var(--color-gray-new-0);
-    background-position: center;
+    background-position: top;
+    top: 0;
     height: 50vh;
     background-image: url("../img/landing_bg_1_mobil.jpg");
   }
