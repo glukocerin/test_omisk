@@ -56,7 +56,7 @@ export default function Footer() {
             Telefon: 06-1-2000-138 <br />
             Mobil: 06-20-9460-848 <br />
             E-mail: iroda@omisk.hu<br />
-            Posta: 1021. Budapest, Széher út 77.
+            Posta: 1021 Budapest, Széher út 77.
           </p>
         </div>
         <div className={style["details-box"]}>
