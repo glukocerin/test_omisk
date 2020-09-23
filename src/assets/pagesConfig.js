@@ -265,8 +265,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Cost",
-            occasions: ["Weekly 1 x 45 perc"],
-            prices: ["10300-11300 Ft / month"],
+            occasions: ["Weekly 1x45 perc"],
+            prices: ["10300-11300 Ft/month"],
           },
           discount: {
             name: "Discounts",
@@ -490,7 +490,7 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a klasszikus balett?",
-          img: "pages/ballet/2.jpg",
+          img: "pages/ballet/1.jpg",
           description:
             "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
         },
@@ -768,7 +768,7 @@ const pagesConfig = {
       omisk: {
         title: "Omisk Gála",
         headerImg: "omisk_gala",
-        videoImg: "versenyek/bg",
+        videoImg: "gala/bg",
         detailsOne:
           "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:

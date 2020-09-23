@@ -277,78 +277,6 @@
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    width: 100%;
-    height: 8.75rem;
-    background-color: var(--color-pink-0);
-  }
-
-  .header-text {
-    padding-top: 1.875rem;
-    width: 100%;
-    text-align: center;
-    color: var(--color-gray-0);
-    z-index: 123;
-  }
-
-  .header-text {
-    margin-bottom: 1rem;
-  }
-
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .info {
-    padding: 0;
-    margin: 0 10px;
-  }
-
-  .info .info-item {
-    display: flex;
-  }
-
-  .info h4 {
-    padding-top: 2.25rem;
-    padding-left: 1.4375rem;
-  }
-
-  .places {
-    min-width: 100%;
-    background-color: #fff;
-    padding: 0;
-  }
-
-  .places p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .place-appointment {
-    width: 100px;
-  }
-
-  .info-box {
-    max-width: 25.875rem;
-    background-color: #fff;
-    margin: 0 auto;
-  }
-
-  .place-date p {
-    width: 290px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .details {
-    max-width: 79.875rem;
-  }
-}
-
 .card-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -409,11 +337,119 @@
 } */
 
 @media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 8.75rem;
+    background-color: var(--color-pink-0);
+  }
+
+  .header-text {
+    padding-top: 1.875rem;
+    width: 100%;
+    text-align: center;
+    color: var(--color-gray-0);
+    z-index: 123;
+  }
+
+  .header-text {
+    margin-bottom: 1rem;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .info .info-item {
+    display: flex;
+  }
+
+  .info .column-first,
+  .info .column-second,
+  .info .column-third {
+    min-width: unset;
+    flex: 1;
+  }
+
+  .info .column-first p,
+  .info .column-second p,
+  .info .column-third p {
+    font-size: 3.5vw;
+    white-space: nowrap;
+  }
+
+  .info h4 {
+    padding-top: 2.25rem;
+    padding-left: 1.4375rem;
+  }
+
+  .places {
+    min-width: 100%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .place-item-wrapper {
+    display: flex;
+    justify-content: unset;
+  }
+
+  .places p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5vw;
+  }
+
+  .place-appointment {
+    flex: 1;
+    width: unset;
+    max-width: 40vw;
+    min-width: 40vw;
+  }
+
+  .info-box {
+    max-width: 25.875rem;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
+  .info-box-header h3 {
+    white-space: nowrap;
+    font-size: 22px;
+    margin: 1rem 0.5rem;
+  }
+
+  .place-date p {
+    width: unset;
+    max-width: 60vw;
+    min-width: 60vw;
+    padding-right: 0.5rem;
+    flex: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .details {
+    max-width: 79.875rem;
+  }
+
   .card-wrapper {
     margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+  }
+
+  .info-box {
+    max-width: 100%;
   }
 
   .text {

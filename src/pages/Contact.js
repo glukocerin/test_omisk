@@ -79,7 +79,7 @@ export default function Contact() {
               <span className="contact-row">Telefon: <b>06-1-2000-138</b></span>
               <span className="contact-row">Mobil: <b>06-20-9460-848</b></span>
               <span className="contact-row">E-mail: <b><a href="mailto:iroda@omisk.hu">iroda@omisk.hu</a></b></span>
-              <span className="contact-row">Posta: <b>1021. Budapest, Széher út 77.</b></span>
+              <span className="contact-row">Posta: <b>1021 Budapest, Széher út 77.</b></span>
             </label>
           </div>
         </div>
