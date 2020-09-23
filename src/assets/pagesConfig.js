@@ -768,7 +768,7 @@ const pagesConfig = {
       omisk: {
         title: "Omisk Gála",
         headerImg: "omisk_gala",
-        videoImg: "versenyek/bg",
+        videoImg: "gala/bg",
         detailsOne:
           "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:
