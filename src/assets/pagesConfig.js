@@ -265,8 +265,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Cost",
-            occasions: ["Weekly 1 x 45 perc"],
-            prices: ["10300-11300 Ft / month"],
+            occasions: ["Weekly 1x45 perc"],
+            prices: ["10300-11300 Ft/month"],
           },
           discount: {
             name: "Discounts",
