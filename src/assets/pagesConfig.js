@@ -490,7 +490,7 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a klasszikus balett?",
-          img: "pages/ballet/2.jpg",
+          img: "pages/ballet/1.jpg",
           description:
             "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
         },
