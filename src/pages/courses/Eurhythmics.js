@@ -46,7 +46,7 @@ function Places({ opt }) {
 
 export default function Courses({ pageConfig }) {
   const [activeTab, setActiveTab] = useState("info");
-  const onTabHeaderClickHandler = (activeTab) => {
+  const onTabHeaderClickHandler = activeTab => {
     setActiveTab(activeTab);
   };
   return (
@@ -55,7 +55,7 @@ export default function Courses({ pageConfig }) {
       <div className={style["info-box"]}>
         <div className={`${style["info-box-header"]}`}>
           <h3
-            onClick={(e) => onTabHeaderClickHandler("info")}
+            onClick={e => onTabHeaderClickHandler("info")}
             className={` ${
               activeTab === "info" ? style["active-header-tab"] : ""
             }  size-36 extra-bold`}
@@ -63,7 +63,7 @@ export default function Courses({ pageConfig }) {
             Hasznos infók
           </h3>
           <h3
-            onClick={(e) => onTabHeaderClickHandler("location")}
+            onClick={e => onTabHeaderClickHandler("location")}
             className={` ${
               activeTab === "location" ? style["active-header-tab"] : ""
             }  size-36 extra-bold`}
@@ -126,11 +126,12 @@ export default function Courses({ pageConfig }) {
               <ForWhomList opt={pageConfig.forWhom.description} />
             </ul>
           </div>
-          <img
-            className={`${style["pic"]}`}
-            src={require(`../../assets/img/courses/${pageConfig.forWhom.img}`)}
-            alt=""
-          />
+          <div className={styleCard["pic"]}>
+            <img
+              src={require(`../../assets/img/courses/${pageConfig.forWhom.img}`)}
+              alt=""
+            />
+          </div>
         </div>
         <div className={`${style["card-wrapper"]}`}>
           <div className={`${style["text"]}`}>
