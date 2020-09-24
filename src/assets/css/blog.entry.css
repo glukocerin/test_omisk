@@ -66,7 +66,7 @@
   font-weight: 800;
 }
 .blog-entry img {
-  width: 100%;
+  width: 51.666vw;
   height: auto;
   margin-bottom: 3rem;
 }
@@ -101,6 +101,7 @@
     display: none;
   }
   .blog-entry img {
+    width: 100%;
     margin-bottom: 0;
     border-bottom: 2.5rem solid var(--color-yellow-2);
   }
