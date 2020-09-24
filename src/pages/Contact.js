@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import '../assets/css/contact.css';
 
 import pagesConfig from "../assets/pagesConfig";
+import Pdf from '../assets/docs/adatkezelesi_tajekoztato.pdf';
 
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
@@ -40,9 +41,16 @@ const sendMail = function(mail) {
           })
         };
 
-  fetch('/sendmail.php', requestOptions);
+  document.querySelector('.App').scrollTop = 0;
+
+  fetch('/sendmail.php', requestOptions).then(() => {
+    setMailSent();
+  });
 }
 
+const setMailSent = function() {
+  window.sessionStorage.setItem("mail", true);
+}
 
 export default function Contact() {
   const [mail, setForm] = useState({ name: '', email: '', phone: '', comment: '', gdpr: false }),
@@ -51,7 +59,9 @@ export default function Contact() {
       ...mail,
       [e.target.name]: e.target.name === 'gdpr' ? e.target.checked : e.target.value
     });
-  };
+  },
+  sessionMailSent = window.localStorage.getItem("mail"),
+  [mailSent, setMailSentState] = useState(false);
 
   return (
     <div className="contact">
@@ -59,15 +69,15 @@ export default function Contact() {
         <div className="contact-columns">
           <div className="contact-box" >
             <img src={require(`../assets/img/kapcsolat.jpg`)} alt="" />
-            <label className="size-54 extra-bold">Lépj kapcsolatba Velünk</label>
-            <form className="send-mail-form" onSubmit={(event)=> {event.preventDefault();sendMail(mail)}}>
+            <label className="size-54 extra-bold">{`${(sessionMailSent || mailSent) ? "Üzenetét elküldtük ✔" : "Lépj kapcsolatba Velünk"}`}</label>
+            <form className={`send-mail-form ${(sessionMailSent || mailSent) && 'hidden'}`} onSubmit={(event)=> {event.preventDefault();setMailSentState(true);sendMail(mail)}}>
               <input className="form-row-input size-20" name="name" type="text" required placeholder="Név" onInput={updateField} />
               <input className="form-row-input size-20" name="email" type="email" required placeholder="E-mail" onInput={updateField} />
               <input className="form-row-input size-20" name="phone" type="tel" placeholder="Mobil (opcionális)" onInput={updateField} />
               <input className="form-row-input size-20" name="comment" type="text" required placeholder="Megjegyzés" onInput={updateField} />
               <label className="checkbox-row">
                 <input type="checkbox" required name="gdpr" onInput={updateField}/>
-                <span className="size-16 thin">Ezennel hozzájárulok, hogy a fent megadott adataimat a omisk.hu-t üzemeltető Omisk a GDPR előírásaival összhangban kezelje <a className="extra-bold" href="http://omisk.hu">Adatvédelmi tájékoztató</a></span>
+                <span className="size-16 thin">Ezennel hozzájárulok, hogy a fent megadott adataimat a omisk.hu-t üzemeltető Omisk a GDPR előírásaival összhangban kezelje <a href={Pdf} className="extra-bold" target="_blank" rel="noopener noreferrer">Adatvédelmi tájékoztató</a></span>
               </label>
               <button type="submit" className="btn btn-primary email-sender">Elküldöm</button>
             </form>
