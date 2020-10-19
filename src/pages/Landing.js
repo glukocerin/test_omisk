@@ -150,16 +150,18 @@ export default function Landing({ dotChange }) {
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
                     setStepDown(stepDown + 1);
-                    if(stepDown%7 === 0) {
+                    if(stepDown%5 === 0 && stepDown > 0) {
                         setActiveDot(activeDot + 1);
                         dotChange(activeDot + 1);
+                        setStepDown(0);
                     }
                     
                 } else if (e.deltaY < 0 && activeDot > 1) {
                     setStepUp(stepUp + 1);
-                    if(stepUp%7 === 0) {
+                    if(stepUp%5 === 0 && stepUp > 0) {
                         setActiveDot(activeDot - 1);
                         dotChange(activeDot - 1);
+                        setStepUp(0);
                     }
                 }
             };
