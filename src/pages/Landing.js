@@ -138,7 +138,6 @@ export default function Landing({ dotChange }) {
         };
     }, [pageIndex]);
 
-
     const [activeDot, setActiveDot] = useState(1),
             [activeLink, setActiveLink] = useState(0),
             [activePlace, setActivePlace] = useState({ placeId: 0, position: null , zoom: null }),
@@ -146,13 +145,22 @@ export default function Landing({ dotChange }) {
             [activeSevenSwitch, setActiveSevenSwitch] = useState('no-one'),
             [zoom, setZoom] = useState(false),
             [activeCard, setActiveCard] = useState(0),
+            [stepDown, setStepDown] = useState(0),
+            [stepUp, setStepUp] = useState(0),
             scroller = function(e) {
                 if (e.deltaY > 0 && activeDot < 8) {
-                    setActiveDot(activeDot + 1);
-                    dotChange(activeDot + 1);
+                    setStepDown(stepDown + 1);
+                    if(stepDown%7 === 0) {
+                        setActiveDot(activeDot + 1);
+                        dotChange(activeDot + 1);
+                    }
+                    
                 } else if (e.deltaY < 0 && activeDot > 1) {
-                    setActiveDot(activeDot - 1);
-                    dotChange(activeDot - 1);
+                    setStepUp(stepUp + 1);
+                    if(stepUp%7 === 0) {
+                        setActiveDot(activeDot - 1);
+                        dotChange(activeDot - 1);
+                    }
                 }
             };
 
