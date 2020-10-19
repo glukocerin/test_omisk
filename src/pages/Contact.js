@@ -25,7 +25,7 @@ const Gyik = function() {
 }
 
 const sendMail = function(mail) {
-  const mailTo = "bestrapboy@gmail.com", // modify this!
+  const mailTo = "iroda@omisk.hu",
         mailSubject = 'Webes kapcsolatba lépés',
         message = "Név: " + mail.name +
                   "\nE-mail: " + mail.email +

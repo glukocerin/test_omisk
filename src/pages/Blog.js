@@ -20,15 +20,15 @@ const BlogCards = function() {
         <div className="text-box">
           <label className="blog-entry-date size-15 extra-bold">{card.date}</label>
           <label className="blog-entry-desc size-24 extra-bold">{card.title}</label>
-          <label className="blog-entry-text size-15 thin" dangerouslySetInnerHTML={createMarkup(card.text)}></label>
+          <label className="blog-entry-text size-15 thin">{ splitText(card.text) }</label>
         </div>
       </div>
     </Link>
   ));
 };
 
-function createMarkup(markup) {
-  return {__html: markup};
+function splitText(text) {
+  return text.replace(/<[^>]+>/g, '').replace(/\n/g,' ').slice(0, 120) + "...";
 }
 
 export default function Blog() {
