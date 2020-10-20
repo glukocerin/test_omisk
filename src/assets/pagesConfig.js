@@ -481,7 +481,7 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/ballet/2.jpg",
+          img: "pages/ballet/1.jpg",
           description: [
             "kecses, finom, légies mozgásformát keresel.",
             "nem ijedsz meg a kemény munkától.",
@@ -491,7 +491,7 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a klasszikus balett?",
-          img: "pages/ballet/1.jpg",
+          img: "pages/ballet/2.jpg",
           description:
             "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
         },
@@ -773,7 +773,7 @@ const pagesConfig = {
         detailsOne:
           "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:
-          "Előadásainkat kifejezetten ajánljuk a nem versenyző csoportjaink tagjainak, mert a műsorszámok motiválóak a hétköznapi munkafolyamatokban is – az itt fellépő csoportok az órák során már egyfajta alkotóműhelyként működnek. Az Omisk Gála nagyon jó lehetőség versenyző csapatainknak, hogy színpadi rutinjukat növeljék, a kisebbek pedig remek alkalom arra, hogy elejétől a végéig meg tudjanak nézni egy előadást, hiszen az évzárókon – mivel ők maguk is szerepelnek – erre nincs lehetőségük.",
+          "Előadásainkat kifejezetten ajánljuk a nem versenyző csoportjaink tagjainak, mert a műsorszámok motiválóak a hétköznapi munkafolyamatokban is – az itt fellépő csoportok az órák során már egyfajta alkotóműhelyként működnek. Az Omisk Gála nagyon jó lehetőség versenyző csapatainknak, hogy színpadi rutinjukat növeljék, kisebbek pedig remek alkalom arra, hogy elejétől a végéig meg tudjanak nézni egy előadást, hiszen az évzárókon – mivel ők maguk is szerepelnek – erre nincs lehetőségük.",
         videos: [
           {
             year: 2020,
@@ -811,7 +811,7 @@ const pagesConfig = {
         videoImg: "nyilvanosora/bg",
         headerImg: "nyilvanos_ora",
         detailsOne:
-          "A tanév folyamán 1 alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
+          "A tanév folyamán egy alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
         detailsTwo:
           "Az első félév mindig az alapozással telik, az órák nagyobb részében, olykor teljes időtartamban tréningezünk növendékeinkkel. Ennek a folyamatnak a vége a legmegfelelőbb időpont arra, hogy óvodás és iskolás csoportjaink bemutassák az addig tanultakat.",
         detailsThree:
@@ -845,7 +845,7 @@ const pagesConfig = {
         headerImg: "nyari_tabor",
         videoImg: "taborok/bg",
         detailsOne:
-          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  tovább fejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt.",
+          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  továbbfejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt.",
         detailsTwo:
           "A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
         videos: [
@@ -874,7 +874,7 @@ const pagesConfig = {
         desc:
           "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
         details:
-          "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, amit igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
+          "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, ami igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
         education: [
           "Testnevelési Főiskola (ma Testnevelési Egyetem), ritmikusgimnasztika-edző",
           "Budapesti Műszaki Egyetem, vegyészmérnök",
@@ -1001,7 +1001,7 @@ const pagesConfig = {
         name: "Markolt-Rózsa Réka",
         desc: "táncpedagógus",
         details:
-          "Négy évesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
         education: [
           "KRE, tanító",
           "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
@@ -1041,7 +1041,7 @@ const pagesConfig = {
         name: "Bozsókiné Taylor Jennifer",
         desc: "táncpedagógus",
         details:
-          "Kilenc éves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
+          "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
         education: [
           "ELTE, tanító szak",
           "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
