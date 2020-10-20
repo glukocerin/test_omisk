@@ -14,11 +14,11 @@ import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
 export default function Navigation(props) {
   const location = useLocation().pathname;
   const dispatch = useDispatch();
-
+console.log(`${location !== '/' ? 'logo-white': ''}`)
   return (
     <div className={`header background-${props.BackgroundColor} ${props.isHeaderFixed && "fixed"} ${props.activeDot === 1 && 'big'} ${location === '/' && 'text-inverse'}`}>
       <Link onClick={()=> dispatch(updatePageindex({payload: 1}))} to="/">
-        <Logo className={`logo ${location === '/' && props.activeDot !== 1 && 'inverse'}`} />
+        <Logo className={`logo ${location === '/' && props.activeDot !== 1 && 'inverse'} ${location !== '/' ? 'logo-white': ''}`} />
       </Link>
       <div className="links">
         <Link className={`${ location === "/" && "active" }`} onClick={()=> dispatch(updatePageindex({payload: 1}))} to="/">Kezdő</Link>

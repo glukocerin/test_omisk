@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import style from "../assets/css/modal.module.css";
 
 function compare(a, b) {
-  if (a.year < b.year) {
+  if (a.year > b.year) {
     return -1;
   }
   if (a.year > b.year) {
@@ -28,7 +28,9 @@ const Years = function ({ videos, setVideo, selectedVideo }) {
 };
 
 export default function ({ isOpen, setModalOpen, videos }) {
-  const [actualVideo, setVideo] = useState(videos[0]["link"]),
+  let sortedVideos = videos.sort(compare);
+  console.log(videos)
+  const [actualVideo, setVideo] = useState(sortedVideos[0]["link"]),
     escFunction = useCallback((event) => {
       if (event.keyCode === 27) {
         setModalOpen(false);
@@ -39,6 +41,7 @@ export default function ({ isOpen, setModalOpen, videos }) {
     document.addEventListener("keydown", escFunction, false);
 
     return () => {
+      sortedVideos = [];
       document.removeEventListener("keydown", escFunction, false);
     };
   }, [escFunction]);
