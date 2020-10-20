@@ -86,7 +86,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 45 perc", "Heti 2 x 60 perc"],
-            prices: ["9700-10000 Ft / hó", "10700-11000 Ft / hó"],
+            prices: ["10000-10300 Ft / hó", "11000-11300 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -95,44 +95,44 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["4 - 10éves kortól", "korcsopotonként"],
+            ageGroup: ["4 - 10éves kortól", "korcsoportonként"],
           },
         },
         places: [
           {
             name: "Virányosi Közösségi Ház",
             address: "XII. ker. Szarvas Gábor út 8/c",
-            appointments: ["Hétfő+Szerda", "Kedd+Csütörtök"],
+            appointments: ["Kedd", "Csütörtök"],
+          },
+          {
+            name: "Szarvas Gábor Közösségi Tér",
+            address: "XII. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő", "kedd", "Szerda", "Csütörtök"],
           },
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő+Szerda", "Kedd+Csütörtök", "Hétfő+Pentek"],
-          },
-          {
-            name: "Budapest Művelődési Központ",
-            address: "XI. Etele út 55/a",
-            appointments: ["Hétfő+Szerda"],
+            appointments: ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Pentek"],
           },
           {
             name: "MOM Kulturális Központ",
             address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő+Csütörtök", "kedd+Csütörtök"],
+            appointments: ["Hétfő", "Csütörtök"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
-            appointments: ["Kedd+Csütörtök", "Kedd+Péntek"],
+            appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
           {
             name: "Józsefvárosi Galéria és Rendezvény Központ",
             address: "VIII. József krt. 70",
-            appointments: ["Hétfő+Szerda"],
+            appointments: ["Szerda"],
           },
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő+Szerda", "Péntek"],
+            appointments: ["Hétfő", "Szerda", "Péntek"],
           },
         ],
         forWhom: {
@@ -173,7 +173,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
-            prices: ["11000-11300 Ft / hó", "13100-14500 Ft / hó"],
+            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -182,29 +182,24 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["10éves kortól", "korcsopotonként"],
+            ageGroup: ["10 éves kortól", "korcsoportonként"],
           },
         },
         places: [
           {
             name: "Virányosi Közösségi Ház",
             address: "XII. ker. Szarvas Gábor út 8/c",
-            appointments: ["Hétfő", "Szerda", "Kedd", "Csütörtök"],
+            appointments: ["Kedd", "Csütörtök"],
           },
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő", "Kedd+Szerda+Péntek"],
-          },
-          {
-            name: "Budapest Művelődési Központ",
-            address: "XI. Etele út 55/a",
-            appointments: ["Hétfő", "Szerda"],
+            appointments: ["Hétfő", "Kedd","Szerda","Péntek"],
           },
           {
             name: "MOM Kulturális Központ",
             address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő", "kedd", "Csütörtök"],
+            appointments: ["Hétfő", "Csütörtök"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
@@ -214,12 +209,12 @@ const pagesConfig = {
           {
             name: "Józsefvárosi Galéria és Rendezvény Központ",
             address: "VIII. József krt. 70",
-            appointments: ["Hétfő", "Szerda", "Péntek"],
+            appointments: ["Szerda"],
           },
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő+Szerda", "Péntek"],
+            appointments: ["Szerda", "Péntek"],
           },
           {
             name: "Szarvas Gábor Közösségi Tér",
@@ -266,7 +261,7 @@ const pagesConfig = {
           cost: {
             name: "Cost",
             occasions: ["Weekly 1x45 perc"],
-            prices: ["10300-11300 Ft/month"],
+            prices: ["10300 Ft/month"],
           },
           discount: {
             name: "Discounts",
@@ -323,8 +318,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc"],
-            prices: ["11000-11300 Ft / hó"],
+            occasions: ["Heti 2 x 60 perc", "Heti 3 x 60 perc", "Heti 1 x 90 perc"],
+            prices: ["11000-11300 Ft / hó", "19100 Ft / hó", "7350 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -333,14 +328,14 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["8 éves kortól", "korcsopotonként"],
+            ageGroup: ["8 éves kortól", "korcsoportonként"],
           },
         },
         places: [
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő"],
+            appointments: ["Hétfő", "Szerda"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
@@ -348,9 +343,14 @@ const pagesConfig = {
             appointments: ["Kedd", "Csütörtök"],
           },
           {
+            name: "MOM Kulturális Központ",
+            address: "XII. ker. Csörsz út 18",
+            appointments: ["Hétfő", "Péntek"],
+          },
+          {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő", "Szerda", "Péntek"],
+            appointments: ["Hétfő"],
           },
         ],
         forWhom: {
@@ -400,7 +400,7 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["7 éves kortól", "korcsopotonként"],
+            ageGroup: ["7 éves kortól", "korcsoportonként"],
           },
         },
         places: [
@@ -458,24 +458,24 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["6éves kortól", "korcsopotonként"],
+            ageGroup: ["6 éves kortól", "korcsoportonként"],
           },
         },
         places: [
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő", "Kedd+Szerda+Péntek"],
+            appointments: ["Hétfő", "Csütörtök"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
-            appointments: ["Kedd", "Csütörtök", "Péntek"],
+            appointments: ["Kedd", "Szerda", "Csütörtök"],
           },
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő+Szerda", "Péntek"],
+            appointments: ["Szerda"],
           },
         ],
         forWhom: {
