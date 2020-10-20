@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <BlogModal opt={{ isOpen: true }} />
+      {/* <BlogModal opt={{ isOpen: true }} /> */}
       <Cookies />
       <Switch>
         <Route exact path="/courses">
