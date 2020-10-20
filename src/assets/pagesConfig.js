@@ -400,7 +400,7 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["6 éves kortól", "korcsopotonként"],
+            ageGroup: ["7 éves kortól", "korcsopotonként"],
           },
         },
         places: [
