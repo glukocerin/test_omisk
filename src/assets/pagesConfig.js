@@ -277,7 +277,7 @@ const pagesConfig = {
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["??", "??"],
+            appointments: ["Jelenleg nincsen aktuális időpontunk."],
           },
         ],
         forWhom: {
