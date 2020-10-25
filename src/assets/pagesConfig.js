@@ -684,7 +684,7 @@ const pagesConfig = {
           },
           {
             year: 2016,
-            link: "https://www.youtube.com/embed/6e-0eF4Ngs?autoplay=1",
+            link: "https://www.youtube.com/embed/_6e-0eF4Ngs?autoplay=1",
           },
           {
             year: 2017,
