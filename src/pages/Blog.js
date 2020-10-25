@@ -3,6 +3,8 @@ import "../assets/css/blog.css";
 
 import { Link } from "react-router-dom";
 
+import {isMobile} from 'react-device-detect';
+
 import pagesConfig from "../assets/pagesConfig";
 
 const { blog } = pagesConfig;
@@ -28,7 +30,7 @@ const BlogCards = function() {
 };
 
 function splitText(text) {
-  return text.replace(/<[^>]+>/g, '').replace(/\n/g,' ').slice(0, 120) + "...";
+  return text.replace(/<[^>]+>/g, '').replace(/\n/g,' ').slice(0, isMobile ? 90:120) + "...";
 }
 
 export default function Blog() {
