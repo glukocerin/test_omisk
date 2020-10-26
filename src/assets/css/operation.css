@@ -129,6 +129,8 @@
   align-items: center;
   margin-bottom: 1.5rem;
   margin-left: 4.25rem;
+  text-decoration: none;
+  color: var(--color-gray-7);
 }
 .operation .operation-content .label-with-icon .download-icon {
   width: 1.4375rem;
@@ -139,6 +141,7 @@
 }
 .operation .operation-content .label-with-icon .download-text {
   margin-left: 1.75rem;
+  cursor: pointer;
 }
 .operation .operation-content .download-icon .cls-1 {
   fill: var(--color-green-0);
