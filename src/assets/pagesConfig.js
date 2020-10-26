@@ -1082,6 +1082,14 @@ const pagesConfig = {
       },
       {
         picture: "entry-four.jpg",
+        picture_title: "Beiratkozás",
+        date: "2020. 08. 02.",
+        title: "Beiratkozási időpontok",
+        text:
+          "A következő helyszíni beiratkozás 2021 augusztusában lesz.\nAddig is lehet jelentkezni azokba a csoportokba, ahol még van szabad hely.\nHa ezzel kapcsolatban szeretnél érdeklődni, vedd fel a kapcsolatot irodánkkal!\n06-20-9460-848\n06-20-2000-138\n<a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>",
+      },
+      {
+        picture: "entry-four.jpg",
         picture_title: "Program",
         date: "2020. 06. 08.",
         title: "Omisk tábor",
