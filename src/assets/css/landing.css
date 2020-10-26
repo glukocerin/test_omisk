@@ -85,6 +85,7 @@
   width: 5.833vw;
   height: 5.833vw;
   position: relative;
+  margin-top: 1vh;
 }
 .left.one .stamp {
   position: absolute;
@@ -803,6 +804,7 @@
     position: absolute;
     top: 2rem;
     right: 1.5rem;
+    margin-top: unset;
   }
   .left.one .content-block .stamp-box .a {
     fill: var(--color-gray-7);
