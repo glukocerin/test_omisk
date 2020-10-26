@@ -30,7 +30,9 @@ const BlogCards = function() {
 };
 
 function splitText(text) {
-  return text.replace(/<[^>]+>/g, '').replace(/\n/g,' ').slice(0, isMobile ? 90:120) + "...";
+  var mobileCalc = Math.round((window.innerWidth - 68) / 13 * 3 / 10) * 10;
+
+  return text.replace(/<[^>]+>/g, '').replace(/\n/g,' ').slice(0, isMobile ? mobileCalc:120) + "...";
 }
 
 export default function Blog() {

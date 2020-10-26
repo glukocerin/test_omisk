@@ -69,12 +69,12 @@ export default function Contact() {
         <div className="contact-columns">
           <div className="contact-box" >
             <img src={require(`../assets/img/kapcsolat.jpg`)} alt="" />
-            <label className="size-54 extra-bold">{`${(sessionMailSent || mailSent) ? "Üzenetét elküldtük ✔" : "Lépj kapcsolatba Velünk"}`}</label>
+            <label className="size-54 extra-bold">{`${(sessionMailSent || mailSent) ? "Üzenetét elküldtük ✔" : "Lépj kapcsolatba velünk!"}`}</label>
             <form className={`send-mail-form ${(sessionMailSent || mailSent) && 'hidden'}`} onSubmit={(event)=> {event.preventDefault();setMailSentState(true);sendMail(mail)}}>
               <input className="form-row-input size-20" name="name" type="text" required placeholder="Név" onInput={updateField} />
               <input className="form-row-input size-20" name="email" type="email" required placeholder="E-mail" onInput={updateField} />
               <input className="form-row-input size-20" name="phone" type="tel" placeholder="Mobil (opcionális)" onInput={updateField} />
-              <input className="form-row-input size-20" name="comment" type="text" required placeholder="Megjegyzés" onInput={updateField} />
+              <input className="form-row-input size-20" name="comment" type="text" required placeholder="Üzenet" onInput={updateField} />
               <label className="checkbox-row">
                 <input type="checkbox" required name="gdpr" onInput={updateField}/>
                 <span className="size-16 thin">Ezennel hozzájárulok, hogy a fent megadott adataimat a omisk.hu-t üzemeltető Omisk a GDPR előírásaival összhangban kezelje <a href={Pdf} className="extra-bold" target="_blank" rel="noopener noreferrer">Adatvédelmi tájékoztató</a></span>
