@@ -1200,7 +1200,7 @@ const pagesConfig = {
       {
         title: "Év közben is tudok csatlakozni?",
         text:
-          "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod , tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben vagy telefonon , ha jelentkezni szeretnél. Ő tájékoztat órarendünkről és , hogy melyek azok a csoportok, ahova csatlakozni tudsz.",
+          "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.\nA Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
         button_text: "Érdeklődöm",
         link: 'contact'
       },
