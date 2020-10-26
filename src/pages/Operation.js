@@ -67,45 +67,24 @@ export default function Operations() {
         </div>
         <label className="downloads size-54 bold">Letöltések</label>
         <label className="download-title size-24 extra-bold">
-          Hasznos dokumentumok
+          Letölthető dokumentumok
         </label>
-        <label className="label-with-icon">
+        <a href="http://omisk.hu/documents/jelentkezesi_lap+beleegyezo_nyilatkozat.docx" target="_blank" rel="noopener noreferrer" className="label-with-icon">
           <DownloadIcon className="download-icon" />
           <label className="download-text size-20 thin">
-            Általános tájékoztató a jelentkezés menetéről és az Iskola rendjéről
+            Jelentkezési lap + Beleegyező nyilatkozat
           </label>
-        </label>
-        <label className="label-with-icon">
+        </a>
+        <a href="http://omisk.hu/documents/OMISK_Tajekoztato_a_legkisebbek_szuleinek.docx" target="_blank" rel="noopener noreferrer"  className="label-with-icon">
           <DownloadIcon className="download-icon" />
-          <label className="download-text size-20 thin">Tanév rendje</label>
-        </label>
-        <label className="label-with-icon margin-bottom">
-          <DownloadIcon className="download-icon" />
-          <label className="download-text size-20 thin">
-            Jelentkezéssel kapcsolat hasznos információk
-          </label>
-        </label>
-        <label className="download-title size-24 extra-bold">
-          Jelentkezéshez szükséges dokumentumok
-        </label>
-        <label className="label-with-icon">
+          <label className="download-text size-20 thin">Tájékoztató kezdő óvodás növendékeink szüleinek</label>
+        </a>
+        <a href="http://omisk.hu/documents/ruha_meretek.jpg" target="_blank" rel="noopener noreferrer"  className="label-with-icon margin-bottom">
           <DownloadIcon className="download-icon" />
           <label className="download-text size-20 thin">
-            Jelentkezési lap a beiratkozáshoz
+            Ruha méretek
           </label>
-        </label>
-        <label className="label-with-icon">
-          <DownloadIcon className="download-icon" />
-          <label className="download-text size-20 thin">
-            Beleegyező nyilatkozat a beiratkozáshoz
-          </label>
-        </label>
-        <label className="label-with-icon margin-bottom">
-          <DownloadIcon className="download-icon" />
-          <label className="download-text size-20 thin">
-            Tájékoztató kezdő ovis növendékeink szüleinek
-          </label>
-        </label>
+        </a>
       </div>
     </div>
   );
