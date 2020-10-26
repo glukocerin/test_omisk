@@ -153,8 +153,9 @@
     font-size: 13px;
     height: 2.625rem;
     line-height: 1.375rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
   }
   .blog .blog-cards .card .text-box .blog-entry-date {
     display: none;
