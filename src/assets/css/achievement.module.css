@@ -1,51 +1,56 @@
 .header {
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 25.75rem;
   background-color: var(--color-blue-1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
+  background-image: url("../img/programs/program_header.svg");
 }
+
 .state-location {
   text-align: center;
   z-index: 1;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   color: var(--color-gray-0);
   padding-bottom: 0.5rem;
-  border-bottom: 2px dotted var(--color-gray-0);
 }
 
 .state-location a {
   color: unset;
   text-decoration: unset;
 }
-.header-title {
-  height: 10.9375rem;
+
+.header-wrapper {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
+}
+
+.header-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10rem;
   color: var(--color-gray-0);
 }
 
 .year {
   color: var(--color-blue-1);
-  margin: 0;
-  width: 268px;
-}
-
-.body {
-  margin: 7rem 16.667%;
+  margin: 2rem 0px 2.8rem 0px;
 }
 
 .wrapper {
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .achievement {
-  margin-left: 7rem;
   margin-top: 1.5rem;
+  width: 36rem;
 }
 
 .achievement p {
@@ -63,4 +68,16 @@
 
 .achievement .last {
   margin-bottom: 3.125rem;
+}
+
+.img-wrapper {
+  max-width: 58rem;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
 }
