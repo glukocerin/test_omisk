@@ -48,6 +48,10 @@
   max-width: 58rem;
 }
 
+.blog .blog-cards .card .date-for-mobile {
+  display: none;
+}
+
 .blog .blog-cards .card * {
   cursor: pointer;
 }
@@ -119,6 +123,9 @@
     flex-direction: column;
     height: unset;
     margin-bottom: 1rem;
+  }
+  .blog .blog-cards .card .date-for-mobile {
+    display: block;
   }
   .blog .blog-cards .card .picture-box {
     display: flex;
