@@ -95,7 +95,7 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["4 - 10éves kortól", "korcsoportonként"],
+            ageGroup: ["4 éves kortól", "korcsoportonként"],
           },
         },
         places: [

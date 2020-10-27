@@ -35,7 +35,7 @@ import FooterMobile from "./components/FooterMobile";
 import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
-import BlogModal from "./components/BlogModal";
+// import BlogModal from "./components/BlogModal";
 import Cookies from "./components/Cookies";
 
 const { programs } = pagesConfig;
