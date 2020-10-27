@@ -1188,6 +1188,7 @@
   }
   .mobile-footer .content-block .sm-icons .icon .cls-1 {
     stroke-width: 0.3px;
+    fill: transparent;
   }
   .mobile-footer .content-block .sm-icons .icon .cls-2 {
     fill: var(--color-gray-7);
