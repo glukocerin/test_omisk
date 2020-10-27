@@ -101,6 +101,7 @@
   }
   .teachers .teacher-cards .card .teacher-name {
     margin-top: 1.75rem;
+    font-size: 24px;
   }
   .teachers .teacher-cards .card .teacher-desc {
     margin-bottom: 0;
