@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import '../assets/css/enrollment.css';
 import { Link } from "react-router-dom";
 import LeafletMap from '../components/LeafletMap'
+import FindByProp from '../components/FindByProp';
 
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
@@ -15,7 +16,10 @@ const EnrollmentColumns = function(props) {
     <div className="enrollment-box" key={index}>
       <label className="enrollment-title size-36 extra-bold">{item.title}</label>
       <label className="enrollment-text size-20 thin">{item.text}</label>
-      <Link to={`/${item.link}`}>
+      <Link to={item.link === 'blog' ? {
+                  pathname: "/blog_entry",
+                  state: FindByProp("blog", "cards", "index", "beiratkozas"),
+                } : '/' + item.link}>
         <button className="btn">{item.button_text}</button>
       </Link>
     </div>
@@ -34,7 +38,7 @@ export default function Enrollment() {
           <EnrollmentColumns />
         </div>
       </div>
-      <div className="places-content">
+      <div className="places-content" id={'map'}>
       <div className="drop-down-list">
         <label className="sub-title extra-bold size-36">Helyszíneink</label>
         <div className={`place ${ activePlace.placeId === 1 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 1 ? {placeId: null, position: null} : {placeId:1, position: [47.54154, 19.03426], zoom: 15}) }>

@@ -94,7 +94,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="faq">
+      <div className="faq" id={'gyik'}>
         <label className="size-54 extra-bold">Gyakori kérdések</label>
         <div className="drop-down-list">
           <Gyik/>
