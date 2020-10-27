@@ -89,9 +89,7 @@ export default function Footer() {
           </h5>
           <p className={`size-15 thin`}>
             Óbudai Kulturális Központ <br />
-            MOM Kulturális Központ
-            <br />
-            Budapest Művelődési központ <br />
+            MOM Kulturális Központ<br />
             Vll. Kerületi Táncstúdió <br />
             Békásmegyeri Közösségi Ház <br />
             Virányosi Közösségi Ház Józsefvárosi Galéria és Rendezvényközpont

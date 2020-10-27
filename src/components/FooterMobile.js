@@ -36,7 +36,6 @@ export default function Footer() {
           <label className="article size-12">
               Óbudai Kulturális Központ<br/>
               MOM Kulturális Központ<br/>
-              Budapest Művelődési központ<br/>
               Vll. Kerületi Táncstúdió<br/>
               Békásmegyeri Közösségi Ház<br/>
               Virányosi Közösségi Ház<br/>

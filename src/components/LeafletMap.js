@@ -45,12 +45,6 @@ export default function LeafletMap(props) {
         </Popup>
       </Marker>
 
-      <Marker position={[47.50055, 19.04011]} onclick={() => setPosition({ position: [47.50055, 19.04011], zoom: 18 }) }>
-        <Popup>
-          Budapest Művelődési Központ
-        </Popup>
-      </Marker>
-
       <Marker position={[47.48746, 19.07061]} onclick={() => setPosition({ position: [47.48746, 19.07061], zoom: 18 }) }>
         <Popup>
           Józsefvárosi Galéria és Rendezvényközpont
