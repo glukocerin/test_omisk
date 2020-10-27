@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import { ReactComponent as LogoWithTitle } from "../assets/img/icons/logo_w_title.svg";
 import { ReactComponent as Facebook } from "../assets/img/icons/facebook.svg";
@@ -8,51 +9,56 @@ import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 export default function Footer() {
   return (
     <div className="mobile-footer">
-      <div className="content-block">
-          <div className="content-header">
-              <LogoWithTitle className="logo"/>
-          </div>
-          <label className="text size-24 extra-bold">Az omiskról</label>
-          <label className="article size-12">4 éves kortól kezdve - Berczik Sára módszerével alapozva - iskolánkban többféle műfajt tanítunk iskolaszerűen egymásra épülő évfolyamokban. A zene nálunk nem csak kísérőeleme a táncnak, hanem szoros összhagban egymás hatását erősítii.  Így hozzuk mi mozgásba a zenét.</label>
-          <label className="text size-24 extra-bold">Kapcsolat</label>
-          <label className="article size-12">
-              Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol<br/>
-              hétköznap 10-14 óra között hívhatod.<br/><br/>
-              Telefon: 06-1-2000-138<br/>
-              Mobil: 06-20-9460-848<br/>
-              E-mail: iroda@omisk.hu<br/>
-              Posta: 1021 Budapest, Széher út 77.<br/>
-          </label>
-          <label className="text size-24 extra-bold">Kurzusaink</label>
-          <label className="article size-12">
-              Művészi torna<br/>
-              Mozdulatművészet<br/>
-              Modern tánc<br/>
-              Jazz tánc<br/>
-              Pre balett<br/>
-              Klasszikus balett
-          </label>
-          <label className="text size-24 extra-bold">Helyszíneink</label>
-          <label className="article size-12">
-              Óbudai Kulturális Központ<br/>
-              MOM Kulturális Központ<br/>
-              Vll. Kerületi Táncstúdió<br/>
-              Békásmegyeri Közösségi Ház<br/>
-              Virányosi Közösségi Ház<br/>
-              Józsefvárosi Galéria és Rendezvényközpont<br/>
-          </label>
-          <div className="sm-icons">
-              <a href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <Instagram/>
-              </a>
-              <a href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <Facebook/>
-              </a>
-              <a href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer" className="icon">
-                  <Youtube/>
-              </a>
-          </div>
-      </div>
+        <div className="content-block">
+            <div className="content-header">
+                <LogoWithTitle className="logo"/>
+            </div>
+            <label className="text size-20 extra-bold">Kapcsolat</label>
+            <label className="article size-15">
+                06-1-2000-138<br/>
+                06-20-9460-848<br/>
+                iroda@omisk.hu<br/>
+                Óbuda Mozgásművészeti Iskola<br/>
+                1021 Budapest, Széher út 77.<br/><br/>
+                <Link to="/contact/#gyik">Gyakran ismételt kérdések</Link><br/>
+            </label>
+            <label className="text size-20 extra-bold">Kurzusaink</label>
+            <label className="article size-15">
+                Művészi torna, 4 éves kortól<br/>
+                Mozdulatművészet, 10 éves kortól<br/>
+                Modern tánc, 8 éves kortól<br/>
+                Jazztánc, 6 éves kortól<br/>
+                Klasszikus balett, 6 éves kortól<br/>
+                Pre ballet / EN, 4-6 eves korosztálynak<br/>
+            </label>
+            <label className="text size-20 extra-bold">Helyszíneink</label>
+            <label className="article size-15">
+                Óbudai Kulturális Központ<br/>
+                Békásmegyeri Közösségi Ház<br/>
+                MOM Kulturális Központ<br/>
+                Virányosi Közösségi Ház<br/>
+                Szarvas Gábor Közösségi Tér<br/>
+                Józsefvárosi Galéria és Rendezvényközpont<br/>
+                VII. ker. Táncstúdió<br/><br/>
+                <Link to="/enrollment/#map">Térkép</Link>
+            </label>
+            <div className="sm-icons">
+                <a href="https://www.instagram.com/o_m_i_s_k/" target="_blank" rel="noopener noreferrer" className="icon">
+                    <Instagram/>
+                </a>
+                <a href="https://www.facebook.com/omisk.hu/" target="_blank" rel="noopener noreferrer" className="icon">
+                    <Facebook/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA" target="_blank" rel="noopener noreferrer" className="icon">
+                    <Youtube/>
+                </a>
+            </div>
+            <div className="sepa"></div>
+            <label className="article size-15">
+                Design: Pers-Kovács Nóra<br/>
+                Fejlesztés: Csordás Attila, Tóth-Angyal János
+            </label>
+        </div>
     </div>
   );
 }

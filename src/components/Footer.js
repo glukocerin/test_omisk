@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import style from "../assets/css/footer.module.css";
 import "../assets/css/footer.icons.css";
 
@@ -11,52 +12,50 @@ export default function Footer() {
   return (
     <div className={style["wrapper"]}>
       <div className={style["icons-wrapper"]}>
-        <LogoWithTitle className="footer-logo" />
-        <div className={style["social-media"]}>
-          <a
-            className="footer-icon"
-            href="https://www.instagram.com/o_m_i_s_k/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram />
-          </a>
-          <a
-            className="footer-icon"
-            href="https://www.facebook.com/omisk.hu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook />
-          </a>
-          <a
-            className="footer-icon"
-            href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Youtube />
-          </a>
+        <div className={style["details-box"]}></div>
+        <div className={style["details-box"]}>
+          <LogoWithTitle className="footer-logo" />
         </div>
+        <div className={style["details-box"]}>
+          <div className={style["social-media"]}>
+            <a
+              className="footer-icon"
+              href="https://www.instagram.com/o_m_i_s_k/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram />
+            </a>
+            <a
+              className="footer-icon"
+              href="https://www.facebook.com/omisk.hu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </a>
+            <a
+              className="footer-icon"
+              href="https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Youtube />
+            </a>
+          </div>
+        </div>
+        <div className={style["details-box"]}></div>
       </div>
       <div className={style["details-wrapper"]}>
         <div className={style["details-box"]}>
-          <h5 className={`size-20 extra-bold`}>Az Omiskrol</h5>
-          <p className={`size-15 thin`}>
-            4 éves kortól kezdve - Berczik Sára módszerével alapozva - iskolánkban többféle műfajt tanítunk iskolaszerűen egymásra épülő évfolyamokban. A zene nálunk nem csak kísérőeleme a táncnak, hanem szoros összhagban egymás hatását erősítii.  Így hozzuk mi mozgásba a zenét.
-          </p>
-        </div>
-        <div className={style["details-box"]}>
           <h5 className={`size-20 extra-bold`}>Kapcsolat</h5>
           <p className={`size-15 thin`}>
-            Felmerülő kérdésedre Mikusik Márta, iskola titkárunk válaszol
-            hétköznap 10-14 óra között hívhatod.
-          </p>
-          <p className={`size-15 thin`}>
-            Telefon: 06-1-2000-138 <br />
-            Mobil: 06-20-9460-848 <br />
-            E-mail: iroda@omisk.hu<br />
-            Posta: 1021 Budapest, Széher út 77.
+            06-1-2000-138 <br />
+            06-20-9460-848 <br />
+            iroda@omisk.hu<br />
+            Óbuda Mozgásművészeti Iskola<br/>
+            1021 Budapest, Széher út 77.<br/><br/>
+            <Link to="/contact/#gyik">Gyakran ismételt kérdések</Link><br/>
           </p>
         </div>
         <div className={style["details-box"]}>
@@ -69,13 +68,12 @@ export default function Footer() {
             Kurzusaink
           </h5>
           <p className={`size-15 thin`}>
-            Művészi torna <br />
-            Mozdulatművészet <br />
-            Modern tánc <br />
-            Jazz <br />
-            tánc <br />
-            Pre balett <br />
-            Klasszikus balett
+            Művészi torna, 4 éves kortól<br/>
+            Mozdulatművészet, 10 éves kortól<br/>
+            Modern tánc, 8 éves kortól<br/>
+            Jazztánc, 6 éves kortól<br/>
+            Klasszikus balett, 6 éves kortól<br/>
+            Pre ballet / EN, 4-6 eves korosztálynak<br/>
           </p>
         </div>
         <div className={style["details-box"]}>
@@ -88,11 +86,26 @@ export default function Footer() {
             Helyszineink
           </h5>
           <p className={`size-15 thin`}>
-            Óbudai Kulturális Központ <br />
-            MOM Kulturális Központ<br />
-            Vll. Kerületi Táncstúdió <br />
-            Békásmegyeri Közösségi Ház <br />
-            Virányosi Közösségi Ház Józsefvárosi Galéria és Rendezvényközpont
+            Óbudai Kulturális Központ<br/>
+            Békásmegyeri Közösségi Ház<br/>
+            MOM Kulturális Központ<br/>
+            Virányosi Közösségi Ház<br/>
+            Szarvas Gábor Közösségi Tér<br/>
+            Józsefvárosi Galéria és Rendezvényközpont<br/>
+            VII. ker. Táncstúdió<br/><br/>
+            <Link to="/enrollment/#map">Térkép</Link>
+          </p>
+        </div>
+        <div className={style["details-box"]}>
+
+        </div>
+      </div>
+      <div className={style["details-wrapper"]}>
+        <div>
+          <div className={style["sepa"]}></div>
+          <p className={`size-15 thin`}>
+              Design: Pers-Kovács Nóra<br/>
+              Fejlesztés: Csordás Attila, Tóth-Angyal János
           </p>
         </div>
       </div>

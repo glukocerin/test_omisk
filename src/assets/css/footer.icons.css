@@ -1,21 +1,25 @@
+.footer-logo {
+  height: 3rem;
+  width: unset;
+}
 .footer-logo .cls-1,
 .footer-logo .cls-2 {
   font-family: "Gilroy";
   fill: var(--color-gray-7);
-  stroke: var(--color-gray-7);
 }
 .footer-icon svg {
-  width: 2.375rem;
-  height: 2.375rem;
-  border-radius: 2.375rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 2.25rem;
 }
 .footer-icon + .footer-icon {
   margin-left: 0.625rem;
 }
 .footer-icon .cls-1 {
-  fill: var(--color-gray-7);
-  stroke: var(--color-gray-7);
+  fill: transparent;
+  stroke: transparent;
 }
 .footer-icon .cls-2 {
+  fill: var(--color-gray-7);
   stroke: var(--color-gray-7);
 }

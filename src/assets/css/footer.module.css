@@ -1,13 +1,16 @@
 .wrapper {
   background-color: var(--color-gray-new-2);
   color: var(--color-gray-7);
+  padding-bottom: 2rem;
+  padding-top: 3rem;
 }
 
 .icons-wrapper {
   display: flex;
+  justify-content: space-between;
+  margin-right: 6rem;
   margin-left: 6rem;
-  margin-bottom: 5.5rem;
-  padding-top: 5.5rem;
+  margin-bottom: 3rem;
 }
 
 .text-wrapper p {
@@ -19,7 +22,7 @@
 .social-media {
   display: flex;
   align-items: center;
-  margin-left: 9rem;
+  transform: translateX(-10px);
 }
 
 .social-insta {
@@ -30,10 +33,17 @@
   margin-right: 0.75rem;
 }
 
-.details-box + .details-box {
-  margin-left: 7.813vw;
+.details-box {
   max-width: 16.667vw;
   min-width: 16.667vw;
+}
+
+.details-box p {
+  white-space: nowrap;
+}
+
+.details-box a {
+  color: var(--color-gray-7);
 }
 
 .details-wrapper {
@@ -41,6 +51,16 @@
   justify-content: space-between;
   margin-right: 6rem;
   margin-left: 6rem;
+}
+
+.details-wrapper + .details-wrapper {
+  justify-content: flex-end;
+}
+
+.details-wrapper .sepa {
+  margin-top: 1.25rem;
+  border-top: 4px solid var(--color-gray-new-1);
+  width: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {

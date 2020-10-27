@@ -9,6 +9,10 @@ class ScrollIntoView extends PureComponent {
     if (this.props.location !== prevProps.location) {
       if (this.props.location.hash !== '#gyik' && this.props.location.hash !== '#map') {
         document.querySelector('.App').scrollTop = 0;
+      } else if (this.props.location.hash === '#gyik') {
+        document.querySelector('.App').scrollTop = document.querySelector('#gyik').offsetTop;
+      } else if (this.props.location.hash === '#map') {
+        document.querySelector('.App').scrollTop = document.querySelector('#map').offsetTop;
       }
       document.querySelector('.App').classList.add('loading');
     }
