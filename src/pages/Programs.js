@@ -6,19 +6,19 @@ import pagesConfig from "../assets/pagesConfig";
 
 const { programs } = pagesConfig;
 
-const ProgramCardsFirstRow = function() {
+const ProgramCardsFirstRow = function () {
   return programs.programCards.firstRow.map((card, index) => (
     <ProgramCard key={index} details={card} />
   ));
 };
 
-const ProgramCardsSecondRow = function() {
+const ProgramCardsSecondRow = function () {
   return programs.programCards.secondRow.map((card, index) => (
     <ProgramCard key={index} details={card} />
   ));
 };
 
-const ProgramCardsThirdRow = function() {
+const ProgramCardsThirdRow = function () {
   return programs.programCards.thirdRow.map((card, index) => (
     <ProgramCard key={index} details={card} />
   ));

@@ -5,20 +5,31 @@ import "../assets/css/blog.css";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
 
+import { ReactComponent as Kupa } from "../assets/img/icons/kupa.svg";
+
 const Images = function ({ gallery }) {
   const images = gallery.map((img, index) => {
     return require(`../assets/img/programs/${img}.jpg`);
   });
 
   let top = useCurrentScrollTop(),
-      imageWrapper = document.querySelector('[class*="images"]'),
-      imageWrapperTop = imageWrapper ? imageWrapper.offsetTop : 0,
-      imageWrapperHeight = imageWrapper ? imageWrapper.offsetHeight : 0,
-      topToApply = top > (imageWrapperTop - imageWrapperHeight + imageWrapperHeight / 3) ? (top - imageWrapperHeight - imageWrapperHeight / 3)/5 : 0;
+    imageWrapper = document.querySelector('[class*="images"]'),
+    imageWrapperTop = imageWrapper ? imageWrapper.offsetTop : 0,
+    imageWrapperHeight = imageWrapper ? imageWrapper.offsetHeight : 0,
+    topToApply =
+      top > imageWrapperTop - imageWrapperHeight + imageWrapperHeight / 3
+        ? (top - imageWrapperHeight - imageWrapperHeight / 3) / 5
+        : 0;
 
   return images.map((img, index) => {
     return (
-      <img className={style[`image-${index}`]} style={{ top: topToApply, bottom: topToApply }} key={index} src={img} alt="" />
+      <img
+        className={style[`image-${index}`]}
+        style={{ top: topToApply, bottom: topToApply }}
+        key={index}
+        src={img}
+        alt=""
+      />
     );
   });
 };
@@ -66,12 +77,12 @@ function useCurrentScrollTop() {
       setTop(document.querySelector(".App").scrollTop || getScrollTop());
     };
     // set resize listener
-    window.addEventListener("scroll", scrollListener, true  );
+    window.addEventListener("scroll", scrollListener, true);
 
     // clean up function
     return () => {
       // remove resize listener
-      window.removeEventListener("scroll", scrollListener, true );
+      window.removeEventListener("scroll", scrollListener, true);
     };
   }, []);
 
@@ -104,6 +115,19 @@ export default function ProgramPage(props) {
         <label className={`${style["header-title"]} size-90 extra-bold`}>
           {props.opt.title}
         </label>
+        {props.opt.title === "Versenyek" ? (
+          <div className={`${style["achievement-wrapper"]}`}>
+            <Kupa />
+            <Link
+              className={`${style["achievement-button"]} size-12`}
+              to="/programs/achievements"
+            >
+              Versenyeredményeink
+            </Link>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className={style["body"]}>
         <div className={style["info"]}>
@@ -162,7 +186,7 @@ export default function ProgramPage(props) {
         </div>
       </div>
       <div className={style["images"]} style={{ height: width / 2 }}>
-        <Images gallery={props.opt.gallery}/>
+        <Images gallery={props.opt.gallery} />
       </div>
     </div>
   );

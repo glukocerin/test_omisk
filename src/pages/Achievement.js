@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 export default function Achievement(props) {
   return (
     <div>
-      <div className={style["header"]}>
+      <div className={style["header"]}></div>
+      <div className={`${style["header-wrapper"]}`}>
         <label className={`${style["state-location"]} size-13`}>
-          <Link to="/programs">Prograimjaink</Link>{" "}
-          <Link to="/programs/competitions">Versenyek</Link> Eredményeink
+          <Link to="/programs/competitions"> {"<"}Országos versenyeinkre</Link>{" "}
         </label>
-        <label className={`${style["header-title"]} size-90 extra-bold`}>
+        <label className={`${style["header-text"]} size-90 extra-bold`}>
           Eredményeink
         </label>
       </div>
@@ -148,6 +148,12 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 3. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2019.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -302,6 +308,12 @@ export default function Achievement(props) {
               <span className={`${style["name"]} size-15 .thin`}>Forte –</span>{" "}
               koreográfia Mády Krisztina – felnőtt buzogánygyakorlat – 2. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2018.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -471,6 +483,12 @@ export default function Achievement(props) {
               Katalin, iskolánk tanára Különdíjban részesült A Legötletesebb
               Koreográfiákért.
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2017.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -651,6 +669,12 @@ export default function Achievement(props) {
               koreográfia Mády Krisztina – mozdulatművészet 3. díj
             </p>
           </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2016.jpg`)}
+            />
+          </div>
         </div>
         <div className={style["wrapper"]}>
           <div>
@@ -734,6 +758,12 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 2. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2015.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -834,6 +864,12 @@ export default function Achievement(props) {
               </span>{" "}
               koreogr. Benis Katalin – mozdulatművészet – ifjúsági különdíj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2014.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1051,12 +1087,18 @@ export default function Achievement(props) {
               </span>{" "}
               koreogr. Pers Júlia – szabad műfaj – 2. díj
             </p>
-            <p className={` size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Szárnypróba –
               </span>{" "}
               koreogr. Pers Júlia – szabad műfaj – 3. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2013.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1174,12 +1216,18 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Pers Júlia – szabad műfaj – 2. díj
             </p>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Működésben –
               </span>{" "}
               koreográfia Pers Júlia – szabad műfaj – 1. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2012.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1250,13 +1298,19 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               Sirály Táncfesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Akvárium –
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 4. díj
             </p>
             2
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2011.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1312,12 +1366,18 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Pers Júlia – kéziszer kategória – 1. díj
             </p>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Tavaszi hangulat –
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 1.díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2010.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1381,12 +1441,18 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 1. díj
             </p>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Labdagyakorlat
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – különdíj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2009.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1439,13 +1505,19 @@ export default function Achievement(props) {
               </span>{" "}
               koreográfia Benis Katalin – kéziszer kategória – 1. díj
             </p>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Libbenő kendők –
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – 2. díj
             </p>
           </div>
+          {/* <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2008.jpg`)}
+            />
+          </div> */}
         </div>
         <div className={style["wrapper"]}>
           <div>
@@ -1473,12 +1545,18 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               XVI. Országos Junior Táncművészeti Fesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Ki szelet vet –
               </span>{" "}
               koreográfia Pers Júlia – mozdulatművészet kategória 1. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2007.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1489,12 +1567,18 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               IV. Országos Berczik Sára Emlékverseny
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Egerek és macskák –
               </span>{" "}
               koreográfia Benis Katalin – mozdulatművészet kategória – különdíj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2006.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1514,10 +1598,16 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               XIV. Országos Junior Táncművészeti Fesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>2X6 –</span>{" "}
               koreográfia Pers Júlia - mozdulatművészet kategória – 2. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2005.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1537,12 +1627,18 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               XIII. Országos Ifjúsági Táncművészeti Fesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Tükörképek –
               </span>{" "}
               koreográfia Pers Júlia - mozdulatművészet kategória – 1. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2004.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1553,10 +1649,16 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               XII. Országos Ifjúsági Táncművészeti Fesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>Kánon –</span>{" "}
               koreográfia Pers Júlia – mozdulatművészet kategória – 2. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2003.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1571,12 +1673,18 @@ export default function Achievement(props) {
               <span className={`${style["name"]} size-15 .thin`}>Rondo –</span>{" "}
               koreográfia: Pers júlia – mozdulatművészeti kategória – 2. díj
             </p>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Kínai tánc –
               </span>{" "}
               koreográfia Pers Júlia – karakter kategória – 1. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2002.jpg`)}
+            />
           </div>
         </div>
         <div className={style["wrapper"]}>
@@ -1587,12 +1695,18 @@ export default function Achievement(props) {
             <h4 className={`${style["title"]} size-24 extra-bold`}>
               X. Országos Gyermek Táncművészeti Fesztivál
             </h4>
-            <p className={`size-15 thin`}>
+            <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 A fedélzeten –
               </span>{" "}
               koreográfia: Pers júlia – karakter kategória – 2. díj
             </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2001.jpg`)}
+            />
           </div>
         </div>
       </div>
