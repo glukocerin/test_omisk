@@ -12,7 +12,7 @@ const TeacherCards = function() {
     <Link to={{ pathname: "/teacher", state: card }} key={index}>
       <div className="card">
         <img src={require(`../assets/img/teachers/${card.picture}`)} alt="" />
-        <label className="teacher-name size-36 extra-bold">{card.name}</label>
+        <label className="teacher-name size-28 extra-bold">{card.name}</label>
       </div>
     </Link>
   ));
