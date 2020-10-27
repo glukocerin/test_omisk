@@ -9,6 +9,27 @@
   background: transparent;
 }
 
+.achievement-wrapper {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.achievement-button {
+  height: 40px;
+  margin-left: 2rem;
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--color-blue-1);
+  background: white;
+  padding: 1vh 1.302vw;
+  font-weight: 800;
+  transition: border-color 300ms, background-color 300ms, color 300ms;
+  cursor: pointer;
+}
+
 .header {
   position: absolute;
   z-index: -100;
@@ -136,7 +157,7 @@
   position: absolute;
   width: 35vw;
   top: 0;
-  bottom: unset!important;
+  bottom: unset !important;
   z-index: 1;
   left: 6vw;
   transition: top 0.3s linear;
@@ -146,7 +167,7 @@
   position: absolute;
   width: 55vw;
   bottom: 0;
-  top: unset!important;
+  top: unset !important;
   right: 6vw;
   transition: bottom 0.3s linear;
 }
