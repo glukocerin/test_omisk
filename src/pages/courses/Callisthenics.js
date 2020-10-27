@@ -90,11 +90,6 @@ export default function Courses() {
             </li>
             <li>
               <p className="size-12 thin">
-                Budapest Művelődési Központ (hétfő-szerda)
-              </p>
-            </li>
-            <li>
-              <p className="size-12 thin">
                 Józsefvárosi Galéria és Rendezvényközpont (hétfő-szerda)
               </p>
             </li>

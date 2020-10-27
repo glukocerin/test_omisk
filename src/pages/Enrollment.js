@@ -134,20 +134,6 @@ export default function Enrollment() {
                 <label className="place-program-row size-15 thin">Mády Krisztina </label>
             </div>
         </div>
-        <div className={`place ${ activePlace.placeId === 6 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 6 ? {placeId: null, position: null} : {placeId:6, position: [47.50055, 19.04011], zoom: 15}) }>
-            <PlusSign className="plus-sign"/>
-            <MinusSign className="minus-sign"/>                            
-            <label className="place-label size-24 extra-bold">Budapest Művelődési Központ</label>
-            <div className="place-informations">
-                <label className="place-address size-15 extra-bold">XI. Etele út 55/a</label>
-                <label className="place-program-row size-15 thin title">Művészi  torna</label>
-                <label className="place-program-row size-15 thin">hétfő I szerda</label>
-                <label className="place-program-row size-15 thin">Taylor Esther</label>
-                <label className="place-program-row size-15 thin title">Mozdulatművészet</label>
-                <label className="place-program-row size-15 thin">hétfő I szerda</label>
-                <label className="place-program-row size-15 thin">Taylor Esther</label>
-            </div>
-        </div>
         <div className={`place ${ activePlace.placeId === 7 && 'active' }`} onClick={() => setActivePlace(activePlace.placeId === 7 ? {placeId: null, position: null} : {placeId:7, position: [47.48746, 19.07061], zoom: 15}) }>
             <PlusSign className="plus-sign"/>
             <MinusSign className="minus-sign"/>                            
