@@ -229,7 +229,8 @@ export default function Landing({ dotChange }) {
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Hol vagyunk?</label>
             </div>
-            <div className={`left four ${ activeDot === 4 ? "active": "" }`}>
+            {/* why 8? because I'm too lazy ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
+            <div className={`left four ${ activeDot === 8 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Hol vagyunk?</label>
                     <div className="drop-down-list">
@@ -362,7 +363,7 @@ export default function Landing({ dotChange }) {
                     </div>
                 </div>
             </div>
-            <div className={`right four ${ activeDot === 4 ? "active": "" }`}>
+            <div className={`right four ${ activeDot === 8 ? "active": "" }`}>
                 <LeafletMap props={activePlace}/>
             </div>
             <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 4 ? setActiveCard(0):setActiveCard(4)}}>
@@ -414,8 +415,9 @@ export default function Landing({ dotChange }) {
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Ami fontos számunkra</label>
-            </div> 
-            <div className={`left eight ${ activeDot === 8 ? "active": "" }`}>
+            </div>
+            {/* why 4? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
+            <div className={`left eight ${ activeDot === 4 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Ami fontos nekünk</label>
                     <div className="sepa-row">
@@ -435,7 +437,7 @@ export default function Landing({ dotChange }) {
                     <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
                 </div>
             </div>
-            <div className={`right eight ${ activeDot === 8 ? "active": "" }`}></div>
+            <div className={`right eight ${ activeDot === 4 ? "active": "" }`}></div>
             <div className="dots">
                 <Dots setActiveDot={setActiveDot} dotChange={dotChange} activeDot={activeDot}/>
             </div>
