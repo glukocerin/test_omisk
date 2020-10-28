@@ -281,6 +281,9 @@
   font-size: 2.813vw;
   font-weight: 800;
 }
+.left.three .inline-link {
+  cursor: pointer;
+}
 .left.three .content-block,
 .left.six .content-block,
 .left.seven .content-block {
@@ -299,7 +302,7 @@
 }
 .left.three .article,
 .left.six .article {
-  line-height: 28px;
+  line-height: 26px;
 }
 .left.three .article + .article,
 .left.six .article + .article {

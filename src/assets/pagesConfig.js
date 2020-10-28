@@ -45,7 +45,7 @@ const pagesConfig = {
       ],
     },
     list_what_we_do: {
-      title: "És az órákon kívül……",
+      title: "És az órákon kívül...",
       list: [
         {
           text: "Évzáró előadások",
