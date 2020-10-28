@@ -283,6 +283,7 @@
 }
 .left.three .inline-link {
   cursor: pointer;
+  text-decoration: underline;
 }
 .left.three .content-block,
 .left.six .content-block,
@@ -549,7 +550,7 @@
   max-width: 26vw;
 }
 .left.eight .title {
-  color: var(--color-gray-new-1);
+  color: var(--color-gray-0);
   margin-bottom: 2.5vh;
 }
 .left.eight .article {
@@ -559,7 +560,7 @@
   display: flex;
   align-items: center;
   margin: 1.5vh 0;
-  margin-left: 8vw;
+  margin-left: 6vw;
 }
 .left.eight .sepa-row .icon {
   min-width: 2.083vw;
@@ -568,7 +569,7 @@
 .left.eight .sepa-row .text {
   margin: 0 1vw;
   white-space: nowrap;
-  color: var(--color-gray-new-1);
+  color: var(--color-gray-0);
 }
 .left.eight .sepa-row hr {
   margin: 0;
