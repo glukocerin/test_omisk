@@ -224,7 +224,81 @@ export default function Landing({ dotChange }) {
                 </div>
             </div>
             <div className={`right three ${ activeDot === 3 ? "active": "" }`}></div>
-            <div className={`mobile-card three ${activeCard === 3 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 3 ? setActiveCard(0):setActiveCard(3)}}>
+            {/* why 3? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
+            <div className={`mobile-card seven ${activeCard === 3 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 3 ? setActiveCard(0):setActiveCard(3)}}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Ami fontos számunkra</label>
+            </div>
+            {/* why 4? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
+            <div className={`left eight ${ activeDot === 4 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">Ami fontos nekünk</label>
+                    <div className="sepa-row">
+                        <Gymnast className="icon" />
+                        <label className="text size-32 extra-bold">Berczik technika</label>
+                    </div>
+                    <label className="article size-20">A <Link to={{ pathname: "/blog_entry", state: FindByProp('blog', 'cards', 'index', 'berczik') }}>Berczik-technika</Link> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
+                    <div className="sepa-row">
+                        <MusicalNote className="icon" />
+                        <label className="text size-32 extra-bold">Zeneiség</label>
+                    </div>
+                    <label className="article size-20">A zene nálunk nem csak kísérő eleme a táncnak. Koreográfiáinkban szoros összhangban egymás hatását erősítik: segít a zene megértésében, és érzékenyít a táncra. Így hozzuk mi mozgásba a zenét.</label>
+                    <div className="sepa-row">
+                        <PaintBrush className="icon" />
+                        <label className="text size-32 extra-bold">Kreativitás</label>
+                    </div>
+                    <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
+                </div>
+            </div>
+            <div className={`right eight ${ activeDot === 4 ? "active": "" }`}></div>
+            <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 4 ? setActiveCard(0):setActiveCard(4)}}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Milyen kurzusaink vannak?</label>
+            </div>            
+            <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
+                    <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch} setZoom={setZoom} />
+                </div>
+            </div>
+            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}></div>
+            <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 5 ? setActiveCard(0):setActiveCard(5)}}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">Mit csinálunk az órákon?</label>
+            </div> 
+            <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">{`Mit csinálunk\naz órákon?`}</label>
+                    <label className="article size-16">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
+                </div>
+            </div>
+            <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
+                <div className="content-block">
+                    <iframe title="video" src={activeDot === 6 ? landing['youtube_links'][activeLink].link: undefined} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="link-block">
+                        <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>{landing['youtube_links'][0].text}</label>
+                        <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>{landing['youtube_links'][1].text}</label>
+                        <label onClick={() => setActiveLink(2)} className={`link size-15 ${ activeLink === 2 && 'active' }`}>{landing['youtube_links'][2].text}</label>
+                    </div>
+                </div>
+            </div>
+            <div className={`mobile-card inverse six ${activeCard === 6 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 6 ? setActiveCard(0):setActiveCard(6)}}>
+                <PlusSign className="plus-sign"/>
+                <MinusSign className="minus-sign"/>
+                <label className="text extra-bold">És az órákon kívül...</label>
+            </div> 
+            <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
+                <div className="content-block">
+                    <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
+                    <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} setZoom={setZoom} />
+                </div>
+            </div>
+            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}></div>
+            {/* why 7? because I'm too lazy ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
+            <div className={`mobile-card three ${activeCard === 7 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 7 ? setActiveCard(0):setActiveCard(7)}}>
                 <PlusSign className="plus-sign"/>
                 <MinusSign className="minus-sign"/>
                 <label className="text extra-bold">Hol vagyunk?</label>
@@ -366,78 +440,6 @@ export default function Landing({ dotChange }) {
             <div className={`right four ${ activeDot === 8 ? "active": "" }`}>
                 <LeafletMap props={activePlace}/>
             </div>
-            <div className={`mobile-card four ${activeCard === 4 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 4 ? setActiveCard(0):setActiveCard(4)}}>
-                <PlusSign className="plus-sign"/>
-                <MinusSign className="minus-sign"/>
-                <label className="text extra-bold">Milyen kurzusaink vannak?</label>
-            </div>            
-            <div className={`left five ${ activeDot === 5 ? "active": "" }`}>
-                <div className="content-block">
-                    <label className="title extra-bold size-54">{landing['list_courses'].title}</label>
-                    <CoursesList activeDot={activeDot} activeFiveSwitch={activeFiveSwitch} setActiveFiveSwitch={setActiveFiveSwitch} setZoom={setZoom} />
-                </div>
-            </div>
-            <div className={`right five ${ activeDot === 5 ? "active": "" } ${activeFiveSwitch} ${zoom && 'zoomed'}`}></div>
-            <div className={`mobile-card inverse five ${activeCard === 5 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 5 ? setActiveCard(0):setActiveCard(5)}}>
-                <PlusSign className="plus-sign"/>
-                <MinusSign className="minus-sign"/>
-                <label className="text extra-bold">Mit csinálunk az órákon?</label>
-            </div> 
-            <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
-                <div className="content-block">
-                    <label className="title extra-bold size-54">{`Mit csinálunk\naz órákon?`}</label>
-                    <label className="article size-16">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
-                </div>
-            </div>
-            <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
-                <div className="content-block">
-                    <iframe title="video" src={activeDot === 6 ? landing['youtube_links'][activeLink].link: undefined} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <div className="link-block">
-                        <label onClick={() => setActiveLink(0)} className={`link size-15 ${ activeLink === 0 && 'active' }`}>{landing['youtube_links'][0].text}</label>
-                        <label onClick={() => setActiveLink(1)} className={`link size-15 ${ activeLink === 1 && 'active' }`}>{landing['youtube_links'][1].text}</label>
-                        <label onClick={() => setActiveLink(2)} className={`link size-15 ${ activeLink === 2 && 'active' }`}>{landing['youtube_links'][2].text}</label>
-                    </div>
-                </div>
-            </div>
-            <div className={`mobile-card inverse six ${activeCard === 6 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 6 ? setActiveCard(0):setActiveCard(6)}}>
-                <PlusSign className="plus-sign"/>
-                <MinusSign className="minus-sign"/>
-                <label className="text extra-bold">És az órákon kívül...</label>
-            </div> 
-            <div className={`left seven ${ activeDot === 7 ? "active": "" }`}>
-                <div className="content-block">
-                    <label className="title extra-bold size-54">{landing['list_what_we_do'].title}</label>
-                    <WhatWeDo activeDot={activeDot} activeSevenSwitch={activeSevenSwitch} setActiveSevenSwitch={setActiveSevenSwitch} setZoom={setZoom} />
-                </div>
-            </div>
-            <div className={`right seven ${ activeDot === 7 ? "active": "" } ${activeSevenSwitch} ${zoom && 'zoomed'}`}></div>
-            <div className={`mobile-card seven ${activeCard === 7 && 'toggled'}`} onClick={(event) => { restoreScrollTop(event);activeCard === 7 ? setActiveCard(0):setActiveCard(7)}}>
-                <PlusSign className="plus-sign"/>
-                <MinusSign className="minus-sign"/>
-                <label className="text extra-bold">Ami fontos számunkra</label>
-            </div>
-            {/* why 4? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
-            <div className={`left eight ${ activeDot === 4 ? "active": "" }`}>
-                <div className="content-block">
-                    <label className="title extra-bold size-54">Ami fontos nekünk</label>
-                    <div className="sepa-row">
-                        <Gymnast className="icon" />
-                        <label className="text size-32 extra-bold">Berczik technika</label>
-                    </div>
-                    <label className="article size-20">A <Link to={{ pathname: "/blog_entry", state: FindByProp('blog', 'cards', 'index', 'berczik') }}>Berczik-technika</Link> a gyermekek természetes mozgásából kiindulva fejleszti a testtudatot és nevel tudatosságra. Mindig az életkornak megfelelő mozgásforma, amely biztos alapot ad a bármelyik táncstílushoz.</label>
-                    <div className="sepa-row">
-                        <MusicalNote className="icon" />
-                        <label className="text size-32 extra-bold">Zeneiség</label>
-                    </div>
-                    <label className="article size-20">A zene nálunk nem csak kísérő eleme a táncnak. Koreográfiáinkban szoros összhangban egymás hatását erősítik: segít a zene megértésében, és érzékenyít a táncra. Így hozzuk mi mozgásba a zenét.</label>
-                    <div className="sepa-row">
-                        <PaintBrush className="icon" />
-                        <label className="text size-32 extra-bold">Kreativitás</label>
-                    </div>
-                    <label className="article size-20">A koreográfia készítés az önkifejezés egy formája, a közös alkotás csoportból közösséget formál. Növendékeink a technikai tudás megszerzése mellett megtanulják a tánc nyelvén kifejezni magukat, kibontakoztathatják kreativitásukat.</label>
-                </div>
-            </div>
-            <div className={`right eight ${ activeDot === 4 ? "active": "" }`}></div>
             <div className="dots">
                 <Dots setActiveDot={setActiveDot} dotChange={dotChange} activeDot={activeDot}/>
             </div>
