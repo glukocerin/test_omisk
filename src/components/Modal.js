@@ -29,7 +29,7 @@ const Years = function ({ videos, setVideo, selectedVideo }) {
 
 export default function ({ isOpen, setModalOpen, videos }) {
   let sortedVideos = videos.sort(compare);
-  console.log(videos)
+
   const [actualVideo, setVideo] = useState(sortedVideos[0]["link"]),
     escFunction = useCallback((event) => {
       if (event.keyCode === 27) {
