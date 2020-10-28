@@ -170,7 +170,7 @@ export default function Landing({ dotChange }) {
         <div className="landing" onWheel = {(e) => scroller(e) }>
             <div className={`left one ${ activeDot === 1 ? "active": "" }`}>
                 <div className="content-block">
-                    <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét!`}</label>
+                    <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét.`}</label>
                     <label className="sub-title extra-bold size-32">Óbuda Mozgásművészeti Iskola</label>
                     <div className="stamp-box">
                         <Stamp className="stamp"/>
@@ -192,8 +192,8 @@ export default function Landing({ dotChange }) {
                     <label className="text extra-bold size-48">megszerettetni</label>
                     <label className="text extra-bold size-48">a mozgástanulást,</label>
                     <label className="text extra-bold size-48">amely nem más, mint</label>
-                    <label className="text extra-bold size-48">az ösztönös mozgásnak</label>
-                    <label className="text extra-bold size-48">a fokozatos átalakítása</label>
+                    <label className="text extra-bold size-48">az ösztönös mozgás</label>
+                    <label className="text extra-bold size-48">fokozatos átalakítása</label>
                     <label className="text extra-bold size-48">a tudatos felé.”</label>
                     <div className="separator"></div>
                     <label className="text size-24 thin">Berczik Sára</label>
@@ -208,8 +208,11 @@ export default function Landing({ dotChange }) {
             <div className={`left three ${ activeDot === 3 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
-                    <label className="article size-24">{`Mozgásművészeti iskola, ahol  sokféle műfajt megtalálsz. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, dedikált figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
-                    <label className="article size-24 extra-bold">Gyere, nézd meg, mi így működünk!</label>
+                    <label className="article size-16">{`Mozgásművészeti iskola, ahol sokféle műfajt megtalálsz. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, személyre szóló figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
+                    <label className="article size-16">
+                        Gyere, nézd meg, mi így működünk!<br/>
+                        Megtalálsz minket hét budapesti <span className="inline-link bold" onClick={() => { setActiveDot(4); dotChange(4); }}>helyszínen.</span>
+                    </label>
                     <div className="button-box">
                         <Link onClick={()=> {dispatch(updatePageindex({payload: activeDot}))}} to="/courses">
                             <button className="btn btn-secondary">Kurzusaink</button>
@@ -382,7 +385,7 @@ export default function Landing({ dotChange }) {
             <div className={`left six ${ activeDot === 6 ? "active": "" }`}>
                 <div className="content-block">
                     <label className="title extra-bold size-54">{`Mit csinálunk\naz órákon?`}</label>
-                    <label className="article size-20">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
+                    <label className="article size-16">Tréningezünk, kombinációkat  és koreográfiákat tanulunk - korosztályos csoportokban, heti rendszerességgel.  A tréning rugalmassá és erőssé tesz, miközben készség szinten sajátíthatjuk el az adott műfajnak megfelelő mozgásformát – művészi tornán a kéziszerek használatát is. Az órán tanult kombinációk készítik elő az évvégi előadáson szinpadra kerülő koreográfiákat.</label>
                 </div>
             </div>
             <div className={`right six ${ activeDot === 6 ? "active": "" }`}>
