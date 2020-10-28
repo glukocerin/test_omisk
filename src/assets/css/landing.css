@@ -912,14 +912,14 @@
     font-size: 12px;
   }
   .mobile-card.three {
-    order: 7;
+    order: 14;
     background: var(--color-gray-3);
     filter: contrast(80%);
   }
   .left.four {
     padding: 1.75rem;
     padding-bottom: 3rem;
-    order: 7;
+    order: 14;
     background: var(--color-gray-2);
   }
   .left.four .drop-down-list {
@@ -951,10 +951,11 @@
   }
   .mobile-card.four {
     order: 8;
-    background: var(--color-pink-0);
+    background: var(--color-gray-3);
     filter: contrast(80%);
   }
   .left.five {
+    background: var(--color-gray-3);
     order: 8;
     padding: 1.75rem 4rem;
     padding-top: 2rem;
@@ -990,7 +991,7 @@
     order: 9;
     background-size: 80% auto;
     background-position: center 0;
-    background-color: var(--color-pink-0);
+    background-color: var(--color-gray-3);
     background-image: url("../img/courses/muveszi_torna.jpg") !important;
     animation: unset;
     height: 20rem;
@@ -1051,13 +1052,19 @@
     max-width: 1.5rem;
     margin-right: 1rem;
   }
-  .left.five .list-item .arrow .cls-1,
+  .left.five .list-item .arrow .cls-1 {
+    fill: var(--color-gray-7);
+    stroke: var(--color-gray-7);
+    stroke-width: 0.3px;
+  }
   .left.seven .list-item .arrow .cls-1 {
     fill: var(--color-gray-0);
     stroke: var(--color-gray-0);
     stroke-width: 0.3px;
   }
-  .left.five .list-item .arrow .cls-2,
+  .left.five .list-item .arrow .cls-2 {
+    stroke: var(--color-gray-7);
+  }
   .left.seven .list-item .arrow .cls-2 {
     stroke: var(--color-gray-0);
   }
@@ -1071,13 +1078,13 @@
     height: 30rem;
   }
   .mobile-card.seven {
-    order: 14;
+    order: 7;
     background: var(--color-pink-0);
     filter: contrast(80%);
   }
   .left.eight {
-    order: 14;
-    padding: 0.5rem 3.5rem 7rem 3.5rem;
+    order: 7;
+    padding: 0.5rem 3.5rem 3.5rem 3.5rem;
   }
   .left.eight .content-block {
     max-width: 20rem;
@@ -1088,6 +1095,14 @@
   }
   .left.eight .sepa-row .text {
     color: var(--color-gray-0);
+  }
+  .right.eight {
+    order: 7;
+    background-size: 80% auto;
+    background-position: center 0;
+    background-color: var(--color-pink-0);
+    animation: unset;
+    height: 17rem;
   }
   .left {
     height: unset;
@@ -1281,7 +1296,8 @@
   .mobile-card.five:not(.toggled) ~ .right.six,
   .mobile-card.six:not(.toggled) + .left.seven,
   .mobile-card.six:not(.toggled) ~ .right.seven,
-  .mobile-card.seven:not(.toggled) + .left.eight {
+  .mobile-card.seven:not(.toggled) + .left.eight,
+  .mobile-card.seven:not(.toggled) ~ .right.eight {
     max-height: 0;
     overflow: hidden;
     transition: none;
@@ -1297,7 +1313,8 @@
   .mobile-card.five.toggled + .left.six,
   .mobile-card.five.toggled ~ .right.six,
   .mobile-card.six.toggled + .left.seven,
-  .mobile-card.six.toggled ~ .right.seven {
+  .mobile-card.six.toggled ~ .right.seven,
+  .mobile-card.seven.toggled ~ .right.eight {
     max-height: 30rem;
     transition: max-height 0.3s ease-in-out;
   }
@@ -1355,7 +1372,6 @@
   .dots,
   .right.four,
   .right.six .content-block,
-  .right.eight,
   .social-media-bar {
     display: none;
   }
