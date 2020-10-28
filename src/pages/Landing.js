@@ -209,7 +209,7 @@ export default function Landing({ dotChange }) {
                 <div className="content-block">
                     <label className="title extra-bold size-54">Kik vagyunk?</label>
                     <label className="article size-16">{`Mozgásművészeti iskola, ahol sokféle műfajt megtalálsz. Tánc és gimnasztika, technika és kreativitás, klasszikus- és modern zene. Kemény munka és kikapcsolódás, személyre szóló figyelem és közösségteremtés. Mindez sport és művészet határán. Úgy gondolod, hogy ezek nem férnek bele egy órába?`}</label>
-                    <label className="article size-16">
+                    <label className="article size-16 extra-bold">
                         Gyere, nézd meg, mi így működünk!<br/>
                         Megtalálsz minket hét budapesti <span className="inline-link" onClick={() => { setActiveDot(4); dotChange(4); }}>helyszínen.</span>
                     </label>
