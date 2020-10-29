@@ -409,6 +409,10 @@
   height: 3.4vh;
   display: block;
 }
+.left.four .drop-down-list .place .plus-sign {
+  top: 0;
+  height: 100%;
+}
 .left.four .drop-down-list .place .minus-sign {
   display: none;
 }
@@ -903,6 +907,9 @@
     font-size: 32px;
     color: var(--color-gray-new-1);
   }
+  .left.three .article:nth-child(3) {
+    font-size: 15px;
+  }
   .left.three .button-box {
     margin-top: 2rem;
     margin-bottom: 0.875rem;
@@ -948,6 +955,7 @@
   .left.four .drop-down-list .place .minus-sign {
     left: 0.75rem;
     top: 0.825rem;
+    height: 3.4vh;
   }
   .mobile-card.four {
     order: 8;
@@ -1318,6 +1326,13 @@
     max-height: 30rem;
     transition: max-height 0.3s ease-in-out;
   }
+  .mobile-card.two.toggled + .left.three,
+  .mobile-card.two.toggled ~ .right.three {
+    max-height: 35rem;
+  }
+  .mobile-card.two.toggled ~ .right.three {
+    max-height: 25rem;
+  }
   .mobile-card.three.toggled ~ .left.four,
   .mobile-card.seven.toggled + .left.eight {
     max-height: 70rem;
@@ -1362,7 +1377,6 @@
   .left.one .size-12.thin,
   .left.two.active .separator,
   .left.three .title,
-  .left.three .article:nth-child(3),
   .left.four .title,
   .left.five .title,
   .left.six .title,
