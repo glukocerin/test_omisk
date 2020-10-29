@@ -22,7 +22,7 @@
   border-radius: 0.75rem;
   background: var(--color-gray-0);
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(.74,.14,.27,.81);
+  transition: transform 0.3s cubic-bezier(0.74, 0.14, 0.27, 0.81);
   position: absolute;
 }
 .dot:hover,
@@ -61,14 +61,14 @@
   border: 2px solid var(--color-gray-0);
   box-shadow: 0px 3px 6px #00000029;
   background: transparent;
-  animation: 0.75s dotshrink cubic-bezier(.74,.14,.27,.81);
+  animation: 0.75s dotshrink cubic-bezier(0.74, 0.14, 0.27, 0.81);
 }
 @keyframes dotshrink {
   from {
-    transform: scale(2)
+    transform: scale(2);
   }
   to {
-    transform: scale(1.6)
+    transform: scale(1.6);
   }
 }
 .landing .content-block {
@@ -463,16 +463,16 @@
   transition: max-height 0.3s ease-in-out;
 }
 .left.five {
-  background: var(--color-pink-0);
+  background: var(--color-gray-3);
 }
 .left.five .title,
 .left.seven .title {
-  color: var(--color-gray-0);
+  color: var(--color-gray-7);
   margin-bottom: 2rem;
 }
 .left.five .list-item,
 .left.seven .list-item {
-  color: var(--color-gray-0);
+  color: var(--color-gray-7);
   padding: 0.417vw 0;
   display: flex;
   align-items: center;
