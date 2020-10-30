@@ -7,8 +7,6 @@ import FindByProp from "../components/FindByProp";
 
 import { updatePageindex } from "../actions/navigation";
 
-import { isMobile } from "react-device-detect";
-
 import "../assets/css/landing.css";
 
 import { ReactComponent as Gymnast } from "../assets/img/gymnast.svg";
@@ -140,12 +138,6 @@ function restoreScrollTop(event) {
   document.querySelector(".App").scrollTop = event.currentTarget.offsetTop;
 }
 
-function scrollToTarget(targetClass) {
-  document.querySelector(".App").scrollTop = document.querySelector(
-    targetClass
-  ).offsetTop;
-}
-
 export default function Landing({ dotChange }) {
   const pageIndex = useSelector((store) => store.navigation.landingPageIndex);
   const dispatch = useDispatch();
@@ -261,20 +253,7 @@ export default function Landing({ dotChange }) {
             Gyere, nézd meg, mi így működünk!
             <br />
             Megtalálsz minket hét budapesti{" "}
-            <span
-              className="inline-link"
-              onClick={() => {
-                if (isMobile) {
-                  scrollToTarget(".mobile-card.three");
-                  setActiveCard(7);
-                } else {
-                  setActiveDot(8);
-                  dotChange(8);
-                }
-              }}
-            >
-              helyszínen.
-            </span>
+            <Link to="/enrollment/#map">helyszínen.</Link>
           </label>
           <div className="button-box">
             <Link
