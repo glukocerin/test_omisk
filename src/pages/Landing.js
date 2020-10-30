@@ -253,7 +253,14 @@ export default function Landing({ dotChange }) {
             Gyere, nézd meg, mi így működünk!
             <br />
             Megtalálsz minket hét budapesti{" "}
-            <Link to="/enrollment/#map">helyszínen.</Link>
+            <Link
+              onClick={() => {
+                dispatch(updatePageindex({ payload: activeDot }));
+              }}
+              to="/enrollment/#map"
+            >
+              helyszínen.
+            </Link>
           </label>
           <div className="button-box">
             <Link
