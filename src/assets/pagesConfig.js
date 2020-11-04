@@ -1022,15 +1022,14 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "rozsa_reka.jpg",
-        name: "Markolt-Rózsa Réka",
+        picture: "taylor_jennifer.jpg",
+        name: "Bozsókiné Taylor Jennifer",
         desc: "táncpedagógus",
         details:
-          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+          "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
         education: [
-          "KRE, tanító",
-          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
-          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
+          "ELTE, tanító szak",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
         ],
         achievements: [],
         courses: ["művészi torna, mozdulatművészet"],
@@ -1051,6 +1050,21 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
+        picture: "rozsa_reka.jpg",
+        name: "Markolt-Rózsa Réka",
+        desc: "táncpedagógus",
+        details:
+          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+        education: [
+          "KRE, tanító",
+          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
+        ],
+        achievements: [],
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true,
+      },
+      {
         picture: "david_luca.jpg",
         name: "Dávid Luca",
         desc: "látványtervező, művésztanár",
@@ -1059,20 +1073,6 @@ const pagesConfig = {
         education: ["Magyar Képzőművészeti Egyetem, látványtervező"],
         achievements: [],
         courses: [],
-        hasActionPicture: true,
-      },
-      {
-        picture: "taylor_jennifer.jpg",
-        name: "Bozsókiné Taylor Jennifer",
-        desc: "táncpedagógus",
-        details:
-          "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
-        education: [
-          "ELTE, tanító szak",
-          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
-        ],
-        achievements: [],
-        courses: ["művészi torna, mozdulatművészet"],
         hasActionPicture: true,
       },
     ],
