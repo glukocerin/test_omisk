@@ -318,8 +318,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc", "Heti 3 x 60 perc", "Heti 1 x 90 perc"],
-            prices: ["11000-11300 Ft / hó", "19100 Ft / hó", "7350 Ft / hó"],
+            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc", "Heti 3 x 60 perc"],
+            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó", "15200 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
