@@ -318,8 +318,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc", "Heti 3 x 60 perc", "Heti 1 x 90 perc"],
-            prices: ["11000-11300 Ft / hó", "19100 Ft / hó", "7350 Ft / hó"],
+            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc", "Heti 3 x 60 perc"],
+            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó", "15200 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -732,36 +732,49 @@ const pagesConfig = {
         ],
         videos: [
           {
-            year: 2009,
-            link: "https://www.youtube.com/embed/DTEJ5kXAPUs?autoplay=1",
+            year: 2012,
+            link: "https://www.youtube.com/embed/QrbvIg_-uPY?autoplay=1",
+            title: 'Átalakulat'
           },
           {
-            year: 2014,
+            year: 2020,
+            link: "https://www.youtube.com/embed/Ddsqpqpbq8s?autoplay=1",
+            title: 'Vihar'
+          },
+          {
+            year: 2011,
+            link: "https://www.youtube.com/embed/8PVBx5od9Ec?autoplay=1",
+            title: 'Akvárium'
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/xHR0W2TGKNo?autoplay=1",
+            title: 'Egy Idegen Bolygón'
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
+            title: 'Tücsökzene'
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/DkH1A4W-Qow?autoplay=1",
+            title: 'Echo'
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/793_DkVGXOY?autoplay=1",
+            title: 'Szivárványos'
+          },
+          {
+            year: 2013,
+            link: "https://www.youtube.com/embed/m4HyWKk4K1g?autoplay=1",
+            title: 'Lélekvándorlás'
+          },
+          {
+            year: 2013,
             link: "https://www.youtube.com/embed/W_2ZFuBCu7g?autoplay=1",
-          },
-          {
-            year: 2019,
-            link: "https://www.youtube.com/embed/TwMjiQwSvWg?autoplay=1",
-          },
-          {
-            year: 2019,
-            link: "https://www.youtube.com/embed/B76U-zmPbPQ?autoplay=1",
-          },
-          {
-            year: 2013,
-            link: "https://www.youtube.com/embed/BOMn9NIIyMQ?autoplay=1",
-          },
-          {
-            year: 2013,
-            link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
-          },
-          {
-            year: 2013,
-            link: "https://www.youtube.com/embed/JPl0fLsqAqc?autoplay=1",
-          },
-          {
-            year: 2013,
-            link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
+            title: 'Concerto 1'
           },
         ],
         gallery: ["versenyek/1", "versenyek/2"],
@@ -777,31 +790,43 @@ const pagesConfig = {
         videos: [
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/m4HyWKk4K1g?autoplay=1",
+            link: "https://www.youtube.com/embed/DTEJ5kXAPUs?autoplay=1",
+            title: 'Keretek között'
           },
           {
             year: 2019,
             link: "https://www.youtube.com/embed/Uqh4xDiO8lc?autoplay=1",
+            title: 'Láva'
           },
           {
             year: 2019,
-            link: "https://www.youtube.com/embed/xHR0W2TGKNo?autoplay=1",
+            link: "https://www.youtube.com/embed/BOMn9NIIyMQ?autoplay=1",
+            title: 'Békakánon'
           },
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/cLZd9pwPlBg?autoplay=1",
+            link: "https://www.youtube.com/embed/Kwb1w8gYX8c?autoplay=1",
+            title: 'Kánon'
           },
           {
             year: 2019,
+            link: "https://www.youtube.com/embed/2xI0TSMQtYc?autoplay=1",
+            title: 'Szárnypróba'
+          },
+          {
+            year: 2020,
+            link: "https://www.youtube.com/embed/OSftLMD7e38?autoplay=1",
+            title: 'Emlékül'
+          },
+          {
+            year: 2020,
             link: "https://www.youtube.com/embed/JPeTCtEbW5M?autoplay=1",
+            title: 'Nevezd székfoglaló játéknak!'
           },
           {
             year: 2020,
-            link: "https://www.youtube.com/embed/N919Q4f7ONY?autoplay=1",
-          },
-          {
-            year: 2020,
-            link: "https://www.youtube.com/embed/tirz52xuTCM?autoplay=1",
+            link: "https://www.youtube.com/embed/yKctVIZ2z9U?autoplay=1",
+            title: 'Concerto 1-2-3'
           },
         ],
         gallery: ["gala/1", "gala/2"],
@@ -997,15 +1022,14 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "rozsa_reka.jpg",
-        name: "Markolt-Rózsa Réka",
+        picture: "taylor_jennifer.jpg",
+        name: "Bozsókiné Taylor Jennifer",
         desc: "táncpedagógus",
         details:
-          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+          "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
         education: [
-          "KRE, tanító",
-          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
-          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
+          "ELTE, tanító szak",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
         ],
         achievements: [],
         courses: ["művészi torna, mozdulatművészet"],
@@ -1026,6 +1050,21 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
+        picture: "rozsa_reka.jpg",
+        name: "Markolt-Rózsa Réka",
+        desc: "táncpedagógus",
+        details:
+          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+        education: [
+          "KRE, tanító",
+          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
+        ],
+        achievements: [],
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true,
+      },
+      {
         picture: "david_luca.jpg",
         name: "Dávid Luca",
         desc: "látványtervező, művésztanár",
@@ -1034,20 +1073,6 @@ const pagesConfig = {
         education: ["Magyar Képzőművészeti Egyetem, látványtervező"],
         achievements: [],
         courses: [],
-        hasActionPicture: true,
-      },
-      {
-        picture: "taylor_jennifer.jpg",
-        name: "Bozsókiné Taylor Jennifer",
-        desc: "táncpedagógus",
-        details:
-          "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
-        education: [
-          "ELTE, tanító szak",
-          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
-        ],
-        achievements: [],
-        courses: ["művészi torna, mozdulatművészet"],
         hasActionPicture: true,
       },
     ],

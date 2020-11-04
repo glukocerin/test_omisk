@@ -22,16 +22,6 @@ export default function Achievement(props) {
           </div>
           <div className={style["achievement"]}>
             <h4 className={`${style["title"]} size-24 extra-bold`}>
-              Magyar Látványtánc Sportszövetség Őszi Kupa
-            </h4>
-            <p className={`${style["last"]} size-15 thin`}>
-              <span className={`${style["name"]} size-15 .thin`}>
-                Éjszakai Szellő -
-              </span>{" "}
-              koreográfia Taylor Jennifer – művészi látványtánc kategória,
-              mozdulatművészet formáció, B kategória – arany minősítés
-            </p>
-            <h4 className={`${style["title"]} size-24 extra-bold`}>
               XXVIII. Országos Táncfesztiválok Elődöntője – Makó
             </h4>
             <p className={`size-15 thin`}>
@@ -307,6 +297,16 @@ export default function Achievement(props) {
             <p className={`${style["last"]} size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>Forte –</span>{" "}
               koreográfia Mády Krisztina – felnőtt buzogánygyakorlat – 2. díj
+            </p>
+            <h4 className={`${style["title"]} size-24 extra-bold`}>
+              Magyar Látványtánc Sportszövetség Őszi Kupa
+            </h4>
+            <p className={`${style["last"]} size-15 thin`}>
+              <span className={`${style["name"]} size-15 .thin`}>
+                Éjszakai Szellő -
+              </span>{" "}
+              koreográfia Taylor Jennifer – művészi látványtánc kategória,
+              mozdulatművészet formáció, B kategória – arany minősítés
             </p>
           </div>
           <div className={style["img-wrapper"]}>

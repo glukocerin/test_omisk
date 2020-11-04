@@ -21,7 +21,7 @@ const Years = function ({ videos, setVideo, selectedVideo }) {
           el.link === selectedVideo ? style["selected-year"] : ""
         } size-15`}
       >
-        {el.year}
+        {el.title ? el.title : el.year}
       </span>
     );
   });
