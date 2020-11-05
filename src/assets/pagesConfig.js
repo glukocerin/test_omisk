@@ -944,7 +944,7 @@ const pagesConfig = {
           "2017 Táncpedagógusok Országos Szövetsége Nívódíj",
         ],
         courses: ["művészi torna, mozdulatművészet"],
-        hasActionPicture: false,
+        hasActionPicture: true,
       },
       {
         picture: "kalocsai_edit.jpg",
