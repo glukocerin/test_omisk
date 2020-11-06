@@ -11,22 +11,16 @@ import pagesConfig from "../assets/pagesConfig";
 
 const { enrollment } = pagesConfig;
 
-const EnrollmentColumns = function() {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const clickHandler = () => {
-    setModalOpen(true);
-  }
-  
+const EnrollmentColumns = function({setModalOpen}) {  
   return enrollment.columns.map((item, index) => (
     <div className="enrollment-box" key={index}>
-      <BlogModal isOpen={modalOpen} setModalOpen={setModalOpen} />
+      
       <label className="enrollment-title size-36 extra-bold">{item.title}</label>
       <label className="enrollment-text size-20 thin">{item.text}</label>
       {item.link === "contact" ? <Link to={item.link}>
         <button className="btn">{item.button_text}</button>
       </Link> : 
-        <button onClick={() => {clickHandler() }} className="btn">{item.button_text}</button>
+        <button onClick={() => {setModalOpen(true) }} className="btn">{item.button_text}</button>
       }
     </div>
   ));
@@ -34,14 +28,16 @@ const EnrollmentColumns = function() {
 
 export default function Enrollment() {
   const [activePlace, setActivePlace] = useState({ placeId: 0, position: [47.5342, 19.07] , zoom: 10 });
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="enrollment">
+      <BlogModal isOpen={modalOpen} setModalOpen={setModalOpen} />
       <div className="enrollment-header"></div>
       <label className="page-title size-90 extra-bold">Beiratkozás</label>
       <div className="enrollment-content">
         <div className="enrollment-columns">
-          <EnrollmentColumns />
+          <EnrollmentColumns setModalOpen={setModalOpen}/>
         </div>
       </div>
       <div className="places-content" id={'map'}>
