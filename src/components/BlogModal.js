@@ -3,62 +3,55 @@ import style from "../assets/css/blogmodal.module.css";
 import { Link } from "react-router-dom";
 import FindByProp from "./FindByProp";
 
-export default function () {
-  const [isModalOpen, setModalOpen] = useState(true);
+export default function ({isOpen, setModalOpen}) {
   const escFunction = useCallback((event) => {
     if (event.keyCode === 27) {
       setModalOpen(false);
     }
-  }, []);
+  }, [setModalOpen]);
 
-  const closeHandler = () => {
-    setModalOpen(false);
-    window.sessionStorage.setItem("info-modal", "showed");
+useEffect(() => {
+  document.addEventListener("keydown", escFunction, false);
+
+  return () => {
+    document.removeEventListener("keydown", escFunction, false);
   };
-
-  useEffect(() => {
-    const isModalShowed = window.sessionStorage.getItem("info-modal");
-    if (isModalShowed === "showed") {
-      setModalOpen(false);
-    }
-    document.addEventListener("keydown", escFunction, false);
-
-    return () => {
-      document.removeEventListener("keydown", escFunction, false);
-    };
-  }, [escFunction]);
+}, [escFunction]);
 
   return (
     <div>
       <div
         className={`${style["modal-overlay"]} ${
-          isModalOpen ? "" : style["closed"]
+          isOpen ? "" : style["closed"]
         }`}
         id="modal-overlay"
       ></div>
       <div
-        className={`${style["modal"]} ${isModalOpen ? "" : style["closed"]}`}
+        className={`${style["modal"]} ${isOpen ? "" : style["closed"]}`}
         id="modal"
       >
         <div className={`${style["modal-body"]} `}>
           <div className={`${style["text-wrapper"]}`}>
             <button
               className={`${style["close-button"]}`}
-              onClick={() => closeHandler()}
+              onClick={() => setModalOpen(false)}
             >
               &#215;
             </button>
             <div className={`${style["text-body"]}`}>
-              <h2 className={`size-54 extra-bold ${style["text-body-title"]}`}>COVID tájékoztató</h2>
+              <h2 className={`size-54 extra-bold ${style["text-body-title"]}`}>Beiratkozási időpontok</h2>
               <p className={`size-20 ${style["text-body-paragraph"]}`}>
-                Iskolánkban óvintézkedéseket tettünk , hogy foglalkozásainkon is
-                csökkentsük a fertőzés továbbadásának lehetőségét. Köszönjük,
-                hogy betartják a COVID tájékoztatóban szereplő előírásokat!
+                A következő helyszíni beiratkozás 2021 augusztusában lesz.<br/>
+                Addig is lehet jelentkezni azokba a csoportokba, ahol még van szabad hely.<br/>
+                Ha ezzel kapcsolatban szeretnél érdeklődni, vedd fel a kapcsolatot irodánkkal !<br/>
+                06-20-9460-848<br/>
+                06-20-2000-138<br/>
+                iroda@omisk.hu
               </p>
-              <Link
+              {/* <Link
                 className={`${style["button"]} size-16 extra-bold`}
                 onClick={() => {
-                  closeHandler();
+                  setModalOpen(false);
                 }}
                 to={{
                   pathname: "/blog_entry",
@@ -66,14 +59,14 @@ export default function () {
                 }}
               >
                 Tovább olvasom
-              </Link>
+              </Link> */}
             </div>
           </div>
-          <img
+          {/* <img
             className={`${style["image"]}`}
             src={require(`../assets/img/modal.png`)}
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>

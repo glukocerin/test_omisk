@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import '../assets/css/enrollment.css';
 import { Link } from "react-router-dom";
 import LeafletMap from '../components/LeafletMap'
+import BlogModal from '../components/BlogModal'
 
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
@@ -10,16 +11,25 @@ import pagesConfig from "../assets/pagesConfig";
 
 const { enrollment } = pagesConfig;
 
-const EnrollmentColumns = function(props) {
+const EnrollmentColumns = function() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const clickHandler = () => {
+    console.log(modalOpen)
+    setModalOpen(true);
+    console.log(modalOpen)
+  }
+  
   return enrollment.columns.map((item, index) => (
     <div className="enrollment-box" key={index}>
+      <BlogModal isOpen={modalOpen} setModalOpen={setModalOpen} />
       <label className="enrollment-title size-36 extra-bold">{item.title}</label>
       <label className="enrollment-text size-20 thin">{item.text}</label>
       {item.link === "contact" ? <Link to={item.link}>
         <button className="btn">{item.button_text}</button>
-      </Link> : <a href={item.link} target="_blank" rel="noopener noreferrer">
-        <button className="btn">{item.button_text}</button>
-      </a> }
+      </Link> : 
+        <button onClick={() => {clickHandler() }} className="btn">{item.button_text}</button>
+      }
     </div>
   ));
 };
