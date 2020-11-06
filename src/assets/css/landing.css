@@ -661,7 +661,7 @@
   background-image: url("../img/landing_sub/five-three.jpg");
 }
 .right.five.no-four {
-  background-image: url("../img/landing_sub/five-four.png");
+  background-image: url("../img/landing_sub/five-four.jpg");
 }
 .right.five.no-five {
   background-image: url("../img/landing_sub/five-five.jpg");
@@ -721,7 +721,7 @@
   background-image: url("../img/landing_sub/seven-six.jpg");
 }
 .right.eight {
-  background-image: url("../img/landing_bg_8.png");
+  background-image: url("../img/landing_bg_8.jpg");
 }
 .right.active {
   animation: scrolldown 500ms ease-in-out forwards;
@@ -1030,7 +1030,7 @@
     background-repeat: no-repeat;
     background-position: center 0;
     background-color: var(--color-blue-4);
-    background-image: url("../img/landing_mobile_bg_6.png");
+    background-image: url("../img/landing_mobile_bg_6.jpg");
     animation: unset;
     height: 20rem;
   }

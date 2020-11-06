@@ -35,7 +35,6 @@ import FooterMobile from "./components/FooterMobile";
 import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
-// import BlogModal from "./components/BlogModal";
 import Cookies from "./components/Cookies";
 
 const { programs } = pagesConfig;
@@ -46,7 +45,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <BlogModal opt={{ isOpen: true }} /> */}
       <Cookies />
       <Switch>
         <Route exact path="/courses">
@@ -80,13 +78,13 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/operation">
-          <Navigation BackgroundColor="green" />
+          <Navigation BackgroundColor="green" isHeaderFixed="true"/>
           <Operation />
           <Footer />
           <FooterMobile />
         </Route>
         <Route path="/enrollment">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <Enrollment />
           <Footer />
           <FooterMobile />
