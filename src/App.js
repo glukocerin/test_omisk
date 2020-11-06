@@ -84,7 +84,7 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/enrollment">
-          <Navigation BackgroundColor="blue-1" />
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
           <Enrollment />
           <Footer />
           <FooterMobile />
