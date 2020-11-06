@@ -15,9 +15,7 @@ const EnrollmentColumns = function() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const clickHandler = () => {
-    console.log(modalOpen)
     setModalOpen(true);
-    console.log(modalOpen)
   }
   
   return enrollment.columns.map((item, index) => (

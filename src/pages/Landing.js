@@ -143,7 +143,6 @@ export default function Landing({ dotChange }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log();
     if (pageIndex === 0 || !pageIndex) {
       setActiveDot(1);
     } else {
