@@ -78,7 +78,7 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/operation">
-          <Navigation BackgroundColor="green" />
+          <Navigation BackgroundColor="green" isHeaderFixed="true"/>
           <Operation />
           <Footer />
           <FooterMobile />
