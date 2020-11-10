@@ -1,3 +1,47 @@
+.header-banner {
+  width: 100%;
+  height: 4rem;
+  background-color: yellow;
+  position: absolute;
+  top: 6rem;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-title {
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-right: 2px solid gray;
+}
+
+.banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.banner-close {
+  border: none;
+  height: 3rem;
+  background-color: #fff;
+  color: var(--color-gray-new-1);
+  opacity: 0.53;
+  font-size: 54px;
+  font-weight: 100;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  box-shadow: unset;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -61,7 +105,7 @@
 }
 .header .logo.inverse .cls-1 {
   fill: var(--color-gray-7);
-  stroke: unset
+  stroke: unset;
 }
 .header.big .logo {
   height: 2.917vw;
