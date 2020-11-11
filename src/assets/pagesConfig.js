@@ -194,7 +194,7 @@ const pagesConfig = {
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő", "Kedd","Szerda","Péntek"],
+            appointments: ["Hétfő", "Kedd", "Szerda", "Péntek"],
           },
           {
             name: "MOM Kulturális Központ",
@@ -318,8 +318,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc", "Heti 3 x 60 perc"],
-            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó", "15200 Ft / hó"],
+            occasions: [
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+              "Heti 3 x 60 perc",
+            ],
+            prices: [
+              "11000-11300 Ft / hó",
+              "12800-14700 Ft / hó",
+              "15200 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -360,7 +368,7 @@ const pagesConfig = {
             "…elmúltál 10 éves, szereted a kihívásokat.",
             "…van táncos előképzettséged, vagy eddig valahol huzamosabb ideig sportoltál.",
             "…készen állsz a kemény munkára, amiért látványos fejlődésben lesz részed.",
-            "…olyan tudást szeretnél, amivel más tánckurzusokon is bátran az első sorban állhatsz."
+            "…olyan tudást szeretnél, amivel más tánckurzusokon is bátran az első sorban állhatsz.",
           ],
         },
         aboutCourse: {
@@ -734,47 +742,47 @@ const pagesConfig = {
           {
             year: 2012,
             link: "https://www.youtube.com/embed/QrbvIg_-uPY?autoplay=1",
-            title: 'Átalakulat'
+            title: "Átalakulat",
           },
           {
             year: 2020,
             link: "https://www.youtube.com/embed/Ddsqpqpbq8s?autoplay=1",
-            title: 'Vihar'
+            title: "Vihar",
           },
           {
             year: 2011,
             link: "https://www.youtube.com/embed/8PVBx5od9Ec?autoplay=1",
-            title: 'Akvárium'
+            title: "Akvárium",
           },
           {
             year: 2019,
             link: "https://www.youtube.com/embed/xHR0W2TGKNo?autoplay=1",
-            title: 'Egy Idegen Bolygón'
+            title: "Egy Idegen Bolygón",
           },
           {
             year: 2013,
             link: "https://www.youtube.com/embed/_qWPElwMwcE?autoplay=1",
-            title: 'Tücsökzene'
+            title: "Tücsökzene",
           },
           {
             year: 2013,
             link: "https://www.youtube.com/embed/DkH1A4W-Qow?autoplay=1",
-            title: 'Echo'
+            title: "Echo",
           },
           {
             year: 2013,
             link: "https://www.youtube.com/embed/793_DkVGXOY?autoplay=1",
-            title: 'Szivárványos'
+            title: "Szivárványos",
           },
           {
             year: 2013,
             link: "https://www.youtube.com/embed/m4HyWKk4K1g?autoplay=1",
-            title: 'Lélekvándorlás'
+            title: "Lélekvándorlás",
           },
           {
             year: 2013,
             link: "https://www.youtube.com/embed/W_2ZFuBCu7g?autoplay=1",
-            title: 'Concerto 1'
+            title: "Concerto 1",
           },
         ],
         gallery: ["versenyek/1", "versenyek/2"],
@@ -791,42 +799,42 @@ const pagesConfig = {
           {
             year: 2020,
             link: "https://www.youtube.com/embed/DTEJ5kXAPUs?autoplay=1",
-            title: 'Keretek között'
+            title: "Keretek között",
           },
           {
             year: 2019,
             link: "https://www.youtube.com/embed/Uqh4xDiO8lc?autoplay=1",
-            title: 'Láva'
+            title: "Láva",
           },
           {
             year: 2019,
             link: "https://www.youtube.com/embed/BOMn9NIIyMQ?autoplay=1",
-            title: 'Békakánon'
+            title: "Békakánon",
           },
           {
             year: 2020,
             link: "https://www.youtube.com/embed/Kwb1w8gYX8c?autoplay=1",
-            title: 'Kánon'
+            title: "Kánon",
           },
           {
             year: 2019,
             link: "https://www.youtube.com/embed/2xI0TSMQtYc?autoplay=1",
-            title: 'Szárnypróba'
+            title: "Szárnypróba",
           },
           {
             year: 2020,
             link: "https://www.youtube.com/embed/OSftLMD7e38?autoplay=1",
-            title: 'Emlékül'
+            title: "Emlékül",
           },
           {
             year: 2020,
             link: "https://www.youtube.com/embed/JPeTCtEbW5M?autoplay=1",
-            title: 'Nevezd székfoglaló játéknak!'
+            title: "Nevezd székfoglaló játéknak!",
           },
           {
             year: 2020,
             link: "https://www.youtube.com/embed/yKctVIZ2z9U?autoplay=1",
-            title: 'Concerto 1-2-3'
+            title: "Concerto 1-2-3",
           },
         ],
         gallery: ["gala/1", "gala/2"],
@@ -1080,6 +1088,15 @@ const pagesConfig = {
   blog: {
     cards: [
       {
+        picture: "lockdown.jpg",
+        picture_title: "lockdown",
+        date: "2020. 11. 11.",
+        title: "Távoktatás",
+        index: "lockdown",
+        text:
+          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e mailben tájékoztatjuk ezen  a héten. Jó egészséget kívánunk mindenkinek !",
+      },
+      {
         picture: "entry-two.jpg",
         picture_title: "Berczik módszer",
         date: "2020. 09. 18.",
@@ -1211,14 +1228,15 @@ const pagesConfig = {
         text:
           "Augusztus végén és szeptember elején valamennyi helyszinünkön beiratkozást tartunk. A végleges órarendet ezt követően állítjuk össze a jelentkezők életkora, tudásszintje és az időpontra vonatkozó igények figyelembe vételével. Kérjük ezért, hogy a beiratkozásnál jelezzék, hogy a helyszínen megjelölt tanítási napokon mi a legkorábbi időpont, amikor a foglalkozásra tudnak jönni, illetve mi a legkésőbbi  időpont, ami még alkalmas volna. \n\nA régi csoportok természetesen együtt maradnak és az ő időpontjukat igyekszünk nem változtatni, ha ezt külön nem kérik. \n\nA fennmaradó helyekre év közben is lehet jelentkezni, de az előmenetel szempontjából mindenképpen előnyösebb a szeptemberi kezdés.",
         button_text: "Beiratkozás időpontok",
-        link: 'https://docs.google.com/document/d/18Tc7Y06IOJwaNVtdSuo-q6kUYe9DDnz5Q1VXinKArTU',
+        link:
+          "https://docs.google.com/document/d/18Tc7Y06IOJwaNVtdSuo-q6kUYe9DDnz5Q1VXinKArTU",
       },
       {
         title: "Év közben is tudok csatlakozni?",
         text:
           "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.\nA Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
         button_text: "Érdeklődöm",
-        link: 'contact'
+        link: "contact",
       },
     ],
   },

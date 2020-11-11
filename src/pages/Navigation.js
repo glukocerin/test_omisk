@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -9,29 +9,44 @@ import { updatePageindex } from "../actions/navigation";
 
 import "../assets/css/navigation.css";
 import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
+import FindByProp from "../components/FindByProp";
 
 export default function Navigation(props) {
   const location = useLocation().pathname;
   const dispatch = useDispatch();
+  const [isVisible, setVisible] = useState(true);
 
   return (
     <div>
-      <div className="header-banner">
-        <div className="banner-title">
-          <span className="size-24 extra-bold">Covid tájékoztató</span>
+      {isVisible ? (
+        <div className="header-banner">
+          <div className="banner-title">
+            <span className="size-24 extra-bold">Covid tájékoztató</span>
+          </div>
+          <div className="banner-text">
+            <span className="size-20">
+              Az érvényben lévő kormányrendeletnek megfelelően iskolánkban 2020.
+              november 11-től áttértünk az online oktatásra. Ennek részleteiről{" "}
+              <Link
+                to={{
+                  pathname: "/blog_entry",
+                  state: FindByProp("blog", "cards", "index", "lockdown"),
+                }}
+              >
+                itt
+              </Link>{" "}
+              tájékozódhatsz.
+            </span>
+          </div>
+          <div>
+            <button onClick={(e) => setVisible(false)} className="banner-close">
+              &#215;
+            </button>
+          </div>
         </div>
-        <div className="banner-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          vestibulum et mi non tincidunt. Donec pulvinar finibus justo ut
-          ultrices. Quisque consectetur lorem et arcu condimentum molestie. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Cras pretium elit sed ipsum porta, sed tincidunt enim
-          condimentum.
-        </div>
-        <div>
-          <button className="banner-close">&#215;</button>
-        </div>
-      </div>
+      ) : (
+        ""
+      )}
       <div
         className={`header background-${props.BackgroundColor} ${
           props.isHeaderFixed && "fixed"
