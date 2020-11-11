@@ -9,6 +9,7 @@ import { updatePageindex } from "../actions/navigation";
 
 import "../assets/css/navigation.css";
 import { ReactComponent as Logo } from "../assets/img/icons/logo.svg";
+import FindByProp from "../components/FindByProp";
 
 export default function Navigation(props) {
   const location = useLocation().pathname;
@@ -26,7 +27,15 @@ export default function Navigation(props) {
             <span className="size-20">
               Az érvényben lévő kormányrendeletnek megfelelően iskolánkban 2020.
               november 11-től áttértünk az online oktatásra. Ennek részleteiről{" "}
-              <Link to="/">itt</Link> tájékozódhatsz.
+              <Link
+                to={{
+                  pathname: "/blog_entry",
+                  state: FindByProp("blog", "cards", "index", "lockdown"),
+                }}
+              >
+                itt
+              </Link>{" "}
+              tájékozódhatsz.
             </span>
           </div>
           <div>
