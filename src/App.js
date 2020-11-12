@@ -37,6 +37,9 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import Cookies from "./components/Cookies";
 
+// NOT READY
+// import Admin from "./pages/Admin";
+
 const { programs } = pagesConfig;
 const { courses } = pagesConfig;
 
@@ -182,6 +185,10 @@ function App() {
         <Route path="/programDetail">
           <ProgramDetail />
         </Route>
+        {/* NOT READY */}
+{/*         <Route path="/admin">
+          <Admin />
+        </Route> */}
         <Route path="/">
           <Navigation
             BackgroundColor="gray-erohw"
