@@ -1,6 +1,6 @@
 .header-banner {
   width: 100%;
-  height: 4rem;
+  min-height: 4rem;
   background-color: yellow;
   position: absolute;
   top: 6rem;
@@ -207,6 +207,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .banner-title {
+    display: none;
+  }
   .header {
     position: unset;
     padding: 18px 28px;
