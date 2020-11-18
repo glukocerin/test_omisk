@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useEffect, useCallback } from "react";
 import style from "../assets/css/blogmodal.module.css";
-import { Link } from "react-router-dom";
-import FindByProp from "./FindByProp";
 
 export default function ({isOpen, setModalOpen}) {
   const escFunction = useCallback((event) => {
