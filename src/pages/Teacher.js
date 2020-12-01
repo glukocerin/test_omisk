@@ -26,9 +26,9 @@ export default function Teacher() {
         src={require(`../assets/img/teachers/${teacher.picture}`)}
         alt=""
       />
+      <label className="desc size-20 thin">{teacher.desc}</label>
       <div className="columns">
         <div className="column-left">
-          <label className="desc size-20 thin">{teacher.desc}</label>
           <label className="details size-20">{teacher.details}</label>
           <img
             className="action-picture"

@@ -74,12 +74,10 @@
   margin-bottom: 2.5rem;
   color: var(--color-green-0);
 }
-.teacher .column-left .desc {
+.teacher .desc {
+  margin-top: 2rem;
   white-space: pre-wrap;
-  margin-bottom: 2.75rem;
   line-height: 28px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 .teacher .column-left .details {
@@ -165,8 +163,7 @@
     margin: unset;
     border-bottom: 2.875rem solid var(--color-pink-0);
   }
-  .teacher .column-left .name,
-  .teacher .column-left .desc {
+  .teacher .column-left .name {
     display: none;
   }
 }
