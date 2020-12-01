@@ -1094,7 +1094,7 @@ const pagesConfig = {
         title: "Távoktatás",
         index: "lockdown",
         text:
-          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e mailben tájékoztatjuk ezen  a héten. Jó egészséget kívánunk mindenkinek !",
+          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e-mailben tájékoztatjuk ezen a héten.\n\nVárjuk azokat a növendékeinket is akik a vírusveszély miatt ebben az évben nem kezdtek el járni. Ők régi csoportjukhoz kapcsolódhatnak.\n\nKülső jelentkezést is elfogadunk, de ebben az esetben egyeztetni kell Mikusik Márta iskolatitkárral, hogy melyik csoport volna megfelelő.\n\nElérhetőségeink:\n06-20-946-0848, 06-1-200-0138\niroda@omisk.hu\n\nBízunk benne, hogy hamarosan személyesen is találkozhatunk!\n\nPers Júlia\nművészeti vezető",
       },
       {
         picture: "entry-two.jpg",
