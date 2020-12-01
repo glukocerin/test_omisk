@@ -1,10 +1,11 @@
 var FtpDeploy = require("ftp-deploy");
 var ftpDeploy = new FtpDeploy();
- 
+var deploySettings = require('./deploySettings');
+
 var config = {
-    user: "omiskhu",
-    // Password optional, prompted if none given
+    user: "omiskhu", 
     host: "omisk.hu",
+    password: deploySettings.PASSWORD,
     port: 21,
     localRoot: __dirname + "/build/",
     remoteRoot: "/public_html/",
@@ -17,7 +18,9 @@ var config = {
     // Passive mode is forced (EPSV command is not sent)
     forcePasv: true
 };
- 
+
+console.log('Fly me to the moon...')
+
 ftpDeploy
     .deploy(config)
     .then(res => console.log("finished:", res))
