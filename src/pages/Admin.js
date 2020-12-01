@@ -78,7 +78,7 @@ function createNewEntry(setBlogEntries) {
     }),
   };
 
-  fetch("http://omisk/admin.php", requestOptions)
+  fetch("https://omisk/admin.php", requestOptions)
   .then(response => response.json())
   .then(data => getBlogEntries().then(entries => setBlogEntries(entries)) );
 }
@@ -93,7 +93,7 @@ function getBlogEntries() {
     }),
   };
 
-  return fetch("http://omisk/admin.php", requestOptions)
+  return fetch("https://omisk/admin.php", requestOptions)
   .then(response => response.json())
   .then((data) => { return data});
 }

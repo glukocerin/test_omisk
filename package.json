@@ -9,6 +9,7 @@
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
     "express": "^4.17.1",
+    "ftp-deploy": "^2.3.8",
     "leaflet": "^1.6.0",
     "react": "^16.13.1",
     "react-device-detect": "^1.14.0",
@@ -27,7 +28,9 @@
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rm -r build/*",
+    "deploy": "npm run clean && npm run build && node deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"

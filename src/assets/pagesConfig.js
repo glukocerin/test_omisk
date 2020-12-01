@@ -439,7 +439,7 @@ const pagesConfig = {
           title: "Mikor tudom elkezdeni?",
           img: "pages/jazz/3.jpg",
           description:
-            "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de a jelentkezéshez az is elég, ha valamilyen műfajban táncoltál vagy sportoltál már.",
+            "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de anélkül is bátran jelentkezhetsz.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
@@ -905,7 +905,7 @@ const pagesConfig = {
         picture: "pers_julia.jpg",
         name: "Pers Júlia",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészi torna edző,\nMűvészeti vezető",
+          "Állami díjas táncpedagógus,\nMűvészeti vezető",
         details:
           "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, ami igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
         education: [
@@ -1094,7 +1094,7 @@ const pagesConfig = {
         title: "Távoktatás",
         index: "lockdown",
         text:
-          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e mailben tájékoztatjuk ezen  a héten. Jó egészséget kívánunk mindenkinek !",
+          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e-mailben tájékoztatjuk ezen a héten.\n\nVárjuk azokat a növendékeinket is akik a vírusveszély miatt ebben az évben nem kezdtek el járni. Ők régi csoportjukhoz kapcsolódhatnak.\n\nKülső jelentkezést is elfogadunk, de ebben az esetben egyeztetni kell Mikusik Márta iskolatitkárral, hogy melyik csoport volna megfelelő.\n\nElérhetőségeink:\n06-20-946-0848, 06-1-200-0138\niroda@omisk.hu\n\nBízunk benne, hogy hamarosan személyesen is találkozhatunk!\n\nPers Júlia\nművészeti vezető",
       },
       {
         picture: "entry-two.jpg",
