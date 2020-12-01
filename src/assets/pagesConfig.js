@@ -439,7 +439,7 @@ const pagesConfig = {
           title: "Mikor tudom elkezdeni?",
           img: "pages/jazz/3.jpg",
           description:
-            "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de a jelentkezéshez az is elég, ha valamilyen műfajban táncoltál vagy sportoltál már.",
+            "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de anélkül is bátran jelentkezhetsz.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
