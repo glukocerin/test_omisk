@@ -31,7 +31,7 @@ const BlogCards = function () {
               {card.title}
             </label>
             <label className="blog-entry-text size-15 thin">
-              {/* {splitText(card.text)} */}
+              {splitText(card.text)}
             </label>
           </div>
         </div>
@@ -46,13 +46,25 @@ const BlogCards = function () {
 
 function splitText(text) {
   var mobileCalc = Math.round((((window.innerWidth - 68) / 13) * 3) / 10) * 10;
-
-  return (
+  const fixed =
     text
       .replace(/<[^>]+>/g, "")
-      .replace(/\dn/g, " ")
-      .slice(0, isMobile ? mobileCalc : 120) + "..."
-  );
+      .split("[s]")
+      .slice(0, isMobile ? mobileCalc : 120) + "...";
+
+  // for (let i = 0; i < text.length; i++) {
+  //   text[i] = text[i] + "<br>";
+  // }
+  console.log(fixed.length);
+  console.log(fixed);
+
+  return fixed;
+  // return (
+  //   text
+  //     .replace(/<[^>]+>/g, "")
+  //     .replace(/\n/g, " ")
+  //     .slice(0, isMobile ? mobileCalc : 120) + "..."
+  // );
 }
 
 export default function Blog() {
