@@ -30,7 +30,6 @@ const BlogCards = function () {
           </label>
           <label className="blog-entry-text size-15 thin">
             {/* {splitText(card.text)} */}
-            Test
           </label>
         </div>
       </div>
