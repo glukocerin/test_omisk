@@ -29,7 +29,8 @@ const BlogCards = function () {
             {card.title}
           </label>
           <label className="blog-entry-text size-15 thin">
-            {/* {splitText(card.text)} */} test commit
+            {/* {splitText(card.text)} */}
+            
           </label>
         </div>
       </div>
@@ -43,7 +44,7 @@ function splitText(text) {
   return (
     text
       .replace(/<[^>]+>/g, "")
-      .replace(/\n/g, " ")
+      .replace(/\dn/g, " ")
       .slice(0, isMobile ? mobileCalc : 120) + "..."
   );
 }
