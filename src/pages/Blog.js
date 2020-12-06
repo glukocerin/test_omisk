@@ -29,7 +29,7 @@ const BlogCards = function () {
             {card.title}
           </label>
           <label className="blog-entry-text size-15 thin">
-            {/* {splitText(card.text)} */} something
+            {/* {splitText(card.text)} */} test commit
           </label>
         </div>
       </div>
