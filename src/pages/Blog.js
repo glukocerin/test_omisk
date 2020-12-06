@@ -29,7 +29,8 @@ const BlogCards = function () {
             {card.title}
           </label>
           <label className="blog-entry-text size-15 thin">
-            {splitText(card.text)}
+            {/* {splitText(card.text)} */}
+            Test
           </label>
         </div>
       </div>
