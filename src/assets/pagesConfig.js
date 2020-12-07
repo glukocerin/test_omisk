@@ -905,7 +905,7 @@ const pagesConfig = {
         picture: "pers_julia.jpg",
         name: "Pers Júlia",
         desc:
-          "Állami díjas táncpedagógus,\nMűvészeti vezető",
+          "Állami díjas táncpedagógus,[s]Művészeti vezető",
         details:
           "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, ami igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
         education: [
@@ -924,7 +924,7 @@ const pagesConfig = {
       {
         picture: "benis_katalin.jpg",
         name: "Benis Katalin",
-        desc: "Nívódíjas táncpedagógus,\nMűvészitorna-edző",
+        desc: "Nívódíjas táncpedagógus,[s]Művészitorna-edző",
         details:
           "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
         education: [
@@ -1178,7 +1178,7 @@ const pagesConfig = {
       role: "secondary",
       parentId: 0,
       description:
-        "Hetente 2 (esetenként 3) alkalommal tartunk órákat , melyek időtartama az óvodásoknak 45 perc, iskolás kortól 60 vagy 90 perc.\nAz aktuális órarendet a tanév elején állítjuk össze a beiratkozáson történő egyeztetés után és szeptember közepén hirdetjük ki. A tanév rendjével az iskolai tanításhoz igazodunk, de ősszel és tavasszal nem tartunk szünetet.\nA Kurzusaink menüpont alatt a kurzusok leírásánál  megtalálod azt, hogy az egyes helyszíneken mely napokon tartunk órákat. Ha a pontos időpontokra vagy kiváncsi vagy azt szeretnéd megtudni, hogy van-e még szabad hely a választott kurzuson, akkor vedd fel a kapcsolatot irodánkkal!",
+        "Hetente 2 (esetenként 3) alkalommal tartunk órákat , melyek időtartama az óvodásoknak 45 perc, iskolás kortól 60 vagy 90 perc.[s]Az aktuális órarendet a tanév elején állítjuk össze a beiratkozáson történő egyeztetés után és szeptember közepén hirdetjük ki. A tanév rendjével az iskolai tanításhoz igazodunk, de ősszel és tavasszal nem tartunk szünetet.[s]A Kurzusaink menüpont alatt a kurzusok leírásánál  megtalálod azt, hogy az egyes helyszíneken mely napokon tartunk órákat. Ha a pontos időpontokra vagy kiváncsi vagy azt szeretnéd megtudni, hogy van-e még szabad hely a választott kurzuson, akkor vedd fel a kapcsolatot irodánkkal!",
     },
     {
       id: 2,
@@ -1186,7 +1186,7 @@ const pagesConfig = {
       role: "secondary",
       parentId: 0,
       description:
-        "Az első félév végén decemberben vagy januárban nyilvános bemutató  órákat tartunk az addig tanultakból.\nJúnius elején a  tanévet ünnepélyes vizsgaelőadással zárjuk  az Óbudai Kulturális Központ és a MOM Kulturális Központ szinpadán.\nTavasszal haladó növendékeink országos táncversenyeken vehetnek részt.\nNyáron tánctábor szervezünk a MOM Kulturális Központban és a békásmegyeri Szent József Házban.",
+        "Az első félév végén decemberben vagy januárban nyilvános bemutató  órákat tartunk az addig tanultakból.[s]Június elején a  tanévet ünnepélyes vizsgaelőadással zárjuk  az Óbudai Kulturális Központ és a MOM Kulturális Központ szinpadán.[s]Tavasszal haladó növendékeink országos táncversenyeken vehetnek részt.[s]Nyáron tánctábor szervezünk a MOM Kulturális Központban és a békásmegyeri Szent József Házban.",
     },
     {
       id: 3,
@@ -1194,7 +1194,7 @@ const pagesConfig = {
       role: "secondary",
       parentId: 0,
       description:
-        "A tandíj összege a helyszíntől és a foglalkozások időtartamától függően 10.000 - 14.700 Ft/hónap heti 2 vagy 3  alkalomra. A pontos összeget a Kurzusok menűpont almenűiben  találod a hasznos információk között.\nA tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak, Mikusik Mártának  az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk).\nTestvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- Ft/hó/fő\n Az aktuális tandíjat mindig a megtartott órák alapján számítjuk ki, tehát  ha hivatalos ünnep vagy  szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat.\nNéhány alkalmas hiányzást pótolni lehet egy párhuzamos csoport óráján. Huzamosabb idejű és orvosilag igazolt mulasztás esetén  a tandíjból visszatérítést tudunk adni. Erre vonatkozó igényt az iskola vezetőjének címzett e-mailben kérjük bejelenteni ( pers.julia@omisk.hu )! Ha a mulasztott órák száma meghaladja az havi óraszám felét, akkor fél hónapi díjat jóváírunk  a következő befizetéskor.\nÁtmenetileg lehet heti 1 alkalommal is  járni, ebben az esetben a tandíjból 30% kedvezményt adunk. Hosszabb távon ezt nem javasoljuk, mert a tananyaggal minden órán haladunk. Különösen a második félévben jelent problémát, amikor a koreográfiákat tanuljuk.",
+        "A tandíj összege a helyszíntől és a foglalkozások időtartamától függően 10.000 - 14.700 Ft/hónap heti 2 vagy 3  alkalomra. A pontos összeget a Kurzusok menűpont almenűiben  találod a hasznos információk között.[s]A tandíjat 2 havonta kérjük befizetni a helyszínen iskolatitkárunknak, Mikusik Mártának  az előre meghirdetett napon (erről mindenkit írásban időben tájékoztatunk).[s]Testvérek beíratása esetén engedményt adunk a tandíjból, melynek összege: 2000,- Ft/hó/fő[s] Az aktuális tandíjat mindig a megtartott órák alapján számítjuk ki, tehát  ha hivatalos ünnep vagy  szünet miatt 8-nál kevesebb alkalommal van óra, akkor arányosan csökkentjük az arra a hónapra eső tandíjat.[s]Néhány alkalmas hiányzást pótolni lehet egy párhuzamos csoport óráján. Huzamosabb idejű és orvosilag igazolt mulasztás esetén  a tandíjból visszatérítést tudunk adni. Erre vonatkozó igényt az iskola vezetőjének címzett e-mailben kérjük bejelenteni ( pers.julia@omisk.hu )! Ha a mulasztott órák száma meghaladja az havi óraszám felét, akkor fél hónapi díjat jóváírunk  a következő befizetéskor.[s]Átmenetileg lehet heti 1 alkalommal is  járni, ebben az esetben a tandíjból 30% kedvezményt adunk. Hosszabb távon ezt nem javasoljuk, mert a tananyaggal minden órán haladunk. Különösen a második félévben jelent problémát, amikor a koreográfiákat tanuljuk.",
     },
     {
       id: 4,
@@ -1202,7 +1202,7 @@ const pagesConfig = {
       role: "secondary",
       parentId: 0,
       description:
-        "A gyakorlóruha a mozgást nem akadályozó praktikus, kényelmes viselet legyen! A cipő műfajonként különböző lehet, ezt célszerű tanárainkkal megbeszélni.\nGyermek és serdülő  csoportjaink a nyilvános órákon már egyforma öltözetben szerepelnek és ezt viselik az évzárón is. Ezeket a ruhákat és ifjúsági és felnőtt csapataink fellépő ruháit   hagyományosan Joób Adrienne jelmeztervező és kivitelező  készíti csoportjainknak.\nA művészi tornán használt kéziszereket - az ugrókötelek kivételével - iskolánk biztosítja.",
+        "A gyakorlóruha a mozgást nem akadályozó praktikus, kényelmes viselet legyen! A cipő műfajonként különböző lehet, ezt célszerű tanárainkkal megbeszélni.[s]Gyermek és serdülő  csoportjaink a nyilvános órákon már egyforma öltözetben szerepelnek és ezt viselik az évzárón is. Ezeket a ruhákat és ifjúsági és felnőtt csapataink fellépő ruháit   hagyományosan Joób Adrienne jelmeztervező és kivitelező  készíti csoportjainknak.[s]A művészi tornán használt kéziszereket - az ugrókötelek kivételével - iskolánk biztosítja.",
     },
     {
       id: 5,
@@ -1210,7 +1210,7 @@ const pagesConfig = {
       role: "primary",
       parentId: 5,
       description:
-        "Beiratkozás: augusztus 26. - szeptember 9.\n\nÓrarend kihirdetés: szeptember 15. \n\nA tanítás első napja: szeptember 17.\n\nA tanítás utolsó napja: július 15.\n\nTéli szünet :  2020. december 22. – 2021. január 4.\n\nNyilvános órák: 2020. december - 2021. január\n\nÉvzáró előadás: Június 6 ( MOM Kulturális Központ )\n                            Június 12-13 ( Óbudai Kulturális Központ )",
+        "Beiratkozás: augusztus 26. - szeptember 9.[s][s]Órarend kihirdetés: szeptember 15. [s][s]A tanítás első napja: szeptember 17.[s][s]A tanítás utolsó napja: július 15.[s][s]Téli szünet :  2020. december 22. – 2021. január 4.[s][s]Nyilvános órák: 2020. december - 2021. január[s][s]Évzáró előadás: Június 6 ( MOM Kulturális Központ )[s]                            Június 12-13 ( Óbudai Kulturális Központ )",
     },
     {
       id: 6,
@@ -1218,7 +1218,7 @@ const pagesConfig = {
       role: "primary",
       parentId: 6,
       description:
-        "A művészi torna órák tananyagát - 25 éves tapasztalatunk alapján - úgy állítottuk össze, hogy a gyerekek figyelmét már 4 éves kortól lekösse. Így nem szükséges, hogy a szülők is részt vegyenek az órán, sőt a gyerekek figyelmének fenntartása eredményesebb, ha önállóan „dolgoznak”, ahogy majd az iskolában is kell. A gyerekeknek ez általában nem jelent problémát. Ha először néhányan szokatlannak is érzik, a tanárok könnyen át tudják segíteni őket ezen a kisebb kihíváson. Amennyiben feltétlenül szükséges természetesen átmenetileg a szülői segítségtől sem zárkózunk el, de ezt mindenképpen a tanárokkal kell egyeztetni. Segítséget jelent, ha az első óra előtt otthon megbeszélik, hogy ezen az órán minden kislány egyedül vesz részt, de az anyukák a folyosón várják őket. A gyerekek órai munkájának eredményét a szülők a félévi nyilvános órán illetve a színpadi évzáró előadáson tekinthetik meg.\nAz öltözet eleinte bármilyen alkalmas ruha lehet, ami a mozgást nem akadályozza, de később, amikor már beilleszkedtek a gyerekek, egyforma tornadreszt kapnak, amit a bemutatókon, előadáson is viselnek. Váltócipő már az első alkalommal is szükséges, mert a teremben lévő szőnyegre utcai cipővel nem szabad rálépni. (először esetleg zokni is megteszi, olyan, ami nem csúszik).\nKérjük, hogy a gyerekek ne egyenek-igyanak közvetlenül az óra előtt! (A folyadékpótlás természetesen fontos, de a legkisebbeknél az óra közben erre nincs szükség).\nAz óráról csak a tanár engedélyével jöhetnek ki a gyerekek. Mosdóba  természetesen azonnal kimehetnek, de  oda már nem tudjuk elkísérni őket.   Hogy ez minél ritkábban forduljon elő, kérjük, hogy óra előtt mindig vigyék el a gyerekeket a mosdóba!\nFontosnak tartjuk, hogy a szülők és a tanárok jó kapcsolatban legyenek, nyíltan tudjanak beszélni az esetleges problémáról. Ha bármi észrevétele, kérdése van, forduljon bizalommal a tanár nénihez. Az órák előtt és után nem biztos, hogy van erre elegendő idő, de annyi biztosan van, hogy megbeszéljenek egy alkalmas módot és időt a kapcsolattartásra.",
+        "A művészi torna órák tananyagát - 25 éves tapasztalatunk alapján - úgy állítottuk össze, hogy a gyerekek figyelmét már 4 éves kortól lekösse. Így nem szükséges, hogy a szülők is részt vegyenek az órán, sőt a gyerekek figyelmének fenntartása eredményesebb, ha önállóan „dolgoznak”, ahogy majd az iskolában is kell. A gyerekeknek ez általában nem jelent problémát. Ha először néhányan szokatlannak is érzik, a tanárok könnyen át tudják segíteni őket ezen a kisebb kihíváson. Amennyiben feltétlenül szükséges természetesen átmenetileg a szülői segítségtől sem zárkózunk el, de ezt mindenképpen a tanárokkal kell egyeztetni. Segítséget jelent, ha az első óra előtt otthon megbeszélik, hogy ezen az órán minden kislány egyedül vesz részt, de az anyukák a folyosón várják őket. A gyerekek órai munkájának eredményét a szülők a félévi nyilvános órán illetve a színpadi évzáró előadáson tekinthetik meg.[s]Az öltözet eleinte bármilyen alkalmas ruha lehet, ami a mozgást nem akadályozza, de később, amikor már beilleszkedtek a gyerekek, egyforma tornadreszt kapnak, amit a bemutatókon, előadáson is viselnek. Váltócipő már az első alkalommal is szükséges, mert a teremben lévő szőnyegre utcai cipővel nem szabad rálépni. (először esetleg zokni is megteszi, olyan, ami nem csúszik).[s]Kérjük, hogy a gyerekek ne egyenek-igyanak közvetlenül az óra előtt! (A folyadékpótlás természetesen fontos, de a legkisebbeknél az óra közben erre nincs szükség).[s]Az óráról csak a tanár engedélyével jöhetnek ki a gyerekek. Mosdóba  természetesen azonnal kimehetnek, de  oda már nem tudjuk elkísérni őket.   Hogy ez minél ritkábban forduljon elő, kérjük, hogy óra előtt mindig vigyék el a gyerekeket a mosdóba![s]Fontosnak tartjuk, hogy a szülők és a tanárok jó kapcsolatban legyenek, nyíltan tudjanak beszélni az esetleges problémáról. Ha bármi észrevétele, kérdése van, forduljon bizalommal a tanár nénihez. Az órák előtt és után nem biztos, hogy van erre elegendő idő, de annyi biztosan van, hogy megbeszéljenek egy alkalmas módot és időt a kapcsolattartásra.",
     },
   ],
   enrollment: {
@@ -1226,7 +1226,7 @@ const pagesConfig = {
       {
         title: "Év elején szeretnék beiratkozni!",
         text:
-          "Augusztus végén és szeptember elején valamennyi helyszinünkön beiratkozást tartunk. A végleges órarendet ezt követően állítjuk össze a jelentkezők életkora, tudásszintje és az időpontra vonatkozó igények figyelembe vételével. Kérjük ezért, hogy a beiratkozásnál jelezzék, hogy a helyszínen megjelölt tanítási napokon mi a legkorábbi időpont, amikor a foglalkozásra tudnak jönni, illetve mi a legkésőbbi  időpont, ami még alkalmas volna. \n\nA régi csoportok természetesen együtt maradnak és az ő időpontjukat igyekszünk nem változtatni, ha ezt külön nem kérik. \n\nA fennmaradó helyekre év közben is lehet jelentkezni, de az előmenetel szempontjából mindenképpen előnyösebb a szeptemberi kezdés.",
+          "Augusztus végén és szeptember elején valamennyi helyszinünkön beiratkozást tartunk. A végleges órarendet ezt követően állítjuk össze a jelentkezők életkora, tudásszintje és az időpontra vonatkozó igények figyelembe vételével. Kérjük ezért, hogy a beiratkozásnál jelezzék, hogy a helyszínen megjelölt tanítási napokon mi a legkorábbi időpont, amikor a foglalkozásra tudnak jönni, illetve mi a legkésőbbi  időpont, ami még alkalmas volna. [s][s]A régi csoportok természetesen együtt maradnak és az ő időpontjukat igyekszünk nem változtatni, ha ezt külön nem kérik. [s][s]A fennmaradó helyekre év közben is lehet jelentkezni, de az előmenetel szempontjából mindenképpen előnyösebb a szeptemberi kezdés.",
         button_text: "Beiratkozás időpontok",
         link:
           "https://docs.google.com/document/d/18Tc7Y06IOJwaNVtdSuo-q6kUYe9DDnz5Q1VXinKArTU",
@@ -1234,7 +1234,7 @@ const pagesConfig = {
       {
         title: "Év közben is tudok csatlakozni?",
         text:
-          "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.\nA Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
+          "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.[s]A Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
         button_text: "Érdeklődöm",
         link: "contact",
       },

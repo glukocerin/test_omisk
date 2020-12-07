@@ -46,19 +46,17 @@ const BlogCards = function () {
 
 function splitText(text) {
   var mobileCalc = Math.round((((window.innerWidth - 68) / 13) * 3) / 10) * 10;
-  const fixed =
-    text
-      .replace(/<[^>]+>/g, "")
-      .split("[s]")
-      .slice(0, isMobile ? mobileCalc : 120) + "...";
+  let bracket = [];
+  let string = "";
+  const fixed = text.split("[s]");
+  bracket.push(fixed);
+  for (let num = 0; num < bracket.length; num++) {
+    string += fixed[num] + "<br>";
+  }
+    console.log(string)
+  let megoldás = string.replace(/<[^>]+>/g, "").slice(0, isMobile ? mobileCalc : 120) + "..."
 
-  // for (let i = 0; i < text.length; i++) {
-  //   text[i] = text[i] + "<br>";
-  // }
-  console.log(fixed.length);
-  console.log(fixed);
-
-  return fixed;
+  return megoldás;
   // return (
   //   text
   //     .replace(/<[^>]+>/g, "")
