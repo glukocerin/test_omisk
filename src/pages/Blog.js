@@ -55,7 +55,6 @@ function splitContent(text) {
         .slice(0, isMobile ? mobileCalc : 120) + "..."
     );
   }
-  return splitText;
 }
 
 export default function Blog() {
