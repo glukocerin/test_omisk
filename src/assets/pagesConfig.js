@@ -657,7 +657,7 @@ const pagesConfig = {
       ],
       thirdRow: [
         {
-          title: "Mozdulat műhely",
+          title: "Mozdulatműhely",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "mozdulatmuhely",
@@ -717,7 +717,7 @@ const pagesConfig = {
         headerImg: "versenyek",
         videoImg: "versenyek/bg",
         detailsOne:
-          "Egyes csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
+          "Haladó csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
         detailsTwo:
           "A táncművészeti fesztiválok nagyrészt tavasszal kerülnek megrendezésre. A versenyekre minden évben egyedi koreográfiák készülnek, amelynek létrehozása izgalmas feladat, igazi alkotómunka, amelyben mindenki részt vesz.  8-9 éves korban kezdünk versenyezni azokkal a csoportokkal, ahol úgy látjuk, hogy erre mindenkinek van igénye, szívesen fektetnek ebbe több energiát, mint amit a heti két alkalom megkövetel.",
         detailsThree:
