@@ -24,7 +24,7 @@ export default function BlogEntry() {
 
 function deleteTextSplitter(content) {
   return (
-    content.replace("space", "")
+    content.replace("space", "<br>")
   )
 }
 
