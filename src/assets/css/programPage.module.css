@@ -10,11 +10,10 @@
 }
 
 .achievement-wrapper {
-  position: relative;
-  bottom: 2rem;
   display: flex;
   justify-items: center;
   align-items: center;
+  padding-bottom: 1.5vh;
 }
 
 .achievement-button {
@@ -222,5 +221,23 @@
   .image-1 {
     position: static;
     width: 100%;
+  }
+
+  .achievement-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0.25rem;
+    padding: unset;
+  }
+
+  .achievement-wrapper svg {
+    height: 2rem;
+  }
+  .achievement-button {
+    height: 1.5rem;
+    line-height: unset;
+    margin-left: unset;
   }
 }
