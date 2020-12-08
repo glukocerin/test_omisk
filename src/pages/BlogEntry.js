@@ -15,11 +15,17 @@ export default function BlogEntry() {
       <label className="title size-90 extra-bold">{ blogEntry.title }</label>
       <div className="blog-entry-box">
         <label className="date size-15 bold">{ blogEntry.date }</label>
-        <label className="details size-20 thin" dangerouslySetInnerHTML={createMarkup(blogEntry.text)}></label>
+        <label className="details size-20 thin" dangerouslySetInnerHTML={createMarkup(deleteTextSplitter(blogEntry.text))}></label>
       </div>
       <img src={require(`../assets/img/blog/${blogEntry.picture}`)} alt="" />
     </div>
   );
+}
+
+function deleteTextSplitter(content) {
+  return (
+    content.replace("space", "")
+  )
 }
 
 function createMarkup(markup) {

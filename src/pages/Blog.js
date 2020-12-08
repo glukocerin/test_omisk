@@ -31,7 +31,8 @@ const BlogCards = function () {
               {card.title}
             </label>
             <label className="blog-entry-text size-15 thin">
-              {splitText(card.text)}
+              {/* {splitText(card.text)} */}
+              {splitContent(card.text)}
             </label>
           </div>
         </div>
@@ -44,25 +45,17 @@ const BlogCards = function () {
   }
 };
 
-function splitText(text) {
+function splitContent(text) {
   var mobileCalc = Math.round((((window.innerWidth - 68) / 13) * 3) / 10) * 10;
-  let bracket = [];
-  let string = "";
-  const fixed = text.split("[s]");
-  bracket.push(fixed);
-  for (let num = 0; num < bracket.length; num++) {
-    string += fixed[num] + "<br>";
+  const splitText = text.split("space");
+  for (let i = 0; i < splitText.length; ++i) {
+    return (
+      (splitText[i] + "<br>")
+        .replace(/<[^>]+>/g, "")
+        .slice(0, isMobile ? mobileCalc : 120) + "..."
+    );
   }
-    console.log(string)
-  let megoldás = string.replace(/<[^>]+>/g, "").slice(0, isMobile ? mobileCalc : 120) + "..."
-
-  return megoldás;
-  // return (
-  //   text
-  //     .replace(/<[^>]+>/g, "")
-  //     .replace(/\n/g, " ")
-  //     .slice(0, isMobile ? mobileCalc : 120) + "..."
-  // );
+  return splitText;
 }
 
 export default function Blog() {
