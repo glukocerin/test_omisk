@@ -46,6 +46,12 @@ export default function Achievement(props) {
                 koreográfia Rácz-Lakatos Lilla – mozdulatművészet kategória - ifjúsági korosztály – 3. díj
             </p>
           </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2020.jpg`)}
+            />
+          </div>
         </div>
         <div className={style["wrapper"]}>
           <div>
