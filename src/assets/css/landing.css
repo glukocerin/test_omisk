@@ -114,7 +114,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  animation: 14s infinite linear spin;
+  /* animation: 14s infinite linear spin; */
 }
 @keyframes spin {
   from {
@@ -829,8 +829,8 @@
     margin-top: 1rem;
   }
   .left.one .content-block .stamp-box {
-    width: 7rem;
-    height: 7rem;
+    width: 3.5rem;
+    height: 3.5rem;
     position: absolute;
     top: 2rem;
     right: 1.5rem;
@@ -840,6 +840,7 @@
     fill: var(--color-gray-7);
   }
   .left.one .content-block .stamp-box .mask {
+    display: none;
     width: 4.5rem;
     height: 4.5rem;
     top: 1.25rem;
