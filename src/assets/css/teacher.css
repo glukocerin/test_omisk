@@ -29,7 +29,7 @@
 }
 
 .teacher .state-location::before {
-  content: ' ';
+  content: " ";
   left: -0.625rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -77,12 +77,12 @@
 .teacher .desc {
   margin-top: 2rem;
   white-space: pre-wrap;
-  line-height: 28px;
+  line-height: 1.75;
   text-align: center;
 }
 .teacher .column-left .details {
   white-space: pre-wrap;
-  line-height: 28px;
+  line-height: 1.75;
 }
 .teacher .column-right {
   padding-top: 2rem;
