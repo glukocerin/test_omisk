@@ -112,7 +112,7 @@ export default function ProgramPage(props) {
         <label className={`${style["state-location"]} size-13`}>
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
-        <label className={`${style["header-title"]} size-90 extra-bold`}>
+        <label className={`${style["header-title"]} size-90 extra-bold ${props.opt.title === "Versenyek" && style["achievement"]}`}>
           {props.opt.title}
         </label>
         {props.opt.title === "Versenyek" ? (
