@@ -39,12 +39,12 @@ export default function ({ isOpen, setModalOpen, videos }) {
 
   useEffect(() => {
     document.addEventListener("keydown", escFunction, false);
+    setVideo(sortedVideos[0]["link"]);
 
     return () => {
-      sortedVideos = [];
       document.removeEventListener("keydown", escFunction, false);
     };
-  }, [escFunction]);
+  }, [escFunction, sortedVideos]);
 
   return (
     <div>

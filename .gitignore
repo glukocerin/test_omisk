@@ -5,8 +5,12 @@
 /.pnp
 .pnp.js
 
+# for deploy
+deploySettings.js
+
 # testing
 /coverage
+depl
 
 # production
 /build

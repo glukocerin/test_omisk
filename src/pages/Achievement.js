@@ -16,6 +16,43 @@ export default function Achievement(props) {
         </label>
       </div>
       <div className={style["body"]}>
+      <div className={style["wrapper"]}>
+          <div>
+            <h2 className={`${style["year"]} size-120 extra-bold`}>2020.</h2>
+          </div>
+          <div className={style["achievement"]}>
+            <h4 className={`${style["title"]} size-24 extra-bold`}>
+              XVIII. Országos Táncjáték Fesztivál – Budapest
+            </h4>
+            <p className={`${style["last"]} size-15 thin`}>
+              <span className={`${style["name"]} size-15 .thin`}>
+                Vihar -
+              </span>{" "}
+                koreográfia Mády Krisztina – Rövidprogram kategória – 1. díj
+            </p>
+            <h4 className={`${style["title"]} size-24 extra-bold`}>
+              XXIX. Országos Felnőtt és Ifjúsági Táncművészeti Fesztivál – Budapest
+            </h4>
+            <p className={`size-15 thin`}>
+              <span className={`${style["name"]} size-15 .thin`}>
+                Egyedül nem megy -
+              </span>{" "}
+                koreográfia Benis Katalin – Mozdulatművészet kategória - felnőtt korosztály – 3. díj
+            </p>
+            <p className={`${style["last"]} size-15 thin`}>
+              <span className={`${style["name"]} size-15 .thin`}>
+                Bájoló -
+              </span>{" "}
+                koreográfia Rácz-Lakatos Lilla – mozdulatművészet kategória - ifjúsági korosztály – 3. díj
+            </p>
+          </div>
+          <div className={style["img-wrapper"]}>
+            <img
+              alt="kep"
+              src={require(`../assets/img/achievements/2020.jpg`)}
+            />
+          </div>
+        </div>
         <div className={style["wrapper"]}>
           <div>
             <h2 className={`${style["year"]} size-120 extra-bold`}>2019.</h2>

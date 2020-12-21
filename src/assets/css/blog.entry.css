@@ -27,7 +27,7 @@
   position: relative;
 }
 .blog-entry .state-location::before {
-  content: ' ';
+  content: " ";
   left: -0.625rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -57,11 +57,17 @@
   background: var(--color-gray-0);
   z-index: 1;
 }
-.blog-entry .blog-entry-box .details {
+
+.details-first {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-entry .blog-entry-box .details {
   white-space: pre-wrap;
   line-height: 1.75;
 }
+
 .blog-entry .blog-entry-box .details strong {
   font-weight: 800;
 }

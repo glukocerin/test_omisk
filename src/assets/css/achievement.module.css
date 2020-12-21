@@ -81,3 +81,35 @@
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    padding: unset;
+    height: unset;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .header {
+    background-image: unset !important;
+    height: 10.825rem;
+  }
+  .header-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .state-location {
+    display: none;
+  }
+  .achievement {
+    margin-top: 0;
+    width: unset;
+    padding: 0 1.75rem;
+  }
+  .year {
+    color: var(--color-blue-1);
+    margin: 1rem 0px 1.5rem 0px;
+  }
+  .achievement .last {
+    margin-bottom: 1.5rem;
+  }
+}

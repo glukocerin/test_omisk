@@ -10,11 +10,10 @@
 }
 
 .achievement-wrapper {
-  position: relative;
-  bottom: 2rem;
   display: flex;
   justify-items: center;
   align-items: center;
+  padding-bottom: 1.5vh;
 }
 
 .achievement-button {
@@ -189,6 +188,9 @@
     margin-top: unset;
     background: var(--color-blue-1);
   }
+  .header-title.achievement {
+    padding-bottom: 6rem;
+  }
   .state-location {
     display: none;
   }
@@ -222,5 +224,26 @@
   .image-1 {
     position: static;
     width: 100%;
+  }
+
+  .achievement-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2.5rem;
+    padding: unset;
+  }
+
+  .achievement-wrapper svg {
+    height: 2.5rem;
+  }
+  .achievement-button {
+    height: 2.5rem;
+    padding: 0 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    line-height: unset;
   }
 }

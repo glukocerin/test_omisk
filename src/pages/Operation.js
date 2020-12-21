@@ -69,17 +69,17 @@ export default function Operations() {
         <label className="download-title size-24 extra-bold">
           Letölthető dokumentumok
         </label>
-        <a href="https://omisk.hu/documents/jelentkezesi_lap+beleegyezo_nyilatkozat.docx" target="_blank" rel="noopener noreferrer" className="label-with-icon">
+        <a href="https://omisk.hu/documents/jelentkezesi_lap+beleegyezo_nyilatkozat.pdf" target="_blank" rel="noopener noreferrer" className="label-with-icon">
           <DownloadIcon className="download-icon" />
           <label className="download-text size-20 thin">
             Jelentkezési lap + Beleegyező nyilatkozat
           </label>
         </a>
-        <a href="https://omisk.hu/documents/OMISK_Tajekoztato_a_legkisebbek_szuleinek.docx" target="_blank" rel="noopener noreferrer"  className="label-with-icon">
+        <a href="https://omisk.hu/documents/OMISK_Tajekoztato_a_legkisebbek_szuleinek.pdf" target="_blank" rel="noopener noreferrer"  className="label-with-icon">
           <DownloadIcon className="download-icon" />
           <label className="download-text size-20 thin">Tájékoztató kezdő óvodás növendékeink szüleinek</label>
         </a>
-        <a href="https://omisk.hu/documents/ruha_meretek.jpg" target="_blank" rel="noopener noreferrer"  className="label-with-icon margin-bottom">
+        <a href="https://omisk.hu/documents/ruha_meretek.pdf" target="_blank" rel="noopener noreferrer"  className="label-with-icon margin-bottom">
           <DownloadIcon className="download-icon" />
           <label className="download-text size-20 thin">
             Ruha méretek
