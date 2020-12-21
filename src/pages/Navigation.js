@@ -14,7 +14,7 @@ import FindByProp from "../components/FindByProp";
 export default function Navigation(props) {
   const location = useLocation().pathname;
   const dispatch = useDispatch();
-  const [isVisible, setVisible] = useState(true);
+  const [isVisible, setVisible] = useState(false);
 
   return (
     <div>
