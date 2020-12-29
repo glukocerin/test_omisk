@@ -1,22 +1,22 @@
-.cookies-block {
-  justify-content: space-between;
+.covid-block {
   display: flex;
-  background: var(--color-green-1);
+  justify-content: space-between;
+  background: var(--color-pink-0);
   padding: 1.5rem;
   align-items: center;
   transform: scaleY(1);
   transition: transform 0.3s ease-in-out;
   transform-origin: bottom;
 }
-.cookies-block.hidden {
+.covid-block.hidden {
   display: none;
   transform: scaleY(0);
 }
-.cookies-block * {
+.covid-block * {
   color: var(--color-gray-0);
   white-space: nowrap;
 }
-.cookies-block .btn.close {
+.covid-block .btn.close {
   background: transparent;
   border: 0;
   outline: 0;
@@ -25,29 +25,29 @@
   height: 2rem;
   cursor: pointer;
 }
-.cookies-block .btn.close:hover {
+.covid-block .btn.close:hover {
   color: var(--color-btn-hover-green-2);
 }
-.cookies-block .btn.close:active {
+.covid-block .btn.close:active {
   color: var(--color-btn-active-green-2);
 }
-.cookies-block .size-20.thin strong {
+.covid-block .size-20.thin strong {
   font-weight: 800;
 }
-.cookies-block .size-20.thin {
+.covid-block .size-20.thin {
   margin-right: 1.042vw;
 }
-.cookies-block .link {
+.covid-block .link {
   font-size: 1.042vw;
   font-weight: 100;
 }
-.cookies-block .first-section {
+.covid-block .first-section {
   display: flex;
   align-items: center;
 }
-.cookies-block .btn.accept {
+.covid-block .btn.accept {
+  background: var(--color-btn-normal-green-2);
   min-width: 128px;
-  background: transparent;
   outline: 0;
   margin-left: 1.042vw;
   font-size: 0.781vw;
@@ -55,32 +55,27 @@
   font-weight: 800;
   transition: border-color 300ms, background-color 300ms, color 300ms;
   cursor: pointer;
-  background: transparent;
-  color: var(--color-btn-normal-green-2);
+  color: var(--color-pink-0);
   border: 1px solid var(--color-btn-normal-green-2);
 }
-.cookies-block .btn.accept:hover {
+.covid-block .btn.accept:hover {
   color: var(--color-btn-hover-green-2);
   border: 1px solid var(--color-btn-hover-green-2);
 }
-.cookies-block .btn.accept:active {
+.covid-block .btn.accept:active {
   color: var(--color-btn-active-green-2);
   border: 1px solid var(--color-btn-active-green-2);
 }
 
 @media screen and (max-width: 767px) {
-  .cookies-block {
+  .covid-block {
     padding: 0.5rem;
     flex-direction: column;
   }
-  .cookies-block .first-section {
-    padding: 0.5rem;
-    flex-direction: column;
-  }
-  .cookies-block * {
+  .covid-block * {
     white-space: unset;
   }
-  .cookies-block .btn.close {
+  .covid-block .btn.close {
     margin-right: 0;
     margin-left: auto;
     widows: 1.5rem;
@@ -89,16 +84,16 @@
     justify-content: center;
     align-items: center;
   }
-  .cookies-block .size-20.thin {
+  .covid-block .size-20.thin {
     margin-right: 0;
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  .cookies-block .link {
+  .covid-block .link {
     font-size: 15px;
     margin-bottom: 0.5rem;
   }
-  .cookies-block .btn.accept {
+  .covid-block .btn.accept {
     font-size: 14px;
     width: 100%;
   }
