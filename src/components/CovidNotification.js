@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/covidNotification.css";
+import pagesConfig from "../assets/pagesConfig";
 
 export default function CovidNotification() {
   const [closed, closeCookies] = useState(false);
+  const { blog } = pagesConfig;
+  const covidBlogEntry = blog.cards.filter(
+    (entry) => entry.index === "lockdown"
+  )[0];
 
   return (
     <div className={`covid-block ${closed && "hidden"}`}>
@@ -25,14 +30,15 @@ export default function CovidNotification() {
         </label>
       </div>
       <div>
-        <button
+        <Link
+          to={{ pathname: "/blog_entry", state: covidBlogEntry }}
           className="btn accept"
           onClick={() => {
             closeCookies(true);
           }}
         >
           Bővebben
-        </button>
+        </Link>
       </div>
     </div>
   );
