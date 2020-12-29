@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./assets/css/colors.css";
 import "./assets/css/texts.css";
@@ -36,6 +33,7 @@ import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import Cookies from "./components/Cookies";
+import CovidNotification from "./components/CovidNotification";
 
 // NOT READY
 // import Admin from "./pages/Admin";
@@ -48,7 +46,10 @@ function App() {
 
   return (
     <div className="App">
-      <Cookies />
+      <div className="bottom-wrapper">
+        <CovidNotification />
+        <Cookies />
+      </div>
       <Switch>
         <Route exact path="/courses">
           <Navigation BackgroundColor="green-1" />
@@ -81,13 +82,13 @@ function App() {
           <FooterMobile />
         </Route>
         <Route path="/operation">
-          <Navigation BackgroundColor="green" isHeaderFixed="true"/>
+          <Navigation BackgroundColor="green" isHeaderFixed="true" />
           <Operation />
           <Footer />
           <FooterMobile />
         </Route>
         <Route path="/enrollment">
-          <Navigation BackgroundColor="blue-1" isHeaderFixed="true"/>
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Enrollment />
           <Footer />
           <FooterMobile />
@@ -186,7 +187,7 @@ function App() {
           <ProgramDetail />
         </Route>
         {/* NOT READY */}
-{/*         <Route path="/admin">
+        {/*         <Route path="/admin">
           <Admin />
         </Route> */}
         <Route path="/">
