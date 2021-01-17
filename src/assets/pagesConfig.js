@@ -524,7 +524,7 @@ const pagesConfig = {
         opt: {
           courseName: "Női torna",
           color: "green",
-          img: "balett",
+          img: "noitorna",
         },
         info: {
           cost: {
