@@ -42,6 +42,10 @@ const pagesConfig = {
           text: "Pre balett / EN",
           link: "pre_ballet",
         },
+        {
+          text: "Női torna",
+          link: "lady",
+        },
       ],
     },
     list_what_we_do: {
@@ -516,6 +520,68 @@ const pagesConfig = {
             "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
       },
+      lady: {
+        opt: {
+          courseName: "Női torna",
+          color: "green",
+          img: "balett",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: [
+              "Heti 2 x 60 perc",
+              "Heti 2 x 60 perc",
+              "Heti 3 x 60 perc",
+            ],
+            prices: ["7800 Ft / hó", "14500 Ft / hó", "21500 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["Óradíj (első alkalommal)", "Online órák díja"],
+            prices: ["1700 Ft", "a fenti összegek 75 %-a"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["? éves kortól"],
+          },
+        },
+        places: [
+          {
+            name: "Virányosi Közösségi Ház",
+            address: "XII. ker. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő", "Szerda", "Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/lady/1.jpg",
+          description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a klasszikus balett?",
+          img: "pages/lady/2.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+        whenStart: {
+          title: "Mikor tudom  elkezdeni?",
+          img: "pages/lady/3.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/lady/4.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+      },
     },
     cards: [
       {
@@ -584,40 +650,16 @@ const pagesConfig = {
         dotColor: "dot-salmon",
         link: "pre_ballet",
       },
-    ],
-    cardDetails: [
       {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody: [
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-        ],
-        isList: true,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
+        title: "Női torna",
+        image: "noi_torna",
+        bg_mobile: "turquoise",
+        age: "",
+        districts: "III. kerület",
+        bottomText: "kerületekben",
+        backgroundColor: "salmon",
+        dotColor: "dot-salmon",
+        link: "lady",
       },
     ],
   },

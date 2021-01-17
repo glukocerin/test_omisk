@@ -135,6 +135,12 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
+        <Route path="/courses/lady">
+          <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
+          <Eurhythmics pageConfig={courses.pages.lady} />
+          <Footer />
+          <FooterMobile />
+        </Route>
         <Route exact path="/programs">
           <Navigation BackgroundColor="blue-1" />
           <Programs />
