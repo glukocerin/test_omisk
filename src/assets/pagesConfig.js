@@ -1091,7 +1091,7 @@ const pagesConfig = {
         picture_card: "entry-covid-card.jpg",
         picture_title: "lockdown",
         date: "2020. 11. 11.",
-        title: "Távoktatás",
+        title: "Omisk online",
         index: "lockdown",
         textFirst:
           "A korlátozások ideje alatt az OMISK tanárai is otthon  vannak, de nem ülnek karba tett kézzel.  A művelődési intézmények bezárását követően is növendékeink változatlan órarenddel  otthonról folytathatják a tánctanulást. Természetesen az órák szerkezetét át kellett alakítanunk  az új helyzethez alkalmazkodva. A nyújtó és erősítő gyakorlatok most nagyobb hangsúllyal szerepelnek, de kisebb helyigényű kombinációkat továbbra is tanulunk.",
