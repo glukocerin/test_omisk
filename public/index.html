@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Óbuda Mozgasművészeti Iskola - Klasszikus balett, mozgásművészet, művészi torna oktatás Budapest"
+      content="Óbuda Mozgasművészeti Iskola - Klasszikus balett, mozgásművészet, művészi torna oktatás Budapest; Kurzusaink: Művészi torna, 4 éves kortól - Mozdulatművészet, 10 éves kortól - Modern tánc, 8 éves kortól - Jazztánc, 6 éves kortól - Klasszikus balett, 6 éves kortól - Pre ballet / EN, 4-6 eves korosztálynak; Helyszineink: Óbudai Kulturális Központ (III. San Marco út 81) - Békásmegyeri Közösségi Ház (III. Csobánka tér 5) - MOM Kulturális Központ (XII. ker. Csörsz út 18) - Virányosi Közösségi Ház (XII. ker. Szarvas Gábor út 8/c) - Szarvas Gábor Közösségi Tér (XII. Szarvas Gábor út 8/c) - Józsefvárosi Galéria és Rendezvényközpont (VIII. József krt. 70) - VII. ker. Táncstúdió (VII. Wesselényi u. 41); Kapcsolat: Telefon: 06-1-2000-138 * Mobil: 06-20-9460-848 * E-mail: iroda@omisk.hu * Posta: Óbuda Mozgásművészeti Iskola - 1021 Budapest, Széher út 77.; Tanáraink: Pers Júlia * Benis Katalin * Mády Krisztina * Kalocsai Edit * Kovács Bea * Csöngei Barbara * Solti Eszter * Rácz-Lakatos Lilla * Bozsókiné Taylor Jennifer * Taylor Esther * Markolt-Rózsa Réka * Dávid Luca"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
     <!--
@@ -47,33 +47,202 @@
     -->
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org/",
-        "@type": "Product",
-        "name": [
-          "Művészi torna, 4 éves kortól",
-          "Mozdulatművészet, 10 éves kortól",
-          "Modern tánc, 8 éves kortól",
-          "Jazztánc, 6 éves kortól",
-          "Klasszikus balett, 6 éves kortól",
-          "Pre ballet / EN, 4-6 eves korosztálynak"
-         ],
-        "image": [
-          "https://https://omisk.hu/pics/1.jpg",
-          "https://https://omisk.hu/pics/2.jpg",
-          "https://https://omisk.hu/pics/3.jpg"
-         ],
-        "description": "Óbuda Mozgasművészeti Iskola - Klasszikus balett, mozgásművészet, művészi torna oktatás Budapest",
-        "brand": {
-          "@type": "Thing",
-          "name": [
-          "Művészi torna, 4 éves kortól",
-          "Mozdulatművészet, 10 éves kortól",
-          "Modern tánc, 8 éves kortól",
-          "Jazztánc, 6 éves kortól",
-          "Klasszikus balett, 6 éves kortól",
-          "Pre ballet / EN, 4-6 eves korosztálynak"
-          ]
-        },
+        "@context": "https://schema.org",
+        "@graph":
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://omisk.hu",
+            "logo": "https://omisk.hu/logo.png"
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Művészi torna, 4 éves kortól"
+            ],
+            "description": "Művészi torna, 4 éves kortól",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Művészi torna, 4 éves kortól"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/eurhythmics.jpg" ]
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Mozdulatművészet, 10 éves kortól"
+            ],
+            "description": "Mozdulatművészet, 10 éves kortól",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Mozdulatművészet, 10 éves kortól"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/callisthenics.jpg" ]
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Modern tánc, 8 éves kortól"
+            ],
+            "description": "Modern tánc, 8 éves kortól",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Modern tánc, 8 éves kortól"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/modern.jpg" ]
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Jazztánc, 6 éves kortól"
+            ],
+            "description": "Jazztánc, 6 éves kortól",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Jazztánc, 6 éves kortól"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/jazz.jpg" ]
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Klasszikus balett, 6 éves kortól"
+            ],
+            "description": "Klasszikus balett, 6 éves kortól",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Klasszikus balett, 6 éves kortól"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/balett.jpg" ]
+          },
+          {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": [
+              "Pre ballet / EN, 4-6 eves korosztálynak"
+            ],
+            "description": "Pre ballet / EN, 4-6 eves korosztálynak",
+            "brand": {
+              "@type": "Thing",
+              "name": [
+              "Pre ballet / EN, 4-6 eves korosztálynak"
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "1000"
+            },
+            "image": [ "https://omisk.hu/prebalett.jpg" ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Művészi torna",
+            "description": "Művészi torna, 4 éves kortól",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Művészi torna",
+              "sameAs": "https://omisk.hu/courses/eurhythmics"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Mozdulatművészet",
+            "description": "Mozdulatművészet, 10 éves kortól",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Mozdulatművészet",
+              "sameAs": "https://omisk.hu/courses/callisthenics"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Modern tánc",
+            "description": "Modern tánc, 8 éves kortól",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Modern tánc",
+              "sameAs": "https://omisk.hu/courses/modern"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Jazztánc",
+            "description": "Jazztánc, 6 éves kortól",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Jazztánc",
+              "sameAs": "https://omisk.hu/courses/jazz"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Klasszikus balett",
+            "description": "Klasszikus balett, 6 éves kortól",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Klasszikus balett",
+              "sameAs": "https://omisk.hu/courses/ballet"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Pre ballet / EN",
+            "description": "Pre ballet / EN, 4-6 eves korosztálynak",
+            "provider": {
+              "@type": "Organization",
+              "name": "OMISK - Pre ballet",
+              "sameAs": "https://omisk.hu/courses/pre_ballet"
+            }
+          }
+        ]
       }
       </script>
   </body>

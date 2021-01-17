@@ -42,6 +42,10 @@ const pagesConfig = {
           text: "Pre balett / EN",
           link: "pre_ballet",
         },
+        {
+          text: "Női torna",
+          link: "lady",
+        },
       ],
     },
     list_what_we_do: {
@@ -516,6 +520,68 @@ const pagesConfig = {
             "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
       },
+      lady: {
+        opt: {
+          courseName: "Női torna",
+          color: "green",
+          img: "balett",
+        },
+        info: {
+          cost: {
+            name: "Tandíj",
+            occasions: [
+              "Heti 2 x 60 perc",
+              "Heti 2 x 60 perc",
+              "Heti 3 x 60 perc",
+            ],
+            prices: ["7800 Ft / hó", "14500 Ft / hó", "21500 Ft / hó"],
+          },
+          discount: {
+            name: "Kedvezmény",
+            sibling: ["Óradíj (első alkalommal)", "Online órák díja"],
+            prices: ["1700 Ft", "a fenti összegek 75 %-a"],
+          },
+          ages: {
+            name: "Korosztály",
+            ageGroup: ["? éves kortól"],
+          },
+        },
+        places: [
+          {
+            name: "Virányosi Közösségi Ház",
+            address: "XII. ker. Szarvas Gábor út 8/c",
+            appointments: ["Hétfő", "Szerda", "Péntek"],
+          },
+        ],
+        forWhom: {
+          title: "Neked ajánljuk, ha...",
+          img: "pages/lady/1.jpg",
+          description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+          ],
+        },
+        aboutCourse: {
+          title: "Mi a klasszikus balett?",
+          img: "pages/lady/2.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+        whenStart: {
+          title: "Mikor tudom  elkezdeni?",
+          img: "pages/lady/3.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+        structure: {
+          title: "Hogyan épül fel az óra?",
+          img: "pages/lady/4.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+      },
     },
     cards: [
       {
@@ -584,40 +650,16 @@ const pagesConfig = {
         dotColor: "dot-salmon",
         link: "pre_ballet",
       },
-    ],
-    cardDetails: [
       {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody: [
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-        ],
-        isList: true,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
-      },
-      {
-        title: "Kiknek ajanljuk",
-        image: "eurhythmics_1",
-        textBody:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-        isList: false,
+        title: "Női torna",
+        image: "noi_torna",
+        bg_mobile: "turquoise",
+        age: "",
+        districts: "III. kerület",
+        bottomText: "kerületekben",
+        backgroundColor: "salmon",
+        dotColor: "dot-salmon",
+        link: "lady",
       },
     ],
   },
@@ -1091,12 +1133,12 @@ const pagesConfig = {
         picture_card: "entry-covid-card.jpg",
         picture_title: "lockdown",
         date: "2020. 11. 11.",
-        title: "Távoktatás",
+        title: "Omisk online",
         index: "lockdown",
         textFirst:
-          "2020. november 11-től iskolánkban is áttértünk az online oktatásra. Ennek részleteiről minden növendékünket e-mailben tájékoztatjuk ezen a héten.",
+          "A korlátozások ideje alatt az OMISK tanárai is otthon  vannak, de nem ülnek karba tett kézzel.  A művelődési intézmények bezárását követően is növendékeink változatlan órarenddel  otthonról folytathatják a tánctanulást. Természetesen az órák szerkezetét át kellett alakítanunk  az új helyzethez alkalmazkodva. A nyújtó és erősítő gyakorlatok most nagyobb hangsúllyal szerepelnek, de kisebb helyigényű kombinációkat továbbra is tanulunk.",
         textSecond:
-          "Várjuk azokat a növendékeinket is akik a vírusveszély miatt ebben az évben nem kezdtek el járni. Ők régi csoportjukhoz kapcsolódhatnak.\n\nKülső jelentkezést is elfogadunk, de ebben az esetben egyeztetni kell Mikusik Márta iskolatitkárral, hogy melyik csoport volna megfelelő.\n\nElérhetőségeink:\n06-20-946-0848, 06-1-200-0138\niroda@omisk.hu\n\nBízunk benne, hogy hamarosan személyesen is találkozhatunk!\n\nPers Júlia\nművészeti vezető",
+          "Kommunikációs platformként a Zoomot használjuk, melynek felületén a tanárok látják és korrigálni is tudják  a részvevőket. A csatlakozás  egyszerű, a megadott e-mail címre küldött linkre kattintva jön létre a kapcsolat. Az órák díja a rendes tandíjnak a 75%-a (az óratípustól és az óra hosszától függően: 965 - 1065 Ft), mely havonta fizetendő, de az új jelentkezőknél az első alkalommal óradíj fizetése is lehetséges. Heti 2 alkalommal tartunk órákat, de most lehetséges csak 1 alkalommal járni (csökkentett havidíjjal).\nA csoportokhoz azok is csatlakozhatnak, akik még nem iskolánk növendékei. Tekinthető  ez egy lehetőségnek arra , hogy akár több óratípust is otthonról  kipróbálj. A létszám azonban itt is korlátozott, mert a tanároknak figyelemmel kell kísérni a résztvevőket.\n\n A lehetséges csoportokról, tanárokról és időpontokról Mikusik Márta iskolatitkár ad felvilágosítást az alábbi elérhetőségeken:\n06-20-946-0848, 06-1-2000-138\niroda@omisk.hu\n\nTermészetesen - amint lehetséges - visszaállunk a helyszíni órákra, de addig szeretettel várunk az online térben!",
       },
       {
         picture: "entry-11.jpg",

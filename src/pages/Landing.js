@@ -55,6 +55,7 @@ const keyHelper = [
   "no-four",
   "no-five",
   "no-fix",
+  "no-seven",
 ];
 
 const MobileFloating = function (props) {

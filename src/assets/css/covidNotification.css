@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background: var(--color-pink-0);
-  padding: 1.5rem;
+  padding: 0.5rem;
   align-items: center;
   transform: scaleY(1);
   transition: transform 0.3s ease-in-out;
@@ -25,6 +25,15 @@
   height: 2rem;
   cursor: pointer;
 }
+.covid-block .icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+.covid-block .covid-label {
+  display: flex;
+  align-items: center;
+}
 .covid-block .btn.close:hover {
   color: var(--color-btn-hover-green-2);
 }
@@ -46,17 +55,19 @@
   align-items: center;
 }
 .covid-block .btn.accept {
+  display: block;
+  text-align: center;
+  min-width: 186px;
+  text-decoration: none;
   background: var(--color-btn-normal-green-2);
-  min-width: 128px;
-  outline: 0;
-  margin-left: 1.042vw;
   font-size: 0.781vw;
-  padding: 10px 29px;
   font-weight: 800;
   transition: border-color 300ms, background-color 300ms, color 300ms;
   cursor: pointer;
   color: var(--color-pink-0);
   border: 1px solid var(--color-btn-normal-green-2);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .covid-block .btn.accept:hover {
   color: var(--color-btn-hover-green-2);
@@ -72,13 +83,22 @@
     padding: 0.5rem;
     flex-direction: column;
   }
+  .covid-block .first-section {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .covid-block * {
     white-space: unset;
   }
+  .covid-block .covid-label {
+    display: block;
+  }
   .covid-block .btn.close {
-    margin-right: 0;
+    margin-right: 6px;
     margin-left: auto;
-    widows: 1.5rem;
+    width: 1.5rem;
     height: 1.5rem;
     display: flex;
     justify-content: center;
@@ -91,10 +111,10 @@
   }
   .covid-block .link {
     font-size: 15px;
-    margin-bottom: 0.5rem;
+    margin-left: 4px;
   }
   .covid-block .btn.accept {
     font-size: 14px;
-    width: 100%;
+    width: 186px;
   }
 }

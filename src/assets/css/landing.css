@@ -669,6 +669,9 @@
 .right.five.no-fix {
   background-image: url("../img/landing_sub/five-six.jpg");
 }
+.right.five.no-seven {
+  background-image: url("../img/landing_sub/five-seven.jpg");
+}
 .right.six {
   background: var(--color-blue-3);
   display: flex;
