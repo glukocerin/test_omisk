@@ -533,23 +533,29 @@ const pagesConfig = {
               "Heti 2 x 60 perc",
               "Heti 2 x 60 perc",
               "Heti 3 x 60 perc",
+              "Próbaóra (1. alkalommal)",
             ],
-            prices: ["7800 Ft / hó", "14500 Ft / hó", "21500 Ft / hó"],
+            prices: [
+              "7800 Ft / hó",
+              "14500 Ft / hó",
+              "21500 Ft / hó",
+              "1500 Ft",
+            ],
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["Óradíj (első alkalommal)", "Online órák díja"],
-            prices: ["1700 Ft", "a fenti összegek 75 %-a"],
+            sibling: ["Online órák díja"],
+            prices: ["a fenti összegek 75 %-a"],
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["? éves kortól"],
+            ageGroup: ["Hölgyeknek"],
           },
         },
         places: [
           {
             name: "Virányosi Közösségi Ház",
-            address: "XII. ker. Szarvas Gábor út 8/c",
+            address: "XII. ker. Szarvas Gábor út 20-22",
             appointments: ["Hétfő", "Szerda", "Péntek"],
           },
         ],
@@ -557,29 +563,29 @@ const pagesConfig = {
           title: "Neked ajánljuk, ha...",
           img: "pages/lady/1.jpg",
           description: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában  művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
+            "Aki tradicionális, esztétikai  alapelvekre épülő, harmonikus, nőies mozgásformát keres és szeretne klasszikus zenére tornázni.",
+            "Aki olyan gimnasztikát keres, ami kíméletesen, de alaposan átmozgatja a test valamennyi izmát.",
+            "Aki nem járt még kondicionáló tornára, de igényelné a rendszeres testmozgást és szeretné fokozatosan elkezdeni.",
           ],
         },
         aboutCourse: {
-          title: "Mi a klasszikus balett?",
+          title: "Mi az órák anyaga?",
           img: "pages/lady/2.jpg",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
         whenStart: {
           title: "Mikor tudom  elkezdeni?",
           img: "pages/lady/3.jpg",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
           img: "pages/lady/4.jpg",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
         },
       },
     },
@@ -653,7 +659,7 @@ const pagesConfig = {
       {
         title: "Női torna",
         image: "noi_torna",
-        bg_mobile: "turquoise",
+        bg_mobile: "yellow",
         age: "",
         districts: "III. kerület",
         bottomText: "kerületekben",

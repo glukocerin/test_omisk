@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rm -r build/*",
-    "deploy": "npm run clean && npm run build && node deploy.js"
+    "deploy": "npm run clean && npm run build && node deploy.js",
+    "deploytest": "npm run clean && npm run build && node deployTest.js"
   },
   "eslintConfig": {
     "extends": "react-app"
