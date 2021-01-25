@@ -560,7 +560,7 @@ const pagesConfig = {
           },
         ],
         forWhom: {
-          title: "Neked ajánljuk, ha...",
+          title: "Kinek ajánljuk ?",
           img: "pages/lady/1.jpg",
           description: [
             "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában  művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
@@ -576,13 +576,13 @@ const pagesConfig = {
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
         whenStart: {
-          title: "Mikor tudom  elkezdeni?",
+          title: "Online órák",
           img: "pages/lady/3.jpg",
           description:
             "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
         },
         structure: {
-          title: "Hogyan épül fel az óra?",
+          title: "Hogyan lehet csatlakozni?",
           img: "pages/lady/4.jpg",
           description:
             "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
