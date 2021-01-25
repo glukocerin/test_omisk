@@ -103,7 +103,7 @@ export default function Navigation(props) {
                 </Link>
                 <Link to="/courses/lady">
                   <span className="size-14 extra-bold">Női torna</span>
-                  <span className="size-14 thin">??</span>
+                  <span className="size-14 thin">Hölgyeknek</span>
                 </Link>
               </div>
             </div>
