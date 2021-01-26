@@ -530,7 +530,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: [
-              "Heti 2 x 60 perc",
+              "Heti 1 x 60 perc",
               "Heti 2 x 60 perc",
               "Heti 3 x 60 perc",
               "Próbaóra (1. alkalommal)",
