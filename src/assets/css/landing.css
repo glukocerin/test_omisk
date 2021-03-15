@@ -25,12 +25,10 @@
   transition: transform 0.3s cubic-bezier(0.74, 0.14, 0.27, 0.81);
   position: absolute;
 }
-.dot:hover,
-.dot.active:hover {
+.dot:hover {
   transform: scale(2);
   border: 2px solid var(--color-gray-0);
   box-shadow: 0px 3px 6px #00000029;
-  background: transparent;
 }
 .dot:nth-child(1) {
   top: -14rem;
@@ -60,8 +58,21 @@
   transform: scale(1.6);
   border: 2px solid var(--color-gray-0);
   box-shadow: 0px 3px 6px #00000029;
-  background: transparent;
   animation: 0.75s dotshrink cubic-bezier(0.74, 0.14, 0.27, 0.81);
+}
+.dot.active::after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.75rem;
+  animation: pulsate 1.5s ease-out infinite;
+  border: 2px solid var(--color-gray-0);
+  opacity: 0;
 }
 @keyframes dotshrink {
   from {
@@ -69,6 +80,20 @@
   }
   to {
     transform: scale(1.6);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6, 1.6);
+    opacity: 0.0;
   }
 }
 .landing .content-block {
@@ -434,12 +459,13 @@
 }
 .left.four.active ~ .dots .dot.active {
   border-color: var(--color-gray-new-1);
-  background: transparent;
+}
+.left.four.active ~ .dots .dot.active::after {
+  border-color: var(--color-gray-new-1);
 }
 .left.four.active ~ .dots .dot:hover,
 .left.four.active ~ .dots .dot.active:hover {
   border: 2px solid var(--color-gray-new-1);
-  background: transparent;
 }
 .left.four .drop-down-list .place .place-label {
   white-space: nowrap;
