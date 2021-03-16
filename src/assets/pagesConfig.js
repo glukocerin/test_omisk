@@ -1135,6 +1135,17 @@ const pagesConfig = {
   blog: {
     cards: [
       {
+        picture: "omisk_competition_blog.jpg",
+        picture_card: "omisk_competition.jpg",
+        picture_title: "lockdown",
+        date: "2020. 03. 16.",
+        title: "OMISK Online verseny - 3 kategóriában",
+        index: "omiskCompetition",
+        textFirst:
+          "1. Rajzverseny óvodásoknak\nKészíts rajzot az online órákról, most készülő koreográfiáról vagy amit előadásunkon láttál! Családi segítséggel az elkészült alkotást befotózva küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra!\n\n2.Jelmeztervezési verseny iskolásoknak\nTervezz jelmezt a most készülő koreográfiához vagy egy régebbihez, amit előadásunkon láttál! Elsősorban egyszerű jelmezeket várunk, melyek jól kifejezik azt, amiről a koreográfia szól. Az elkészült alkotás fotózd le és küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra! Ne felejtsd el ráírni a koreográfia címét.\n\n3. Koreográfus verseny 5. osztálytól\nKészíts koreográfiát az általad választott zenére 45 - 60 mp időtartamban! Javasoljuk, hogy ne elsősorban a most leginkább divatos zenék közül válassz! Hallgass bele klasszikus és kortárs zeneszerzők alkotásaiba! Engedd el  a fantáziádat, figyelj arra, hogy melyik zenéről, mi jut eszedbe és akkor könnyebb lesz elkezdeni az alkotást. Az elkészült koreográfiát vedd fel telefonoddal, töltsd fel  a youtube-ra nem listázott (privát) videóként és a linket küldd el tanárodnak vagy az iroda@omisk.hu-ra! Ne felejts el címet adni a koreográfiának!\n\nA pályaműveket a tanárok továbbítják a zsűrinek a szakmai zsűrinek.\nA pályaművek Arany, Ezüst és Bronz oklevél díjazásban részesülnek.\nA  legjobbak alkotások az alábbi különdíjakat kapják:\nA legjobb koreográfiát alkotója előadhatja következő előadáson\nA legjobb jelmezt elkészítjük alkotójának.\nA legjobb rajz felkerül az omisk.hu-ra.\nAz eredményről e-mailben küldünk értesítést  május 20-ig.\n\n Segítség: Iskolánk honlapján <a href='https://www.omisk.hu'>Iskolánk honlapján</a> és <a href='https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA'>youtube csatornánkon</a> sok régebbi koreográfiát megtalálsz, ami ötleteket adhat a koreográfiák, jelmezek és rajzok elkészítéséhez.\n\nBeküldési határidő: április 30.",
+        textSecond: "",
+      },
+      {
         picture: "lockdown.jpg",
         picture_card: "entry-covid-card.jpg",
         picture_title: "lockdown",
