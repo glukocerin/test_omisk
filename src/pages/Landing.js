@@ -27,9 +27,11 @@ import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
+import { isMobile } from "react-device-detect";
+
 const { landing } = pagesConfig;
 
-const Dots = function ({ setActiveDot, dotChange, activeDot }) {
+const Dots = function ({ setActiveDot, dotChange, activeDot, stopAutoScroll }) {
   const dots = [];
 
   for (let i = 1; i < 9; i++) {
@@ -39,6 +41,7 @@ const Dots = function ({ setActiveDot, dotChange, activeDot }) {
         onClick={() => {
           setActiveDot(i);
           dotChange(i);
+          stopAutoScroll(true);
         }}
         className={`dot ${activeDot === i ? "active" : ""}`}
       ></div>
@@ -183,7 +186,18 @@ export default function Landing({ dotChange }) {
           setStepUp(0);
         }
       }
-    };
+    },
+    [autoScrollStoped, stopAutoScroll] = useState(false);
+
+    useEffect(() => {
+      if (!autoScrollStoped && !isMobile) {
+        const interval = setInterval(() => {
+          activeDot <= 7 && setActiveDot(activeDot + 1);
+          activeDot === 7 && setActiveDot(1);
+        }, 4000);
+        return () => clearInterval(interval);
+      }
+    }, [activeDot, autoScrollStoped]);
 
   return (
     <div className="landing" onWheel={(e) => scroller(e)}>
@@ -840,6 +854,7 @@ export default function Landing({ dotChange }) {
           setActiveDot={setActiveDot}
           dotChange={dotChange}
           activeDot={activeDot}
+          stopAutoScroll={stopAutoScroll}
         />
       </div>
       <div className="mobile-footer">

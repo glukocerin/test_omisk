@@ -530,7 +530,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: [
-              "Heti 2 x 60 perc",
+              "Heti 1 x 60 perc",
               "Heti 2 x 60 perc",
               "Heti 3 x 60 perc",
               "Próbaóra (1. alkalommal)",
@@ -560,7 +560,7 @@ const pagesConfig = {
           },
         ],
         forWhom: {
-          title: "Neked ajánljuk, ha...",
+          title: "Kinek ajánljuk ?",
           img: "pages/lady/1.jpg",
           description: [
             "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában  művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
@@ -576,13 +576,13 @@ const pagesConfig = {
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
         whenStart: {
-          title: "Mikor tudom  elkezdeni?",
+          title: "Online órák",
           img: "pages/lady/3.jpg",
           description:
             "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
         },
         structure: {
-          title: "Hogyan épül fel az óra?",
+          title: "Hogyan lehet csatlakozni?",
           img: "pages/lady/4.jpg",
           description:
             "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
@@ -1135,6 +1135,18 @@ const pagesConfig = {
   blog: {
     cards: [
       {
+        picture: "omisk_competition_blog.jpg",
+        picture_card: "omisk_competition.jpg",
+        picture_title: "lockdown",
+        date: "2020. 03. 16.",
+        title: "OMISK Online verseny - 3 kategóriában",
+        index: "omiskCompetition",
+        textFirst:
+          "1. Rajzverseny óvodásoknak\nKészíts rajzot az online órákról, most készülő koreográfiáról vagy amit előadásunkon láttál! Családi segítséggel az elkészült alkotást befotózva küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra!\n\n2.Jelmeztervezési verseny iskolásoknak\nTervezz jelmezt a most készülő koreográfiához vagy egy régebbihez, amit előadásunkon láttál! Elsősorban egyszerű jelmezeket várunk, melyek jól kifejezik azt, amiről a koreográfia szól. Az elkészült alkotás fotózd le és küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra! Ne felejtsd el ráírni a koreográfia címét.\n\n3. Koreográfus verseny 5. osztálytól\nKészíts koreográfiát az általad választott zenére 45 - 60 mp időtartamban! Javasoljuk, hogy ne elsősorban a most leginkább divatos zenék közül válassz! Hallgass bele klasszikus és kortárs zeneszerzők alkotásaiba! Engedd el  a fantáziádat, figyelj arra, hogy melyik zenéről, mi jut eszedbe és akkor könnyebb lesz elkezdeni az alkotást. Az elkészült koreográfiát vedd fel telefonoddal, töltsd fel  a youtube-ra nem listázott (privát) videóként és a linket küldd el tanárodnak vagy az iroda@omisk.hu-ra! Ne felejts el címet adni a koreográfiának!\n\nA pályaműveket a tanárok továbbítják a zsűrinek a szakmai zsűrinek.\nA pályaművek Arany, Ezüst és Bronz oklevél díjazásban részesülnek.\nA  legjobbak alkotások az alábbi különdíjakat kapják:\nA legjobb koreográfiát alkotója előadhatja következő előadáson\nA legjobb jelmezt elkészítjük alkotójának.\nA legjobb rajz felkerül az omisk.hu-ra.\nAz eredményről e-mailben küldünk értesítést  május 20-ig.\n\n Segítség: Iskolánk honlapján <a href='https://www.omisk.hu'>Iskolánk honlapján</a> és <a href='https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA'>youtube csatornánkon</a> sok régebbi koreográfiát megtalálsz, ami ötleteket adhat a koreográfiák, jelmezek és rajzok elkészítéséhez.\n\nBeküldési határidő: április 30.",
+        textSecond: "",
+        isActive: true,
+      },
+      {
         picture: "lockdown.jpg",
         picture_card: "entry-covid-card.jpg",
         picture_title: "lockdown",
@@ -1145,6 +1157,7 @@ const pagesConfig = {
           "A korlátozások ideje alatt az OMISK tanárai is otthon  vannak, de nem ülnek karba tett kézzel.  A művelődési intézmények bezárását követően is növendékeink változatlan órarenddel  otthonról folytathatják a tánctanulást. Természetesen az órák szerkezetét át kellett alakítanunk  az új helyzethez alkalmazkodva. A nyújtó és erősítő gyakorlatok most nagyobb hangsúllyal szerepelnek, de kisebb helyigényű kombinációkat továbbra is tanulunk.",
         textSecond:
           "Kommunikációs platformként a Zoomot használjuk, melynek felületén a tanárok látják és korrigálni is tudják  a részvevőket. A csatlakozás  egyszerű, a megadott e-mail címre küldött linkre kattintva jön létre a kapcsolat. Az órák díja a rendes tandíjnak a 75%-a (az óratípustól és az óra hosszától függően: 965 - 1065 Ft), mely havonta fizetendő, de az új jelentkezőknél az első alkalommal óradíj fizetése is lehetséges. Heti 2 alkalommal tartunk órákat, de most lehetséges csak 1 alkalommal járni (csökkentett havidíjjal).\nA csoportokhoz azok is csatlakozhatnak, akik még nem iskolánk növendékei. Tekinthető  ez egy lehetőségnek arra , hogy akár több óratípust is otthonról  kipróbálj. A létszám azonban itt is korlátozott, mert a tanároknak figyelemmel kell kísérni a résztvevőket.\n\n A lehetséges csoportokról, tanárokról és időpontokról Mikusik Márta iskolatitkár ad felvilágosítást az alábbi elérhetőségeken:\n06-20-946-0848, 06-1-2000-138\niroda@omisk.hu\n\nTermészetesen - amint lehetséges - visszaállunk a helyszíni órákra, de addig szeretettel várunk az online térben!",
+        isActive: false,
       },
       {
         picture: "entry-11.jpg",
@@ -1156,6 +1169,7 @@ const pagesConfig = {
         textFirst:
           "Mindkét korosztályban neveztünk  és díjat is kaptunk. Rácz Lakatos Lilla Bájoló című koreográfiája az ifjúsági korosztályban, Benis Katalin Egyedül nem megy című tánca pedig a felnőtt mezőnyben szerzett 3. díjat.",
         textSecond: "Gratulálunk a résztvevőknek!!",
+        isActive: false,
       },
       {
         picture: "entry-10.jpg",
@@ -1167,6 +1181,7 @@ const pagesConfig = {
         textFirst:
           "Mády Krisztina Vihar című táncjátéka nagy sikert aratott a XVIII. Országos Táncjáték Fesztiválon.  A 10 perces koreográfia Karl Jenkins zenéjére készült , iskolánk 32 növendéke adta elő. Gratulálunk a koreográfusnak és az előadóknak!",
         textSecond: "További sok sikert kívánunk!",
+        isActive: false,
       },
       {
         picture: "entry-9.jpg",
@@ -1178,6 +1193,7 @@ const pagesConfig = {
         textFirst:
           "Évadnyitó barátságos versenyen  vettünk részt Telkiben. A Magyar Művészi Gimnasztika Szövetség szervezett évadnyitó fesztivált - a helyzethez alkalmazkodva  - nézől nélkül. Kicsit furcsa a lányoknak, viszont  a youtube-on otthonról is követhető , sőt visszanézhető volt. Iskolánkat  Gáspár Noémi és Szentkuti Rita képviselte egy duettel, melynek  címe: Egyedül nem megy. A koreográfiát Benis Katalin készítette.",
         textSecond: "",
+        isActive: false,
       },
       {
         picture: "entry-2.jpg",
@@ -1190,6 +1206,7 @@ const pagesConfig = {
           "Az OMISK-ot ezelőtt 30 évvel azért alapítottuk, hogy a Berczik technikát tanítsuk gyerekeknek. Ahogy tanítványaink nőttek, velük együtt fejlődött az iskola is. Sok más műfaj is helyet kapott, de ma is a Berczik-technikát tartjuk a legfontosabb kiindulási pontnak. Az OMISK-ba jelentkező óvodások most is ezzel kezdenek nálunk.",
         textSecond:
           "A gyermek életének alapeleme a mozgás. Önként és örömmel csinál mindent, ami közel áll természetes mozgás igényéhez és ez megalapozza szellemi-fizikai fejlődését.  A Berczik módszer ebből az ösztönös mozgásból indul ki és alakítja tudatossá. Így az órai gyakorlatok mindig az életkornak megfelelőek, a tudatosság pedig biztos alapokra helyez bármilyen későbbi mozgástanulást.\n\nAz órákon mindig arra törekszünk, hogy már a legkisebbek is értsék, amit csinálnak . A mozgást nem utánozni kell a gyerekeknek, hanem tanulni. Ha tudják, hogy mikor végzik helyesen, akkor nagyobb örömet okoz, ha ez sikerül nekik. A sikerélmény pedig további tanulásra ösztönzi a gyereket, így a figyelmük hosszú időn keresztül fenntartható.\n\nA Berczik módszer fontos  alapelve a mozdulatok elemekre bontása és  azok egymástól független kidolgozása, ami ezért pontosságra is nevel. Alkalmazza a sokirányú ráhatás elvét is, ami ugyanannak a testképző feladatnak a különböző testhelyzetekben történő végrehajtását jelenti. Az állandóan változó helyzetek segítik a tudás elmélyítését azáltal, hogy nem válik rutinná a gyakorlás. A Berczik gimnasztika nem kíván speciális fizikai adottságokat, az adott testi lehetőségeken belül mindenkit fejleszt, így mindenkinek sikerélményt ad.\nA  Berczik-technika nem egy szigorú, zárt rendszer, bármilyen mozgás megengedett, ami esztétikus. Ez nem mond ellent a precizitásra való törekvésnek, mert minden újító mozdulatnak pontosan leírhatónak, ezáltal reprodukálhatónak kell lenni. A fenti keretek között végzett gyakorlás  felébreszti a gyerekekben az alkotás iránti vágyat és maguk is kreatívan bekapcsolódnak a munkába\n\nA Berczik gimnasztika szívesen használ eszközöket, ezeknek kettős funkciója van. A kéziszer egyrészt, a test meghosszabbításaként segit megérteni, vizualizálni az irányokat, síkokat. Ugyanakkor változatosabbá teszi a gimnasztikát és mivel bármilyek eszköz használata megengedett, újabb teret nyit az alkotó fantáziának.\n\nA Berczik-technikán alapuló koreográfiákban a zene nemcsak kisérőeleme a táncnak, hanem annak tartalmát is kiemeli. Ha a koreográfiát a zenével szoros összhangban készítjük el, akkor a zene és a tánc egymás hatását erősítik. Még szebbnek látjuk a táncot és jobban megértjük a zenét. Ezért lett iskolánk mottója:  Mozgásba hozzuk a zenét.\n\nPers Júlia",
+        isActive: false,
       },
       {
         picture: "entry-one.jpg",
@@ -1202,6 +1219,7 @@ const pagesConfig = {
           "Iskolánkban az alábbi óvintézkedéseket hoztuk mindannyiunk érdekében:\n\n<ol><li className='number'>A csoportok elkülönülve öltözködnek, mindenki mindig csak a saját csapattársaival együtt. Az első foglalkozáson kiírjuk , illetve a tanárok is elmondják, hogy melyik öltözőt használják ezentúl a csoportok.</li><li className='number'>Kérjük, hogy aki teheti, otthon vegye fel a tornadresszet , hogy  minél kevesebben  és minél rövidebb ideig használják az öltözőt!</li><li className='number'>A tanárok maszkot viselnek, ha közel mennek a gyerekekhez.  A közös helyiségekben iskolás kortól kötelező a maszk viselése.  Az órákon a gyerekek maguk döntik el, hogy viselik-e a maszkot.</li><li className='number'>A termek folyamatos szellőztetéséről gondoskodunk. Ha az időjárás miatt az ablakok állandó nyitvatartása nem lehetséges, akkor az órák között alaposan kiszellőztetünk.</li><li className='number'>A terembe belépés előtt és kilépés után felhívjuk a figyelmet a kézfertőtlenítő használatára és/vagy az alapos kézmosásra. A tanároknál is van kézfertőtlenítő és az órák között a rudakat fertőtlenítő kendővel áttörlik.</li><li className='number'>Készülünk az online tanításra is többféle módon is.Ennek részleteit hamarosan közzétesszük.</li><li className='number'>Mulasztás esetén kérjük, hogy tájékoztassák iskolánkat és betegség után orvosi igazolást kérünk most mindenkitől !  Covid fertőzés esetén gyors értesítést kérünk, hogy a csoport többi tagját tájékoztatni tudjuk!</li></ol>",
         textSecond:
           "Köszönjük szépen a fentiek betartását. Bízunk abban, ezzel is hozzájárulunk ahhoz, hogy minél hamarabb visszatérhessünk a  megszokott életünkhöz!",
+        isActive: false,
       },
       {
         picture: "entry-three.jpg",
@@ -1213,6 +1231,7 @@ const pagesConfig = {
           "Első turnusunk véget ért, de nincs ok aggodalomra, augusztus utolsó hetében jön a második felvonás.",
         textSecond:
           "A kezdeti érdeklődésre alapozva idén már harmadszor ifjúsági turnust is indítottunk. Bár ők a gyermek korosztálytól elkülönítve, magasabb óraszámban táncolhatnak a tábor alatt, mégis vannak olyan időszakok, amikor közösen tölthetik az időt. Öröm látni, hogy idősebb növendékeink milyen gondoskodással, szeretettel fordulnak a kisebbek felé. Az a közösség, ami ilyenkor épül, nem csak egy nyárra érvényes. Ha lemaradtál az augusztusi jelentkezésről, ne búsulj. Várunk jövőre! …addig is pedig még sok dolgunk van szeptembertől.",
+        isActive: false,
       },
       {
         picture: "entry-four.jpg",
@@ -1224,6 +1243,7 @@ const pagesConfig = {
           "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:\n\n<ul><li>2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter</li><li>2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter</li></ul>",
         textSecond:
           "Két külön korcsoport számára (6-12; 13-17) egy időpontban, de elkülönülő programmal indítunk tábort a két helyszínünkön, ahol napfényes termek és hatalmas park biztosít kiváló terepet arra, hogy a gyermekek önfeledten, hasznosan töltsék a vakációt, és új barátságokat köthessenek.\n\nAz öt napos program ára 36.000 Ft, de az Óbuda Mozgásművészeti Iskola növendékeinek kedvezményesen 33.000 Ft, amely napi háromszori étkezést tartalmaz és tánc továbbá kézműves foglalkozásokat foglal magába.\n\nOnline kérdőív kitöltése után jelentkezésetek a tábor teljes árának átutalása után válik véglegessé, fizetési határidő július 10!\n\nA befizetésről jelentkezést követő visszaigazoló e-mailünkben küldünk további tájékoztatást.\n\nIdén a vírus okozta rendkívüli helyzet miatt a tábor menetrendje némileg eltér a korábbi években megszokottól. Ezzel kapcsolatos információkat részletesen a tábor előtti hetekben küldjük. Természetesen a mindenkori higiéniás feltételeknek megfelelően járunk el.\n<strong>Gyermek turnus programja:</strong>\nA tábor minden reggel 9-kor kezdődik, érkezni 8 órától lehet, reggeli tornával és csapatépítéssel kezdjük a programot. A nap során a gyerekeknek művészi torna és kéziszer órákat tartunk, koreográfiákat tanulnak valamint szabad tánc és kézműves foglalkozásokon vesznek részt. Délután nyújtással zárjuk 16:30-kor a programot. A hetet pedig egy nyilvános bemutatóval fejezzük be.\n<strong>Ifjúsági turnus programja:</strong>\nKülönböző típusú órákon vesznek részt: mozdulatművészet és modern technikai alapok, kéziszer, előadói és improvizációs készségek fejlesztése, koreográfiatanulás, nyújtás. A délelőtt során két foglalkozás lesz, közte tízórai szünet, ebéd után kis pihenés és kézműves foglalkozás után egy hosszabb órával és nyújtással fejezzük be a napot. A foglalkozások minden nap 9 órától 16:30-ig tartanak.\nTovábbi információkkal a tábor indulása előtt jelentkezünk, addig is bármilyen kérdéssel kapcsolatban keress nyugodtan az elérhetőségeinken.\n\nReméljük, velünk tartotok nyári programjainkon!",
+        isActive: false,
       },
       {
         picture: "entry-five.jpg",
@@ -1235,6 +1255,7 @@ const pagesConfig = {
           "A hagyományos országos táncversenyek a rendkívüli helyzet miatt idén tavasszal elmaradtak. A Táncpedagógusok Országos Szövetsége viszont új versenyt hirdetett, hogy a résztvevőknek ki se kelljen mozdulniuk otthonról. Az I. Országos Online Szólótánc Versenyen iskolánk tizenegy növendéke indult – Bajnok Luca, Banadics Linda, Banadics Villő, Bánkuti Lili, Buday Virág, Kisfaludy Emese, Matlári Nóra, Sájer Adél, Szilágyi Csenge, Tomka Dorottya és Tóth Adrienn. A versenyzőknek megadott zenére kellett önálló koreográfiát készíteni, felvenni videóra, és elküldeni a zsűrinek értékelésre.",
         textSecond:
           "Büszkék vagyunk rá, hogy növendékeink bár konzultálhattak tanáraikkal, mindannyian önállóan, kreatív módon oldották meg a feladatot – legtöbben most készítették el első koreográfiájukat.\n\nBánkuti Lili produkcióját a zsűri külön dicséretben részesítette. Gratulálunk!\n\n\nNövendékeink koreográfiáiból összefoglaló itt: <a href='https://www.youtube.com/watch?v=aJbXdmSIkjk' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/watch?v=aJbXdmSIkjk</a>",
+        isActive: false,
       },
       {
         picture: "entry-six.jpg",
@@ -1246,6 +1267,7 @@ const pagesConfig = {
           "Régi produkciók új köntösben – Nosztalgiázhattunk is a 2020-as OMISK Gálán",
         textSecond:
           "Műfaji változatosság, zenei sokszínűség. Ahogy megszokhattuk, az idei és elmúlt évek legsikeresebb koreográfiái kerültek színpadra február 22-én, az Óbudai Kulturális Központban. Az aktuális versenykoreográfiákon felül viszont több régi, klasszikus produkció új szereposztásban, jelenlegi tanítványainkkal került bemutatásra, az egykori előadók – ma már feleségek, anyukák – pedig a közönség soraiból nosztalgiázhattak. Vendégeinknek köszönjük az érdeklődést, növendékeinknek pedig gratulálunk!",
+        isActive: false,
       },
       {
         picture: "entry-seven.jpg",
@@ -1256,6 +1278,7 @@ const pagesConfig = {
         textFirst:
           "Vannak olyan koreográfiák, amiket lehetetlen megunni. A sok új, versenyre készült produkció mellett ezeket az örök klasszikusokat is újranézheted a 2020-as OMISK Gálán. Haladó növendékeink az elmúlt évek legsikeresebb koreográfiáit mutatják be gálaműsorunkon. Várunk szeretettel!",
         textSecond: "Jegyek előjegyezhetők iskolatitkárunknál.",
+        isActive: false,
       },
       {
         picture: "entry-eight.jpg",
@@ -1267,6 +1290,7 @@ const pagesConfig = {
           "December 1-én  harmadik alkalommal vettünk részt Művészi Gimnasztika Szövetség hagyományos versenyén. Nagyon jól szerepeltünk, minden csapatunk  arany minősítést szerzett és  az összesített legmagasabb pontszámot is mi kaptuk.",
         textSecond:
           "<strong>KÁNON</strong> – arany minősítés – koreográfia Pers Júlia – serdülő – művészi gimnasztika szabadon\n\nDétári Borbála, Marton Dóra, Matlári Júlia, Matlári Nóra, Mihályi Jázmin, Munkácsi Alíz, Munkácsi Réka, Pék Laura, Sata Emese, Takács Réka\n\n<strong>ÖRDÖGLAKAT</strong> – arany minősítés – koreográfia Pers Júlia – ifjúsági – művészi gimnasztika szabadon\n\nBanadics Dorottya, Bazsa Edina, Duca Anasztázia, Kiss Emília, Márkus Hanna, Sájer Adél, Stoffán Virág, Tatár Dorottya, Tóth Adrienn, Tóth Petra Lilla\n\n<strong>OLVADÁS</strong> – arany minősítés – koreográfia Mády Krisztina – ifjúsági – labda kéziszer\n\nBajnok Luca, Finta Kincső, Horányi Róza, Horváth Luca, Illényi Johanna, Ilyés Hanna, Imre Dorottya, Márkus Adél, Nagy Lilla, Werner Júlia, Werner Mária, Zombori Márta\n\n<strong>KÉT VÍZ KÖZÖTT</strong> – arany minősítés – koreográfia Mády Krisztina – felnőtt – szalag kéziszer\n\nBartók Natália, Csillag Emese, Ecseri Katalin, Jakabffy Lili, Márkus Réka, Somfai Réka",
+        isActive: false,
       },
     ],
   },

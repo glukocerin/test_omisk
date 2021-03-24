@@ -5,12 +5,11 @@ import { Provider } from "react-redux";
 import App from "./App";
 import store from "./store";
 import ScrollIntoView from "./components/ScrollIntoView";
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
-
+import ReactGA from "react-ga";
+import { createBrowserHistory } from "history";
 
 import * as serviceWorker from "./serviceWorker";
-import { Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const history = createBrowserHistory();
 
@@ -18,7 +17,7 @@ const trackingId = "UA-37328756-1"; // Replace with your Google Analytics tracki
 ReactGA.initialize(trackingId);
 
 // Initialize google analytics page view tracking
-history.listen(location => {
+history.listen((location) => {
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
@@ -26,11 +25,11 @@ history.listen(location => {
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router history={history}>
+      <BrowserRouter history={history}>
         <ScrollIntoView>
           <App />
         </ScrollIntoView>
-      </Router>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
