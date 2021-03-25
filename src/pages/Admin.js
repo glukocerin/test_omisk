@@ -7,13 +7,23 @@ import pagesConfig from "../assets/pagesConfig";
 import { BlogWrapper } from "../components/admin/BlogWrapper";
 import { getBlogEntries, createNewEntry } from "../components/admin/helper";
 
+import { EntryEditor } from "../components/admin/EntryEditor";
+
 export default function Admin() {
   const [user, setUser] = useState(null),
     [blogEntries, setBlogEntries] = useState(null),
+    [textFirst, setTextFirst] = useState(""),
+    [textSecond, setTextSecond] = useState(""),
     gCid =
       "237595745573-poendb74l7cukb9hnac72shmd5hl2e9a.apps.googleusercontent.com",
     login = (response) => {
-      response && response.profileObj && response.profileObj.email && ['bestrapboy@gmail.com', 'ati.csordas@gmail.com'].includes(response.profileObj.email) && setUser(response.profileObj);
+      response &&
+        response.profileObj &&
+        response.profileObj.email &&
+        ["bestrapboy@gmail.com", "ati.csordas@gmail.com"].includes(
+          response.profileObj.email
+        ) &&
+        setUser(response.profileObj);
     },
     logout = (response) => {
       setUser(null);
@@ -53,7 +63,39 @@ export default function Admin() {
         </div>
         <div className="content">
           <div className="stuff">
-            {blogEntries && <BlogWrapper entries={blogEntries} />}
+            {/* {blogEntries && <BlogWrapper entries={blogEntries} />} */}
+            <div>
+              <div>
+                <label>
+                  cím
+                  <input />
+                </label>
+                <label>
+                  kép cím
+                  <input />
+                </label>
+              </div>
+              <h2>kép feletti szöveg</h2>
+              <button
+                onClick={() => {
+                  console.log(textFirst);
+                }}
+              >
+                katt
+              </button>
+              <EntryEditor setText={setTextFirst} />
+            </div>
+            <div>
+              <h2>kép alatti szöveg</h2>
+              <button
+                onClick={() => {
+                  console.log(textSecond);
+                }}
+              >
+                katt
+              </button>
+              <EntryEditor setText={setTextSecond} />
+            </div>
           </div>
           <div className="side-bar">
             <button
