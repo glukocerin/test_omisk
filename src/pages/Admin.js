@@ -13,7 +13,7 @@ export default function Admin() {
     gCid =
       "237595745573-poendb74l7cukb9hnac72shmd5hl2e9a.apps.googleusercontent.com",
     login = (response) => {
-      response && ['bestrapboy@gmail.com', 'ati.csordas@gmail.com'].includes(response.profileObj.email) && setUser(response.profileObj);
+      response && response.profileObj && response.profileObj.email && ['bestrapboy@gmail.com', 'ati.csordas@gmail.com'].includes(response.profileObj.email) && setUser(response.profileObj);
     },
     logout = (response) => {
       setUser(null);

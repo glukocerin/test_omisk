@@ -8,7 +8,7 @@ export const createNewEntry = (setBlogEntries) => {
     }),
   };
 
-  return fetch("https://omisk/admin.php", requestOptions)
+  return fetch("https://omisk.hu/admin.php", requestOptions)
     .then((response) => response.json())
     .then((data) => getBlogEntries().then((entries) => setBlogEntries(entries)))
     .catch((err) => {
@@ -26,7 +26,7 @@ export const getBlogEntries = () => {
     }),
   };
 
-  return fetch("https://omisk/admin.php", requestOptions)
+  return fetch("https://omisk.hu/admin.php", requestOptions)
     .then((response) => response.json())
     .then((data) => {
       return data;
