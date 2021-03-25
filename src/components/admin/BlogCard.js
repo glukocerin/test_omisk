@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { ReactComponent as CreateIcon } from "../../assets/img/icons/create-24px.svg";
 import { ReactComponent as DeleteIcon } from "../../assets/img/icons/delete-24px.svg";
 
 import style from "./blogCard.module.css";
-
-console.log(style);
 
 export const BlogCard = ({ entry }) => {
   const [isActive, setActive] = useState(entry.isActive);

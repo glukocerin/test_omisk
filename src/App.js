@@ -35,8 +35,7 @@ import ProgramDetail from "./pages/ProgramDetail";
 import Cookies from "./components/Cookies";
 import CovidNotification from "./components/CovidNotification";
 
-// NOT READY
-// import Admin from "./pages/Admin";
+import Admin from "./pages/Admin";
 
 const { programs } = pagesConfig;
 const { courses } = pagesConfig;
@@ -192,10 +191,9 @@ function App() {
         <Route path="/programDetail">
           <ProgramDetail />
         </Route>
-        {/* NOT READY */}
-        {/*         <Route path="/admin">
+        <Route path="/admin">
           <Admin />
-        </Route> */}
+        </Route>
         <Route path="/">
           <Navigation
             BackgroundColor="gray-erohw"
