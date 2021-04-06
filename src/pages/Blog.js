@@ -19,7 +19,7 @@ const BlogCards = function () {
       <Link to={{ pathname: "/blog_entry", state: card }} key={index}>
         <div className="card">
           <div className="picture-box">
-            <img src={image} alt="" />
+            <img src={image.default} alt="" />
             <label className="picture-title size-28 extra-bold">
               {card.picture_title}
               <br />
@@ -34,7 +34,7 @@ const BlogCards = function () {
               {card.title}
             </label>
             <label className="blog-entry-text size-15 thin">
-              {splitText(card.textFirst)}
+              {splitText(card.text_first)}
             </label>
           </div>
         </div>

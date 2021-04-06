@@ -6,12 +6,15 @@ import "../assets/css/admin.css";
 import pagesConfig from "../assets/pagesConfig";
 import { BlogWrapper } from "../components/admin/BlogWrapper";
 import { getBlogEntries, createNewEntry } from "../components/admin/helper";
-
+import { TagSelect } from "../components/admin/TagSelect";
+import { Title } from "../components/admin/Title";
 import { EntryEditor } from "../components/admin/EntryEditor";
 
 export default function Admin() {
   const [user, setUser] = useState(null),
     [blogEntries, setBlogEntries] = useState(null),
+    [title, setTitle] = useState(""),
+    [pictureTitle, setpictureTitle] = useState(""),
     [textFirst, setTextFirst] = useState(""),
     [textSecond, setTextSecond] = useState(""),
     gCid =
@@ -38,6 +41,10 @@ export default function Admin() {
     };
     fetchData();
   }, []);
+
+  function imageUpload(event) {
+    debugger;
+  }
 
   return (
     <div className="admin">
@@ -66,14 +73,11 @@ export default function Admin() {
             {/* {blogEntries && <BlogWrapper entries={blogEntries} />} */}
             <div>
               <div>
+                <Title setTitle={setTitle} />
                 <label>
-                  cím
-                  <input />
+                  <input type={"file"} onChange={(e) => imageUpload(e)} />
                 </label>
-                <label>
-                  kép cím
-                  <input />
-                </label>
+                <TagSelect />
               </div>
               <h2>kép feletti szöveg</h2>
               <button

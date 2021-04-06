@@ -17,12 +17,15 @@ export default function BlogEntry() {
         <label className="date size-15 bold">{blogEntry.date}</label>
         <label
           className="details-first details size-20 thin"
-          dangerouslySetInnerHTML={createMarkup(blogEntry.textFirst)}
+          dangerouslySetInnerHTML={createMarkup(blogEntry.text_first)}
         ></label>
-        <img src={require(`../assets/img/blog/${blogEntry.picture}`)} alt="" />
+        <img
+          src={require(`../assets/img/blog/${blogEntry.picture}`).default}
+          alt=""
+        />
         <label
           className="details size-20 thin"
-          dangerouslySetInnerHTML={createMarkup(blogEntry.textSecond)}
+          dangerouslySetInnerHTML={createMarkup(blogEntry.text_second)}
         ></label>
       </div>
     </div>
