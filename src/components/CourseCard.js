@@ -11,7 +11,9 @@ export default function Card(props) {
       <div className={style["image-wrapper"]}>
         <img
           className={`${style[props.details.bg_mobile]}`}
-          src={require(`../assets/img/courses/${props.details.image}.jpg`)}
+          src={
+            require(`../assets/img/courses/${props.details.image}.jpg`).default
+          }
           alt=""
         />
       </div>

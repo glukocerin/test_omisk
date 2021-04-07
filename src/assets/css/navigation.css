@@ -84,6 +84,9 @@
 .header.background-blue-1.fixed {
   background: transparent;
 }
+.header.background-blue-2.fixed {
+  background: var(--color-blue-1);
+}
 /*END OF FIXED RULES*/
 .header.fixed {
   top: 0;

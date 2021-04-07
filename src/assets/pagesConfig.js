@@ -166,6 +166,7 @@ const pagesConfig = {
           description:
             "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást  és ügyessé tesznek.Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel  erre az életkorra esik a testtartás beidegződése.  Fontosnak tartjuk az igényes zeneválasztást,  mind a koreográfiák, mind a tréning kisérőjeként.",
         },
+        footer: true,
       },
       callisthenics: {
         opt: {
@@ -254,6 +255,7 @@ const pagesConfig = {
           description:
             "A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfiatanulásból áll. A tréningezéssel   elsajátítjuk a mozdulatművészet formanyelvét és   megszerezzük azokat a készségelemeket, amik alkalmassá tesznek  a koreográfiák előadásra. A mozdulatművészet kifejező mozdulatokból építkezik, a táncokat műhelymunkaszerűen készítjük el. Tanítványaink kreatívan vesznek részt az alkotómunka minden fázisában  a koncepció kialakításától és  a zenekiválasztásától  a mozdulatok megalkotásán keresztül a produkció színpadra állításáig.",
         },
+        footer: true,
       },
       preBallet: {
         opt: {
@@ -312,6 +314,7 @@ const pagesConfig = {
           description:
             "We start every class with a few walking exercises, skips, ect. Then we continue with our gymnastics routines, and some jumps. Finally we usually have a short game, and we finish our class with stretches. During the class we encourage children to only speak in English. We learn a few basic words in the beginning that they can use, and later on several dance related expressions. While we dance, the children repeat all the instructions given by the teacher, and this makes learning easy and fun!",
         },
+        footer: true,
       },
       modern: {
         opt: {
@@ -393,6 +396,7 @@ const pagesConfig = {
           description:
             "Az óra alapos bemelegítéssel indul, majd ezt követi a tréning, melynek fő célja a formanyelv technikai elemeinek elsajátítása. Ennek a mozgásnak lényege a testközpontból és a törzsből elnyújtott hosszú mozdulatok és dinamikai váltások alkalmazása. Ennek elsajátítása elmélyült és kitartó gyakorlást igényel, hosszú távon növeli a testtudatot és önfegyelemre tanít. A tréning  tetőtől talpig átmozgatja és formálja a testet. Az óra második felében a koreográfia gyakorlása következik, amely a tréning során megtanult kombinációkból  épül fel.",
         },
+        footer: true,
       },
       jazz: {
         opt: {
@@ -451,6 +455,7 @@ const pagesConfig = {
           description:
             "Az órák első felében tréningezünk mai, divatos  zenére.  Egymást követik az izolációs, erősítő és koordinációt fejlesztő gyakorlatok.  Kezdőknél a tréning még csak izolációs majd koordinációs gyakorlatokat tartalmaz. Haladóknál a modern balett elemei is bekerülnek a tananyagba. Majdnem minden típusú mozgás engedélyezett. Hosszú, nyújtott testvonalat, diagonális feszességet és hosszú egyensúlyi helyzeteket használ, és a felsőtestet teszi mindannak középpontjává, ami a testtel történik. Az óra második része a már megtanult technikai elemeket tartalmazó koreográfiák tanulásával telik.",
         },
+        footer: true,
       },
       ballet: {
         opt: {
@@ -519,6 +524,7 @@ const pagesConfig = {
           description:
             "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
+        footer: true,
       },
       lady: {
         opt: {
@@ -587,6 +593,7 @@ const pagesConfig = {
           description:
             "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
         },
+        footer: true,
       },
     },
     cards: [
@@ -944,6 +951,107 @@ const pagesConfig = {
           },
         ],
         gallery: ["taborok/1", "taborok/2"],
+      },
+    },
+    summerCamp: {
+      programs: {
+        title: "Programjaink",
+        footer: false,
+        sections: [
+          {
+            title: "Művészi torna",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A művészi torna mindenki számára hasznos tudás ad. Tudatos mozgásra nevel, így minden más  tánc stílusban vagy sportágban segítséget jelent az ismerete. Mozgásanyaga nagyon színes és változatos,  de mindig  fontos az esztétikai rendezettség és a precizítás. Nem kell hozzá speciális adottság, a helyesen végzett , szép mozdulatok mindenkinek sikerélményt adnak",
+          },
+          {
+            title: "Mozdulatművészet",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A mozdulatművészet a művészi torna mozgásanyagára épülő, de annál szabadabb, a zenével szoros összhangban álló táncstílus. Használja a klasszikus balett és különböző modern technikák alapelemeit is, de mindig a test természetes adottságaihoz illeszkedő,  kifejező mozgást keresi.",
+          },
+          {
+            title: "Kéziszeres gimnasztika",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A kéziszeres gimnasztika órákon  ritmikus gimnasztika kéziszereket ( karika, labda, szalag , buzogány…) használjuk + néhány speiális eszközt. Ezek az eszközök változatossá teszik az órát, ugyanakkor segítik a mozgástanulást és ügyessé tesznek.",
+          },
+          {
+            title: "Koreográfia",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "Ezeken órákon egy közös  műhelymunka keretében készülnek el azok a koreográfiák, amelyek a táborzáró előadáson bemutatásra kerülnek. A tanárok koncepciója és elképzelése alapján a táncosok kreatív közreműködésével 4 nap alatt alakul ki a végleges koreográfia.",
+          },
+          {
+            title: "Szabad tánc",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A szabad tánc táboraink elmaradhatatlan programja. Dávid Luca képzőművész és mozgásterapeuta az alkotás örömét ismerteti meg a gyerekekkel. A zene, rajz és mozgás összekapcsolásából olyan improvizáció alakul amelyben a tanult és ösztönös mozdulatok keverednek. Ritkán látni ennyi felszabadult arcot, mint ezeken az órákon.",
+          },
+        ],
+      },
+      faq: {
+        title: "Gyakori kérdések",
+        footer: false,
+        sections: [
+          {
+            title: "Mikor kezdődik a tábori nap és meddig tart?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.",
+          },
+          {
+            title: "Milyen étkezéseket tartalmaz a részvételi díj?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A délelőtt folyamán tízórait kapnak a táborozók. Erra a programtól függően 10 és 11 óra között kerül sor. Az intenzív mozgás miatt javasoljuk, hogy otthon a reggeli ne maradjon ki ! 13 óra körül ebédelünk két fogásos meleg ételt.  A helyszin a MOM-ban a Larus Étterem, Óbudán a Harapó Mókus. Délután  16 körül kerül sor az uszonnára.",
+          },
+          {
+            title: "Mi a javasolt öltözet?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "Javasoljuk, hogy olyan ruhában érkezzenek a lányok, ami mozgásban nem akadályozza őket, illetve akalmas a játszótéren vagy szabadban töltött játékokhoz, kézműves foglalkozásokhoz is. Erre a célra leggings vagy short a legmegfelelőbb. Táboros - névvel ellátott -  pólót is kapnak a gyerekek  már első napon, ezt viseli mindenki . Lábbeliként a táncórákon zokni vagy balett gyakorló cipő viseletét javasoljuk, a szabadtéri programokhoz pedig szandált vagy zárt cipőt.",
+          },
+          {
+            title:
+              "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
+          },
+          {
+            title: "Végig a meghirdetett helyszínen töltik a napot a gyerekek?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A megjelölt helyszínen kívüli programot nincsen, csak a közeli étterembe megyünk el, természetesen csoportosan, tanári kísérettel. Mindegyik helyszínünk alkalmas a szabadtéri programok lebonyolításár, így nem kell máshova elmennünk.",
+          },
+          {
+            title: "Mennyi táncóra van egy nap?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "Egy csoport naponta négy, különböző tipusú mozgás órán vesz részt. Az idő többi részében is gondoskodunk  programokról, de hagyunk időt a beszélgetésre , barátkozásra ia. ",
+          },
+          {
+            title:
+              "Még nincs semmilyen táncos előképzettsége gyermekemnek. Ez probléma?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A táborunk pont remek lehetőség kipróbálni az iskolánk által tanított műfajokat, belekostólni még a tanfolyamok indulás előtt. Minden csoportnak  az életkornak megfelelő mozgásanyagot tanítjuk . Tanáraink külön figyelik és segítik azokat, akik most találkoznak először az adott mozgásformával. A táborban mindig új tréninget tanítunk, így nem jelent problémát ha iskolánk növendékei új érdeklődökkel járnak egy csapatban.",
+          },
+          {
+            title: "Évközben tanító tanár csoportjába kerülhet gyermekem?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "A táborozó gyerekeket kisebb csapatokba osztjuk életkor és tudásszint szerint.  Minden csapatnak van vezető tanára. A nap folyamán - hasonlóan, mint az iskolában - a vezető tanáron kívül  4-5 szaktanárral is találkoznak a lányok. A vezető tanár célszerűen az , akinek a legtöbb évközben tanítványa jár az adott csoportba. Így sokan a már ismert tanárhoz kerülnek, de nem minden esetben. Nem jelent problémát,  ha a vezető nem a már ismert tanár, mert  a nap folyamán szinte ugyanannyit találkozik a többi tanárral is.",
+          },
+          {
+            title:
+              "A barátnőjével, testvérével egy csoportba kerülhet gyerekem?",
+            img: "pages/muveszetitorna/3.jpg",
+            description:
+              "Természetesen az ilyen jellegű kéréseket teljesítjük. Testvéreknél is, ha nem túl nagy a korkülönbség, akkor természetesen megoldható - ha így szeretnék.",
+          },
+        ],
       },
     },
   },

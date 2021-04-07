@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import style from "../assets/css/coursesHeader.module.css";
 
 export default function CoursesHeader(props) {
-  const backgroundImage = require(`../assets/img/courses/header/${props.opt.img}.jpg`);
+  const backgroundImage = require(`../assets/img/courses/header/${props.opt.img}.jpg`)
+    .default;
 
   return (
     <div className={style["header-wrapper"]}>

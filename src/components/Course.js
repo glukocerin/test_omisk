@@ -49,10 +49,15 @@ export default function Course({ pageConfig }) {
   const onTabHeaderClickHandler = (activeTab) => {
     setActiveTab(activeTab);
   };
-  console.log(pageConfig);
+
   return (
     <div>
-      <CoursesHeader opt={pageConfig.opt} />
+      {pageConfig.opt && <CoursesHeader opt={pageConfig.opt} />}
+      {pageConfig.title && (
+        <h1 className={`.size-54 ${style["camp-title"]}`}>
+          {pageConfig.title}
+        </h1>
+      )}
       {pageConfig.info && (
         <div className={style["info-box"]}>
           <div className={`${style["info-box-header"]}`}>
@@ -126,87 +131,122 @@ export default function Course({ pageConfig }) {
         </div>
       )}
       <div className={style["details"]}>
-        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
-          <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">{pageConfig.forWhom.title}</h4>
-            <ul>
-              <ForWhomList opt={pageConfig.forWhom.description} />
-            </ul>
+        {pageConfig.forWhom && (
+          <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+            <div className={`${style["text"]}`}>
+              <h4 className="size-36 extra-bold">{pageConfig.forWhom.title}</h4>
+              <ul>
+                <ForWhomList opt={pageConfig.forWhom.description} />
+              </ul>
+            </div>
+            <div className={styleCard["pic"]}>
+              <img
+                src={
+                  require(`../assets/img/courses/${pageConfig.forWhom.img}`)
+                    .default
+                }
+                alt=""
+              />
+            </div>
           </div>
-          <div className={styleCard["pic"]}>
-            <img
-              src={
-                require(`../assets/img/courses/${pageConfig.forWhom.img}`)
-                  .default
-              }
-              alt=""
-            />
+        )}
+        {pageConfig.aboutCourse && (
+          <div className={`${style["card-wrapper"]}`}>
+            <div className={`${style["text"]}`}>
+              <h4 className="size-36 extra-bold">
+                {pageConfig.aboutCourse.title}
+              </h4>
+              <p className="size-20 thin">
+                {pageConfig.aboutCourse.description}
+              </p>
+            </div>
+            <div className={styleCard["pic"]}>
+              <img
+                src={
+                  require(`../assets/img/courses/${pageConfig.aboutCourse.img}`)
+                    .default
+                }
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className={`${style["card-wrapper"]}`}>
-          <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">
-              {pageConfig.aboutCourse.title}
-            </h4>
-            <p className="size-20 thin">{pageConfig.aboutCourse.description}</p>
+        )}
+        {pageConfig.whenStart && (
+          <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+            <div className={`${style["text"]}`}>
+              <h4 className="size-36 extra-bold">
+                {pageConfig.whenStart.title}
+              </h4>
+              <p className="size-20 thin">{pageConfig.whenStart.description}</p>
+            </div>
+            <div className={styleCard["pic"]}>
+              <img
+                src={
+                  require(`../assets/img/courses/${pageConfig.whenStart.img}`)
+                    .default
+                }
+                alt=""
+              />
+            </div>
           </div>
-          <div className={styleCard["pic"]}>
-            <img
-              src={
-                require(`../assets/img/courses/${pageConfig.aboutCourse.img}`)
-                  .default
-              }
-              alt=""
-            />
+        )}
+        {pageConfig.structure && (
+          <div className={`${style["card-wrapper"]}`}>
+            <div className={`${style["text"]}`}>
+              <h4 className="size-36 extra-bold">
+                {pageConfig.structure.title}
+              </h4>
+              <p className="size-20 thin">{pageConfig.structure.description}</p>
+            </div>
+            <div className={styleCard["pic"]}>
+              <img
+                src={
+                  require(`../assets/img/courses/${pageConfig.structure.img}`)
+                    .default
+                }
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
-          <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">{pageConfig.whenStart.title}</h4>
-            <p className="size-20 thin">{pageConfig.whenStart.description}</p>
-          </div>
-          <div className={styleCard["pic"]}>
-            <img
-              src={
-                require(`../assets/img/courses/${pageConfig.whenStart.img}`)
-                  .default
-              }
-              alt=""
-            />
-          </div>
-        </div>
-        <div className={`${style["card-wrapper"]}`}>
-          <div className={`${style["text"]}`}>
-            <h4 className="size-36 extra-bold">{pageConfig.structure.title}</h4>
-            <p className="size-20 thin">{pageConfig.structure.description}</p>
-          </div>
-          <div className={styleCard["pic"]}>
-            <img
-              src={
-                require(`../assets/img/courses/${pageConfig.structure.img}`)
-                  .default
-              }
-              alt=""
-            />
-          </div>
-        </div>
+        )}
+        {pageConfig.sections &&
+          pageConfig.sections.map((section, index) => (
+            <div
+              className={`${style["card-wrapper"]} ${
+                index % 2 === 0 ? style["reverse"] : ""
+              } `}
+            >
+              <div className={`${style["text"]}`}>
+                <h4 className="size-36 extra-bold">{section.title}</h4>
+                <p className="size-20 thin">{section.description}</p>
+              </div>
+              <div className={styleCard["pic"]}>
+                <img
+                  src={require(`../assets/img/courses/${section.img}`).default}
+                  alt=""
+                />
+              </div>
+            </div>
+          ))}
       </div>
-      <div className={`${style["page-footer"]}`}>
-        <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
-          Szeretnél csatlakozni?
-        </h4>
-        <div className={style["footer-buttons-wrapper"]}>
-          <Link
-            className={`${style["footer-button-details"]} size-15`}
-            to="/contact"
-          >
-            Érdeklődöm
-          </Link>
-          <Link className={style["footer-button-sign-up"]} to="/enrollment">
-            Jelentkezem
-          </Link>
+      {pageConfig.footer && (
+        <div className={`${style["page-footer"]}`}>
+          <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+            Szeretnél csatlakozni?
+          </h4>
+          <div className={style["footer-buttons-wrapper"]}>
+            <Link
+              className={`${style["footer-button-details"]} size-15`}
+              to="/contact"
+            >
+              Érdeklődöm
+            </Link>
+            <Link className={style["footer-button-sign-up"]} to="/enrollment">
+              Jelentkezem
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
