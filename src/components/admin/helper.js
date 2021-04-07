@@ -41,7 +41,7 @@ export const fakeDeleteEntry = (setBlogEntries, id) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      action: "deleteBlogEntry",
+      action: "delete_entry",
       payload: { 
         id: id
       },
