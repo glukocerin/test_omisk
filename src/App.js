@@ -196,7 +196,7 @@ function App() {
         </Route>
         <Route exact path="/programs/camp/day">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
-          <Course pageConfig={programs.summerCamp.faq} />
+          <ProgramPage opt={programs.programPage.callisthenics} />
           <Footer />
           <FooterMobile />
         </Route>
