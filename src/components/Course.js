@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import CoursesHeader from "./CoursesHeader";
-import style from "../../assets/css/eurhythmics.module.css";
-import styleCard from "../../assets/css/courseDetailsCard.module.css";
+import style from "../assets/css/course.module.css";
+import styleCard from "../assets/css/courseDetailsCard.module.css";
 
 function Paragraph({ opt }) {
   return opt.map((el, index) => (
@@ -44,80 +44,87 @@ function Places({ opt }) {
   });
 }
 
-export default function Courses({ pageConfig }) {
+export default function Course({ pageConfig }) {
   const [activeTab, setActiveTab] = useState("info");
-  const onTabHeaderClickHandler = activeTab => {
+  const onTabHeaderClickHandler = (activeTab) => {
     setActiveTab(activeTab);
   };
+  console.log(pageConfig);
   return (
     <div>
       <CoursesHeader opt={pageConfig.opt} />
-      <div className={style["info-box"]}>
-        <div className={`${style["info-box-header"]}`}>
-          <h3
-            onClick={e => onTabHeaderClickHandler("info")}
-            className={` ${
-              activeTab === "info" ? style["active-header-tab"] : ""
-            }  size-36 extra-bold`}
+      {pageConfig.info && (
+        <div className={style["info-box"]}>
+          <div className={`${style["info-box-header"]}`}>
+            <h3
+              onClick={(e) => onTabHeaderClickHandler("info")}
+              className={` ${
+                activeTab === "info" ? style["active-header-tab"] : ""
+              }  size-36 extra-bold`}
+            >
+              Hasznos infók
+            </h3>
+            <h3
+              onClick={(e) => onTabHeaderClickHandler("location")}
+              className={` ${
+                activeTab === "location" ? style["active-header-tab"] : ""
+              }  size-36 extra-bold`}
+            >
+              Helyszíneink
+            </h3>
+          </div>
+          <div
+            className={` ${activeTab !== "info" ? style["inactive-tab"] : ""} ${
+              style["info"]
+            }`}
           >
-            Hasznos infók
-          </h3>
-          <h3
-            onClick={e => onTabHeaderClickHandler("location")}
+            <div className={style["info-item"]}>
+              <div className={style["column-first"]}>
+                <p className="size-20 extra-bold">
+                  {pageConfig.info.cost.name}
+                </p>
+              </div>
+              <div className={style["column-second"]}>
+                <Paragraph opt={pageConfig.info.cost.occasions} />
+              </div>
+              <div className={style["column-third"]}>
+                <Paragraph opt={pageConfig.info.cost.prices} />
+              </div>
+            </div>
+            <div className={style["info-item"]}>
+              <div className={style["column-first"]}>
+                <p className="size-20 extra-bold">
+                  {pageConfig.info.discount.name}
+                </p>
+              </div>
+              <div className={style["column-second"]}>
+                <Paragraph opt={pageConfig.info.discount.sibling} />
+              </div>
+              <div className={style["column-third"]}>
+                <Paragraph opt={pageConfig.info.discount.prices} />
+              </div>
+            </div>
+            <div className={style["info-item"]}>
+              <div className={style["column-first"]}>
+                <p className="size-20 extra-bold">
+                  {pageConfig.info.ages.name}
+                </p>
+              </div>
+              <div className={style["column-second"]}>
+                <Paragraph opt={pageConfig.info.ages.ageGroup} />
+              </div>
+              <div className={style["column-third"]}></div>
+            </div>
+          </div>
+          <div
             className={` ${
-              activeTab === "location" ? style["active-header-tab"] : ""
-            }  size-36 extra-bold`}
+              activeTab !== "location" ? style["inactive-tab"] : ""
+            } ${style["places"]}`}
           >
-            Helyszíneink
-          </h3>
-        </div>
-        <div
-          className={` ${activeTab !== "info" ? style["inactive-tab"] : ""} ${
-            style["info"]
-          }`}
-        >
-          <div className={style["info-item"]}>
-            <div className={style["column-first"]}>
-              <p className="size-20 extra-bold">{pageConfig.info.cost.name}</p>
-            </div>
-            <div className={style["column-second"]}>
-              <Paragraph opt={pageConfig.info.cost.occasions} />
-            </div>
-            <div className={style["column-third"]}>
-              <Paragraph opt={pageConfig.info.cost.prices} />
-            </div>
-          </div>
-          <div className={style["info-item"]}>
-            <div className={style["column-first"]}>
-              <p className="size-20 extra-bold">
-                {pageConfig.info.discount.name}
-              </p>
-            </div>
-            <div className={style["column-second"]}>
-              <Paragraph opt={pageConfig.info.discount.sibling} />
-            </div>
-            <div className={style["column-third"]}>
-              <Paragraph opt={pageConfig.info.discount.prices} />
-            </div>
-          </div>
-          <div className={style["info-item"]}>
-            <div className={style["column-first"]}>
-              <p className="size-20 extra-bold">{pageConfig.info.ages.name}</p>
-            </div>
-            <div className={style["column-second"]}>
-              <Paragraph opt={pageConfig.info.ages.ageGroup} />
-            </div>
-            <div className={style["column-third"]}></div>
+            <Places opt={pageConfig.places} />
           </div>
         </div>
-        <div
-          className={` ${
-            activeTab !== "location" ? style["inactive-tab"] : ""
-          } ${style["places"]}`}
-        >
-          <Places opt={pageConfig.places} />
-        </div>
-      </div>
+      )}
       <div className={style["details"]}>
         <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
           <div className={`${style["text"]}`}>
@@ -128,7 +135,10 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/courses/${pageConfig.forWhom.img}`)}
+              src={
+                require(`../assets/img/courses/${pageConfig.forWhom.img}`)
+                  .default
+              }
               alt=""
             />
           </div>
@@ -142,7 +152,10 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/courses/${pageConfig.aboutCourse.img}`)}
+              src={
+                require(`../assets/img/courses/${pageConfig.aboutCourse.img}`)
+                  .default
+              }
               alt=""
             />
           </div>
@@ -154,7 +167,10 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/courses/${pageConfig.whenStart.img}`)}
+              src={
+                require(`../assets/img/courses/${pageConfig.whenStart.img}`)
+                  .default
+              }
               alt=""
             />
           </div>
@@ -166,7 +182,10 @@ export default function Courses({ pageConfig }) {
           </div>
           <div className={styleCard["pic"]}>
             <img
-              src={require(`../../assets/img/courses/${pageConfig.structure.img}`)}
+              src={
+                require(`../assets/img/courses/${pageConfig.structure.img}`)
+                  .default
+              }
               alt=""
             />
           </div>
