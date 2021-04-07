@@ -12,8 +12,8 @@ const { blog } = pagesConfig;
 const BlogCards = function () {
   return blog.cards.map((card, index) => {
     const image = card["picture_card"]
-      ? require(`../assets/img/blog/${card.picture_card}`)
-      : require(`../assets/img/blog/${card.picture}`);
+      ? require(`../assets/img/blog/${card.picture_card}`).default
+      : require(`../assets/img/blog/${card.picture}`).default;
 
     return (
       <Link to={{ pathname: "/blog_entry", state: card }} key={index}>

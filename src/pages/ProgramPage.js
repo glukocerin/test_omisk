@@ -9,7 +9,7 @@ import { ReactComponent as Kupa } from "../assets/img/icons/kupa.svg";
 
 const Images = function ({ gallery }) {
   const images = gallery.map((img, index) => {
-    return require(`../assets/img/programs/${img}.jpg`);
+    return require(`../assets/img/programs/${img}.jpg`).default;
   });
 
   let top = useCurrentScrollTop(),
@@ -90,13 +90,14 @@ function useCurrentScrollTop() {
 }
 
 export default function ProgramPage(props) {
-  var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`);
+  var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)
+    .default;
 
   const [isModalOpen, setModalOpen] = useState(false);
 
   let width = useCurrentWitdh();
 
-  let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`);
+  let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`).default;
   return (
     <div style={{ position: "relative" }}>
       <Modal
@@ -112,7 +113,11 @@ export default function ProgramPage(props) {
         <label className={`${style["state-location"]} size-13`}>
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
-        <label className={`${style["header-title"]} size-90 extra-bold ${props.opt.title === "Versenyek" && style["achievement"]}`}>
+        <label
+          className={`${style["header-title"]} size-90 extra-bold ${
+            props.opt.title === "Versenyek" && style["achievement"]
+          }`}
+        >
           {props.opt.title}
         </label>
         {props.opt.title === "Versenyek" ? (

@@ -8,7 +8,9 @@ function ProgramCard(props) {
       <div className={style["image-wrapper"]}>
         <Link to={`/programs/${props.details.link}`}>
           <img
-            src={require(`../assets/img/programs/${props.details.img}.jpg`)}
+            src={
+              require(`../assets/img/programs/${props.details.img}.jpg`).default
+            }
             alt=""
           />
         </Link>
