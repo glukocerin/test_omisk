@@ -49,8 +49,7 @@ export const fakeDeleteEntry = (setBlogEntries, id) => {
   };
 
   return fetch("https://omisk.hu/admin.php", requestOptions)
-    .then((response) => response.json())
-    .then((data) => getBlogEntries().then((entries) => setBlogEntries(entries)))
+    .then(() => getBlogEntries().then((entries) => setBlogEntries(entries)))
     .catch((err) => {
       throw err;
     });
