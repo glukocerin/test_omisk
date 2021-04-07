@@ -4,7 +4,7 @@ import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 import "../assets/css/admin.css";
 import pagesConfig from "../assets/pagesConfig";
-import { BlogWrapper } from "../components/admin/BlogWrapper";
+// import { BlogWrapper } from "../components/admin/BlogWrapper";
 import { getBlogEntries, createNewEntry } from "../components/admin/helper";
 import { TagSelect } from "../components/admin/TagSelect";
 import { Title } from "../components/admin/Title";
@@ -12,9 +12,11 @@ import { EntryEditor } from "../components/admin/EntryEditor";
 
 export default function Admin() {
   const [user, setUser] = useState(null),
+    // eslint-disable-next-line
     [blogEntries, setBlogEntries] = useState(null),
+    // eslint-disable-next-line
     [title, setTitle] = useState(""),
-    [pictureTitle, setpictureTitle] = useState(""),
+    // [pictureTitle, setpictureTitle] = useState(""),
     [textFirst, setTextFirst] = useState(""),
     [textSecond, setTextSecond] = useState(""),
     gCid =
