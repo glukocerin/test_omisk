@@ -35,3 +35,22 @@ export const getBlogEntries = () => {
       throw err;
     });
 };
+
+export const fakeDeleteEntry = (setBlogEntries, id) => {
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      action: "delete_entry",
+      payload: { 
+        id: id
+      },
+    }),
+  };
+
+  return fetch("https://omisk.hu/admin.php", requestOptions)
+    .then(() => getBlogEntries().then((entries) => setBlogEntries(entries)))
+    .catch((err) => {
+      throw err;
+    });
+};
