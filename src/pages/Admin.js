@@ -4,7 +4,7 @@ import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 import "../assets/css/admin.css";
 import pagesConfig from "../assets/pagesConfig";
-// import { BlogWrapper } from "../components/admin/BlogWrapper";
+import { BlogWrapper } from "../components/admin/BlogWrapper";
 import { getBlogEntries, createNewEntry } from "../components/admin/helper";
 import { TagSelect } from "../components/admin/TagSelect";
 import { Title } from "../components/admin/Title";
@@ -72,7 +72,7 @@ export default function Admin() {
         </div>
         <div className="content">
           <div className="stuff">
-            {/* {blogEntries && <BlogWrapper entries={blogEntries} />} */}
+            {blogEntries && <BlogWrapper entries={blogEntries} setBlogEntries={setBlogEntries} />}
             <div>
               <div>
                 <Title setTitle={setTitle} />
