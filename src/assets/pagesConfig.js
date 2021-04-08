@@ -1053,6 +1053,21 @@ const pagesConfig = {
           },
         ],
       },
+      day: {
+        title: "Hogyan telik egy nap",
+        detailsOne:
+          "Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek. <strong>Közös reggel tornával és csapatépítő</strong> játékkal indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk.<p></p>Ezután következnek a <strong>tematikus órák</strong>, melyeken már kisebb, életkori turnusokban vesznek részt a táborozók a szaktanárok vezetésével. A foglalkozásokat a művelődési ház <strong>napfényes, tágas balett termeiben</strong> tarjuk, időtartamuk  a kisebbeknek 45-, a nagyobbaknak 60 perc. Délelőtt és délután is sokat táncolunk, de biztosítunk  elegendő időt a kikapcsolódásra és arra is, hogy új barátságokat kössél. A szabad időt elsősorban a <strong>művelődési ház parkjában</strong> töltjük el és itt tartjuk a kézműves foglalkozásokat is.",
+        detailsTwo:
+          "<strong>A gyermek turnusok tematikus órái:</strong><br/>művészi torna, kéziszeres gimnasztika, koreográfia, szabad tánc, kézműves<p></p><strong>Az ifjúsági turnusok tematikus órái:</strong><br/>mozdulatművészet, kéziszeres gimnasztika, modern tánc koreográfia, szabad tánc, kézműves<p></p>Az órákon <strong>változatos zenéket</strong> használunk. A tánc stílusától függően a klasszikustól a kortárs zenéig sokféle műfajjal találkozol majd. Biztosan lesz köztük olyan, amit már nagyon szeretsz és olyan is, amit nálunk fogsz megismerni és megszeretni a tánc közben.<p></p>A délelőtti és a délutáni órák szüneteiben tízórairól gondoskodunk.<p></p>Ebédelni a MOM-ban a <strong>Larus étterembe</strong>, Óbudán a <strong>Harapó Mókusba</strong> megyünk.<p></p>A tánc órákon megismert mozgásanyagra építkezve a <strong>koreográfia órákon</strong> állítjuk össze azt a táncot, amit a táborzáró előadáson bemutatunk. A koreográfia koncepcióját a tanárok állítják össze, de végleges formája a résztvevők kreatív közreműködésével alakul ki.<p></p>A táborzáró tánc előadásához  elmaradhatatlan jelmezek, eszközök és díszletek egy része valamint a meghívók a <strong>kézműves foglalkozásokon</strong> készülnek el, így saját ötleteiddel ezen a területen is hozzájárulhatsz a produkcióhoz.<p></p>Minden nap az utolsó foglalkozása a <strong>nyújtás</strong>, mely ismét közös program mindenkinek. A tábort 16.30-kor zárjuk.<p></p><strong>A táborzáró előadást az utolsó napon, pénteken délután tartjuk és szeretettel várunk mindenkit, akit szeretnél meghívni.</strong>",
+        gallery: ["taborok/1", "taborok/2"],
+      },
+      application: {
+        title: "Jelentkezés",
+        detailsOne:
+          "A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong><p></p><strong><a>Jelentkezési lap</a></strong><p></p>A jelentkezési lap elküldését követően <strong>visszaigazolást</strong> küldünk a megadott e-mail címre. Kérjük, ha ez esetleg nem érkezik meg, akkor vegyék fel velünk  <strong>a kapcsolatot! omisktabor@gmail.com, 06-30-2379 Solti Eszter</strong><p></p><strong>A táborban résztvevők száma korlátozott,</strong> ezért ha ezt a létszámot elértük, akkor várólistát nyitunk meg.<p></p>Amennyiben a <strong>korlátozások miatt</strong> nem tudjuk megtartani a tábort vagy pedig a felajánlott második időpont nem megfelelő, <strong>az egész befizetett összeget visszautaljuk</strong>.<p></p><strong>A részvételi díj</strong> befizetésének  módjára vonatkozó információkat és házirendünket a visszaigazolás tartalmazza.Befizetési határidő: a visszaigazolás keltétől számított 1 hét. A jelentkezés a részvételi díj befizetésekor válik véglgessé<p></p>A tábor kezdete előtt 1 héttel e-mailben tájékoztatást küldünk a táborral kapcsolatos fontos konkrét tudnivalókról. A jelentkezés a részvéteki díj befizetésével válik véglegessé.<p></p>Kérjük, hogy az alábbi <strong>nyomtatványt kitöltve ill. aláírva hozzák magukkal az első napon:<strong/>",
+        detailsTwo:"",
+        gallery: ["taborok/1", "taborok/2"],
+      },
     },
   },
   teachers: {

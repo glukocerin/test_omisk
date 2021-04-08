@@ -95,12 +95,25 @@
   background-color: #fff;
 }
 
+.padding-top-title {
+  padding-top: 175px;
+  color: var(--color-gray-8);
+}
+
 .padding-top {
   padding-top: 5.5rem;
 }
 
+.padding-top-first-paragraph {
+  padding-top: 15rem;
+}
+
 .padding-bottom {
   padding-bottom: 5.5rem;
+}
+
+.padding-bottom-before-images {
+  padding-bottom: 15.5rem;
 }
 
 .first-paragraph::first-letter {

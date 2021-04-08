@@ -24,6 +24,7 @@ import Course from "./components/Course";
 import pagesConfig from "./assets/pagesConfig";
 import ProgramPage from "./pages/ProgramPage";
 import Achievement from "./pages/Achievement";
+import CampDay from "./pages/CampDay";
 
 import Landing from "./pages/Landing";
 
@@ -196,7 +197,13 @@ function App() {
         </Route>
         <Route exact path="/programs/camp/day">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
-          <ProgramPage opt={programs.programPage.callisthenics} />
+          <CampDay opt={programs.summerCamp.day} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programs/camp/application">
+          <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
+          <CampDay opt={programs.summerCamp.application} />
           <Footer />
           <FooterMobile />
         </Route>
