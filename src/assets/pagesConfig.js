@@ -933,9 +933,7 @@ const pagesConfig = {
         headerImg: "nyari_tabor",
         videoImg: "taborok/bg",
         detailsOne:
-          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  továbbfejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt.",
-        detailsTwo:
-          "A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
+          "Nyári napközis táborunk különleges lehetőség arra, hogy többféle mozgásművészeti stílussal is megismerkedj.  Részese lehetsz egy 5 napos táncos műhelymunkának és egy táborzáró  előadásnak, ahol a közös munkával összeállított koreográfiákat nyilvánosan bemutatjuk. A felkészülés során kislétszámú életkori csoportokban tanulhatsz az egyes műfajok szaktanáraitól.",
         videos: [
           {
             year: 2016,
@@ -950,7 +948,6 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/Qo_hQJgNgXk?autoplay=1",
           },
         ],
-        gallery: ["taborok/1", "taborok/2"],
       },
     },
     summerCamp: {
