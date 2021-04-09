@@ -931,7 +931,7 @@ const pagesConfig = {
       camp: {
         title: "Nyári tánctábor",
         headerImg: "nyari_tabor",
-        videoImg: "taborok/bg",
+        videoImg: "camp/camp11cover",
         detailsOne:
           "Nyári napközis táborunk különleges lehetőség arra, hogy többféle mozgásművészeti stílussal is megismerkedj.  Részese lehetsz egy 5 napos táncos műhelymunkának és egy táborzáró  előadásnak, ahol a közös munkával összeállított koreográfiákat nyilvánosan bemutatjuk. A felkészülés során kislétszámú életkori csoportokban tanulhatsz az egyes műfajok szaktanáraitól.",
         videos: [
