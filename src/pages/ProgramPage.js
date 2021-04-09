@@ -227,6 +227,62 @@ export default function ProgramPage(props) {
                 {props.opt.detailsOne}
               </p>
             </div>
+            <div className={style["camp-row"]}>
+              <img className={style["camp-row-image"]} alt=""/>
+              <div className={style["camp-row-details"]}></div>
+            </div>
+            <div className={style["camp-row reverse"]}>
+              <img className={style["camp-row-image"]} alt=""/>
+              <div className={style["camp-row-details"]}></div>
+            </div>
+            <div className={style["camp-row apply"]}>
+              <img alt="Jelentkezz most!"/>
+              <div className={style["apply-box"]}></div>
+            </div>
+            <div className={style["camp-row cover"]}>
+              <div className={style["navigation-box"]}></div>
+            </div>
+            <div className={style["camp-row teachers"]}>
+            </div>
+            <div className={style["camp-row cover"]}>
+              <div className={style["day-goes-by-box"]}></div>
+            </div>
+            <div className={style["camp-row"]}>
+              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} alt=""/>
+            </div>
+            <div className={style["camp-row cover"]}>
+              <div className={style["apply-box daycare"]}></div>
+            </div>
+            <div className={style["camp-row"]}>
+              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} alt=""/>
+            </div>
+            <div className={`${style["video-wrapper"]}`}>
+                <button
+                  className={`${style["open-video"]}`}
+                  onClick={() => setModalOpen(true)}
+                >
+                  <label
+                    className={`${style["open-video-label"]} size-36 extra-bold`}
+                  >
+                  Tábori videók
+                  </label>
+                  <span className="size-15 extra-bold">Videó indítása</span>
+                </button>
+                <img
+                  className={`${style["video-bg"]}`}
+                  src={bg}
+                  alt="super meaningfull text"
+                />
+            </div>
+            <div className={style["camp-row"]}>
+              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} alt=""/>
+            </div>
+            <div className={style["camp-row cover"]}>
+              <div className={style["faq-box"]}></div>
+            </div>
           </div>
         </div>
       </div>
