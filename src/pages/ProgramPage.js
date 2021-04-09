@@ -98,101 +98,137 @@ export default function ProgramPage(props) {
   let width = useCurrentWitdh();
 
   let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`).default;
-  return (
-    <div style={{ position: "relative" }}>
-      <Modal
-        isOpen={isModalOpen}
-        setModalOpen={setModalOpen}
-        videos={props.opt.videos}
-      />
-      <div className={style["header-wrapper"]}>
-        <div
-          className={style["header"]}
-          style={{ backgroundImage: "url(" + backgroundImage + ")" }}
-        ></div>
-        <label className={`${style["state-location"]} size-13`}>
-          <Link to="/programs">Vissza programjainkra</Link>
-        </label>
-        <label
-          className={`${style["header-title"]} size-90 extra-bold ${
-            props.opt.title === "Versenyek" && style["achievement"]
-          }`}
-        >
-          {props.opt.title}
-        </label>
-        {props.opt.title === "Versenyek" ? (
-          <div className={`${style["achievement-wrapper"]}`}>
-            <Kupa />
-            <Link
-              className={`${style["achievement-button"]} size-12`}
-              to="/programs/achievements"
-            >
-              Versenyeredményeink
-            </Link>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
-      <div className={style["body"]}>
-        <div className={style["info"]}>
-          <div className={style["details"]}>
-            <p
-              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
-            >
-              {props.opt.detailsOne}
-            </p>
-            <div className={`${style["video-wrapper"]}`}>
-              <button
-                className={`${style["open-video"]}`}
-                onClick={() => setModalOpen(true)}
+  return props.opt.title !== 'Nyári tánctábor' ? 
+    (
+      <div style={{ position: "relative" }}>
+        <Modal
+          isOpen={isModalOpen}
+          setModalOpen={setModalOpen}
+          videos={props.opt.videos}
+        />
+        <div className={style["header-wrapper"]}>
+          <div
+            className={style["header"]}
+            style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+          ></div>
+          <label className={`${style["state-location"]} size-13`}>
+            <Link to="/programs">Vissza programjainkra</Link>
+          </label>
+          <label
+            className={`${style["header-title"]} size-90 extra-bold ${
+              props.opt.title === "Versenyek" && style["achievement"]
+            }`}
+          >
+            {props.opt.title}
+          </label>
+          {props.opt.title === "Versenyek" ? (
+            <div className={`${style["achievement-wrapper"]}`}>
+              <Kupa />
+              <Link
+                className={`${style["achievement-button"]} size-12`}
+                to="/programs/achievements"
               >
-                <label
-                  className={`${style["open-video-label"]} size-36 extra-bold`}
-                >
-                  {props.opt.title}
-                </label>
-                <span className="size-15 extra-bold">Videó lejátszása</span>
-              </button>
-              <img
-                className={`${style["video-bg"]}`}
-                src={bg}
-                alt="super meaningfull text"
-              />
+                Versenyeredményeink
+              </Link>
             </div>
-            <p
-              className={`${style["details-text"]} ${style["padding-top"]} ${
-                !!props.opt.detailsThree ? "" : style["padding-bottom"]
-              } size-20`}
-            >
-              {props.opt.detailsTwo}
-            </p>
-            {props.opt.detailsThree ? (
+          ) : (
+            ""
+          )}
+        </div>
+        <div className={style["body"]}>
+          <div className={style["info"]}>
+            <div className={style["details"]}>
               <p
-                className={`${style["details-text"]} ${
-                  !!props.opt.detailsFour ? "" : style["padding-bottom"]
+                className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
+              >
+                {props.opt.detailsOne}
+              </p>
+              <div className={`${style["video-wrapper"]}`}>
+                <button
+                  className={`${style["open-video"]}`}
+                  onClick={() => setModalOpen(true)}
+                >
+                  <label
+                    className={`${style["open-video-label"]} size-36 extra-bold`}
+                  >
+                    {props.opt.title}
+                  </label>
+                  <span className="size-15 extra-bold">Videó lejátszása</span>
+                </button>
+                <img
+                  className={`${style["video-bg"]}`}
+                  src={bg}
+                  alt="super meaningfull text"
+                />
+              </div>
+              <p
+                className={`${style["details-text"]} ${style["padding-top"]} ${
+                  !!props.opt.detailsThree ? "" : style["padding-bottom"]
                 } size-20`}
               >
-                {props.opt.detailsThree || ""}
+                {props.opt.detailsTwo}
               </p>
-            ) : (
-              ""
-            )}
-            {props.opt.detailsFour ? (
+              {props.opt.detailsThree ? (
+                <p
+                  className={`${style["details-text"]} ${
+                    !!props.opt.detailsFour ? "" : style["padding-bottom"]
+                  } size-20`}
+                >
+                  {props.opt.detailsThree || ""}
+                </p>
+              ) : (
+                ""
+              )}
+              {props.opt.detailsFour ? (
+                <p
+                  className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
+                >
+                  {props.opt.detailsFour || ""}
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
+        </div>
+        <div className={style["images"]} style={{ height: width / 2 }}>
+          <Images gallery={props.opt.gallery} />
+        </div>
+      </div>
+    )
+    : 
+    (
+      <div style={{ position: "relative" }}>
+        <Modal
+          isOpen={isModalOpen}
+          setModalOpen={setModalOpen}
+          videos={props.opt.videos}
+        />
+        <div className={style["header-wrapper"]}>
+          <div
+            className={style["header"]}
+            style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+          ></div>
+          <label className={`${style["state-location"]} size-13`}>
+            <Link to="/programs">Vissza programjainkra</Link>
+          </label>
+          <label
+            className={`${style["header-title"]} size-90 extra-bold`}
+          >
+            {props.opt.title}
+          </label>
+        </div>
+        <div className={style["body"]}>
+          <div className={style["info"]}>
+            <div className={style["details"]}>
               <p
-                className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
+                className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
               >
-                {props.opt.detailsFour || ""}
+                {props.opt.detailsOne}
               </p>
-            ) : (
-              ""
-            )}
+            </div>
           </div>
         </div>
       </div>
-      <div className={style["images"]} style={{ height: width / 2 }}>
-        <Images gallery={props.opt.gallery} />
-      </div>
-    </div>
-  );
+    );
 }
