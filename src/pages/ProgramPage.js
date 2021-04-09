@@ -228,35 +228,35 @@ export default function ProgramPage(props) {
               </p>
             </div>
             <div className={style["camp-row"]}>
-              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp01.jpg`).default} alt=""/>
               <div className={style["camp-row-details"]}></div>
             </div>
-            <div className={style["camp-row reverse"]}>
-              <img className={style["camp-row-image"]} alt=""/>
+            <div className={style["camp-row"]}>
               <div className={style["camp-row-details"]}></div>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp02.jpg`).default} alt=""/>
             </div>
             <div className={style["camp-row apply"]}>
-              <img alt="Jelentkezz most!"/>
+              <img className={`${style["camp-row-image"]} ${style["cover"]}`} src={require(`../assets/img/programs/camp/camp03cover.jpg`).default} alt="Jelentkezz most!"/>
               <div className={style["apply-box"]}></div>
             </div>
-            <div className={style["camp-row cover"]}>
+            <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}>
               <div className={style["navigation-box"]}></div>
             </div>
-            <div className={style["camp-row teachers"]}>
+            <div className={`${style["camp-row"]} ${style["teachers"]}`}>
             </div>
-            <div className={style["camp-row cover"]}>
+            <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}>
               <div className={style["day-goes-by-box"]}></div>
             </div>
             <div className={style["camp-row"]}>
-              <img className={style["camp-row-image"]} alt=""/>
-              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp06.jpg`).default} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp07.jpg`).default} alt=""/>
             </div>
-            <div className={style["camp-row cover"]}>
-              <div className={style["apply-box daycare"]}></div>
+            <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg08"]}`}>
+              <div className={`${style["apply-box"]} ${style["daycare"]}`}></div>
             </div>
             <div className={style["camp-row"]}>
-              <img className={style["camp-row-image"]} alt=""/>
-              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp09.jpg`).default} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp10.jpg`).default} alt=""/>
             </div>
             <div className={`${style["video-wrapper"]}`}>
                 <button
@@ -277,10 +277,10 @@ export default function ProgramPage(props) {
                 />
             </div>
             <div className={style["camp-row"]}>
-              <img className={style["camp-row-image"]} alt=""/>
-              <img className={style["camp-row-image"]} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp12.jpg`).default} alt=""/>
+              <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp13.jpg`).default} alt=""/>
             </div>
-            <div className={style["camp-row cover"]}>
+            <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg14"]}`}>
               <div className={style["faq-box"]}></div>
             </div>
           </div>
