@@ -72,7 +72,7 @@ const pagesConfig = {
           link: "callisthenics",
         },
         {
-          text: "Nyári táborok",
+          text: "Nyári tánctábor",
           link: "camp",
         },
       ],
@@ -719,7 +719,7 @@ const pagesConfig = {
           link: "callisthenics",
         },
         {
-          title: "Nyári táborok",
+          title: "Nyári tánctábor",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyari_tabor",
@@ -929,7 +929,7 @@ const pagesConfig = {
         gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2"],
       },
       camp: {
-        title: "Nyári táborok",
+        title: "Nyári tánctábor",
         headerImg: "nyari_tabor",
         videoImg: "taborok/bg",
         detailsOne:

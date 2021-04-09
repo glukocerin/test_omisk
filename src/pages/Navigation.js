@@ -136,7 +136,7 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Mozdulatműhely</span>
                 </Link>
                 <Link to="/programs/camp">
-                  <span className="size-14 extra-bold">Nyári táborok</span>
+                  <span className="size-14 extra-bold">Nyári tánctábor</span>
                 </Link>
               </div>
             </div>
