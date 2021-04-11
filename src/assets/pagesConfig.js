@@ -1085,7 +1085,7 @@ const pagesConfig = {
         title: "Jelentkezés",
         detailsOne:
           "A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong><p></p><strong><a>Jelentkezési lap</a></strong><p></p>A jelentkezési lap elküldését követően <strong>visszaigazolást</strong> küldünk a megadott e-mail címre. Kérjük, ha ez esetleg nem érkezik meg, akkor vegyék fel velünk  <strong>a kapcsolatot! omisktabor@gmail.com, 06-30-2379 Solti Eszter</strong><p></p><strong>A táborban résztvevők száma korlátozott,</strong> ezért ha ezt a létszámot elértük, akkor várólistát nyitunk meg.<p></p>Amennyiben a <strong>korlátozások miatt</strong> nem tudjuk megtartani a tábort vagy pedig a felajánlott második időpont nem megfelelő, <strong>az egész befizetett összeget visszautaljuk</strong>.<p></p><strong>A részvételi díj</strong> befizetésének  módjára vonatkozó információkat és házirendünket a visszaigazolás tartalmazza.Befizetési határidő: a visszaigazolás keltétől számított 1 hét. A jelentkezés a részvételi díj befizetésekor válik véglgessé<p></p>A tábor kezdete előtt 1 héttel e-mailben tájékoztatást küldünk a táborral kapcsolatos fontos konkrét tudnivalókról. A jelentkezés a részvéteki díj befizetésével válik véglegessé.<p></p>Kérjük, hogy az alábbi <strong>nyomtatványt kitöltve ill. aláírva hozzák magukkal az első napon:<strong/>",
-        detailsTwo:"",
+        detailsTwo: "",
         gallery: ["taborok/1", "taborok/2"],
       },
     },
@@ -1277,6 +1277,18 @@ const pagesConfig = {
   },
   blog: {
     cards: [
+      {
+        picture: "omisk_summer_camp_blog.jpg",
+        picture_card: "omisk_summer_camp_blog.jpg",
+        picture_title: "Nyári tánctábor",
+        date: "2021. 04. 13.",
+        title: "Omisk tánctábor 2021",
+        index: "omiskSummerCamp",
+        text_first:
+          "Ebben az évben is megrendezzük nyári tánctáborainkat 6 -17 évesek számára, ahol a résztvevők 1 hét alatt kipróbálhatják az iskolánkban tanított különböző  mozgásművészeti stílusokat. A táborozók egy 5 napos táncos műhelymunkában vesznek részt, amit  táborzáró előadáson való fellépéssel zárunk. Ezen az nyilvános előadáson mutatják be a közösen összeállított koreográfiákat. A felkészülés kislétszámú életkori csoportokban történik és az egyes műfajok szaktanárai vezetik.</br>Ebben az évben is 2 tábort szervezünk, 2 külön korcsoportnak ( 6-12 és 13 -17 évesek ) egy időben, de különböző programmal<p></p><strong>Június 28 - Július 2</strong></br><strong>Óbudai Kulturális Központ</strong></br>Tanárok: Benis Katalin, Csöngei Barbara, Kovács Bea, Markolt-Rózsa Réka, Taylor Esther</br>Táborvezető: B.Taylor Jennifer<p></p><strong>Augusztus 2 - 6</strong></br><strong>MOM Kulturális Központ</strong></br>Tanárok: Benis Katalin, Csöngei Barbara, Dávid Luca, Kovács Bea, B.Taylor Jennifer</br>Táborvezető: Solti Eszter<p></p>A részvételi díj: <strong>42.000 Ft,</strong> de iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong></br><strong>A befizetett díjat visszatérítjük, amennyiben a korlátozások miatt nem tudjuk megtartani  a tábort és a felajánlott másik időpont nem megfelelő.</strong><p></p>A táborban délelött és délután is táncórákat tartunk a szaktanárok vezetésével, az órák közötti szünetekben közösségi programokat szervezünk , de hagyunk elegendő szabadidőt is.</br>Tematikus órák:</br>Gyerek turnus: művészi torna,kéziszeres gimnasztika,koreográfia, szabad tánc, kézműves</br>Ifjúsági turnus: mozdulatművészet,modern tánc.koreográfia,szabad tánc, kézműves<p></p>A táncórákon megismert mozgás anyagra építkezve a koreográfia órákon állítjuk össze azt a táncot, amit a táborzáró előadáson bemutatunk. A koreográfia koncepcióját a tanárok állítják össze, de végleges formája a résztvevők kreatív közreműködésével alakul ki. A táborzáró tánc előadásához  elmaradhatatlan jelmezek, eszközök,díszletek és  a meghívók  a kézműves foglalkozásokon készülnek el, így minden táborozó  saját ötleteivel  ezen a területen is hozzájárulhatsz a produkcióhoz.<p></p>Ebédelni a MOM-ban a Larus Étterembe, Óbudán pedg a Harapó Mókusba megyünk. Tízórairól és uzsonnáról a helyszínen gondoskodunk.<p></p><strong>A napközis táborokba az alábbi linken található jelentkezési lap online kitöltésével lehet:</strong><p></p><a href='http://bit.ly/taborjelentkezes'>Jelentkezesi lap</a><p></p>A táborban résztvevők száma korlátozott, ezért ha ezt a létszámot elértük, akkor várólistát nyitunk meg.</br>Ha a korlátozások a június 28-án kezdődő tábort nem tudjuk elindítani, akkor helyette <strong>július 19 - 23 vagy augusztus 23 - 27</strong> ( ebben az időpontban a <strong>békásmegyeri Szent József Házban</strong> ) tartjuk meg.<p></p>Az jelentkezési lap elküldését követően visszaigazolást küldünk a megadott e-mail címre.</br>Kérjük, ha ez esetleg nem érkezik meg vagy egyéb kérdésük van, akkor vegyék fel velünk  a kapcsolatot az alábbi elérhetőségeken:<br><a href='mailto:omisktabor@gmail.com'>omisktabor@gmail.com</a></br>Tel:  06-30-2379 ( Solti Eszter )<p></p>Reméljük hamarosan találkozunk táborainkban!",
+        text_second: "",
+        is_active: true,
+      },
       {
         picture: "omisk_competition_blog.jpg",
         picture_card: "omisk_competition.jpg",
