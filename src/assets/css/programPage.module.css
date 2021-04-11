@@ -201,6 +201,7 @@
   max-width: 100vw;
   min-width: 100vw;
 }
+.camp-row.cover.bg03,
 .camp-row.cover.bg04,
 .camp-row.cover.bg05,
 .camp-row.cover.bg08,
@@ -209,6 +210,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+.camp-row.cover.bg03 {
+  height: unset;
+  background-size: unset;
+  background-image: url("../img/programs/camp/camp03cover.jpg");
+  margin-bottom: 12vh;
 }
 .camp-row.cover.bg04 {
   background-image: url("../img/programs/camp/camp04cover.jpg");
@@ -253,6 +260,33 @@
   cursor: pointer;
   outline: unset;
   width: 12rem;
+}
+.camp-row.cover.bg03 .apply-box {
+  width: 42.75rem;
+  margin: 0 auto;
+  padding-top: 33vh;
+  display: flex;
+  flex-direction: column;
+}
+.camp-row.cover.bg03 .apply-box .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 43px;
+}
+.camp-row.cover.bg03 .apply-box .block:first-child {
+  background: var(--color-gray-0);
+}
+.camp-row.cover.bg03 .apply-box .block:first-child [class*='size-36'] {
+  color: var(--color-blue-1);
+}
+.camp-row.cover.bg03 .apply-box .block:nth-child(2) {
+  background: var(--color-blue-1);
+  color: var(--color-gray-0);
+}
+.camp-row.cover.bg03 .apply-box .block [class*='size-54'] {
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 767px) {

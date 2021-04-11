@@ -269,9 +269,22 @@ export default function ProgramPage(props) {
               </div>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp02.jpg`).default} alt=""/>
             </div>
-            <div className={style["camp-row apply"]}>
-              <img className={`${style["camp-row-image"]} ${style["cover"]}`} src={require(`../assets/img/programs/camp/camp03cover.jpg`).default} alt="Jelentkezz most!"/>
-              <div className={style["apply-box"]}></div>
+            <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg03"]}`}>
+              <div className={style["apply-box"]}>
+                <div className={style["block"]}>
+                  <label className="size-54 bold">Jelentkezz most!</label>
+                  <label className="size-36 bold">4 féle táncstílus</label>
+                  <label className="size-36 bold">Tánc és gimnasztika</label>
+                  <label className="size-36 bold">Tánctermi és szabadtéri programok</label>
+                  <label className="size-36 bold">Táborzáró előadás</label>
+                </div>
+                <div className={style["block"]}>
+                  <label className="size-54 bold">Kapcsolat</label>
+                  <label className="size-36 bold">Solti Eszter</label>
+                  <label className="size-36 bold">omisktabor@gmail.com</label>
+                  <label className="size-36 bold">06-30-237-9233</label>
+                </div>
+              </div>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}>
               <div className={style["navigation-box"]}></div>
