@@ -7,6 +7,19 @@ import Modal from "../components/Modal";
 
 import { ReactComponent as Kupa } from "../assets/img/icons/kupa.svg";
 
+import pagesConfig from "../assets/pagesConfig";
+const { teachers } = pagesConfig;
+
+const generateTeacherLinks = function(links) {
+  return links.map((link, index) => {
+    let card = teachers.cards.find((teachercard) => {
+      return teachercard.name === link;
+    });
+
+    return <Link className={style['teacher-link']} to={{ pathname: "/teacher", state: card }} key={index}>{ link }</Link>
+  })
+}
+
 const Images = function ({ gallery }) {
   const images = gallery.map((img, index) => {
     return require(`../assets/img/programs/${img}.jpg`).default;
@@ -229,10 +242,31 @@ export default function ProgramPage(props) {
             </div>
             <div className={style["camp-row"]}>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp01.jpg`).default} alt=""/>
-              <div className={style["camp-row-details"]}></div>
+              <div className={style["camp-row-details"]}>
+                <label className="size-54 bold">{ props.opt.content.first_block.title }</label>
+                <label className="size-24">{ props.opt.content.first_block.place }</label>
+                <label className="size-24">{ props.opt.content.first_block.address }</label>
+                <label className="size-20">{ props.opt.content.first_block.programs }</label>
+                <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.first_block.leader] ) }</label>
+                <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.first_block.teachers) }</label>
+                <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.price }}></label>
+                <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.block_desc }}></label>
+                {/* TODO: add link */}
+                <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
+              </div>
             </div>
             <div className={style["camp-row"]}>
-              <div className={style["camp-row-details"]}></div>
+              <div className={style["camp-row-details"]}>
+              <label className="size-54 bold">{ props.opt.content.second_block.title }</label>
+                <label className="size-24">{ props.opt.content.second_block.place }</label>
+                <label className="size-24">{ props.opt.content.second_block.address }</label>
+                <label className="size-20">{ props.opt.content.second_block.programs }</label>
+                <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.second_block.leader] ) }</label>
+                <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.second_block.teachers) }</label>
+                <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.second_block.price }}></label>
+                {/* TODO: add link */}
+                <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
+              </div>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp02.jpg`).default} alt=""/>
             </div>
             <div className={style["camp-row apply"]}>

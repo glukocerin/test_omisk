@@ -222,6 +222,38 @@
 .camp-row.cover.bg14 {
   background-image: url("../img/programs/camp/camp14cover.jpg");
 }
+.camp-row-details {
+  display: flex;
+  flex-direction: column;
+  padding: 12vw;
+}
+.camp-row-details * {
+  margin-top: 1.25rem;
+}
+.camp-row-details [class*='size-54'] {
+  white-space: nowrap;
+}
+.camp-row-details .teacher-link {
+  color: var(--color-gray-8);
+}
+.camp-row-details .teacher-link:not(:last-child)::after {
+  content: ',';
+  margin-right: 0.25rem;
+}
+
+.camp-row-details .btn.primary {
+  padding: 15px 50px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0;
+  margin-top: 5vh;
+  color: var(--color-gray-0);
+  background: var(--color-btn-normal-blue);
+  transition: background-color 300ms;
+  cursor: pointer;
+  outline: unset;
+  width: 12rem;
+}
 
 @media screen and (max-width: 767px) {
   .header-wrapper {

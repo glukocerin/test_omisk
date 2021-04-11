@@ -948,6 +948,29 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/Qo_hQJgNgXk?autoplay=1",
           },
         ],
+        content: {
+          first_block: {
+            title: '2021. 06. 28.- 07. 02.',
+            place: 'Óbudai Kulturális Központ',
+            address: '(III. San Marco u. 81.)',
+            programs: 'Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )',
+            leader: 'Bozsókiné Taylor Jennifer',
+            teachers: ['Benis Katalin',  'Csöngei Barbara',  'Kovács Bea',  'Markolt-Rózsa Réka',  'Taylor Esther'],
+            price: '<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)',
+            block_desc: 'Ha a <strong>korlátozások</strong> miatt ebben az időpontban nem tudjuk elindítani a tábort, akkor <strong>július 19 - 23 vagy esetleg augusztus 23 - 27</strong> tartjuk meg.',
+            apply_link: ''
+          },
+          second_block: {
+            title: '2021. 08. 02.- 08. 06.',
+            place: 'MOM Kulturális Központ',
+            address: '(XII. Csörsz u. 18.)',
+            programs: 'Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )',
+            leader: 'Solti Eszter',
+            teachers: ['Benis Katalin',  'Csöngei Barbara',  'Dávid Luca', 'Kovács Bea', 'Markolt-Rózsa Réka', 'B. Taylor Jennifer'],
+            price: '<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)',
+            apply_link: ''
+          }
+        }
       },
     },
     summerCamp: {
