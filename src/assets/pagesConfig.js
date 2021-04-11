@@ -950,27 +950,45 @@ const pagesConfig = {
         ],
         content: {
           first_block: {
-            title: '2021. 06. 28.- 07. 02.',
-            place: 'Óbudai Kulturális Központ',
-            address: '(III. San Marco u. 81.)',
-            programs: 'Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )',
-            leader: 'Bozsókiné Taylor Jennifer',
-            teachers: ['Benis Katalin',  'Csöngei Barbara',  'Kovács Bea',  'Markolt-Rózsa Réka',  'Taylor Esther'],
-            price: '<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)',
-            block_desc: 'Ha a <strong>korlátozások</strong> miatt ebben az időpontban nem tudjuk elindítani a tábort, akkor <strong>július 19 - 23 vagy esetleg augusztus 23 - 27</strong> tartjuk meg.',
-            apply_link: ''
+            title: "2021. 06. 28.- 07. 02.",
+            place: "Óbudai Kulturális Központ",
+            address: "(III. San Marco u. 81.)",
+            programs:
+              "Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )",
+            leader: "Bozsókiné Taylor Jennifer",
+            teachers: [
+              "Benis Katalin",
+              "Csöngei Barbara",
+              "Kovács Bea",
+              "Markolt-Rózsa Réka",
+              "Taylor Esther",
+            ],
+            price:
+              "<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
+            block_desc:
+              "Ha a <strong>korlátozások</strong> miatt ebben az időpontban nem tudjuk elindítani a tábort, akkor <strong>július 19 - 23 vagy esetleg augusztus 23 - 27</strong> tartjuk meg.",
+            apply_link: "",
           },
           second_block: {
-            title: '2021. 08. 02.- 08. 06.',
-            place: 'MOM Kulturális Központ',
-            address: '(XII. Csörsz u. 18.)',
-            programs: 'Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )',
-            leader: 'Solti Eszter',
-            teachers: ['Benis Katalin',  'Csöngei Barbara',  'Dávid Luca', 'Kovács Bea', 'Markolt-Rózsa Réka', 'B. Taylor Jennifer'],
-            price: '<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)',
-            apply_link: ''
-          }
-        }
+            title: "2021. 08. 02.- 08. 06.",
+            place: "MOM Kulturális Központ",
+            address: "(XII. Csörsz u. 18.)",
+            programs:
+              "Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )",
+            leader: "Solti Eszter",
+            teachers: [
+              "Benis Katalin",
+              "Csöngei Barbara",
+              "Dávid Luca",
+              "Kovács Bea",
+              "Markolt-Rózsa Réka",
+              "B. Taylor Jennifer",
+            ],
+            price:
+              "<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
+            apply_link: "",
+          },
+        },
       },
     },
     summerCamp: {
@@ -980,31 +998,31 @@ const pagesConfig = {
         sections: [
           {
             title: "Művészi torna",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink01.png",
             description:
               "A művészi torna mindenki számára hasznos tudás ad. Tudatos mozgásra nevel, így minden más  tánc stílusban vagy sportágban segítséget jelent az ismerete. Mozgásanyaga nagyon színes és változatos,  de mindig  fontos az esztétikai rendezettség és a precizítás. Nem kell hozzá speciális adottság, a helyesen végzett , szép mozdulatok mindenkinek sikerélményt adnak",
           },
           {
             title: "Mozdulatművészet",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink02.png",
             description:
               "A mozdulatművészet a művészi torna mozgásanyagára épülő, de annál szabadabb, a zenével szoros összhangban álló táncstílus. Használja a klasszikus balett és különböző modern technikák alapelemeit is, de mindig a test természetes adottságaihoz illeszkedő,  kifejező mozgást keresi.",
           },
           {
             title: "Kéziszeres gimnasztika",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink03.png",
             description:
               "A kéziszeres gimnasztika órákon  ritmikus gimnasztika kéziszereket ( karika, labda, szalag , buzogány…) használjuk + néhány speiális eszközt. Ezek az eszközök változatossá teszik az órát, ugyanakkor segítik a mozgástanulást és ügyessé tesznek.",
           },
           {
             title: "Koreográfia",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink04.png",
             description:
               "Ezeken órákon egy közös  műhelymunka keretében készülnek el azok a koreográfiák, amelyek a táborzáró előadáson bemutatásra kerülnek. A tanárok koncepciója és elképzelése alapján a táncosok kreatív közreműködésével 4 nap alatt alakul ki a végleges koreográfia.",
           },
           {
             title: "Szabad tánc",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink05.png",
             description:
               "A szabad tánc táboraink elmaradhatatlan programja. Dávid Luca képzőművész és mozgásterapeuta az alkotás örömét ismerteti meg a gyerekekkel. A zene, rajz és mozgás összekapcsolásából olyan improvizáció alakul amelyben a tanult és ösztönös mozdulatok keverednek. Ritkán látni ennyi felszabadult arcot, mint ezeken az órákon.",
           },
@@ -1016,58 +1034,58 @@ const pagesConfig = {
         sections: [
           {
             title: "Mikor kezdődik a tábori nap és meddig tart?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek.jpg",
             description:
               "A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.",
           },
           {
             title: "Milyen étkezéseket tartalmaz a részvételi díj?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-1.jpg",
             description:
               "A délelőtt folyamán tízórait kapnak a táborozók. Erra a programtól függően 10 és 11 óra között kerül sor. Az intenzív mozgás miatt javasoljuk, hogy otthon a reggeli ne maradjon ki ! 13 óra körül ebédelünk két fogásos meleg ételt.  A helyszin a MOM-ban a Larus Étterem, Óbudán a Harapó Mókus. Délután  16 körül kerül sor az uszonnára.",
           },
           {
             title: "Mi a javasolt öltözet?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-2.jpg",
             description:
               "Javasoljuk, hogy olyan ruhában érkezzenek a lányok, ami mozgásban nem akadályozza őket, illetve akalmas a játszótéren vagy szabadban töltött játékokhoz, kézműves foglalkozásokhoz is. Erre a célra leggings vagy short a legmegfelelőbb. Táboros - névvel ellátott -  pólót is kapnak a gyerekek  már első napon, ezt viseli mindenki . Lábbeliként a táncórákon zokni vagy balett gyakorló cipő viseletét javasoljuk, a szabadtéri programokhoz pedig szandált vagy zárt cipőt.",
           },
           {
             title:
               "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-3.jpg",
             description:
               "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
           },
           {
             title: "Végig a meghirdetett helyszínen töltik a napot a gyerekek?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-4.jpg",
             description:
               "A megjelölt helyszínen kívüli programot nincsen, csak a közeli étterembe megyünk el, természetesen csoportosan, tanári kísérettel. Mindegyik helyszínünk alkalmas a szabadtéri programok lebonyolításár, így nem kell máshova elmennünk.",
           },
           {
             title: "Mennyi táncóra van egy nap?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-5.jpg",
             description:
               "Egy csoport naponta négy, különböző tipusú mozgás órán vesz részt. Az idő többi részében is gondoskodunk  programokról, de hagyunk időt a beszélgetésre , barátkozásra ia. ",
           },
           {
             title:
               "Még nincs semmilyen táncos előképzettsége gyermekemnek. Ez probléma?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-6.jpg",
             description:
               "A táborunk pont remek lehetőség kipróbálni az iskolánk által tanított műfajokat, belekostólni még a tanfolyamok indulás előtt. Minden csoportnak  az életkornak megfelelő mozgásanyagot tanítjuk . Tanáraink külön figyelik és segítik azokat, akik most találkoznak először az adott mozgásformával. A táborban mindig új tréninget tanítunk, így nem jelent problémát ha iskolánk növendékei új érdeklődökkel járnak egy csapatban.",
           },
           {
             title: "Évközben tanító tanár csoportjába kerülhet gyermekem?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-7.jpg",
             description:
               "A táborozó gyerekeket kisebb csapatokba osztjuk életkor és tudásszint szerint.  Minden csapatnak van vezető tanára. A nap folyamán - hasonlóan, mint az iskolában - a vezető tanáron kívül  4-5 szaktanárral is találkoznak a lányok. A vezető tanár célszerűen az , akinek a legtöbb évközben tanítványa jár az adott csoportba. Így sokan a már ismert tanárhoz kerülnek, de nem minden esetben. Nem jelent problémát,  ha a vezető nem a már ismert tanár, mert  a nap folyamán szinte ugyanannyit találkozik a többi tanárral is.",
           },
           {
             title:
               "A barátnőjével, testvérével egy csoportba kerülhet gyerekem?",
-            img: "pages/muveszetitorna/3.jpg",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-8.jpg",
             description:
               "Természetesen az ilyen jellegű kéréseket teljesítjük. Testvéreknél is, ha nem túl nagy a korkülönbség, akkor természetesen megoldható - ha így szeretnék.",
           },

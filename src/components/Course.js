@@ -54,9 +54,7 @@ export default function Course({ pageConfig }) {
     <div>
       {pageConfig.opt && <CoursesHeader opt={pageConfig.opt} />}
       {pageConfig.title && (
-        <h1 className={`.size-54 ${style["camp-title"]}`}>
-          {pageConfig.title}
-        </h1>
+        <h1 className={`size-70 ${style["camp-title"]}`}>{pageConfig.title}</h1>
       )}
       {pageConfig.info && (
         <div className={style["info-box"]}>
@@ -217,7 +215,7 @@ export default function Course({ pageConfig }) {
               } `}
             >
               <div className={`${style["text"]}`}>
-                <h4 className="size-36 extra-bold">{section.title}</h4>
+                <h4 className={`size-36 extra-bold ${style['camp-subtitle']}`}>{section.title}</h4>
                 <p className="size-20 thin">{section.description}</p>
               </div>
               <div className={styleCard["pic"]}>

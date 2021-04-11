@@ -9,6 +9,10 @@
   background: transparent;
 }
 
+.camp-subtitle {
+  color: var(--color-blue-1) !important;
+}
+
 .header {
   position: absolute;
   z-index: -100;
