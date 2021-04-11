@@ -6,9 +6,31 @@ import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
 
 import { ReactComponent as Kupa } from "../assets/img/icons/kupa.svg";
+import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 const { teachers } = pagesConfig;
+
+const TeacherCards = function () {
+  let teachersCopy = Object.assign(teachers);
+
+  teachersCopy.cards = teachersCopy.cards.filter((teacher) => {
+    return ['Solti Eszter', 'Bozsókiné Taylor Jennifer', 'Benis Katalin', 'Dávid Luca', 'Csöngei Barbara', 'Kovács Bea', 'Markolt-Rózsa Réka', 'Taylor Esther'].includes(teacher.name);
+  });
+
+
+  return teachersCopy.cards.map((card, index) => (
+    <Link to={{ pathname: "/teacher", state: card }} key={index}>
+      <div className={style["card"]}>
+        <img
+          src={require(`../assets/img/teachers/${card.picture}`).default}
+          alt=""
+        />
+        <span className={`${style["teacher-name"]} size-28 extra-bold`}>{card.name}  <ArrowRight className={style["arrow"]} /></span>
+      </div>
+    </Link>
+  ));
+};
 
 const generateTeacherLinks = function(links) {
   return links.map((link, index) => {
@@ -290,6 +312,10 @@ export default function ProgramPage(props) {
               <div className={style["navigation-box"]}></div>
             </div>
             <div className={`${style["camp-row"]} ${style["teachers"]}`}>
+              <label className="size-54 bold">Tábor tanárai</label>
+              <div className={style['teacher-cards']}>
+                <TeacherCards />
+              </div>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}>
               <div className={style["day-goes-by-box"]}></div>
