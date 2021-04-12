@@ -268,9 +268,11 @@
 }
 .camp-row-details * {
   margin-top: 1.25rem;
+  line-height: 28px;
 }
 .camp-row-details [class*='size-54'] {
   white-space: nowrap;
+  line-height: 66px;
 }
 .camp-row-details .teacher-link {
   color: var(--color-gray-8);
@@ -315,6 +317,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 43px;
+  line-height: 44px;
 }
 .camp-row.cover.bg03 .apply-box .block:first-child {
   background: var(--color-gray-0);
@@ -421,6 +424,7 @@
   background: var(--color-gray-0);
   padding: 3rem 3.625rem;
   margin-bottom: 3.5rem;
+  line-height: 28px;
 }
 .camp-row.cover.bg08 .daycare-box {
   margin-bottom: 0;
