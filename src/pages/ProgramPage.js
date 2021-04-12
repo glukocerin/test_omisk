@@ -382,7 +382,16 @@ export default function ProgramPage(props) {
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp13.jpg`).default} alt=""/>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg14"]}`}>
-              <div className={style["faq-box"]}></div>
+              <div className={style["faq-box"]}>
+                <label className="size-36 bold">Gyakori kérdések</label>
+                <label className="size-20 bold">
+                  Mikor kezdődik a tábori nap és meddig tart?
+                </label>
+                <label className="size-20">
+                  A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.
+                </label>
+                <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
+              </div>
             </div>
           </div>
         </div>

@@ -257,6 +257,9 @@
 .camp-row.cover.bg14 {
   background-image: url("../img/programs/camp/camp14cover.jpg");
   margin-top: 15vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .camp-row-details {
   display: flex;
@@ -339,7 +342,7 @@
   white-space: nowrap;
   color: var(--color-btn-normal-blue);
   background: var(--color-gray-0);
-  transition: background-color 300ms;
+  transition: background-color 300ms, boder-color 300ms, color 300ms;
   cursor: pointer;
   outline: unset;
   margin-top: 3.75rem;
@@ -409,7 +412,8 @@
   stroke: none;
 }
 .camp-row.cover.bg05 .day-goes-by-box,
-.camp-row.cover.bg08 .daycare-box {
+.camp-row.cover.bg08 .daycare-box,
+.camp-row.cover.bg14 .faq-box {
   width: 42.75rem;
   display: flex;
   flex-direction: column;
@@ -422,20 +426,29 @@
   margin-bottom: 0;
   margin-top: 3.5rem;
 }
+.camp-row.cover.bg14 .faq-box {
+  margin: 0;
+}
 .camp-row.cover.bg05 .day-goes-by-box [class*='size-36'],
-.camp-row.cover.bg08 .daycare-box [class*='size-36'] {
+.camp-row.cover.bg08 .daycare-box [class*='size-36'],
+.camp-row.cover.bg14 .faq-box [class*='size-36'] {
   margin-bottom: 3rem;
 }
 .camp-row.cover.bg05 .day-goes-by-box .btn.secondary,
-.camp-row.cover.bg08 .daycare-box .btn.secondary {
+.camp-row.cover.bg08 .daycare-box .btn.secondary,
+.camp-row.cover.bg14 .faq-box .btn.secondary {
   padding: 15px 50px;
   border: 2px solid var(--color-btn-normal-blue);
 }
-.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:hover {
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:hover,
+.camp-row.cover.bg08 .daycare-box .btn.secondary:hover,
+.camp-row.cover.bg14 .faq-box .btn.secondary:hover {
   border: 2px solid var(--color-btn-hover-blue);
   color: var(--color-btn-hover-blue);
 }
-.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:active {
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:active,
+.camp-row.cover.bg08 .daycare-box .btn.secondary:active,
+.camp-row.cover.bg14 .faq-box .btn.secondary:active {
   border: 2px solid var(--color-btn-active-blue);
   color: var(--color-btn-active-blue);
 }
@@ -444,6 +457,14 @@
   margin-top: 2rem;
   width: 100%;
   text-align: left;
+}
+.camp-row.cover.bg14 .faq-box [class*='size-20'] {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.camp-row.cover.bg14 .faq-box .btn.secondary {
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 767px) {
