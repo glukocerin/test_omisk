@@ -6,6 +6,7 @@
 .footer-logo .cls-2 {
   font-family: "Gilroy";
   fill: var(--color-gray-7);
+  stroke: unset
 }
 .footer-icon svg {
   width: 2.25rem;
