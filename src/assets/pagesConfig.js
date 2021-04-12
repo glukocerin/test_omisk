@@ -951,8 +951,7 @@ const pagesConfig = {
         content: {
           first_block: {
             title: "2021. 06. 28.- 07. 02.",
-            place: "Óbudai Kulturális Központ",
-            address: "(III. San Marco u. 81.)",
+            place: "<strong>Óbudai Kulturális Központ</strong><br/>(III. San Marco u. 81.)",
             programs:
               "Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )",
             leader: "Bozsókiné Taylor Jennifer",
@@ -971,8 +970,7 @@ const pagesConfig = {
           },
           second_block: {
             title: "2021. 08. 02.- 08. 06.",
-            place: "MOM Kulturális Központ",
-            address: "(XII. Csörsz u. 18.)",
+            place: "<strong>MOM Kulturális Központ</strong><br/>(XII. Csörsz u. 18.)",
             programs:
               "Gyermek turnus ( 6 - 12 éves, iskolás kortól )\nIfjúsági turnus ( 13 - 17 éves )",
             leader: "Solti Eszter",

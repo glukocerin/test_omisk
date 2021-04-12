@@ -266,8 +266,7 @@ export default function ProgramPage(props) {
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp01.jpg`).default} alt=""/>
               <div className={style["camp-row-details"]}>
                 <label className="size-54 bold">{ props.opt.content.first_block.title }</label>
-                <label className="size-24">{ props.opt.content.first_block.place }</label>
-                <label className="size-24">{ props.opt.content.first_block.address }</label>
+                <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
                 <label className="size-20">{ props.opt.content.first_block.programs }</label>
                 <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.first_block.leader] ) }</label>
                 <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.first_block.teachers) }</label>
@@ -280,8 +279,7 @@ export default function ProgramPage(props) {
             <div className={style["camp-row"]}>
               <div className={style["camp-row-details"]}>
                 <label className="size-54 bold">{ props.opt.content.second_block.title }</label>
-                <label className="size-24">{ props.opt.content.second_block.place }</label>
-                <label className="size-24">{ props.opt.content.second_block.address }</label>
+                <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
                 <label className="size-20">{ props.opt.content.second_block.programs }</label>
                 <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.second_block.leader] ) }</label>
                 <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.second_block.teachers) }</label>
