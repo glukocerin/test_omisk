@@ -309,7 +309,22 @@ export default function ProgramPage(props) {
               </div>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}>
-              <div className={style["navigation-box"]}></div>
+              <label className="size-54 bold">Programjaink</label>
+              {/* TODO: add links */}
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Művészi torna</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Mozdulatművészet</button>
+              </div>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Kéziszeres gimnasztika</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Modern tánc</button>
+              </div>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Koreográfia</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Kézműves</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Szabad tánc</button>
+              </div>
+              <button className={`${style['btn']} ${style['secondary']}`}>Részletesen a  programokról</button>
             </div>
             <div className={`${style["camp-row"]} ${style["teachers"]}`}>
               <label className="size-54 bold">Tábor tanárai</label>

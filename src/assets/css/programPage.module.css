@@ -225,6 +225,15 @@
 }
 .camp-row.cover.bg04 {
   background-image: url("../img/programs/camp/camp04cover.jpg");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.camp-row.cover.bg04 [class*='size-54'] {
+  padding: 0 1.75rem;
+  font-weight: 800;
+  background: var(--color-gray-0);
+  margin-bottom: 3.5rem;
 }
 .camp-row.cover.bg05 {
   background-image: url("../img/programs/camp/camp05cover.jpg");
@@ -267,6 +276,14 @@
   outline: unset;
   width: 12rem;
 }
+.camp-row-details .btn.primary:hover {
+  border: unset;
+  background: var(--color-btn-hover-blue);
+}
+.camp-row-details .btn.primary:active {
+  border: unset;
+  background: var(--color-btn-active-blue);
+}
 .camp-row.cover.bg03 .apply-box {
   width: 42.75rem;
   margin: 0 auto;
@@ -293,6 +310,41 @@
 }
 .camp-row.cover.bg03 .apply-box .block [class*='size-54'] {
   margin-bottom: 3rem;
+}
+.camp-row .button-box {
+  display: flex;
+  justify-content: center;
+  width: 58rem;
+}
+.camp-row .btn.secondary {
+  padding: 15px 43px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0;
+  white-space: nowrap;
+  color: var(--color-btn-normal-blue);
+  background: var(--color-gray-0);
+  transition: background-color 300ms;
+  cursor: pointer;
+  outline: unset;
+  margin-top: 3.75rem;
+}
+.camp-row .button-box .btn.secondary {
+  padding: 6px 24px;
+  font-size: 1.875vw;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+.camp-row .btn.secondary:hover {
+  border: unset;
+  color: var(--color-btn-hover-blue);
+}
+.camp-row .btn.secondary:active {
+  border: unset;
+  color: var(--color-btn-active-blue);
+}
+.camp-row .button-box .btn.secondary + .btn.secondary {
+  margin-left: 0.5rem;
 }
 .teacher-cards {
   display: grid;
