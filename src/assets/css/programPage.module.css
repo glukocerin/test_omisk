@@ -237,9 +237,14 @@
 }
 .camp-row.cover.bg05 {
   background-image: url("../img/programs/camp/camp05cover.jpg");
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15vh;
 }
 .camp-row.cover.bg08 {
   background-image: url("../img/programs/camp/camp08cover.jpg");
+  margin-top: 15vh;
 }
 .camp-row.cover.bg14 {
   background-image: url("../img/programs/camp/camp14cover.jpg");
@@ -275,6 +280,7 @@
   cursor: pointer;
   outline: unset;
   width: 12rem;
+  user-select: none;
 }
 .camp-row-details .btn.primary:hover {
   border: unset;
@@ -328,6 +334,7 @@
   cursor: pointer;
   outline: unset;
   margin-top: 3.75rem;
+  user-select: none;
 }
 .camp-row .button-box .btn.secondary {
   padding: 6px 24px;
@@ -337,10 +344,12 @@
 }
 .camp-row .btn.secondary:hover {
   border: unset;
+  background: var(--color-gray-0);
   color: var(--color-btn-hover-blue);
 }
 .camp-row .btn.secondary:active {
   border: unset;
+  background: var(--color-gray-0);
   color: var(--color-btn-active-blue);
 }
 .camp-row .button-box .btn.secondary + .btn.secondary {
@@ -389,6 +398,30 @@
 .teacher-cards .card .arrow [class*='cls-2'] {
   fill: none;
   stroke: none;
+}
+.camp-row.cover.bg05 .day-goes-by-box {
+  width: 42.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-gray-0);
+  padding: 3rem 3.625rem;
+  margin-bottom: 3.5rem;
+}
+.camp-row.cover.bg05 .day-goes-by-box [class*='size-36'] {
+  margin-bottom: 3rem;
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary {
+  padding: 15px 50px;
+  border: 2px solid var(--color-btn-normal-blue);
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:hover {
+  border: 2px solid var(--color-btn-hover-blue);
+  color: var(--color-btn-hover-blue);
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:active {
+  border: 2px solid var(--color-btn-active-blue);
+  color: var(--color-btn-active-blue);
 }
 
 @media screen and (max-width: 767px) {

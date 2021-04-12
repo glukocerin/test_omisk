@@ -279,7 +279,7 @@ export default function ProgramPage(props) {
             </div>
             <div className={style["camp-row"]}>
               <div className={style["camp-row-details"]}>
-              <label className="size-54 bold">{ props.opt.content.second_block.title }</label>
+                <label className="size-54 bold">{ props.opt.content.second_block.title }</label>
                 <label className="size-24">{ props.opt.content.second_block.place }</label>
                 <label className="size-24">{ props.opt.content.second_block.address }</label>
                 <label className="size-20">{ props.opt.content.second_block.programs }</label>
@@ -333,7 +333,13 @@ export default function ProgramPage(props) {
               </div>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}>
-              <div className={style["day-goes-by-box"]}></div>
+              <div className={style["day-goes-by-box"]}>
+                <label className="size-36 bold">Hogyan telik egy nap</label>
+                <label className="size-20">
+                  Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek. <strong>Közös reggel tornával és csapatépítő játékkal</strong> indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk. 
+                </label>
+                <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
+              </div>
             </div>
             <div className={style["camp-row"]}>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp06.jpg`).default} alt=""/>
