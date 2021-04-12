@@ -386,7 +386,7 @@ export default function ProgramPage(props) {
                   Mikor kezdődik a tábori nap és meddig tart?
                 </label>
                 <label className="size-20">
-                  A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.
+                  A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni.<br/>...
                 </label>
                 <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
               </div>
