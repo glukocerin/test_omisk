@@ -346,7 +346,14 @@ export default function ProgramPage(props) {
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp07.jpg`).default} alt=""/>
             </div>
             <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg08"]}`}>
-              <div className={`${style["apply-box"]} ${style["daycare"]}`}></div>
+              <div className={style["daycare-box"]}>
+                <label className="size-36 bold">Jelentkezés</label>
+                <label className="size-20">
+                  A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong>
+                </label>
+                <Link to={'/programs/camp'} className={`${style['apply-link']} size-20 bold`}>Jelentkezési lap</Link>
+                <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
+              </div>
             </div>
             <div className={style["camp-row"]}>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp09.jpg`).default} alt=""/>

@@ -245,6 +245,10 @@
 .camp-row.cover.bg08 {
   background-image: url("../img/programs/camp/camp08cover.jpg");
   margin-top: 15vh;
+  margin-bottom: 15vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .camp-row.cover.bg14 {
   background-image: url("../img/programs/camp/camp14cover.jpg");
@@ -399,7 +403,8 @@
   fill: none;
   stroke: none;
 }
-.camp-row.cover.bg05 .day-goes-by-box {
+.camp-row.cover.bg05 .day-goes-by-box,
+.camp-row.cover.bg08 .daycare-box {
   width: 42.75rem;
   display: flex;
   flex-direction: column;
@@ -408,10 +413,16 @@
   padding: 3rem 3.625rem;
   margin-bottom: 3.5rem;
 }
-.camp-row.cover.bg05 .day-goes-by-box [class*='size-36'] {
+.camp-row.cover.bg08 .daycare-box {
+  margin-bottom: 0;
+  margin-top: 3.5rem;
+}
+.camp-row.cover.bg05 .day-goes-by-box [class*='size-36'],
+.camp-row.cover.bg08 .daycare-box [class*='size-36'] {
   margin-bottom: 3rem;
 }
-.camp-row.cover.bg05 .day-goes-by-box .btn.secondary {
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary,
+.camp-row.cover.bg08 .daycare-box .btn.secondary {
   padding: 15px 50px;
   border: 2px solid var(--color-btn-normal-blue);
 }
@@ -422,6 +433,12 @@
 .camp-row.cover.bg05 .day-goes-by-box .btn.secondary:active {
   border: 2px solid var(--color-btn-active-blue);
   color: var(--color-btn-active-blue);
+}
+.camp-row.cover.bg08 .daycare-box .apply-link {
+  color: var(--color-gray-8);
+  margin-top: 2rem;
+  width: 100%;
+  text-align: left;
 }
 
 @media screen and (max-width: 767px) {
