@@ -359,7 +359,7 @@ export default function ProgramPage(props) {
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp09.jpg`).default} alt=""/>
               <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp10.jpg`).default} alt=""/>
             </div>
-            <div className={`${style["video-wrapper"]}`}>
+            <div className={`${style["video-wrapper"]} ${style["camp"]}`}>
                 <button
                   className={`${style["open-video"]}`}
                   onClick={() => setModalOpen(true)}

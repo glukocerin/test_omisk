@@ -250,8 +250,13 @@
   justify-content: flex-start;
   align-items: center;
 }
+.video-wrapper.camp {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
 .camp-row.cover.bg14 {
   background-image: url("../img/programs/camp/camp14cover.jpg");
+  margin-top: 15vh;
 }
 .camp-row-details {
   display: flex;
