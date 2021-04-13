@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ReactComponent as DownloadIcon } from "../assets/img/icons/arrow_down.svg";
 import style from "../assets/css/programPage.module.css";
 
 const Images = function ({ gallery }) {
@@ -96,24 +97,45 @@ export default function ProgramPage(props) {
         <div className={style["info"]}>
           <div className={style["details"]}>
             <label
-              className={`${style["header-title"]} size-90 extra-bold ${style["padding-top-title"]}`}
+              className={`${style["camp-header-title"]} size-90 extra-bold ${style["padding-top-title"]}`}
             >
               {props.opt.title}
             </label>
             <p
-              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-top-first-paragraph"]} ${style["padding-bottom-before-images"]} size-20`}
+              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-top-first-paragraph"]} size-20`}
               dangerouslySetInnerHTML={createMarkup(props.opt.detailsOne)}
+            ></p>
+            {props.opt.isDownloadContent && (
+              <a
+                href="https://omisk.hu/documents/jelentkezesi_lap+beleegyezo_nyilatkozat.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${style["download-content"]} size-20 thin`}
+              >
+                <DownloadIcon
+                  className={`${style["download-icon"]} size-20 thin`}
+                />
+                <label className="download-text size-20 thin">
+                  Egészségügy nyilatkozat + Hozzájárulás fotó- és videó
+                  felvételek készítéséhez.
+                </label>
+              </a>
+            )}
+            <p
+              className={`${style["details-text"]} ${style["padding-bottom-before-images"]} size-20`}
+              dangerouslySetInnerHTML={createMarkup(props.opt.detailsTwo)}
             ></p>
           </div>
         </div>
       </div>
+
       <div className={style["images"]} style={{ height: width / 2 }}>
         <Images gallery={props.opt.gallery} />
       </div>
       <div className={style["details"]}>
         <p
-          className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} size-20`}
-          dangerouslySetInnerHTML={createMarkup(props.opt.detailsTwo)}
+          className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
+          dangerouslySetInnerHTML={createMarkup(props.opt.detailsThree)}
         ></p>
       </div>
     </div>

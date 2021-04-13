@@ -66,6 +66,13 @@
   text-decoration: unset;
 }
 
+.camp-header-title {
+  height: 10.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-title {
   height: 10.9375rem;
   display: flex;
@@ -88,6 +95,13 @@
   line-height: 1.75;
 }
 
+.download-content {
+  display: block;
+  padding: 0.5rem 10.25rem;
+  margin: 0 auto;
+  width: 58rem;
+}
+
 .details-text {
   padding: 0.5rem 10.25rem;
   margin: 0 auto;
@@ -105,7 +119,7 @@
 }
 
 .padding-top-first-paragraph {
-  padding-top: 15rem;
+  padding-top: 9rem;
 }
 
 .padding-bottom {
@@ -113,7 +127,7 @@
 }
 
 .padding-bottom-before-images {
-  padding-bottom: 15.5rem;
+  padding-bottom: 5.5rem;
 }
 
 .first-paragraph::first-letter {
@@ -229,7 +243,7 @@
   justify-content: center;
   align-items: center;
 }
-.camp-row.cover.bg04 [class*='size-54'] {
+.camp-row.cover.bg04 [class*="size-54"] {
   padding: 0 1.75rem;
   font-weight: 800;
   background: var(--color-gray-0);
@@ -270,7 +284,7 @@
   margin-top: 1.25rem;
   line-height: 28px;
 }
-.camp-row-details [class*='size-54'] {
+.camp-row-details [class*="size-54"] {
   white-space: nowrap;
   line-height: 66px;
 }
@@ -278,7 +292,7 @@
   color: var(--color-gray-8);
 }
 .camp-row-details .teacher-link:not(:last-child)::after {
-  content: ',';
+  content: ",";
   margin-right: 0.25rem;
 }
 
@@ -322,14 +336,14 @@
 .camp-row.cover.bg03 .apply-box .block:first-child {
   background: var(--color-gray-0);
 }
-.camp-row.cover.bg03 .apply-box .block:first-child [class*='size-36'] {
+.camp-row.cover.bg03 .apply-box .block:first-child [class*="size-36"] {
   color: var(--color-blue-1);
 }
 .camp-row.cover.bg03 .apply-box .block:nth-child(2) {
   background: var(--color-blue-1);
   color: var(--color-gray-0);
 }
-.camp-row.cover.bg03 .apply-box .block [class*='size-54'] {
+.camp-row.cover.bg03 .apply-box .block [class*="size-54"] {
   margin-bottom: 3rem;
 }
 .camp-row .button-box {
@@ -405,12 +419,12 @@
   width: 1.458vw;
   margin-left: 0.5rem;
 }
-.teacher-cards .card .arrow [class*='cls-1'] {
+.teacher-cards .card .arrow [class*="cls-1"] {
   fill: transparent;
   stroke-width: 4px;
   stroke: var(--color-gray-new-1);
 }
-.teacher-cards .card .arrow [class*='cls-2'] {
+.teacher-cards .card .arrow [class*="cls-2"] {
   fill: none;
   stroke: none;
 }
@@ -433,9 +447,9 @@
 .camp-row.cover.bg14 .faq-box {
   margin: 0;
 }
-.camp-row.cover.bg05 .day-goes-by-box [class*='size-36'],
-.camp-row.cover.bg08 .daycare-box [class*='size-36'],
-.camp-row.cover.bg14 .faq-box [class*='size-36'] {
+.camp-row.cover.bg05 .day-goes-by-box [class*="size-36"],
+.camp-row.cover.bg08 .daycare-box [class*="size-36"],
+.camp-row.cover.bg14 .faq-box [class*="size-36"] {
   margin-bottom: 3rem;
 }
 .camp-row.cover.bg05 .day-goes-by-box .btn.secondary,
@@ -462,7 +476,7 @@
   width: 100%;
   text-align: left;
 }
-.camp-row.cover.bg14 .faq-box [class*='size-20'] {
+.camp-row.cover.bg14 .faq-box [class*="size-20"] {
   margin-bottom: 2rem;
   width: 100%;
   text-align: left;
@@ -479,6 +493,13 @@
   .header {
     background-image: unset !important;
     height: unset;
+  }
+  .camp-header-title {
+    height: unset;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: unset;
   }
   .header-title {
     height: unset;
@@ -500,6 +521,13 @@
   }
 
   .details-text {
+    padding: 1rem 1.75rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .download-content {
     padding: 1rem 1.75rem;
     margin: 0 auto;
     width: 100%;
