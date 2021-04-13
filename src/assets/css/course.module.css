@@ -361,6 +361,10 @@
     margin-bottom: 1rem;
   }
 
+  .camp-title {
+    margin-top: 2.875rem;
+  }
+
   .button-wrapper {
     display: flex;
     justify-content: center;
