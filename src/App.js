@@ -40,9 +40,22 @@ import Admin from "./pages/Admin";
 
 const { programs } = pagesConfig;
 const { courses } = pagesConfig;
+const { blog } = pagesConfig;
 
 function App() {
   const [activeDot, handleDotChange] = useState(1);
+
+  const blogEntries = blog.cards.map((entry) => {
+    console.log(`/blog/${entry.index}`);
+    return (
+      <Route key={entry.index} path={`/blog/${entry.index}`}>
+        <Navigation BackgroundColor="yellow" />
+        <BlogEntry config={entry} />
+        <Footer />
+        <FooterMobile />
+      </Route>
+    );
+  });
 
   return (
     <div className="App">
@@ -69,18 +82,14 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/blog">
+        <Route exact path="/blog">
           <Navigation BackgroundColor="yellow" />
           <Blog />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/blog_entry">
-          <Navigation BackgroundColor="yellow" />
-          <BlogEntry />
-          <Footer />
-          <FooterMobile />
-        </Route>
+        {blogEntries}
+
         <Route path="/operation">
           <Navigation BackgroundColor="green" isHeaderFixed="true" />
           <Operation />

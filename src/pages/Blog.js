@@ -16,7 +16,7 @@ const BlogCards = function () {
       : require(`../assets/img/blog/${card.picture}`).default;
 
     return (
-      <Link to={{ pathname: "/blog_entry", state: card }} key={index}>
+      <Link to={{ pathname: `/blog/${card.index}`, state: card }} key={index}>
         <div className="card">
           <div className="picture-box">
             <img src={image} alt="" />
