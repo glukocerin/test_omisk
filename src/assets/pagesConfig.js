@@ -1015,14 +1015,26 @@ const pagesConfig = {
               "A kéziszeres gimnasztika órákon  ritmikus gimnasztika kéziszereket ( karika, labda, szalag , buzogány…) használjuk + néhány speiális eszközt. Ezek az eszközök változatossá teszik az órát, ugyanakkor segítik a mozgástanulást és ügyessé tesznek.",
           },
           {
-            title: "Koreográfia",
+            title: "Modern tánc",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink04.png",
+            description:
+              "A modern tánc a klasszikus balett alapjaira épül, annak szabály rendszerével szembe is megy.  A természetes mozgáson alapul, használja a gravitációt, a mozdulatokat belülről indítja. Leginkább a folyamatos, plasztikus és puha mozgás jellemzi. A tréning - miközben  tetőtől talpig átmozgatja a testet - tudatosságra nevel.",
+          },
+          {
+            title: "Koreográfia",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink05.png",
             description:
               "Ezeken órákon egy közös  műhelymunka keretében készülnek el azok a koreográfiák, amelyek a táborzáró előadáson bemutatásra kerülnek. A tanárok koncepciója és elképzelése alapján a táncosok kreatív közreműködésével 4 nap alatt alakul ki a végleges koreográfia.",
           },
           {
+            title: "Kézműves",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink06.png",
+            description:
+              "A kézműves  foglalkozásokon készül el az előadáson használt eszközök vagy jelmezek egy része. Így a táborozók megtapasztalják, hogy  különböző művészeti ágak hogyan működnek össze egy alkotás létrejöttében. Emellett egyéb eszközök és jelmezek is készülnek, amiket az év közben használni tudnak a gyerekek.",
+          },
+          {
             title: "Szabad tánc",
-            img: "pages/summerCamp/program/omisk_tanctabor_programjaink05.png",
+            img: "pages/summerCamp/program/omisk_tanctabor_programjaink07.png",
             description:
               "A szabad tánc táboraink elmaradhatatlan programja. Dávid Luca képzőművész és mozgásterapeuta az alkotás örömét ismerteti meg a gyerekekkel. A zene, rajz és mozgás összekapcsolásából olyan improvizáció alakul amelyben a tanult és ösztönös mozdulatok keverednek. Ritkán látni ennyi felszabadult arcot, mint ezeken az órákon.",
           },
@@ -1032,12 +1044,6 @@ const pagesConfig = {
         title: "Gyakori kérdések",
         footer: false,
         sections: [
-          {
-            title: "Mikor kezdődik a tábori nap és meddig tart?",
-            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek.jpg",
-            description:
-              "A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.",
-          },
           {
             title: "Milyen étkezéseket tartalmaz a részvételi díj?",
             img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-1.jpg",
@@ -1055,7 +1061,7 @@ const pagesConfig = {
               "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
             img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-3.jpg",
             description:
-              "Speciális étrend alapján kell gyermekemnek étkezni. Lehetséges, hogy az ebédet én csomagoljam neki?",
+              "Ez gond nélkül megoldható. Az allergiákat, ételérzékenységet vagy bármi egészségügy információt külön űrlapon kérünk is jelezni",
           },
           {
             title: "Végig a meghirdetett helyszínen töltik a napot a gyerekek?",
@@ -1088,6 +1094,12 @@ const pagesConfig = {
             img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek-8.jpg",
             description:
               "Természetesen az ilyen jellegű kéréseket teljesítjük. Testvéreknél is, ha nem túl nagy a korkülönbség, akkor természetesen megoldható - ha így szeretnék.",
+          },
+          {
+            title: "Mikor kezdődik a tábori nap és meddig tart?",
+            img: "pages/summerCamp/faq/omisk_tanctabor_gyakorikerdesek.jpg",
+            description:
+              "A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni. Délután 16:30-kor végzünk a programmal, utána mehetnek a gyerekek átöltözni és összepakolni.",
           },
         ],
       },
