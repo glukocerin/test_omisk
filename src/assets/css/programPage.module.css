@@ -197,7 +197,7 @@
   right: 6vw;
   transition: bottom 0.3s linear;
 }
-
+/* CAMP REFACTOR DESKTOP */
 .camp-row {
   display: flex;
   max-height: 60rem;
@@ -484,7 +484,7 @@
 .camp-row.cover.bg14 .faq-box .btn.secondary {
   margin-top: 2rem;
 }
-
+/* END OF CAMP REFACTOR DESKTOP */
 @media screen and (max-width: 767px) {
   .header-wrapper {
     padding: unset;
@@ -574,4 +574,8 @@
     align-items: center;
     line-height: unset;
   }
+
+  /* CAMP REFACTOR MOBILE */
+  
+  /* END OF CAMP REFACTOR MOBILE */
 }
