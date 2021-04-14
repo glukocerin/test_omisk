@@ -11,6 +11,7 @@
 
 .camp-subtitle {
   color: var(--color-blue-1) !important;
+  margin-top: 0 !important;
 }
 
 .header {
@@ -288,6 +289,7 @@
   margin: 0 auto;
   display: flex;
   background-color: #fff;
+  align-items: center;
 }
 
 .card-wrapper ul p {
@@ -297,11 +299,11 @@
 .text {
   width: 50%;
   padding: 0 10%;
-  margin-top: 10%;
 }
 
 .reverse {
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 .text p {
