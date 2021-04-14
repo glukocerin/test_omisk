@@ -91,12 +91,32 @@ export default function CampPageMobile({ props }) {
             </div>
             <button className={`${style['btn']} ${style['secondary']}`}>Részletesen a  programokról</button>
           </div>
+          <div className={`${style["camp-row"]} ${style["teachers"]}`}>
+            <label className="size-32 bold">Tanáraink</label>
+            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/campmobileteachers.jpg`).default} alt=""/>
+            <div className={style["teachers-box"]}>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Solti Eszter</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>B. Taylor Jennifer</button>
+              </div>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Benis Katalin</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Dávid Luca</button>
+              </div>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Csöngei Barbara</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Kovács Bea</button>
+              </div>
+              <div className={style['button-box']}>
+                <button className={`${style['btn']} ${style['secondary']}`}>Markolt-Rózsa Réka</button>
+                <button className={`${style['btn']} ${style['secondary']}`}>Taylor Esther</button>
+              </div>
+            </div>
+          </div>
           <div className={style["camp-row"]}>
             <div className={style["day-goes-by-box"]}>
-              <label className="size-36 bold">Hogyan telik egy nap</label>
-              <label className="size-20">
-                Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek. <strong>Közös reggel tornával és csapatépítő játékkal</strong> indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk. 
-              </label>
+              <label className="size-32 bold">Hogyan telik egy nap</label>
+              <label className="size-20">Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek.<span className="bold">Közös reggel tornával és csapatépítő játékkal</span> indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk.</label>
               <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
             </div>
           </div>
@@ -110,7 +130,8 @@ export default function CampPageMobile({ props }) {
                 A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
               <Link to={'/programs/camp'} className={`${style['apply-link']} size-20 bold`}>Jelentkezési lap</Link>
-              <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
+              <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
+              <label className="size-20">A részvételi díjat  természetesen visszatérítjük, ha  a korlátozások miatt a táborokat nem tudjuk megtartani</label>
             </div>
           </div>
         </div>

@@ -635,7 +635,8 @@
     background: var(--color-blue-1);
     color: var(--color-gray-0);
   }
-  .camp-row.programs {
+  .camp-row.programs,
+  .camp-row.teachers .teachers-box {
     background: var(--color-blue-1);
   }
   .camp-row.programs [class*="size-32"] {
@@ -664,6 +665,58 @@
   .camp-row .faq-box {
     width: 100vw;
   }
-
+  .camp-row.teachers {
+    padding: unset;
+  }
+  .camp-row.teachers [class*="size-32"] {
+    margin: 3.75rem auto 2.75rem auto;
+  }
+  .camp-row.teachers .teachers-box {
+    padding: 1rem 0 2rem 0;
+  }
+  .camp-row .day-goes-by-box,
+  .camp-row .daycare-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem 1.25rem;
+  }
+  .camp-row .day-goes-by-box [class*="size-20"],
+  .camp-row .daycare-box [class*="size-20"] {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .camp-row .day-goes-by-box .btn.secondary {
+    padding: 15px 50px;
+    border: 2px solid var(--color-btn-normal-blue);
+  }
+  .camp-row .day-goes-by-box .btn.secondary:hover {
+    border: 2px solid var(--color-btn-hover-blue);
+    color: var(--color-btn-hover-blue);
+  }
+  .camp-row .day-goes-by-box .btn.secondary:active {
+    border: 2px solid var(--color-btn-active-blue);
+    color: var(--color-btn-active-blue);
+  }
+  .camp-row .daycare-box .apply-link {
+    color: var(--color-gray-8);
+  }
+  .camp-row .daycare-box .btn.primary {
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 800;
+    border: 0;
+    color: var(--color-gray-0);
+    background: var(--color-btn-normal-blue);
+    transition: background-color 300ms;
+    cursor: pointer;
+    outline: unset;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 2rem;
+  }
+  .camp-row .daycare-box [class*="size-20"]:last-child {
+    margin-bottom: 2rem;
+  }
   /* END OF CAMP REFACTOR MOBILE */
 }
