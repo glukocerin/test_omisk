@@ -72,9 +72,9 @@ export default function CampPageMobile({ props }) {
               </div>
             </div>
           </div>
-          <div className={style["camp-row"]}>
+          <div className={`${style["camp-row"]} ${style["programs"]}`}>
             <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp04cover.jpg`).default} alt=""/>
-            <label className="size-54 bold">Programjaink</label>
+            <label className="size-32 bold">Programjaink</label>
             {/* TODO: add links */}
             <div className={style['button-box']}>
               <button className={`${style['btn']} ${style['secondary']}`}>Művészi torna</button>
