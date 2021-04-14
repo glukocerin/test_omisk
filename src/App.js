@@ -45,10 +45,9 @@ const { blog } = pagesConfig;
 function App() {
   const [activeDot, handleDotChange] = useState(1);
 
-  const blogEntries = blog.cards.map((entry) => {
-    console.log(`/blog/${entry.index}`);
+  const blogEntries = blog.cards.map((entry, index) => {
     return (
-      <Route key={entry.index} path={`/blog/${entry.index}`}>
+      <Route key={index} path={`/blog/${entry.index}`}>
         <Navigation BackgroundColor="yellow" />
         <BlogEntry config={entry} />
         <Footer />
