@@ -15,7 +15,6 @@ export default function Navigation(props) {
   const location = useLocation().pathname;
   const dispatch = useDispatch();
   const [isVisible, setVisible] = useState(false);
-
   return (
     <div>
       {isVisible ? (
@@ -62,6 +61,14 @@ export default function Navigation(props) {
           />
         </Link>
         <div className="links">
+          <Link
+            className={`${
+              location.includes("/programs/summer_camp") && "active"
+            }`}
+            to="/programs/summer_camp"
+          >
+            Nyári Tánctábor 2021
+          </Link>
           <Link
             className={`${location === "/" && "active"}`}
             onClick={() => dispatch(updatePageindex({ payload: 1 }))}
@@ -110,7 +117,9 @@ export default function Navigation(props) {
           </label>
           <label
             className={`plus-sign programs ${
-              location.includes("program") && "active"
+              location.includes("programs") &&
+              !location.includes("programs/") &&
+              "active"
             }`}
           >
             <Link to="/programs">Programjaink</Link>

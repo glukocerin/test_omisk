@@ -931,6 +931,31 @@ const pagesConfig = {
       camp: {
         title: "Nyári tánctábor",
         headerImg: "nyari_tabor",
+        videoImg: "taborok/bg",
+        detailsOne:
+          "Iskolánk 2017 óta nyári napközis táborral várja iskoláskorú növendékeit. A táborban tanítványaink mellett külső jelentkezők is részt vehetnek. Programunk kiváló alkalom arra, hogy a gyermekek és fiatalok önfeledten, aktív pihenéssel töltsék a vakációt, egyúttal  továbbfejlesszék tánc tudásukat. A jelentkezők korcsoport és tudásszint szerint vesznek részt szabad táncon, improvizációs és koreográfia órákon, kéziszeres gimnasztikán. A turnusokat péntek délutáni előadással zárjuk, amelyen növendékeink bemutathatják, mennyi mindent tanultak a közösen eltöltött hét alatt.",
+        detailsTwo:
+          "A tábor helyszíne a MOM Kulturális Központ és az Óbuda Kulturális Központ, amelyek felújított, napfényes termei és korszerű játszóteres parkja tökéletes terepet nyújtanak a közös munkához és pihenéshez egyaránt. A nyári táborok kulcsfontosságúak iskolánk közösségének alakulásában. Tanítványaink közelebb kerülhetnek egymáshoz és jobban megismerhetik tanárainkat is.",
+        videos: [
+          {
+            year: 2016,
+            link: "https://www.youtube.com/embed/q2eUUTYWTI4?autoplay=1",
+          },
+          {
+            year: 2016,
+            link: "https://www.youtube.com/embed/P6pkAmEuqQo?autoplay=1",
+          },
+          {
+            year: 2016,
+            link: "https://www.youtube.com/embed/Qo_hQJgNgXk?autoplay=1",
+          },
+        ],
+        gallery: ["taborok/1", "taborok/2"],
+      },
+      summer_camp: {
+        title: "Nyári tánctábor",
+        isSummerCamp: true,
+        headerImg: "nyari_tabor",
         videoImg: "camp/camp11cover",
         detailsOne:
           "Nyári napközis táborunk különleges lehetőség arra, hogy többféle mozgásművészeti stílussal is megismerkedj.  Részese lehetsz egy 5 napos táncos műhelymunkának és egy táborzáró  előadásnak, ahol a közös munkával összeállított koreográfiákat nyilvánosan bemutatjuk. A felkészülés során kislétszámú életkori csoportokban tanulhatsz az egyes műfajok szaktanáraitól.",
@@ -1320,7 +1345,7 @@ const pagesConfig = {
         picture_title: "Nyári tánctábor",
         date: "2021. 04. 13.",
         title: "Omisk tánctábor 2021",
-        index: "omiskSummerCamp",
+        index: "omisk_summer_camp_2021",
         text_first:
           "Ebben az évben is megrendezzük nyári tánctáborainkat 6 -17 évesek számára, ahol a résztvevők 1 hét alatt kipróbálhatják az iskolánkban tanított különböző  mozgásművészeti stílusokat. A táborozók egy 5 napos táncos műhelymunkában vesznek részt, amit  táborzáró előadáson való fellépéssel zárunk. Ezen az nyilvános előadáson mutatják be a közösen összeállított koreográfiákat. A felkészülés kislétszámú életkori csoportokban történik és az egyes műfajok szaktanárai vezetik.</br>Ebben az évben is 2 tábort szervezünk, 2 külön korcsoportnak ( 6-12 és 13 -17 évesek ) egy időben, de különböző programmal<p></p><strong>Június 28 - Július 2</strong></br><strong>Óbudai Kulturális Központ</strong></br>Tanárok: Benis Katalin, Csöngei Barbara, Kovács Bea, Markolt-Rózsa Réka, Taylor Esther</br>Táborvezető: B.Taylor Jennifer<p></p><strong>Augusztus 2 - 6</strong></br><strong>MOM Kulturális Központ</strong></br>Tanárok: Benis Katalin, Csöngei Barbara, Dávid Luca, Kovács Bea, B.Taylor Jennifer</br>Táborvezető: Solti Eszter<p></p>A részvételi díj: <strong>42.000 Ft,</strong> de iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong></br><strong>A befizetett díjat visszatérítjük, amennyiben a korlátozások miatt nem tudjuk megtartani  a tábort és a felajánlott másik időpont nem megfelelő.</strong><p></p>A táborban délelött és délután is táncórákat tartunk a szaktanárok vezetésével, az órák közötti szünetekben közösségi programokat szervezünk , de hagyunk elegendő szabadidőt is.</br>Tematikus órák:</br>Gyerek turnus: művészi torna,kéziszeres gimnasztika,koreográfia, szabad tánc, kézműves</br>Ifjúsági turnus: mozdulatművészet,modern tánc.koreográfia,szabad tánc, kézműves<p></p>A táncórákon megismert mozgás anyagra építkezve a koreográfia órákon állítjuk össze azt a táncot, amit a táborzáró előadáson bemutatunk. A koreográfia koncepcióját a tanárok állítják össze, de végleges formája a résztvevők kreatív közreműködésével alakul ki. A táborzáró tánc előadásához  elmaradhatatlan jelmezek, eszközök,díszletek és  a meghívók  a kézműves foglalkozásokon készülnek el, így minden táborozó  saját ötleteivel  ezen a területen is hozzájárulhatsz a produkcióhoz.<p></p>Ebédelni a MOM-ban a Larus Étterembe, Óbudán pedg a Harapó Mókusba megyünk. Tízórairól és uzsonnáról a helyszínen gondoskodunk.<p></p><strong>A napközis táborokba az alábbi linken található jelentkezési lap online kitöltésével lehet:</strong><p></p><a href='http://bit.ly/taborjelentkezes'>Jelentkezesi lap</a><p></p>A táborban résztvevők száma korlátozott, ezért ha ezt a létszámot elértük, akkor várólistát nyitunk meg.</br>Ha a korlátozások a június 28-án kezdődő tábort nem tudjuk elindítani, akkor helyette <strong>július 19 - 23 vagy augusztus 23 - 27</strong> ( ebben az időpontban a <strong>békásmegyeri Szent József Házban</strong> ) tartjuk meg.<p></p>Az jelentkezési lap elküldését követően visszaigazolást küldünk a megadott e-mail címre.</br>Kérjük, ha ez esetleg nem érkezik meg vagy egyéb kérdésük van, akkor vegyék fel velünk  a kapcsolatot az alábbi elérhetőségeken:<br><a href='mailto:omisktabor@gmail.com'>omisktabor@gmail.com</a></br>Tel:  06-30-2379 ( Solti Eszter )<p></p>Reméljük hamarosan találkozunk táborainkban!",
         text_second: "",
@@ -1332,7 +1357,7 @@ const pagesConfig = {
         picture_title: "lockdown",
         date: "2020. 03. 16.",
         title: "OMISK Online verseny - 3 kategóriában",
-        index: "omiskCompetition",
+        index: "omisk_competition",
         text_first:
           "1. Rajzverseny óvodásoknak\nKészíts rajzot az online órákról, most készülő koreográfiáról vagy amit előadásunkon láttál! Családi segítséggel az elkészült alkotást befotózva küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra!\n\n2.Jelmeztervezési verseny iskolásoknak\nTervezz jelmezt a most készülő koreográfiához vagy egy régebbihez, amit előadásunkon láttál! Elsősorban egyszerű jelmezeket várunk, melyek jól kifejezik azt, amiről a koreográfia szól. Az elkészült alkotás fotózd le és küldd el tanárodnak vagy az <a href='mailto:iroda@omisk.hu'>iroda@omisk.hu</a>-ra! Ne felejtsd el ráírni a koreográfia címét.\n\n3. Koreográfus verseny 5. osztálytól\nKészíts koreográfiát az általad választott zenére 45 - 60 mp időtartamban! Javasoljuk, hogy ne elsősorban a most leginkább divatos zenék közül válassz! Hallgass bele klasszikus és kortárs zeneszerzők alkotásaiba! Engedd el  a fantáziádat, figyelj arra, hogy melyik zenéről, mi jut eszedbe és akkor könnyebb lesz elkezdeni az alkotást. Az elkészült koreográfiát vedd fel telefonoddal, töltsd fel  a youtube-ra nem listázott (privát) videóként és a linket küldd el tanárodnak vagy az iroda@omisk.hu-ra! Ne felejts el címet adni a koreográfiának!\n\nA pályaműveket a tanárok továbbítják a zsűrinek a szakmai zsűrinek.\nA pályaművek Arany, Ezüst és Bronz oklevél díjazásban részesülnek.\nA  legjobbak alkotások az alábbi különdíjakat kapják:\nA legjobb koreográfiát alkotója előadhatja következő előadáson\nA legjobb jelmezt elkészítjük alkotójának.\nA legjobb rajz felkerül az omisk.hu-ra.\nAz eredményről e-mailben küldünk értesítést  május 20-ig.\n\n Segítség: Iskolánk honlapján <a href='https://www.omisk.hu'>Iskolánk honlapján</a> és <a href='https://www.youtube.com/channel/UCyG_fD6zAsXyDDuzShoznIA'>youtube csatornánkon</a> sok régebbi koreográfiát megtalálsz, ami ötleteket adhat a koreográfiák, jelmezek és rajzok elkészítéséhez.\n\nBeküldési határidő: április 30.",
         text_second: "",
@@ -1369,7 +1394,7 @@ const pagesConfig = {
         picture_title: "Verseny",
         date: "2020. 10. 25.",
         title: "1. díj az Országos Táncjáték Fesztiválon",
-        index: "telki",
+        index: "telki_competition2",
         text_first:
           "Mády Krisztina Vihar című táncjátéka nagy sikert aratott a XVIII. Országos Táncjáték Fesztiválon.  A 10 perces koreográfia Karl Jenkins zenéjére készült , iskolánk 32 növendéke adta elő. Gratulálunk a koreográfusnak és az előadóknak!",
         text_second: "További sok sikert kívánunk!",
@@ -1381,7 +1406,7 @@ const pagesConfig = {
         picture_title: "Verseny",
         date: "2020. 10. 14.",
         title: "Barátságos verseny Telkiben",
-        index: "telki",
+        index: "telki_competition",
         text_first:
           "Évadnyitó barátságos versenyen  vettünk részt Telkiben. A Magyar Művészi Gimnasztika Szövetség szervezett évadnyitó fesztivált - a helyzethez alkalmazkodva  - nézől nélkül. Kicsit furcsa a lányoknak, viszont  a youtube-on otthonról is követhető , sőt visszanézhető volt. Iskolánkat  Gáspár Noémi és Szentkuti Rita képviselte egy duettel, melynek  címe: Egyedül nem megy. A koreográfiát Benis Katalin készítette.",
         text_second: "",
@@ -1419,6 +1444,7 @@ const pagesConfig = {
         picture_title: "Nyári tábor",
         date: "2020. 08. 10.",
         title: "Ha nyár, akkor OMISK tábor!",
+        index: "omisk_summer_camp_2020",
         text_first:
           "Első turnusunk véget ért, de nincs ok aggodalomra, augusztus utolsó hetében jön a második felvonás.",
         text_second:
@@ -1431,6 +1457,7 @@ const pagesConfig = {
         picture_title: "Program",
         date: "2020. 06. 08.",
         title: "Omisk tábor",
+        index: "omisk_summer_camp_2020_12",
         text_first:
           "Az Óbuda Mozgásművészeti iskola 6-17 évesek számára szervez napközis tábort két turnusban:\n\n<ul><li>2020. augusztus 3-7. között a MOMKultban Tanárok: Taylor Jenny, Taylor Esther, Rózsa Réka, Csöngei Barbara, Dávid Luca, Solti Eszter</li><li>2020. augusztus 24-28. között a békásmegyeri Szent József Házban Tanárink: Taylor Jenny, Taylor Esther, Csöngei Barbara, Dávid Luca, Benis Kati, Rácz-Lakatos Lilla, Solti Eszter</li></ul>",
         text_second:
@@ -1442,6 +1469,7 @@ const pagesConfig = {
         picture_card: "",
         picture_title: "Versenyek",
         date: "2020. 05. 12.",
+        index: "omisk_omisk_competition_5",
         title: "I. Országos Online Szólótánc Verseny ",
         text_first:
           "A hagyományos országos táncversenyek a rendkívüli helyzet miatt idén tavasszal elmaradtak. A Táncpedagógusok Országos Szövetsége viszont új versenyt hirdetett, hogy a résztvevőknek ki se kelljen mozdulniuk otthonról. Az I. Országos Online Szólótánc Versenyen iskolánk tizenegy növendéke indult – Bajnok Luca, Banadics Linda, Banadics Villő, Bánkuti Lili, Buday Virág, Kisfaludy Emese, Matlári Nóra, Sájer Adél, Szilágyi Csenge, Tomka Dorottya és Tóth Adrienn. A versenyzőknek megadott zenére kellett önálló koreográfiát készíteni, felvenni videóra, és elküldeni a zsűrinek értékelésre.",
@@ -1454,6 +1482,7 @@ const pagesConfig = {
         picture_card: "",
         picture_title: "Gála",
         date: "2020. 02. 25.",
+        index: "omisk_gala",
         title: "Gála",
         text_first:
           "Régi produkciók új köntösben – Nosztalgiázhattunk is a 2020-as OMISK Gálán",
@@ -1465,6 +1494,7 @@ const pagesConfig = {
         picture: "entry-seven.jpg",
         picture_card: "",
         picture_title: "Gála",
+        index: "omisk_gala2",
         date: "2020. 01. 10.",
         title: "OMISK klasszikusok a színpadon",
         text_first:
@@ -1476,6 +1506,7 @@ const pagesConfig = {
         picture: "entry-eight.jpg",
         picture_card: "",
         picture_title: "Verseny",
+        index: "omisk_competition_34",
         date: "2019. 12. 01.",
         title: "Adventi Művészi Gimnasztika Gála - Törökbálint",
         text_first:

@@ -190,25 +190,31 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp/programs">
+        <Route exact path="/programs/summer_camp">
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <ProgramPage opt={programs.programPage.summer_camp} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programs/summer_camp/programs">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <Course pageConfig={programs.summerCamp.programs} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp/faq">
+        <Route exact path="/programs/summer_camp/faq">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <Course pageConfig={programs.summerCamp.faq} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp/day">
+        <Route exact path="/programs/summer_camp/day">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <CampDay opt={programs.summerCamp.day} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp/application">
+        <Route exact path="/programs/summer_camp/application">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <CampDay opt={programs.summerCamp.application} />
           <Footer />

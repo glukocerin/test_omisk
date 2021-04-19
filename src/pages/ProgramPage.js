@@ -17,9 +17,17 @@ const TeacherCards = function () {
   let teachersCopy = Object.assign(teachers);
 
   teachersCopy.cards = teachersCopy.cards.filter((teacher) => {
-    return ['Solti Eszter', 'Bozsókiné Taylor Jennifer', 'Benis Katalin', 'Dávid Luca', 'Csöngei Barbara', 'Kovács Bea', 'Markolt-Rózsa Réka', 'Taylor Esther'].includes(teacher.name);
+    return [
+      "Solti Eszter",
+      "Bozsókiné Taylor Jennifer",
+      "Benis Katalin",
+      "Dávid Luca",
+      "Csöngei Barbara",
+      "Kovács Bea",
+      "Markolt-Rózsa Réka",
+      "Taylor Esther",
+    ].includes(teacher.name);
   });
-
 
   return teachersCopy.cards.map((card, index) => (
     <Link to={{ pathname: "/teacher", state: card }} key={index}>
@@ -28,21 +36,31 @@ const TeacherCards = function () {
           src={require(`../assets/img/teachers/${card.picture}`).default}
           alt=""
         />
-        <span className={`${style["teacher-name"]} size-28 extra-bold`}>{card.name}  <ArrowRight className={style["arrow"]} /></span>
+        <span className={`${style["teacher-name"]} size-28 extra-bold`}>
+          {card.name} <ArrowRight className={style["arrow"]} />
+        </span>
       </div>
     </Link>
   ));
 };
 
-const generateTeacherLinks = function(links) {
+const generateTeacherLinks = function (links) {
   return links.map((link, index) => {
     let card = teachers.cards.find((teachercard) => {
       return teachercard.name === link;
     });
 
-    return <Link className={style['teacher-link']} to={{ pathname: "/teacher", state: card }} key={index}>{ link }</Link>
-  })
-}
+    return (
+      <Link
+        className={style["teacher-link"]}
+        to={{ pathname: "/teacher", state: card }}
+        key={index}
+      >
+        {link}
+      </Link>
+    );
+  });
+};
 
 const Images = function ({ gallery }) {
   const images = gallery.map((img, index) => {
@@ -126,7 +144,7 @@ function useCurrentScrollTop() {
   return top;
 }
 
-export default function ProgramPage(props) {
+export default function ProgramPage(props, isSummerCamp) {
   var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)
     .default;
 
@@ -135,269 +153,394 @@ export default function ProgramPage(props) {
   let width = useCurrentWitdh();
 
   let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`).default;
-  return props.opt.title !== 'Nyári tánctábor' ? 
-    (
-      <div style={{ position: "relative" }}>
-        <Modal
-          isOpen={isModalOpen}
-          setModalOpen={setModalOpen}
-          videos={props.opt.videos}
-        />
-        <div className={style["header-wrapper"]}>
-          <div
-            className={style["header"]}
-            style={{ backgroundImage: "url(" + backgroundImage + ")" }}
-          ></div>
-          <label className={`${style["state-location"]} size-13`}>
-            <Link to="/programs">Vissza programjainkra</Link>
-          </label>
-          <label
-            className={`${style["header-title"]} size-90 extra-bold ${
-              props.opt.title === "Versenyek" && style["achievement"]
-            }`}
-          >
-            {props.opt.title}
-          </label>
-          {props.opt.title === "Versenyek" ? (
-            <div className={`${style["achievement-wrapper"]}`}>
-              <Kupa />
-              <Link
-                className={`${style["achievement-button"]} size-12`}
-                to="/programs/achievements"
+  return props.opt.isSummerCamp !== true ? (
+    <div style={{ position: "relative" }}>
+      <Modal
+        isOpen={isModalOpen}
+        setModalOpen={setModalOpen}
+        videos={props.opt.videos}
+      />
+      <div className={style["header-wrapper"]}>
+        <div
+          className={style["header"]}
+          style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+        ></div>
+        <label className={`${style["state-location"]} size-13`}>
+          <Link to="/programs">Vissza programjainkra</Link>
+        </label>
+        <label
+          className={`${style["header-title"]} size-90 extra-bold ${
+            props.opt.title === "Versenyek" && style["achievement"]
+          }`}
+        >
+          {props.opt.title}
+        </label>
+        {props.opt.title === "Versenyek" ? (
+          <div className={`${style["achievement-wrapper"]}`}>
+            <Kupa />
+            <Link
+              className={`${style["achievement-button"]} size-12`}
+              to="/programs/achievements"
+            >
+              Versenyeredményeink
+            </Link>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+      <div className={style["body"]}>
+        <div className={style["info"]}>
+          <div className={style["details"]}>
+            <p
+              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
+            >
+              {props.opt.detailsOne}
+            </p>
+            <div className={`${style["video-wrapper"]}`}>
+              <button
+                className={`${style["open-video"]}`}
+                onClick={() => setModalOpen(true)}
               >
-                Versenyeredményeink
-              </Link>
-            </div>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className={style["body"]}>
-          <div className={style["info"]}>
-            <div className={style["details"]}>
-              <p
-                className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
-              >
-                {props.opt.detailsOne}
-              </p>
-              <div className={`${style["video-wrapper"]}`}>
-                <button
-                  className={`${style["open-video"]}`}
-                  onClick={() => setModalOpen(true)}
+                <label
+                  className={`${style["open-video-label"]} size-36 extra-bold`}
                 >
-                  <label
-                    className={`${style["open-video-label"]} size-36 extra-bold`}
-                  >
-                    {props.opt.title}
-                  </label>
-                  <span className="size-15 extra-bold">Videó lejátszása</span>
-                </button>
-                <img
-                  className={`${style["video-bg"]}`}
-                  src={bg}
-                  alt="super meaningfull text"
-                />
-              </div>
+                  {props.opt.title}
+                </label>
+                <span className="size-15 extra-bold">Videó lejátszása</span>
+              </button>
+              <img
+                className={`${style["video-bg"]}`}
+                src={bg}
+                alt="super meaningfull text"
+              />
+            </div>
+            <p
+              className={`${style["details-text"]} ${style["padding-top"]} ${
+                !!props.opt.detailsThree ? "" : style["padding-bottom"]
+              } size-20`}
+            >
+              {props.opt.detailsTwo}
+            </p>
+            {props.opt.detailsThree ? (
               <p
-                className={`${style["details-text"]} ${style["padding-top"]} ${
-                  !!props.opt.detailsThree ? "" : style["padding-bottom"]
+                className={`${style["details-text"]} ${
+                  !!props.opt.detailsFour ? "" : style["padding-bottom"]
                 } size-20`}
               >
-                {props.opt.detailsTwo}
+                {props.opt.detailsThree || ""}
               </p>
-              {props.opt.detailsThree ? (
-                <p
-                  className={`${style["details-text"]} ${
-                    !!props.opt.detailsFour ? "" : style["padding-bottom"]
-                  } size-20`}
-                >
-                  {props.opt.detailsThree || ""}
-                </p>
-              ) : (
-                ""
-              )}
-              {props.opt.detailsFour ? (
-                <p
-                  className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
-                >
-                  {props.opt.detailsFour || ""}
-                </p>
-              ) : (
-                ""
-              )}
-            </div>
+            ) : (
+              ""
+            )}
+            {props.opt.detailsFour ? (
+              <p
+                className={`${style["details-text"]} ${style["padding-bottom"]} size-20`}
+              >
+                {props.opt.detailsFour || ""}
+              </p>
+            ) : (
+              ""
+            )}
           </div>
-        </div>
-        <div className={style["images"]} style={{ height: width / 2 }}>
-          <Images gallery={props.opt.gallery} />
         </div>
       </div>
-    )
-    :
-    isMobile ?
-      <CampPageMobile props={props} />
-      :
-      (
-        <div style={{ position: "relative" }}>
-          <Modal
-            isOpen={isModalOpen}
-            setModalOpen={setModalOpen}
-            videos={props.opt.videos}
-          />
-          <div className={style["header-wrapper"]}>
-            <div
-              className={style["header"]}
-              style={{ backgroundImage: "url(" + backgroundImage + ")" }}
-            ></div>
-            <label className={`${style["state-location"]} size-13`}>
-              <Link to="/programs">Vissza programjainkra</Link>
-            </label>
-            <label
-              className={`${style["header-title"]} size-90 extra-bold`}
+      <div className={style["images"]} style={{ height: width / 2 }}>
+        <Images gallery={props.opt.gallery} />
+      </div>
+    </div>
+  ) : isMobile ? (
+    <CampPageMobile props={props} />
+  ) : (
+    <div style={{ position: "relative" }}>
+      <Modal
+        isOpen={isModalOpen}
+        setModalOpen={setModalOpen}
+        videos={props.opt.videos}
+      />
+      <div className={style["header-wrapper"]}>
+        <div
+          className={style["header"]}
+          style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+        ></div>
+        <label className={`${style["state-location"]} size-13`}>
+          <Link to="/programs">Vissza programjainkra</Link>
+        </label>
+        <label className={`${style["header-title"]} size-90 extra-bold`}>
+          {props.opt.title}
+        </label>
+      </div>
+      <div className={style["body"]}>
+        <div className={style["info"]}>
+          <div className={style["details"]}>
+            <p
+              className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
             >
-              {props.opt.title}
-            </label>
+              {props.opt.detailsOne}
+            </p>
           </div>
-          <div className={style["body"]}>
-            <div className={style["info"]}>
-              <div className={style["details"]}>
-                <p
-                  className={`${style["details-text"]} ${style["padding-top"]} ${style["padding-bottom"]} ${style["first-paragraph"]} size-20`}
-                >
-                  {props.opt.detailsOne}
-                </p>
+          <div className={style["camp-row"]}>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp01.jpg`).default}
+              alt=""
+            />
+            <div className={style["camp-row-details"]}>
+              <label className="size-54 bold">
+                {props.opt.content.first_block.title}
+              </label>
+              <label
+                className="size-24"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.place,
+                }}
+              ></label>
+              <label className="size-20">
+                {props.opt.content.first_block.programs}
+              </label>
+              <label className="size-20">
+                <span className="bold">Táborvezető: </span>
+                {generateTeacherLinks([props.opt.content.first_block.leader])}
+              </label>
+              <label className="size-20">
+                <span className="bold">Tanárok: </span>
+                {generateTeacherLinks(props.opt.content.first_block.teachers)}
+              </label>
+              <label
+                className="size-20"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.price,
+                }}
+              ></label>
+              <label
+                className="size-20"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.block_desc,
+                }}
+              ></label>
+              {/* TODO: add link */}
+              <button className={`${style["btn"]} ${style["primary"]}`}>
+                Jelentkezem
+              </button>
+            </div>
+          </div>
+          <div className={style["camp-row"]}>
+            <div className={style["camp-row-details"]}>
+              <label className="size-54 bold">
+                {props.opt.content.second_block.title}
+              </label>
+              <label
+                className="size-24"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.place,
+                }}
+              ></label>
+              <label className="size-20">
+                {props.opt.content.second_block.programs}
+              </label>
+              <label className="size-20">
+                <span className="bold">Táborvezető: </span>
+                {generateTeacherLinks([props.opt.content.second_block.leader])}
+              </label>
+              <label className="size-20">
+                <span className="bold">Tanárok: </span>
+                {generateTeacherLinks(props.opt.content.second_block.teachers)}
+              </label>
+              <label
+                className="size-20"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.second_block.price,
+                }}
+              ></label>
+              {/* TODO: add link */}
+              <button className={`${style["btn"]} ${style["primary"]}`}>
+                Jelentkezem
+              </button>
+            </div>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp02.jpg`).default}
+              alt=""
+            />
+          </div>
+          <div
+            className={`${style["camp-row"]} ${style["cover"]} ${style["bg03"]}`}
+          >
+            <div className={style["apply-box"]}>
+              <div className={style["block"]}>
+                <label className="size-54 bold">Jelentkezz most!</label>
+                <label className="size-36 bold">4 féle táncstílus</label>
+                <label className="size-36 bold">Tánc és gimnasztika</label>
+                <label className="size-36 bold">
+                  Tánctermi és szabadtéri programok
+                </label>
+                <label className="size-36 bold">Táborzáró előadás</label>
               </div>
-              <div className={style["camp-row"]}>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp01.jpg`).default} alt=""/>
-                <div className={style["camp-row-details"]}>
-                  <label className="size-54 bold">{ props.opt.content.first_block.title }</label>
-                  <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
-                  <label className="size-20">{ props.opt.content.first_block.programs }</label>
-                  <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.first_block.leader] ) }</label>
-                  <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.first_block.teachers) }</label>
-                  <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.price }}></label>
-                  <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.block_desc }}></label>
-                  {/* TODO: add link */}
-                  <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
-                </div>
-              </div>
-              <div className={style["camp-row"]}>
-                <div className={style["camp-row-details"]}>
-                  <label className="size-54 bold">{ props.opt.content.second_block.title }</label>
-                  <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
-                  <label className="size-20">{ props.opt.content.second_block.programs }</label>
-                  <label className="size-20"><span className="bold">Táborvezető: </span>{ generateTeacherLinks( [props.opt.content.second_block.leader] ) }</label>
-                  <label className="size-20"><span className="bold">Tanárok: </span>{ generateTeacherLinks(props.opt.content.second_block.teachers) }</label>
-                  <label className="size-20" dangerouslySetInnerHTML={{ __html: props.opt.content.second_block.price }}></label>
-                  {/* TODO: add link */}
-                  <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
-                </div>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp02.jpg`).default} alt=""/>
-              </div>
-              <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg03"]}`}>
-                <div className={style["apply-box"]}>
-                  <div className={style["block"]}>
-                    <label className="size-54 bold">Jelentkezz most!</label>
-                    <label className="size-36 bold">4 féle táncstílus</label>
-                    <label className="size-36 bold">Tánc és gimnasztika</label>
-                    <label className="size-36 bold">Tánctermi és szabadtéri programok</label>
-                    <label className="size-36 bold">Táborzáró előadás</label>
-                  </div>
-                  <div className={style["block"]}>
-                    <label className="size-54 bold">Kapcsolat</label>
-                    <label className="size-36 bold">Solti Eszter</label>
-                    <label className="size-36 bold">omisktabor@gmail.com</label>
-                    <label className="size-36 bold">06-30-237-9233</label>
-                  </div>
-                </div>
-              </div>
-              <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}>
-                <label className="size-54 bold">Programjaink</label>
-                {/* TODO: add links */}
-                <div className={style['button-box']}>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Művészi torna</button>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Mozdulatművészet</button>
-                </div>
-                <div className={style['button-box']}>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Kéziszeres gimnasztika</button>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Modern tánc</button>
-                </div>
-                <div className={style['button-box']}>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Koreográfia</button>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Kézműves</button>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Szabad tánc</button>
-                </div>
-                <button className={`${style['btn']} ${style['secondary']}`}>Részletesen a  programokról</button>
-              </div>
-              <div className={`${style["camp-row"]} ${style["teachers"]}`}>
-                <label className="size-54 bold">Tábor tanárai</label>
-                <div className={style['teacher-cards']}>
-                  <TeacherCards />
-                </div>
-              </div>
-              <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}>
-                <div className={style["day-goes-by-box"]}>
-                  <label className="size-36 bold">Hogyan telik egy nap</label>
-                  <label className="size-20">
-                    Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek. <strong>Közös reggel tornával és csapatépítő játékkal</strong> indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk. 
-                  </label>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
-                </div>
-              </div>
-              <div className={style["camp-row"]}>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp06.jpg`).default} alt=""/>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp07.jpg`).default} alt=""/>
-              </div>
-              <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg08"]}`}>
-                <div className={style["daycare-box"]}>
-                  <label className="size-36 bold">Jelentkezés</label>
-                  <label className="size-20">
-                    A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong>
-                  </label>
-                  <Link to={'/programs/camp'} className={`${style['apply-link']} size-20 bold`}>Jelentkezési lap</Link>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
-                </div>
-              </div>
-              <div className={style["camp-row"]}>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp09.jpg`).default} alt=""/>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp10.jpg`).default} alt=""/>
-              </div>
-              <div className={`${style["video-wrapper"]} ${style["camp"]}`}>
-                  <button
-                    className={`${style["open-video"]}`}
-                    onClick={() => setModalOpen(true)}
-                  >
-                    <label
-                      className={`${style["open-video-label"]} size-36 extra-bold`}
-                    >
-                    Tábori videók
-                    </label>
-                    <span className="size-15 extra-bold">Videó indítása</span>
-                  </button>
-                  <img
-                    className={`${style["video-bg"]}`}
-                    src={bg}
-                    alt="super meaningfull text"
-                  />
-              </div>
-              <div className={style["camp-row"]}>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp12.jpg`).default} alt=""/>
-                <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp13.jpg`).default} alt=""/>
-              </div>
-              <div className={`${style["camp-row"]} ${style["cover"]} ${style["bg14"]}`}>
-                <div className={style["faq-box"]}>
-                  <label className="size-36 bold">Gyakori kérdések</label>
-                  <label className="size-20 bold">
-                    Mikor kezdődik a tábori nap és meddig tart?
-                  </label>
-                  <label className="size-20">
-                    A táborba minden nap reggel 8 órától lehet érkezni, a programok  9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a tábori nap és meddig tart?ári felügyeletet, így akinek reggel sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb, lehet csak a programok kezdetére érkezni.<br/>...
-                  </label>
-                  <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
-                </div>
+              <div className={style["block"]}>
+                <label className="size-54 bold">Kapcsolat</label>
+                <label className="size-36 bold">Solti Eszter</label>
+                <label className="size-36 bold">omisktabor@gmail.com</label>
+                <label className="size-36 bold">06-30-237-9233</label>
               </div>
             </div>
           </div>
+          <div
+            className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}
+          >
+            <label className="size-54 bold">Programjaink</label>
+            {/* TODO: add links */}
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Művészi torna
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Mozdulatművészet
+              </button>
+            </div>
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Kéziszeres gimnasztika
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Modern tánc
+              </button>
+            </div>
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Koreográfia
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Kézműves
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Szabad tánc
+              </button>
+            </div>
+            <button className={`${style["btn"]} ${style["secondary"]}`}>
+              Részletesen a programokról
+            </button>
+          </div>
+          <div className={`${style["camp-row"]} ${style["teachers"]}`}>
+            <label className="size-54 bold">Tábor tanárai</label>
+            <div className={style["teacher-cards"]}>
+              <TeacherCards />
+            </div>
+          </div>
+          <div
+            className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}
+          >
+            <div className={style["day-goes-by-box"]}>
+              <label className="size-36 bold">Hogyan telik egy nap</label>
+              <label className="size-20">
+                Már reggel 8 órától várjuk a táborozókat, a programok pedig 9
+                órakor kezdődnek.{" "}
+                <strong>Közös reggel tornával és csapatépítő játékkal</strong>{" "}
+                indul a nap, ahol a felkészülünk a táncórákra és jobban
+                megismerkedünk.
+              </label>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Tovább olvasom
+              </button>
+            </div>
+          </div>
+          <div className={style["camp-row"]}>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp06.jpg`).default}
+              alt=""
+            />
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp07.jpg`).default}
+              alt=""
+            />
+          </div>
+          <div
+            className={`${style["camp-row"]} ${style["cover"]} ${style["bg08"]}`}
+          >
+            <div className={style["daycare-box"]}>
+              <label className="size-36 bold">Jelentkezés</label>
+              <label className="size-20">
+                A napközis táborokba az alábbi linken található{" "}
+                <strong>jelentkezési lap online kitöltésével lehet:</strong>
+              </label>
+              <Link
+                to={"/programs/camp"}
+                className={`${style["apply-link"]} size-20 bold`}
+              >
+                Jelentkezési lap
+              </Link>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Tovább olvasom
+              </button>
+            </div>
+          </div>
+          <div className={style["camp-row"]}>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp09.jpg`).default}
+              alt=""
+            />
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp10.jpg`).default}
+              alt=""
+            />
+          </div>
+          <div className={`${style["video-wrapper"]} ${style["camp"]}`}>
+            <button
+              className={`${style["open-video"]}`}
+              onClick={() => setModalOpen(true)}
+            >
+              <label
+                className={`${style["open-video-label"]} size-36 extra-bold`}
+              >
+                Tábori videók
+              </label>
+              <span className="size-15 extra-bold">Videó indítása</span>
+            </button>
+            <img
+              className={`${style["video-bg"]}`}
+              src={bg}
+              alt="super meaningfull text"
+            />
+          </div>
+          <div className={style["camp-row"]}>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp12.jpg`).default}
+              alt=""
+            />
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp13.jpg`).default}
+              alt=""
+            />
+          </div>
+          <div
+            className={`${style["camp-row"]} ${style["cover"]} ${style["bg14"]}`}
+          >
+            <div className={style["faq-box"]}>
+              <label className="size-36 bold">Gyakori kérdések</label>
+              <label className="size-20 bold">
+                Mikor kezdődik a tábori nap és meddig tart?
+              </label>
+              <label className="size-20">
+                A táborba minden nap reggel 8 órától lehet érkezni, a programok
+                9 órakor kezdődnek. 8 órától biztosítjuk a tanMikor kezdődik a
+                tábori nap és meddig tart?ári felügyeletet, így akinek reggel
+                sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb,
+                lehet csak a programok kezdetére érkezni.
+                <br />
+                ...
+              </label>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Tovább olvasom
+              </button>
+            </div>
+          </div>
         </div>
-      );
+      </div>
+    </div>
+  );
 }
