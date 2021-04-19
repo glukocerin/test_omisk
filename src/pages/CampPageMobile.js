@@ -1,3 +1,4 @@
+import React from "react";
 import style from "../assets/css/programPage.module.css";
 import "../assets/css/blog.css";
 
@@ -17,9 +18,7 @@ export default function CampPageMobile({ props }) {
         <label className={`${style["state-location"]} size-13`}>
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
-        <label
-          className={`${style["header-title"]} size-90 extra-bold`}
-        >
+        <label className={`${style["header-title"]} size-90 extra-bold`}>
           {props.opt.title}
         </label>
       </div>
@@ -27,25 +26,58 @@ export default function CampPageMobile({ props }) {
         <div className={style["info"]}>
           <div className={style["camp-row"]}>
             <div className={style["camp-row-details"]}>
-              <label className="size-32 bold">{ props.opt.content.first_block.title }</label>
-              <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
-              <label className="size-32 bold">{ props.opt.content.second_block.title }</label>
-              <label className="size-24" dangerouslySetInnerHTML={{ __html: props.opt.content.first_block.place }}></label>
+              <label className="size-32 bold">
+                {props.opt.content.first_block.title}
+              </label>
+              <label
+                className="size-24"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.place,
+                }}
+              ></label>
+              <label className="size-32 bold">
+                {props.opt.content.second_block.title}
+              </label>
+              <label
+                className="size-24"
+                dangerouslySetInnerHTML={{
+                  __html: props.opt.content.first_block.place,
+                }}
+              ></label>
             </div>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp01.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp01.jpg`).default}
+              alt=""
+            />
           </div>
           <div className={style["camp-row"]}>
             <div className={style["camp-row-details"]}>
-              <label className="size-20"><strong>Korosztályok: <span className={style['blue']}>6-12 és 13-17</span></strong></label>
               <label className="size-20">
-                <span className="bold">Részvételi díj: 42 000Ft</span><br/>
-                <span>Iskolánk növendékeinek</span><br/>
-                <span>kedvezményesen: <strong>39.000 Ft</strong></span>
+                <strong>
+                  Korosztályok:{" "}
+                  <span className={style["blue"]}>6-12 és 13-17</span>
+                </strong>
+              </label>
+              <label className="size-20">
+                <span className="bold">Részvételi díj: 42 000Ft</span>
+                <br />
+                <span>Iskolánk növendékeinek</span>
+                <br />
+                <span>
+                  kedvezményesen: <strong>39.000 Ft</strong>
+                </span>
               </label>
               {/* TODO: add link */}
-              <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
+              <button className={`${style["btn"]} ${style["primary"]}`}>
+                Jelentkezem
+              </button>
             </div>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp02.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp02.jpg`).default}
+              alt=""
+            />
           </div>
           <div className={style["details"]}>
             <p
@@ -55,13 +87,21 @@ export default function CampPageMobile({ props }) {
             </p>
           </div>
           <div className={style["camp-row"]}>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp03cover.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={
+                require(`../assets/img/programs/camp/camp03cover.jpg`).default
+              }
+              alt=""
+            />
             <div className={style["apply-box"]}>
               <div className={style["block"]}>
                 <label className="size-32 bold">Jelentkezz most!</label>
                 <label className="size-20 bold">4 féle táncstílus</label>
                 <label className="size-20 bold">Tánc és gimnasztika</label>
-                <label className="size-20 bold">Tánctermi és szabadtéri programok</label>
+                <label className="size-20 bold">
+                  Tánctermi és szabadtéri programok
+                </label>
                 <label className="size-20 bold">Táborzáró előadás</label>
               </div>
               <div className={style["block"]}>
@@ -73,65 +113,135 @@ export default function CampPageMobile({ props }) {
             </div>
           </div>
           <div className={`${style["camp-row"]} ${style["programs"]}`}>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp04cover.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={
+                require(`../assets/img/programs/camp/camp04cover.jpg`).default
+              }
+              alt=""
+            />
             <label className="size-32 bold">Programjaink</label>
             {/* TODO: add links */}
-            <div className={style['button-box']}>
-              <button className={`${style['btn']} ${style['secondary']}`}>Művészi torna</button>
-              <button className={`${style['btn']} ${style['secondary']}`}>Mozdulatművészet</button>
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Művészi torna
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Mozdulatművészet
+              </button>
             </div>
-            <div className={style['button-box']}>
-              <button className={`${style['btn']} ${style['secondary']}`}>Kéziszeres gimnasztika</button>
-              <button className={`${style['btn']} ${style['secondary']}`}>Modern tánc</button>
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Kéziszeres gimnasztika
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Modern tánc
+              </button>
             </div>
-            <div className={style['button-box']}>
-              <button className={`${style['btn']} ${style['secondary']}`}>Koreográfia</button>
-              <button className={`${style['btn']} ${style['secondary']}`}>Kézműves</button>
-              <button className={`${style['btn']} ${style['secondary']}`}>Szabad tánc</button>
+            <div className={style["button-box"]}>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Koreográfia
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Kézműves
+              </button>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Szabad tánc
+              </button>
             </div>
-            <button className={`${style['btn']} ${style['secondary']}`}>Részletesen a  programokról</button>
+            <button className={`${style["btn"]} ${style["secondary"]}`}>
+              Részletesen a programokról
+            </button>
           </div>
           <div className={`${style["camp-row"]} ${style["teachers"]}`}>
             <label className="size-32 bold">Tanáraink</label>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/campmobileteachers.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={
+                require(`../assets/img/programs/camp/campmobileteachers.jpg`)
+                  .default
+              }
+              alt=""
+            />
             <div className={style["teachers-box"]}>
-              <div className={style['button-box']}>
-                <button className={`${style['btn']} ${style['secondary']}`}>Solti Eszter</button>
-                <button className={`${style['btn']} ${style['secondary']}`}>B. Taylor Jennifer</button>
+              <div className={style["button-box"]}>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Solti Eszter
+                </button>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  B. Taylor Jennifer
+                </button>
               </div>
-              <div className={style['button-box']}>
-                <button className={`${style['btn']} ${style['secondary']}`}>Benis Katalin</button>
-                <button className={`${style['btn']} ${style['secondary']}`}>Dávid Luca</button>
+              <div className={style["button-box"]}>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Benis Katalin
+                </button>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Dávid Luca
+                </button>
               </div>
-              <div className={style['button-box']}>
-                <button className={`${style['btn']} ${style['secondary']}`}>Csöngei Barbara</button>
-                <button className={`${style['btn']} ${style['secondary']}`}>Kovács Bea</button>
+              <div className={style["button-box"]}>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Csöngei Barbara
+                </button>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Kovács Bea
+                </button>
               </div>
-              <div className={style['button-box']}>
-                <button className={`${style['btn']} ${style['secondary']}`}>Markolt-Rózsa Réka</button>
-                <button className={`${style['btn']} ${style['secondary']}`}>Taylor Esther</button>
+              <div className={style["button-box"]}>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Markolt-Rózsa Réka
+                </button>
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Taylor Esther
+                </button>
               </div>
             </div>
           </div>
           <div className={style["camp-row"]}>
             <div className={style["day-goes-by-box"]}>
               <label className="size-32 bold">Hogyan telik egy nap</label>
-              <label className="size-20">Már reggel 8 órától várjuk a táborozókat, a programok pedig 9 órakor kezdődnek.<span className="bold">Közös reggel tornával és csapatépítő játékkal</span> indul a nap, ahol a felkészülünk a táncórákra és jobban megismerkedünk.</label>
-              <button className={`${style['btn']} ${style['secondary']}`}>Tovább olvasom</button>
+              <label className="size-20">
+                Már reggel 8 órától várjuk a táborozókat, a programok pedig 9
+                órakor kezdődnek.
+                <span className="bold">
+                  Közös reggel tornával és csapatépítő játékkal
+                </span>{" "}
+                indul a nap, ahol a felkészülünk a táncórákra és jobban
+                megismerkedünk.
+              </label>
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Tovább olvasom
+              </button>
             </div>
           </div>
           <div className={style["camp-row"]}>
-            <img className={style["camp-row-image"]} src={require(`../assets/img/programs/camp/camp06.jpg`).default} alt=""/>
+            <img
+              className={style["camp-row-image"]}
+              src={require(`../assets/img/programs/camp/camp06.jpg`).default}
+              alt=""
+            />
           </div>
           <div className={style["camp-row"]}>
             <div className={style["daycare-box"]}>
               <label className="size-36 bold">Jelentkezés</label>
               <label className="size-20">
-                A napközis táborokba az alábbi linken található <strong>jelentkezési lap online kitöltésével lehet:</strong>
+                A napközis táborokba az alábbi linken található{" "}
+                <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
-              <Link to={'/programs/camp'} className={`${style['apply-link']} size-20 bold`}>Jelentkezési lap</Link>
-              <button className={`${style['btn']} ${style['primary']}`}>Jelentkezem</button>
-              <label className="size-20">A részvételi díjat  természetesen visszatérítjük, ha  a korlátozások miatt a táborokat nem tudjuk megtartani</label>
+              <Link
+                to={"/programs/camp"}
+                className={`${style["apply-link"]} size-20 bold`}
+              >
+                Jelentkezési lap
+              </Link>
+              <button className={`${style["btn"]} ${style["primary"]}`}>
+                Jelentkezem
+              </button>
+              <label className="size-20">
+                A részvételi díjat természetesen visszatérítjük, ha a
+                korlátozások miatt a táborokat nem tudjuk megtartani
+              </label>
             </div>
           </div>
         </div>

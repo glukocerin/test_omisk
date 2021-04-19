@@ -96,10 +96,15 @@
 }
 
 .download-content {
-  display: block;
+  display: flex;
   padding: 0.5rem 10.25rem;
   margin: 0 auto;
   width: 58rem;
+  align-items: center;
+}
+
+.download-icon {
+  margin-right: 20px;
 }
 
 .details-text {
@@ -176,7 +181,6 @@
 .images {
   height: 100%;
   position: relative;
-  margin-bottom: 20vh;
 }
 
 .image-0 {
@@ -541,7 +545,6 @@
   .images {
     position: static;
     height: 100% !important;
-    margin-bottom: 20vh;
   }
 
   .image-0 {
@@ -656,7 +659,7 @@
     margin: unset;
     margin-top: 0.5rem;
   }
-  .camp-row .button-box .btn.secondary + .btn.secondary{
+  .camp-row .button-box .btn.secondary + .btn.secondary {
     margin-left: 0.5rem;
   }
   .camp-row .button-box,

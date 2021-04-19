@@ -107,7 +107,7 @@ export default function ProgramPage(props) {
             ></p>
             {props.opt.isDownloadContent && (
               <a
-                href="https://omisk.hu/documents/jelentkezesi_lap+beleegyezo_nyilatkozat.pdf"
+                href="https://omisk.hu/documents/beleegyezo_nyilatkozat.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${style["download-content"]} size-20 thin`}
