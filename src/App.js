@@ -88,7 +88,6 @@ function App() {
           <FooterMobile />
         </Route>
         {blogEntries}
-
         <Route path="/operation">
           <Navigation BackgroundColor="green" isHeaderFixed="true" />
           <Operation />
