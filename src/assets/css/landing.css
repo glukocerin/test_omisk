@@ -116,6 +116,10 @@
   /* background: var(--color-gray-new-0); */
   background: var(--color-green-2);
 }
+.left.one .titles {
+  display: flex;
+  flex-direction: column;
+}
 .left.one .title {
   color: var(--color-gray-0);
   white-space: pre-wrap;
@@ -875,9 +879,27 @@
   .left.one .content-block {
     margin-left: unset;
   }
+  .left.one .titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .left.one .title {
     font-size: 38px;
   }
+  .left.one .title.new {
+    font-size: 8vw;
+  }
+  .left.one .title.new:first-child {
+    padding-left: 0;
+  }
+  .left.one .title.new.inverse {
+    margin-top: 0;
+  }
+  .left.one .size-20 {
+    margin: 19px 0;
+    line-height: 17px;
+}
   .left.one .sub-title {
     margin-top: 1rem;
   }
@@ -905,11 +927,13 @@
   .right.one {
     order: 1;
     background-size: 100% auto;
-    background-color: var(--color-gray-new-0);
+    /* background-color: var(--color-gray-new-0); */
+    background-color: var(--color-green-2);
     background-position: top;
     top: 0;
     height: 50vh;
-    background-image: url("../img/landing_bg_1_mobil.jpg");
+    /* background-image: url("../img/landing_bg_1_mobil.jpg"); */
+    background-image: url("../img/landing_bg_1_mobil_new.jpg");
   }
   .mobile-card.one {
     order: 3;
@@ -968,6 +992,7 @@
     margin-top: 2rem;
     margin-bottom: 0.875rem;
   }
+  .left.one .btn,
   .left.three .button-box .btn {
     padding: 10px 22px;
     font-size: 12px;

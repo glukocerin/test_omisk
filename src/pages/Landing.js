@@ -216,10 +216,16 @@ export default function Landing({ dotChange }) {
             onClick={() => setActiveDot(2)}
           />
           <label className="size-12 thin">Görgess lefelé</label> */}
-          <label className="title extra-bold size-83 new">Omisk</label>
-          <label className="title extra-bold size-83 new inverse ">Tánctábor</label>
-          <label className="title extra-bold size-83 new inverse ">2021</label>
-          <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
+          <div className="titles">
+            <label className="title extra-bold size-83 new">Omisk</label>
+            <label className="title extra-bold size-83 new inverse ">Tánctábor</label>
+            <label className="title extra-bold size-83 new inverse ">2021</label>
+          </div>
+          { isMobile ? 
+            <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nKorosztályok:  6-12 és 13 -17`}</label>
+            :
+            <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
+          }
           <Link
               onClick={() => {
                 dispatch(updatePageindex({ payload: activeDot }));
