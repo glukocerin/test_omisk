@@ -442,9 +442,11 @@ export default function ProgramPage(props, isSummerCamp) {
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
                 megismerkedünk.
               </label>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Tovább olvasom
-              </button>
+              <Link to="/programs/summer_camp/programs">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Tovább olvasom
+                </button>
+              </Link>
             </div>
           </div>
           <div className={style["camp-row"]}>
