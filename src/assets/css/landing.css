@@ -113,11 +113,27 @@
   z-index: 2;
 }
 .left.one {
-  background: var(--color-gray-new-0);
+  /* background: var(--color-gray-new-0); */
+  background: var(--color-green-2);
 }
 .left.one .title {
   color: var(--color-gray-0);
   white-space: pre-wrap;
+}
+.left.one .title.new {
+  margin-right: auto;
+  padding: 0 1vw;
+}
+.left.one .title.new.inverse {
+  background: var(--color-gray-0);
+  color: var(--color-green-2);
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}
+.left.one .size-20 {
+  white-space: pre-wrap;
+  margin: 5.6vh 0;
+  line-height: 1.5rem;
 }
 .left.one .sub-title {
   color: var(--color-gray-new-1);
@@ -358,6 +374,7 @@
 .left.three .button-box {
   margin-top: 6.4vh;
 }
+.left.one .btn,
 .left.three .button-box .btn {
   padding: 1vh 1.302vw;
   font-size: 0.781vw;
@@ -365,6 +382,10 @@
   transition: border-color 300ms, background-color 300ms, color 300ms;
   cursor: pointer;
 }
+.left.one .btn {
+  padding: 15px 50px;
+}
+.left.one .btn:focus,
 .left.three .button-box .btn:focus {
   outline: unset;
 }
@@ -384,15 +405,18 @@
   color: var(--color-btn-active-green-2);
   border: 2px solid var(--color-btn-active-green-2);
 }
+.left.one .btn-secondary,
 .left.three .button-box .btn-secondary {
   color: var(--color-btn-normal-green);
   background: var(--color-btn-normal-green-2);
   border: 2px solid var(--color-btn-normal-green-2);
 }
+.left.one .btn-secondary:hover,
 .left.three .button-box .btn-secondary:hover {
   background: var(--color-btn-hover-green-2);
   border: 2px solid var(--color-btn-hover-green-2);
 }
+.left.one .btn-secondary:active,
 .left.three .button-box .btn-secondary:active {
   background: var(--color-btn-active-green-2);
   border: 2px solid var(--color-btn-active-green-2);

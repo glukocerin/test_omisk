@@ -203,7 +203,7 @@ export default function Landing({ dotChange }) {
     <div className="landing" onWheel={(e) => scroller(e)}>
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
-          <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét.`}</label>
+          {/* <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét.`}</label>
           <label className="sub-title extra-bold size-32">
             Óbuda Mozgásművészeti Iskola
           </label>
@@ -215,7 +215,19 @@ export default function Landing({ dotChange }) {
             className="double-arrow-down"
             onClick={() => setActiveDot(2)}
           />
-          <label className="size-12 thin">Görgess lefelé</label>
+          <label className="size-12 thin">Görgess lefelé</label> */}
+          <label className="title extra-bold size-83 new">Omisk</label>
+          <label className="title extra-bold size-83 new inverse ">Tánctábor</label>
+          <label className="title extra-bold size-83 new inverse ">2021</label>
+          <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
+          <Link
+              onClick={() => {
+                dispatch(updatePageindex({ payload: activeDot }));
+              }}
+              to="/programs/summer_camp"
+            >
+              <button className="btn btn-secondary">Részletek</button>
+          </Link>
         </div>
       </div>
       <div className={`right one ${activeDot === 1 ? "active" : ""}`}></div>
