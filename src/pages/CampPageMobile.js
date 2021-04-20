@@ -68,10 +68,11 @@ export default function CampPageMobile({ props }) {
                   kedvezményesen: <strong>39.000 Ft</strong>
                 </span>
               </label>
-              {/* TODO: add link */}
-              <button className={`${style["btn"]} ${style["primary"]}`}>
-                Jelentkezem
-              </button>
+              <Link to="/programs/summer_camp/application">
+                <button className={`${style["btn"]} ${style["primary"]}`}>
+                  Jelentkezem
+                </button>
+              </Link>
             </div>
             <img
               className={style["camp-row-image"]}
@@ -121,7 +122,6 @@ export default function CampPageMobile({ props }) {
               alt=""
             />
             <label className="size-32 bold">Programjaink</label>
-            {/* TODO: add links */}
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Művészi torna
@@ -149,9 +149,11 @@ export default function CampPageMobile({ props }) {
                 Szabad tánc
               </button>
             </div>
-            <button className={`${style["btn"]} ${style["secondary"]}`}>
-              Részletesen a programokról
-            </button>
+            <Link to="/programs/summer_camp/programs">
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Részletesen a programokról
+              </button>
+            </Link>
           </div>
           <div className={`${style["camp-row"]} ${style["teachers"]}`}>
             <label className="size-32 bold">Tanáraink</label>
@@ -210,9 +212,11 @@ export default function CampPageMobile({ props }) {
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
                 megismerkedünk.
               </label>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Tovább olvasom
-              </button>
+              <Link to="/programs/summer_camp/programs">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Tovább olvasom
+                </button>
+              </Link>
             </div>
           </div>
           <div className={style["camp-row"]}>
@@ -229,15 +233,18 @@ export default function CampPageMobile({ props }) {
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
-              <Link
-                to={"/programs/camp"}
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
                 className={`${style["apply-link"]} size-20 bold`}
               >
                 Jelentkezési lap
+              </a>
+              <Link to="/programs/summer_camp/application">
+                <button className={`${style["btn"]} ${style["primary"]}`}>
+                  Jelentkezem
+                </button>
               </Link>
-              <button className={`${style["btn"]} ${style["primary"]}`}>
-                Jelentkezem
-              </button>
               <label className="size-20">
                 A részvételi díjat természetesen visszatérítjük, ha a
                 korlátozások miatt a táborokat nem tudjuk megtartani
