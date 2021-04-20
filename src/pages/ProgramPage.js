@@ -318,10 +318,11 @@ export default function ProgramPage(props, isSummerCamp) {
                   __html: props.opt.content.first_block.block_desc,
                 }}
               ></label>
-              {/* TODO: add link */}
-              <button className={`${style["btn"]} ${style["primary"]}`}>
-                Jelentkezem
-              </button>
+              <Link to="/programs/summer_camp/application">
+                <button className={`${style["btn"]} ${style["primary"]}`}>
+                  Jelentkezem
+                </button>
+              </Link>
             </div>
           </div>
           <div className={style["camp-row"]}>
@@ -352,10 +353,11 @@ export default function ProgramPage(props, isSummerCamp) {
                   __html: props.opt.content.second_block.price,
                 }}
               ></label>
-              {/* TODO: add link */}
-              <button className={`${style["btn"]} ${style["primary"]}`}>
-                Jelentkezem
-              </button>
+              <Link to="/programs/summer_camp/application">
+                <button className={`${style["btn"]} ${style["primary"]}`}>
+                  Jelentkezem
+                </button>
+              </Link>
             </div>
             <img
               className={style["camp-row-image"]}
@@ -388,7 +390,6 @@ export default function ProgramPage(props, isSummerCamp) {
             className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}
           >
             <label className="size-54 bold">Programjaink</label>
-            {/* TODO: add links */}
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Művészi torna
@@ -401,6 +402,7 @@ export default function ProgramPage(props, isSummerCamp) {
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Kéziszeres gimnasztika
               </button>
+
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Modern tánc
               </button>
@@ -416,9 +418,11 @@ export default function ProgramPage(props, isSummerCamp) {
                 Szabad tánc
               </button>
             </div>
-            <button className={`${style["btn"]} ${style["secondary"]}`}>
-              Részletesen a programokról
-            </button>
+            <Link to="/programs/summer_camp/programs">
+              <button className={`${style["btn"]} ${style["secondary"]}`}>
+                Részletesen a programokról
+              </button>
+            </Link>
           </div>
           <div className={`${style["camp-row"]} ${style["teachers"]}`}>
             <label className="size-54 bold">Tábor tanárai</label>
@@ -464,15 +468,18 @@ export default function ProgramPage(props, isSummerCamp) {
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
-              <Link
-                to={"/programs/camp"}
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
                 className={`${style["apply-link"]} size-20 bold`}
               >
                 Jelentkezési lap
+              </a>
+              <Link to="/programs/summer_camp/application">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Tovább olvasom
+                </button>
               </Link>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Tovább olvasom
-              </button>
             </div>
           </div>
           <div className={style["camp-row"]}>
@@ -534,9 +541,11 @@ export default function ProgramPage(props, isSummerCamp) {
                 <br />
                 ...
               </label>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Tovább olvasom
-              </button>
+              <Link to="/programs/summer_camp/faq">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Tovább olvasom
+                </button>
+              </Link>
             </div>
           </div>
         </div>
