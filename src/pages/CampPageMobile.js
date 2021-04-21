@@ -3,6 +3,9 @@ import style from "../assets/css/programPage.module.css";
 import "../assets/css/blog.css";
 
 import { Link } from "react-router-dom";
+import pagesConfig from "../assets/pagesConfig";
+
+const { teachers } = pagesConfig;
 
 export default function CampPageMobile({ props }) {
   var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)
@@ -123,20 +126,26 @@ export default function CampPageMobile({ props }) {
             />
             <label className="size-32 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Művészi torna
-              </button>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Mozdulatművészet
-              </button>
+              <Link to="/courses/eurhythmics">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Művészi torna
+                </button>
+              </Link>
+              <Link to="/courses/callisthenics">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Mozdulatművészet
+                </button>
+              </Link>
             </div>
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Kéziszeres gimnasztika
               </button>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Modern tánc
-              </button>
+              <Link to="/courses/modern">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Modern tánc
+                </button>
+              </Link>
             </div>
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
@@ -167,36 +176,86 @@ export default function CampPageMobile({ props }) {
             />
             <div className={style["teachers-box"]}>
               <div className={style["button-box"]}>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Solti Eszter
-                </button>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  B. Taylor Jennifer
-                </button>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[6],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Solti Eszter
+                  </button>
+                </Link>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[8],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    B. Taylor Jennifer
+                  </button>
+                </Link>
+              </div>
+
+              <div className={style["button-box"]}>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[1],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Benis Katalin
+                  </button>
+                </Link>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[11],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Dávid Luca
+                  </button>
+                </Link>
               </div>
               <div className={style["button-box"]}>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Benis Katalin
-                </button>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Dávid Luca
-                </button>
-              </div>
-              <div className={style["button-box"]}>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Csöngei Barbara
-                </button>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Kovács Bea
-                </button>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[5],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Csöngei Barbara
+                  </button>
+                </Link>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[4],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Kovács Bea
+                  </button>
+                </Link>
               </div>
               <div className={style["button-box"]}>
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Markolt-Rózsa Réka
                 </button>
-                <button className={`${style["btn"]} ${style["secondary"]}`}>
-                  Taylor Esther
-                </button>
+                <Link
+                  to={{
+                    pathname: "/teacher",
+                    state: teachers.cards[9],
+                  }}
+                >
+                  <button className={`${style["btn"]} ${style["secondary"]}`}>
+                    Taylor Esther
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -212,7 +271,7 @@ export default function CampPageMobile({ props }) {
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
                 megismerkedünk.
               </label>
-              <Link to="/programs/summer_camp/programs">
+              <Link to="/programs/summer_camp/day">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Tovább olvasom
                 </button>
