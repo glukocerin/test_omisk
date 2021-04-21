@@ -26,7 +26,7 @@ export default function CampPageMobile({ props }) {
         <div className={style["info"]}>
           <div className={style["camp-row"]}>
             <div className={style["camp-row-details"]}>
-              <label className="size-32 bold">
+              <label className="size-32 extra-bold">
                 {props.opt.content.first_block.title}
               </label>
               <label
@@ -35,7 +35,7 @@ export default function CampPageMobile({ props }) {
                   __html: props.opt.content.first_block.place,
                 }}
               ></label>
-              <label className="size-32 bold">
+              <label className="size-32 extra-bold">
                 {props.opt.content.second_block.title}
               </label>
               <label
@@ -60,7 +60,7 @@ export default function CampPageMobile({ props }) {
                 </strong>
               </label>
               <label className="size-20">
-                <span className="bold">Részvételi díj: 42 000Ft</span>
+                <span className="extra-bold">Részvételi díj: 42 000Ft</span>
                 <br />
                 <span>Iskolánk növendékeinek</span>
                 <br />
@@ -97,19 +97,19 @@ export default function CampPageMobile({ props }) {
             />
             <div className={style["apply-box"]}>
               <div className={style["block"]}>
-                <label className="size-32 bold">Jelentkezz most!</label>
-                <label className="size-20 bold">4 féle táncstílus</label>
-                <label className="size-20 bold">Tánc és gimnasztika</label>
-                <label className="size-20 bold">
+                <label className="size-32 extra-bold">Jelentkezz most!</label>
+                <label className="size-20 extra-bold">4 féle táncstílus</label>
+                <label className="size-20 extra-bold">Tánc és gimnasztika</label>
+                <label className="size-20 extra-bold">
                   Tánctermi és szabadtéri programok
                 </label>
-                <label className="size-20 bold">Táborzáró előadás</label>
+                <label className="size-20 extra-bold">Táborzáró előadás</label>
               </div>
               <div className={style["block"]}>
-                <label className="size-32 bold">Kapcsolat</label>
-                <label className="size-20 bold">Solti Eszter</label>
-                <label className="size-20 bold">omisktabor@gmail.com</label>
-                <label className="size-20 bold">06-30-237-9233</label>
+                <label className="size-32 extra-bold">Kapcsolat</label>
+                <label className="size-20 extra-bold">Solti Eszter</label>
+                <label className="size-20 extra-bold">omisktabor@gmail.com</label>
+                <label className="size-20 extra-bold">06-30-237-9233</label>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function CampPageMobile({ props }) {
               }
               alt=""
             />
-            <label className="size-32 bold">Programjaink</label>
+            <label className="size-32 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Művészi torna
@@ -156,7 +156,7 @@ export default function CampPageMobile({ props }) {
             </Link>
           </div>
           <div className={`${style["camp-row"]} ${style["teachers"]}`}>
-            <label className="size-32 bold">Tanáraink</label>
+            <label className="size-32 extra-bold">Tanáraink</label>
             <img
               className={style["camp-row-image"]}
               src={
@@ -202,11 +202,11 @@ export default function CampPageMobile({ props }) {
           </div>
           <div className={style["camp-row"]}>
             <div className={style["day-goes-by-box"]}>
-              <label className="size-32 bold">Hogyan telik egy nap</label>
+              <label className="size-32 extra-bold">Hogyan telik egy nap</label>
               <label className="size-20">
                 Már reggel 8 órától várjuk a táborozókat, a programok pedig 9
                 órakor kezdődnek.
-                <span className="bold">
+                <span className="extra-bold">
                   Közös reggel tornával és csapatépítő játékkal
                 </span>{" "}
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
@@ -228,7 +228,7 @@ export default function CampPageMobile({ props }) {
           </div>
           <div className={style["camp-row"]}>
             <div className={style["daycare-box"]}>
-              <label className="size-36 bold">Jelentkezés</label>
+              <label className="size-36 extra-bold">Jelentkezés</label>
               <label className="size-20">
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
@@ -236,7 +236,7 @@ export default function CampPageMobile({ props }) {
               <a
                 target="_blank"
                 href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
-                className={`${style["apply-link"]} size-20 bold`}
+                className={`${style["apply-link"]} size-20 extra-bold`}
               >
                 Jelentkezési lap
               </a>
@@ -249,6 +249,24 @@ export default function CampPageMobile({ props }) {
                 A részvételi díjat természetesen visszatérítjük, ha a
                 korlátozások miatt a táborokat nem tudjuk megtartani
               </label>
+            </div>
+          </div>
+          <div
+            className={style["camp-row"]}
+          >
+            <div className={style["faq-box"]}>
+              <label className="size-36 extra-bold">Gyakori kérdések</label>
+              <label className="size-20 extra-bold">
+                A barátnőjével, testvérével egy csoportba kerülhet gyerekem?
+              </label>
+              <label className="size-20">
+                Természetesen az ilyen jellegű kéréseket teljesítjük. Testvéreknél is, ha nem túl nagy a korkülönbség, akkor természetesen megoldható - ha így szeretnék.
+              </label>
+              <Link to="/programs/summer_camp/faq">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Tovább olvasom
+                </button>
+              </Link>
             </div>
           </div>
         </div>

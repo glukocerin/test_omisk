@@ -286,7 +286,7 @@ export default function ProgramPage(props, isSummerCamp) {
               alt=""
             />
             <div className={style["camp-row-details"]}>
-              <label className="size-54 bold">
+              <label className="size-54 extra-bold">
                 {props.opt.content.first_block.title}
               </label>
               <label
@@ -299,11 +299,11 @@ export default function ProgramPage(props, isSummerCamp) {
                 {props.opt.content.first_block.programs}
               </label>
               <label className="size-20">
-                <span className="bold">Táborvezető: </span>
+                <span className="extra-bold">Táborvezető: </span>
                 {generateTeacherLinks([props.opt.content.first_block.leader])}
               </label>
               <label className="size-20">
-                <span className="bold">Tanárok: </span>
+                <span className="extra-bold">Tanárok: </span>
                 {generateTeacherLinks(props.opt.content.first_block.teachers)}
               </label>
               <label
@@ -327,7 +327,7 @@ export default function ProgramPage(props, isSummerCamp) {
           </div>
           <div className={style["camp-row"]}>
             <div className={style["camp-row-details"]}>
-              <label className="size-54 bold">
+              <label className="size-54 extra-bold">
                 {props.opt.content.second_block.title}
               </label>
               <label
@@ -340,11 +340,11 @@ export default function ProgramPage(props, isSummerCamp) {
                 {props.opt.content.second_block.programs}
               </label>
               <label className="size-20">
-                <span className="bold">Táborvezető: </span>
+                <span className="extra-bold">Táborvezető: </span>
                 {generateTeacherLinks([props.opt.content.second_block.leader])}
               </label>
               <label className="size-20">
-                <span className="bold">Tanárok: </span>
+                <span className="extra-bold">Tanárok: </span>
                 {generateTeacherLinks(props.opt.content.second_block.teachers)}
               </label>
               <label
@@ -370,26 +370,26 @@ export default function ProgramPage(props, isSummerCamp) {
           >
             <div className={style["apply-box"]}>
               <div className={style["block"]}>
-                <label className="size-54 bold">Jelentkezz most!</label>
-                <label className="size-36 bold">4 féle táncstílus</label>
-                <label className="size-36 bold">Tánc és gimnasztika</label>
-                <label className="size-36 bold">
+                <label className="size-54 extra-bold">Jelentkezz most!</label>
+                <label className="size-36 extra-bold">4 féle táncstílus</label>
+                <label className="size-36 extra-bold">Tánc és gimnasztika</label>
+                <label className="size-36 extra-bold">
                   Tánctermi és szabadtéri programok
                 </label>
-                <label className="size-36 bold">Táborzáró előadás</label>
+                <label className="size-36 extra-bold">Táborzáró előadás</label>
               </div>
               <div className={style["block"]}>
-                <label className="size-54 bold">Kapcsolat</label>
-                <label className="size-36 bold">Solti Eszter</label>
-                <label className="size-36 bold">omisktabor@gmail.com</label>
-                <label className="size-36 bold">06-30-237-9233</label>
+                <label className="size-54 extra-bold">Kapcsolat</label>
+                <label className="size-36 extra-bold">Solti Eszter</label>
+                <label className="size-36 extra-bold">omisktabor@gmail.com</label>
+                <label className="size-36 extra-bold">06-30-237-9233</label>
               </div>
             </div>
           </div>
           <div
             className={`${style["camp-row"]} ${style["cover"]} ${style["bg04"]}`}
           >
-            <label className="size-54 bold">Programjaink</label>
+            <label className="size-54 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Művészi torna
@@ -425,7 +425,7 @@ export default function ProgramPage(props, isSummerCamp) {
             </Link>
           </div>
           <div className={`${style["camp-row"]} ${style["teachers"]}`}>
-            <label className="size-54 bold">Tábor tanárai</label>
+            <label className="size-54 extra-bold">Tábor tanárai</label>
             <div className={style["teacher-cards"]}>
               <TeacherCards />
             </div>
@@ -434,7 +434,7 @@ export default function ProgramPage(props, isSummerCamp) {
             className={`${style["camp-row"]} ${style["cover"]} ${style["bg05"]}`}
           >
             <div className={style["day-goes-by-box"]}>
-              <label className="size-36 bold">Hogyan telik egy nap</label>
+              <label className="size-36 extra-bold">Hogyan telik egy nap</label>
               <label className="size-20">
                 Már reggel 8 órától várjuk a táborozókat, a programok pedig 9
                 órakor kezdődnek.{" "}
@@ -465,7 +465,7 @@ export default function ProgramPage(props, isSummerCamp) {
             className={`${style["camp-row"]} ${style["cover"]} ${style["bg08"]}`}
           >
             <div className={style["daycare-box"]}>
-              <label className="size-36 bold">Jelentkezés</label>
+              <label className="size-36 extra-bold">Jelentkezés</label>
               <label className="size-20">
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
@@ -473,7 +473,7 @@ export default function ProgramPage(props, isSummerCamp) {
               <a
                 target="_blank"
                 href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
-                className={`${style["apply-link"]} size-20 bold`}
+                className={`${style["apply-link"]} size-20 extra-bold`}
               >
                 Jelentkezési lap
               </a>
@@ -482,6 +482,9 @@ export default function ProgramPage(props, isSummerCamp) {
                   Tovább olvasom
                 </button>
               </Link>
+              <label className="size-20">
+                A részvételi díjat  természetesen visszatérítjük, ha  a korlátozások miatt a táborokat nem tudjuk megtartani
+              </label>
             </div>
           </div>
           <div className={style["camp-row"]}>
@@ -530,8 +533,8 @@ export default function ProgramPage(props, isSummerCamp) {
             className={`${style["camp-row"]} ${style["cover"]} ${style["bg14"]}`}
           >
             <div className={style["faq-box"]}>
-              <label className="size-36 bold">Gyakori kérdések</label>
-              <label className="size-20 bold">
+              <label className="size-36 extra-bold">Gyakori kérdések</label>
+              <label className="size-20 extra-bold">
                 Mikor kezdődik a tábori nap és meddig tart?
               </label>
               <label className="size-20">

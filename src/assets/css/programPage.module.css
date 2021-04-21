@@ -478,7 +478,7 @@
   color: var(--color-gray-8);
   margin-top: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 .camp-row.cover.bg14 .faq-box [class*="size-20"] {
   margin-bottom: 2rem;
@@ -486,6 +486,12 @@
   text-align: left;
 }
 .camp-row.cover.bg14 .faq-box .btn.secondary {
+  margin-top: 2rem;
+}
+.camp-row strong {
+  font-weight: 800;
+}
+.camp-row.cover.bg08 .daycare-box [class*="size-20"] {
   margin-top: 2rem;
 }
 /* END OF CAMP REFACTOR DESKTOP */
@@ -678,26 +684,46 @@
     padding: 1rem 0 2rem 0;
   }
   .camp-row .day-goes-by-box,
-  .camp-row .daycare-box {
+  .camp-row .daycare-box,
+  .camp-row .faq-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.25rem 1.25rem;
   }
+  .camp-row .faq-box [class*="size-36"] {
+    font-size: 36px;
+  }
   .camp-row .day-goes-by-box [class*="size-20"],
-  .camp-row .daycare-box [class*="size-20"] {
+  .camp-row .daycare-box [class*="size-20"],
+  .camp-row .faq-box [class*="size-20"] {
     margin-top: 2rem;
     text-align: center;
   }
-  .camp-row .day-goes-by-box .btn.secondary {
+  .camp-row .day-goes-by-box [class*="size-20"] {
+    font-size: 14px;
+  }
+  .camp-row .faq-box [class*="size-20"] {
+    text-align: left;
+    font-size: 14px;
+  }
+  .camp-row .faq-box [class*="size-20"] + [class*="size-20"] {
+    margin-top: 1rem;
+  }
+  .camp-row .day-goes-by-box .btn.secondary,
+  .camp-row .faq-box .btn.secondary {
     padding: 15px 50px;
     border: 2px solid var(--color-btn-normal-blue);
+    font-size: 15px;
+    margin-top: 2rem;
   }
-  .camp-row .day-goes-by-box .btn.secondary:hover {
+  .camp-row .day-goes-by-box .btn.secondary:hover,
+  .camp-row .faq-box .btn.secondary:hover {
     border: 2px solid var(--color-btn-hover-blue);
     color: var(--color-btn-hover-blue);
   }
-  .camp-row .day-goes-by-box .btn.secondary:active {
+  .camp-row .day-goes-by-box .btn.secondary:active,
+  .camp-row .faq-box .btn.secondary:active {
     border: 2px solid var(--color-btn-active-blue);
     color: var(--color-btn-active-blue);
   }
@@ -723,6 +749,9 @@
   }
   .camp-row .link {
     text-align: center;
+  }
+  .camp-row strong {
+    font-weight: 800;
   }
   /* END OF CAMP REFACTOR MOBILE */
 }
