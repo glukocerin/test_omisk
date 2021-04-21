@@ -721,5 +721,8 @@
   .camp-row .daycare-box [class*="size-20"]:last-child {
     margin-bottom: 2rem;
   }
+  .camp-row .link {
+    text-align: center;
+  }
   /* END OF CAMP REFACTOR MOBILE */
 }

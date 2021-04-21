@@ -149,7 +149,7 @@ export default function CampPageMobile({ props }) {
                 Szabad tánc
               </button>
             </div>
-            <Link to="/programs/summer_camp/programs">
+            <Link to="/programs/summer_camp/programs" className={style["link"]}>
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Részletesen a programokról
               </button>
