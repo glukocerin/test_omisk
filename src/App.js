@@ -184,12 +184,12 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp">
+        {/* <Route exact path="/programs/camp">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.camp} />
           <Footer />
           <FooterMobile />
-        </Route>
+        </Route> */}
         <Route exact path="/programs/summer_camp">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.summer_camp} />
