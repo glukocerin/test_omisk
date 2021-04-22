@@ -718,13 +718,13 @@ const pagesConfig = {
           img: "mozdulatmuhely",
           link: "callisthenics",
         },
-        {
-          title: "Nyári tánctábor",
-          textBody:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "nyari_tabor",
-          link: "camp",
-        },
+        // {
+        //   title: "Nyári tánctábor",
+        //   textBody:
+        //     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
+        //   img: "nyari_tabor",
+        //   link: "camp",
+        // },
       ],
     },
     programPage: {

@@ -118,7 +118,7 @@ export default function Navigation(props) {
           <label
             className={`plus-sign programs ${
               location.includes("programs") &&
-              !location.includes("programs/") &&
+              !location.includes("programs/summer_camp") &&
               "active"
             }`}
           >
@@ -144,9 +144,9 @@ export default function Navigation(props) {
                 <Link to="/programs/callisthenics">
                   <span className="size-14 extra-bold">Mozdulatműhely</span>
                 </Link>
-                <Link to="/programs/camp">
+                {/* <Link to="/programs/camp">
                   <span className="size-14 extra-bold">Nyári tánctábor</span>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </label>

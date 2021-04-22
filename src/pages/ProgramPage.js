@@ -267,7 +267,7 @@ export default function ProgramPage(props, isSummerCamp) {
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
         <label className={`${style["header-title"]} size-90 extra-bold`}>
-          {props.opt.title}
+          Nyári tánctábor 2021
         </label>
       </div>
       <div className={style["body"]}>
@@ -372,7 +372,9 @@ export default function ProgramPage(props, isSummerCamp) {
               <div className={style["block"]}>
                 <label className="size-54 extra-bold">Jelentkezz most!</label>
                 <label className="size-36 extra-bold">4 féle táncstílus</label>
-                <label className="size-36 extra-bold">Tánc és gimnasztika</label>
+                <label className="size-36 extra-bold">
+                  Tánc és gimnasztika
+                </label>
                 <label className="size-36 extra-bold">
                   Tánctermi és szabadtéri programok
                 </label>
@@ -381,7 +383,9 @@ export default function ProgramPage(props, isSummerCamp) {
               <div className={style["block"]}>
                 <label className="size-54 extra-bold">Kapcsolat</label>
                 <label className="size-36 extra-bold">Solti Eszter</label>
-                <label className="size-36 extra-bold">omisktabor@gmail.com</label>
+                <label className="size-36 extra-bold">
+                  omisktabor@gmail.com
+                </label>
                 <label className="size-36 extra-bold">06-30-237-9233</label>
               </div>
             </div>
@@ -442,7 +446,7 @@ export default function ProgramPage(props, isSummerCamp) {
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
                 megismerkedünk.
               </label>
-              <Link to="/programs/summer_camp/programs">
+              <Link to="/programs/summer_camp/day">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Tovább olvasom
                 </button>
@@ -483,7 +487,8 @@ export default function ProgramPage(props, isSummerCamp) {
                 </button>
               </Link>
               <label className="size-20">
-                A részvételi díjat  természetesen visszatérítjük, ha  a korlátozások miatt a táborokat nem tudjuk megtartani
+                A részvételi díjat természetesen visszatérítjük, ha a
+                korlátozások miatt a táborokat nem tudjuk megtartani
               </label>
             </div>
           </div>
