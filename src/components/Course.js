@@ -213,6 +213,8 @@ export default function Course({ pageConfig }) {
               className={`${style["card-wrapper"]} ${
                 index % 2 === 0 ? style["reverse"] : ""
               } `}
+              key={index}
+              id={section.id}
             >
               <div className={`${style["text"]}`}>
                 <h4 className={`size-36 extra-bold ${style['camp-subtitle']}`}>{section.title}</h4>

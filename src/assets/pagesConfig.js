@@ -1023,42 +1023,49 @@ const pagesConfig = {
         sections: [
           {
             title: "Művészi torna",
+            id: "muveszitorna",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink01.png",
             description:
               "A művészi torna mindenki számára hasznos tudás ad. Tudatos mozgásra nevel, így minden más  tánc stílusban vagy sportágban segítséget jelent az ismerete. Mozgásanyaga nagyon színes és változatos,  de mindig  fontos az esztétikai rendezettség és a precizítás. Nem kell hozzá speciális adottság, a helyesen végzett , szép mozdulatok mindenkinek sikerélményt adnak",
           },
           {
             title: "Mozdulatművészet",
+            id: "mozdulatmuveszet",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink02.png",
             description:
               "A mozdulatművészet a művészi torna mozgásanyagára épülő, de annál szabadabb, a zenével szoros összhangban álló táncstílus. Használja a klasszikus balett és különböző modern technikák alapelemeit is, de mindig a test természetes adottságaihoz illeszkedő,  kifejező mozgást keresi.",
           },
           {
             title: "Kéziszeres gimnasztika",
+            id: "keziszeresgimnasztika",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink03.png",
             description:
               "A kéziszeres gimnasztika órákon  ritmikus gimnasztika kéziszereket ( karika, labda, szalag , buzogány…) használjuk + néhány speiális eszközt. Ezek az eszközök változatossá teszik az órát, ugyanakkor segítik a mozgástanulást és ügyessé tesznek.",
           },
           {
             title: "Modern tánc",
+            id: "moderntanc",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink04.png",
             description:
               "A modern tánc a klasszikus balett alapjaira épül, annak szabály rendszerével szembe is megy.  A természetes mozgáson alapul, használja a gravitációt, a mozdulatokat belülről indítja. Leginkább a folyamatos, plasztikus és puha mozgás jellemzi. A tréning - miközben  tetőtől talpig átmozgatja a testet - tudatosságra nevel.",
           },
           {
             title: "Koreográfia",
+            id: "koreografia",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink05.png",
             description:
               "Ezeken órákon egy közös  műhelymunka keretében készülnek el azok a koreográfiák, amelyek a táborzáró előadáson bemutatásra kerülnek. A tanárok koncepciója és elképzelése alapján a táncosok kreatív közreműködésével 4 nap alatt alakul ki a végleges koreográfia.",
           },
           {
             title: "Kézműves",
+            id: "kezmuves",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink06.png",
             description:
               "A kézműves  foglalkozásokon készül el az előadáson használt eszközök vagy jelmezek egy része. Így a táborozók megtapasztalják, hogy  különböző művészeti ágak hogyan működnek össze egy alkotás létrejöttében. Emellett egyéb eszközök és jelmezek is készülnek, amiket az év közben használni tudnak a gyerekek.",
           },
           {
             title: "Szabad tánc",
+            id: "szabadtanc",
             img: "pages/summerCamp/program/omisk_tanctabor_programjaink07.png",
             description:
               "A szabad tánc táboraink elmaradhatatlan programja. Dávid Luca képzőművész és mozgásterapeuta az alkotás örömét ismerteti meg a gyerekekkel. A zene, rajz és mozgás összekapcsolásából olyan improvizáció alakul amelyben a tanult és ösztönös mozdulatok keverednek. Ritkán látni ennyi felszabadult arcot, mint ezeken az órákon.",
