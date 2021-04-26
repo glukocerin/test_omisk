@@ -395,32 +395,45 @@ export default function ProgramPage(props, isSummerCamp) {
           >
             <label className="size-54 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Művészi torna
-              </button>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Mozdulatművészet
-              </button>
+              <Link to="/programs/summer_camp/programs/#muveszitorna">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Művészi torna
+                </button>
+              </Link>
+              <Link to="/programs/summer_camp/programs/#mozdulatmuveszet">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Mozdulatművészet
+                </button>
+              </Link>
             </div>
             <div className={style["button-box"]}>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Kéziszeres gimnasztika
-              </button>
-
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Modern tánc
-              </button>
+              <Link to="/programs/summer_camp/programs/#keziszeresgimnasztika">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Kéziszeres gimnasztika
+                </button>
+              </Link>
+              <Link to="/programs/summer_camp/programs/#moderntanc">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Modern tánc
+                </button>
+              </Link>
             </div>
             <div className={style["button-box"]}>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Koreográfia
-              </button>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Kézműves
-              </button>
-              <button className={`${style["btn"]} ${style["secondary"]}`}>
-                Szabad tánc
-              </button>
+              <Link to="/programs/summer_camp/programs/#koreografia">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Koreográfia
+                </button>
+              </Link>
+              <Link to="/programs/summer_camp/programs/#kezmuves">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Kézműves
+                </button>
+              </Link>
+              <Link to="/programs/summer_camp/programs/#szabadtanc">
+                <button className={`${style["btn"]} ${style["secondary"]}`}>
+                  Szabad tánc
+                </button>
+              </Link>
             </div>
             <Link to="/programs/summer_camp/programs">
               <button className={`${style["btn"]} ${style["secondary"]}`}>
