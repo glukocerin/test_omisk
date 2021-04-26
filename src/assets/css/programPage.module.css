@@ -389,7 +389,7 @@
   background: var(--color-gray-0);
   color: var(--color-btn-active-blue);
 }
-.camp-row .button-box .btn.secondary + .btn.secondary {
+.camp-row .button-box a + a {
   margin-left: 0.5rem;
 }
 .teacher-cards {
@@ -610,6 +610,7 @@
   .camp-row [class*="size-20"] {
     font-size: 20px;
     line-height: 28px;
+    text-align: center;
   }
   .camp-row [class*="size-24"] {
     font-size: 20px;
@@ -677,6 +678,7 @@
   .camp-row .daycare-box,
   .camp-row .faq-box {
     width: 100vw;
+    flex-wrap: wrap;
   }
   .camp-row.teachers {
     padding: unset;
