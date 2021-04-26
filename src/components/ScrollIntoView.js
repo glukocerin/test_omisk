@@ -7,13 +7,12 @@ class ScrollIntoView extends PureComponent {
   componentDidUpdate = prevProps => {
     document.querySelector('.App').classList.remove('loading');
     if (this.props.location !== prevProps.location) {
-      if (this.props.location.hash !== '#gyik' && this.props.location.hash !== '#map') {
+      if (!['#gyik', '#map', '#muveszitorna','#mozdulatmuveszet','#keziszeresgimnasztika','#moderntanc','#koreografia','#kezmuves','#szabadtanc'].includes(this.props.location.hash)) {
         document.querySelector('.App').scrollTop = 0;
-      } else if (this.props.location.hash === '#gyik') {
-        document.querySelector('.App').scrollTop = document.querySelector('#gyik').offsetTop;
-      } else if (this.props.location.hash === '#map') {
-        document.querySelector('.App').scrollTop = document.querySelector('#map').offsetTop;
+      } else if (['#gyik', '#map', '#muveszitorna','#mozdulatmuveszet','#keziszeresgimnasztika','#moderntanc','#koreografia','#kezmuves','#szabadtanc'].includes(this.props.location.hash)) {
+        document.querySelector('.App').scrollTop = document.querySelector(this.props.location.hash).offsetTop;
       }
+
       document.querySelector('.App').classList.add('loading');
     }
   };
