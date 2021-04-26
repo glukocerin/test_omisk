@@ -216,6 +216,9 @@
   max-width: 50vw;
   min-width: 50vw;
 }
+.camp-row-details + .camp-row-image {
+  object-position: left;
+}
 .camp-row-image.cover {
   max-width: 100vw;
   min-width: 100vw;
