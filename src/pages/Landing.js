@@ -19,11 +19,11 @@ import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 import { ReactComponent as FacebookTransparent } from "../assets/img/icons/facebook_transparent.svg";
 import { ReactComponent as InstagramTransparent } from "../assets/img/icons/instagram_transparent.svg";
 import { ReactComponent as YoutubeTransparent } from "../assets/img/icons/youtube_transparent.svg";
-import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
+// import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
 import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.svg";
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
-import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
+// import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 

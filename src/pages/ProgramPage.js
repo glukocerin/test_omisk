@@ -489,6 +489,7 @@ export default function ProgramPage(props, isSummerCamp) {
               </label>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
                 className={`${style["apply-link"]} size-20 extra-bold`}
               >
