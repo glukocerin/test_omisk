@@ -333,7 +333,7 @@ export default function ProgramPage(props, isSummerCamp) {
               <label
                 className="size-24"
                 dangerouslySetInnerHTML={{
-                  __html: props.opt.content.first_block.place,
+                  __html: props.opt.content.second_block.place,
                 }}
               ></label>
               <label className="size-20">
