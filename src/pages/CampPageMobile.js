@@ -44,7 +44,7 @@ export default function CampPageMobile({ props }) {
               <label
                 className="size-24"
                 dangerouslySetInnerHTML={{
-                  __html: props.opt.content.first_block.place,
+                  __html: props.opt.content.second_block.place,
                 }}
               ></label>
             </div>
@@ -102,7 +102,9 @@ export default function CampPageMobile({ props }) {
               <div className={style["block"]}>
                 <label className="size-32 extra-bold">Jelentkezz most!</label>
                 <label className="size-20 extra-bold">4 féle táncstílus</label>
-                <label className="size-20 extra-bold">Tánc és gimnasztika</label>
+                <label className="size-20 extra-bold">
+                  Tánc és gimnasztika
+                </label>
                 <label className="size-20 extra-bold">
                   Tánctermi és szabadtéri programok
                 </label>
@@ -111,7 +113,9 @@ export default function CampPageMobile({ props }) {
               <div className={style["block"]}>
                 <label className="size-32 extra-bold">Kapcsolat</label>
                 <label className="size-20 extra-bold">Solti Eszter</label>
-                <label className="size-20 extra-bold">omisktabor@gmail.com</label>
+                <label className="size-20 extra-bold">
+                  omisktabor@gmail.com
+                </label>
                 <label className="size-20 extra-bold">06-30-237-9233</label>
               </div>
             </div>
@@ -319,16 +323,16 @@ export default function CampPageMobile({ props }) {
               </label>
             </div>
           </div>
-          <div
-            className={style["camp-row"]}
-          >
+          <div className={style["camp-row"]}>
             <div className={style["faq-box"]}>
               <label className="size-36 extra-bold">Gyakori kérdések</label>
               <label className="size-20 extra-bold">
                 A barátnőjével, testvérével egy csoportba kerülhet gyerekem?
               </label>
               <label className="size-20">
-                Természetesen az ilyen jellegű kéréseket teljesítjük. Testvéreknél is, ha nem túl nagy a korkülönbség, akkor természetesen megoldható - ha így szeretnék.
+                Természetesen az ilyen jellegű kéréseket teljesítjük.
+                Testvéreknél is, ha nem túl nagy a korkülönbség, akkor
+                természetesen megoldható - ha így szeretnék.
               </label>
               <Link to="/programs/summer_camp/faq">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>

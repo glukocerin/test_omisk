@@ -189,15 +189,15 @@ export default function Landing({ dotChange }) {
     },
     [autoScrollStoped, stopAutoScroll] = useState(false);
 
-    useEffect(() => {
-      if (!autoScrollStoped && !isMobile) {
-        const interval = setInterval(() => {
-          activeDot <= 7 && setActiveDot(activeDot + 1);
-          activeDot === 7 && setActiveDot(1);
-        }, 4000);
-        return () => clearInterval(interval);
-      }
-    }, [activeDot, autoScrollStoped]);
+  useEffect(() => {
+    if (!autoScrollStoped && !isMobile) {
+      const interval = setInterval(() => {
+        activeDot <= 7 && setActiveDot(activeDot + 1);
+        activeDot === 7 && setActiveDot(1);
+      }, 4000);
+      return () => clearInterval(interval);
+    }
+  }, [activeDot, autoScrollStoped]);
 
   return (
     <div className="landing" onWheel={(e) => scroller(e)}>
@@ -218,21 +218,25 @@ export default function Landing({ dotChange }) {
           <label className="size-12 thin">Görgess lefelé</label> */}
           <div className="titles">
             <label className="title extra-bold size-83 new">Omisk</label>
-            <label className="title extra-bold size-83 new inverse ">Tánctábor</label>
-            <label className="title extra-bold size-83 new inverse ">2021</label>
+            <label className="title extra-bold size-83 new inverse ">
+              Tánctábor
+            </label>
+            <label className="title extra-bold size-83 new inverse ">
+              2021
+            </label>
           </div>
-          { isMobile ? 
-            <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nKorosztályok:  6-12 és 13 -17`}</label>
-            :
-            <label className="extra-bold size-20">{`06. 28 - 07. 02   MOM Kulturális Központ\n08. 02 - 08. 06   Óbudai Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
-          }
+          {isMobile ? (
+            <label className="extra-bold size-20">{`06. 28 - 07. 02   Óbudai Kulturális Központ\n08. 02 - 08. 06   MOM Kulturális Központ\nKorosztályok:  6-12 és 13 -17`}</label>
+          ) : (
+            <label className="extra-bold size-20">{`06. 28 - 07. 02   Óbudai Kulturális Központ\n08. 02 - 08. 06   MOM Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
+          )}
           <Link
-              onClick={() => {
-                dispatch(updatePageindex({ payload: activeDot }));
-              }}
-              to="/programs/summer_camp"
-            >
-              <button className="btn btn-secondary">Részletek</button>
+            onClick={() => {
+              dispatch(updatePageindex({ payload: activeDot }));
+            }}
+            to="/programs/summer_camp"
+          >
+            <button className="btn btn-secondary">Részletek</button>
           </Link>
         </div>
       </div>
