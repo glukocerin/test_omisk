@@ -70,6 +70,8 @@ export default function CampPageMobile({ props }) {
                 <span>
                   kedvezményesen: <strong>39.000 Ft</strong>
                 </span>
+                <br></br>
+                <span>testvérkedvezmény: 3000 Ft/fő</span>
               </label>
               <Link to="/programs/summer_camp/application">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
