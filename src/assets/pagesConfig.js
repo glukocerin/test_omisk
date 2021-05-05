@@ -961,16 +961,24 @@ const pagesConfig = {
           "Nyári napközis táborunk különleges lehetőség arra, hogy többféle mozgásművészeti stílussal is megismerkedj.  Részese lehetsz egy 5 napos táncos műhelymunkának és egy táborzáró  előadásnak, ahol a közös munkával összeállított koreográfiákat nyilvánosan bemutatjuk. A felkészülés során kislétszámú életkori csoportokban tanulhatsz az egyes műfajok szaktanáraitól.",
         videos: [
           {
-            year: 2016,
-            link: "https://www.youtube.com/embed/q2eUUTYWTI4?autoplay=1",
-          },
-          {
-            year: 2016,
+            year: 2018,
             link: "https://www.youtube.com/embed/P6pkAmEuqQo?autoplay=1",
           },
           {
-            year: 2016,
+            year: 2018,
+            link: "https://www.youtube.com/embed/JdL48BoD-Dk?autoplay=1",
+          },
+          {
+            year: 2019,
+            link: "https://www.youtube.com/embed/q2eUUTYWTI4?autoplay=1",
+          },
+          {
+            year: 2019,
             link: "https://www.youtube.com/embed/Qo_hQJgNgXk?autoplay=1",
+          },
+          {
+            year: 2020,
+            link: "https://www.youtube.com/embed/SkDrgMCoGQE?autoplay=1",
           },
         ],
         content: {
@@ -989,7 +997,7 @@ const pagesConfig = {
               "Taylor Esther",
             ],
             price:
-              "<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
+              "<strong>Ára: 42 000Ft</strong>, testvérkedvezmény: 3000 Ft/fő<br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
             block_desc:
               "Ha a <strong>korlátozások</strong> miatt ebben az időpontban nem tudjuk elindítani a tábort, akkor <strong>július 19 - 23 vagy esetleg augusztus 23 - 27</strong> tartjuk meg.",
             apply_link: "",
@@ -1010,7 +1018,7 @@ const pagesConfig = {
               "B. Taylor Jennifer",
             ],
             price:
-              "<strong>Ára: 42 000Ft</strong><br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
+              "<strong>Ára: 42 000Ft</strong>, testvérkedvezmény: 3000 Ft/fő<br/>(Iskolánk növendékeinek kedvezményesen: <strong>39.000 Ft</strong>)",
             apply_link: "",
           },
         },
