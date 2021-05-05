@@ -51,13 +51,13 @@ const generateTeacherLinks = function (links) {
     });
 
     return (
-      <Link
+      <span
         className={style["teacher-link"]}
         to={{ pathname: "/teacher", state: card }}
         key={index}
       >
         {link}
-      </Link>
+      </span>
     );
   });
 };
