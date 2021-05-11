@@ -19,7 +19,7 @@ export default function CovidNotification() {
         </button>
         <label className="size-20 thin covid-label">
           <CovidIcon className="icon" />
-          Jelenleg online folytatjuk kurzusainkat,{" "}
+          Jelenleg online folytatjuk kurzusainkat,<span>&nbsp;&nbsp;</span>
           <Link
             onClick={() => {
               closeCookies(true);
@@ -27,8 +27,10 @@ export default function CovidNotification() {
             to="/contact"
             className="link"
           >
-            melyre itt tudsz jelentkezni
+            melyre itt tudsz jelentkezni.
           </Link>
+          <span>&nbsp;&nbsp;</span>A Szarvas Gábor 20-22-ben már helyszíni
+          órákat tartunk.
         </label>
       </div>
       <div>
