@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://omisk.hu/</loc> </url>
+<url> <loc>https://omisk.hu/courses</loc> </url>
+<url> <loc>https://omisk.hu/teachers</loc> </url>
+<url> <loc>https://omisk.hu/blog</loc> </url>
+<url> <loc>https://omisk.hu/operation</loc> </url>
+<url> <loc>https://omisk.hu/enrollment</loc> </url>
+<url> <loc>https://omisk.hu/contact</loc> </url>
+<url> <loc>https://omisk.hu/courses/eurhythmics</loc> </url>
+<url> <loc>https://omisk.hu/courses/callisthenics</loc> </url>
+<url> <loc>https://omisk.hu/courses/pre_ballet</loc> </url>
+<url> <loc>https://omisk.hu/courses/ballet</loc> </url>
+<url> <loc>https://omisk.hu/courses/jazz</loc> </url>
+<url> <loc>https://omisk.hu/courses/modern</loc> </url>
+<url> <loc>https://omisk.hu/programs</loc> </url>
+<url> <loc>https://omisk.hu/programs/speech_day</loc> </url>
+<url> <loc>https://omisk.hu/programs/competitions</loc> </url>
+<url> <loc>https://omisk.hu/programs/omisk</loc> </url>
+<url> <loc>https://omisk.hu/programs/public_class</loc> </url>
+<url> <loc>https://omisk.hu/programs/callisthenics</loc> </url>
+<url> <loc>https://omisk.hu/programs/camp</loc> </url>
+<url> <loc>https://omisk.hu/programs/achievements</loc> </url>
+</urlset>
