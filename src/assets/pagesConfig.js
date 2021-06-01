@@ -1191,7 +1191,7 @@ const pagesConfig = {
       {
         picture: "benis_katalin.jpg",
         name: "Benis Katalin",
-        desc: "Nívódíjas táncpedagógus,\nMűvészitorna-edző",
+        desc: "Nívódíjas táncpedagógus",
         details:
           "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
         education: [

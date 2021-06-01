@@ -34,7 +34,6 @@ import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import Cookies from "./components/Cookies";
-import CovidNotification from "./components/CovidNotification";
 
 import Admin from "./pages/Admin";
 
@@ -59,7 +58,6 @@ function App() {
   return (
     <div className="App">
       <div className="bottom-wrapper">
-        <CovidNotification />
         <Cookies />
       </div>
       <Switch>
