@@ -4,15 +4,15 @@ const pagesConfig = {
     youtube_links: [
       {
         text: "Művészi torna",
-        link: "https://www.youtube-nocookie.com/embed/SpyVXQnwS8M?autoplay=1",
+        link: "https://www.youtube-nocookie.com/embed/SpyVXQnwS8M?autoplay=1&mute=1",
       },
       {
         text: "Mozdulatművészet",
-        link: "https://www.youtube-nocookie.com/embed/raGYvLAL1s4?autoplay=1",
+        link: "https://www.youtube-nocookie.com/embed/raGYvLAL1s4?autoplay=1&mute=1",
       },
       {
         text: "Modern tánc",
-        link: "https://www.youtube-nocookie.com/embed/RWOz4Koekas?autoplay=1",
+        link: "https://www.youtube-nocookie.com/embed/RWOz4Koekas?autoplay=1&mute=1",
       },
     ],
     list_courses: {
@@ -783,14 +783,12 @@ const pagesConfig = {
           {
             date: "2020. 12. 03.",
             title: "Verseny",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
           },
           {
             date: "2020. 12. 03.",
             title: "Verseny",
-            body:
-              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            body: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
           },
         ],
         videos: [
@@ -1593,16 +1591,13 @@ const pagesConfig = {
     columns: [
       {
         title: "Év elején szeretnék beiratkozni!",
-        text:
-          "Augusztus végén és szeptember elején valamennyi helyszinünkön beiratkozást tartunk. A végleges órarendet ezt követően állítjuk össze a jelentkezők életkora, tudásszintje és az időpontra vonatkozó igények figyelembe vételével. Kérjük ezért, hogy a beiratkozásnál jelezzék, hogy a helyszínen megjelölt tanítási napokon mi a legkorábbi időpont, amikor a foglalkozásra tudnak jönni, illetve mi a legkésőbbi  időpont, ami még alkalmas volna. \n\nA régi csoportok természetesen együtt maradnak és az ő időpontjukat igyekszünk nem változtatni, ha ezt külön nem kérik. \n\nA fennmaradó helyekre év közben is lehet jelentkezni, de az előmenetel szempontjából mindenképpen előnyösebb a szeptemberi kezdés.",
+        text: "Augusztus végén és szeptember elején valamennyi helyszinünkön beiratkozást tartunk. A végleges órarendet ezt követően állítjuk össze a jelentkezők életkora, tudásszintje és az időpontra vonatkozó igények figyelembe vételével. Kérjük ezért, hogy a beiratkozásnál jelezzék, hogy a helyszínen megjelölt tanítási napokon mi a legkorábbi időpont, amikor a foglalkozásra tudnak jönni, illetve mi a legkésőbbi  időpont, ami még alkalmas volna. \n\nA régi csoportok természetesen együtt maradnak és az ő időpontjukat igyekszünk nem változtatni, ha ezt külön nem kérik. \n\nA fennmaradó helyekre év közben is lehet jelentkezni, de az előmenetel szempontjából mindenképpen előnyösebb a szeptemberi kezdés.",
         button_text: "Beiratkozás időpontok",
-        link:
-          "https://docs.google.com/document/d/18Tc7Y06IOJwaNVtdSuo-q6kUYe9DDnz5Q1VXinKArTU",
+        link: "https://docs.google.com/document/d/18Tc7Y06IOJwaNVtdSuo-q6kUYe9DDnz5Q1VXinKArTU",
       },
       {
         title: "Év közben is tudok csatlakozni?",
-        text:
-          "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.\nA Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
+        text: "Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan csoportot, amely életkorod, tudásszinted szerint megfelelő  és a létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél! Ő tájékoztat pontos  órarendünkről és arról, hogy melyek azok a csoportok, amelyekhez csatlakozni tudsz.\nA Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt, hogy az egyes helyszíneken  mely napokon tartunk órákat.",
         button_text: "Érdeklődöm",
         link: "contact",
       },
