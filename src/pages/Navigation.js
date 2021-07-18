@@ -61,14 +61,14 @@ export default function Navigation(props) {
           />
         </Link>
         <div className="links">
-          <Link
+          {/* <Link
             className={`${
-              location.includes("/programs/summer_camp") && "active"
+              location.includes("/programok/nyari_tabor") && "active"
             }`}
-            to="/programs/summer_camp"
+            to="/programok/nyari_tabor"
           >
             Nyári Tánctábor 2021
-          </Link>
+          </Link> */}
           <Link
             className={`${location === "/" && "active"}`}
             onClick={() => dispatch(updatePageindex({ payload: 1 }))}
@@ -79,36 +79,36 @@ export default function Navigation(props) {
           <label
             className={`plus-sign ${location.includes("course") && "active"}`}
           >
-            <Link to="/courses">Kurzusaink</Link>
+            <Link to="/kurzusok">Kurzusaink</Link>
             <div className="dropdown-menu">
               <div className="row">
-                <Link to="/courses/eurhythmics">
+                <Link to="/kurzusok/muveszitorna">
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/courses/modern">
+                <Link to="/kurzusok/modern">
                   <span className="size-14 extra-bold">Modern tánc</span>
                   <span className="size-14 thin">8 éves kortól</span>
                 </Link>
-                <Link to="/courses/ballet">
+                <Link to="/kurzusok/balett">
                   <span className="size-14 extra-bold">Klasszikus balett</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
               </div>
               <div className="row">
-                <Link to="/courses/callisthenics">
+                <Link to="/kurzusok/mozdulatmuveszet">
                   <span className="size-14 extra-bold">Mozdulatművészet</span>
                   <span className="size-14 thin">10 éves kortól</span>
                 </Link>
-                <Link to="/courses/jazz">
+                <Link to="/kurzusok/jazz">
                   <span className="size-14 extra-bold">Jazz tánc</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
-                <Link to="/courses/pre_ballet">
+                <Link to="/kurzusok/pre_balett">
                   <span className="size-14 extra-bold">Pre balett</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/courses/lady">
+                <Link to="/kurzusok/holgy">
                   <span className="size-14 extra-bold">Női torna</span>
                   <span className="size-14 thin">Hölgyeknek</span>
                 </Link>
@@ -117,31 +117,31 @@ export default function Navigation(props) {
           </label>
           <label
             className={`plus-sign programs ${
-              location.includes("programs") &&
-              !location.includes("programs/summer_camp") &&
+              location.includes("programok") &&
+              !location.includes("programok/nyari_tabor") &&
               "active"
             }`}
           >
-            <Link to="/programs">Programjaink</Link>
+            <Link to="/programok">Programjaink</Link>
             <div className="dropdown-menu">
               <div className="row">
-                <Link to="/programs/public_class">
+                <Link to="/programok/nyilvanos_ora">
                   <span className="size-14 extra-bold">Nyilvános órák</span>
                 </Link>
-                <Link to="/programs/competitions">
+                <Link to="/programok/versenyek">
                   <span className="size-14 extra-bold">Versenyek</span>
                 </Link>
               </div>
               <div className="row">
-                <Link to="/programs/speech_day">
+                <Link to="/programok/evzaro_eloadas">
                   <span className="size-14 extra-bold">Évzáró előadások</span>
                 </Link>
-                <Link to="/programs/omisk">
+                <Link to="/programok/omisk">
                   <span className="size-14 extra-bold">Omisk Gála</span>
                 </Link>
               </div>
               <div className="row">
-                <Link to="/programs/callisthenics">
+                <Link to="/programok/mozdulatmuhely">
                   <span className="size-14 extra-bold">Mozdulatműhely</span>
                 </Link>
                 {/* <Link to="/programs/camp">
@@ -151,8 +151,8 @@ export default function Navigation(props) {
             </div>
           </label>
           <Link
-            className={`${location.includes("teacher") && "active"}`}
-            to="/teachers"
+            className={`${location.includes("tanaraink") && "active"}`}
+            to="/tanaraink"
           >
             Tanáraink
           </Link>
@@ -163,20 +163,20 @@ export default function Navigation(props) {
             Blog
           </Link>
           <Link
-            className={`${location === "/operation" && "active"}`}
-            to="/operation"
+            className={`${location === "/mukodesunk" && "active"}`}
+            to="/mukodesunk"
           >
             Működésünk
           </Link>
           <Link
-            className={`${location === "/enrollment" && "active"}`}
-            to="/enrollment"
+            className={`${location === "/beiratkozas" && "active"}`}
+            to="/beiratkozas"
           >
             Beiratkozás
           </Link>
           <Link
-            className={`${location === "/contact" && "active"}`}
-            to="/contact"
+            className={`${location === "/kapcsolat" && "active"}`}
+            to="/kapcsolat"
           >
             Kapcsolat
           </Link>

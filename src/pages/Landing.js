@@ -78,7 +78,7 @@ const CoursesList = function (props) {
   return landing["list_courses"].list.map((item, index) => (
     <DelayLink
       onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])}
-      to={`/courses/${item.link}`}
+      to={`/kurzusok/${item.link}`}
       className={`list-item ${
         props.activeFiveSwitch === keyHelper[index] && "active"
       }`}
@@ -101,7 +101,7 @@ const WhatWeDo = function (props) {
     <DelayLink
       onClick={() => dispatch(updatePageindex({ payload: props.activeDot }))}
       onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])}
-      to={`/programs/${item.link}`}
+      to={`/programok/${item.link}`}
       className={`list-item ${
         props.activeSevenSwitch === keyHelper[index] && "active"
       }`}
@@ -203,40 +203,29 @@ export default function Landing({ dotChange }) {
     <div className="landing" onWheel={(e) => scroller(e)}>
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
-          {/* <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét.`}</label>
-          <label className="sub-title extra-bold size-32">
-            Óbuda Mozgásművészeti Iskola
-          </label>
-          <div className="stamp-box">
-            <Stamp className="stamp" />
-            <div className="mask"></div>
-          </div>
-          <DoubleArrowDown
-            className="double-arrow-down"
-            onClick={() => setActiveDot(2)}
-          />
-          <label className="size-12 thin">Görgess lefelé</label> */}
           <div className="titles">
-            <label className="title extra-bold size-83 new">Omisk</label>
-            <label className="title extra-bold size-83 new inverse ">
-              Tánctábor
+            <label className="title extra-bold size-54 new">
+              Óbuda Tánc és Mozgásművészeti Iskola
             </label>
-            <label className="title extra-bold size-83 new inverse ">
-              2021
+            <label className="title extra-bold size-54 new date-enrollment">
+              Beiratkozás 2021
+            </label>
+            <label className="title extra-bold size-24 new date-enrollment">
+              4 éves kortól
             </label>
           </div>
-          {isMobile ? (
+          {/* {isMobile ? (
             <label className="extra-bold size-20">{`06. 28 - 07. 02   Óbudai Kulturális Központ\n08. 02 - 08. 06   MOM Kulturális Központ\nKorosztályok:  6-12 és 13 -17`}</label>
           ) : (
             <label className="extra-bold size-20">{`06. 28 - 07. 02   Óbudai Kulturális Központ\n08. 02 - 08. 06   MOM Kulturális Központ\nMindkét helyszínen gyermek ( 6-12 )\nés ifjúsági ( 13 -17) turnus\nművészi torna,  mozdulatművészet,\nkéziszeres gimnasztika,  modern tánc,\nszabad tánc, koreográfia`}</label>
-          )}
+          )} */}
           <Link
             onClick={() => {
               dispatch(updatePageindex({ payload: activeDot }));
             }}
-            to="/programs/summer_camp"
+            to="/beiratkozas"
           >
-            <button className="btn btn-secondary">Részletek</button>
+            <button className="btn-enrollment">Részletek</button>
           </Link>
         </div>
       </div>

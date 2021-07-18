@@ -6,18 +6,29 @@ import App from "./App";
 import store from "./store";
 import ScrollIntoView from "./components/ScrollIntoView";
 import ReactGA from "react-ga";
+import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+// import { browserHistory } from "react-router";
+
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter } from "react-router-dom";
 
 const history = createBrowserHistory();
-
+console.log(history);
 const trackingId = "UA-37328756-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
 
 // Initialize google analytics page view tracking
 history.listen((location) => {
+  let title = document.getElementsByTagName("title")[0];
+
+  if (location.pathname === "/") {
+    title.innerHTML = "OMISK | Tánckurzusok | Tánctáborok";
+  } else {
+    title.innerHTML =
+      location.pathname.split("/")[location.pathname.split("/").length - 1];
+  }
+
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
@@ -25,11 +36,11 @@ history.listen((location) => {
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter history={history}>
+      <Router history={history}>
         <ScrollIntoView>
           <App />
         </ScrollIntoView>
-      </BrowserRouter>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

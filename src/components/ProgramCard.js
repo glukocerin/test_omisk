@@ -6,7 +6,7 @@ function ProgramCard(props) {
   return (
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>
-        <Link to={`/programs/${props.details.link}`}>
+        <Link to={`/programok/${props.details.link}`}>
           <img
             src={
               require(`../assets/img/programs/${props.details.img}.jpg`).default

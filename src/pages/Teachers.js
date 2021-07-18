@@ -9,7 +9,7 @@ const { teachers } = pagesConfig;
 
 const TeacherCards = function () {
   return teachers.cards.map((card, index) => (
-    <Link to={{ pathname: "/teacher", state: card }} key={index}>
+    <Link to={{ pathname: "/tanar", state: card }} key={index}>
       <div className="card">
         <img
           src={require(`../assets/img/teachers/${card.picture}`).default}

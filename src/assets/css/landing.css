@@ -61,7 +61,7 @@
   animation: 0.75s dotshrink cubic-bezier(0.74, 0.14, 0.27, 0.81);
 }
 .dot.active::after {
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -85,15 +85,15 @@
 @keyframes pulsate {
   0% {
     transform: translate(-50%, -50%) scale(0.1, 0.1);
-    opacity: 0.0;
+    opacity: 0;
   }
   50% {
-    opacity: 1.0;
+    opacity: 1;
     transform: translate(-50%, -50%);
   }
   100% {
     transform: translate(-50%, -50%) scale(1.6, 1.6);
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 .landing .content-block {
@@ -133,6 +133,21 @@
   color: var(--color-green-2);
   white-space: pre-wrap;
   margin-top: 1rem;
+}
+.left.one .title.new.date-enrollment {
+  color: #3e6171;
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}
+.left.one .btn-enrollment {
+  margin-left: 1vw;
+  margin-top: 48px;
+  color: #3fc1b3;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 64px;
+  padding: 13px 24px;
 }
 .left.one .size-20 {
   white-space: pre-wrap;
@@ -900,7 +915,7 @@
   .left.one .size-20 {
     margin: 19px 0;
     line-height: 17px;
-}
+  }
   .left.one .sub-title {
     margin-top: 1rem;
   }

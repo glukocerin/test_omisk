@@ -32,10 +32,10 @@ export default function HamburgerMenu() {
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location.includes("summer_camp") && "active"
+            location.includes("nyari_tabor") && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/programs/summer_camp"
+          to="/programok/nyari_tabor"
         >
           Nyári Tánctábor 2021
         </Link>
@@ -44,18 +44,18 @@ export default function HamburgerMenu() {
             location.includes("course") && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/courses"
+          to="/kurzusok"
         >
           Kurzusaink
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location.includes("programs") &&
-            !location.includes("programs/summer_camp") &&
+            location.includes("programok") &&
+            !location.includes("programok/nyari_tabor") &&
             "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/programs"
+          to="/programok"
         >
           Programjaink
         </Link>
@@ -64,7 +64,7 @@ export default function HamburgerMenu() {
             location.includes("teacher") && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/teachers"
+          to="/tanaraink"
         >
           Tanáraink
         </Link>
@@ -79,28 +79,28 @@ export default function HamburgerMenu() {
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location === "/operation" && "active"
+            location === "/mukodesunk" && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/operation"
+          to="/mukodesunk"
         >
           Működésünk
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location === "/enrollment" && "active"
+            location === "/beiratkozas" && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/enrollment"
+          to="/beiratkozas"
         >
           Beiratkozás
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location === "/contact" && "active"
+            location === "/kapcsolat" && "active"
           }`}
           onClick={() => toggle(!toggled)}
-          to="/contact"
+          to="/kapcsolat"
         >
           Kapcsolat
         </Link>

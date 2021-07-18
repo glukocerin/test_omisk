@@ -20,11 +20,11 @@ const pagesConfig = {
       list: [
         {
           text: "Művészi torna",
-          link: "eurhythmics",
+          link: "muveszitorna",
         },
         {
           text: "Mozdulatművészet",
-          link: "callisthenics",
+          link: "mozdulatmuveszet",
         },
         {
           text: "Modern tánc",
@@ -36,15 +36,15 @@ const pagesConfig = {
         },
         {
           text: "Klasszikus balett",
-          link: "ballet",
+          link: "balett",
         },
         {
           text: "Pre balett / EN",
-          link: "pre_ballet",
+          link: "pre_balett",
         },
         {
           text: "Női torna",
-          link: "lady",
+          link: "holgy",
         },
       ],
     },
@@ -53,15 +53,15 @@ const pagesConfig = {
       list: [
         {
           text: "Évzáró előadások",
-          link: "speech_day",
+          link: "evzaro_eloadas",
         },
         {
           text: "Országos versenyek",
-          link: "competitions",
+          link: "versenyek",
         },
         {
           text: "Nyilvános órák",
-          link: "public_class",
+          link: "nyilvanos_ora",
         },
         {
           text: "OMISK Gála",
@@ -69,11 +69,11 @@ const pagesConfig = {
         },
         {
           text: "OMISK Mozdulatműhely",
-          link: "callisthenics",
+          link: "mozdulatmuhely",
         },
         {
           text: "Nyári tánctábor",
-          link: "camp",
+          link: "nyari_tabor",
         },
       ],
     },
@@ -606,7 +606,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "turquoise",
         dotColor: "dot-blue",
-        link: "eurhythmics",
+        link: "muveszitorna",
       },
       {
         title: "Mozdulatművészet",
@@ -617,7 +617,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "blue",
         dotColor: "dot-blue",
-        link: "callisthenics",
+        link: "mozdulatmuveszet",
       },
       {
         title: "Klasszikus balett",
@@ -628,7 +628,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "ballet",
+        link: "balett",
       },
       {
         title: "Jazztánc",
@@ -661,7 +661,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "pre_ballet",
+        link: "pre_balett",
       },
       {
         title: "Női torna",
@@ -672,7 +672,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "lady",
+        link: "holgy",
       },
     ],
   },
@@ -684,14 +684,14 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyilvanos_ora",
-          link: "public_class",
+          link: "nyilvanos_ora",
         },
         {
           title: "Versenyek",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "versenyek",
-          link: "competitions",
+          link: "versenyek",
         },
       ],
       secondRow: [
@@ -700,7 +700,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "evzaro_eloadas",
-          link: "speech_day",
+          link: "evzaro_eloadas",
         },
         {
           title: "Omisk gála",
@@ -716,7 +716,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "mozdulatmuhely",
-          link: "callisthenics",
+          link: "mozdulatmuhely",
         },
         // {
         //   title: "Nyári tánctábor",

@@ -4,7 +4,7 @@ import style from "../assets/css/courseCard.module.css";
 
 export default function Card(props) {
   return (
-    <Link to={`/courses/${props.details.link}`} className={`${style.wrapper}`}>
+    <Link to={`/kurzusok/${props.details.link}`} className={`${style.wrapper}`}>
       <label className={`${style.title} size-28 extra-bold`}>
         {props.details.title}
       </label>
