@@ -17,6 +17,8 @@ import Enrollment from "./pages/Enrollment";
 
 import Contact from "./pages/Contact";
 
+import Beiratkozas from "./pages/Beiratkozas";
+
 // courses
 import Course from "./components/Course";
 
@@ -226,6 +228,9 @@ function App() {
         </Route>
         <Route path="/programDetail">
           <ProgramDetail />
+        </Route>
+        <Route path="/beiratkozas_uj">
+          <Beiratkozas />
         </Route>
         <Route path="/admin">
           <Admin />
