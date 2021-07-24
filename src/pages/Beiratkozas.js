@@ -1,5 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "../assets/css/beiratkozas.module.css";
+
+import Carousel, {
+  slidesToShowPlugin,
+  autoplayPlugin,
+  infinitePlugin,
+} from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
+
+import "react-glidejs/dist/index.css";
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 function SiteContainer({ children }) {
   return (
@@ -12,6 +46,30 @@ function SiteContainer({ children }) {
 }
 
 export default function Beiratkozas() {
+  let images = [
+    require(`../assets/img/gallery/esztetikus-testkepzes-1.jpg`).default,
+    require(`../assets/img/gallery/jazztanc-1.jpg`).default,
+    require(`../assets/img/gallery/esztetikus-testkepzes-2.jpg`).default,
+    require(`../assets/img/gallery/jazztanc-2.jpg`).default,
+    require(`../assets/img/gallery/keziszeres-gimnasztika-1.jpg`).default,
+    require(`../assets/img/gallery/keziszeres-gimnasztika-2.jpg`).default,
+    require(`../assets/img/gallery/klasszikus-balett-1.jpg`).default,
+    require(`../assets/img/gallery/klasszikus-balett-2.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-1.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-2.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-3.jpg`).default,
+    require(`../assets/img/gallery/mozdulatmuveszet-1.jpg`).default,
+    require(`../assets/img/gallery/mozdulatmuveszet-2.jpg`).default,
+    require(`../assets/img/gallery/muveszi-torna-1.jpg`).default,
+    require(`../assets/img/gallery/muveszi-torna-2.jpg`).default,
+    require(`../assets/img/gallery/ritmikus-gimnasztika-1.jpg`).default,
+    require(`../assets/img/gallery/ritmikus-gimnasztika-2.jpg`).default,
+  ];
+
+  function onChangeHandler(props) {
+    // console.log(props);
+  }
+
   return (
     <div>
       <div className={style[`header-wrapper`]}>
@@ -19,32 +77,78 @@ export default function Beiratkozas() {
           <h1>Beiratkozas 2021/22</h1>
         </div>
       </div>
+      <div className={`${style["gallery-wrapper"]}`}>
+        <Carousel
+          onChange={onChangeHandler}
+          plugins={[
+            "centered",
+            "infinite",
+            {
+              resolve: infinitePlugin,
+              options: {
+                numberOfInfiniteClones: 3,
+              },
+            },
+            {
+              resolve: slidesToShowPlugin,
+              options: {
+                numberOfSlides: 2,
+              },
+            },
+            {
+              resolve: autoplayPlugin,
+              options: {
+                interval: 4000,
+              },
+            },
+          ]}
+          animationSpeed={1000}
+        >
+          {images.map((el) => (
+            <div className="image-siled-wrapper">
+              <img
+                className={style[`image-slide`]}
+                style={{}}
+                key={""}
+                src={el}
+                alt=""
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
       <SiteContainer>
         <div className="row">
           <div className="col-lg-3"></div>
-          <div className="col-lg-6">
+          <div className={`col-lg-6 ${style["dates-and-places"]}`}>
             <h3>
               1990-be alapított tánc és mozgásművészeti iskolánkban 3 budapesti
               kerületben 7 helyszínen várjuk növendékeinket és az új
               jelentkezőket a 2021/22-es tanévben is.
             </h3>
-            <button className={style[`enrollment-button`]}>
-              Beiratkozási időpontok és helyszinek
-            </button>
+            <div>
+              <button className={style[`enrollment-button`]}>
+                Beiratkozási időpontok és helyszinek
+              </button>
+            </div>
           </div>
           <div className="col-lg-3"></div>
         </div>
         <div className={`row ${style[`content-wrapper`]}`}>
-          <div className="col-lg-6">
+          <div className="col-lg-5">
             <div className={`${style[`image-wrapper`]}`}>
               <div className={`${style[`image-placeholder`]}`}></div>
               <img
-                class="img-fluid"
-                src={"https://source.unsplash.com/Hx_LcI9gYjk/733x568"}
+                className={`${style[`content-image`]}`}
+                src={`${
+                  require(`../assets/img/gallery/ritmikus-gimnasztika-3.jpg`)
+                    .default
+                }`}
                 alt=""
               ></img>
             </div>
           </div>
+          <div className="col-lg-1"></div>
           <div className={`col-lg-5 ${style[`details-tile`]}`}>
             <div className={`${style[`details-wrapper`]}`}>
               <h2>4 évestől felnött korodig</h2>
@@ -65,46 +169,66 @@ export default function Beiratkozas() {
             style[`content-wrapper-margin-top`]
           }`}
         >
+          {useWindowDimensions().width <= 800 && (
+            <div className="col-lg-5">
+              <div className={`${style[`image-wrapper-inverse`]}`}>
+                <div className={`${style[`image-placeholder-inverse`]}`}></div>
+                <img
+                  className={`${style[`content-image-inverse`]}`}
+                  src={`${
+                    require(`../assets/img/gallery/modern-tanc-4.jpg`).default
+                  }`}
+                  alt=""
+                ></img>
+              </div>
+            </div>
+          )}
           <div className="col-lg-1"></div>
           <div className={`col-lg-5 ${style[`details-tile`]}`}>
             <div className={`${style[`details-wrapper`]}`}>
-              <h2>4 évestől felnött korodig</h2>
+              <h2>Melyik kurzust válasszam?</h2>
               <p>
-                lehetsz csapatunk tagja és választhatsz az életkorodnak
-                megfelelő különböző kurzusok közül. Rendszeresen tartunk
-                bemutatókat, gálaműsorokat és járhatsz olyan csoportba is,
-                amelyek táncversenyeken is megmérettetik magukat.
-                Programjainkról itt olvashatsz részletesebben:{" "}
+                Képzésünket 4 éves korban művészi tornával (ritmikus
+                gimnasztika) kezdjük el. Az általunk követett Berczik módszer
+                kiváló alapot ad a későbbiekben választható valamennyi műfajhoz.
+                Iskolás kortól választható: balett, mozdulatművészet, modern
+                tánc és jazztánc. A tanítás iskolaszerűen egymásra épülő
+                évfolyamokban történik, de menet közben is lehet csatlakozni az
+                életkornak illetve előképzettségnek megfelelő csoportba. A
+                műfajokról itt olvashatsz bővebben:{" "}
               </p>
-              <button className={style[`green-button`]}>Programjaink</button>
+              <button className={style[`green-button`]}>Kurzusaink</button>
             </div>
           </div>
           <div className="col-lg-1"></div>
-          <div className="col-lg-5">
-            <div className={`${style[`image-wrapper`]}`}>
-              <div className={`${style[`image-placeholder-inverse`]}`}></div>
-              <img
-                class="img-fluid"
-                src={"https://source.unsplash.com/Hx_LcI9gYjk/733x568"}
-                alt=""
-              ></img>
+          {useWindowDimensions().width >= 801 && (
+            <div className="col-lg-5">
+              <div className={`${style[`image-wrapper`]}`}>
+                <div className={`${style[`image-placeholder-inverse`]}`}></div>
+                <img
+                  src={`${
+                    require(`../assets/img/gallery/modern-tanc-4.jpg`).default
+                  }`}
+                  alt=""
+                ></img>
+              </div>
             </div>
-          </div>
+          )}
         </div>
         <div className={`row ${style[`enrollment-details-wrapper`]}`}>
           <div className="col-lg-3"></div>
           <div className={`col-lg-6 ${style[`enrollment-details`]}`}>
             <h1 className={`${style[`enrollment-title`]}`}>A beiratkozáson</h1>
-            <p>
+            <h3>
               az új jelentkezők megismerkedhetnek leendő tanáraikkal és
               megbeszéljük, hogy milyen időbeosztás és melyik csoport volna a
               leginkább megfelelő.
-            </p>
-            <p>
+            </h3>
+            <h3>
               A pontos órarendet a beiratkozásokat követően állítjuk össze. A
               kurzusok helyszinek szerinti várható időpontjait és árainkat az
               alábbi gombra kattintva találod meg.
-            </p>
+            </h3>
             <button
               className={`${style[`enrollment-button`]} ${
                 style[`enrollment-button-gray`]
@@ -156,6 +280,44 @@ export default function Beiratkozas() {
             </div>
           </div>
           <div className="col-lg-3"></div>
+        </div>
+        <div className={`row ${style[`contact-wrapper`]}`}>
+          <div className="col-lg-2"></div>
+          <div className="col-lg-8">
+            <div className={`row ${style[`contact-details-wrapper`]}`}>
+              <div className="col-lg-3"></div>
+              <div className="col-lg-3">
+                <div className={`${style["contact-image-wrapper"]}`}>
+                  <div>
+                    <img
+                      className={`${style["contact-image"]}`}
+                      src={"https://source.unsplash.com/200x200"}
+                      alt=""
+                    ></img>
+                    <div className={`${style["contact-person-wrapper"]}`}>
+                      <p className={`${style["contact-name"]}`}>
+                        Mikusik Márta
+                      </p>
+                      <p className={`${style["contact-position"]}`}>
+                        iskolatitkár
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={`col-lg-5 ${style[`contact-us`]}`}>
+                <h2>Lépj kapcsolatba velünk</h2>
+                <div>
+                  <p>Telefon: 06-1-2000-138</p>
+                  <p>Mobil: 06-20-9460-848</p>
+                  <p>E-mail: iroda@omisk.hu</p>
+                  <p>Posta: 1021 Budapest, Széher út 77.</p>
+                </div>
+              </div>
+              <div className="col-lg-1"></div>
+            </div>
+          </div>
+          <div className="col-lg-2"></div>
         </div>
       </SiteContainer>
     </div>
