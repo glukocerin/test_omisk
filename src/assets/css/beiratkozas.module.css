@@ -300,6 +300,23 @@ h2 {
   position: relative;
   right: 46px;
 }
+
+.contact-person-wrapper {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact-person-wrapper {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-person-wrapper {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .contact-person-wrapper {
     display: flex;
@@ -346,7 +363,7 @@ h2 {
 }
 
 .contact-us {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 800px) {
