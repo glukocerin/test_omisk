@@ -74,7 +74,7 @@ export default function Beiratkozas() {
     <div>
       <div className={style[`header-wrapper`]}>
         <div className={style[`title-wrapper`]}>
-          <h1>Beiratkozas 2021/22</h1>
+          <h1>Beiratkozás 2021/22</h1>
         </div>
       </div>
       <div className={`${style["gallery-wrapper"]}`}>
@@ -291,7 +291,7 @@ export default function Beiratkozas() {
                   <div>
                     <img
                       className={`${style["contact-image"]}`}
-                      src={"https://source.unsplash.com/200x200"}
+                      src={`${require(`../assets/img/kapcsolat.jpg`).default}`}
                       alt=""
                     ></img>
                     <div className={`${style["contact-person-wrapper"]}`}>
