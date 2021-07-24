@@ -187,7 +187,7 @@ export default function Landing({ dotChange }) {
         }
       }
     },
-    [autoScrollStoped, stopAutoScroll] = useState(false);
+    [autoScrollStoped, stopAutoScroll] = useState(true);
 
   useEffect(() => {
     if (!autoScrollStoped && !isMobile) {
