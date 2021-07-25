@@ -47,23 +47,23 @@ function SiteContainer({ children }) {
 
 export default function Beiratkozas() {
   let images = [
-    require(`../assets/img/gallery/esztetikus-testkepzes-1.jpg`).default,
-    require(`../assets/img/gallery/jazztanc-1.jpg`).default,
-    require(`../assets/img/gallery/esztetikus-testkepzes-2.jpg`).default,
-    require(`../assets/img/gallery/jazztanc-2.jpg`).default,
-    require(`../assets/img/gallery/keziszeres-gimnasztika-1.jpg`).default,
-    require(`../assets/img/gallery/keziszeres-gimnasztika-2.jpg`).default,
-    require(`../assets/img/gallery/klasszikus-balett-1.jpg`).default,
-    require(`../assets/img/gallery/klasszikus-balett-2.jpg`).default,
-    require(`../assets/img/gallery/modern-tanc-1.jpg`).default,
-    require(`../assets/img/gallery/modern-tanc-2.jpg`).default,
-    require(`../assets/img/gallery/modern-tanc-3.jpg`).default,
-    require(`../assets/img/gallery/mozdulatmuveszet-1.jpg`).default,
-    require(`../assets/img/gallery/mozdulatmuveszet-2.jpg`).default,
-    require(`../assets/img/gallery/muveszi-torna-1.jpg`).default,
     require(`../assets/img/gallery/muveszi-torna-2.jpg`).default,
-    require(`../assets/img/gallery/ritmikus-gimnasztika-1.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-1.jpg`).default,
+    require(`../assets/img/gallery/klasszikus-balett-2.jpg`).default,
+    require(`../assets/img/gallery/jazztanc-2.jpg`).default,
     require(`../assets/img/gallery/ritmikus-gimnasztika-2.jpg`).default,
+    require(`../assets/img/gallery/keziszeres-gimnasztika-1.jpg`).default,
+    require(`../assets/img/gallery/mozdulatmuveszet-2.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-2.jpg`).default,
+    require(`../assets/img/gallery/keziszeres-gimnasztika-2.jpg`).default,
+    require(`../assets/img/gallery/modern-tanc-3.jpg`).default,
+    require(`../assets/img/gallery/jazztanc-1.jpg`).default,
+    require(`../assets/img/gallery/ritmikus-gimnasztika-1.jpg`).default,
+    require(`../assets/img/gallery/klasszikus-balett-1.jpg`).default,
+    require(`../assets/img/gallery/esztetikus-testkepzes-1.jpg`).default,
+    require(`../assets/img/gallery/mozdulatmuveszet-1.jpg`).default,
+    require(`../assets/img/gallery/esztetikus-testkepzes-2.jpg`).default,
+    require(`../assets/img/gallery/muveszi-torna-1.jpg`).default,
   ];
 
   function onChangeHandler(props) {
@@ -111,7 +111,7 @@ export default function Beiratkozas() {
                 style={{}}
                 key={""}
                 src={el}
-                alt=""
+                alt={el}
               />
             </div>
           ))}
