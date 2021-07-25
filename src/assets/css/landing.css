@@ -954,8 +954,7 @@
     background-position: top;
     top: 0;
     height: 50vh;
-    /* background-image: url("../img/landing_bg_1_mobil.jpg"); */
-    background-image: url("../img/landing_bg_1_mobil_new.png");
+    background-image: url("../img/muveszitorna-balett-moderntanc.png");
   }
   .mobile-card.one {
     order: 3;
