@@ -124,7 +124,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/balett">
+        <Route path="/kurzusok/klasszikus_balett">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.ballet} />
           <Footer />
@@ -136,7 +136,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/modern">
+        <Route path="/kurzusok/modern_tanc">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.modern} />
           <Footer />

@@ -21,12 +21,92 @@ ReactGA.initialize(trackingId);
 // Initialize google analytics page view tracking
 history.listen((location) => {
   let title = document.getElementsByTagName("title")[0];
+  const pages = [
+    {
+      url: "muveszitorna",
+      title: "Művészi torna",
+    },
+    {
+      url: "modern_tanc",
+      title: "Modern tánc",
+    },
+    {
+      url: "klasszikus_balett",
+      title: "Klasszikus balett",
+    },
+    {
+      url: "mozdulatmuveszet",
+      title: "Mozdulatművészet",
+    },
+    {
+      url: "jazz",
+      title: "Jazztánc",
+    },
+    {
+      url: "pre_balett",
+      title: "Pre balett",
+    },
+    {
+      url: "nyilvanos_ora",
+      title: "Nyilvános órák",
+    },
+    {
+      url: "versenyek",
+      title: "Versenyek",
+    },
+    {
+      url: "evzaro_eloadas",
+      title: "Évzáró előadások",
+    },
+    {
+      url: "omisk",
+      title: "Omisk Gála",
+    },
+    {
+      url: "mozdulatmuhely",
+      title: "Mozdulatműhely",
+    },
+    {
+      url: "tanaraink",
+      title: "Tanáraink",
+    },
+    {
+      url: "blog",
+      title: "Blog",
+    },
+    {
+      url: "mukodesunk",
+      title: "Működésünk",
+    },
+    {
+      url: "beiratkozas",
+      title: "Beiratkozás",
+    },
+    {
+      url: "kapcsolat",
+      title: "Kapcsolat",
+    },
+    {
+      url: "kurzusok",
+      title: "Kurzusaink",
+    },
+    {
+      url: "programok",
+      title: "Programjaink",
+    },
+  ];
 
   if (location.pathname === "/") {
+    console.log("asdda");
     title.innerHTML = "OMISK | Tánckurzusok | Tánctáborok";
   } else {
-    title.innerHTML =
+    let url =
       location.pathname.split("/")[location.pathname.split("/").length - 1];
+    title.innerHTML =
+      pages.filter((page) => {
+        return page.url === url;
+      })[0].title +
+      " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok";
   }
 
   ReactGA.set({ page: location.pathname }); // Update the user's current page

@@ -86,11 +86,11 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/modern">
+                <Link to="/kurzusok/modern_tanc">
                   <span className="size-14 extra-bold">Modern tánc</span>
                   <span className="size-14 thin">8 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/balett">
+                <Link to="/kurzusok/klasszikus_balett">
                   <span className="size-14 extra-bold">Klasszikus balett</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>

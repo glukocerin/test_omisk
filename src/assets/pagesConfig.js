@@ -28,7 +28,7 @@ const pagesConfig = {
         },
         {
           text: "Modern tánc",
-          link: "modern",
+          link: "modern_tanc",
         },
         {
           text: "Jazz tánc",
@@ -628,7 +628,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "balett",
+        link: "klasszikus_balett",
       },
       {
         title: "Jazztánc",
@@ -643,14 +643,14 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern_tanc",
+        image: "modern",
         bg_mobile: "pink",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
         bottomText: "kerületekben",
         backgroundColor: "green",
         dotColor: "dot-green",
-        link: "modern",
+        link: "modern_tanc",
       },
       {
         title: "Pre balett",
