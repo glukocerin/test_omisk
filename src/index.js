@@ -47,6 +47,10 @@ history.listen((location) => {
       title: "Pre balett",
     },
     {
+      url: "noi_torna",
+      title: "Női torna",
+    },
+    {
       url: "nyilvanos_ora",
       title: "Nyilvános órák",
     },
@@ -93,6 +97,10 @@ history.listen((location) => {
     {
       url: "programok",
       title: "Programjaink",
+    },
+    {
+      url: "tanar",
+      title: "Tanár",
     },
   ];
 

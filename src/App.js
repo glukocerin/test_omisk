@@ -142,7 +142,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/holgy">
+        <Route path="/kurzusok/noi_torna">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.lady} />
           <Footer />

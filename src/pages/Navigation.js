@@ -108,7 +108,7 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Pre balett</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/holgy">
+                <Link to="/kurzusok/noi_torna">
                   <span className="size-14 extra-bold">Női torna</span>
                   <span className="size-14 thin">Hölgyeknek</span>
                 </Link>

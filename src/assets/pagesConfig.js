@@ -44,7 +44,7 @@ const pagesConfig = {
         },
         {
           text: "Női torna",
-          link: "holgy",
+          link: "noi_torna",
         },
       ],
     },
@@ -643,7 +643,7 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern",
+        image: "modern_tanc",
         bg_mobile: "pink",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
@@ -672,7 +672,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "holgy",
+        link: "noi_torna",
       },
     ],
   },
