@@ -102,11 +102,15 @@ history.listen((location) => {
       url: "tanar",
       title: "Tanár",
     },
+    {
+      url: "beiratkozas_uj",
+      title: "Beiratkozás",
+    },
   ];
 
   if (location.pathname === "/") {
-    console.log("asdda");
-    title.innerHTML = "OMISK | Tánckurzusok | Tánctáborok";
+    title.innerHTML =
+      "ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok";
   } else {
     let url =
       location.pathname.split("/")[location.pathname.split("/").length - 1];

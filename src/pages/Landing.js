@@ -224,7 +224,14 @@ export default function Landing({ dotChange }) {
           </Link>
         </div>
       </div>
-      <div className={`right one ${activeDot === 1 ? "active" : ""}`}></div>
+      {console.log(isMobile)}
+      {isMobile ? (
+        <div
+          className={`right one-mobile  ${activeDot === 1 ? "active" : ""}`}
+        ></div>
+      ) : (
+        <div className={`right one  ${activeDot === 1 ? "active" : ""}`}></div>
+      )}
       <div
         className={`mobile-card one ${activeCard === 1 && "toggled"}`}
         onClick={(event) => {
@@ -519,8 +526,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Taylor
-                  Esther
+                  Benis Katalin I Markolt-Rózsa Réka I Erdész- Taylor Esther
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -529,7 +535,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Benis Katalin I Kovács Bea I Pers Júlia I Rácz-Lakatos Lilla
+                  Benis Katalin I Pers Júlia I Bozsokiné-Taylor Jennifer
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
@@ -563,7 +569,7 @@ export default function Landing({ dotChange }) {
                   péntek{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Taylor Esther
+                  Erdész-Taylor Esther
                 </label>
               </div>
             </div>
@@ -593,7 +599,8 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Kovács Bea I Rácz-Lakatos Lilla{" "}
+                  Kovács Bea I Markolt-Rózsa Réka I Rácz-Lakatos Lilla I Solti
+                  Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -602,7 +609,8 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Kovács Bea I Rácz-Lakatos Lilla{" "}
+                  Kovács Bea I Markolt-Rózsa Réka I Rácz-Lakatos Lilla I Solti
+                  Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
@@ -643,27 +651,6 @@ export default function Landing({ dotChange }) {
                 <label className="place-address size-15 extra-bold">
                   XII. Csörsz u. 18
                 </label>
-                <label className="place-address size-15 extra-bold">
-                  XII. Böszörményi út 24
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Művészi torna
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I kedd I csütörtök{" "}
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Benis Katalin I Solti Eszter
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Mozdulatművészet
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I csütörtök
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Benis Katalin
-                </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
                 </label>
@@ -697,20 +684,20 @@ export default function Landing({ dotChange }) {
               <PlusSign className="plus-sign" />
               <MinusSign className="minus-sign" />
               <label className="place-label size-24 extra-bold">
-                Virányosi Közösségi Ház
+                MOM tagintézmény Barabás Villa
               </label>
               <div className="place-informations">
                 <label className="place-address size-15 extra-bold">
-                  XII. Szarvas Gábor út 8/c
+                  XII. Városmajor utca 44
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
-                  kedd I csütörtök
+                  hétfő I csütörtök
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Rózsa Réka
+                  Benis Katalin
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -719,7 +706,7 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Rózsa Réka
+                  Benis Katalin
                 </label>
               </div>
             </div>
@@ -736,7 +723,7 @@ export default function Landing({ dotChange }) {
               <PlusSign className="plus-sign" />
               <MinusSign className="minus-sign" />
               <label className="place-label size-24 extra-bold">
-                Szarvas Gábor Közösségi Tér
+                20-22 Fitness
               </label>
               <div className="place-informations">
                 <label className="place-address size-15 extra-bold">
@@ -746,10 +733,10 @@ export default function Landing({ dotChange }) {
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
-                  hétfő I kedd I szerda I csütörtök{" "}
+                  hétfő I kedd I szerda I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Mády Krisztina{" "}
+                  Mády Krisztina I Markolt-Rózsa Réka
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -758,46 +745,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I csütörtök{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Mády Krisztina{" "}
-                </label>
-              </div>
-            </div>
-            <div
-              className={`place ${activePlace.placeId === 7 && "active"}`}
-              onClick={() =>
-                setActivePlace(
-                  activePlace.placeId === 7
-                    ? { placeId: null, position: null }
-                    : { placeId: 7, position: [47.48746, 19.07061], zoom: 15 }
-                )
-              }
-            >
-              <PlusSign className="plus-sign" />
-              <MinusSign className="minus-sign" />
-              <label className="place-label size-24 extra-bold">
-                Józsefvárosi Galéria és Rendezvényközpont
-              </label>
-              <div className="place-informations">
-                <label className="place-address size-15 extra-bold">
-                  VIII. József krt. 70
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Művészi torna
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I szerda
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Solti Eszter
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Mozdulatművészet
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I szerda
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Solti Eszter
+                  Mády Krisztina I Markolt-Rózsa Réka
                 </label>
               </div>
             </div>
@@ -824,22 +772,31 @@ export default function Landing({ dotChange }) {
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
+                  hétfő I péntek
+                </label>
+                <label className="place-program-row size-17 thin">
+                  Bozsókiné-Taylor Jennifer
+                </label>
+                <label className="place-program-row size-17 thin title">
+                  Mozdulatművészet
+                </label>
+                <label className="place-program-row size-17 thin">
                   hétfő I szerda
                 </label>
                 <label className="place-program-row size-17 thin">
-                  P.Ács Vali
+                  Solti Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Klasszikus balett
                 </label>
                 <label className="place-program-row size-17 thin">
-                  hétfő I szerda
+                  hétfő I szerda{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  P.Ács Vali
+                  Csöngei Barbara
                 </label>
                 <label className="place-program-row size-17 thin title">
-                  Klasszikus balett
+                  Modern tánc
                 </label>
                 <label className="place-program-row size-17 thin">
                   hétfő I szerda{" "}

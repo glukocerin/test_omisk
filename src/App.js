@@ -230,7 +230,10 @@ function App() {
           <ProgramDetail />
         </Route>
         <Route path="/beiratkozas_uj">
+          <Navigation BackgroundColor="green-2" />
           <Beiratkozas />
+          <Footer />
+          <FooterMobile />
         </Route>
         <Route path="/admin">
           <Admin />

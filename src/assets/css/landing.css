@@ -910,7 +910,7 @@
     font-size: 38px;
   }
   .left.one .title.new {
-    font-size: 8vw;
+    font-size: 6vw;
   }
   .left.one .title.new:first-child {
     padding-left: 0;
@@ -955,6 +955,16 @@
     top: 0;
     height: 50vh;
     background-image: url("../img/muveszitorna-balett-moderntanc.png");
+  }
+  .right.one-mobile {
+    order: 1;
+    background-size: 100% auto;
+    /* background-color: var(--color-gray-new-0); */
+    background-color: var(--color-green-2);
+    background-position: top;
+    top: 0;
+    height: 50vh;
+    background-image: url("../img/muveszitorna-balett-moderntanc-mobile.png");
   }
   .mobile-card.one {
     order: 3;

@@ -90,7 +90,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 45 perc", "Heti 2 x 60 perc"],
-            prices: ["10000-10300 Ft / hó", "11000-11300 Ft / hó"],
+            prices: ["10500-12500 Ft / hó", "11500-12500 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -104,24 +104,14 @@ const pagesConfig = {
         },
         places: [
           {
-            name: "Virányosi Közösségi Ház",
-            address: "XII. ker. Szarvas Gábor út 8/c",
-            appointments: ["Kedd", "Csütörtök"],
-          },
-          {
-            name: "Szarvas Gábor Közösségi Tér",
-            address: "XII. Szarvas Gábor út 8/c",
-            appointments: ["Hétfő", "kedd", "Szerda", "Csütörtök"],
+            name: "20-22Fitness",
+            address: "XII. ker. Szarvas Gábor út 22",
+            appointments: ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
           },
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Pentek"],
-          },
-          {
-            name: "MOM Kulturális Központ",
-            address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő", "Csütörtök"],
+            appointments: ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
@@ -129,14 +119,14 @@ const pagesConfig = {
             appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
           {
-            name: "Józsefvárosi Galéria és Rendezvény Központ",
-            address: "VIII. József krt. 70",
-            appointments: ["Szerda"],
+            name: "MOM Tagintézmény, Barabás Villa",
+            address: "XII. ker. Városmajor utca 44.",
+            appointments: ["Hétfő", "Csütörtök"],
           },
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő", "Szerda", "Péntek"],
+            appointments: ["Hétfő", "Péntek"],
           },
         ],
         forWhom: {
@@ -192,9 +182,9 @@ const pagesConfig = {
         },
         places: [
           {
-            name: "Virányosi Közösségi Ház",
-            address: "XII. ker. Szarvas Gábor út 8/c",
-            appointments: ["Kedd", "Csütörtök"],
+            name: "20-22Fitness",
+            address: "XII. ker. Szarvas Gábor út 22",
+            appointments: ["Hétfő", "Kedd", "Szerda", "Csütörtök"],
           },
           {
             name: "Óbudai Kulturális Központ",
@@ -202,29 +192,20 @@ const pagesConfig = {
             appointments: ["Hétfő", "Kedd", "Szerda", "Péntek"],
           },
           {
-            name: "MOM Kulturális Központ",
-            address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő", "Csütörtök"],
-          },
-          {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
+
           {
-            name: "Józsefvárosi Galéria és Rendezvény Központ",
-            address: "VIII. József krt. 70",
-            appointments: ["Szerda"],
+            name: "MOM Tagintézmény, Barabás Villa",
+            address: "XII. ker. Városmajor utca 44.",
+            appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Szerda", "Péntek"],
-          },
-          {
-            name: "Szarvas Gábor Közösségi Tér",
-            address: "XII. Szarvas Gábor út 8/c",
-            appointments: ["Hétfő", "kedd", "Szerda", "Csütörtök"],
+            appointments: ["Hétfő", "Szerda", "Péntek"],
           },
         ],
         forWhom: {
@@ -325,16 +306,8 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: [
-              "Heti 2 x 60 perc",
-              "Heti 2 x 90 perc",
-              "Heti 3 x 60 perc",
-            ],
-            prices: [
-              "11000-11300 Ft / hó",
-              "12800-14700 Ft / hó",
-              "15200 Ft / hó",
-            ],
+            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
+            prices: ["11500-12500 Ft / hó", "13500-15000 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -343,19 +316,19 @@ const pagesConfig = {
           },
           ages: {
             name: "Korosztály",
-            ageGroup: ["8 éves kortól", "korcsoportonként"],
+            ageGroup: ["10 éves kortól", "korcsoportonként"],
           },
         },
         places: [
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Hétfő", "Szerda"],
+            appointments: ["Hétfő"],
           },
           {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
-            appointments: ["Kedd", "Csütörtök"],
+            appointments: ["Kedd", "Szerda", "Csütörtök"],
           },
           {
             name: "MOM Kulturális Központ",
@@ -365,7 +338,7 @@ const pagesConfig = {
           {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
-            appointments: ["Hétfő"],
+            appointments: ["Hétfő", "Szerda"],
           },
         ],
         forWhom: {
@@ -408,7 +381,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 60 perc"],
-            prices: ["11300 Ft / hó"],
+            prices: ["11500-12500 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -467,7 +440,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 60 perc"],
-            prices: ["11000-11300 Ft / hó"],
+            prices: ["11500-12500 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -489,11 +462,6 @@ const pagesConfig = {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Szerda", "Csütörtök"],
-          },
-          {
-            name: "VII. ker. Táncstúdió",
-            address: "VII. Wesselényi u. 41",
-            appointments: ["Szerda"],
           },
         ],
         forWhom: {
@@ -560,8 +528,8 @@ const pagesConfig = {
         },
         places: [
           {
-            name: "Virányosi Közösségi Ház",
-            address: "XII. ker. Szarvas Gábor út 20-22",
+            name: "20-22 Fitness",
+            address: "XII. ker. Szarvas Gábor út 22",
             appointments: ["Hétfő", "Szerda", "Péntek"],
           },
         ],
@@ -1572,11 +1540,11 @@ const pagesConfig = {
     },
     {
       id: 5,
-      title: "Tanév rendje,  2020/21",
+      title: "Tanév rendje,  2021/22",
       role: "primary",
       parentId: 5,
       description:
-        "Beiratkozás: augusztus 26. - szeptember 9.\n\nÓrarend kihirdetés: szeptember 15. \n\nA tanítás első napja: szeptember 17.\n\nA tanítás utolsó napja: július 15.\n\nTéli szünet :  2020. december 22. – 2021. január 4.\n\nNyilvános órák: 2020. december - 2021. január\n\nÉvzáró előadás: Június 6 ( MOM Kulturális Központ )\n                            Június 12-13 ( Óbudai Kulturális Központ )",
+        "Beiratkozás: augusztus 25. - szeptember 7.\n\nÓrarend kihirdetés: szeptember 15. \n\nA tanítás első napja: szeptember 17.\n\nA tanítás utolsó napja: július 15.\n\nTéli szünet :  2021. december 22. – 2021. január 3.\n\nNyilvános órák: 2021. december - 2022. január\n\nÉvzáró előadás: Június 6 ( MOM Kulturális Központ )\n                            Június 12-13 ( Óbudai Kulturális Központ )",
     },
     {
       id: 6,

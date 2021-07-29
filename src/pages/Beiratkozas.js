@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "../assets/css/beiratkozas.module.css";
+import { Link } from "react-router-dom";
 
 import Carousel, {
   slidesToShowPlugin,
@@ -127,9 +128,11 @@ export default function Beiratkozas() {
               jelentkezőket a 2021/22-es tanévben is.
             </h3>
             <div>
-              <button className={style[`enrollment-button`]}>
-                Beiratkozási időpontok és helyszinek
-              </button>
+              <Link to="/beiratkozas">
+                <button className={style[`enrollment-button`]}>
+                  Beiratkozási időpontok és helyszinek
+                </button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3"></div>
@@ -159,7 +162,9 @@ export default function Beiratkozas() {
                 amelyek táncversenyeken is megmérettetik magukat.
                 Programjainkról itt olvashatsz részletesebben:{" "}
               </p>
-              <button className={style[`green-button`]}>Programjaink</button>
+              <Link to="/programjaink">
+                <button className={style[`green-button`]}>Programjaink</button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-1"></div>
@@ -197,7 +202,9 @@ export default function Beiratkozas() {
                 életkornak illetve előképzettségnek megfelelő csoportba. A
                 műfajokról itt olvashatsz bővebben:{" "}
               </p>
-              <button className={style[`green-button`]}>Kurzusaink</button>
+              <Link to="/kurzusok">
+                <button className={style[`green-button`]}>Kurzusaink</button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-1"></div>
@@ -229,19 +236,21 @@ export default function Beiratkozas() {
               kurzusok helyszinek szerinti várható időpontjait és árainkat az
               alábbi gombra kattintva találod meg.
             </h3>
-            <button
-              className={`${style[`enrollment-button`]} ${
-                style[`enrollment-button-gray`]
-              }`}
-            >
-              Kurzusaink
-              <span
-                className={`${style[`arrow`]}
-              }`}
+            <Link to="/kurzusok">
+              <button
+                className={`${style[`enrollment-button`]} ${
+                  style[`enrollment-button-gray`]
+                }`}
               >
-                &#8594;
-              </span>
-            </button>
+                Kurzusaink
+                <span
+                  className={`${style[`arrow`]}
+              }`}
+                >
+                  &#8594;
+                </span>
+              </button>
+            </Link>
           </div>
           <div className="col-lg-3"></div>
         </div>
