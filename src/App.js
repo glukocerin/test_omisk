@@ -130,7 +130,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/jazz">
+        <Route path="/kurzusok/jazz-tanc">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.jazz} />
           <Footer />

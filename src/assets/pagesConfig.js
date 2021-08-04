@@ -32,7 +32,7 @@ const pagesConfig = {
         },
         {
           text: "Jazz tánc",
-          link: "jazz",
+          link: "jazz-tanc",
         },
         {
           text: "Klasszikus balett",
@@ -90,7 +90,7 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 45 perc", "Heti 2 x 60 perc"],
-            prices: ["10500-12500 Ft / hó", "11500-12500 Ft / hó"],
+            prices: ["10500-11000 Ft / hó", "11500-12500 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
@@ -139,10 +139,10 @@ const pagesConfig = {
           ],
         },
         aboutCourse: {
-          title: "Mi a művészi torna?",
+          title: "Mi a művészi torna (RG)?",
           img: "pages/muveszetitorna/2.jpg",
           description:
-            "Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak.",
+            "A művészi torna a gimnasztikai alapja a ritmikus gimnasztikának (RG). Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
@@ -607,7 +607,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "green",
         dotColor: "dot-green",
-        link: "jazz",
+        link: "jazz-tanc",
       },
       {
         title: "Modern tánc",

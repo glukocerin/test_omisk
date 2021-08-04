@@ -39,7 +39,7 @@ history.listen((location) => {
       title: "Mozdulatművészet",
     },
     {
-      url: "jazz",
+      url: "jazz-tanc",
       title: "Jazztánc",
     },
     {
