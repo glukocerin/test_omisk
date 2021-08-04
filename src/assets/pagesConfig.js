@@ -20,7 +20,7 @@ const pagesConfig = {
       list: [
         {
           text: "Művészi torna",
-          link: "muveszitorna",
+          link: "muveszi-torna",
         },
         {
           text: "Mozdulatművészet",
@@ -574,7 +574,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "turquoise",
         dotColor: "dot-blue",
-        link: "muveszitorna",
+        link: "muveszi-torna",
       },
       {
         title: "Mozdulatművészet",

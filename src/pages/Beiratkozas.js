@@ -45,6 +45,12 @@ function SiteContainer({ children }) {
     </div>
   );
 }
+function handleClick(e) {
+  e.preventDefault();
+
+  const enrollmentDates = document.getElementById("enrollment-dates");
+  enrollmentDates.scrollIntoView({ behavior: "smooth" });
+}
 
 export default function Beiratkozas() {
   let images = [
@@ -123,13 +129,16 @@ export default function Beiratkozas() {
           <div className="col-lg-3"></div>
           <div className={`col-lg-6 ${style["dates-and-places"]}`}>
             <h3>
-              1990-be alapított tánc és mozgásművészeti iskolánkban 3 budapesti
+              1990-ben alapított tánc és mozgásművészeti iskolánkban 3 budapesti
               kerületben 7 helyszínen várjuk növendékeinket és az új
               jelentkezőket a 2021/22-es tanévben is.
             </h3>
             <div>
               <Link to="/beiratkozas">
-                <button className={style[`enrollment-button`]}>
+                <button
+                  className={style[`enrollment-button`]}
+                  onClick={(e) => handleClick(e)}
+                >
                   Beiratkozási időpontok és helyszinek
                 </button>
               </Link>
@@ -154,7 +163,7 @@ export default function Beiratkozas() {
           <div className="col-lg-1"></div>
           <div className={`col-lg-5 ${style[`details-tile`]}`}>
             <div className={`${style[`details-wrapper`]}`}>
-              <h2>4 évestől felnött korodig</h2>
+              <h2>4 évestől felnőtt korodig</h2>
               <p>
                 lehetsz csapatunk tagja és választhatsz az életkorodnak
                 megfelelő különböző kurzusok közül. Rendszeresen tartunk
@@ -254,7 +263,10 @@ export default function Beiratkozas() {
           </div>
           <div className="col-lg-3"></div>
         </div>
-        <div className={`row ${style[`enrollment-dates-wrapper`]}`}>
+        <div
+          id={"enrollment-dates"}
+          className={`row ${style[`enrollment-dates-wrapper`]}`}
+        >
           <div className="col-lg-3"></div>
           <div className={`col-lg-6 ${style[`enrollment-dates-details`]}`}>
             <h3>2021/2022-es Tanév beiratkozási időpontok</h3>

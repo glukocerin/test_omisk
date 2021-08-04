@@ -8,8 +8,8 @@ import pagesConfig from "../assets/pagesConfig";
 const { teachers } = pagesConfig;
 
 export default function CampPageMobile({ props }) {
-  var backgroundImage = require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`)
-    .default;
+  var backgroundImage =
+    require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`).default;
 
   return (
     <div style={{ position: "relative" }}>
@@ -132,7 +132,7 @@ export default function CampPageMobile({ props }) {
             />
             <label className="size-32 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
-              <Link to="/programs/summer_camp/programs/#muveszitorna">
+              <Link to="/programs/summer_camp/programs/#muveszi-torna">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Művészi torna
                 </button>

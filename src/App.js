@@ -13,7 +13,7 @@ import BlogEntry from "./pages/BlogEntry";
 
 import Operation from "./pages/Operation";
 
-import Enrollment from "./pages/Enrollment";
+// import Enrollment from "./pages/Enrollment";
 
 import Contact from "./pages/Contact";
 
@@ -94,19 +94,19 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/beiratkozas">
+        {/* <Route path="/beiratkozas">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Enrollment />
           <Footer />
           <FooterMobile />
-        </Route>
+        </Route> */}
         <Route path="/kapcsolat">
           <Navigation BackgroundColor="blue-1" />
           <Contact />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/muveszitorna">
+        <Route path="/kurzusok/muveszi-torna">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.eurhythmics} />
           <Footer />
@@ -229,7 +229,7 @@ function App() {
         <Route path="/programDetail">
           <ProgramDetail />
         </Route>
-        <Route path="/beiratkozas_uj">
+        <Route path="/beiratkozas">
           <Navigation BackgroundColor="green-2" />
           <Beiratkozas />
           <Footer />

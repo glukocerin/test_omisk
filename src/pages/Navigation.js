@@ -82,7 +82,7 @@ export default function Navigation(props) {
             <Link to="/kurzusok">Kurzusaink</Link>
             <div className="dropdown-menu">
               <div className="row">
-                <Link to="/kurzusok/muveszitorna">
+                <Link to="/kurzusok/muveszi-torna">
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>

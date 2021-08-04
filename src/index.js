@@ -23,7 +23,7 @@ history.listen((location) => {
   let title = document.getElementsByTagName("title")[0];
   const pages = [
     {
-      url: "muveszitorna",
+      url: "muveszi-torna",
       title: "Művészi torna",
     },
     {

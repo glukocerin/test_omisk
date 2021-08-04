@@ -192,7 +192,7 @@
   cursor: pointer;
 }
 .header .links .dropdown-menu .row a + a {
-  margin-left: 1.875rem;
+  /* margin-left: 1.875rem; */
 }
 .header .links .dropdown-menu .row a span {
   color: var(--color-gray-7);
