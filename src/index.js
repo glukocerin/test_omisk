@@ -118,7 +118,7 @@ history.listen((location) => {
       pages.filter((page) => {
         return page.url === url;
       })[0].title +
-      " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok";
+      " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok | OMISK";
   }
 
   ReactGA.set({ page: location.pathname }); // Update the user's current page
