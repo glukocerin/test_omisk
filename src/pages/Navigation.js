@@ -86,11 +86,11 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/modern_tanc">
+                <Link to="/kurzusok/modern-tanc">
                   <span className="size-14 extra-bold">Modern tánc</span>
                   <span className="size-14 thin">8 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/klasszikus_balett">
+                <Link to="/kurzusok/klasszikus-balett">
                   <span className="size-14 extra-bold">Klasszikus balett</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
@@ -104,11 +104,11 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Jazz tánc</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/pre_balett">
+                <Link to="/kurzusok/pre-balett">
                   <span className="size-14 extra-bold">Pre balett</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/kurzusok/noi_torna">
+                <Link to="/kurzusok/noi-torna">
                   <span className="size-14 extra-bold">Női torna</span>
                   <span className="size-14 thin">Hölgyeknek</span>
                 </Link>
@@ -125,7 +125,7 @@ export default function Navigation(props) {
             <Link to="/programok">Programjaink</Link>
             <div className="dropdown-menu">
               <div className="row">
-                <Link to="/programok/nyilvanos_ora">
+                <Link to="/programok/nyilvanos-ora">
                   <span className="size-14 extra-bold">Nyilvános órák</span>
                 </Link>
                 <Link to="/programok/versenyek">
@@ -133,7 +133,7 @@ export default function Navigation(props) {
                 </Link>
               </div>
               <div className="row">
-                <Link to="/programok/evzaro_eloadas">
+                <Link to="/programok/evzaro-eloadas">
                   <span className="size-14 extra-bold">Évzáró előadások</span>
                 </Link>
                 <Link to="/programok/omisk">

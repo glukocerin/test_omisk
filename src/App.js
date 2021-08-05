@@ -118,13 +118,13 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/pre_balett">
+        <Route path="/kurzusok/pre-balett">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.preBallet} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/klasszikus_balett">
+        <Route path="/kurzusok/klasszikus-balett">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.ballet} />
           <Footer />
@@ -136,13 +136,13 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/modern_tanc">
+        <Route path="/kurzusok/modern-tanc">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.modern} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/kurzusok/noi_torna">
+        <Route path="/kurzusok/noi-torna">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
           <Course pageConfig={courses.pages.lady} />
           <Footer />
@@ -154,7 +154,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/evzaro_eloadas">
+        <Route exact path="/programok/evzaro-eloadas">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
@@ -172,7 +172,7 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/nyilvanos_ora">
+        <Route exact path="/programok/nyilvanos-ora">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.publicClass} />
           <Footer />

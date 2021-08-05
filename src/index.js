@@ -27,11 +27,11 @@ history.listen((location) => {
       title: "Művészi torna",
     },
     {
-      url: "modern_tanc",
+      url: "modern-tanc",
       title: "Modern tánc",
     },
     {
-      url: "klasszikus_balett",
+      url: "klasszikus-balett",
       title: "Klasszikus balett",
     },
     {
@@ -43,15 +43,15 @@ history.listen((location) => {
       title: "Jazztánc",
     },
     {
-      url: "pre_balett",
+      url: "pre-balett",
       title: "Pre balett",
     },
     {
-      url: "noi_torna",
+      url: "noi-torna",
       title: "Női torna",
     },
     {
-      url: "nyilvanos_ora",
+      url: "nyilvanos-ora",
       title: "Nyilvános órák",
     },
     {
@@ -59,7 +59,7 @@ history.listen((location) => {
       title: "Versenyek",
     },
     {
-      url: "evzaro_eloadas",
+      url: "evzaro-eloadas",
       title: "Évzáró előadások",
     },
     {

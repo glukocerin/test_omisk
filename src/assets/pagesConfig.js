@@ -28,7 +28,7 @@ const pagesConfig = {
         },
         {
           text: "Modern tánc",
-          link: "modern_tanc",
+          link: "modern-tanc",
         },
         {
           text: "Jazz tánc",
@@ -40,11 +40,11 @@ const pagesConfig = {
         },
         {
           text: "Pre balett / EN",
-          link: "pre_balett",
+          link: "pre-balett",
         },
         {
           text: "Női torna",
-          link: "noi_torna",
+          link: "noi-torna",
         },
       ],
     },
@@ -53,7 +53,7 @@ const pagesConfig = {
       list: [
         {
           text: "Évzáró előadások",
-          link: "evzaro_eloadas",
+          link: "evzaro-eloadas",
         },
         {
           text: "Országos versenyek",
@@ -61,7 +61,7 @@ const pagesConfig = {
         },
         {
           text: "Nyilvános órák",
-          link: "nyilvanos_ora",
+          link: "nyilvanos-ora",
         },
         {
           text: "OMISK Gála",
@@ -596,7 +596,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "klasszikus_balett",
+        link: "klasszikus-balett",
       },
       {
         title: "Jazztánc",
@@ -618,7 +618,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "green",
         dotColor: "dot-green",
-        link: "modern_tanc",
+        link: "modern-tanc",
       },
       {
         title: "Pre balett",
@@ -629,7 +629,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "pre_balett",
+        link: "pre-balett",
       },
       {
         title: "Női torna",
@@ -640,7 +640,7 @@ const pagesConfig = {
         bottomText: "kerületekben",
         backgroundColor: "salmon",
         dotColor: "dot-salmon",
-        link: "noi_torna",
+        link: "noi-torna",
       },
     ],
   },
@@ -652,7 +652,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyilvanos_ora",
-          link: "nyilvanos_ora",
+          link: "nyilvanos-ora",
         },
         {
           title: "Versenyek",
@@ -668,7 +668,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "evzaro_eloadas",
-          link: "evzaro_eloadas",
+          link: "evzaro-eloadas",
         },
         {
           title: "Omisk gála",
