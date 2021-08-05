@@ -109,6 +109,18 @@ export default function Beiratkozas() {
               },
             },
           ]}
+          breakpoints={{
+            1280: {
+              plugins: [
+               {
+                 resolve: slidesToShowPlugin,
+                 options: {
+                  numberOfSlides: 1
+                 }
+               },
+             ]
+            },
+          }}
           animationSpeed={1000}
         >
           {images.map((el) => (
@@ -149,7 +161,6 @@ export default function Beiratkozas() {
         <div className={`row ${style[`content-wrapper`]}`}>
           <div className="col-lg-5">
             <div className={`${style[`image-wrapper`]}`}>
-              <div className={`${style[`image-placeholder`]}`}></div>
               <img
                 className={`${style[`content-image`]}`}
                 src={`${
@@ -186,7 +197,6 @@ export default function Beiratkozas() {
           {useWindowDimensions().width <= 800 && (
             <div className="col-lg-5">
               <div className={`${style[`image-wrapper-inverse`]}`}>
-                <div className={`${style[`image-placeholder-inverse`]}`}></div>
                 <img
                   className={`${style[`content-image-inverse`]}`}
                   src={`${
@@ -219,9 +229,8 @@ export default function Beiratkozas() {
           <div className="col-lg-1"></div>
           {useWindowDimensions().width >= 801 && (
             <div className="col-lg-5">
-              <div className={`${style[`image-wrapper`]}`}>
-                <div className={`${style[`image-placeholder-inverse`]}`}></div>
-                <img
+              <div className={`${style[`image-wrapper-inverse`]}`}>
+                <img className={`${style[`content-image-inverse`]}`}
                   src={`${
                     require(`../assets/img/gallery/modern-tanc-4.jpg`).default
                   }`}
