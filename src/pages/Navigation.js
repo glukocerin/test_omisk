@@ -81,7 +81,7 @@ export default function Navigation(props) {
           >
             <Link to="/kurzusok">Kurzusaink</Link>
             <div className="dropdown-menu">
-              <div className="row">
+              <div className="menu-row">
                 <Link to="/kurzusok/muveszi-torna">
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
@@ -95,7 +95,7 @@ export default function Navigation(props) {
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
               </div>
-              <div className="row">
+              <div className="menu-row">
                 <Link to="/kurzusok/mozdulatmuveszet">
                   <span className="size-14 extra-bold">Mozdulatművészet</span>
                   <span className="size-14 thin">10 éves kortól</span>
@@ -124,7 +124,7 @@ export default function Navigation(props) {
           >
             <Link to="/programok">Programjaink</Link>
             <div className="dropdown-menu">
-              <div className="row">
+              <div className="menu-row">
                 <Link to="/programok/nyilvanos-ora">
                   <span className="size-14 extra-bold">Nyilvános órák</span>
                 </Link>
@@ -132,7 +132,7 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Versenyek</span>
                 </Link>
               </div>
-              <div className="row">
+              <div className="menu-row">
                 <Link to="/programok/evzaro-eloadas">
                   <span className="size-14 extra-bold">Évzáró előadások</span>
                 </Link>
@@ -140,7 +140,7 @@ export default function Navigation(props) {
                   <span className="size-14 extra-bold">Omisk Gála</span>
                 </Link>
               </div>
-              <div className="row">
+              <div className="menu-row">
                 <Link to="/programok/mozdulatmuhely">
                   <span className="size-14 extra-bold">Mozdulatműhely</span>
                 </Link>
