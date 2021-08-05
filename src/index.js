@@ -111,6 +111,14 @@ history.listen((location) => {
   if (location.pathname === "/") {
     title.innerHTML =
       "ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok";
+  } else if(location.pathname.split("/")[location.pathname.split("/").length - 2] === 'blog'){ 
+    let url =
+      location.pathname.split("/")[location.pathname.split("/").length - 2];
+    title.innerHTML =
+      pages.filter((page) => {
+        return page.url === url;
+      })[0].title +
+      " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok | OMISK";
   } else {
     let url =
       location.pathname.split("/")[location.pathname.split("/").length - 1];
