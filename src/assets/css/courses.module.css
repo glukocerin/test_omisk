@@ -25,6 +25,8 @@
 }
 
 .header-text {
+  padding-top: 60px;
+  padding-bottom: 40px;
   width: 100%;
   text-align: center;
   color: var(--color-gray-0);
@@ -38,8 +40,8 @@
 }
 
 .title h1 {
-  padding-top: 4rem;
-  color: #fff;
+  /* padding-top: 4rem;
+  color: #fff; */
 }
 
 .courses {

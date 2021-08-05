@@ -10,7 +10,7 @@ export default function BlogEntry({ config }) {
       <label className="state-location size-13">
         <Link to="/blog">Vissza a blogra</Link>
       </label>
-      <label className="title size-90 extra-bold">{config.title}</label>
+      <h1 className="title size-70 extra-bold">{config.title}</h1>
       <div className="blog-entry-box">
         <label className="date size-15 bold">{config.date}</label>
         <label

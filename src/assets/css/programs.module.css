@@ -20,6 +20,8 @@
   width: 100%;
   text-align: center;
   color: var(--color-gray-0);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .cards-wrapper {

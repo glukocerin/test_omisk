@@ -168,13 +168,13 @@ export default function ProgramPage(props, isSummerCamp) {
         <label className={`${style["state-location"]} size-13`}>
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
-        <label
+        <h1
           className={`${style["header-title"]} size-90 extra-bold ${
             props.opt.title === "Versenyek" && style["achievement"]
           }`}
         >
           {props.opt.title}
-        </label>
+        </h1>
         {props.opt.title === "Versenyek" ? (
           <div className={`${style["achievement-wrapper"]}`}>
             <Kupa />

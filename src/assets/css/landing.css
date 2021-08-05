@@ -1,3 +1,7 @@
+h1 {
+  font-size: initial;
+}
+
 .landing {
   position: relative;
   background: var(--color-gray-0);
@@ -900,7 +904,7 @@
     flex-direction: row;
     align-items: center; */
   }
-  .left.one .titles label:nth-last-child() {
+  .left.one .titles h1:nth-last-child() {
     margin-top: 0;
     /* display: flex;
     flex-direction: row;

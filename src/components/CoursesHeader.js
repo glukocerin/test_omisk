@@ -15,10 +15,10 @@ export default function CoursesHeader(props) {
       <label className={`${style["state-location"]} size-13`}>
         <Link to="/courses">Vissza kurzusainkra</Link>
       </label>
-      <label className={`${style["header-title"]} size-90 extra-bold`}>
-        {props.opt.courseName}
-        <p className={`${style["course"]} size-90 extra-bold`}>kurzus</p>
-      </label>
+      <div>
+        <h1 className={`${style["header-title"]} size-90 extra-bold`}>{props.opt.courseName}</h1>
+        <h1 className={`${style["course"]} size-90 extra-bold`}>kurzus</h1>
+      </div>
     </div>
   );
 }

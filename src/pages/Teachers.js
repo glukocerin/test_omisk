@@ -25,7 +25,7 @@ export default function Teachers() {
   return (
     <div className="teachers">
       <div className="teachers-header"></div>
-      <label className="title size-90 extra-bold">Tanáraink</label>
+      <h1 className="title size-90 extra-bold">Tanáraink</h1>
       <div className="teacher-cards">
         <TeacherCards />
       </div>

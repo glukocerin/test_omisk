@@ -58,7 +58,7 @@ export default function Blog() {
   return (
     <div className="blog">
       <div className="blog-header"></div>
-      <label className="title size-90 extra-bold">Blog</label>
+      <h1 className="title size-90 extra-bold">Blog</h1>
       <div className="blog-cards">
         <BlogCards />
       </div>

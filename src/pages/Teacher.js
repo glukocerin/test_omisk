@@ -20,7 +20,7 @@ export default function Teacher() {
       <label className="state-location size-13">
         <Link to="/tanaraink">Vissza tanárainkra</Link>
       </label>
-      <label className="title size-90 extra-bold">{teacher.name}</label>
+      <h1 className="title size-90 extra-bold">{teacher.name}</h1>
       <img
         className="profile-picture"
         src={require(`../assets/img/teachers/${teacher.picture}`).default}

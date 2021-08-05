@@ -204,12 +204,12 @@ export default function Landing({ dotChange }) {
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
           <div className="titles">
-            <label className="title extra-bold size-54 new">
+            <h1 className="title extra-bold size-54 new">
               Óbuda Tánc és Mozgásművészeti Iskola
-            </label>
-            <label className="title extra-bold size-54 new date-enrollment">
+            </h1>
+            <h1 className="title extra-bold size-54 new date-enrollment">
               Beiratkozás 2021
-            </label>
+            </h1>
             <label className="title extra-bold size-24 new date-enrollment">
               4 éves kortól
             </label>
