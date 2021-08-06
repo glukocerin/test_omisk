@@ -112,13 +112,26 @@ export default function Beiratkozas() {
           breakpoints={{
             1280: {
               plugins: [
-               {
-                 resolve: slidesToShowPlugin,
-                 options: {
-                  numberOfSlides: 1
-                 }
-               },
-             ]
+                "infinite",
+                {
+                  resolve: infinitePlugin,
+                  options: {
+                    numberOfInfiniteClones: 3,
+                  },
+                },
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 1,
+                  },
+                },
+                {
+                  resolve: autoplayPlugin,
+                  options: {
+                    interval: 4000,
+                  },
+                },
+              ],
             },
           }}
           animationSpeed={1000}
@@ -230,7 +243,8 @@ export default function Beiratkozas() {
           {useWindowDimensions().width >= 801 && (
             <div className="col-lg-5">
               <div className={`${style[`image-wrapper-inverse`]}`}>
-                <img className={`${style[`content-image-inverse`]}`}
+                <img
+                  className={`${style[`content-image-inverse`]}`}
                   src={`${
                     require(`../assets/img/gallery/modern-tanc-4.jpg`).default
                   }`}
