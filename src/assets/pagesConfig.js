@@ -516,14 +516,9 @@ const pagesConfig = {
               "1500 Ft",
             ],
           },
-          discount: {
-            name: "Kedvezmény",
-            sibling: ["Online órák díja"],
-            prices: ["a fenti összegek 75 %-a"],
-          },
           ages: {
             name: "Korosztály",
-            ageGroup: ["Hölgyeknek"],
+            ageGroup: ["Felnőtteknek"],
           },
         },
         places: [

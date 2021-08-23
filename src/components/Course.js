@@ -54,7 +54,9 @@ export default function Course({ pageConfig }) {
     <div>
       {pageConfig.opt && <CoursesHeader opt={pageConfig.opt} />}
       {pageConfig.title && (
-        <label className={`size-70 ${style["camp-title"]}`}>{pageConfig.title}</label>
+        <label className={`size-70 ${style["camp-title"]}`}>
+          {pageConfig.title}
+        </label>
       )}
       {pageConfig.info && (
         <div className={style["info-box"]}>
@@ -94,19 +96,25 @@ export default function Course({ pageConfig }) {
                 <Paragraph opt={pageConfig.info.cost.prices} />
               </div>
             </div>
-            <div className={style["info-item"]}>
-              <div className={style["column-first"]}>
-                <p className="size-20 extra-bold">
-                  {pageConfig.info.discount.name}
-                </p>
-              </div>
-              <div className={style["column-second"]}>
-                <Paragraph opt={pageConfig.info.discount.sibling} />
-              </div>
-              <div className={style["column-third"]}>
-                <Paragraph opt={pageConfig.info.discount.prices} />
-              </div>
-            </div>
+            {pageConfig.info.discount ? (
+              <>
+                <div className={style["info-item"]}>
+                  <div className={style["column-first"]}>
+                    <p className="size-20 extra-bold">
+                      {pageConfig.info.discount.name}
+                    </p>
+                  </div>
+                  <div className={style["column-second"]}>
+                    <Paragraph opt={pageConfig.info.discount.sibling} />
+                  </div>
+                  <div className={style["column-third"]}>
+                    <Paragraph opt={pageConfig.info.discount.prices} />
+                  </div>
+                </div>
+              </>
+            ) : (
+              ""
+            )}
             <div className={style["info-item"]}>
               <div className={style["column-first"]}>
                 <p className="size-20 extra-bold">
@@ -217,7 +225,9 @@ export default function Course({ pageConfig }) {
               id={section.id}
             >
               <div className={`${style["text"]}`}>
-                <h4 className={`size-36 extra-bold ${style['camp-subtitle']}`}>{section.title}</h4>
+                <h4 className={`size-36 extra-bold ${style["camp-subtitle"]}`}>
+                  {section.title}
+                </h4>
                 <p className="size-20 thin">{section.description}</p>
               </div>
               <div className={styleCard["pic"]}>
@@ -241,7 +251,7 @@ export default function Course({ pageConfig }) {
             >
               Érdeklődöm
             </Link>
-            <Link className={style["footer-button-sign-up"]} to="/enrollment">
+            <Link className={style["footer-button-sign-up"]} to="/beiratkozas">
               Jelentkezem
             </Link>
           </div>
