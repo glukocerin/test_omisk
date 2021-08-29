@@ -32,15 +32,6 @@ export default function HamburgerMenu() {
         </Link>
         <Link
           className={`link size-36 extra-bold ${
-            location.includes("nyari_tabor") && "active"
-          }`}
-          onClick={() => toggle(!toggled)}
-          to="/programok/nyari_tabor"
-        >
-          Nyári Tánctábor 2021
-        </Link>
-        <Link
-          className={`link size-36 extra-bold ${
             location.includes("course") && "active"
           }`}
           onClick={() => toggle(!toggled)}
