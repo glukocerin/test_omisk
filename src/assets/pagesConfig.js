@@ -94,8 +94,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -117,6 +121,11 @@ const pagesConfig = {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Csütörtök", "Péntek"],
+          },
+          {
+            name: "MOM Kulturális Központ",
+            address: "XII. Csörsz u. 18.",
+            appointments: ["Hétfő", "Csütörtök"],
           },
           {
             name: "MOM Tagintézmény, Barabás Villa",
@@ -168,12 +177,16 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
-            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó"],
+            prices: ["11500-12500 Ft / hó", "13500-15000 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -196,7 +209,11 @@ const pagesConfig = {
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
-
+          {
+            name: "MOM Kulturális Központ",
+            address: "XII. Csörsz u. 18.",
+            appointments: ["Hétfő", "Csütörtök"],
+          },
           {
             name: "MOM Tagintézmény, Barabás Villa",
             address: "XII. ker. Városmajor utca 44.",
@@ -252,8 +269,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Discounts",
-            sibling: ["For 2 siblings", "For 3 siblings"],
-            prices: ["2000.- /month/person", "3000.- /month/person"],
+            sibling: ["For 2 siblings", "For 3 siblings", "For 4 siblings"],
+            prices: [
+              "2500.- /month/person",
+              "3500.- /month/person",
+              "4500.- /month/person",
+            ],
           },
           ages: {
             name: "Age group",
@@ -311,8 +332,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -329,11 +354,6 @@ const pagesConfig = {
             name: "Békásmegyeri Közösségi Ház",
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Szerda", "Csütörtök"],
-          },
-          {
-            name: "MOM Kulturális Központ",
-            address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő", "Péntek"],
           },
           {
             name: "VII. ker. Táncstúdió",
@@ -385,8 +405,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -444,8 +468,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -544,12 +572,12 @@ const pagesConfig = {
           description:
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
-        whenStart: {
-          title: "Online órák",
-          img: "pages/lady/3.jpg",
-          description:
-            "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
-        },
+        // whenStart: {
+        //   title: "Online órák",
+        //   img: "pages/lady/3.jpg",
+        //   description:
+        //     "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
+        // },
         structure: {
           title: "Hogyan lehet csatlakozni?",
           img: "pages/lady/4.jpg",
