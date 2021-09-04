@@ -5,6 +5,13 @@ import CoursesHeader from "./CoursesHeader";
 import style from "../assets/css/course.module.css";
 import styleCard from "../assets/css/courseDetailsCard.module.css";
 
+function handleClick(e) {
+  e.preventDefault();
+
+  const enrollmentDates = document.getElementById("scroll-here");
+  enrollmentDates.scrollIntoView({ behavior: "smooth" });
+}
+
 function Paragraph({ opt }) {
   return opt.map((el, index) => (
     <p className="size-20 thin" key={`${el}-${index}`}>
@@ -49,7 +56,6 @@ export default function Course({ pageConfig }) {
   const onTabHeaderClickHandler = (activeTab) => {
     setActiveTab(activeTab);
   };
-
   return (
     <div>
       {pageConfig.opt && <CoursesHeader opt={pageConfig.opt} />}
@@ -178,12 +184,23 @@ export default function Course({ pageConfig }) {
           </div>
         )}
         {pageConfig.whenStart && (
-          <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+          <div
+            className={`${style["card-wrapper"]} ${style["reverse"]}`}
+            id={"scroll-here"}
+          >
             <div className={`${style["text"]}`}>
               <h4 className="size-36 extra-bold">
                 {pageConfig.whenStart.title}
               </h4>
-              <p className="size-20 thin">{pageConfig.whenStart.description}</p>
+              {!!pageConfig.whenStart.description ? (
+                <p className="size-20 thin">
+                  {pageConfig.whenStart.description}
+                </p>
+              ) : (
+                <ul>
+                  <ForWhomList opt={pageConfig.whenStart.descriptionList} />
+                </ul>
+              )}
             </div>
             <div className={styleCard["pic"]}>
               <img
@@ -241,19 +258,39 @@ export default function Course({ pageConfig }) {
       </div>
       {pageConfig.footer && (
         <div className={`${style["page-footer"]}`}>
-          <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
-            Szeretnél csatlakozni?
-          </h4>
+          {pageConfig.id === "noiTorna" ? (
+            ""
+          ) : (
+            <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+              Szeretnél csatlakozni?
+            </h4>
+          )}
           <div className={style["footer-buttons-wrapper"]}>
-            <Link
-              className={`${style["footer-button-details"]} size-15`}
-              to="/contact"
-            >
-              Érdeklődöm
-            </Link>
-            <Link className={style["footer-button-sign-up"]} to="/beiratkozas">
-              Jelentkezem
-            </Link>
+            {pageConfig.id === "noiTorna" ? (
+              ""
+            ) : (
+              <Link
+                className={`${style["footer-button-details"]} size-15`}
+                to="/contact"
+              >
+                Érdeklődöm
+              </Link>
+            )}
+            {pageConfig.id === "noiTorna" ? (
+              <button
+                className={style["footer-button-sign-up"]}
+                onClick={(e) => handleClick(e)}
+              >
+                Jelentkezem
+              </button>
+            ) : (
+              <Link
+                className={style["footer-button-sign-up"]}
+                to="/beiratkozas"
+              >
+                Jelentkezem
+              </Link>
+            )}
           </div>
         </div>
       )}

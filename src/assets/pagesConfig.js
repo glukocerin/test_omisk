@@ -523,6 +523,7 @@ const pagesConfig = {
         footer: true,
       },
       lady: {
+        id: "noiTorna",
         opt: {
           courseName: "Női torna",
           color: "green",
@@ -560,10 +561,10 @@ const pagesConfig = {
           title: "Kinek ajánljuk ?",
           img: "pages/lady/1.jpg",
           description: [
-            "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában  művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
-            "Aki tradicionális, esztétikai  alapelvekre épülő, harmonikus, nőies mozgásformát keres és szeretne klasszikus zenére tornázni.",
+            "Aki nem jár konditerembe, de igényelné a rendszeres testmozgást és olyan helyet keres, ahol összeszokott közösségben - felső korhatár nélkül szakember irányításával mozoghat",
+            "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
+            "Aki még nem találkozott ezzel a módszerrel és nem is sportolt, de tradicionális, esztétikai alapelvekre épülő, harmonikus, nőies mozgásformát keres és szeretne klasszikus zenére tornázni.",
             "Aki olyan gimnasztikát keres, ami kíméletesen, de alaposan átmozgatja a test valamennyi izmát.",
-            "Aki nem járt még kondicionáló tornára, de igényelné a rendszeres testmozgást és szeretné fokozatosan elkezdeni.",
           ],
         },
         aboutCourse: {
@@ -572,17 +573,23 @@ const pagesConfig = {
           description:
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
-        // whenStart: {
-        //   title: "Online órák",
-        //   img: "pages/lady/3.jpg",
-        //   description:
-        //     "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
-        // },
+        whenStart: {
+          title: "Hogyan tudok csatlakozni?",
+          img: "pages/lady/3.jpg",
+          descriptionList: [
+            "Heti 1, 2 vagy 3 alkalommal lehet járni.",
+            "Az órák időpontja: hétfő-szerda-péntek : de. 8-9 és 9-10",
+            "2021. szeptember 6-tól folyamatosan tartunk órákat.",
+            "Az elmulasztott órákat pótolni lehet és az ünnepnapokat figyelembe vesszük a havidíj kiszámításakor.",
+            "Folyamatosan lehet csatlakozni a helyszínen vagy az alábbi elérhetőségeken Mikusik Márta iskolatitkárnál: 06-20-946-0848   és 06-1-200-0138 iroda@omisk.hu - A megkezdett hónapra időarányos díjat számítunk.",
+          ],
+          description: null,
+        },
         structure: {
-          title: "Hogyan lehet csatlakozni?",
+          title: "Helyszín",
           img: "pages/lady/4.jpg",
           description:
-            "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
+            "Az  órákat a most átadott 20-22 FITNESS-ben tartjuk, ahol tágas, légkondicionál terem , öltözö zuhanyozóval , közösségi helyiség és kávézó várja a látogatókat. Az év folyamán természetesen az egész  épületben betartjuk a mindenkori járványügyi előírásokat.",
         },
         footer: true,
       },
