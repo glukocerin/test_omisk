@@ -292,12 +292,26 @@ export default function Beiratkozas() {
         >
           <div className="col-lg-3"></div>
           <div className={`col-lg-6 ${style[`enrollment-dates-details`]}`}>
-            <h3>2021/2022-es Tanév beiratkozási időpontok</h3>
+            <h3>
+              2021/2022-es Tanév beiratkozási időpontok{" "}
+              <span className={`${style[`enrollment-dates-details-warning`]}`}>
+                (Hívd iskolánkat vagy küldj emailt, ha elmulasztottad, mert a
+                szabad helyekre ezt követően is elfogadunk jelentkezést!)
+              </span>
+            </h3>
             <div className={`${style[`enrollment-dates-details-wrapper`]}`}>
               <p>Óbudai Kulturális Központ, III. San Marco u.81.</p>
               <ul>
                 <li>Növendékeinknek: Augusztus 25, (szerda) 16.00-19.00</li>
-                <li>Új jelentkezők: Szeptember 1, (szerda) 16.00-19.00</li>
+                <li>Új jelentkezők:</li>
+                <ul>
+                  <li>Szeptember 1, (szerda) 16.00-19.00</li>
+                  <li
+                    className={`${style["enrollment-dates-details-wrapper__bold"]}`}
+                  >
+                    Szeptember 9, (csütörtök) 17.00 - 18.00
+                  </li>
+                </ul>
               </ul>
               <p>Békásmegyeri Közösségi Ház, III. Csobánka tér 5.</p>
               <ul>

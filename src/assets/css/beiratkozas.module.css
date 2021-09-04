@@ -47,30 +47,30 @@
 
 .image-wrapper .content-image {
   width: 96%;
-  box-shadow: -24px 146px 0px 0px #D9F5F2;
+  box-shadow: -24px 146px 0px 0px #d9f5f2;
 }
 
 @media screen and (max-width: 1440px) {
   .image-wrapper .content-image {
-    box-shadow: -24px 108px 0px 0px #D9F5F2;
+    box-shadow: -24px 108px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 1280px) {
   .image-wrapper .content-image {
-    box-shadow: -24px 94px 0px 0px #D9F5F2;
+    box-shadow: -24px 94px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 800px) {
   .image-wrapper .content-image {
-    box-shadow: -24px 86px 0px 0px #D9F5F2;
+    box-shadow: -24px 86px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 500px) {
   .image-wrapper .content-image {
-    box-shadow: -24px 62px 0px 0px #D9F5F2;
+    box-shadow: -24px 62px 0px 0px #d9f5f2;
   }
 }
 
@@ -81,33 +81,32 @@
 
 .image-wrapper-inverse .content-image-inverse {
   width: 96%;
-  box-shadow: 24px 146px 0px 0px #D9F5F2;
+  box-shadow: 24px 146px 0px 0px #d9f5f2;
 }
 
 @media screen and (max-width: 1440px) {
   .image-wrapper-inverse .content-image-inverse {
-    box-shadow: 24px 108px 0px 0px #D9F5F2;
+    box-shadow: 24px 108px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 1280px) {
   .image-wrapper-inverse .content-image-inverse {
-    box-shadow: 24px 94px 0px 0px #D9F5F2;
+    box-shadow: 24px 94px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 800px) {
   .image-wrapper-inverse .content-image-inverse {
-    box-shadow: 24px 86px 0px 0px #D9F5F2;
+    box-shadow: 24px 86px 0px 0px #d9f5f2;
   }
 }
 
 @media screen and (max-width: 500px) {
   .image-wrapper-inverse .content-image-inverse {
-    box-shadow: 24px 62px 0px 0px #D9F5F2;
+    box-shadow: 24px 62px 0px 0px #d9f5f2;
   }
 }
-
 
 .details-wrapper {
   margin-top: 146px;
@@ -130,7 +129,7 @@
 }
 
 .details-wrapper p {
-  color: #94A7B0;
+  color: #94a7b0;
 }
 
 .content-wrapper {
@@ -223,6 +222,14 @@
 
 .arrow {
   margin-left: 14px;
+}
+
+.enrollment-dates-details-wrapper__bold {
+  font-weight: 700 !important;
+}
+
+.enrollment-dates-details-warning {
+  color: red !important;
 }
 
 .enrollment-dates-wrapper {
@@ -394,7 +401,6 @@
     margin-top: 28px;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   .contact-us {
