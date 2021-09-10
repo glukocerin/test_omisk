@@ -138,6 +138,11 @@ history.listen((location) => {
       title: "Beiratkozás",
       meta: "",
     },
+    {
+      url: "eredmenyeink",
+      title: "Eredményeink",
+      meta: "",
+    },
   ];
 
   if (location.pathname === "/") {
