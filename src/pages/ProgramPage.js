@@ -180,7 +180,7 @@ export default function ProgramPage(props, isSummerCamp) {
             <Kupa />
             <Link
               className={`${style["achievement-button"]} size-12`}
-              to="/programs/achievements"
+              to="/programok/eredmenyeink"
             >
               Versenyeredményeink
             </Link>
