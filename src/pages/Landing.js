@@ -207,24 +207,9 @@ export default function Landing({ dotChange }) {
             <h1 className="title extra-bold size-54 new">
               Óbuda Tánc és Mozgásművészeti Iskola
             </h1>
-            <h1 className="title extra-bold size-54 new date-enrollment">
-              Beiratkozás 2021
-            </h1>
-            <label className="title extra-bold size-24 new date-enrollment">
-              4 éves kortól
-            </label>
           </div>
-          <Link
-            onClick={() => {
-              dispatch(updatePageindex({ payload: activeDot }));
-            }}
-            to="/beiratkozas"
-          >
-            <button className="btn-enrollment">Részletek</button>
-          </Link>
         </div>
       </div>
-      {console.log(isMobile)}
       {isMobile ? (
         <div
           className={`right one-mobile  ${activeDot === 1 ? "active" : ""}`}
