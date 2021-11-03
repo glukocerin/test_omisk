@@ -693,8 +693,8 @@ h1 {
   background-position: center;
 }
 .right.one {
-  background-image: url("../img/landing_bg_1.jpg");
-  /* background-image: url("../img/muveszitorna-balett-moderntanc.png"); */
+  /* background-image: url("../img/landing_bg_1.jpg"); */
+  background-image: url("../img/muveszitorna-balett-moderntanc.png");
 }
 .right.two {
   background-image: url("../img/landing_bg_2.jpg");
@@ -958,7 +958,7 @@ h1 {
     background-position: top;
     top: 0;
     height: 50vh;
-    background-image: url("../img/landing_bg_1.jpg");
+    background-image: url("../img/muveszitorna-balett-moderntanc.png");
   }
   .right.one-mobile {
     order: 1;
@@ -968,7 +968,7 @@ h1 {
     background-position: top;
     top: 0;
     height: 50vh;
-    background-image: url("../img/landing_bg_1.jpg");
+    background-image: url("../img/muveszitorna-balett-moderntanc-mobile.png");
   }
   .mobile-card.one {
     order: 3;
