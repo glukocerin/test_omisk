@@ -1,5 +1,4 @@
 const pagesConfig = {
-  // ide irhatod a szaros configodat
   landing: {
     youtube_links: [
       {
