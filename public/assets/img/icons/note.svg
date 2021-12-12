@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2267" data-name="Group 2267" transform="translate(-580 17422)">
+    <g id="musical-note" transform="translate(588.833 -17414)">
+      <path id="Path_5393" data-name="Path 5393" class="cls-1" d="M33.736.153l-17.3,5.293a5.431,5.431,0,0,0-3.8,4.881v18.25s-1.254-.846-4.046-.45c-4.1.582-7.425,3.73-7.425,7.031S4.492,40.483,8.592,39.9,15.7,36.27,15.7,32.967V17.385c0-1.464,1.76-2.092,1.76-2.092l15.3-4.8s1.693-.568,1.693,1V24.013a7.459,7.459,0,0,0-4.351-.558c-4.1.5-7.425,3.579-7.425,6.879S26,35.727,30.1,35.229s7.429-3.577,7.429-6.88V2.865A2.766,2.766,0,0,0,33.736.153Z" transform="translate(0 0)"/>
+    </g>
+    <rect id="Rectangle_3578" data-name="Rectangle 3578" class="cls-2" width="56" height="56" transform="translate(580 -17422)"/>
+  </g>
+</svg>
