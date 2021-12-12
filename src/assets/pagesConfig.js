@@ -709,7 +709,8 @@ const pagesConfig = {
           title: "Nyilvános órák",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "nyilvanos_ora",
+          img: "nyilvanos-orak",
+          alt: 'nyilvános órák',
           link: "nyilvanos-ora",
         },
         {
@@ -717,6 +718,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "versenyek",
+          alt: 'versenyek',
           link: "versenyek",
         },
       ],
@@ -725,14 +727,16 @@ const pagesConfig = {
           title: "Évzáró előadások",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "evzaro_eloadas",
+          img: "evzaro-eloadas",
+          alt: 'Évzáró előadások',
           link: "evzaro-eloadas",
         },
         {
           title: "Omisk gála",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "gala",
+          img: "omisk-gala",
+          alt: 'Omisk gála',
           link: "omisk",
         },
       ],
@@ -742,6 +746,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "mozdulatmuhely",
+          alt: 'Mozdulatműhely',
           link: "mozdulatmuhely",
         },
         // {
