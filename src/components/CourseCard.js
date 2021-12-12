@@ -9,12 +9,10 @@ export default function Card(props) {
         {props.details.title}
       </label>
       <div className={style["image-wrapper"]}>
-        <img
+      <img
           className={`${style[props.details.bg_mobile]}`}
-          src={
-            require(`../assets/img/courses/${props.details.image}.jpg`).default
-          }
-          alt=""
+          src={`${process.env.PUBLIC_URL}/assets/img/courses/${props.details.image}.jpg`}
+          alt={props.details.alt}
         />
       </div>
     </Link>

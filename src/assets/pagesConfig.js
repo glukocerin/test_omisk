@@ -596,7 +596,8 @@ const pagesConfig = {
     cards: [
       {
         title: "Művészi torna",
-        image: "muveszi_torna",
+        image: "muveszi-torna",
+        alt: 'művészi torna',
         bg_mobile: "turquoise",
         age: "",
         districts: "III.,VII., VIII., XI., XII. kerületek",
@@ -608,6 +609,7 @@ const pagesConfig = {
       {
         title: "Mozdulatművészet",
         image: "mozdulatmuveszet",
+        alt: "mozdulatművészet",
         bg_mobile: "yellow",
         age: "",
         districts: "III., VIII., XI., XII. kerületek",
@@ -618,7 +620,8 @@ const pagesConfig = {
       },
       {
         title: "Klasszikus balett",
-        image: "klasszikus_balett",
+        image: "klasszikus-balett",
+        alt: "Klasszikus balett",
         bg_mobile: "pink",
         age: "",
         districts: "III., VII., XII. kerület",
@@ -629,7 +632,8 @@ const pagesConfig = {
       },
       {
         title: "Jazztánc",
-        image: "jazz_tanc",
+        image: "jazz-tanc",
+        alt: "Jazztánc",
         bg_mobile: "blue",
         age: "",
         districts: "III. kerület",
@@ -640,7 +644,8 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern_tanc",
+        image: "modern-tanc",
+        alt: "modern tánc",
         bg_mobile: "pink",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
@@ -651,7 +656,8 @@ const pagesConfig = {
       },
       {
         title: "Pre balett",
-        image: "pre_ballet",
+        image: "pre-ballet",
+        alt: "pre balett",
         bg_mobile: "turquoise",
         age: "",
         districts: "III. kerület",
@@ -662,7 +668,8 @@ const pagesConfig = {
       },
       {
         title: "Női torna",
-        image: "noi_torna",
+        image: "noi-torna",
+        alt: "női torna",
         bg_mobile: "yellow",
         age: "",
         districts: "III. kerület",
