@@ -139,7 +139,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha…",
-          img: "pages/muveszetitorna/1.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-1.jpg",
+          alt: 'művészi torna',
           description: [
             "szeretnél szép testtartást, és ügyesebben mozogni.",
             "olyan mozgást keresel, ami akkor is hasznodra válik, ha végül nem a táncnál hanem az úszásnál kötsz ki.",
@@ -148,19 +149,19 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a művészi torna (RG)?",
-          img: "pages/muveszetitorna/2.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-2.jpg",
           description:
             "A művészi torna a gimnasztikai alapja a ritmikus gimnasztikának (RG). Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/muveszetitorna/3.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-3.jpg",
           description:
             "Iskolánk képzési rendszere 4 éves korban kezdődik művészi tornával. A tudatos mozgás elsajátítása – ami folyamatos gondolkodásra és koncentrációra késztet – leghamarabb ebben az életkorban lehetséges. Később  is el lehet kezdeni, mindenki az életkorának megfelelő csoportba kerül, ahol a tanárok segítenek bekapcsolódni a tanulásba.  A művészi torna szerves folytatása a mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a kreativitás. Iskolás kortól  más műfajok is választhatók, amelyekhez a művészi torna ugyanúgy kiváló alapot ad.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/muveszetitorna/4.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-4.jpg",
           description:
             "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást  és ügyessé tesznek.Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel  erre az életkorra esik a testtartás beidegződése.  Fontosnak tartjuk az igényes zeneválasztást,  mind a koreográfiák, mind a tréning kisérőjeként.",
         },
@@ -226,7 +227,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/mozdulatmuveszet/1.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-1.jpg",
+          alt: "mozdulatművészet",
           description: [
             "a mozgást nem utánozni, hanem tanulni szeretnéd.",
             "nyitott vagy egy finom, harmonikus mozgásformára.",
@@ -236,19 +238,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a mozdulatművészet?",
-          img: "pages/mozdulatmuveszet/2.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-2.jpg",
+          alt: "mozdulatművészet",
           description:
             "Az általunk tanított mozdulatművészet a gimnasztika precizitására épülő – de annál szabadabb –, a zenével szoros összhangban létrejövő táncstílus. Magában foglalja a klasszikus balett és a különböző modern technikák alapelemeit, megtartva azt az alapvető szellemiséget, amely a test természetes adottságaihoz illeszkedő esztétikus és kifejező mozgást keresi. A koreográfiát a zenével szoros összhangban készítjük el, így zene és tánc egymás hatását erősítik: még szebbnek látjuk a táncot és jobban megértjük a zenét.",
         },
         whenStart: {
           title: "Hogyan tudok csatlakozni?",
-          img: "pages/mozdulatmuveszet/3.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-3.jpg",
+          alt: "mozdulatművészet",
           description:
             "Kurzusunk a művészi torna szerves folytatásának tekinthetők, így ebben a műfajban nincsenek teljesen kezdő tanfolyamaink.  A kifejező mozgás egyre nagyobb hangsúlyt kap az ovisok és kisiskolások óráin, és 10 éves kor környékén már mozdulatművészetet tanul, aki korábban művészi tornára iratkozott be. Ennek ellenére menet közben is lehet csatlakozni. Előny, ha rendelkezel valamilyen táncos előképzettséggel, de ha nem, akkor is megpróbálhatod az életkorodnak megfelelő csoportban. Nem kell hozzá speciális adottság, tanáraink majd segítenek a felzárkózásban.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/mozdulatmuveszet/4.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-4.jpg",
+          alt: "mozdulatművészet",
           description:
             "A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfiatanulásból áll. A tréningezéssel   elsajátítjuk a mozdulatművészet formanyelvét és   megszerezzük azokat a készségelemeket, amik alkalmassá tesznek  a koreográfiák előadásra. A mozdulatművészet kifejező mozdulatokból építkezik, a táncokat műhelymunkaszerűen készítjük el. Tanítványaink kreatívan vesznek részt az alkotómunka minden fázisában  a koncepció kialakításától és  a zenekiválasztásától  a mozdulatok megalkotásán keresztül a produkció színpadra állításáig.",
         },
@@ -289,7 +294,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "We suggest this for you...",
-          img: "pages/preballet/1.jpg",
+          img: "pages/preballet/pre-balett-1.jpg",
+          alt: 'pre balett',
           description: [
             "If you would like to learn dance playfully",
             "If you would like to learn English this way as well",
@@ -299,19 +305,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "What is pre-ballet?",
-          img: "pages/preballet/2.jpg",
+          img: "pages/preballet/pre-balett-2.jpg",
+          alt: 'pre balett',
           description:
             "Pre-Ballet is an introduction to the very basics of dance.  Usually in ballet the routines are done in standing position, we make it easier and start in a seated position. The repeated commands during the recurring training actions make easier to incorporate them into childres' vocabulary in a native way.  We hope that children will discover creative expression, and experience the fun of dance during these classes!",
         },
         whenStart: {
           title: "At what age can you start?",
-          img: "pages/preballet/3.jpg",
+          img: "pages/preballet/pre-balett-3.jpg",
+          alt: 'pre balett',
           description:
             "The classes are for ages 4-6. Our teacher Esther, who speaks native English demonstrates everything to the students. So it is not a problem if your child is still new to English. After the age of six, you can continue in one of our gymnastics classes.",
         },
         structure: {
           title: "What do we do during class?",
-          img: "pages/preballet/4.jpg",
+          img: "pages/preballet/pre-balett-4.jpg",
+          alt: 'pre balett',
           description:
             "We start every class with a few walking exercises, skips, ect. Then we continue with our gymnastics routines, and some jumps. Finally we usually have a short game, and we finish our class with stretches. During the class we encourage children to only speak in English. We learn a few basic words in the beginning that they can use, and later on several dance related expressions. While we dance, the children repeat all the instructions given by the teacher, and this makes learning easy and fun!",
         },
@@ -362,7 +371,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/modern/1.jpg",
+          img: "pages/modern/modern-tanc-1.jpg",
+          alt: 'modern tánc',
           description: [
             "…elmúltál 10 éves, szereted a kihívásokat.",
             "…van táncos előképzettséged, vagy eddig valahol huzamosabb ideig sportoltál.",
@@ -372,19 +382,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a modern tánc?",
-          img: "pages/modern/2.jpg",
+          img: "pages/modern/modern-tanc-2.jpg",
+          alt: 'modern tánc',
           description:
             "Ellenerők keresése, dinamikai váltások, feszítettség és elengedés összhangja. –  Ezáltal válik a modern tánc izgalmas és szemet gyönyörködtető műfajjá a színpadon, ezekre kell ráérezni tanítványainknak az órák során. Bár a klasszikus balett alapjaira épül, annak szabály rendszerével szembe megy: a természetes mozgáson alapul, használja a gravitációt, a mozdulatokat belülről indítja. Nem elsősorban a forma, hanem a mozdulat fizikai valósága által válik kifejezővé. A régebbi jazztánchoz képest a folyamatosságon, folyékonyságon, puhaságon van a hangsúly.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/modern/3.jpg",
+          img: "pages/modern/modern-tanc-3.jpg",
+          alt: 'modern tánc',
           description:
             "A modern tánc elsajátítása magasabb szintű tudatosságot igényel, amelyre 10 éves koruk környékén érnek meg a gyerekek. Azoknak, akik még nem érték el ezt az életkort, de már alig várják, hogy el tudják kezdeni az órákat, 8 éves kortól előkészítő csoportot indítunk. Ez nem előfeltétele a későbbi jelentkezésnek, hiszen nagyon jó előképzettséget jelent a művész torna, a klasszikus balett, de nem kizáró tényező az sem, ha valamilyen sportról váltanál.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/modern/4.jpg",
+          img: "pages/modern/modern-tanc-4.jpg",
+          alt: 'modern tánc',
           description:
             "Az óra alapos bemelegítéssel indul, majd ezt követi a tréning, melynek fő célja a formanyelv technikai elemeinek elsajátítása. Ennek a mozgásnak lényege a testközpontból és a törzsből elnyújtott hosszú mozdulatok és dinamikai váltások alkalmazása. Ennek elsajátítása elmélyült és kitartó gyakorlást igényel, hosszú távon növeli a testtudatot és önfegyelemre tanít. A tréning  tetőtől talpig átmozgatja és formálja a testet. Az óra második felében a koreográfia gyakorlása következik, amely a tréning során megtanult kombinációkból  épül fel.",
         },
@@ -425,7 +438,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/jazz/1.jpg",
+          img: "pages/jazz/jazztanc-1.jpg",
+          alt: 'jazztánc',
           description: [
             "egy könnyed, laza, látványos műfajt keresel.",
             "szereted a modern, pörgős zenéket.",
@@ -435,19 +449,19 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a jazztánc?",
-          img: "pages/jazz/2.jpg",
+          img: "pages/jazz/jazztanc-2.jpg",
           description:
             "A jazztánc az Amerikai Egyesült Államokból, New Orleansból származik, az afro-amerikaiak autentikus táncában gyökerezik. A jazz zenével együtt fejlődött, kiegészült a balett és a modern tánc elemeivel. Jellegzetessége az izolációs technika, az egyes testrészek egymástól független mozgatása. A mozgásközpontjai: fej-nyak, vállak, mellkas, medence, a kezek és a lábak. A mozgás lényege a “policentrikusság”, ez azt jelenti, hogy legalább kettő – a fentebb említett – mozgásközpont egymástól függetlenül mozog. Felszabadult, látványos táncstílus.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/jazz/3.jpg",
+          img: "pages/jazz/jazztanc-3.jpg",
           description:
             "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de anélkül is bátran jelentkezhetsz.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/jazz/4.jpg",
+          img: "pages/jazz/jazztanc-4.jpg",
           description:
             "Az órák első felében tréningezünk mai, divatos  zenére.  Egymást követik az izolációs, erősítő és koordinációt fejlesztő gyakorlatok.  Kezdőknél a tréning még csak izolációs majd koordinációs gyakorlatokat tartalmaz. Haladóknál a modern balett elemei is bekerülnek a tananyagba. Majdnem minden típusú mozgás engedélyezett. Hosszú, nyújtott testvonalat, diagonális feszességet és hosszú egyensúlyi helyzeteket használ, és a felsőtestet teszi mindannak középpontjává, ami a testtel történik. Az óra második része a már megtanult technikai elemeket tartalmazó koreográfiák tanulásával telik.",
         },
@@ -493,7 +507,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/ballet/1.jpg",
+          img: "pages/ballet/klasszikus-balett-1.jpg",
+          alt: 'klasszikus balett',
           description: [
             "kecses, finom, légies mozgásformát keresel.",
             "nem ijedsz meg a kemény munkától.",
@@ -503,19 +518,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a klasszikus balett?",
-          img: "pages/ballet/2.jpg",
+          img: "pages/ballet/klasszikus-balett-2.jpg",
+          alt: 'klasszikus balett',
           description:
             "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
         },
         whenStart: {
           title: "Mikor tudom  elkezdeni?",
-          img: "pages/ballet/3.jpg",
+          img: "pages/ballet/klasszikus-balett-3.jpg",
+          alt: 'klasszikus balett',
           description:
             "A balettgyakorlatok nagy önfegyelmet és koncentrációt igényelnek, fizikai terhelhetőséget kívánnak.  A művészi torna jó előkészítés óvodás korban, mert a gimnasztika különböző tehermentesített helyzetekben készíti elő a később állásban elvégzendő feladatokat.  Iskolás kortól előképzettség nélkül is lehet jelentkezni.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/ballet/4.jpg",
+          img: "pages/ballet/klasszikus-balett-4.jpg",
+          alt: 'klasszikus balett',
           description:
             "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
@@ -558,7 +576,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Kinek ajánljuk ?",
-          img: "pages/lady/1.jpg",
+          img: "pages/lady/noi-torna-1.jpg",
+          alt: 'női torna',
           description: [
             "Aki nem jár konditerembe, de igényelné a rendszeres testmozgást és olyan helyet keres, ahol összeszokott közösségben - felső korhatár nélkül szakember irányításával mozoghat",
             "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
@@ -568,13 +587,15 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi az órák anyaga?",
-          img: "pages/lady/2.jpg",
+          img: "pages/lady/noi-torna-2.jpg",
+          alt: 'női torna',
           description:
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
         whenStart: {
           title: "Hogyan tudok csatlakozni?",
-          img: "pages/lady/3.jpg",
+          img: "pages/lady/noi-torna-3.jpg",
+          alt: 'női torna',
           descriptionList: [
             "Heti 1, 2 vagy 3 alkalommal lehet járni.",
             "Az órák időpontja: hétfő-szerda-péntek : de. 8-9 és 9-10",
@@ -586,7 +607,8 @@ const pagesConfig = {
         },
         structure: {
           title: "Helyszín",
-          img: "pages/lady/4.jpg",
+          img: "pages/lady/noi-torna-4.jpg",
+          alt: 'női torna',
           description:
             "Az  órákat a most átadott 20-22 FITNESS-ben tartjuk, ahol tágas, légkondicionál terem , öltözö zuhanyozóval , közösségi helyiség és kávézó várja a látogatókat. Az év folyamán természetesen az egész  épületben betartjuk a mindenkori járványügyi előírásokat.",
         },

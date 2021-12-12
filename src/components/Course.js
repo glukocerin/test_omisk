@@ -153,11 +153,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.forWhom.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.forWhom.img}`}
+                alt={pageConfig.forWhom.alt}
               />
             </div>
           </div>
@@ -174,11 +171,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.aboutCourse.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.aboutCourse.img}`}
+                alt={`${pageConfig.aboutCourse.alt}`}
               />
             </div>
           </div>
@@ -204,11 +198,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.whenStart.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.whenStart.img}`}
+                alt={`${pageConfig.whenStart.alt}`}
               />
             </div>
           </div>
@@ -223,11 +214,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.structure.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.structure.img}`}
+                alt={`${pageConfig.structure.alt}`}
               />
             </div>
           </div>
