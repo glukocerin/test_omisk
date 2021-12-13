@@ -7,7 +7,6 @@ function ProgramCard(props) {
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>
         <Link to={`/programok/${props.details.link}`}>
-          {console.log('here', props.details)}
           <img
             src={`${process.env.PUBLIC_URL}/assets/img/programs/${props.details.img}.jpg`}
             alt={props.details.alt}

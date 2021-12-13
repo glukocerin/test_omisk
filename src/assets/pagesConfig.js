@@ -762,7 +762,8 @@ const pagesConfig = {
       speechDay: {
         title: "Évzáró előadások",
         headerImg: "evzaro_eloadas",
-        videoImg: "evzaroeloadas/evzaro_eloadasok_bg",
+        videoImg: "evzaroeloadas/evzaro-eloadasok-hatterkep",
+        alt: 'Évzáró előadások',
         detailsOne:
           "A tanévet mindig színpadi előadással zárjuk a MOM Kulturális Központ és az Óbudai Kulturális Központ színháztermében. 1990  óta hagyomány, hogy az előadásokon minden tanítványunk fellép a kezdő óvodásoktól a felnőtt versenyző csoportokig.",
         detailsTwo:
@@ -794,14 +795,15 @@ const pagesConfig = {
           },
         ],
         gallery: [
-          "evzaroeloadas/evzaro_eloadasok_1",
-          "evzaroeloadas/evzaro_eloadasok_2",
+          "evzaroeloadas/evzaro-eloadasok-1",
+          "evzaroeloadas/evzaro-eloadasok-2",
         ],
       },
       competitions: {
         title: "Versenyek",
         headerImg: "versenyek",
-        videoImg: "versenyek/bg",
+        videoImg: "versenyek/versenyek-hatterkep",
+        alt: 'versenyek',
         detailsOne:
           "Haladó csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
         detailsTwo:
@@ -869,12 +871,13 @@ const pagesConfig = {
             title: "Concerto 1",
           },
         ],
-        gallery: ["versenyek/1", "versenyek/2"],
+        gallery: ["versenyek/versenyek-1", "versenyek/versenyek-2"],
       },
       omisk: {
         title: "Omisk Gála",
-        headerImg: "omisk_gala",
-        videoImg: "gala/bg",
+        headerImg: "omisk-gala",
+        alt: 'Omisk Gála',
+        videoImg: "gala/omisk-gala-hatterkep",
         detailsOne:
           "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:
@@ -921,11 +924,12 @@ const pagesConfig = {
             title: "Concerto 1-2-3",
           },
         ],
-        gallery: ["gala/1", "gala/2"],
+        gallery: ["gala/omisk-gala-1", "gala/omisk-gala-2"],
       },
       publicClass: {
         title: "Nyilvános órák",
-        videoImg: "nyilvanosora/bg",
+        videoImg: "nyilvanosora/nyilvanos-ora-hatterkep",
+        alt: 'nyilvános órák',
         headerImg: "nyilvanos_ora",
         detailsOne:
           "A tanév folyamán egy alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
@@ -939,12 +943,13 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/4SPgJV2Pc7c?autoplay=1",
           },
         ],
-        gallery: ["nyilvanosora/1", "nyilvanosora/2"],
+        gallery: ["nyilvanosora/nyilvanos-ora-1", "nyilvanosora/nyilvanos-ora-2"],
       },
       callisthenics: {
         title: "Mozdulatműhely",
         headerImg: "mozdulatmuhely",
-        videoImg: "mozdulatmuhely/bg",
+        videoImg: "mozdulatmuhely/mozdulatmuhely-hatterkep",
+        alt: 'Mozdulatműhely',
         detailsOne:
           "Az Omisk Mozdulatműhely az iskola felnőtt növendékeiből alakult együttes, amelynek tagjai számára a tánc több mint hobbi – bár hivatásukat az élet különböző területein képzelik el. Van köztük gyógytornász és építész hallgató, moderntánc-pedagógus, tanítónő, rekreációs szakember, bölcsész és van, aki még csak gimnazista. De egy közös pont biztosan van bennük: a tánc szeretete.",
         detailsTwo:
@@ -955,7 +960,7 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/rKBmBZxAej4?autoplay=1",
           },
         ],
-        gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2"],
+        gallery: ["mozdulatmuhely/mozdulatmuhely-1", "mozdulatmuhely/mozdulatmuhely-2"],
       },
       camp: {
         title: "Nyári tánctábor",
