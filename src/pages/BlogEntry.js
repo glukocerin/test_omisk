@@ -18,8 +18,8 @@ export default function BlogEntry({ config }) {
           dangerouslySetInnerHTML={createMarkup(config.text_first)}
         ></label>
         <img
-          src={require(`../assets/img/blog/${config.picture}`).default}
-          alt=""
+          src={`${process.env.PUBLIC_URL}/assets/img/blog/${config.picture}`}
+          alt={config.alt}
         />
         <label
           className="details size-20 thin"

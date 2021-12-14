@@ -86,7 +86,9 @@ export default function Contact() {
       <div className="contact-content">
         <div className="contact-columns">
           <div className="contact-box">
-            <img src={require(`../assets/img/kapcsolat.jpg`).default} alt="" />
+            <img 
+            src={`${process.env.PUBLIC_URL}/assets/img/mikus-marta.jpg`}
+            alt="Mikus Márta" />
             <h1 className="size-54 extra-bold">{`${
               sessionMailSent || mailSent
                 ? "Üzenetét elküldtük ✔"

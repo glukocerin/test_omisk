@@ -1401,8 +1401,9 @@ const pagesConfig = {
   blog: {
     cards: [
       {
-        picture: "omisk_summer_camp.jpg",
-        picture_card: "omisk_summer_camp_blog.jpg",
+        picture: "2021-04-13.jpg",
+        alt:"2021. 04. 13.",
+        picture_card: "2021-04-13-blog.jpg",
         picture_title: "Nyári tánctábor",
         date: "2021. 04. 13.",
         title: "Omisk tánctábor 2021",
@@ -1413,8 +1414,9 @@ const pagesConfig = {
         is_active: true,
       },
       {
-        picture: "omisk_competition_blog.jpg",
-        picture_card: "omisk_competition.jpg",
+        picture: "2020-03-16-blog.jpg",
+        alt:"2020. 03. 16.",
+        picture_card: "2020-03-16.jpg",
         picture_title: "lockdown",
         date: "2020. 03. 16.",
         title: "OMISK Online verseny - 3 kategóriában",
@@ -1425,8 +1427,9 @@ const pagesConfig = {
         is_active: true,
       },
       {
-        picture: "lockdown.jpg",
-        picture_card: "entry-covid-card.jpg",
+        picture: "2020-11-11.jpg",
+        alt:"2020. 11. 11.",
+        picture_card: "2020-11-11-blog.jpg",
         picture_title: "lockdown",
         date: "2020. 11. 11.",
         title: "Omisk online",
@@ -1438,8 +1441,9 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-11.jpg",
-        picture_card: "entry-11-card.jpg",
+        picture: "2020-11-1.jpg",
+        alt:"2020. 11. 1.",
+        picture_card: "2020-11-1-blog.jpg",
         picture_title: "Verseny",
         date: "2020. 11. 1.",
         title: "XXIX. Országos Felnött és Ifjúsági Táncművészeti Fesztivál",
@@ -1450,8 +1454,9 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-10.jpg",
-        picture_card: "entry-10-card.jpg",
+        picture: "2020-10-25.jpg",
+        alt:"2020. 10. 25.",
+        picture_card: "2020-10-25-blog.jpg",
         picture_title: "Verseny",
         date: "2020. 10. 25.",
         title: "1. díj az Országos Táncjáték Fesztiválon",
@@ -1462,7 +1467,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-9.jpg",
+        picture: "2020-10-14.jpg",
+        alt:"2020. 10. 14.",
         picture_card: "",
         picture_title: "Verseny",
         date: "2020. 10. 14.",
@@ -1474,7 +1480,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-2.jpg",
+        picture: "2020-09-18.jpg",
+        alt:"2020. 09. 18.",
         picture_card: "entry-two.jpg",
         picture_title: "Berczik módszer",
         date: "2020. 09. 18.",
@@ -1487,7 +1494,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-one.jpg",
+        picture: "2020-09-17.jpg",
+        alt:"2020. 09. 17.",
         picture_card: "",
         picture_title: "Tájékoztató",
         date: "2020. 09. 17.",
@@ -1500,7 +1508,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-three.jpg",
+        picture: "2020-08-10.jpg",
+        alt:"2020. 08. 10.",
         picture_card: "",
         picture_title: "Nyári tábor",
         date: "2020. 08. 10.",
@@ -1513,7 +1522,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-four.jpg",
+        picture: "2020-06-08.jpg",
+        alt:"2020. 06. 08.",
         picture_card: "",
         picture_title: "Program",
         date: "2020. 06. 08.",
@@ -1526,7 +1536,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-five.jpg",
+        picture: "2020-05-12.jpg",
+        alt: "2020. 05. 12.",
         picture_card: "",
         picture_title: "Versenyek",
         date: "2020. 05. 12.",
@@ -1539,7 +1550,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-six.jpg",
+        picture: "2020-02-25.jpg",
+        alt: "2020. 02. 25.",
         picture_card: "",
         picture_title: "Gála",
         date: "2020. 02. 25.",
@@ -1552,7 +1564,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-seven.jpg",
+        picture: "2020-01-10.jpg",
+        alt: "2020. 01. 10.",
         picture_card: "",
         picture_title: "Gála",
         index: "omisk_gala2",
@@ -1564,7 +1577,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-eight.jpg",
+        picture: "2019-12-01.jpg",
+        alt: "2019. 12. 01.",
         picture_card: "",
         picture_title: "Verseny",
         index: "omisk_competition_34",

@@ -12,14 +12,14 @@ const { blog } = pagesConfig;
 const BlogCards = function () {
   return blog.cards.map((card, index) => {
     const image = card["picture_card"]
-      ? require(`../assets/img/blog/${card.picture_card}`).default
-      : require(`../assets/img/blog/${card.picture}`).default;
+      ? `${process.env.PUBLIC_URL}/assets/img/blog/${card.picture_card}`
+      : `${process.env.PUBLIC_URL}/assets/img/blog/${card.picture}`;
 
     return (
       <Link to={{ pathname: `/blog/${card.index}`, state: card }} key={index}>
         <div className="card">
           <div className="picture-box">
-            <img src={image} alt="" />
+            <img src={image} alt={card.alt} />
             <label className="picture-title size-28 extra-bold">
               {card.picture_title}
               <br />
