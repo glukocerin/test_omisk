@@ -23,23 +23,19 @@ export default function Teacher() {
       <h1 className="title size-90 extra-bold">{teacher.name}</h1>
       <img
         className="profile-picture"
-        src={require(`../assets/img/teachers/${teacher.picture}`).default}
-        alt=""
-      />
+        
+        src={`${process.env.PUBLIC_URL}/assets/img/teachers/${teacher.picture}`}
+        alt={teacher.alt}
+        />
       <label className="desc size-20 thin">{teacher.desc}</label>
       <div className="columns">
         <div className="column-left">
           <label className="details size-20">{teacher.details}</label>
-          <img
+          {teacher.hasActionPicture ? <img
             className="action-picture"
-            src={
-              teacher.hasActionPicture
-                ? require(`../assets/img/teachers/action/${teacher.picture}`)
-                    .default
-                : undefined
-            }
-            alt=""
-          />
+            src={`${process.env.PUBLIC_URL}/assets/img/teachers/action/${teacher.picture}`}
+            alt={teacher.alt}
+          /> : ''}
         </div>
         <div className="column-right">
           <label className="text size-24 bold">Végzettségek:</label>

@@ -1204,8 +1204,9 @@ const pagesConfig = {
   teachers: {
     cards: [
       {
-        picture: "pers_julia.jpg",
+        picture: "pers-julia.jpg",
         name: "Pers Júlia",
+        alt: "Pers Júlia",
         desc: "Állami díjas táncpedagógus,\nMűvészeti vezető",
         details:
           "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, ami igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
@@ -1223,8 +1224,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "benis_katalin.jpg",
+        picture: "benis-katalin.jpg",
         name: "Benis Katalin",
+        alt: "Benis Katalin",
         desc: "Nívódíjas táncpedagógus",
         details:
           "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
@@ -1239,8 +1241,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "mady_krisztina.jpg",
+        picture: "mady-krisztina.jpg",
         name: "Mády Krisztina",
+        alt: "Mády Krisztina",
         desc: "Nívódíjas táncpedagógus",
         details:
           "Hároméves koromban kezdtem művészi tornázni, húsz éven át tanultam Berczik Sári nénitől és Szollás Erzsébettől. Nagyszüleim és édesanyám sport iránti szeretete és igénye indított arra, hogy hivatásomként a művészi torna oktatását válasszam. Az Óbuda Mozgásművészeti Iskolában 1998 óta tanítok művészi tornát és mozdulatművészetet, amelyet csak másik hivatásom – három gyermekem nevelése – szakított meg hosszabb-rövidebb időre.",
@@ -1256,8 +1259,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "kalocsai_edit.jpg",
+        picture: "kalocsai-edit.jpg",
         name: "Kalocsai Edit",
+        alt: "Kalocsai Edit",
         desc: "Állami-díjas balettmester",
         details:
           "Táncos pályafutásomat a győri Kisfaludy Színháznál kezdtem. A gyermekem megszületése után az Állami Balettintézet pedagógus tagozatán végeztem klasszikus balett tanszakon, 1980- ban. Külföldi és hazai mesterek jazztánc- és kortárstánc-kurzusán sajátítottam el a modern technikákat.  1990-ben Gyöngyösön művészeti iskolát hoztam létre, ahol klasszikus balettet tanítottam. 2009-től a Kispesti Alapfokú Művészeti Iskola igazgatóhelyetteseként dolgoztam. Az Óbuda Mozgásművészeti Iskolában 1996 óta klasszikus balett és modern jazz órákat tartok.",
@@ -1274,8 +1278,9 @@ const pagesConfig = {
         hasActionPicture: false,
       },
       {
-        picture: "kovacs_bea.jpg",
+        picture: "kovacs-bea.jpg",
         name: "Kovács Bea",
+        alt: "Kovács Bea",
         desc: "Berczik-díjas művészitorna-edző",
         details:
           "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
@@ -1288,8 +1293,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "csongei_barbi.jpg",
+        picture: "csongei-barbi.jpg",
         name: "Csöngei Barbara",
+        alt: "Csöngei Barbara",
         desc: "táncpedagógus",
         details:
           "Ötévesen művészi tornát, majd klasszikus balettet tanultam – a Pannon Várszínház táncosa voltam. Húszévesen elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói tanfolyamát, és a Bailart színházi táncos képzését, majd Földi Béla ELIT képzésére jártam, és az Inversedance tagja lettem. Mindig is fontos volt számomra a fegyelmezett, kitartó munka, tanítványaimat is arra ösztönzöm. 2013 óta tanítok klasszikus balettet és modern táncot az iskolában. Csoportjaim rendszeresen vesznek részt országos táncversenyeken.",
@@ -1302,8 +1308,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "solti_eszter.jpg",
+        picture: "solti-eszter.jpg",
         name: "Solti Eszter",
+        alt: "Solti Eszter",
         desc: "táncpedagógus",
         details:
           "Négyéves koromban kezdtem művészi tornázni Pers Júlia növendékeként. A közösség tagjává váltam, a tánc hobbi volt, egészen egyetemista koromig, amikor eljött a felismerés, hogy tanárként is tagja szeretnék lenni az iskolának. Résztvevője voltam a Bethlen Dance Workshopnak 2016-ban, majd 2017-től a Budapest Táncszínház Elite Tréning Programjába nyertem felvételt. 2012 óta vagyok az iskola tanára, óráimon szeretném átadni tanítványaimnak mindazt, amit számomra jelent a tánc. Fontosnak tartom, hogy növendékeim kialakítsák saját önkifejezési módjukat.",
@@ -1316,8 +1323,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "lakatos_lilla.jpg",
+        picture: "lakatos-lilla.jpg",
         name: "Rácz-Lakatos Lilla",
+        alt: "Rácz-Lakatos Lilla",
         desc: "táncpedagógus",
         details:
           "A tánc felszabadít és kikapcsol. Először művészi tornára jártam, később balettot, mozdulatművészetet, modern, majd kortárs táncot tanultam. 2012 óta tanítok az OMISK-ban, növendékeim sikereket érnek el az országos versenyeken. 2016-ban részt vettem az OMISK Mozdulatműhely első projektjében, két évvel később pedig színpadra állíthattuk első darabomat. A táncórának saját tere és ideje van. Ha belépek egy órára, minden problémámat leteszem arra az időre, akkor csak az számít, ami ott történik. Ezt az élményt szeretném továbbadni tanítványaimnak is. ",
@@ -1331,8 +1339,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "taylor_jennifer.jpg",
+        picture: "taylor-jennifer.jpg",
         name: "Bozsókiné Taylor Jennifer",
+        alt: "Bozsókiné Taylor Jennifer",
         desc: "táncpedagógus",
         details:
           "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
@@ -1345,8 +1354,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "taylor_eszti.jpg",
+        picture: "taylor-eszti.jpg",
         name: "Taylor Esther",
+        alt: "Taylor Esther",
         desc: "táncpedagógus",
         details:
           "Négyéves koromban írattak be a szüleim Pers Júliához. Nagyon tetszett, hogy az órák nemcsak a táncról, hanem a kreativitásról is szóltak. Szerettem volna tovább adni a gyerekeknek, amit  a művészi torna adott nekem. Ezért végeztem el egyetem mellett a Táncpedagógusok Országos Szövetségének képzését 2018-ban. 2019 óta tanítok művészi tornát, és mivel kétnyelvű családban nőttem fel, így angol nyelven is tartok órákat. Számomra nagyon fontos a sport, úgy gondolom, hogy gyermekkorban kell elkezdeni a rendszeres mozgást, és erre tökéletes a művészi torna.",
@@ -1359,8 +1369,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "rozsa_reka.jpg",
+        picture: "rozsa-reka.jpg",
         name: "Markolt-Rózsa Réka",
+        alt: "Markolt-Rózsa Réka",
         desc: "táncpedagógus",
         details:
           "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
@@ -1374,8 +1385,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "david_luca.jpg",
+        picture: "david-luca.jpg",
         name: "Dávid Luca",
+        alt: "Dávid Luca",
         desc: "látványtervező, művésztanár",
         details:
           "Óvodás koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában. Ez a hely a második otthonommá vált. Húsz éven át tanulhattam Pers Júlia szárnyai alatt, egy kivételesen kreatív és tehetséges táncosokból álló csapatban. Az Omisk Mozdulatműhely, Miró képei táncban elbeszélve című előadásában látványtervezőként és táncosként is részt vehettem. Egy éven át tanultam különböző testtudati technikákról és azoknak a gyerekekkel való alkalmazási lehetőségeiről. 2015 óta óta önkénteskesem a Bátor Tábor alapítványnál,  és három éve vagyok kézműves szakértő. Jelenleg egy alternatív iskola hálózatban tanulásszervezőként és művésztanárként tanítok és tanulok együtt a gyerekekkel. Az Omisk nyári táboraiban szabadtánc és barkács foglalkozást tartok a gyerekeknek. Fő célom, hogy teret adjak a gyerekeknek a szabad alkotásra és önkifejezésre.",
