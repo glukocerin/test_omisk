@@ -106,26 +106,44 @@ history.listen((location) => {
       url: "beiratkozas_uj",
       title: "Beiratkozás",
     },
+    {
+      url: "nyari-tabor",
+      title: "Nyári tábor",
+    },
+    {
+      url: "nyari-tabor",
+      title: "Nyári tábor",
+    },
   ];
 
   if (location.pathname === "/") {
     title.innerHTML =
       "ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok";
-  } else if(location.pathname.split("/")[location.pathname.split("/").length - 2] === 'blog'){ 
+  } else if (
+    location.pathname.split("/")[location.pathname.split("/").length - 2] ===
+    "blog"
+  ) {
     let url =
       location.pathname.split("/")[location.pathname.split("/").length - 2];
+    const filtered = pages.filter((page) => {
+      return page.url === url;
+    });
+
+    if (!filtered.length) return;
     title.innerHTML =
-      pages.filter((page) => {
-        return page.url === url;
-      })[0].title +
+      filtered[0].title +
       " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok | OMISK";
   } else {
     let url =
       location.pathname.split("/")[location.pathname.split("/").length - 1];
+
+    const filtered = pages.filter((page) => {
+      return page.url === url;
+    });
+
+    if (!filtered.length) return;
     title.innerHTML =
-      pages.filter((page) => {
-        return page.url === url;
-      })[0].title +
+      filtered[0].title +
       " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok | OMISK";
   }
 

@@ -205,7 +205,7 @@ export default function Landing({ dotChange }) {
         <div className="content-block">
           <div className="titles">
             <h1 className="title extra-bold size-54 new">
-              Óbuda Tánc és Mozgásművészeti Iskola
+              OMISK Tánc és Mozgásművészeti Iskola
             </h1>
             <h1 className="title extra-bold size-54 new date-enrollment">
               Beiratkozás 2021

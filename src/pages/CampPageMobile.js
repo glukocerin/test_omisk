@@ -19,7 +19,7 @@ export default function CampPageMobile({ props }) {
           style={{ backgroundImage: "url(" + backgroundImage + ")" }}
         ></div>
         <label className={`${style["state-location"]} size-13`}>
-          <Link to="/programs">Vissza programjainkra</Link>
+          <Link to="/programok">Vissza programjainkra</Link>
         </label>
         <label className={`${style["header-title"]} size-90 extra-bold`}>
           {props.opt.title}
@@ -38,15 +38,15 @@ export default function CampPageMobile({ props }) {
                   __html: props.opt.content.first_block.place,
                 }}
               ></label>
-              <label className="size-32 extra-bold">
+              {/* <label className="size-32 extra-bold">
                 {props.opt.content.second_block.title}
-              </label>
-              <label
+              </label> */}
+              {/* <label
                 className="size-24"
                 dangerouslySetInnerHTML={{
                   __html: props.opt.content.second_block.place,
                 }}
-              ></label>
+              ></label> */}
             </div>
             <img
               className={style["camp-row-image"]}
@@ -58,26 +58,25 @@ export default function CampPageMobile({ props }) {
             <div className={style["camp-row-details"]}>
               <label className="size-20">
                 <strong>
-                  Korosztályok:{" "}
-                  <span className={style["blue"]}>6-12 és 13-17</span>
+                  Korosztályok: <span className={style["blue"]}>6-14</span>
                 </strong>
               </label>
               <label className="size-20">
-                <span className="extra-bold">Részvételi díj: 42 000Ft</span>
+                <span className="extra-bold">Részvételi díj: 45 000Ft</span>
                 <br />
                 <span>Iskolánk növendékeinek</span>
                 <br />
                 <span>
-                  kedvezményesen: <strong>39.000 Ft</strong>
+                  kedvezményesen: <strong>42.000 Ft</strong>
                 </span>
                 <br></br>
                 <span>testvérkedvezmény: 3000 Ft/fő</span>
               </label>
-              <Link to="/programs/summer_camp/application">
+              <a href="http://bit.ly/taborjelentkezes">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>
-              </Link>
+              </a>
             </div>
             <img
               className={style["camp-row-image"]}
@@ -132,47 +131,50 @@ export default function CampPageMobile({ props }) {
             />
             <label className="size-32 extra-bold">Programjaink</label>
             <div className={style["button-box"]}>
-              <Link to="/programs/summer_camp/programs/#muveszi-torna">
+              <Link to="/kurzusok/muveszi-torna">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Művészi torna
                 </button>
               </Link>
-              <Link to="/programs/summer_camp/programs/#mozdulatmuveszet">
+              <Link to="/kurzusok/mozdulatmuveszet">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Mozdulatművészet
                 </button>
               </Link>
             </div>
             <div className={style["button-box"]}>
-              <Link to="/programs/summer_camp/programs/#keziszeresgimnasztika">
+              <Link to="/kurzusok/keziszeresgimnasztika">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Kéziszeres gimnasztika
                 </button>
               </Link>
-              <Link to="/programs/summer_camp/programs/#moderntanc">
+              <Link to="/kurzusok/modern-tanc">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Modern tánc
                 </button>
               </Link>
             </div>
             <div className={style["button-box"]}>
-              <Link to="/programs/summer_camp/programs/#koreografia">
+              <Link to="/kurzusok/koreografia">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Koreográfia
                 </button>
               </Link>
-              <Link to="/programs/summer_camp/programs/#kezmuves">
+              <Link to="/kurzusok/kezmuves">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Kézműves
                 </button>
               </Link>
-              <Link to="/programs/summer_camp/programs/#szabadtanc">
+              <Link to="/kurzusok/szabadtanc">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Szabad tánc
                 </button>
               </Link>
             </div>
-            <Link to="/programs/summer_camp/programs" className={style["link"]}>
+            <Link
+              to="/programok/nyari-tabor/programs"
+              className={style["link"]}
+            >
               <button className={`${style["btn"]} ${style["secondary"]}`}>
                 Részletesen a programokról
               </button>
@@ -192,7 +194,7 @@ export default function CampPageMobile({ props }) {
               <div className={style["button-box"]}>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[6],
                   }}
                 >
@@ -202,7 +204,7 @@ export default function CampPageMobile({ props }) {
                 </Link>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[8],
                   }}
                 >
@@ -215,7 +217,7 @@ export default function CampPageMobile({ props }) {
               <div className={style["button-box"]}>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[1],
                   }}
                 >
@@ -225,8 +227,8 @@ export default function CampPageMobile({ props }) {
                 </Link>
                 <Link
                   to={{
-                    pathname: "/teacher",
-                    state: teachers.cards[11],
+                    pathname: "/tanar",
+                    state: teachers.cards[9],
                   }}
                 >
                   <button className={`${style["btn"]} ${style["secondary"]}`}>
@@ -237,7 +239,7 @@ export default function CampPageMobile({ props }) {
               <div className={style["button-box"]}>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[5],
                   }}
                 >
@@ -247,7 +249,7 @@ export default function CampPageMobile({ props }) {
                 </Link>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[4],
                   }}
                 >
@@ -256,13 +258,13 @@ export default function CampPageMobile({ props }) {
                   </button>
                 </Link>
               </div>
-              <div className={style["button-box"]}>
+              {/* <div className={style["button-box"]}>
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Markolt-Rózsa Réka
                 </button>
                 <Link
                   to={{
-                    pathname: "/teacher",
+                    pathname: "/tanar",
                     state: teachers.cards[9],
                   }}
                 >
@@ -270,7 +272,7 @@ export default function CampPageMobile({ props }) {
                     Taylor Esther
                   </button>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={style["camp-row"]}>
@@ -285,7 +287,7 @@ export default function CampPageMobile({ props }) {
                 indul a nap, ahol a felkészülünk a táncórákra és jobban
                 megismerkedünk.
               </label>
-              <Link to="/programs/summer_camp/day">
+              <Link to="/programok/nyari-tabor/egy-nap">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Tovább olvasom
                 </button>
@@ -306,19 +308,11 @@ export default function CampPageMobile({ props }) {
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
-                className={`${style["apply-link"]} size-20 extra-bold`}
-              >
-                Jelentkezési lap
-              </a>
-              <Link to="/programs/summer_camp/application">
+              <a href="http://bit.ly/taborjelentkezes">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>
-              </Link>
+              </a>
               <label className="size-20">
                 A részvételi díjat természetesen visszatérítjük, ha a
                 korlátozások miatt a táborokat nem tudjuk megtartani
@@ -336,7 +330,7 @@ export default function CampPageMobile({ props }) {
                 Testvéreknél is, ha nem túl nagy a korkülönbség, akkor
                 természetesen megoldható - ha így szeretnék.
               </label>
-              <Link to="/programs/summer_camp/faq">
+              <Link to="/programok/nyari-tabor/gyik">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>
                   Tovább olvasom
                 </button>

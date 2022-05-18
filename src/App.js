@@ -184,37 +184,37 @@ function App() {
           <Footer />
           <FooterMobile />
         </Route>
-        {/* <Route exact path="/programok/camp">
+        <Route exact path="/programok/tabor">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.camp} />
           <Footer />
           <FooterMobile />
-        </Route> */}
-        <Route exact path="/programok/nyari_tabor">
+        </Route>
+        <Route exact path="/programok/nyari-tabor">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.summer_camp} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/nyari_tabor/programok">
+        <Route exact path="/programok/nyari-tabor/programok">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <Course pageConfig={programs.summerCamp.programs} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/nyari_tabor/gyik">
+        <Route exact path="/programok/nyari-tabor/gyik">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <Course pageConfig={programs.summerCamp.faq} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/nyari_tabor/egy_nap">
+        <Route exact path="/programok/nyari-tabor/egy-nap">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <CampDay opt={programs.summerCamp.day} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programok/nyari_tabor/jelentkezes">
+        <Route exact path="/programok/nyari-tabor/jelentkezes">
           <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
           <CampDay opt={programs.summerCamp.application} />
           <Footer />

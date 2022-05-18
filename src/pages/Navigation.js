@@ -61,14 +61,14 @@ export default function Navigation(props) {
           />
         </Link>
         <div className="links">
-          {/* <Link
+          <Link
             className={`${
-              location.includes("/programok/nyari_tabor") && "active"
+              location.includes("/programok/nyari-tabor") && "active"
             }`}
-            to="/programok/nyari_tabor"
+            to="/programok/nyari-tabor"
           >
             Nyári Tánctábor 2021
-          </Link> */}
+          </Link>
           <Link
             className={`${location === "/" && "active"}`}
             onClick={() => dispatch(updatePageindex({ payload: 1 }))}
@@ -118,7 +118,7 @@ export default function Navigation(props) {
           <label
             className={`plus-sign programs ${
               location.includes("programok") &&
-              !location.includes("programok/nyari_tabor") &&
+              !location.includes("programok/nyari-tabor") &&
               "active"
             }`}
           >

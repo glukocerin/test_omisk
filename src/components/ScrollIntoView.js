@@ -34,6 +34,7 @@ class ScrollIntoView extends PureComponent {
           "#szabadtanc",
         ].includes(this.props.location.hash)
       ) {
+        debugger;
         document.querySelector(".App").scrollTop = document.querySelector(
           this.props.location.hash
         ).offsetTop;
