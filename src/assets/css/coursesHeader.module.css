@@ -86,8 +86,8 @@
     background: var(--color-gray-0);
     align-items: center;
     background: transparent;
-    margin-bottom: 3rem;
-    padding-top: 5rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
   }
 
   .header {

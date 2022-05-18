@@ -1,5 +1,4 @@
 const pagesConfig = {
-  // ide irhatod a szaros configodat
   landing: {
     youtube_links: [
       {
@@ -94,8 +93,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -119,6 +122,11 @@ const pagesConfig = {
             appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
           {
+            name: "MOM Kulturális Központ",
+            address: "XII. Csörsz u. 18.",
+            appointments: ["Hétfő", "Csütörtök"],
+          },
+          {
             name: "MOM Tagintézmény, Barabás Villa",
             address: "XII. ker. Városmajor utca 44.",
             appointments: ["Hétfő", "Csütörtök"],
@@ -131,7 +139,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha…",
-          img: "pages/muveszetitorna/1.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-1.jpg",
+          alt: "művészi torna",
           description: [
             "szeretnél szép testtartást, és ügyesebben mozogni.",
             "olyan mozgást keresel, ami akkor is hasznodra válik, ha végül nem a táncnál hanem az úszásnál kötsz ki.",
@@ -140,19 +149,19 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a művészi torna (RG)?",
-          img: "pages/muveszetitorna/2.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-2.jpg",
           description:
             "A művészi torna a gimnasztikai alapja a ritmikus gimnasztikának (RG). Művészi torna tanfolyamunk alapja Berczik Sára esztétikus testképző és mozgásfejlesztő technikája. A módszer lényege a tudatos mozgásra nevelés, ami bármilyen későbbi mozgástanulást könnyebbé tesz. A legkisebbek számára is jól érthető és értelmezhető, így hosszabb távon is leköti a figyelmüket. A gyakorlatok összeállításának meghatározó szempontja az esztétikus rendezettség. A koreográfiákhoz használt klasszikus zene fogékonnyá teszi a gyerekeket a társművészetekre. Nem kell hozzá speciális adottság, a helyesen végzett, szép mozdulatok mindenkinek sikerélményt adnak.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/muveszetitorna/3.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-3.jpg",
           description:
             "Iskolánk képzési rendszere 4 éves korban kezdődik művészi tornával. A tudatos mozgás elsajátítása – ami folyamatos gondolkodásra és koncentrációra késztet – leghamarabb ebben az életkorban lehetséges. Később  is el lehet kezdeni, mindenki az életkorának megfelelő csoportba kerül, ahol a tanárok segítenek bekapcsolódni a tanulásba.  A művészi torna szerves folytatása a mozdulatművészet, amelyben már nagyobb hangsúlyt kap a tánc és a kreativitás. Iskolás kortól  más műfajok is választhatók, amelyekhez a művészi torna ugyanúgy kiváló alapot ad.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/muveszetitorna/4.jpg",
+          img: "pages/muveszetitorna/muveszi-torna-4.jpg",
           description:
             "A Berczik-módszer a mozgást alapelemeire bontja, különböző testrészeink mozdulatait egymástól függetlenítve tanítja, majd illeszti össze. Az órák koncentrikusan épülnek egymásra, ismételve, elmélyítve és bővítve a megtanult mozgásanyagot. Rendszeresen használunk kéziszereket (például labda, karika, szalag), amik nemcsak változatossá teszik az órát, de segítik a mozgástanulást  és ügyessé tesznek.Az óvodásoknál kiemelt szerepe van a tartásjavító gyakorlatoknak, mivel  erre az életkorra esik a testtartás beidegződése.  Fontosnak tartjuk az igényes zeneválasztást,  mind a koreográfiák, mind a tréning kisérőjeként.",
         },
@@ -168,12 +177,16 @@ const pagesConfig = {
           cost: {
             name: "Tandíj",
             occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
-            prices: ["11000-11300 Ft / hó", "12800-14700 Ft / hó"],
+            prices: ["11500-12500 Ft / hó", "13500-15000 Ft / hó"],
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -196,7 +209,11 @@ const pagesConfig = {
             address: "III. Csobánka tér 5",
             appointments: ["Kedd", "Csütörtök", "Péntek"],
           },
-
+          {
+            name: "MOM Kulturális Központ",
+            address: "XII. Csörsz u. 18.",
+            appointments: ["Hétfő", "Csütörtök"],
+          },
           {
             name: "MOM Tagintézmény, Barabás Villa",
             address: "XII. ker. Városmajor utca 44.",
@@ -210,7 +227,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/mozdulatmuveszet/1.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-1.jpg",
+          alt: "mozdulatművészet",
           description: [
             "a mozgást nem utánozni, hanem tanulni szeretnéd.",
             "nyitott vagy egy finom, harmonikus mozgásformára.",
@@ -220,19 +238,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a mozdulatművészet?",
-          img: "pages/mozdulatmuveszet/2.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-2.jpg",
+          alt: "mozdulatművészet",
           description:
             "Az általunk tanított mozdulatművészet a gimnasztika precizitására épülő – de annál szabadabb –, a zenével szoros összhangban létrejövő táncstílus. Magában foglalja a klasszikus balett és a különböző modern technikák alapelemeit, megtartva azt az alapvető szellemiséget, amely a test természetes adottságaihoz illeszkedő esztétikus és kifejező mozgást keresi. A koreográfiát a zenével szoros összhangban készítjük el, így zene és tánc egymás hatását erősítik: még szebbnek látjuk a táncot és jobban megértjük a zenét.",
         },
         whenStart: {
           title: "Hogyan tudok csatlakozni?",
-          img: "pages/mozdulatmuveszet/3.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-3.jpg",
+          alt: "mozdulatművészet",
           description:
             "Kurzusunk a művészi torna szerves folytatásának tekinthetők, így ebben a műfajban nincsenek teljesen kezdő tanfolyamaink.  A kifejező mozgás egyre nagyobb hangsúlyt kap az ovisok és kisiskolások óráin, és 10 éves kor környékén már mozdulatművészetet tanul, aki korábban művészi tornára iratkozott be. Ennek ellenére menet közben is lehet csatlakozni. Előny, ha rendelkezel valamilyen táncos előképzettséggel, de ha nem, akkor is megpróbálhatod az életkorodnak megfelelő csoportban. Nem kell hozzá speciális adottság, tanáraink majd segítenek a felzárkózásban.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/mozdulatmuveszet/4.jpg",
+          img: "pages/mozdulatmuveszet/mozdulatmuveszet-4.jpg",
+          alt: "mozdulatművészet",
           description:
             "A legtöbb műfajhoz hasonlóan az óra tréningből és koreográfiatanulásból áll. A tréningezéssel   elsajátítjuk a mozdulatművészet formanyelvét és   megszerezzük azokat a készségelemeket, amik alkalmassá tesznek  a koreográfiák előadásra. A mozdulatművészet kifejező mozdulatokból építkezik, a táncokat műhelymunkaszerűen készítjük el. Tanítványaink kreatívan vesznek részt az alkotómunka minden fázisában  a koncepció kialakításától és  a zenekiválasztásától  a mozdulatok megalkotásán keresztül a produkció színpadra állításáig.",
         },
@@ -252,8 +273,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Discounts",
-            sibling: ["For 2 siblings", "For 3 siblings"],
-            prices: ["2000.- /month/person", "3000.- /month/person"],
+            sibling: ["For 2 siblings", "For 3 siblings", "For 4 siblings"],
+            prices: [
+              "2500.- /month/person",
+              "3500.- /month/person",
+              "4500.- /month/person",
+            ],
           },
           ages: {
             name: "Age group",
@@ -269,7 +294,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "We suggest this for you...",
-          img: "pages/preballet/1.jpg",
+          img: "pages/preballet/pre-balett-1.jpg",
+          alt: "pre balett",
           description: [
             "If you would like to learn dance playfully",
             "If you would like to learn English this way as well",
@@ -279,19 +305,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "What is pre-ballet?",
-          img: "pages/preballet/2.jpg",
+          img: "pages/preballet/pre-balett-2.jpg",
+          alt: "pre balett",
           description:
             "Pre-Ballet is an introduction to the very basics of dance.  Usually in ballet the routines are done in standing position, we make it easier and start in a seated position. The repeated commands during the recurring training actions make easier to incorporate them into childres' vocabulary in a native way.  We hope that children will discover creative expression, and experience the fun of dance during these classes!",
         },
         whenStart: {
           title: "At what age can you start?",
-          img: "pages/preballet/3.jpg",
+          img: "pages/preballet/pre-balett-3.jpg",
+          alt: "pre balett",
           description:
             "The classes are for ages 4-6. Our teacher Esther, who speaks native English demonstrates everything to the students. So it is not a problem if your child is still new to English. After the age of six, you can continue in one of our gymnastics classes.",
         },
         structure: {
           title: "What do we do during class?",
-          img: "pages/preballet/4.jpg",
+          img: "pages/preballet/pre-balett-4.jpg",
+          alt: "pre balett",
           description:
             "We start every class with a few walking exercises, skips, ect. Then we continue with our gymnastics routines, and some jumps. Finally we usually have a short game, and we finish our class with stretches. During the class we encourage children to only speak in English. We learn a few basic words in the beginning that they can use, and later on several dance related expressions. While we dance, the children repeat all the instructions given by the teacher, and this makes learning easy and fun!",
         },
@@ -311,8 +340,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -331,11 +364,6 @@ const pagesConfig = {
             appointments: ["Kedd", "Szerda", "Csütörtök"],
           },
           {
-            name: "MOM Kulturális Központ",
-            address: "XII. ker. Csörsz út 18",
-            appointments: ["Hétfő", "Péntek"],
-          },
-          {
             name: "VII. ker. Táncstúdió",
             address: "VII. Wesselényi u. 41",
             appointments: ["Hétfő", "Szerda"],
@@ -343,7 +371,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/modern/1.jpg",
+          img: "pages/modern/modern-tanc-1.jpg",
+          alt: "modern tánc",
           description: [
             "…elmúltál 10 éves, szereted a kihívásokat.",
             "…van táncos előképzettséged, vagy eddig valahol huzamosabb ideig sportoltál.",
@@ -353,19 +382,22 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a modern tánc?",
-          img: "pages/modern/2.jpg",
+          img: "pages/modern/modern-tanc-2.jpg",
+          alt: "modern tánc",
           description:
             "Ellenerők keresése, dinamikai váltások, feszítettség és elengedés összhangja. –  Ezáltal válik a modern tánc izgalmas és szemet gyönyörködtető műfajjá a színpadon, ezekre kell ráérezni tanítványainknak az órák során. Bár a klasszikus balett alapjaira épül, annak szabály rendszerével szembe megy: a természetes mozgáson alapul, használja a gravitációt, a mozdulatokat belülről indítja. Nem elsősorban a forma, hanem a mozdulat fizikai valósága által válik kifejezővé. A régebbi jazztánchoz képest a folyamatosságon, folyékonyságon, puhaságon van a hangsúly.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/modern/3.jpg",
+          img: "pages/modern/modern-tanc-3.jpg",
+          alt: "modern tánc",
           description:
             "A modern tánc elsajátítása magasabb szintű tudatosságot igényel, amelyre 10 éves koruk környékén érnek meg a gyerekek. Azoknak, akik még nem érték el ezt az életkort, de már alig várják, hogy el tudják kezdeni az órákat, 8 éves kortól előkészítő csoportot indítunk. Ez nem előfeltétele a későbbi jelentkezésnek, hiszen nagyon jó előképzettséget jelent a művész torna, a klasszikus balett, de nem kizáró tényező az sem, ha valamilyen sportról váltanál.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/modern/4.jpg",
+          img: "pages/modern/modern-tanc-4.jpg",
+          alt: "modern tánc",
           description:
             "Az óra alapos bemelegítéssel indul, majd ezt követi a tréning, melynek fő célja a formanyelv technikai elemeinek elsajátítása. Ennek a mozgásnak lényege a testközpontból és a törzsből elnyújtott hosszú mozdulatok és dinamikai váltások alkalmazása. Ennek elsajátítása elmélyült és kitartó gyakorlást igényel, hosszú távon növeli a testtudatot és önfegyelemre tanít. A tréning  tetőtől talpig átmozgatja és formálja a testet. Az óra második felében a koreográfia gyakorlása következik, amely a tréning során megtanult kombinációkból  épül fel.",
         },
@@ -385,8 +417,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -402,7 +438,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/jazz/1.jpg",
+          img: "pages/jazz/jazztanc-1.jpg",
+          alt: "jazztánc",
           description: [
             "egy könnyed, laza, látványos műfajt keresel.",
             "szereted a modern, pörgős zenéket.",
@@ -412,19 +449,19 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a jazztánc?",
-          img: "pages/jazz/2.jpg",
+          img: "pages/jazz/jazztanc-2.jpg",
           description:
             "A jazztánc az Amerikai Egyesült Államokból, New Orleansból származik, az afro-amerikaiak autentikus táncában gyökerezik. A jazz zenével együtt fejlődött, kiegészült a balett és a modern tánc elemeivel. Jellegzetessége az izolációs technika, az egyes testrészek egymástól független mozgatása. A mozgásközpontjai: fej-nyak, vállak, mellkas, medence, a kezek és a lábak. A mozgás lényege a “policentrikusság”, ez azt jelenti, hogy legalább kettő – a fentebb említett – mozgásközpont egymástól függetlenül mozog. Felszabadult, látványos táncstílus.",
         },
         whenStart: {
           title: "Mikor tudom elkezdeni?",
-          img: "pages/jazz/3.jpg",
+          img: "pages/jazz/jazztanc-3.jpg",
           description:
             "Iskolás kortól javasoljuk, mivel a szükséges koordinációs képesség csak ekkor alakul ki. A művészi torna ehhez a stílushoz is kiváló alapot ad, de anélkül is bátran jelentkezhetsz.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/jazz/4.jpg",
+          img: "pages/jazz/jazztanc-4.jpg",
           description:
             "Az órák első felében tréningezünk mai, divatos  zenére.  Egymást követik az izolációs, erősítő és koordinációt fejlesztő gyakorlatok.  Kezdőknél a tréning még csak izolációs majd koordinációs gyakorlatokat tartalmaz. Haladóknál a modern balett elemei is bekerülnek a tananyagba. Majdnem minden típusú mozgás engedélyezett. Hosszú, nyújtott testvonalat, diagonális feszességet és hosszú egyensúlyi helyzeteket használ, és a felsőtestet teszi mindannak középpontjává, ami a testtel történik. Az óra második része a már megtanult technikai elemeket tartalmazó koreográfiák tanulásával telik.",
         },
@@ -444,8 +481,12 @@ const pagesConfig = {
           },
           discount: {
             name: "Kedvezmény",
-            sibling: ["2 testvér esetén", "3 testvér esetén"],
-            prices: ["2000.- /hó/fő", "3000.- /hó/fő"],
+            sibling: [
+              "2 testvér esetén",
+              "3 testvér esetén",
+              "4 testvér esetén",
+            ],
+            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -466,7 +507,8 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Neked ajánljuk, ha...",
-          img: "pages/ballet/1.jpg",
+          img: "pages/ballet/klasszikus-balett-1.jpg",
+          alt: "klasszikus balett",
           description: [
             "kecses, finom, légies mozgásformát keresel.",
             "nem ijedsz meg a kemény munkától.",
@@ -476,25 +518,29 @@ const pagesConfig = {
         },
         aboutCourse: {
           title: "Mi a klasszikus balett?",
-          img: "pages/ballet/2.jpg",
+          img: "pages/ballet/klasszikus-balett-2.jpg",
+          alt: "klasszikus balett",
           description:
             "A klasszikus balett a tánc akadémikus formanyelve. A táncművészeti ágazatok közül a leginkább kidolgozott, évszázadok folyamán kikristályosodott rendszer. Elemei a legtöbb tánc stílusban felbukkannak, ezért a balett tanulása nagy segítséget jelent bármilyen más műfaj elsajátításához is. A mozdulatok helyes elvégzését szigorú szabályrendszer írja le, amit megtanulni csak kitartó gyakorlással lehet.",
         },
         whenStart: {
           title: "Mikor tudom  elkezdeni?",
-          img: "pages/ballet/3.jpg",
+          img: "pages/ballet/klasszikus-balett-3.jpg",
+          alt: "klasszikus balett",
           description:
             "A balettgyakorlatok nagy önfegyelmet és koncentrációt igényelnek, fizikai terhelhetőséget kívánnak.  A művészi torna jó előkészítés óvodás korban, mert a gimnasztika különböző tehermentesített helyzetekben készíti elő a később állásban elvégzendő feladatokat.  Iskolás kortól előképzettség nélkül is lehet jelentkezni.",
         },
         structure: {
           title: "Hogyan épül fel az óra?",
-          img: "pages/ballet/4.jpg",
+          img: "pages/ballet/klasszikus-balett-4.jpg",
+          alt: "klasszikus balett",
           description:
             "A balett metodikáját Vaganova, orosz balettmester írta le, a tréning során az ő rendszerét követjük. Óráinkon klasszikus kísérőzenét használunk. A rövid bemelegítést követően először rúd-, majd középgyakorlatok következnek, a második évtől kezdve már elmozdulunk a térben, ugrásokat és forgásokat is tanulunk. A tréning során  fejlődik a koordinációs készség és javul  a testtartás. A gyakorlatok precíz elvégzése önfegyelemre tanít. Az órák befejező részében kerül sor a rövid koreográfiák gyakorlására.",
         },
         footer: true,
       },
       lady: {
+        id: "noiTorna",
         opt: {
           courseName: "Női torna",
           color: "green",
@@ -516,14 +562,9 @@ const pagesConfig = {
               "1500 Ft",
             ],
           },
-          discount: {
-            name: "Kedvezmény",
-            sibling: ["Online órák díja"],
-            prices: ["a fenti összegek 75 %-a"],
-          },
           ages: {
             name: "Korosztály",
-            ageGroup: ["Hölgyeknek"],
+            ageGroup: ["Felnőtteknek"],
           },
         },
         places: [
@@ -540,31 +581,41 @@ const pagesConfig = {
         ],
         forWhom: {
           title: "Kinek ajánljuk ?",
-          img: "pages/lady/1.jpg",
+          img: "pages/lady/noi-torna-1.jpg",
+          alt: "női torna",
           description: [
-            "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában  művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
-            "Aki tradicionális, esztétikai  alapelvekre épülő, harmonikus, nőies mozgásformát keres és szeretne klasszikus zenére tornázni.",
+            "Aki nem jár konditerembe, de igényelné a rendszeres testmozgást és olyan helyet keres, ahol összeszokott közösségben - felső korhatár nélkül szakember irányításával mozoghat",
+            "Aki találkozott már Berczik Sára módszerével vagy fiatalabb korában művészi tornázott és olyan kondícionáló tornát keres, ami erre a mozgásanyagra épül",
+            "Aki még nem találkozott ezzel a módszerrel és nem is sportolt, de tradicionális, esztétikai alapelvekre épülő, harmonikus, nőies mozgásformát keres és szeretne klasszikus zenére tornázni.",
             "Aki olyan gimnasztikát keres, ami kíméletesen, de alaposan átmozgatja a test valamennyi izmát.",
-            "Aki nem járt még kondicionáló tornára, de igényelné a rendszeres testmozgást és szeretné fokozatosan elkezdeni.",
           ],
         },
         aboutCourse: {
           title: "Mi az órák anyaga?",
-          img: "pages/lady/2.jpg",
+          img: "pages/lady/noi-torna-2.jpg",
+          alt: "női torna",
           description:
             "Berczik Sára testtudatos módszere alapján a tematikát Tass Olga dolgozta ki és tanította évtizedeken keresztül. Mády Krisztina az Ő örökségét viszi tovább. Az óra alapos bemelegítéssel indul, melynek célja a vérkeringés fokozása. Ezt követik  a rúd - és középgyakorlatok. A fő célok az ízületi mozgékonyság fejlesztése, az izületek és a gerinc nyújtása valamint a nagy és kis izmok erősítése. A gyakorlatok fejlesztik a koordinációt , az ügyességet és az állóképességet. Az óra nyújtással fejeződik be.",
         },
         whenStart: {
-          title: "Online órák",
-          img: "pages/lady/3.jpg",
-          description:
-            "A járványügyi vészhelyzet ideje alatt online órákat tartunk a megszokott időpontban. A korlátozások feloldása után természetesen visszatérünk a tornaterembe, de az órákat  változatlanul közvetítjük azok kedvéért, akik továbbra is az otthoni biztonságos környezetben szeretnék folytatni a testmozgást. Az órákat egyszerű  kommunikációs felületen  közvetítjük, melyre nagyon egyszerűen, egy linkre kattintással lehet csatlakozni. A linket az első óra elött e-mailben küldjük el Önnek. Az órát vezető tanár láthatja a résztvevőket, így folyamatosan kontrollálni tuda a gyakorlatok helyes végrehajtását.",
+          title: "Hogyan tudok csatlakozni?",
+          img: "pages/lady/noi-torna-3.jpg",
+          alt: "női torna",
+          descriptionList: [
+            "Heti 1, 2 vagy 3 alkalommal lehet járni.",
+            "Az órák időpontja: hétfő-szerda-péntek : de. 8-9 és 9-10",
+            "2021. szeptember 6-tól folyamatosan tartunk órákat.",
+            "Az elmulasztott órákat pótolni lehet és az ünnepnapokat figyelembe vesszük a havidíj kiszámításakor.",
+            "Folyamatosan lehet csatlakozni a helyszínen vagy az alábbi elérhetőségeken Mikusik Márta iskolatitkárnál: 06-20-946-0848   és 06-1-200-0138 iroda@omisk.hu - A megkezdett hónapra időarányos díjat számítunk.",
+          ],
+          description: null,
         },
         structure: {
-          title: "Hogyan lehet csatlakozni?",
-          img: "pages/lady/4.jpg",
+          title: "Helyszín",
+          img: "pages/lady/noi-torna-4.jpg",
+          alt: "női torna",
           description:
-            "Heti 1, 2 vagy 3 alkalommal lehet járni, melynek díját a hónap elején a helyszínen, ezt követően pedig átutalással lehet befizetni.  Hónap közben is lehet csatlakozni, ebben az esetben csak a részarányos díjat kell befizetni. Első alkalommal óradíjjal is részt lehet venni az órán.",
+            "Az  órákat a most átadott 20-22 FITNESS-ben tartjuk, ahol tágas, légkondicionál terem , öltözö zuhanyozóval , közösségi helyiség és kávézó várja a látogatókat. Az év folyamán természetesen az egész  épületben betartjuk a mindenkori járványügyi előírásokat.",
         },
         footer: true,
       },
@@ -572,7 +623,8 @@ const pagesConfig = {
     cards: [
       {
         title: "Művészi torna",
-        image: "muveszi_torna",
+        image: "muveszi-torna",
+        alt: "művészi torna",
         bg_mobile: "turquoise",
         age: "",
         districts: "III.,VII., VIII., XI., XII. kerületek",
@@ -584,6 +636,7 @@ const pagesConfig = {
       {
         title: "Mozdulatművészet",
         image: "mozdulatmuveszet",
+        alt: "mozdulatművészet",
         bg_mobile: "yellow",
         age: "",
         districts: "III., VIII., XI., XII. kerületek",
@@ -594,7 +647,8 @@ const pagesConfig = {
       },
       {
         title: "Klasszikus balett",
-        image: "klasszikus_balett",
+        image: "klasszikus-balett",
+        alt: "Klasszikus balett",
         bg_mobile: "pink",
         age: "",
         districts: "III., VII., XII. kerület",
@@ -605,7 +659,8 @@ const pagesConfig = {
       },
       {
         title: "Jazztánc",
-        image: "jazz_tanc",
+        image: "jazz-tanc",
+        alt: "Jazztánc",
         bg_mobile: "blue",
         age: "",
         districts: "III. kerület",
@@ -616,7 +671,8 @@ const pagesConfig = {
       },
       {
         title: "Modern tánc",
-        image: "modern_tanc",
+        image: "modern-tanc",
+        alt: "modern tánc",
         bg_mobile: "pink",
         age: "",
         districts: "III.,VII., VIII., XII. kerületek    ",
@@ -627,7 +683,8 @@ const pagesConfig = {
       },
       {
         title: "Pre balett",
-        image: "pre_ballet",
+        image: "pre-ballet",
+        alt: "pre balett",
         bg_mobile: "turquoise",
         age: "",
         districts: "III. kerület",
@@ -638,7 +695,8 @@ const pagesConfig = {
       },
       {
         title: "Női torna",
-        image: "noi_torna",
+        image: "noi-torna",
+        alt: "női torna",
         bg_mobile: "yellow",
         age: "",
         districts: "III. kerület",
@@ -656,7 +714,8 @@ const pagesConfig = {
           title: "Nyilvános órák",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "nyilvanos_ora",
+          img: "nyilvanos-orak",
+          alt: "nyilvános órák",
           link: "nyilvanos-ora",
         },
         {
@@ -664,6 +723,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "versenyek",
+          alt: "versenyek",
           link: "versenyek",
         },
       ],
@@ -672,14 +732,16 @@ const pagesConfig = {
           title: "Évzáró előadások",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "evzaro_eloadas",
+          img: "evzaro-eloadas",
+          alt: "Évzáró előadások",
           link: "evzaro-eloadas",
         },
         {
           title: "Omisk gála",
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
-          img: "gala",
+          img: "omisk-gala",
+          alt: "Omisk gála",
           link: "omisk",
         },
       ],
@@ -689,6 +751,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "mozdulatmuhely",
+          alt: "Mozdulatműhely",
           link: "mozdulatmuhely",
         },
         {
@@ -704,7 +767,8 @@ const pagesConfig = {
       speechDay: {
         title: "Évzáró előadások",
         headerImg: "evzaro_eloadas",
-        videoImg: "evzaroeloadas/evzaro_eloadasok_bg",
+        videoImg: "evzaroeloadas/evzaro-eloadasok-hatterkep",
+        alt: "Évzáró előadások",
         detailsOne:
           "A tanévet mindig színpadi előadással zárjuk a MOM Kulturális Központ és az Óbudai Kulturális Központ színháztermében. 1990  óta hagyomány, hogy az előadásokon minden tanítványunk fellép a kezdő óvodásoktól a felnőtt versenyző csoportokig.",
         detailsTwo:
@@ -736,14 +800,15 @@ const pagesConfig = {
           },
         ],
         gallery: [
-          "evzaroeloadas/evzaro_eloadasok_1",
-          "evzaroeloadas/evzaro_eloadasok_2",
+          "evzaroeloadas/evzaro-eloadasok-1",
+          "evzaroeloadas/evzaro-eloadasok-2",
         ],
       },
       competitions: {
         title: "Versenyek",
         headerImg: "versenyek",
-        videoImg: "versenyek/bg",
+        videoImg: "versenyek/versenyek-hatterkep",
+        alt: "versenyek",
         detailsOne:
           "Haladó csoportjaink versenyeken is részt vesznek, ami keményebb munkával, nagyobb elkötelezettséggel jár. Ez kicsit több, mint a szabadidősport, mert rendszeres megmérettetést jelent, de nem igényel olyan sok időt és energia ráfordítást, mint a versenysport. Mivel ebben az esetben jóval több a fellépés, versenyző csoportjainkat  magabiztosabb színpadi jelenlét, közös célok mentén kialakult összetartó közösség jellemzi.",
         detailsTwo:
@@ -811,12 +876,13 @@ const pagesConfig = {
             title: "Concerto 1",
           },
         ],
-        gallery: ["versenyek/1", "versenyek/2"],
+        gallery: ["versenyek/versenyek-1", "versenyek/versenyek-2"],
       },
       omisk: {
         title: "Omisk Gála",
-        headerImg: "omisk_gala",
-        videoImg: "gala/bg",
+        headerImg: "omisk-gala",
+        alt: "Omisk Gála",
+        videoImg: "gala/omisk-gala-hatterkep",
         detailsOne:
           "2015 óta évente megrendezzük az Omisk Gálát. Míg az évzáró előadásainkon kivétel nélkül minden csoport megmutathatja magát, az iskola gáláján műfajtól függetlenül – 10 éves kor feletti – haladó növendékeink léphetnek fel a megelőző év legsikeresebb koreográfiáival. Gálánkat  ezért mindig a második félév elején rendezzük, mielőtt csoportjaink elkezdenének készülni az évzáró előadásra.",
         detailsTwo:
@@ -863,11 +929,12 @@ const pagesConfig = {
             title: "Concerto 1-2-3",
           },
         ],
-        gallery: ["gala/1", "gala/2"],
+        gallery: ["gala/omisk-gala-1", "gala/omisk-gala-2"],
       },
       publicClass: {
         title: "Nyilvános órák",
-        videoImg: "nyilvanosora/bg",
+        videoImg: "nyilvanosora/nyilvanos-ora-hatterkep",
+        alt: "nyilvános órák",
         headerImg: "nyilvanos_ora",
         detailsOne:
           "A tanév folyamán egy alkalommal megmutatjuk az érdeklődőknek, hogy mit tanulunk az órákon. Év közben a foglalkozások zárt ajtók mögött folynak, a legkisebbek is önállóan, szülők nélkül vesznek részt az órán. Az óvodásoknál, kisiskolásoknál a szülők igénylik, és mi is fontosnak tartjuk megmutatni, hogy tanítványaink mennyit fejlődtek az év folyamán. Ezért félévkor kinyitjuk az ajtókat, és növendékeink hozzátartozói valamint az érdeklődők végignézhetnek egy teljes foglalkozást.",
@@ -881,12 +948,16 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/4SPgJV2Pc7c?autoplay=1",
           },
         ],
-        gallery: ["nyilvanosora/1", "nyilvanosora/2"],
+        gallery: [
+          "nyilvanosora/nyilvanos-ora-1",
+          "nyilvanosora/nyilvanos-ora-2",
+        ],
       },
       callisthenics: {
         title: "Mozdulatműhely",
         headerImg: "mozdulatmuhely",
-        videoImg: "mozdulatmuhely/bg",
+        videoImg: "mozdulatmuhely/mozdulatmuhely-hatterkep",
+        alt: "Mozdulatműhely",
         detailsOne:
           "Az Omisk Mozdulatműhely az iskola felnőtt növendékeiből alakult együttes, amelynek tagjai számára a tánc több mint hobbi – bár hivatásukat az élet különböző területein képzelik el. Van köztük gyógytornász és építész hallgató, moderntánc-pedagógus, tanítónő, rekreációs szakember, bölcsész és van, aki még csak gimnazista. De egy közös pont biztosan van bennük: a tánc szeretete.",
         detailsTwo:
@@ -897,7 +968,10 @@ const pagesConfig = {
             link: "https://www.youtube.com/embed/rKBmBZxAej4?autoplay=1",
           },
         ],
-        gallery: ["mozdulatmuhely/1", "mozdulatmuhely/2"],
+        gallery: [
+          "mozdulatmuhely/mozdulatmuhely-1",
+          "mozdulatmuhely/mozdulatmuhely-2",
+        ],
       },
       camp: {
         title: "Nyári tánctábor",
@@ -1140,8 +1214,9 @@ const pagesConfig = {
   teachers: {
     cards: [
       {
-        picture: "pers_julia.jpg",
+        picture: "pers-julia.jpg",
         name: "Pers Júlia",
+        alt: "Pers Júlia",
         desc: "Állami díjas táncpedagógus,\nMűvészeti vezető",
         details:
           "Állami Balett Intézetben (ma Táncművészeti Egyetem) kezdtem el táncot tanulni, majd egyesületben ritmikus sportgimnasztikáztam. Édesanyám, P. Ács Vali balettmester révén egészen fiatalon kapcsolatba kerültem a tanítással. Sokáig kerestem egy  stílust, ami igazán közel áll hozzám  és ezt a Berczik Sára módszerében találtam meg. Nem elsősorban a technika nehézségi foka fogott meg, hanem az, hogy a mozdulatok  mennyire kifejezőek. 5 éven keresztül az ő asszisztenseként dolgoztam a Fővárosi Pedagógiai Intézet továbbképző tanfolyamán. 1990-ben megalapítottam az Óbuda Mozgásművészeti Iskolát, amit azóta is vezetek. Kezdetben művészi tornát tanítottunk, azóta sok egyéb műfaj is helyett kapott az iskolában, de az alapelvek – tudatosság, zeneiség, kreativitás – nem változtak.",
@@ -1159,8 +1234,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "benis_katalin.jpg",
+        picture: "benis-katalin.jpg",
         name: "Benis Katalin",
+        alt: "Benis Katalin",
         desc: "Nívódíjas táncpedagógus",
         details:
           "Óvodás koromban engem is a szüleim írattak be művészi tornázni. Kisiskolásként már tagja voltam a Spartacus ritmikussportgimnasztika-szakosztályának, majd később a válogatott keretnek is, így lettem Berczik Sára tanítványa. A Testnevelési Főiskola edzői szakán ismerkedtem meg Pers Júliával – iskolánk művészeti vezetőjével. 1992-ben lettem az OMISK művészi torna tanára, ezzel egy időben Berczik Sára asszisztenseként dolgoztam. 2007 óta rendszeresen veszünk részt tanítványaimmal országos versenyeken és fesztiválokon.",
@@ -1175,8 +1251,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "mady_krisztina.jpg",
+        picture: "mady-krisztina.jpg",
         name: "Mády Krisztina",
+        alt: "Mády Krisztina",
         desc: "Nívódíjas táncpedagógus",
         details:
           "Hároméves koromban kezdtem művészi tornázni, húsz éven át tanultam Berczik Sári nénitől és Szollás Erzsébettől. Nagyszüleim és édesanyám sport iránti szeretete és igénye indított arra, hogy hivatásomként a művészi torna oktatását válasszam. Az Óbuda Mozgásművészeti Iskolában 1998 óta tanítok művészi tornát és mozdulatművészetet, amelyet csak másik hivatásom – három gyermekem nevelése – szakított meg hosszabb-rövidebb időre.",
@@ -1192,8 +1269,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "kalocsai_edit.jpg",
+        picture: "kalocsai-edit.jpg",
         name: "Kalocsai Edit",
+        alt: "Kalocsai Edit",
         desc: "Állami-díjas balettmester",
         details:
           "Táncos pályafutásomat a győri Kisfaludy Színháznál kezdtem. A gyermekem megszületése után az Állami Balettintézet pedagógus tagozatán végeztem klasszikus balett tanszakon, 1980- ban. Külföldi és hazai mesterek jazztánc- és kortárstánc-kurzusán sajátítottam el a modern technikákat.  1990-ben Gyöngyösön művészeti iskolát hoztam létre, ahol klasszikus balettet tanítottam. 2009-től a Kispesti Alapfokú Művészeti Iskola igazgatóhelyetteseként dolgoztam. Az Óbuda Mozgásművészeti Iskolában 1996 óta klasszikus balett és modern jazz órákat tartok.",
@@ -1210,8 +1288,9 @@ const pagesConfig = {
         hasActionPicture: false,
       },
       {
-        picture: "kovacs_bea.jpg",
+        picture: "kovacs-bea.jpg",
         name: "Kovács Bea",
+        alt: "Kovács Bea",
         desc: "Berczik-díjas művészitorna-edző",
         details:
           "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
@@ -1224,8 +1303,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "csongei_barbi.jpg",
+        picture: "csongei-barbi.jpg",
         name: "Csöngei Barbara",
+        alt: "Csöngei Barbara",
         desc: "táncpedagógus",
         details:
           "Ötévesen művészi tornát, majd klasszikus balettet tanultam – a Pannon Várszínház táncosa voltam. Húszévesen elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói tanfolyamát, és a Bailart színházi táncos képzését, majd Földi Béla ELIT képzésére jártam, és az Inversedance tagja lettem. Mindig is fontos volt számomra a fegyelmezett, kitartó munka, tanítványaimat is arra ösztönzöm. 2013 óta tanítok klasszikus balettet és modern táncot az iskolában. Csoportjaim rendszeresen vesznek részt országos táncversenyeken.",
@@ -1238,8 +1318,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "solti_eszter.jpg",
+        picture: "solti-eszter.jpg",
         name: "Solti Eszter",
+        alt: "Solti Eszter",
         desc: "táncpedagógus",
         details:
           "Négyéves koromban kezdtem művészi tornázni Pers Júlia növendékeként. A közösség tagjává váltam, a tánc hobbi volt, egészen egyetemista koromig, amikor eljött a felismerés, hogy tanárként is tagja szeretnék lenni az iskolának. Résztvevője voltam a Bethlen Dance Workshopnak 2016-ban, majd 2017-től a Budapest Táncszínház Elite Tréning Programjába nyertem felvételt. 2012 óta vagyok az iskola tanára, óráimon szeretném átadni tanítványaimnak mindazt, amit számomra jelent a tánc. Fontosnak tartom, hogy növendékeim kialakítsák saját önkifejezési módjukat.",
@@ -1252,8 +1333,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "lakatos_lilla.jpg",
+        picture: "lakatos-lilla.jpg",
         name: "Rácz-Lakatos Lilla",
+        alt: "Rácz-Lakatos Lilla",
         desc: "táncpedagógus",
         details:
           "A tánc felszabadít és kikapcsol. Először művészi tornára jártam, később balettot, mozdulatművészetet, modern, majd kortárs táncot tanultam. 2012 óta tanítok az OMISK-ban, növendékeim sikereket érnek el az országos versenyeken. 2016-ban részt vettem az OMISK Mozdulatműhely első projektjében, két évvel később pedig színpadra állíthattuk első darabomat. A táncórának saját tere és ideje van. Ha belépek egy órára, minden problémámat leteszem arra az időre, akkor csak az számít, ami ott történik. Ezt az élményt szeretném továbbadni tanítványaimnak is. ",
@@ -1267,8 +1349,9 @@ const pagesConfig = {
         hasActionPicture: true,
       },
       {
-        picture: "taylor_jennifer.jpg",
+        picture: "taylor-jennifer.jpg",
         name: "Bozsókiné Taylor Jennifer",
+        alt: "Bozsókiné Taylor Jennifer",
         desc: "táncpedagógus",
         details:
           "Kilencéves koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában, ahol 15 éven keresztül voltam Pers Júlia tanítványa. Szüleim elsősorban azért írattak be, mert úgy látták, hogy nem jó a tartásom. Itt nagyon megszerettem a táncot, ezért a tanítóképzővel párhuzamosan elvégeztem a Táncpedagógusok Országos Szövetsége modern tánc oktatói képzését, ahol más műfajokkal is megismerkedtem. 2012 óta tanítok művészi tornát és mozdulatművészetet, tanítványaimmal részt veszünk az országos táncversenyeken is.",
@@ -1310,8 +1393,9 @@ const pagesConfig = {
       //   hasActionPicture: true,
       // },
       {
-        picture: "david_luca.jpg",
+        picture: "david-luca.jpg",
         name: "Dávid Luca",
+        alt: "Dávid Luca",
         desc: "látványtervező, művésztanár",
         details:
           "Óvodás koromban kezdtem művészi tornázni az Óbuda Mozgásművészeti Iskolában. Ez a hely a második otthonommá vált. Húsz éven át tanulhattam Pers Júlia szárnyai alatt, egy kivételesen kreatív és tehetséges táncosokból álló csapatban. Az Omisk Mozdulatműhely, Miró képei táncban elbeszélve című előadásában látványtervezőként és táncosként is részt vehettem. Egy éven át tanultam különböző testtudati technikákról és azoknak a gyerekekkel való alkalmazási lehetőségeiről. 2015 óta óta önkénteskesem a Bátor Tábor alapítványnál,  és három éve vagyok kézműves szakértő. Jelenleg egy alternatív iskola hálózatban tanulásszervezőként és művésztanárként tanítok és tanulok együtt a gyerekekkel. Az Omisk nyári táboraiban szabadtánc és barkács foglalkozást tartok a gyerekeknek. Fő célom, hogy teret adjak a gyerekeknek a szabad alkotásra és önkifejezésre.",
@@ -1325,8 +1409,9 @@ const pagesConfig = {
   blog: {
     cards: [
       {
-        picture: "omisk_summer_camp.jpg",
-        picture_card: "omisk_summer_camp_blog.jpg",
+        picture: "2021-04-13.jpg",
+        alt: "2021. 04. 13.",
+        picture_card: "2021-04-13-blog.jpg",
         picture_title: "Nyári tánctábor",
         date: "2021. 04. 13.",
         title: "Omisk tánctábor 2021",
@@ -1337,8 +1422,9 @@ const pagesConfig = {
         is_active: true,
       },
       {
-        picture: "omisk_competition_blog.jpg",
-        picture_card: "omisk_competition.jpg",
+        picture: "2020-03-16-blog.jpg",
+        alt: "2020. 03. 16.",
+        picture_card: "2020-03-16.jpg",
         picture_title: "lockdown",
         date: "2020. 03. 16.",
         title: "OMISK Online verseny - 3 kategóriában",
@@ -1349,8 +1435,9 @@ const pagesConfig = {
         is_active: true,
       },
       {
-        picture: "lockdown.jpg",
-        picture_card: "entry-covid-card.jpg",
+        picture: "2020-11-11.jpg",
+        alt: "2020. 11. 11.",
+        picture_card: "2020-11-11-blog.jpg",
         picture_title: "lockdown",
         date: "2020. 11. 11.",
         title: "Omisk online",
@@ -1362,8 +1449,9 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-11.jpg",
-        picture_card: "entry-11-card.jpg",
+        picture: "2020-11-1.jpg",
+        alt: "2020. 11. 1.",
+        picture_card: "2020-11-1-blog.jpg",
         picture_title: "Verseny",
         date: "2020. 11. 1.",
         title: "XXIX. Országos Felnött és Ifjúsági Táncművészeti Fesztivál",
@@ -1374,8 +1462,9 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-10.jpg",
-        picture_card: "entry-10-card.jpg",
+        picture: "2020-10-25.jpg",
+        alt: "2020. 10. 25.",
+        picture_card: "2020-10-25-blog.jpg",
         picture_title: "Verseny",
         date: "2020. 10. 25.",
         title: "1. díj az Országos Táncjáték Fesztiválon",
@@ -1386,7 +1475,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-9.jpg",
+        picture: "2020-10-14.jpg",
+        alt: "2020. 10. 14.",
         picture_card: "",
         picture_title: "Verseny",
         date: "2020. 10. 14.",
@@ -1398,7 +1488,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-2.jpg",
+        picture: "2020-09-18.jpg",
+        alt: "2020. 09. 18.",
         picture_card: "entry-two.jpg",
         picture_title: "Berczik módszer",
         date: "2020. 09. 18.",
@@ -1411,7 +1502,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-one.jpg",
+        picture: "2020-09-17.jpg",
+        alt: "2020. 09. 17.",
         picture_card: "",
         picture_title: "Tájékoztató",
         date: "2020. 09. 17.",
@@ -1424,7 +1516,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-three.jpg",
+        picture: "2020-08-10.jpg",
+        alt: "2020. 08. 10.",
         picture_card: "",
         picture_title: "Nyári tábor",
         date: "2020. 08. 10.",
@@ -1437,7 +1530,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-four.jpg",
+        picture: "2020-06-08.jpg",
+        alt: "2020. 06. 08.",
         picture_card: "",
         picture_title: "Program",
         date: "2020. 06. 08.",
@@ -1450,7 +1544,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-five.jpg",
+        picture: "2020-05-12.jpg",
+        alt: "2020. 05. 12.",
         picture_card: "",
         picture_title: "Versenyek",
         date: "2020. 05. 12.",
@@ -1463,7 +1558,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-six.jpg",
+        picture: "2020-02-25.jpg",
+        alt: "2020. 02. 25.",
         picture_card: "",
         picture_title: "Gála",
         date: "2020. 02. 25.",
@@ -1476,7 +1572,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-seven.jpg",
+        picture: "2020-01-10.jpg",
+        alt: "2020. 01. 10.",
         picture_card: "",
         picture_title: "Gála",
         index: "omisk_gala2",
@@ -1488,7 +1585,8 @@ const pagesConfig = {
         is_active: false,
       },
       {
-        picture: "entry-eight.jpg",
+        picture: "2019-12-01.jpg",
+        alt: "2019. 12. 01.",
         picture_card: "",
         picture_title: "Verseny",
         index: "omisk_competition_34",

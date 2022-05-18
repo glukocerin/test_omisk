@@ -13,7 +13,6 @@ const CourseCards = function () {
     <Card key={index} details={card} />
   ));
 };
-
 export default function Courses() {
   return (
     <div className={style["courses-wrapper"]}>

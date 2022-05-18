@@ -62,9 +62,9 @@ const generateTeacherLinks = function (links) {
   });
 };
 
-const Images = function ({ gallery }) {
+const Images = function ({ gallery, alt }) {
   const images = gallery.map((img, index) => {
-    return require(`../assets/img/programs/${img}.jpg`).default;
+    return `${process.env.PUBLIC_URL}/assets/img/programs/${img}.jpg`;
   });
 
   let top = useCurrentScrollTop(),
@@ -83,7 +83,7 @@ const Images = function ({ gallery }) {
         style={{ top: topToApply, bottom: topToApply }}
         key={index}
         src={img}
-        alt=""
+        alt={alt}
       />
     );
   });
@@ -145,14 +145,13 @@ function useCurrentScrollTop() {
 }
 
 export default function ProgramPage(props, isSummerCamp) {
-  var backgroundImage =
-    require(`../assets/img/programs/header/${props.opt.headerImg}.jpg`).default;
+  var backgroundImage =`${process.env.PUBLIC_URL}/assets/img/programs/header/${props.opt.headerImg}.jpg`;
 
   const [isModalOpen, setModalOpen] = useState(false);
 
   let width = useCurrentWitdh();
 
-  let bg = require(`../assets/img/programs/${props.opt.videoImg}.jpg`).default;
+  let bg = `${process.env.PUBLIC_URL}/assets/img/programs/${props.opt.videoImg}.jpg`;
   return props.opt.isSummerCamp !== true ? (
     <div style={{ position: "relative" }}>
       <Modal
@@ -180,7 +179,7 @@ export default function ProgramPage(props, isSummerCamp) {
             <Kupa />
             <Link
               className={`${style["achievement-button"]} size-12`}
-              to="/programs/achievements"
+              to="/programok/eredmenyeink"
             >
               Versenyeredményeink
             </Link>
@@ -212,7 +211,7 @@ export default function ProgramPage(props, isSummerCamp) {
               <img
                 className={`${style["video-bg"]}`}
                 src={bg}
-                alt="super meaningfull text"
+                alt={props.opt.alt}
               />
             </div>
             <p
@@ -246,7 +245,7 @@ export default function ProgramPage(props, isSummerCamp) {
         </div>
       </div>
       <div className={style["images"]} style={{ height: width / 2 }}>
-        <Images gallery={props.opt.gallery} />
+        <Images gallery={props.opt.gallery} alt={props.opt.alt} />
       </div>
     </div>
   ) : isMobile ? (

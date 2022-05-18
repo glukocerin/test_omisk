@@ -5,6 +5,13 @@ import CoursesHeader from "./CoursesHeader";
 import style from "../assets/css/course.module.css";
 import styleCard from "../assets/css/courseDetailsCard.module.css";
 
+function handleClick(e) {
+  e.preventDefault();
+
+  const enrollmentDates = document.getElementById("scroll-here");
+  enrollmentDates.scrollIntoView({ behavior: "smooth" });
+}
+
 function Paragraph({ opt }) {
   return opt.map((el, index) => (
     <p className="size-20 thin" key={`${el}-${index}`}>
@@ -49,12 +56,13 @@ export default function Course({ pageConfig }) {
   const onTabHeaderClickHandler = (activeTab) => {
     setActiveTab(activeTab);
   };
-
   return (
     <div>
       {pageConfig.opt && <CoursesHeader opt={pageConfig.opt} />}
       {pageConfig.title && (
-        <label className={`size-70 ${style["camp-title"]}`}>{pageConfig.title}</label>
+        <label className={`size-70 ${style["camp-title"]}`}>
+          {pageConfig.title}
+        </label>
       )}
       {pageConfig.info && (
         <div className={style["info-box"]}>
@@ -94,19 +102,25 @@ export default function Course({ pageConfig }) {
                 <Paragraph opt={pageConfig.info.cost.prices} />
               </div>
             </div>
-            <div className={style["info-item"]}>
-              <div className={style["column-first"]}>
-                <p className="size-20 extra-bold">
-                  {pageConfig.info.discount.name}
-                </p>
-              </div>
-              <div className={style["column-second"]}>
-                <Paragraph opt={pageConfig.info.discount.sibling} />
-              </div>
-              <div className={style["column-third"]}>
-                <Paragraph opt={pageConfig.info.discount.prices} />
-              </div>
-            </div>
+            {pageConfig.info.discount ? (
+              <>
+                <div className={style["info-item"]}>
+                  <div className={style["column-first"]}>
+                    <p className="size-20 extra-bold">
+                      {pageConfig.info.discount.name}
+                    </p>
+                  </div>
+                  <div className={style["column-second"]}>
+                    <Paragraph opt={pageConfig.info.discount.sibling} />
+                  </div>
+                  <div className={style["column-third"]}>
+                    <Paragraph opt={pageConfig.info.discount.prices} />
+                  </div>
+                </div>
+              </>
+            ) : (
+              ""
+            )}
             <div className={style["info-item"]}>
               <div className={style["column-first"]}>
                 <p className="size-20 extra-bold">
@@ -139,11 +153,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.forWhom.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.forWhom.img}`}
+                alt={pageConfig.forWhom.alt}
               />
             </div>
           </div>
@@ -160,30 +171,35 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.aboutCourse.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.aboutCourse.img}`}
+                alt={`${pageConfig.aboutCourse.alt}`}
               />
             </div>
           </div>
         )}
         {pageConfig.whenStart && (
-          <div className={`${style["card-wrapper"]} ${style["reverse"]}`}>
+          <div
+            className={`${style["card-wrapper"]} ${style["reverse"]}`}
+            id={"scroll-here"}
+          >
             <div className={`${style["text"]}`}>
               <h4 className="size-36 extra-bold">
                 {pageConfig.whenStart.title}
               </h4>
-              <p className="size-20 thin">{pageConfig.whenStart.description}</p>
+              {!!pageConfig.whenStart.description ? (
+                <p className="size-20 thin">
+                  {pageConfig.whenStart.description}
+                </p>
+              ) : (
+                <ul>
+                  <ForWhomList opt={pageConfig.whenStart.descriptionList} />
+                </ul>
+              )}
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.whenStart.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.whenStart.img}`}
+                alt={`${pageConfig.whenStart.alt}`}
               />
             </div>
           </div>
@@ -198,11 +214,8 @@ export default function Course({ pageConfig }) {
             </div>
             <div className={styleCard["pic"]}>
               <img
-                src={
-                  require(`../assets/img/courses/${pageConfig.structure.img}`)
-                    .default
-                }
-                alt=""
+                src={`${process.env.PUBLIC_URL}/assets/img/courses/${pageConfig.structure.img}`}
+                alt={`${pageConfig.structure.alt}`}
               />
             </div>
           </div>
@@ -217,7 +230,9 @@ export default function Course({ pageConfig }) {
               id={section.id}
             >
               <div className={`${style["text"]}`}>
-                <h4 className={`size-36 extra-bold ${style['camp-subtitle']}`}>{section.title}</h4>
+                <h4 className={`size-36 extra-bold ${style["camp-subtitle"]}`}>
+                  {section.title}
+                </h4>
                 <p className="size-20 thin">{section.description}</p>
               </div>
               <div className={styleCard["pic"]}>
@@ -231,19 +246,39 @@ export default function Course({ pageConfig }) {
       </div>
       {pageConfig.footer && (
         <div className={`${style["page-footer"]}`}>
-          <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
-            Szeretnél csatlakozni?
-          </h4>
+          {pageConfig.id === "noiTorna" ? (
+            ""
+          ) : (
+            <h4 className={`size-36 extra-bold ${style["footer-text"]}`}>
+              Szeretnél csatlakozni?
+            </h4>
+          )}
           <div className={style["footer-buttons-wrapper"]}>
-            <Link
-              className={`${style["footer-button-details"]} size-15`}
-              to="/contact"
-            >
-              Érdeklődöm
-            </Link>
-            <Link className={style["footer-button-sign-up"]} to="/enrollment">
-              Jelentkezem
-            </Link>
+            {pageConfig.id === "noiTorna" ? (
+              ""
+            ) : (
+              <Link
+                className={`${style["footer-button-details"]} size-15`}
+                to="/contact"
+              >
+                Érdeklődöm
+              </Link>
+            )}
+            {pageConfig.id === "noiTorna" ? (
+              <button
+                className={style["footer-button-sign-up"]}
+                onClick={(e) => handleClick(e)}
+              >
+                Jelentkezem
+              </button>
+            ) : (
+              <Link
+                className={style["footer-button-sign-up"]}
+                to="/beiratkozas"
+              >
+                Jelentkezem
+              </Link>
+            )}
           </div>
         </div>
       )}

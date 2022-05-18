@@ -222,11 +222,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .footer-text {
   margin-top: 0;
-  padding-top: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -236,6 +236,23 @@
 }
 
 .footer-buttons-wrapper a {
+  padding: 0 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 7rem;
+  height: 2.125rem;
+  margin-bottom: 1.0625rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+.footer-buttons-wrapper button {
   padding: 0 4.2rem;
   display: flex;
   align-items: center;

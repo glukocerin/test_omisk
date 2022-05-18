@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1362e1;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #19b3fc;
+        stroke-width: 0.3px;
+      }
+    </style>
+  </defs>
+  <g id="Group_2282" data-name="Group 2282" transform="translate(362 17365)">
+    <g id="Group_2281" data-name="Group 2281" transform="translate(-1334 -19352)">
+      <circle id="Ellipse_23966" data-name="Ellipse 23966" class="cls-1" cx="19" cy="19" r="19" transform="translate(972 1987)"/>
+      <g id="youtube-2" transform="translate(979 1997)">
+        <path id="Path_162" data-name="Path 162" class="cls-2" d="M31.339,25.442l-4.1-3.073c-.021-.015-.042-.03-.064-.044A2.067,2.067,0,0,0,24,24.067v6.2a2.067,2.067,0,0,0,3.179,1.742c.022-.014.043-.029.064-.044l4.1-3.073a2.067,2.067,0,0,0,0-3.449Zm-1.211,1.774-4.061,3.047V24.07l4.061,3.046c.024.018.048.035.073.05C30.176,27.182,30.151,27.2,30.128,27.217Z" transform="translate(-15.733 -17.866)"/>
+        <path id="Path_163" data-name="Path 163" class="cls-2" d="M27.635,14H13.167A5.173,5.173,0,0,0,8,19.167v8.267A5.173,5.173,0,0,0,13.167,32.6H27.635A5.173,5.173,0,0,0,32.8,27.434V19.167A5.173,5.173,0,0,0,27.635,14Zm3.1,13.434a3.1,3.1,0,0,1-3.1,3.1H13.167a3.1,3.1,0,0,1-3.1-3.1V19.167a3.1,3.1,0,0,1,3.1-3.1H27.635a3.1,3.1,0,0,1,3.1,3.1Z" transform="translate(-8 -14)"/>
+      </g>
+    </g>
+  </g>
+</svg>

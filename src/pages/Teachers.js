@@ -12,7 +12,8 @@ const TeacherCards = function () {
     <Link to={{ pathname: "/tanar", state: card }} key={index}>
       <div className="card">
         <img
-          src={require(`../assets/img/teachers/${card.picture}`).default}
+        
+          src={`${process.env.PUBLIC_URL}/assets/img/teachers/${card.picture}`}
           alt=""
         />
         <label className="teacher-name size-28 extra-bold">{card.name}</label>

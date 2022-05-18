@@ -696,9 +696,9 @@ h1 {
   /* background-image: url("../img/landing_bg_1.jpg"); */
   background-image: url("../img/muveszitorna-balett-moderntanc.png");
 }
-.right.two {
-  background-image: url("../img/landing_bg_2.jpg");
-}
+/* .right.two {
+
+} */
 .right.two.active {
   animation: scrollup 500ms ease-in-out forwards, fadeIn ease 3s;
 }
@@ -958,7 +958,6 @@ h1 {
     background-position: top;
     top: 0;
     height: 50vh;
-    background-image: url("../img/muveszitorna-balett-moderntanc.png");
   }
   .right.one-mobile {
     order: 1;
