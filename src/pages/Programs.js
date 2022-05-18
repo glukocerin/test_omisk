@@ -28,9 +28,9 @@ function Programs() {
   return (
     <div className={style["programs-wrapper"]}>
       <div className={style["header"]}></div>
-      <label className={`${style["header-text"]} size-90 extra-bold`}>
+      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
         Programjaink
-      </label>
+      </h1>
       <div className={style["cards-wrapper"]}>
         <ProgramCardsFirstRow />
         <ProgramCardsSecondRow />

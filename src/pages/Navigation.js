@@ -15,7 +15,6 @@ export default function Navigation(props) {
   const location = useLocation().pathname;
   const dispatch = useDispatch();
   const [isVisible, setVisible] = useState(false);
-
   return (
     <div>
       {isVisible ? (
@@ -63,6 +62,14 @@ export default function Navigation(props) {
         </Link>
         <div className="links">
           <Link
+            className={`${
+              location.includes("/programok/nyari-tabor") && "active"
+            }`}
+            to="/programok/nyari-tabor"
+          >
+            Nyári Tánctábor 2021
+          </Link>
+          <Link
             className={`${location === "/" && "active"}`}
             onClick={() => dispatch(updatePageindex({ payload: 1 }))}
             to="/"
@@ -72,78 +79,80 @@ export default function Navigation(props) {
           <label
             className={`plus-sign ${location.includes("course") && "active"}`}
           >
-            <Link to="/courses">Kurzusaink</Link>
+            <Link to="/kurzusok">Kurzusaink</Link>
             <div className="dropdown-menu">
-              <div className="row">
-                <Link to="/courses/eurhythmics">
+              <div className="menu-row">
+                <Link to="/kurzusok/muveszi-torna">
                   <span className="size-14 extra-bold">Művészi torna</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/courses/modern">
+                <Link to="/kurzusok/modern-tanc">
                   <span className="size-14 extra-bold">Modern tánc</span>
                   <span className="size-14 thin">8 éves kortól</span>
                 </Link>
-                <Link to="/courses/ballet">
+                <Link to="/kurzusok/klasszikus-balett">
                   <span className="size-14 extra-bold">Klasszikus balett</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
               </div>
-              <div className="row">
-                <Link to="/courses/callisthenics">
+              <div className="menu-row">
+                <Link to="/kurzusok/mozdulatmuveszet">
                   <span className="size-14 extra-bold">Mozdulatművészet</span>
                   <span className="size-14 thin">10 éves kortól</span>
                 </Link>
-                <Link to="/courses/jazz">
+                <Link to="/kurzusok/jazz-tanc">
                   <span className="size-14 extra-bold">Jazz tánc</span>
                   <span className="size-14 thin">6 éves kortól</span>
                 </Link>
-                <Link to="/courses/pre_ballet">
+                <Link to="/kurzusok/pre-balett">
                   <span className="size-14 extra-bold">Pre balett</span>
                   <span className="size-14 thin">4 éves kortól</span>
                 </Link>
-                <Link to="/courses/lady">
+                <Link to="/kurzusok/noi-torna">
                   <span className="size-14 extra-bold">Női torna</span>
-                  <span className="size-14 thin">Hölgyeknek</span>
+                  <span className="size-14 thin">Felnőtteknek</span>
                 </Link>
               </div>
             </div>
           </label>
           <label
             className={`plus-sign programs ${
-              location.includes("program") && "active"
+              location.includes("programok") &&
+              !location.includes("programok/nyari-tabor") &&
+              "active"
             }`}
           >
-            <Link to="/programs">Programjaink</Link>
+            <Link to="/programok">Programjaink</Link>
             <div className="dropdown-menu">
-              <div className="row">
-                <Link to="/programs/public_class">
+              <div className="menu-row">
+                <Link to="/programok/nyilvanos-ora">
                   <span className="size-14 extra-bold">Nyilvános órák</span>
                 </Link>
-                <Link to="/programs/competitions">
+                <Link to="/programok/versenyek">
                   <span className="size-14 extra-bold">Versenyek</span>
                 </Link>
               </div>
-              <div className="row">
-                <Link to="/programs/speech_day">
+              <div className="menu-row">
+                <Link to="/programok/evzaro-eloadas">
                   <span className="size-14 extra-bold">Évzáró előadások</span>
                 </Link>
-                <Link to="/programs/omisk">
+                <Link to="/programok/omisk">
                   <span className="size-14 extra-bold">Omisk Gála</span>
                 </Link>
               </div>
-              <div className="row">
-                <Link to="/programs/callisthenics">
+              <div className="menu-row">
+                <Link to="/programok/mozdulatmuhely">
                   <span className="size-14 extra-bold">Mozdulatműhely</span>
                 </Link>
-                <Link to="/programs/camp">
-                  <span className="size-14 extra-bold">Nyári táborok</span>
-                </Link>
+                {/* <Link to="/programs/camp">
+                  <span className="size-14 extra-bold">Nyári tánctábor</span>
+                </Link> */}
               </div>
             </div>
           </label>
           <Link
-            className={`${location.includes("teacher") && "active"}`}
-            to="/teachers"
+            className={`${location.includes("tanaraink") && "active"}`}
+            to="/tanaraink"
           >
             Tanáraink
           </Link>
@@ -154,20 +163,20 @@ export default function Navigation(props) {
             Blog
           </Link>
           <Link
-            className={`${location === "/operation" && "active"}`}
-            to="/operation"
+            className={`${location === "/mukodesunk" && "active"}`}
+            to="/mukodesunk"
           >
             Működésünk
           </Link>
           <Link
-            className={`${location === "/enrollment" && "active"}`}
-            to="/enrollment"
+            className={`${location === "/beiratkozas" && "active"}`}
+            to="/beiratkozas"
           >
             Beiratkozás
           </Link>
           <Link
-            className={`${location === "/contact" && "active"}`}
-            to="/contact"
+            className={`${location === "/kapcsolat" && "active"}`}
+            to="/kapcsolat"
           >
             Kapcsolat
           </Link>

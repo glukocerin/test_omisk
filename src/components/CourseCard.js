@@ -4,15 +4,15 @@ import style from "../assets/css/courseCard.module.css";
 
 export default function Card(props) {
   return (
-    <Link to={`/courses/${props.details.link}`} className={`${style.wrapper}`}>
+    <Link to={`/kurzusok/${props.details.link}`} className={`${style.wrapper}`}>
       <label className={`${style.title} size-28 extra-bold`}>
         {props.details.title}
       </label>
       <div className={style["image-wrapper"]}>
-        <img
+      <img
           className={`${style[props.details.bg_mobile]}`}
-          src={require(`../assets/img/courses/${props.details.image}.jpg`)}
-          alt=""
+          src={`${process.env.PUBLIC_URL}/assets/img/courses/${props.details.image}.jpg`}
+          alt={props.details.alt}
         />
       </div>
     </Link>

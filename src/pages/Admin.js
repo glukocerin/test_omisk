@@ -6,14 +6,29 @@ import "../assets/css/admin.css";
 import pagesConfig from "../assets/pagesConfig";
 import { BlogWrapper } from "../components/admin/BlogWrapper";
 import { getBlogEntries, createNewEntry } from "../components/admin/helper";
+import { TagSelect } from "../components/admin/TagSelect";
+import { Title } from "../components/admin/Title";
+import { EntryEditor } from "../components/admin/EntryEditor";
 
 export default function Admin() {
   const [user, setUser] = useState(null),
+    // eslint-disable-next-line
     [blogEntries, setBlogEntries] = useState(null),
+    // eslint-disable-next-line
+    [title, setTitle] = useState(""),
+    // [pictureTitle, setpictureTitle] = useState(""),
+    [textFirst, setTextFirst] = useState(""),
+    [textSecond, setTextSecond] = useState(""),
     gCid =
       "237595745573-poendb74l7cukb9hnac72shmd5hl2e9a.apps.googleusercontent.com",
     login = (response) => {
-      response && setUser(response.profileObj);
+      response &&
+        response.profileObj &&
+        response.profileObj.email &&
+        ["bestrapboy@gmail.com", "ati.csordas@gmail.com"].includes(
+          response.profileObj.email
+        ) &&
+        setUser(response.profileObj);
     },
     logout = (response) => {
       setUser(null);
@@ -28,6 +43,10 @@ export default function Admin() {
     };
     fetchData();
   }, []);
+
+  function imageUpload(event) {
+    debugger;
+  }
 
   return (
     <div className="admin">
@@ -53,7 +72,36 @@ export default function Admin() {
         </div>
         <div className="content">
           <div className="stuff">
-            {blogEntries && <BlogWrapper entries={blogEntries} />}
+            {blogEntries && <BlogWrapper entries={blogEntries} setBlogEntries={setBlogEntries} />}
+            <div>
+              <div>
+                <Title setTitle={setTitle} />
+                <label>
+                  <input type={"file"} onChange={(e) => imageUpload(e)} />
+                </label>
+                <TagSelect />
+              </div>
+              <h2>kép feletti szöveg</h2>
+              <button
+                onClick={() => {
+                  console.log(textFirst);
+                }}
+              >
+                katt
+              </button>
+              <EntryEditor setText={setTextFirst} />
+            </div>
+            <div>
+              <h2>kép alatti szöveg</h2>
+              <button
+                onClick={() => {
+                  console.log(textSecond);
+                }}
+              >
+                katt
+              </button>
+              <EntryEditor setText={setTextSecond} />
+            </div>
           </div>
           <div className="side-bar">
             <button

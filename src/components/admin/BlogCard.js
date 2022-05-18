@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { ReactComponent as CreateIcon } from "../../assets/img/icons/create-24px.svg";
 import { ReactComponent as DeleteIcon } from "../../assets/img/icons/delete-24px.svg";
+import { fakeDeleteEntry } from "./helper";
+
 
 import style from "./blogCard.module.css";
 
-console.log(style);
-
-export const BlogCard = ({ entry }) => {
+export const BlogCard = ({ entry, setBlogEntries }) => {
   const [isActive, setActive] = useState(entry.isActive);
 
   function clickHandler(event) {
@@ -39,7 +39,11 @@ export const BlogCard = ({ entry }) => {
           <span className={`${style["slider"]} ${style["round"]}`}></span>
         </label>
         <CreateIcon className={style["icon"]}></CreateIcon>
-        <DeleteIcon className={style["icon"]}></DeleteIcon>
+        <DeleteIcon
+          className={style["icon"]}
+          onClick={() => {
+            fakeDeleteEntry(setBlogEntries,entry.id);
+          }}></DeleteIcon>
       </div>
     </div>
   );

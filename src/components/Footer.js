@@ -101,13 +101,13 @@ export default function Footer() {
         </div>
       </div>
       <div className={style["details-wrapper"]}>
-        <div>
+        {/* <div>
           <div className={style["sepa"]}></div>
           <p className={`size-15 thin`}>
               Design: Pers-Kovács Nóra<br/>
               Fejlesztés: Csordás Attila, Tóth-Angyal János
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

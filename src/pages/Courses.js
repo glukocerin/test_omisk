@@ -13,14 +13,13 @@ const CourseCards = function () {
     <Card key={index} details={card} />
   ));
 };
-
 export default function Courses() {
   return (
     <div className={style["courses-wrapper"]}>
       <div className={style["header"]}></div>
-      <label className={`${style["header-text"]} size-90 extra-bold`}>
+      <h1 className={`${style["header-text"]} size-90 extra-bold`}>
         Kurzusaink
-      </label>
+      </h1>
       <div className={style.courses}>
         <CourseCards className={style["cards"]} />
       </div>

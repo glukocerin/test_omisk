@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+}
+.input {
+  width: 100%;
+}
+.options-wrapper {
+  margin: 0;
+  padding: 0.5rem;
+  position: absolute;
+  background-color: var(--color-gray-0);
+  z-index: 300;
+  width: 100%;
+  box-shadow: #e5e5e5 0px 2px 7px 1px;
+}
+
+.options-wrapper li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options-wrapper li:hover {
+  background-color: var(--color-gray-3);
+}
+
+.option {
+  width: 100%;
+}
+
+.remove {
+  padding: 4px;
+  color: var(--color-yellow-4);
+  border-radius: 13px;
+}
+
+.remove:hover {
+  background-color: var(--color-pink-0);
+  cursor: pointer;
+}

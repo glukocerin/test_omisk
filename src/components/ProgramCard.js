@@ -6,10 +6,10 @@ function ProgramCard(props) {
   return (
     <div className={style["card"]}>
       <div className={style["image-wrapper"]}>
-        <Link to={`/programs/${props.details.link}`}>
+        <Link to={`/programok/${props.details.link}`}>
           <img
-            src={require(`../assets/img/programs/${props.details.img}.jpg`)}
-            alt=""
+            src={`${process.env.PUBLIC_URL}/assets/img/programs/${props.details.img}.jpg`}
+            alt={props.details.alt}
           />
         </Link>
       </div>

@@ -66,12 +66,20 @@
   text-decoration: unset;
 }
 
+.camp-header-title {
+  height: 10.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-title {
   height: 10.9375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--color-gray-0);
+  padding-top: 10px;
 }
 
 .info {
@@ -88,6 +96,19 @@
   line-height: 1.75;
 }
 
+.download-content {
+  display: flex;
+  padding: 0.5rem 10.25rem;
+  margin: 0 auto;
+  width: 58rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-right: 20px;
+}
+
 .details-text {
   padding: 0.5rem 10.25rem;
   margin: 0 auto;
@@ -95,11 +116,24 @@
   background-color: #fff;
 }
 
+.padding-top-title {
+  padding-top: 175px;
+  color: var(--color-gray-8);
+}
+
 .padding-top {
   padding-top: 5.5rem;
 }
 
+.padding-top-first-paragraph {
+  padding-top: 9rem;
+}
+
 .padding-bottom {
+  padding-bottom: 5.5rem;
+}
+
+.padding-bottom-before-images {
   padding-bottom: 5.5rem;
 }
 
@@ -149,7 +183,6 @@
 .images {
   height: 100%;
   position: relative;
-  margin-bottom: 20vh;
 }
 
 .image-0 {
@@ -170,7 +203,300 @@
   right: 6vw;
   transition: bottom 0.3s linear;
 }
+/* CAMP REFACTOR DESKTOP */
+.camp-row {
+  display: flex;
+  max-height: 60rem;
+  width: 100%;
+}
+.camp-row-image {
+  object-fit: cover;
+}
+.camp-row-image,
+.camp-row-details {
+  max-width: 50vw;
+  min-width: 50vw;
+}
+.camp-row-image.cover {
+  max-width: 100vw;
+  min-width: 100vw;
+}
+.camp-row.teachers {
+  max-height: unset;
+  padding: 20vh 0 10vh 0;
+  flex-direction: column;
+  text-align: center;
+}
+.camp-row.cover.bg03,
+.camp-row.cover.bg04,
+.camp-row.cover.bg05,
+.camp-row.cover.bg08,
+.camp-row.cover.bg14 {
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.camp-row.cover.bg03 {
+  height: unset;
+  background-size: unset;
+  background-image: url("../img/programs/camp/camp03cover.jpg");
+  margin-bottom: 12vh;
+}
+.camp-row.cover.bg04 {
+  background-image: url("../img/programs/camp/camp04cover.jpg");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.camp-row.cover.bg04 [class*="size-54"] {
+  padding: 0 1.75rem;
+  font-weight: 800;
+  background: var(--color-gray-0);
+  margin-bottom: 3.5rem;
+}
+.camp-row.cover.bg05 {
+  background-image: url("../img/programs/camp/camp05cover.jpg");
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15vh;
+}
+.camp-row.cover.bg08 {
+  background-image: url("../img/programs/camp/camp08cover.jpg");
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-wrapper.camp {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+.camp-row.cover.bg14 {
+  background-image: url("../img/programs/camp/camp14cover.jpg");
+  margin-top: 15vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.camp-row-details {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 12vw;
+}
+.camp-row-details * {
+  margin-top: 1.25rem;
+  line-height: 28px;
+}
+.camp-row-details [class*="size-54"] {
+  white-space: nowrap;
+  line-height: 66px;
+}
+.camp-row-details .teacher-link {
+  color: var(--color-gray-8);
+}
+.camp-row-details .teacher-link:not(:last-child)::after {
+  content: ",";
+  margin-right: 0.25rem;
+}
 
+.camp-row-details .btn.primary {
+  padding: 15px 50px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0;
+  margin-top: 5vh;
+  color: var(--color-gray-0);
+  background: var(--color-btn-normal-blue);
+  transition: background-color 300ms;
+  cursor: pointer;
+  outline: unset;
+  width: 12rem;
+  user-select: none;
+}
+.camp-row-details .btn.primary:hover {
+  border: unset;
+  background: var(--color-btn-hover-blue);
+}
+.camp-row-details .btn.primary:active {
+  border: unset;
+  background: var(--color-btn-active-blue);
+}
+.camp-row.cover.bg03 .apply-box {
+  width: 42.75rem;
+  margin: 0 auto;
+  padding-top: 33vh;
+  display: flex;
+  flex-direction: column;
+}
+.camp-row.cover.bg03 .apply-box .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 43px;
+  line-height: 44px;
+}
+.camp-row.cover.bg03 .apply-box .block:first-child {
+  background: var(--color-gray-0);
+}
+.camp-row.cover.bg03 .apply-box .block:first-child [class*="size-36"] {
+  color: var(--color-blue-1);
+}
+.camp-row.cover.bg03 .apply-box .block:nth-child(2) {
+  background: var(--color-blue-1);
+  color: var(--color-gray-0);
+}
+.camp-row.cover.bg03 .apply-box .block [class*="size-54"] {
+  margin-bottom: 3rem;
+}
+.camp-row .button-box {
+  display: flex;
+  justify-content: center;
+  width: 58rem;
+}
+.camp-row .btn.secondary {
+  padding: 15px 43px;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0;
+  white-space: nowrap;
+  color: var(--color-btn-normal-blue);
+  background: var(--color-gray-0);
+  transition: background-color 300ms, boder-color 300ms, color 300ms;
+  cursor: pointer;
+  outline: unset;
+  margin-top: 3.75rem;
+  user-select: none;
+}
+.camp-row .button-box .btn.secondary {
+  padding: 6px 24px;
+  font-size: 1.875vw;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+.camp-row .btn.secondary:hover {
+  border: unset;
+  background: var(--color-gray-0);
+  color: var(--color-btn-hover-blue);
+}
+.camp-row .btn.secondary:active {
+  border: unset;
+  background: var(--color-gray-0);
+  color: var(--color-btn-active-blue);
+}
+.camp-row .button-box a + a {
+  margin-left: 0.5rem;
+}
+.teacher-cards {
+  display: grid;
+  grid-gap: 2.875rem;
+  gap: 2.875rem;
+  grid-template-columns: repeat(3, 17.31rem);
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.teacher-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0;
+  cursor: pointer;
+}
+.teacher-cards a {
+  color: unset;
+  text-decoration: unset;
+}
+.teacher-cards .card .teacher-name {
+  margin-top: 1.75rem;
+  color: var(--color-gray-7);
+  text-align: center;
+  opacity: 0.65;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+.teacher-cards .card .arrow {
+  width: 1.458vw;
+  margin-left: 0.5rem;
+}
+.teacher-cards .card .arrow [class*="cls-1"] {
+  fill: transparent;
+  stroke-width: 4px;
+  stroke: var(--color-gray-new-1);
+}
+.teacher-cards .card .arrow [class*="cls-2"] {
+  fill: none;
+  stroke: none;
+}
+.camp-row.cover.bg05 .day-goes-by-box,
+.camp-row.cover.bg08 .daycare-box,
+.camp-row.cover.bg14 .faq-box {
+  width: 42.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-gray-0);
+  padding: 3rem 3.625rem;
+  margin-bottom: 3.5rem;
+  line-height: 28px;
+}
+.camp-row.cover.bg08 .daycare-box {
+  margin-bottom: 0;
+  margin-top: 3.5rem;
+}
+.camp-row.cover.bg14 .faq-box {
+  margin: 0;
+}
+.camp-row.cover.bg05 .day-goes-by-box [class*="size-36"],
+.camp-row.cover.bg08 .daycare-box [class*="size-36"],
+.camp-row.cover.bg14 .faq-box [class*="size-36"] {
+  margin-bottom: 3rem;
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary,
+.camp-row.cover.bg08 .daycare-box .btn.secondary,
+.camp-row.cover.bg14 .faq-box .btn.secondary {
+  padding: 15px 50px;
+  border: 2px solid var(--color-btn-normal-blue);
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:hover,
+.camp-row.cover.bg08 .daycare-box .btn.secondary:hover,
+.camp-row.cover.bg14 .faq-box .btn.secondary:hover {
+  border: 2px solid var(--color-btn-hover-blue);
+  color: var(--color-btn-hover-blue);
+}
+.camp-row.cover.bg05 .day-goes-by-box .btn.secondary:active,
+.camp-row.cover.bg08 .daycare-box .btn.secondary:active,
+.camp-row.cover.bg14 .faq-box .btn.secondary:active {
+  border: 2px solid var(--color-btn-active-blue);
+  color: var(--color-btn-active-blue);
+}
+.camp-row.cover.bg08 .daycare-box .apply-link {
+  color: var(--color-gray-8);
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.camp-row.cover.bg14 .faq-box [class*="size-20"] {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.camp-row.cover.bg14 .faq-box .btn.secondary {
+  margin-top: 2rem;
+}
+.camp-row strong {
+  font-weight: 800;
+}
+.camp-row.cover.bg08 .daycare-box [class*="size-20"] {
+  margin-top: 2rem;
+}
+/* END OF CAMP REFACTOR DESKTOP */
 @media screen and (max-width: 767px) {
   .header-wrapper {
     padding: unset;
@@ -179,6 +505,13 @@
   .header {
     background-image: unset !important;
     height: unset;
+  }
+  .camp-header-title {
+    height: unset;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: unset;
   }
   .header-title {
     height: unset;
@@ -206,6 +539,13 @@
     background-color: #fff;
   }
 
+  .download-content {
+    padding: 1rem 1.75rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+  }
+
   .video-wrapper {
     display: none;
   }
@@ -213,7 +553,6 @@
   .images {
     position: static;
     height: 100% !important;
-    margin-bottom: 20vh;
   }
 
   .image-0 {
@@ -246,4 +585,177 @@
     align-items: center;
     line-height: unset;
   }
+
+  /* CAMP REFACTOR MOBILE */
+  .camp-row {
+    flex-direction: column;
+  }
+  .camp-row-details,
+  .camp-row-image {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+  .camp-row-details {
+    padding: 0.75rem 1.25rem 2rem 1.25rem;
+  }
+  .camp-row-details * {
+    margin-top: 1.25rem;
+    line-height: 1.25rem;
+  }
+  .camp-row-details [class*="size-54"] {
+    line-height: unset;
+  }
+  .camp-row [class*="size-20"] {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .camp-row [class*="size-24"] {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .camp-row [class*="size-32"] {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .camp-row-details .blue {
+    color: var(--color-blue-1);
+  }
+  .camp-row + .details .details-text {
+    padding: 3rem 1.25rem;
+  }
+  .camp-row .apply-box {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .camp-row .apply-box .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    line-height: 24px;
+  }
+  .camp-row .apply-box .block [class*="size-32"] {
+    margin-bottom: 0.75rem;
+  }
+  .camp-row .apply-box .block:first-child {
+    background: var(--color-gray-0);
+  }
+  .camp-row .apply-box .block:nth-child(2) {
+    background: var(--color-blue-1);
+    color: var(--color-gray-0);
+  }
+  .camp-row.programs,
+  .camp-row.teachers .teachers-box {
+    background: var(--color-blue-1);
+  }
+  .camp-row.programs [class*="size-32"] {
+    margin: 2rem auto 1rem auto;
+    background: var(--color-gray-0);
+    padding: 6px 8px;
+  }
+  .camp-row .btn.secondary {
+    margin: 1rem auto 2rem auto;
+  }
+  .camp-row .btn.secondary,
+  .camp-row .button-box .btn.secondary {
+    font-size: 20px;
+    padding: 6px 8px;
+  }
+  .camp-row .button-box .btn.secondary {
+    margin: unset;
+    margin-top: 0.5rem;
+  }
+  .camp-row .button-box .btn.secondary + .btn.secondary {
+    margin-left: 0.5rem;
+  }
+  .camp-row .button-box,
+  .camp-row .day-goes-by-box,
+  .camp-row .daycare-box,
+  .camp-row .faq-box {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  .camp-row.teachers {
+    padding: unset;
+  }
+  .camp-row.teachers [class*="size-32"] {
+    margin: 3.75rem auto 2.75rem auto;
+  }
+  .camp-row.teachers .teachers-box {
+    padding: 1rem 0 2rem 0;
+  }
+  .camp-row .day-goes-by-box,
+  .camp-row .daycare-box,
+  .camp-row .faq-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem 1.25rem;
+  }
+  .camp-row .faq-box [class*="size-36"] {
+    font-size: 36px;
+  }
+  .camp-row .day-goes-by-box [class*="size-20"],
+  .camp-row .daycare-box [class*="size-20"],
+  .camp-row .faq-box [class*="size-20"] {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .camp-row .day-goes-by-box [class*="size-20"] {
+    font-size: 14px;
+  }
+  .camp-row .faq-box [class*="size-20"] {
+    text-align: left;
+    font-size: 14px;
+  }
+  .camp-row .faq-box [class*="size-20"] + [class*="size-20"] {
+    margin-top: 1rem;
+  }
+  .camp-row .day-goes-by-box .btn.secondary,
+  .camp-row .faq-box .btn.secondary {
+    padding: 15px 50px;
+    border: 2px solid var(--color-btn-normal-blue);
+    font-size: 15px;
+    margin-top: 2rem;
+  }
+  .camp-row .day-goes-by-box .btn.secondary:hover,
+  .camp-row .faq-box .btn.secondary:hover {
+    border: 2px solid var(--color-btn-hover-blue);
+    color: var(--color-btn-hover-blue);
+  }
+  .camp-row .day-goes-by-box .btn.secondary:active,
+  .camp-row .faq-box .btn.secondary:active {
+    border: 2px solid var(--color-btn-active-blue);
+    color: var(--color-btn-active-blue);
+  }
+  .camp-row .daycare-box .apply-link {
+    color: var(--color-gray-8);
+  }
+  .camp-row .daycare-box .btn.primary {
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 800;
+    border: 0;
+    color: var(--color-gray-0);
+    background: var(--color-btn-normal-blue);
+    transition: background-color 300ms;
+    cursor: pointer;
+    outline: unset;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 2rem;
+  }
+  .camp-row .daycare-box [class*="size-20"]:last-child {
+    margin-bottom: 2rem;
+  }
+  .camp-row .link {
+    text-align: center;
+  }
+  .camp-row strong {
+    font-weight: 800;
+  }
+  /* END OF CAMP REFACTOR MOBILE */
 }

@@ -1,0 +1,76 @@
+// Custom bootstrap grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1290px,
+  xxl: 1566px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1260px,
+  xxl: 1536px,
+);
+
+@import "/node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "/node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Gilroy;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+.App {
+  height: 100%;
+  overflow-x: hidden;
+}
+.App {
+  position: relative;
+}
+.App.loading {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.bottom-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 410;
+}
+.image-siled-wrapper {
+  width: 920px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

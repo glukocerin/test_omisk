@@ -57,7 +57,7 @@ export default function Operations() {
   return (
     <div className="operation">
       <div className="operation-header"></div>
-      <label className="title size-90 extra-bold">Működésünk</label>
+      <h1 className="title size-90 extra-bold">Működésünk</h1>
       <div className="operation-content">
         <div className="drop-down-list">
           <OperationElements

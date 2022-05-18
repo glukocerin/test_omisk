@@ -55,6 +55,9 @@
 .header.background-green-1 {
   background: var(--color-green-1);
 }
+.header.background-green-2 {
+  background: var(--color-green-3);
+}
 .header.background-blue-1 {
   background: var(--color-blue-1);
 }
@@ -84,6 +87,9 @@
 .header.background-blue-1.fixed {
   background: transparent;
 }
+.header.background-blue-2.fixed {
+  background: var(--color-blue-1);
+}
 /*END OF FIXED RULES*/
 .header.fixed {
   top: 0;
@@ -96,7 +102,8 @@
   transition: height 0.3s linear;
 }
 .header .logo .cls-1 {
-  fill: var(--color-gray-7);
+  /* fill: var(--color-gray-7); */
+  fill: var(--color-gray-0);
   transition: fill 0.3s linear;
   stroke: unset;
 }
@@ -171,23 +178,26 @@
 .header .links label.programs:hover .dropdown-menu {
   transform: scaleY(1) translateX(-30%);
 }
-.header .links .dropdown-menu .row {
+.header .links .dropdown-menu .menu-row {
   display: flex;
 }
-.header .links .dropdown-menu .row + .row {
+.header .menu-item {
+  margin-left: 0;
+}
+.header .links .dropdown-menu .menu-row + .menu-row {
   margin-top: 1rem;
 }
-.header .links .dropdown-menu .row a {
+.header .links .dropdown-menu .menu-row a {
   display: flex;
   flex-direction: column;
   height: unset;
   width: 7.5rem;
   cursor: pointer;
 }
-.header .links .dropdown-menu .row a + a {
+.header .links .dropdown-menu .menu-row a + a {
   margin-left: 1.875rem;
 }
-.header .links .dropdown-menu .row a span {
+.header .links .dropdown-menu .menu-row a span {
   color: var(--color-gray-7);
 }
 .header .links a + a {

@@ -4,17 +4,43 @@ import { withRouter } from "react-router-dom";
 class ScrollIntoView extends PureComponent {
   componentDidMount = () => window.scrollTo(0, 0);
 
-  componentDidUpdate = prevProps => {
-    document.querySelector('.App').classList.remove('loading');
+  componentDidUpdate = (prevProps) => {
+    document.querySelector(".App").classList.remove("loading");
     if (this.props.location !== prevProps.location) {
-      if (this.props.location.hash !== '#gyik' && this.props.location.hash !== '#map') {
-        document.querySelector('.App').scrollTop = 0;
-      } else if (this.props.location.hash === '#gyik') {
-        document.querySelector('.App').scrollTop = document.querySelector('#gyik').offsetTop;
-      } else if (this.props.location.hash === '#map') {
-        document.querySelector('.App').scrollTop = document.querySelector('#map').offsetTop;
+      if (
+        ![
+          "#gyik",
+          "#map",
+          "#muveszi-torna",
+          "#mozdulatmuveszet",
+          "#keziszeresgimnasztika",
+          "#moderntanc",
+          "#koreografia",
+          "#kezmuves",
+          "#szabadtanc",
+        ].includes(this.props.location.hash)
+      ) {
+        document.querySelector(".App").scrollTop = 0;
+      } else if (
+        [
+          "#gyik",
+          "#map",
+          "#muveszi-torna",
+          "#mozdulatmuveszet",
+          "#keziszeresgimnasztika",
+          "#moderntanc",
+          "#koreografia",
+          "#kezmuves",
+          "#szabadtanc",
+        ].includes(this.props.location.hash)
+      ) {
+        debugger;
+        document.querySelector(".App").scrollTop = document.querySelector(
+          this.props.location.hash
+        ).offsetTop;
       }
-      document.querySelector('.App').classList.add('loading');
+
+      document.querySelector(".App").classList.add("loading");
     }
   };
 

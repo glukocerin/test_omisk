@@ -13,17 +13,20 @@ import BlogEntry from "./pages/BlogEntry";
 
 import Operation from "./pages/Operation";
 
-import Enrollment from "./pages/Enrollment";
+// import Enrollment from "./pages/Enrollment";
 
 import Contact from "./pages/Contact";
 
+import Beiratkozas from "./pages/Beiratkozas";
+
 // courses
-import Eurhythmics from "./pages/courses/Eurhythmics";
+import Course from "./components/Course";
 
 //programs
 import pagesConfig from "./assets/pagesConfig";
 import ProgramPage from "./pages/ProgramPage";
 import Achievement from "./pages/Achievement";
+import CampDay from "./pages/CampDay";
 
 import Landing from "./pages/Landing";
 
@@ -33,157 +36,191 @@ import Navigation from "./pages/Navigation";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import Cookies from "./components/Cookies";
-import CovidNotification from "./components/CovidNotification";
 
-// NOT READY
-// import Admin from "./pages/Admin";
+import Admin from "./pages/Admin";
 
 const { programs } = pagesConfig;
 const { courses } = pagesConfig;
+const { blog } = pagesConfig;
 
 function App() {
   const [activeDot, handleDotChange] = useState(1);
 
+  const blogEntries = blog.cards.map((entry, index) => {
+    return (
+      <Route key={index} path={`/blog/${entry.index}`}>
+        <Navigation BackgroundColor="yellow" />
+        <BlogEntry config={entry} />
+        <Footer />
+        <FooterMobile />
+      </Route>
+    );
+  });
+
   return (
     <div className="App">
       <div className="bottom-wrapper">
-        <CovidNotification />
         <Cookies />
       </div>
       <Switch>
-        <Route exact path="/courses">
+        <Route exact path="/kurzusok">
           <Navigation BackgroundColor="green-1" />
           <Courses />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/teachers">
+        <Route path="/tanaraink">
           <Navigation BackgroundColor="pink" isHeaderFixed="true" />
           <Teachers />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/teacher">
+        <Route path="/tanar">
           <Navigation BackgroundColor="pink" />
           <Teacher />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/blog">
+        <Route exact path="/blog">
           <Navigation BackgroundColor="yellow" />
           <Blog />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/blog_entry">
-          <Navigation BackgroundColor="yellow" />
-          <BlogEntry />
-          <Footer />
-          <FooterMobile />
-        </Route>
-        <Route path="/operation">
+        {blogEntries}
+        <Route path="/mukodesunk">
           <Navigation BackgroundColor="green" isHeaderFixed="true" />
           <Operation />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/enrollment">
+        {/* <Route path="/beiratkozas">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <Enrollment />
           <Footer />
           <FooterMobile />
-        </Route>
-        <Route path="/contact">
+        </Route> */}
+        <Route path="/kapcsolat">
           <Navigation BackgroundColor="blue-1" />
           <Contact />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/eurhythmics">
+        <Route path="/kurzusok/muveszi-torna">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.eurhythmics} />
+          <Course pageConfig={courses.pages.eurhythmics} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/callisthenics">
+        <Route path="/kurzusok/mozdulatmuveszet">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.callisthenics} />
+          <Course pageConfig={courses.pages.callisthenics} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/pre_ballet">
+        <Route path="/kurzusok/pre-balett">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.preBallet} />
+          <Course pageConfig={courses.pages.preBallet} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/ballet">
+        <Route path="/kurzusok/klasszikus-balett">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.ballet} />
+          <Course pageConfig={courses.pages.ballet} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/jazz">
+        <Route path="/kurzusok/jazz-tanc">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.jazz} />
+          <Course pageConfig={courses.pages.jazz} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/modern">
+        <Route path="/kurzusok/modern-tanc">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.modern} />
+          <Course pageConfig={courses.pages.modern} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route path="/courses/lady">
+        <Route path="/kurzusok/noi-torna">
           <Navigation BackgroundColor="green-1" isHeaderFixed="true" />
-          <Eurhythmics pageConfig={courses.pages.lady} />
+          <Course pageConfig={courses.pages.lady} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs">
+        <Route exact path="/programok">
           <Navigation BackgroundColor="blue-1" />
           <Programs />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/speech_day">
+        <Route exact path="/programok/evzaro-eloadas">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.speechDay} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/competitions">
+        <Route exact path="/programok/versenyek">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.competitions} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/omisk">
+        <Route exact path="/programok/omisk">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.omisk} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/public_class">
+        <Route exact path="/programok/nyilvanos-ora">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.publicClass} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/callisthenics">
+        <Route exact path="/programok/mozdulatmuhely">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.callisthenics} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/camp">
+        <Route exact path="/programok/tabor">
           <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
           <ProgramPage opt={programs.programPage.camp} />
           <Footer />
           <FooterMobile />
         </Route>
-        <Route exact path="/programs/achievements">
+        <Route exact path="/programok/nyari-tabor">
+          <Navigation BackgroundColor="blue-1" isHeaderFixed="true" />
+          <ProgramPage opt={programs.programPage.summer_camp} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programok/nyari-tabor/programok">
+          <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
+          <Course pageConfig={programs.summerCamp.programs} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programok/nyari-tabor/gyik">
+          <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
+          <Course pageConfig={programs.summerCamp.faq} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programok/nyari-tabor/egy-nap">
+          <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
+          <CampDay opt={programs.summerCamp.day} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programok/nyari-tabor/jelentkezes">
+          <Navigation BackgroundColor="blue-2" isHeaderFixed="true" />
+          <CampDay opt={programs.summerCamp.application} />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route exact path="/programok/eredmenyeink">
           <Navigation BackgroundColor="blue-1" />
           <Achievement />
           <Footer />
@@ -192,10 +229,15 @@ function App() {
         <Route path="/programDetail">
           <ProgramDetail />
         </Route>
-        {/* NOT READY */}
-        {/*         <Route path="/admin">
+        <Route path="/beiratkozas">
+          <Navigation BackgroundColor="green-2" />
+          <Beiratkozas />
+          <Footer />
+          <FooterMobile />
+        </Route>
+        <Route path="/admin">
           <Admin />
-        </Route> */}
+        </Route>
         <Route path="/">
           <Navigation
             BackgroundColor="gray-erohw"

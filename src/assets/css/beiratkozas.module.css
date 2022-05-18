@@ -1,0 +1,505 @@
+.gallery-wrapper {
+  margin-top: 92px;
+  margin-bottom: 80px;
+}
+
+.image-slide {
+  width: 100%;
+}
+
+.image-slide-wrapper {
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #92d9d1;
+  height: 156px;
+}
+
+.title-wrapper {
+  vertical-align: center;
+  padding: 7px 72px;
+  border-radius: 100px;
+  background-color: white;
+  margin: 36px 0;
+}
+
+.title-wrapper h1 {
+  color: #698490;
+}
+
+@media screen and (max-width: 800px) {
+  .dates-and-places {
+    margin: 0 auto;
+    width: 558px;
+  }
+}
+
+.dates-and-places h3 {
+  color: #3e6171;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper .content-image {
+  width: 96%;
+  box-shadow: -24px 146px 0px 0px #d9f5f2;
+}
+
+@media screen and (max-width: 1440px) {
+  .image-wrapper .content-image {
+    box-shadow: -24px 108px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image-wrapper .content-image {
+    box-shadow: -24px 94px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image-wrapper .content-image {
+    box-shadow: -24px 86px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-wrapper .content-image {
+    box-shadow: -24px 62px 0px 0px #d9f5f2;
+  }
+}
+
+.image-wrapper-inverse {
+  position: relative;
+  text-align: end;
+}
+
+.image-wrapper-inverse .content-image-inverse {
+  width: 96%;
+  box-shadow: 24px 146px 0px 0px #d9f5f2;
+}
+
+@media screen and (max-width: 1440px) {
+  .image-wrapper-inverse .content-image-inverse {
+    box-shadow: 24px 108px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image-wrapper-inverse .content-image-inverse {
+    box-shadow: 24px 94px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image-wrapper-inverse .content-image-inverse {
+    box-shadow: 24px 86px 0px 0px #d9f5f2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-wrapper-inverse .content-image-inverse {
+    box-shadow: 24px 62px 0px 0px #d9f5f2;
+  }
+}
+
+.details-wrapper {
+  margin-top: 146px;
+}
+
+@media screen and (max-width: 800px) {
+  .details-wrapper {
+    width: 556px;
+    margin: 147px auto;
+    margin-bottom: 100px;
+  }
+
+  .details-wrapper h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.details-wrapper h2 {
+  color: #3e6171;
+}
+
+.details-wrapper p {
+  color: #94a7b0;
+}
+
+.content-wrapper {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 1440px) {
+  .content-wrapper {
+    margin-top: 80px;
+  }
+}
+
+.content-wrapper-margin-top {
+  margin-top: 240px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-wrapper-margin-top {
+    margin-top: 0;
+  }
+}
+
+.details-tile {
+  display: flex;
+  align-items: center;
+}
+
+.enrollment-button {
+  color: white;
+  background-color: #3e6171;
+  border-radius: 60px;
+  height: 54px;
+  padding: 15.5px 24px 15.5px 28px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.green-button {
+  color: white;
+  background-color: #3fc1b3;
+  border-radius: 60px;
+  height: 48px;
+  padding: 13px 24px;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.enrollment-details-wrapper {
+  margin-top: 241px;
+  background-color: #3e6171;
+}
+
+@media screen and (max-width: 800px) {
+  .enrollment-details-wrapper {
+    margin-top: 0;
+  }
+}
+
+.enrollment-title {
+  margin-bottom: 24px;
+}
+
+.enrollment-details {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .enrollment-details {
+    width: 556px;
+    margin: 0 auto;
+  }
+}
+
+.enrollment-button-gray {
+  background-color: white;
+  color: #3e6171;
+}
+
+.arrow {
+  margin-left: 14px;
+}
+
+.enrollment-dates-details-wrapper__bold {
+  font-weight: 700 !important;
+}
+
+.enrollment-dates-details-warning {
+  color: red !important;
+}
+
+.enrollment-dates-wrapper {
+  background-color: #d9f5f2;
+}
+
+.enrollment-dates-wrapper {
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.enrollment-dates-wrapper h3 {
+  margin-bottom: 24px;
+}
+
+.enrollment-dates-wrapper p {
+  font-size: 12px;
+  color: #698490;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.enrollment-dates-wrapper li {
+  color: #698490;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.enrollment-dates-details h3 {
+  color: #3e6171;
+}
+
+@media screen and (max-width: 800px) {
+  .enrollment-dates-details {
+    width: 556px;
+    margin: 0 auto;
+  }
+}
+
+.enrollment-dates-details-wrapper {
+  padding-left: 20px;
+  border-left: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .content-image {
+    width: 442px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-image-inverse {
+    text-align: left;
+    width: 442px;
+  }
+}
+
+.contact-wrapper {
+  margin-top: 96px;
+  margin-bottom: 101px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 364px;
+    margin: 0 auto;
+  }
+}
+
+.contact-details-wrapper {
+  color: #698490;
+  background-color: #f6f6f6;
+  padding-top: 41px;
+  padding-bottom: 30px;
+}
+
+.contact-image {
+  max-width: 100%;
+  border-radius: 100%;
+  position: relative;
+  right: 46px;
+}
+
+.contact-person-wrapper {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact-person-wrapper {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-person-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-person-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-image {
+    max-width: 180px;
+    border-radius: 100%;
+    position: unset;
+    text-align: center;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
+  .contact-image {
+    max-width: 100%;
+    border-radius: 100%;
+    position: unset;
+    text-align: center;
+  }
+} */
+
+.contact-name {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact-name {
+    font-size: 16px;
+  }
+}
+
+.contact-position {
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-position {
+    font-size: 16px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contact-position {
+    font-size: 14px;
+  }
+}
+
+.contact-us {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact-us {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-us {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 364px;
+    margin: 0 auto;
+  }
+  .contact-us h2 {
+    margin-top: 20px;
+  }
+}
+
+.contact-us h2 {
+  margin-bottom: 24px;
+}
+
+.contact-wrapper p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 39px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1440px) {
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 1440px) {
+  h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}
+
+p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

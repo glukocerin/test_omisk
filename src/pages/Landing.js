@@ -19,11 +19,11 @@ import { ReactComponent as Youtube } from "../assets/img/icons/youtube.svg";
 import { ReactComponent as FacebookTransparent } from "../assets/img/icons/facebook_transparent.svg";
 import { ReactComponent as InstagramTransparent } from "../assets/img/icons/instagram_transparent.svg";
 import { ReactComponent as YoutubeTransparent } from "../assets/img/icons/youtube_transparent.svg";
-import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
+// import { ReactComponent as DoubleArrowDown } from "../assets/img/icons/double_arrow_down.svg";
 import { ReactComponent as ArrowRight } from "../assets/img/icons/arrow_right.svg";
 import { ReactComponent as PlusSign } from "../assets/img/icons/plus.svg";
 import { ReactComponent as MinusSign } from "../assets/img/icons/minus.svg";
-import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
+// import { ReactComponent as Stamp } from "../assets/img/icons/stamp.svg";
 
 import pagesConfig from "../assets/pagesConfig";
 
@@ -78,7 +78,7 @@ const CoursesList = function (props) {
   return landing["list_courses"].list.map((item, index) => (
     <DelayLink
       onMouseEnter={() => props.setActiveFiveSwitch(keyHelper[index])}
-      to={`/courses/${item.link}`}
+      to={`/kurzusok/${item.link}`}
       className={`list-item ${
         props.activeFiveSwitch === keyHelper[index] && "active"
       }`}
@@ -101,7 +101,7 @@ const WhatWeDo = function (props) {
     <DelayLink
       onClick={() => dispatch(updatePageindex({ payload: props.activeDot }))}
       onMouseEnter={() => props.setActiveSevenSwitch(keyHelper[index])}
-      to={`/programs/${item.link}`}
+      to={`/programok/${item.link}`}
       className={`list-item ${
         props.activeSevenSwitch === keyHelper[index] && "active"
       }`}
@@ -187,38 +187,36 @@ export default function Landing({ dotChange }) {
         }
       }
     },
-    [autoScrollStoped, stopAutoScroll] = useState(false);
+    [autoScrollStoped, stopAutoScroll] = useState(true);
 
-    useEffect(() => {
-      if (!autoScrollStoped && !isMobile) {
-        const interval = setInterval(() => {
-          activeDot <= 7 && setActiveDot(activeDot + 1);
-          activeDot === 7 && setActiveDot(1);
-        }, 4000);
-        return () => clearInterval(interval);
-      }
-    }, [activeDot, autoScrollStoped]);
+  useEffect(() => {
+    if (!autoScrollStoped && !isMobile) {
+      const interval = setInterval(() => {
+        activeDot <= 7 && setActiveDot(activeDot + 1);
+        activeDot === 7 && setActiveDot(1);
+      }, 4000);
+      return () => clearInterval(interval);
+    }
+  }, [activeDot, autoScrollStoped]);
 
   return (
     <div className="landing" onWheel={(e) => scroller(e)}>
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
-          <label className="title extra-bold size-83">{`Mozgásba\nhozzuk\na zenét.`}</label>
-          <label className="sub-title extra-bold size-32">
-            Óbuda Mozgásművészeti Iskola
-          </label>
-          <div className="stamp-box">
-            <Stamp className="stamp" />
-            <div className="mask"></div>
+          <div className="titles">
+            <h1 className="title extra-bold size-54 new">
+              OMISK Tánc és Mozgásművészeti Iskola
+            </h1>
           </div>
-          <DoubleArrowDown
-            className="double-arrow-down"
-            onClick={() => setActiveDot(2)}
-          />
-          <label className="size-12 thin">Görgess lefelé</label>
         </div>
       </div>
-      <div className={`right one ${activeDot === 1 ? "active" : ""}`}></div>
+      {isMobile ? (
+        <div
+          className={`right one-mobile  ${activeDot === 1 ? "active" : ""}`}
+        ></div>
+      ) : (
+        <div className={`right one  ${activeDot === 1 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/muveszitorna-balett-moderntanc.png)`}}></div>
+      )}
       <div
         className={`mobile-card one ${activeCard === 1 && "toggled"}`}
         onClick={(event) => {
@@ -247,7 +245,7 @@ export default function Landing({ dotChange }) {
           <label className="text size-24 thin">Berczik Sára</label>
         </div>
       </div>
-      <div className={`right two ${activeDot === 2 ? "active" : ""}`}></div>
+      <div className={`right two ${activeDot === 2 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-4-eves-kortol.jpg)`}}></div>
       <div
         className={`mobile-card inverse two ${activeCard === 2 && "toggled"}`}
         onClick={(event) => {
@@ -295,7 +293,7 @@ export default function Landing({ dotChange }) {
           </div>
         </div>
       </div>
-      <div className={`right three ${activeDot === 3 ? "active" : ""}`}></div>
+      <div className={`right three ${activeDot === 3 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-kozossegteremtes.jpg)`}}></div>
       {/* why 3? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
       <div
         className={`mobile-card seven ${activeCard === 3 && "toggled"}`}
@@ -352,7 +350,7 @@ export default function Landing({ dotChange }) {
           </label>
         </div>
       </div>
-      <div className={`right eight ${activeDot === 4 ? "active" : ""}`}></div>
+      <div className={`right eight ${activeDot === 4 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/berczik-technika-kraetivitas-zeneiseg.jpg)`}}></div>
       <div
         className={`mobile-card four ${activeCard === 4 && "toggled"}`}
         onClick={(event) => {
@@ -513,8 +511,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Taylor
-                  Esther
+                  Benis Katalin I Markolt-Rózsa Réka I Erdész- Taylor Esther
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -523,7 +520,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Benis Katalin I Kovács Bea I Pers Júlia I Rácz-Lakatos Lilla
+                  Benis Katalin I Pers Júlia I Bozsokiné-Taylor Jennifer
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
@@ -557,7 +554,7 @@ export default function Landing({ dotChange }) {
                   péntek{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Taylor Esther
+                  Erdész-Taylor Esther
                 </label>
               </div>
             </div>
@@ -587,7 +584,8 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Kovács Bea I Rácz-Lakatos Lilla{" "}
+                  Kovács Bea I Markolt-Rózsa Réka I Rácz-Lakatos Lilla I Solti
+                  Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -596,7 +594,8 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Kovács Bea I Rácz-Lakatos Lilla{" "}
+                  Kovács Bea I Markolt-Rózsa Réka I Rácz-Lakatos Lilla I Solti
+                  Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
@@ -637,27 +636,6 @@ export default function Landing({ dotChange }) {
                 <label className="place-address size-15 extra-bold">
                   XII. Csörsz u. 18
                 </label>
-                <label className="place-address size-15 extra-bold">
-                  XII. Böszörményi út 24
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Művészi torna
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I kedd I csütörtök{" "}
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Benis Katalin I Solti Eszter
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Mozdulatművészet
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I csütörtök
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Benis Katalin
-                </label>
                 <label className="place-program-row size-17 thin title">
                   Modern tánc
                 </label>
@@ -691,20 +669,20 @@ export default function Landing({ dotChange }) {
               <PlusSign className="plus-sign" />
               <MinusSign className="minus-sign" />
               <label className="place-label size-24 extra-bold">
-                Virányosi Közösségi Ház
+                MOM tagintézmény Barabás Villa
               </label>
               <div className="place-informations">
                 <label className="place-address size-15 extra-bold">
-                  XII. Szarvas Gábor út 8/c
+                  XII. Városmajor utca 44
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
-                  kedd I csütörtök
+                  hétfő I csütörtök
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Rózsa Réka
+                  Benis Katalin
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -713,7 +691,7 @@ export default function Landing({ dotChange }) {
                   kedd I csütörtök{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Rózsa Réka
+                  Benis Katalin
                 </label>
               </div>
             </div>
@@ -730,7 +708,7 @@ export default function Landing({ dotChange }) {
               <PlusSign className="plus-sign" />
               <MinusSign className="minus-sign" />
               <label className="place-label size-24 extra-bold">
-                Szarvas Gábor Közösségi Tér
+                20-22 Fitness
               </label>
               <div className="place-informations">
                 <label className="place-address size-15 extra-bold">
@@ -740,10 +718,10 @@ export default function Landing({ dotChange }) {
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
-                  hétfő I kedd I szerda I csütörtök{" "}
+                  hétfő I kedd I szerda I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Mády Krisztina{" "}
+                  Mády Krisztina I Markolt-Rózsa Réka
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet
@@ -752,46 +730,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I csütörtök{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Mády Krisztina{" "}
-                </label>
-              </div>
-            </div>
-            <div
-              className={`place ${activePlace.placeId === 7 && "active"}`}
-              onClick={() =>
-                setActivePlace(
-                  activePlace.placeId === 7
-                    ? { placeId: null, position: null }
-                    : { placeId: 7, position: [47.48746, 19.07061], zoom: 15 }
-                )
-              }
-            >
-              <PlusSign className="plus-sign" />
-              <MinusSign className="minus-sign" />
-              <label className="place-label size-24 extra-bold">
-                Józsefvárosi Galéria és Rendezvényközpont
-              </label>
-              <div className="place-informations">
-                <label className="place-address size-15 extra-bold">
-                  VIII. József krt. 70
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Művészi torna
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I szerda
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Solti Eszter
-                </label>
-                <label className="place-program-row size-17 thin title">
-                  Mozdulatművészet
-                </label>
-                <label className="place-program-row size-17 thin">
-                  hétfő I szerda
-                </label>
-                <label className="place-program-row size-17 thin">
-                  Solti Eszter
+                  Mády Krisztina I Markolt-Rózsa Réka
                 </label>
               </div>
             </div>
@@ -818,22 +757,31 @@ export default function Landing({ dotChange }) {
                   Művészi torna
                 </label>
                 <label className="place-program-row size-17 thin">
+                  hétfő I péntek
+                </label>
+                <label className="place-program-row size-17 thin">
+                  Bozsókiné-Taylor Jennifer
+                </label>
+                <label className="place-program-row size-17 thin title">
+                  Mozdulatművészet
+                </label>
+                <label className="place-program-row size-17 thin">
                   hétfő I szerda
                 </label>
                 <label className="place-program-row size-17 thin">
-                  P.Ács Vali
+                  Solti Eszter
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Klasszikus balett
                 </label>
                 <label className="place-program-row size-17 thin">
-                  hétfő I szerda
+                  hétfő I szerda{" "}
                 </label>
                 <label className="place-program-row size-17 thin">
-                  P.Ács Vali
+                  Csöngei Barbara
                 </label>
                 <label className="place-program-row size-17 thin title">
-                  Klasszikus balett
+                  Modern tánc
                 </label>
                 <label className="place-program-row size-17 thin">
                   hétfő I szerda{" "}

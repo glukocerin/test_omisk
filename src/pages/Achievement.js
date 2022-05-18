@@ -16,7 +16,7 @@ export default function Achievement(props) {
         </label>
       </div>
       <div className={style["body"]}>
-      <div className={style["wrapper"]}>
+        <div className={style["wrapper"]}>
           <div>
             <h2 className={`${style["year"]} size-120 extra-bold`}>2020.</h2>
           </div>
@@ -25,31 +25,30 @@ export default function Achievement(props) {
               XVIII. Országos Táncjáték Fesztivál – Budapest
             </h4>
             <p className={`${style["last"]} size-15 thin`}>
-              <span className={`${style["name"]} size-15 .thin`}>
-                Vihar -
-              </span>{" "}
-                koreográfia Mády Krisztina – Rövidprogram kategória – 1. díj
+              <span className={`${style["name"]} size-15 .thin`}>Vihar -</span>{" "}
+              koreográfia Mády Krisztina – Rövidprogram kategória – 1. díj
             </p>
             <h4 className={`${style["title"]} size-24 extra-bold`}>
-              XXIX. Országos Felnőtt és Ifjúsági Táncművészeti Fesztivál – Budapest
+              XXIX. Országos Felnőtt és Ifjúsági Táncművészeti Fesztivál –
+              Budapest
             </h4>
             <p className={`size-15 thin`}>
               <span className={`${style["name"]} size-15 .thin`}>
                 Egyedül nem megy -
               </span>{" "}
-                koreográfia Benis Katalin – Mozdulatművészet kategória - felnőtt korosztály – 3. díj
+              koreográfia Benis Katalin – Mozdulatművészet kategória - felnőtt
+              korosztály – 3. díj
             </p>
             <p className={`${style["last"]} size-15 thin`}>
-              <span className={`${style["name"]} size-15 .thin`}>
-                Bájoló -
-              </span>{" "}
-                koreográfia Rácz-Lakatos Lilla – mozdulatművészet kategória - ifjúsági korosztály – 3. díj
+              <span className={`${style["name"]} size-15 .thin`}>Bájoló -</span>{" "}
+              koreográfia Rácz-Lakatos Lilla – mozdulatművészet kategória -
+              ifjúsági korosztály – 3. díj
             </p>
           </div>
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2020.jpg`)}
+              src={require(`../assets/img/achievements/2020.jpg`).default}
             />
           </div>
         </div>
@@ -179,7 +178,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2019.jpg`)}
+              src={require(`../assets/img/achievements/2019.jpg`).default}
             />
           </div>
         </div>
@@ -349,7 +348,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2018.jpg`)}
+              src={require(`../assets/img/achievements/2018.jpg`).default}
             />
           </div>
         </div>
@@ -524,7 +523,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2017.jpg`)}
+              src={require(`../assets/img/achievements/2017.jpg`).default}
             />
           </div>
         </div>
@@ -709,7 +708,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2016.jpg`)}
+              src={require(`../assets/img/achievements/2016.jpg`).default}
             />
           </div>
         </div>
@@ -799,7 +798,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2015.jpg`)}
+              src={require(`../assets/img/achievements/2015.jpg`).default}
             />
           </div>
         </div>
@@ -905,7 +904,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2014.jpg`)}
+              src={require(`../assets/img/achievements/2014.jpg`).default}
             />
           </div>
         </div>
@@ -1134,7 +1133,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2013.jpg`)}
+              src={require(`../assets/img/achievements/2013.jpg`).default}
             />
           </div>
         </div>
@@ -1263,7 +1262,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2012.jpg`)}
+              src={require(`../assets/img/achievements/2012.jpg`).default}
             />
           </div>
         </div>
@@ -1346,7 +1345,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2011.jpg`)}
+              src={require(`../assets/img/achievements/2011.jpg`).default}
             />
           </div>
         </div>
@@ -1413,7 +1412,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2010.jpg`)}
+              src={require(`../assets/img/achievements/2010.jpg`).default}
             />
           </div>
         </div>
@@ -1488,7 +1487,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2009.jpg`)}
+              src={require(`../assets/img/achievements/2009.jpg`).default}
             />
           </div>
         </div>
@@ -1592,7 +1591,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2007.jpg`)}
+              src={require(`../assets/img/achievements/2007.jpg`).default}
             />
           </div>
         </div>
@@ -1614,7 +1613,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2006.jpg`)}
+              src={require(`../assets/img/achievements/2006.jpg`).default}
             />
           </div>
         </div>
@@ -1643,7 +1642,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2005.jpg`)}
+              src={require(`../assets/img/achievements/2005.jpg`).default}
             />
           </div>
         </div>
@@ -1674,7 +1673,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2004.jpg`)}
+              src={require(`../assets/img/achievements/2004.jpg`).default}
             />
           </div>
         </div>
@@ -1694,7 +1693,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2003.jpg`)}
+              src={require(`../assets/img/achievements/2003.jpg`).default}
             />
           </div>
         </div>
@@ -1720,7 +1719,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2002.jpg`)}
+              src={require(`../assets/img/achievements/2002.jpg`).default}
             />
           </div>
         </div>
@@ -1742,7 +1741,7 @@ export default function Achievement(props) {
           <div className={style["img-wrapper"]}>
             <img
               alt="kep"
-              src={require(`../assets/img/achievements/2001.jpg`)}
+              src={require(`../assets/img/achievements/2001.jpg`).default}
             />
           </div>
         </div>

@@ -2,6 +2,11 @@
 
 error_reporting(-1);
 ini_set('display_errors', 'On');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: access");
+header("Access-Control-Allow-Methods: GET");
+header("Access-Control-Allow-Credentials: true");
+header('Content-Type: application/json');
 
 $postParams = json_decode(file_get_contents('php://input'), 1);
 
@@ -18,8 +23,8 @@ if ($action == 'get_entry') {
 	createNewBlogEntry($connection);
 } else if ($action == 'delete_entry') {
 	deleteBlogEntry($connection, $payload['id']);
-} else if ($action == 'update_entry') {
-	updateBlogEntry($connection, $payload);
+/*} else if ($action == 'update_entry') {
+	updateBlogEntry($connection, $payload); */
 } else {
 	echo 'Bad command or file name ^^';
 }
@@ -34,35 +39,53 @@ function getBlogEntry($connection, $id) {
 						blog_entries
 					WHERE id=$id;";
 
-	$result = mysqli_fetch_all(mysqli_query($connection, $sql), MYSQLI_ASSOC);
+	$result = $connection->query($sql);
 
-	$result[0]['picture'] = base64_encode($result[0]['picture']);
+	while ( $row = mysqli_fetch_assoc( $result ) ) {
+		$row["picture"] = base64_encode($row['picture']);
+		$row["picture_card"] = base64_encode($row['picture_card']);
+		$row["picture_title"] = utf8_encode($row["picture_title"]);
+		$row["title"] = utf8_encode($row["title"]);
+		$row["text_first"] = utf8_encode($row["text_first"]);
+		$row["text_second"] = utf8_encode($row["text_second"]);
 
-	echo json_encode($result[0]);
+		$resultArray[] = $row;
+	}
+
+	echo json_encode($resultArray);
 }
 
 function getBlogEntries($connection) {
 	$sql = "SELECT
-						*
-					FROM
-						blog_entries;";
+				*
+			FROM
+				blog_entries
+			WHERE
+				hidden = false;";
 
-	$result = mysqli_fetch_all(mysqli_query($connection, $sql), MYSQLI_ASSOC);
+	$result = $connection->query($sql);
 
-	foreach($result as $key=>$value){
-		$result[$key]['picture'] = base64_encode($result[$key]['picture']);
+	while ( $row = mysqli_fetch_assoc( $result ) ) {
+		$row["picture"] = base64_encode($row['picture']);
+		$row["picture_card"] = base64_encode($row['picture_card']);
+		$row["picture_title"] = utf8_encode($row["picture_title"]);
+		$row["title"] = utf8_encode($row["title"]);
+		$row["text_first"] = utf8_encode($row["text_first"]);
+		$row["text_second"] = utf8_encode($row["text_second"]);
+
+		$resultArray[] = $row;
 	}
 
-	echo json_encode($result);
+	echo json_encode($resultArray);
 }
 // listázók vége --->
 
 // <--- insert queryk
 function createNewBlogEntry($connection) {
 	$sql = "INSERT INTO
-						blog_entries (title, nav_index, picture, picture_title, text, date)
+						blog_entries (date, idx, is_active, picture, picture_card, picture_title, text_first, text_second, title, hidden)
 					VALUES
-						('', '', '', '', '', '');";
+						('', '', '', '', '', '', '', '', '', '');";
 
 	if ($connection->query($sql) === TRUE) {
 		echo $connection->insert_id;
@@ -72,9 +95,10 @@ function createNewBlogEntry($connection) {
 
 // <--- delete queryk
 function deleteBlogEntry($connection, $id) {
-	$sql = "DELETE
-					FROM
+	$sql = "UPDATE
 						blog_entries
+					SET
+						hidden = true
 					WHERE
 						id = $id;";
 
@@ -102,14 +126,7 @@ function updateBlogEntry($connection, $parameters) {
 
 // <--- kapcsolódás függvények
 function connect() {
-	$dbhost = "localhost";
-	$dbuser = "root";
-	$dbpass = "Munchen1986!";
-	$db = "omisk";
-	
-	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 
-	return $conn;
 }
  
 function closeConnection($conn) {

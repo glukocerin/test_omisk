@@ -31,11 +31,14 @@ export default function ({ isOpen, setModalOpen, videos }) {
   let sortedVideos = videos.sort(compare);
 
   const [actualVideo, setVideo] = useState(sortedVideos[0]["link"]),
-    escFunction = useCallback((event) => {
-      if (event.keyCode === 27) {
-        setModalOpen(false);
-      }
-    }, [setModalOpen]);
+    escFunction = useCallback(
+      (event) => {
+        if (event.keyCode === 27) {
+          setModalOpen(false);
+        }
+      },
+      [setModalOpen]
+    );
 
   useEffect(() => {
     document.addEventListener("keydown", escFunction, false);
@@ -65,15 +68,16 @@ export default function ({ isOpen, setModalOpen, videos }) {
           </button>
         </div>
         <div className={`${style["modal-body"]} `}>
-          {isOpen && <iframe
-            className={`${style["video"]} `}
-            title="video"
-            src={actualVideo}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+          {isOpen && (
+            <iframe
+              className={`${style["video"]} `}
+              title="video"
+              src={actualVideo}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             ></iframe>
-          }
+          )}
           <div className={`${style["years"]}`}>
             <Years
               videos={videos}

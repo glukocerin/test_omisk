@@ -86,12 +86,14 @@ export default function Contact() {
       <div className="contact-content">
         <div className="contact-columns">
           <div className="contact-box">
-            <img src={require(`../assets/img/kapcsolat.jpg`)} alt="" />
-            <label className="size-54 extra-bold">{`${
+            <img 
+            src={`${process.env.PUBLIC_URL}/assets/img/mikus-marta.jpg`}
+            alt="Mikus Márta" />
+            <h1 className="size-54 extra-bold">{`${
               sessionMailSent || mailSent
                 ? "Üzenetét elküldtük ✔"
                 : "Lépj kapcsolatba velünk!"
-            }`}</label>
+            }`}</h1>
             <form
               className={`send-mail-form ${
                 (sessionMailSent || mailSent) && "hidden"
@@ -160,9 +162,9 @@ export default function Contact() {
             </form>
           </div>
           <div className="contact-box">
-            <label className="content-title size-54 extra-bold">
+            <h1 className="content-title size-54 extra-bold">
               Kérdéseidre válaszolunk!
-            </label>
+            </h1>
             <label className="content-text size-20">
               Felmerülő kérdéseidre Mikusik Márta iskolatitkárunk válaszol.
               Hétköznap 10-14 óra között hívhatod.
@@ -186,7 +188,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="faq" id={"gyik"}>
-        <label className="size-54 extra-bold">Gyakori kérdések</label>
+        <h1 className="size-54 extra-bold">Gyakori kérdések</h1>
         <div className="drop-down-list">
           <Gyik />
         </div>

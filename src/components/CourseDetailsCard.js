@@ -1,8 +1,8 @@
 import React from "react";
 import style from "../assets/css/courseDetailsCard.module.css";
 
-const Items = props => {
-  return props.textBody.map(el => {
+const Items = (props) => {
+  return props.textBody.map((el) => {
     return (
       <li>
         <p className="size-14 thin">{el}</p>
@@ -11,7 +11,7 @@ const Items = props => {
   });
 };
 
-const TextBody = function(props) {
+const TextBody = function (props) {
   if (props.details.isList) {
     return <p className="size-14 thin">{props.details.textBody}</p>;
   }
@@ -31,14 +31,17 @@ export default function CourseDetailsCard(props) {
           <TextBody
             details={{
               textBody: props.details.textBody,
-              isList: props.details.isList
+              isList: props.details.isList,
             }}
           />
           {props.details.textBody}
         </p>
       </div>
       <div className={style["pic"]}>
-        <img src={require(`../assets/img/${props.details.image}.png`)} alt="" />
+        <img
+          src={require(`../assets/img/${props.details.image}.png`).default}
+          alt=""
+        />
       </div>
     </div>
   );

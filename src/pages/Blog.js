@@ -12,14 +12,14 @@ const { blog } = pagesConfig;
 const BlogCards = function () {
   return blog.cards.map((card, index) => {
     const image = card["picture_card"]
-      ? require(`../assets/img/blog/${card.picture_card}`)
-      : require(`../assets/img/blog/${card.picture}`);
+      ? `${process.env.PUBLIC_URL}/assets/img/blog/${card.picture_card}`
+      : `${process.env.PUBLIC_URL}/assets/img/blog/${card.picture}`;
 
     return (
-      <Link to={{ pathname: "/blog_entry", state: card }} key={index}>
+      <Link to={{ pathname: `/blog/${card.index}`, state: card }} key={index}>
         <div className="card">
           <div className="picture-box">
-            <img src={image} alt="" />
+            <img src={image} alt={card.alt} />
             <label className="picture-title size-28 extra-bold">
               {card.picture_title}
               <br />
@@ -34,7 +34,7 @@ const BlogCards = function () {
               {card.title}
             </label>
             <label className="blog-entry-text size-15 thin">
-              {splitText(card.textFirst)}
+              {splitText(card.text_first)}
             </label>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Blog() {
   return (
     <div className="blog">
       <div className="blog-header"></div>
-      <label className="title size-90 extra-bold">Blog</label>
+      <h1 className="title size-90 extra-bold">Blog</h1>
       <div className="blog-cards">
         <BlogCards />
       </div>

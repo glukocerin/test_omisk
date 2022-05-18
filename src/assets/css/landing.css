@@ -1,3 +1,7 @@
+h1 {
+  font-size: initial;
+}
+
 .landing {
   position: relative;
   background: var(--color-gray-0);
@@ -61,7 +65,7 @@
   animation: 0.75s dotshrink cubic-bezier(0.74, 0.14, 0.27, 0.81);
 }
 .dot.active::after {
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -85,15 +89,15 @@
 @keyframes pulsate {
   0% {
     transform: translate(-50%, -50%) scale(0.1, 0.1);
-    opacity: 0.0;
+    opacity: 0;
   }
   50% {
-    opacity: 1.0;
+    opacity: 1;
     transform: translate(-50%, -50%);
   }
   100% {
     transform: translate(-50%, -50%) scale(1.6, 1.6);
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 .landing .content-block {
@@ -113,11 +117,46 @@
   z-index: 2;
 }
 .left.one {
-  background: var(--color-gray-new-0);
+  /* background: var(--color-gray-new-0); */
+  background: var(--color-green-2);
+}
+.left.one .titles {
+  display: flex;
+  flex-direction: column;
 }
 .left.one .title {
   color: var(--color-gray-0);
   white-space: pre-wrap;
+}
+.left.one .title.new {
+  margin-right: auto;
+  padding: 0 1vw;
+}
+.left.one .title.new.inverse {
+  background: var(--color-gray-0);
+  color: var(--color-green-2);
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}
+.left.one .title.new.date-enrollment {
+  color: #3e6171;
+  white-space: pre-wrap;
+  /* margin-top: 1rem; */
+}
+.left.one .btn-enrollment {
+  margin-left: 1vw;
+  margin-top: 48px;
+  color: #3fc1b3;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 64px;
+  padding: 13px 24px;
+}
+.left.one .size-20 {
+  white-space: pre-wrap;
+  margin: 5.6vh 0;
+  line-height: 1.5rem;
 }
 .left.one .sub-title {
   color: var(--color-gray-new-1);
@@ -281,7 +320,7 @@
   }
 }
 .left.three {
-  background: var(--color-green-0);
+  background: var(--color-green-2);
 }
 .left.three *,
 .left.six * {
@@ -358,6 +397,7 @@
 .left.three .button-box {
   margin-top: 6.4vh;
 }
+.left.one .btn,
 .left.three .button-box .btn {
   padding: 1vh 1.302vw;
   font-size: 0.781vw;
@@ -365,6 +405,10 @@
   transition: border-color 300ms, background-color 300ms, color 300ms;
   cursor: pointer;
 }
+.left.one .btn {
+  padding: 15px 50px;
+}
+.left.one .btn:focus,
 .left.three .button-box .btn:focus {
   outline: unset;
 }
@@ -384,15 +428,18 @@
   color: var(--color-btn-active-green-2);
   border: 2px solid var(--color-btn-active-green-2);
 }
+.left.one .btn-secondary,
 .left.three .button-box .btn-secondary {
   color: var(--color-btn-normal-green);
   background: var(--color-btn-normal-green-2);
   border: 2px solid var(--color-btn-normal-green-2);
 }
+.left.one .btn-secondary:hover,
 .left.three .button-box .btn-secondary:hover {
   background: var(--color-btn-hover-green-2);
   border: 2px solid var(--color-btn-hover-green-2);
 }
+.left.one .btn-secondary:active,
 .left.three .button-box .btn-secondary:active {
   background: var(--color-btn-active-green-2);
   border: 2px solid var(--color-btn-active-green-2);
@@ -646,11 +693,12 @@
   background-position: center;
 }
 .right.one {
-  background-image: url("../img/landing_bg_1.jpg");
+  /* background-image: url("../img/landing_bg_1.jpg"); */
+  background-image: url("../img/muveszitorna-balett-moderntanc.png");
 }
-.right.two {
-  background-image: url("../img/landing_bg_2.jpg");
-}
+/* .right.two {
+
+} */
 .right.two.active {
   animation: scrollup 500ms ease-in-out forwards, fadeIn ease 3s;
 }
@@ -851,8 +899,32 @@
   .left.one .content-block {
     margin-left: unset;
   }
+  .left.one .titles {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+  }
+  .left.one .titles h1:nth-last-child() {
+    margin-top: 0;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+  }
   .left.one .title {
     font-size: 38px;
+  }
+  .left.one .title.new {
+    font-size: 6vw;
+  }
+  .left.one .title.new:first-child {
+    padding-left: 0;
+  }
+  .left.one .title.new.inverse {
+    margin-top: 0;
+  }
+  .left.one .size-20 {
+    margin: 19px 0;
+    line-height: 17px;
   }
   .left.one .sub-title {
     margin-top: 1rem;
@@ -881,11 +953,21 @@
   .right.one {
     order: 1;
     background-size: 100% auto;
-    background-color: var(--color-gray-new-0);
+    /* background-color: var(--color-gray-new-0); */
+    background-color: var(--color-green-2);
     background-position: top;
     top: 0;
     height: 50vh;
-    background-image: url("../img/landing_bg_1_mobil.jpg");
+  }
+  .right.one-mobile {
+    order: 1;
+    background-size: 100% auto;
+    /* background-color: var(--color-gray-new-0); */
+    background-color: var(--color-green-2);
+    background-position: top;
+    top: 0;
+    height: 50vh;
+    background-image: url("../img/muveszitorna-balett-moderntanc-mobile.png");
   }
   .mobile-card.one {
     order: 3;
@@ -913,7 +995,7 @@
   }
   .mobile-card.two {
     order: 5;
-    background: var(--color-green-0);
+    background: var(--color-green-2);
     filter: contrast(80%);
   }
   .left.three {
@@ -944,6 +1026,7 @@
     margin-top: 2rem;
     margin-bottom: 0.875rem;
   }
+  .left.one .btn,
   .left.three .button-box .btn {
     padding: 10px 22px;
     font-size: 12px;

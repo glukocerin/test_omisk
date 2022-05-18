@@ -1,0 +1,5 @@
+.editor {
+  background-color: var(--color-gray-0);
+  box-shadow: #e5e5e5 0px 2px 7px 1px;
+  padding: 1rem;
+}

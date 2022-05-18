@@ -7,11 +7,15 @@ import pagesConfig from "../assets/pagesConfig";
 
 const { teachers } = pagesConfig;
 
-const TeacherCards = function() {
+const TeacherCards = function () {
   return teachers.cards.map((card, index) => (
-    <Link to={{ pathname: "/teacher", state: card }} key={index}>
+    <Link to={{ pathname: "/tanar", state: card }} key={index}>
       <div className="card">
-        <img src={require(`../assets/img/teachers/${card.picture}`)} alt="" />
+        <img
+        
+          src={`${process.env.PUBLIC_URL}/assets/img/teachers/${card.picture}`}
+          alt=""
+        />
         <label className="teacher-name size-28 extra-bold">{card.name}</label>
       </div>
     </Link>
@@ -22,7 +26,7 @@ export default function Teachers() {
   return (
     <div className="teachers">
       <div className="teachers-header"></div>
-      <label className="title size-90 extra-bold">Tanáraink</label>
+      <h1 className="title size-90 extra-bold">Tanáraink</h1>
       <div className="teacher-cards">
         <TeacherCards />
       </div>
