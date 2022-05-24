@@ -23,7 +23,7 @@ function getMetaContent(pages, url) {
 }
 
 const history = createBrowserHistory();
-console.log(history);
+
 const trackingId = "UA-37328756-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
 
@@ -183,7 +183,6 @@ history.listen((location) => {
       filtered[0].title +
       " | ritmikus gimnasztika és balett órák, modern és jazztánc kurzusok | OMISK";
 
-    console.log(metaDesc);
     metaDesc.setAttribute("content", getMetaContent(pages, url));
   }
 
