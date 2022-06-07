@@ -759,7 +759,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyari_tabor",
-          link: "camp",
+          link: "nyari-tabor",
         },
       ],
     },
