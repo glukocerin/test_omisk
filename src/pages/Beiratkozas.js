@@ -81,7 +81,7 @@ export default function Beiratkozas() {
     <div>
       <div className={style[`header-wrapper`]}>
         <div className={style[`title-wrapper`]}>
-          <h1>Beiratkozás 2021/22</h1>
+          <h1>Beiratkozás 2022/23</h1>
         </div>
       </div>
       <div className={`${style["gallery-wrapper"]}`}>
@@ -150,14 +150,166 @@ export default function Beiratkozas() {
         </Carousel>
       </div>
       <SiteContainer className="container">
-        <div className="row">
-          <div className="col-lg-3"></div>
-          <div className={`col-lg-6 ${style["dates-and-places"]}`}>
+        {/* <div className="row">
+          <div className="col-lg-3"></div> */}
+        {/* <div className={`col-lg-6 ${style["dates-and-places"]}`}>
             <h3>
-            Év közben is lehet csatlakozni azokhoz a csoporthoz, amelyek nem teltek be. A kurzusaink almenűiben megtalàlható, hogy melyik helyszínen és milyen időpontokban vannak órák. A szabad helyekről Mikusik Márta iskolatitkár ad felvilágosítást.
+              Év közben is lehet csatlakozni azokhoz a csoporthoz, amelyek nem
+              teltek be. A kurzusaink almenűiben megtalàlható, hogy melyik
+              helyszínen és milyen időpontokban vannak órák. A szabad helyekről
+              Mikusik Márta iskolatitkár ad felvilágosítást.
             </h3>
+            <div>
+              <Link to="/beiratkozas">
+                <button
+                  className={style[`enrollment-button`]}
+                  onClick={(e) => handleClick(e)}
+                >
+                  Beiratkozási időpontok és helyszinek
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="col-lg-3"></div>
+        </div>
+        <div className={`row ${style[`content-wrapper`]}`}>
+          <div className="col-lg-5">
+            <div className={`${style[`image-wrapper`]}`}>
+              <img
+                className={`${style[`content-image`]}`}
+                src={`${
+                  require(`../assets/img/gallery/ritmikus-gimnasztika-3.jpg`)
+                    .default
+                }`}
+                alt=""
+              ></img>
+            </div>
+          </div>
+          <div className="col-lg-1"></div>
+          <div className={`col-lg-5 ${style[`details-tile`]}`}>
+            <div className={`${style[`details-wrapper`]}`}>
+              <h2>4 évestől felnőtt korodig</h2>
+              <p>
+                lehetsz csapatunk tagja és választhatsz az életkorodnak
+                megfelelő különböző kurzusok közül. Rendszeresen tartunk
+                bemutatókat, gálaműsorokat és járhatsz olyan csoportba is,
+                amelyek táncversenyeken is megmérettetik magukat.
+                Programjainkról itt olvashatsz részletesebben:{" "}
+              </p>
+              <Link to="/programjaink">
+                <button className={style[`green-button`]}>Programjaink</button>
+              </Link>
+            </div>
+          </div>
+          <div className="col-lg-1"></div>
+        </div> */}
+        {/* <div
+          className={`row ${style[`content-wrapper`]} ${
+            style[`content-wrapper-margin-top`]
+          }`}
+        >
+          {useWindowDimensions().width <= 800 && (
+            <div className="col-lg-5">
+              <div className={`${style[`image-wrapper-inverse`]}`}>
+                <img
+                  className={`${style[`content-image-inverse`]}`}
+                  src={`${
+                    require(`../assets/img/gallery/modern-tanc-4.jpg`).default
+                  }`}
+                  alt=""
+                ></img>
+              </div>
+            </div>
+          )} */}
+        {/* <div className="col-lg-1"></div> */}
+        {/* <div className={`col-lg-5 ${style[`details-tile`]}`}>
+            <div className={`${style[`details-wrapper`]}`}>
+              <h2>Melyik kurzust válasszam?</h2>
+              <p>
+                Képzésünket 4 éves korban művészi tornával (ritmikus
+                gimnasztika) kezdjük el. Az általunk követett Berczik módszer
+                kiváló alapot ad a későbbiekben választható valamennyi műfajhoz.
+                Iskolás kortól választható: balett, mozdulatművészet, modern
+                tánc és jazztánc. A tanítás iskolaszerűen egymásra épülő
+                évfolyamokban történik, de menet közben is lehet csatlakozni az
+                életkornak illetve előképzettségnek megfelelő csoportba. A
+                műfajokról itt olvashatsz bővebben:{" "}
+              </p>
+              <Link to="/kurzusok">
+                <button className={style[`green-button`]}>Kurzusaink</button>
+              </Link>
+            </div>
+          </div>
+          <div className="col-lg-1"></div>
+          {useWindowDimensions().width >= 801 && (
+            <div className="col-lg-5">
+              <div className={`${style[`image-wrapper-inverse`]}`}>
+                <img
+                  className={`${style[`content-image-inverse`]}`}
+                  src={`${
+                    require(`../assets/img/gallery/modern-tanc-4.jpg`).default
+                  }`}
+                  alt=""
+                ></img>
+              </div>
+            </div>
+          )}
+        </div> */}
+        <div
+          id={"enrollment-dates"}
+          className={`row ${style[`enrollment-dates-wrapper`]}`}
+        >
+          <div className="col-lg-3"></div>
+          <div className={`col-lg-6 ${style[`enrollment-dates-details`]}`}>
+            <h3>
+              A beiratkozást 2022-23-as tanévre az alábbi időpontokban tartjuk:
+            </h3>
+            <div className={`${style[`enrollment-dates-details-wrapper`]}`}>
+              <p>20-22 - Fitness, XII. Szarvas Gábor út 20-22</p>
+              <ul>
+                <li>Növendékeinknek: Augusztus 29, (hétfő) 16.30-19.00</li>
+                <li>Új jelentkezők: Szeptember 5, (hétfő) 16.00-19.00</li>
+              </ul>
+              <p>Óbudai Kulturális Központ, III. San Marco u. 81.</p>
+              <ul>
+                <li>Növendékeinknek: Augusztus 30, (hétfő) 16.30-19.00</li>
+                <li>Új jelentkezők: Szeptember 6, (hétfő) 16.00-19.00</li>
+              </ul>
+              <p>Békásmegyeri Közösségi Ház, III. Csobánka tér 5.</p>
+              <ul>
+                <li>Növendékeinknek: Augusztus 31, (csütörtök) 16.00-19.00</li>
+                <li>Új jelentkezők: Szeptember 7, (csütörtök) 16.00-19.00</li>
+              </ul>
+              <p>MOM Kulturális Központ, XII. Csörsz u. 18.</p>
+              <ul>
+                <li>Növendékeinknek: Szeptember 1, (kedd) 16.00-19.00</li>
+                <li>Új jelentkezők: Szeptember 8, (hétfő) 16.00-19.00</li>
+              </ul>
+              <p>VII. ker. Táncstúdió, VII. Wesselényi u. 41.</p>
+              <ul>
+                <li>
+                  Növendékeinknek és Új jelentkezők: Szeptember 7 és Szeptember
+                  9 (péntek) 17.00-19.00
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={`${style[`enrollment-details-wrapper`]}`}>
+            <div className={`${style[`enrollment-details`]}`}>
+              <h3>
+                A beiratkozás alkalmával találkozhatsz leendő tanáraiddal és
+                megbeszélhetjük, hogy melyik csoport és milyen időpont volna
+                megfelelő. A végleges órarendet a beiratkozást követően állítjuk
+                össze az igények figyelembevételével. A tavalyi órarend alapján
+                tájékozódhatsz, hogy az egyes helyszíneken , milyen napokon
+                vannak kurzusok, mert elsősorban csak a kezdési időpontok
+                változhatnak kis mértékben. A kezdő kicsik óráit mindig 16 és 18
+                óra között tartjuk ( 45 percben) A tavalyi órarendet a
+                kurzusaink menüpont alatt találod. A tandíj várhatóan az
+                infláció mértékével arányosan emelkedik.
+              </h3>
+            </div>
+          </div>
         </div>
         <div className={`row ${style[`contact-wrapper`]}`}>
           <div className="col-lg-2"></div>
