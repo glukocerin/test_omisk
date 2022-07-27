@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import style from "../assets/css/footer.module.css";
 import "../assets/css/footer.icons.css";
 
@@ -52,10 +52,15 @@ export default function Footer() {
           <p className={`size-15 thin`}>
             06-1-2000-138 <br />
             06-20-9460-848 <br />
-            iroda@omisk.hu<br />
-            Óbuda Mozgásművészeti Iskola<br/>
-            1021 Budapest, Széher út 77.<br/><br/>
-            <Link to="/contact/#gyik">Gyakran ismételt kérdések</Link><br/>
+            iroda@omisk.hu
+            <br />
+            Óbuda Mozgásművészeti Iskola
+            <br />
+            1021 Budapest, Széher út 77.
+            <br />
+            <br />
+            <Link to="/contact/#gyik">Gyakran ismételt kérdések</Link>
+            <br />
           </p>
         </div>
         <div className={style["details-box"]}>
@@ -68,12 +73,18 @@ export default function Footer() {
             Kurzusaink
           </h5>
           <p className={`size-15 thin`}>
-            Művészi torna, 4 éves kortól<br/>
-            Mozdulatművészet, 10 éves kortól<br/>
-            Modern tánc, 8 éves kortól<br/>
-            Jazztánc, 6 éves kortól<br/>
-            Klasszikus balett, 6 éves kortól<br/>
-            Pre ballet / EN, 4-6 eves korosztálynak<br/>
+            Művészi torna, 4 éves kortól
+            <br />
+            Mozdulatművészet, 10 éves kortól
+            <br />
+            Modern tánc, 8 éves kortól
+            <br />
+            Jazztánc, 6 éves kortól
+            <br />
+            Klasszikus balett, 6 éves kortól
+            <br />
+            Pre ballet / EN, 4-6 eves korosztálynak
+            <br />
           </p>
         </div>
         <div className={style["details-box"]}>
@@ -86,19 +97,19 @@ export default function Footer() {
             Helyszineink
           </h5>
           <p className={`size-15 thin`}>
-            Óbudai Kulturális Központ<br/>
-            Békásmegyeri Közösségi Ház<br/>
-            MOM Kulturális Központ<br/>
-            Virányosi Közösségi Ház<br/>
-            Szarvas Gábor Közösségi Tér<br/>
-            Józsefvárosi Galéria és Rendezvényközpont<br/>
-            VII. ker. Táncstúdió<br/><br/>
+            Óbudai Kulturális Központ
+            <br />
+            Békásmegyeri Közösségi Ház
+            <br />
+            MOM Kulturális Központ
+            <br />
+            VII. ker. Táncstúdió
+            <br />
+            <br />
             <Link to="/enrollment/#map">Térkép</Link>
           </p>
         </div>
-        <div className={style["details-box"]}>
-
-        </div>
+        <div className={style["details-box"]}></div>
       </div>
       <div className={style["details-wrapper"]}>
         {/* <div>

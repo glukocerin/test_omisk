@@ -52,12 +52,6 @@ export default function Footer() {
           <br />
           MOM Kulturális Központ
           <br />
-          Virányosi Közösségi Ház
-          <br />
-          Szarvas Gábor Közösségi Tér
-          <br />
-          Józsefvárosi Galéria és Rendezvényközpont
-          <br />
           VII. ker. Táncstúdió
           <br />
           <br />

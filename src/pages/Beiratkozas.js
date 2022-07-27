@@ -268,28 +268,28 @@ export default function Beiratkozas() {
               <p>20-22 - Fitness, XII. Szarvas Gábor út 20-22</p>
               <ul>
                 <li>Növendékeinknek: Augusztus 29, (hétfő) 16.30-19.00</li>
-                <li>Új jelentkezők: Szeptember 5, (hétfő) 16.00-19.00</li>
+                <li>Új jelentkezők: Szeptember 5, (hétfő) 16.30-19.00</li>
               </ul>
               <p>Óbudai Kulturális Központ, III. San Marco u. 81.</p>
               <ul>
-                <li>Növendékeinknek: Augusztus 30, (hétfő) 16.30-19.00</li>
-                <li>Új jelentkezők: Szeptember 6, (hétfő) 16.00-19.00</li>
+                <li>Növendékeinknek: Augusztus 30, (kedd) 16.30-19.00</li>
+                <li>Új jelentkezők: Szeptember 6, (kedd) 16.30-19.00</li>
               </ul>
               <p>Békásmegyeri Közösségi Ház, III. Csobánka tér 5.</p>
               <ul>
-                <li>Növendékeinknek: Augusztus 31, (csütörtök) 16.00-19.00</li>
-                <li>Új jelentkezők: Szeptember 7, (csütörtök) 16.00-19.00</li>
+                <li>Növendékeinknek: Augusztus 31, (szerda) 16.30-19.00</li>
+                <li>Új jelentkezők: Szeptember 7, (szerda) 16.30-19.00</li>
               </ul>
               <p>MOM Kulturális Központ, XII. Csörsz u. 18.</p>
               <ul>
-                <li>Növendékeinknek: Szeptember 1, (kedd) 16.00-19.00</li>
-                <li>Új jelentkezők: Szeptember 8, (hétfő) 16.00-19.00</li>
+                <li>Növendékeinknek: Szeptember 1, (csütörtök) 16.30-19.00</li>
+                <li>Új jelentkezők: Szeptember 8, (csütörtök) 16.30-19.00</li>
               </ul>
               <p>VII. ker. Táncstúdió, VII. Wesselényi u. 41.</p>
               <ul>
                 <li>
-                  Növendékeinknek és Új jelentkezők: Szeptember 7 és Szeptember
-                  9 (péntek) 17.00-19.00
+                  Növendékeinknek és új jelentkezők: Szeptember 2 és Szeptember
+                  9 (péntek) 17.00-18.00
                 </li>
               </ul>
             </div>

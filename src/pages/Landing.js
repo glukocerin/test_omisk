@@ -201,6 +201,38 @@ export default function Landing({ dotChange }) {
 
   return (
     <div className="landing" onWheel={(e) => scroller(e)}>
+      <div className={`left one ${activeDot === 0 ? "active" : ""}`}>
+        <div className="content-block">
+          <div className="titles">
+            <h1 className="title extra-bold size-54 new">
+              OMISK Tánc és Mozgásművészeti Iskola
+            </h1>
+          </div>
+        </div>
+      </div>
+      {isMobile ? (
+        <div
+          className={`right one-mobile  ${activeDot === 0 ? "active" : ""}`}
+        ></div>
+      ) : (
+        <div
+          className={`right one  ${activeDot === 0 ? "active" : ""}`}
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/muveszitorna-balett-moderntanc.png)`,
+          }}
+        ></div>
+      )}
+      <div
+        className={`mobile-card one ${activeCard === 0 && "toggled"}`}
+        onClick={(event) => {
+          restoreScrollTop(event);
+          activeCard === 0 ? setActiveCard(0) : setActiveCard(0);
+        }}
+      >
+        <PlusSign className="plus-sign" />
+        <MinusSign className="minus-sign" />
+        <label className="text extra-bold">Küldetésünk</label>
+      </div>
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
           <div className="titles">
@@ -215,7 +247,12 @@ export default function Landing({ dotChange }) {
           className={`right one-mobile  ${activeDot === 1 ? "active" : ""}`}
         ></div>
       ) : (
-        <div className={`right one  ${activeDot === 1 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/muveszitorna-balett-moderntanc.png)`}}></div>
+        <div
+          className={`right one  ${activeDot === 1 ? "active" : ""}`}
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/muveszitorna-balett-moderntanc.png)`,
+          }}
+        ></div>
       )}
       <div
         className={`mobile-card one ${activeCard === 1 && "toggled"}`}
@@ -245,7 +282,12 @@ export default function Landing({ dotChange }) {
           <label className="text size-24 thin">Berczik Sára</label>
         </div>
       </div>
-      <div className={`right two ${activeDot === 2 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-4-eves-kortol.jpg)`}}></div>
+      <div
+        className={`right two ${activeDot === 2 ? "active" : ""}`}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-4-eves-kortol.jpg)`,
+        }}
+      ></div>
       <div
         className={`mobile-card inverse two ${activeCard === 2 && "toggled"}`}
         onClick={(event) => {
@@ -293,7 +335,12 @@ export default function Landing({ dotChange }) {
           </div>
         </div>
       </div>
-      <div className={`right three ${activeDot === 3 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-kozossegteremtes.jpg)`}}></div>
+      <div
+        className={`right three ${activeDot === 3 ? "active" : ""}`}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/tancoktatas-kozossegteremtes.jpg)`,
+        }}
+      ></div>
       {/* why 3? because they asked for... ^^ --> https://trello.com/c/S6EkYH6a/102-landing-oldal-csere */}
       <div
         className={`mobile-card seven ${activeCard === 3 && "toggled"}`}
@@ -350,7 +397,12 @@ export default function Landing({ dotChange }) {
           </label>
         </div>
       </div>
-      <div className={`right eight ${activeDot === 4 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/berczik-technika-kraetivitas-zeneiseg.jpg)`}}></div>
+      <div
+        className={`right eight ${activeDot === 4 ? "active" : ""}`}
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/berczik-technika-kraetivitas-zeneiseg.jpg)`,
+        }}
+      ></div>
       <div
         className={`mobile-card four ${activeCard === 4 && "toggled"}`}
         onClick={(event) => {
@@ -848,12 +900,6 @@ export default function Landing({ dotChange }) {
             Békásmegyeri Közösségi Ház
             <br />
             MOM Kulturális Központ
-            <br />
-            Virányosi Közösségi Ház
-            <br />
-            Szarvas Gábor Közösségi Tér
-            <br />
-            Józsefvárosi Galéria és Rendezvényközpont
             <br />
             VII. ker. Táncstúdió
             <br />

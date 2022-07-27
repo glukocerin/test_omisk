@@ -254,36 +254,7 @@ export default function Enrollment() {
                   : { placeId: 4, position: [47.51262, 18.99469], zoom: 15 }
               )
             }
-          >
-            <PlusSign className="plus-sign" />
-            <MinusSign className="minus-sign" />
-            <label className="place-label size-24 extra-bold">
-              Virányosi Közösségi Ház
-            </label>
-            <div className="place-informations">
-              <label className="place-address size-15 extra-bold">
-                XII. Szarvas Gábor út 8/c
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Művészi torna
-              </label>
-              <label className="place-program-row size-15 thin">
-                kedd I csütörtök
-              </label>
-              <label className="place-program-row size-15 thin">
-                Rózsa Réka
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Mozdulatművészet
-              </label>
-              <label className="place-program-row size-15 thin">
-                kedd I csütörtök{" "}
-              </label>
-              <label className="place-program-row size-15 thin">
-                Rózsa Réka
-              </label>
-            </div>
-          </div>
+          ></div>
           <div
             className={`place ${activePlace.placeId === 5 && "active"}`}
             onClick={() =>
@@ -293,36 +264,7 @@ export default function Enrollment() {
                   : { placeId: 5, position: [47.51262, 18.99469], zoom: 15 }
               )
             }
-          >
-            <PlusSign className="plus-sign" />
-            <MinusSign className="minus-sign" />
-            <label className="place-label size-24 extra-bold">
-              Szarvas Gábor Közösségi Tér
-            </label>
-            <div className="place-informations">
-              <label className="place-address size-15 extra-bold">
-                XII. Szarvas Gábor út 22
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Művészi torna
-              </label>
-              <label className="place-program-row size-15 thin">
-                hétfő I kedd I szerda I csütörtök{" "}
-              </label>
-              <label className="place-program-row size-15 thin">
-                Mády Krisztina{" "}
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Mozdulatművészet
-              </label>
-              <label className="place-program-row size-15 thin">
-                hétfő I kedd I szerda I csütörtök{" "}
-              </label>
-              <label className="place-program-row size-15 thin">
-                Mády Krisztina{" "}
-              </label>
-            </div>
-          </div>
+          ></div>
           <div
             className={`place ${activePlace.placeId === 7 && "active"}`}
             onClick={() =>
@@ -332,36 +274,7 @@ export default function Enrollment() {
                   : { placeId: 7, position: [47.48746, 19.07061], zoom: 15 }
               )
             }
-          >
-            <PlusSign className="plus-sign" />
-            <MinusSign className="minus-sign" />
-            <label className="place-label size-24 extra-bold">
-              Józsefvárosi Galéria és Rendezvényközpont
-            </label>
-            <div className="place-informations">
-              <label className="place-address size-15 extra-bold">
-                VIII. József krt. 70
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Művészi torna
-              </label>
-              <label className="place-program-row size-15 thin">
-                hétfő I szerda
-              </label>
-              <label className="place-program-row size-15 thin">
-                Solti Eszter
-              </label>
-              <label className="place-program-row size-15 thin title">
-                Mozdulatművészet
-              </label>
-              <label className="place-program-row size-15 thin">
-                hétfő I szerda
-              </label>
-              <label className="place-program-row size-15 thin">
-                Solti Eszter
-              </label>
-            </div>
-          </div>
+          ></div>
           <div
             className={`place ${activePlace.placeId === 8 && "active"}`}
             onClick={() =>
