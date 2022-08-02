@@ -116,6 +116,10 @@ h1 {
   padding: 88px 0;
   z-index: 2;
 }
+.left.zero {
+  background: var(--color-pink-0);
+  text-decoration: none;
+}
 .left.one {
   /* background: var(--color-gray-new-0); */
   background: var(--color-green-2);
@@ -124,6 +128,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.left.zero .title,
 .left.one .title {
   color: var(--color-gray-0);
   white-space: pre-wrap;
@@ -692,6 +697,9 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+.right.zero {
+  background-image: url("../img/landing_bg_0.jpg");
+}
 .right.one {
   /* background-image: url("../img/landing_bg_1.jpg"); */
   background-image: url("../img/muveszitorna-balett-moderntanc.png");
@@ -891,6 +899,12 @@ h1 {
   .left:not(.active) {
     animation: unset;
   }
+  .left.zero {
+    order: 2;
+    padding: 0.75rem 1.75rem;
+    position: relative;
+    text-decoration: none;
+  }
   .left.one {
     order: 2;
     padding: 1.5rem 1.75rem;
@@ -913,6 +927,7 @@ h1 {
   .left.one .title {
     font-size: 38px;
   }
+  .left.zero .title.new,
   .left.one .title.new {
     font-size: 6vw;
   }
@@ -950,6 +965,7 @@ h1 {
     background-size: 7rem;
     background-image: url("../img/icons/stamp_inverse.svg");
   }
+  .right.zero,
   .right.one {
     order: 1;
     background-size: 100% auto;
@@ -968,6 +984,16 @@ h1 {
     top: 0;
     height: 50vh;
     background-image: url("../img/muveszitorna-balett-moderntanc-mobile.png");
+  }
+  .right.zero-mobile {
+    order: 1;
+    background-size: 100% auto;
+    /* background-color: var(--color-gray-new-0); */
+    background-color: var(--color-green-2);
+    background-position: top;
+    top: 0;
+    height: 60vh;
+    background-image: url("../img/landing_mobile_bg_0.jpg");
   }
   .mobile-card.one {
     order: 3;

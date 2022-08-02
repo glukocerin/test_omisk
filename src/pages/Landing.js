@@ -34,7 +34,7 @@ const { landing } = pagesConfig;
 const Dots = function ({ setActiveDot, dotChange, activeDot, stopAutoScroll }) {
   const dots = [];
 
-  for (let i = 1; i < 9; i++) {
+  for (let i = 0; i < 9; i++) {
     dots.push(
       <div
         key={i}
@@ -52,6 +52,7 @@ const Dots = function ({ setActiveDot, dotChange, activeDot, stopAutoScroll }) {
 };
 
 const keyHelper = [
+  "no-zero",
   "no-one",
   "no-two",
   "no-three",
@@ -148,7 +149,7 @@ export default function Landing({ dotChange }) {
 
   useEffect(() => {
     if (pageIndex === 0 || !pageIndex) {
-      setActiveDot(1);
+      setActiveDot(0);
     } else {
       setActiveDot(pageIndex);
     }
@@ -157,15 +158,15 @@ export default function Landing({ dotChange }) {
     };
   }, [pageIndex]);
 
-  const [activeDot, setActiveDot] = useState(1),
+  const [activeDot, setActiveDot] = useState(0),
     [activeLink, setActiveLink] = useState(0),
     [activePlace, setActivePlace] = useState({
       placeId: 0,
       position: null,
       zoom: null,
     }),
-    [activeFiveSwitch, setActiveFiveSwitch] = useState("no-one"),
-    [activeSevenSwitch, setActiveSevenSwitch] = useState("no-one"),
+    [activeFiveSwitch, setActiveFiveSwitch] = useState("no-zero"),
+    [activeSevenSwitch, setActiveSevenSwitch] = useState("no-zero"),
     [zoom, setZoom] = useState(false),
     [activeCard, setActiveCard] = useState(0),
     [stepDown, setStepDown] = useState(0),
@@ -178,7 +179,7 @@ export default function Landing({ dotChange }) {
           dotChange(activeDot + 1);
           setStepDown(0);
         }
-      } else if (e.deltaY < 0 && activeDot > 1) {
+      } else if (e.deltaY < 0 && activeDot > 0) {
         setStepUp(stepUp + 1);
         if (stepUp % 5 === 0 && stepUp > 0) {
           setActiveDot(activeDot - 1);
@@ -193,7 +194,7 @@ export default function Landing({ dotChange }) {
     if (!autoScrollStoped && !isMobile) {
       const interval = setInterval(() => {
         activeDot <= 7 && setActiveDot(activeDot + 1);
-        activeDot === 7 && setActiveDot(1);
+        activeDot === 7 && setActiveDot(0);
       }, 4000);
       return () => clearInterval(interval);
     }
@@ -201,6 +202,17 @@ export default function Landing({ dotChange }) {
 
   return (
     <div className="landing" onWheel={(e) => scroller(e)}>
+      <Link
+        className={`left zero ${activeDot === 0 ? "active" : ""}`}
+        to="/beiratkozas">
+        <div className="content-block">
+          <div className="titles">
+            <h1 className="title extra-bold size-54 new">
+              Beiratkozás és regisztráció  a 2022/23-as tanévre
+            </h1>
+          </div>
+        </div>
+      </Link>
       <div className={`left one ${activeDot === 1 ? "active" : ""}`}>
         <div className="content-block">
           <div className="titles">
@@ -210,9 +222,12 @@ export default function Landing({ dotChange }) {
           </div>
         </div>
       </div>
+      {!isMobile && (
+        <div className={`right zero  ${activeDot === 0 ? "active" : ""}`}></div>
+      )}
       {isMobile ? (
         <div
-          className={`right one-mobile  ${activeDot === 1 ? "active" : ""}`}
+          className={`right zero-mobile  ${activeDot === 1 ? "active" : ""}`}
         ></div>
       ) : (
         <div className={`right one  ${activeDot === 1 ? "active" : ""}`} style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/muveszitorna-balett-moderntanc.png)`}}></div>
