@@ -145,7 +145,7 @@ function useCurrentScrollTop() {
 }
 
 export default function ProgramPage(props, isSummerCamp) {
-  var backgroundImage =`${process.env.PUBLIC_URL}/assets/img/programs/header/${props.opt.headerImg}.jpg`;
+  var backgroundImage = `${process.env.PUBLIC_URL}/assets/img/programs/header/${props.opt.headerImg}.jpg`;
 
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -556,8 +556,6 @@ export default function ProgramPage(props, isSummerCamp) {
                 tábori nap és meddig tart?ári felügyeletet, így akinek reggel
                 sietősebb, hozhatja kezdésre gyermekét, de akinek kényelmesebb,
                 lehet csak a programok kezdetére érkezni.
-                <br />
-                ...
               </label>
               <Link to="/programs/summer_camp/faq">
                 <button className={`${style["btn"]} ${style["secondary"]}`}>

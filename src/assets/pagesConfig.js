@@ -759,7 +759,7 @@ const pagesConfig = {
           textBody:
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam asdasdelitr, sed diam asdasd elitr, sed diam asdasd elitr, sed diam asdasd",
           img: "nyari_tabor",
-          link: "camp",
+          link: "nyari-tabor",
         },
       ],
     },
@@ -1028,7 +1028,7 @@ const pagesConfig = {
         ],
         content: {
           first_block: {
-            title: "2021. 08. 08.- 08. 12.",
+            title: "2022. 08. 08.- 08. 12.",
             place:
               "<strong>Szent József Ház </strong><br/>(Békásmegyer - Ófalu)",
             programs:
@@ -1642,11 +1642,11 @@ const pagesConfig = {
     },
     {
       id: 5,
-      title: "Tanév rendje,  2021/22",
+      title: "Tanév rendje,  2022/23",
       role: "primary",
       parentId: 5,
       description:
-        "Beiratkozás: augusztus 25. - szeptember 7.\n\nÓrarend kihirdetés: szeptember 15. \n\nA tanítás első napja: szeptember 17.\n\nA tanítás utolsó napja: július 15.\n\nTéli szünet :  2021. december 22. – 2021. január 3.\n\nNyilvános órák: 2021. december - 2022. január\n\nÉvzáró előadás: Június 6 ( MOM Kulturális Központ )\n                            Június 12-13 ( Óbudai Kulturális Központ )",
+        "Beiratkozás: augusztus 29. - szeptember 9.\n\nÓrarend kihirdetés: szeptember 15. \n\nA tanítás első napja: szeptember 19.\n\nA tanítás utolsó napja: június 16.\n\n Nyilvános órák: 2022. december - 2023. január\n\nÉvzáró előadás: Június 11 ( MOM Kulturális Központ )\n                            Június 17 ( Óbudai Kulturális Központ )",
     },
     {
       id: 6,

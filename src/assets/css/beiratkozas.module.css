@@ -188,6 +188,8 @@
   letter-spacing: 0.04em;
 }
 .enrollment-details-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
   margin-top: 241px;
   background-color: #3e6171;
 }

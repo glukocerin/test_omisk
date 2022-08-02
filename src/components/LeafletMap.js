@@ -56,24 +56,6 @@ export default function LeafletMap(props) {
       </Marker>
 
       <Marker
-        position={[47.51262, 18.99469]}
-        onclick={() =>
-          setPosition({ position: [47.51262, 18.99469], zoom: 18 })
-        }
-      >
-        <Popup>Virányosi Közösségi Ház és Szarvas Gábor Közösségi Tér</Popup>
-      </Marker>
-
-      <Marker
-        position={[47.48746, 19.07061]}
-        onclick={() =>
-          setPosition({ position: [47.48746, 19.07061], zoom: 18 })
-        }
-      >
-        <Popup>Józsefvárosi Galéria és Rendezvényközpont</Popup>
-      </Marker>
-
-      <Marker
         position={[47.49992, 19.06815]}
         onclick={() =>
           setPosition({ position: [47.49992, 19.06815], zoom: 18 })
