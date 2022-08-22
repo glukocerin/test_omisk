@@ -105,6 +105,8 @@ export default function Footer() {
             <br />
             VII. ker. Táncstúdió
             <br />
+            20-22 Fitness, 1125 Szarvas Gábor út 20-22.
+            <br />
             <br />
             <Link to="/enrollment/#map">Térkép</Link>
           </p>

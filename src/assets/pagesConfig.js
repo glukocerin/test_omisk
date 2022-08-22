@@ -88,8 +88,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 45 perc", "Heti 2 x 60 perc"],
-            prices: ["10500-11000 Ft / hó", "11500-12500 Ft / hó"],
+            occasions: [
+              "Heti 2 x 45 perc",
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -98,7 +106,7 @@ const pagesConfig = {
               "3 testvér esetén",
               "4 testvér esetén",
             ],
-            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
+            prices: ["3000.- /hó/fő", "4000.- /hó/fő", "5000.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -176,8 +184,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
-            prices: ["11500-12500 Ft / hó", "13500-15000 Ft / hó"],
+            occasions: [
+              "Heti 2 x 45 perc",
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -186,7 +202,7 @@ const pagesConfig = {
               "3 testvér esetén",
               "4 testvér esetén",
             ],
-            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
+            prices: ["3000.- /hó/fő", "4000.- /hó/fő", "5000.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -268,16 +284,24 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Cost",
-            occasions: ["Weekly 1x45 perc"],
-            prices: ["10300 Ft/month"],
+            occasions: [
+              "Weekly 2 x 45 minutes",
+              "Weekly 2 x 60 minutes",
+              "Weekly 2 x 90 minutes",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / month",
+              "14.000 - 16.000 Ft / month",
+              "16.000 -  18.500 Ft / month",
+            ],
           },
           discount: {
             name: "Discounts",
             sibling: ["For 2 siblings", "For 3 siblings", "For 4 siblings"],
             prices: [
-              "2500.- /month/person",
-              "3500.- /month/person",
-              "4500.- /month/person",
+              "3000.- /month/person",
+              "4000.- /month/person",
+              "5000.- /month/person",
             ],
           },
           ages: {
@@ -335,8 +359,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc", "Heti 2 x 90 perc"],
-            prices: ["11500-12500 Ft / hó", "13500-15000 Ft / hó"],
+            occasions: [
+              "Heti 2 x 45 perc",
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -345,7 +377,7 @@ const pagesConfig = {
               "3 testvér esetén",
               "4 testvér esetén",
             ],
-            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
+            prices: ["3000.- /hó/fő", "4000.- /hó/fő", "5000.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -412,8 +444,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc"],
-            prices: ["11500-12500 Ft / hó"],
+            occasions: [
+              "Heti 2 x 45 perc",
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -422,7 +462,11 @@ const pagesConfig = {
               "3 testvér esetén",
               "4 testvér esetén",
             ],
-            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           ages: {
             name: "Korosztály",
@@ -476,8 +520,16 @@ const pagesConfig = {
         info: {
           cost: {
             name: "Tandíj",
-            occasions: ["Heti 2 x 60 perc"],
-            prices: ["11500-12500 Ft / hó"],
+            occasions: [
+              "Heti 2 x 45 perc",
+              "Heti 2 x 60 perc",
+              "Heti 2 x 90 perc",
+            ],
+            prices: [
+              "12.000 - 13.500 Ft / hó",
+              "14.000 - 16.000 Ft / hó",
+              "16.000 -  18.500 Ft / hó",
+            ],
           },
           discount: {
             name: "Kedvezmény",
@@ -486,7 +538,7 @@ const pagesConfig = {
               "3 testvér esetén",
               "4 testvér esetén",
             ],
-            prices: ["2500.- /hó/fő", "3500.- /hó/fő", "4500.- /hó/fő"],
+            prices: ["3000.- /hó/fő", "4000.- /hó/fő", "5000.- /hó/fő"],
           },
           ages: {
             name: "Korosztály",
@@ -556,10 +608,10 @@ const pagesConfig = {
               "Próbaóra (1. alkalommal)",
             ],
             prices: [
-              "7800 Ft / hó",
-              "14500 Ft / hó",
-              "21500 Ft / hó",
-              "1500 Ft",
+              "9.300 Ft / hó",
+              "17.200 Ft / hó",
+              "25.400 Ft / hó",
+              "2.200 Ft",
             ],
           },
           ages: {

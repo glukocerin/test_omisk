@@ -53,7 +53,7 @@
     height: 0;
     margin-bottom: 0.3125rem;
     /* border-top: 2px solid var(--color-gray-0); */
-    border-top: 2px solid var(--color-gray-8);
+    border-top: 2px solid var(--color-gray-0);
   }
   .hamburger-menu.toggled .hamburger-toggle .toggle-fragment {
     border-top: 2px solid var(--color-gray-7);

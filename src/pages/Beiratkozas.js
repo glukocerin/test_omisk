@@ -302,11 +302,11 @@ export default function Beiratkozas() {
                 megfelelő. A végleges órarendet a beiratkozást követően állítjuk
                 össze az igények figyelembevételével. A tavalyi órarend alapján
                 tájékozódhatsz, hogy az egyes helyszíneken , milyen napokon
-                vannak kurzusok, mert elsősorban csak a kezdési időpontok
+                vannak kurzusok, mert elsősorban a kezdési időpontok
                 változhatnak kis mértékben. A kezdő kicsik óráit mindig 16 és 18
                 óra között tartjuk ( 45 percben) A tavalyi órarendet a
-                kurzusaink menüpont alatt találod. A tandíj várhatóan az
-                infláció mértékével arányosan emelkedik.
+                kurzusaink menüpont alatt találod. A tandíjakat ugyanitt tudod
+                megnézni.
               </h3>
             </div>
           </div>
