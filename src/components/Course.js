@@ -12,10 +12,10 @@ function handleClick(e) {
   enrollmentDates.scrollIntoView({ behavior: "smooth" });
 }
 
-function Paragraph({ opt }) {
+function Paragraph({ opt, hasExplain }) {
   return opt.map((el, index) => (
     <p className="size-20 thin" key={`${el}-${index}`}>
-      {el}
+      {`${el}${hasExplain ? "*" : ""}`}
     </p>
   ));
 }
@@ -99,7 +99,7 @@ export default function Course({ pageConfig }) {
                 <Paragraph opt={pageConfig.info.cost.occasions} />
               </div>
               <div className={style["column-third"]}>
-                <Paragraph opt={pageConfig.info.cost.prices} />
+                <Paragraph opt={pageConfig.info.cost.prices} hasExplain />
               </div>
             </div>
             {pageConfig.info.discount ? (
@@ -132,6 +132,7 @@ export default function Course({ pageConfig }) {
               </div>
               <div className={style["column-third"]}></div>
             </div>
+            <p className="size-20 thin">*helyszin, létszám függvényében</p>
           </div>
           <div
             className={` ${
