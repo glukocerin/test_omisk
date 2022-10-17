@@ -259,8 +259,8 @@ export default function Beiratkozas() {
           id={"enrollment-dates"}
           className={`row ${style[`enrollment-dates-wrapper`]}`}
         >
-          <div className="col-lg-3"></div>
-          <div className={`col-lg-6 ${style[`enrollment-dates-details`]}`}>
+          {/* <div className="col-lg-3"></div> */}
+          {/* <div className={`col-lg-6 ${style[`enrollment-dates-details`]}`}>
             <h3>
               A beiratkozást 2022-23-as tanévre az alábbi időpontokban tartjuk:
             </h3>
@@ -293,21 +293,27 @@ export default function Beiratkozas() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className={`${style[`enrollment-details-wrapper`]}`}>
             <div className={`${style[`enrollment-details`]}`}>
               <h3>
                 A beiratkozás alkalmával találkozhatsz leendő tanáraiddal és
-                megbeszélhetjük, hogy melyik csoport és milyen időpont volna
-                megfelelő. A végleges órarendet a beiratkozást követően állítjuk
-                össze az igények figyelembevételével. A tavalyi órarend alapján
-                tájékozódhatsz, hogy az egyes helyszíneken , milyen napokon
-                vannak kurzusok, mert elsősorban a kezdési időpontok
-                változhatnak kis mértékben. A kezdő kicsik óráit mindig 16 és 18
-                óra között tartjuk ( 45 percben) A tavalyi órarendet a
-                kurzusaink menüpont alatt találod. A tandíjakat ugyanitt tudod
-                megnézni.
+                Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan
+                csoportot, amely életkorod, tudásszinted szerint megfelelő és a
+                létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd
+                fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni
+                szeretnél! Ő tájékoztat pontos órarendünkről és arról, hogy
+                melyek azok a csoportok, amelyekhez csatlakozni tudsz. A
+                Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt,
+                hogy az egyes helyszíneken mely napokon tartunk órákat
               </h3>
+              <div>
+                <Link to="/kapcsolat">
+                  <button className={style[`enrollment-button`]}>
+                    Érdeklődöm
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

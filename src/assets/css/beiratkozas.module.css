@@ -158,8 +158,8 @@
 }
 
 .enrollment-button {
-  color: white;
-  background-color: #3e6171;
+  color: black;
+  background-color: #d9f5f2;
   border-radius: 60px;
   height: 54px;
   padding: 15.5px 24px 15.5px 28px;
@@ -190,7 +190,7 @@
 .enrollment-details-wrapper {
   padding-left: 80px;
   padding-right: 80px;
-  margin-top: 241px;
+  /* margin-top: 241px; */
   background-color: #3e6171;
 }
 

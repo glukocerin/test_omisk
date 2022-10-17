@@ -49,14 +49,14 @@ export default function Navigation(props) {
       <div
         className={`header background-${props.BackgroundColor} ${
           props.isHeaderFixed && "fixed"
-        } ${(props.activeDot === 0 || props.activeDot === 1 ) && "big"} ${
+        } ${props.activeDot === 1 && "big"} ${
           location === "/" && "text-inverse"
         }`}
       >
-        <Link onClick={() => dispatch(updatePageindex({ payload: 0 }))} to="/">
+        <Link onClick={() => dispatch(updatePageindex({ payload: 1 }))} to="/">
           <Logo
             className={`logo ${
-              location === "/" && (props.activeDot !== 0 || props.activeDot !== 1) && "inverse"
+              location === "/" && props.activeDot !== 1 && "inverse"
             } ${location !== "/" ? "logo-white" : ""}`}
           />
         </Link>
@@ -71,7 +71,7 @@ export default function Navigation(props) {
           </Link>
           <Link
             className={`${location === "/" && "active"}`}
-            onClick={() => dispatch(updatePageindex({ payload: 0 }))}
+            onClick={() => dispatch(updatePageindex({ payload: 1 }))}
             to="/"
           >
             Kezdő

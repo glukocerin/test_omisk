@@ -102,6 +102,14 @@ export default function Course({ pageConfig }) {
                 <Paragraph opt={pageConfig.info.cost.prices} hasExplain />
               </div>
             </div>
+            {pageConfig.id === "noiTorna" && (
+              <div style={{ marginTop: "12px", marginBottom: "32px" }}>
+                <p className="size-20 bold">
+                  Pórbaóra (1. alkalommal): 1.900 Ft (Wesselényi 41-ben), 2.100
+                  Ft (Óbudai Kulturális Központban)
+                </p>
+              </div>
+            )}
             {pageConfig.info.discount ? (
               <>
                 <div className={style["info-item"]}>

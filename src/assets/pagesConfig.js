@@ -605,14 +605,8 @@ const pagesConfig = {
               "Heti 1 x 60 perc",
               "Heti 2 x 60 perc",
               "Heti 3 x 60 perc",
-              "Próbaóra (1. alkalommal)",
             ],
-            prices: [
-              "9.300 Ft / hó",
-              "17.200 Ft / hó",
-              "25.400 Ft / hó",
-              "2.200 Ft",
-            ],
+            prices: ["9.300 Ft / hó", "17.200 Ft / hó", "25.400 Ft / hó"],
           },
           ages: {
             name: "Korosztály",
@@ -628,7 +622,7 @@ const pagesConfig = {
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Szerda (19.30 -20.30)"],
+            appointments: ["Szerda (20.00 -21.30)"],
           },
         ],
         forWhom: {
