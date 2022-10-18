@@ -1460,7 +1460,7 @@ const pagesConfig = {
         picture_card: "2022-10-18.jpg",
         picture_title: "Gyászjelentés",
         date: "2022. 10. 18.",
-        title: "Kovács Bea tanárnő emlékére",
+        title: "",
         index: "kovacs-bea-tanarno-emlekere",
         text_first: `Mély fájdalommal tudatjuk iskolánk növendékeivel és a szülőkkel, ismerősökkel, hogy Kovács Beáta tanárnő 2022. október 16-án gyors lefolyású betegségben elhunyt. </br>Nyugodj békében, Beus! </br></br>„Tudom, hogy meghaltál, de nem hiszem </br> még ma sem értem én; </br> hogy pár kavics mindörökre bezárhat, </br> hogy föld alatt a hazád és a házad, </br> ugyan hogy érteném" </br> (Szabó Magda)"`,
         text_second: ``,
