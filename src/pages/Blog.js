@@ -19,6 +19,7 @@ const BlogCards = function () {
       <Link to={{ pathname: `/blog/${card.index}`, state: card }} key={index}>
         <div className="card">
           <div className="picture-box">
+            {console.log("here", image)}
             <img src={image} alt={card.alt} />
             <label className="picture-title size-28 extra-bold">
               {card.picture_title}

@@ -1455,6 +1455,19 @@ const pagesConfig = {
   blog: {
     cards: [
       {
+        picture: "2022-10-18.jpg",
+        alt: "Kovács Beáta tanárnő emlékére",
+        picture_card: "2022-10-18.jpg",
+        picture_title: "Kovács Beáta tanárnő",
+        date: "2022. 10. 18.",
+        title: "Kovács Beáta tanárnő emlékére",
+        index: "kovacs-beata-tanarno-emlekere",
+        text_first:
+          "Mély fájdalommal tudatjuk iskolánk növendékeivel és a szülőkkel, ismerősökkel, hogy Kovács Beáta tanárnő 2022. október 16-án gyors lefolyású betegségben elhunyt. </br>Nyugodj békében, Beus!",
+        text_second: `</br>„Tudom, hogy meghaltál, de nem hiszem </br> még ma sem értem én; </br> hogy pár kavics mindörökre bezárhat, </br> hogy föld alatt a hazád és a házad, </br> ugyan hogy érteném" </br> (Szabó Magda)"`,
+        is_active: true,
+      },
+      {
         picture: "2021-04-13.jpg",
         alt: "2021. 04. 13.",
         picture_card: "2021-04-13-blog.jpg",
