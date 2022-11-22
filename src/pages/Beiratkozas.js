@@ -172,7 +172,7 @@ export default function Beiratkozas() {
           </div>
           <div className="col-lg-3"></div>
         </div> */}
-        <div className={`row ${style[`content-wrapper`]}`}>
+        {/* <div className={`row ${style[`content-wrapper`]}`}>
           <div className="col-lg-5">
             <div className={`${style[`image-wrapper`]}`}>
               <img
@@ -202,8 +202,8 @@ export default function Beiratkozas() {
             </div>
           </div>
           <div className="col-lg-1"></div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className={`row ${style[`content-wrapper`]} ${
             style[`content-wrapper-margin-top`]
           }`}
@@ -254,7 +254,7 @@ export default function Beiratkozas() {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
 
         <div
           id={"enrollment-dates"}
