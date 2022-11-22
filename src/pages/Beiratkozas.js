@@ -151,8 +151,8 @@ export default function Beiratkozas() {
       </div>
       <SiteContainer className="container">
         {/* <div className="row">
-          <div className="col-lg-3"></div> */}
-        {/* <div className={`col-lg-6 ${style["dates-and-places"]}`}>
+          <div className="col-lg-3"></div>
+          <div className={`col-lg-6 ${style["dates-and-places"]}`}>
             <h3>
               Év közben is lehet csatlakozni azokhoz a csoporthoz, amelyek nem
               teltek be. A kurzusaink almenűiben megtalàlható, hogy melyik
@@ -171,7 +171,7 @@ export default function Beiratkozas() {
             </div>
           </div>
           <div className="col-lg-3"></div>
-        </div>
+        </div> */}
         <div className={`row ${style[`content-wrapper`]}`}>
           <div className="col-lg-5">
             <div className={`${style[`image-wrapper`]}`}>
@@ -202,8 +202,8 @@ export default function Beiratkozas() {
             </div>
           </div>
           <div className="col-lg-1"></div>
-        </div> */}
-        {/* <div
+        </div>
+        <div
           className={`row ${style[`content-wrapper`]} ${
             style[`content-wrapper-margin-top`]
           }`}
@@ -220,9 +220,9 @@ export default function Beiratkozas() {
                 ></img>
               </div>
             </div>
-          )} */}
-        {/* <div className="col-lg-1"></div> */}
-        {/* <div className={`col-lg-5 ${style[`details-tile`]}`}>
+          )}
+          <div className="col-lg-1"></div>
+          <div className={`col-lg-5 ${style[`details-tile`]}`}>
             <div className={`${style[`details-wrapper`]}`}>
               <h2>Melyik kurzust válasszam?</h2>
               <p>
@@ -254,7 +254,8 @@ export default function Beiratkozas() {
               </div>
             </div>
           )}
-        </div> */}
+        </div>
+
         <div
           id={"enrollment-dates"}
           className={`row ${style[`enrollment-dates-wrapper`]}`}
@@ -297,15 +298,14 @@ export default function Beiratkozas() {
           <div className={`${style[`enrollment-details-wrapper`]}`}>
             <div className={`${style[`enrollment-details`]}`}>
               <h3>
-                A beiratkozás alkalmával találkozhatsz leendő tanáraiddal és
-                Igen, a tanév folyamán is lehet csatlakozni, ha találunk olyan
-                csoportot, amely életkorod, tudásszinted szerint megfelelő és a
-                létszám is lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd
-                fel a kapcsolatot telefonon vagy e-mailben, ha jelentkezni
-                szeretnél! Ő tájékoztat pontos órarendünkről és arról, hogy
-                melyek azok a csoportok, amelyekhez csatlakozni tudsz. A
-                Kurzusaink menüpont alatt, az órák leírásánál megtalálod azt,
-                hogy az egyes helyszíneken mely napokon tartunk órákat
+                Év közben is lehet csatlakozni, ha találunk olyan csoportot,
+                amely életkorod, tudásszinted szerint megfelelő és a létszám is
+                lehetővé teszi. Mikusik Márta iskolatitkárunkkal vedd fel a
+                kapcsolatot telefonon vagy e-mailben, ha jelentkezni szeretnél!
+                Ő tájékoztat pontos órarendünkről és arról, hogy melyek azok a
+                csoportok, amelyekhez csatlakozni tudsz. A Kurzusaink menüpont
+                alatt, az órák leírásánál megtalálod azt, hogy az egyes
+                helyszíneken mely napokon tartunk órákat.
               </h3>
               <div>
                 <Link to="/kapcsolat">

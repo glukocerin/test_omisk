@@ -144,6 +144,7 @@
 
 .content-wrapper-margin-top {
   margin-top: 240px;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 800px) {
@@ -190,7 +191,7 @@
 .enrollment-details-wrapper {
   padding-left: 80px;
   padding-right: 80px;
-  /* margin-top: 241px; */
+  margin-top: 0;
   background-color: #3e6171;
 }
 
