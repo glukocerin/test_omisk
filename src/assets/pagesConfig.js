@@ -622,7 +622,12 @@ const pagesConfig = {
           {
             name: "Óbudai Kulturális Központ",
             address: "III. San Marco út 81",
-            appointments: ["Szerda (20.00 -21.30)"],
+            appointments: ["Szerda (20.00-21.30)"],
+          },
+          {
+            name: "VII. Táncstudió",
+            address: "Wesselényi u. 41.",
+            appointments: ["Péntek (8-9, 9-10)"],
           },
         ],
         forWhom: {
