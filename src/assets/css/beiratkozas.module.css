@@ -213,7 +213,7 @@
 
 @media screen and (max-width: 800px) {
   .enrollment-details {
-    width: 556px;
+    /* width: 556px; */
     margin: 0 auto;
   }
 }
