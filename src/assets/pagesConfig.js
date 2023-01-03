@@ -1338,21 +1338,21 @@ const pagesConfig = {
         courses: ["klasszikus balett, jazztánc"],
         hasActionPicture: false,
       },
-      {
-        picture: "kovacs-bea.jpg",
-        name: "Kovács Bea",
-        alt: "Kovács Bea",
-        desc: "Berczik-díjas művészitorna-edző",
-        details:
-          "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
-        education: [
-          "ELTE, testnevelés-biológia szakos tanár",
-          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
-        ],
-        achievements: ["2014 Berczik Sára Díj"],
-        courses: ["művészi torna, mozdulatművészet"],
-        hasActionPicture: true,
-      },
+      // {
+      //   picture: "kovacs-bea.jpg",
+      //   name: "Kovács Bea",
+      //   alt: "Kovács Bea",
+      //   desc: "Berczik-díjas művészitorna-edző",
+      //   details:
+      //     "Gyerekkoromban kezdtem művészi tornázni Berczik Sára iskolájában, majd éveken át ritmikus sportgimnasztika versenyző voltam. 2001 óta tanítok az Óbuda Mozgásművészeti iskolában művészi tornát, elsősorban Sári néni módszerét követve.",
+      //   education: [
+      //     "ELTE, testnevelés-biológia szakos tanár",
+      //     "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
+      //   ],
+      //   achievements: ["2014 Berczik Sára Díj"],
+      //   courses: ["művészi torna, mozdulatművészet"],
+      //   hasActionPicture: true,
+      // },
       {
         picture: "csongei-barbi.jpg",
         name: "Csöngei Barbara",
@@ -1414,35 +1414,35 @@ const pagesConfig = {
         courses: ["művészi torna, mozdulatművészet"],
         hasActionPicture: true,
       },
-      // {
-      //   picture: "taylor_eszti.jpg",
-      //   name: "Taylor Esther",
-      //   desc: "táncpedagógus",
-      //   details:
-      //     "Négyéves koromban írattak be a szüleim Pers Júliához. Nagyon tetszett, hogy az órák nemcsak a táncról, hanem a kreativitásról is szóltak. Szerettem volna tovább adni a gyerekeknek, amit  a művészi torna adott nekem. Ezért végeztem el egyetem mellett a Táncpedagógusok Országos Szövetségének képzését 2018-ban. 2019 óta tanítok művészi tornát, és mivel kétnyelvű családban nőttem fel, így angol nyelven is tartok órákat. Számomra nagyon fontos a sport, úgy gondolom, hogy gyermekkorban kell elkezdeni a rendszeres mozgást, és erre tökéletes a művészi torna.",
-      //   education: [
-      //     "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
-      //     "Testnevelési Egyetem, testnevelő-gyógytestnevelő-egészségfejlesztő tanár",
-      //   ],
-      //   achievements: [],
-      //   courses: ["művészi torna, mozdulatművészet, pre-balett"],
-      //   hasActionPicture: true,
-      // },
-      // {
-      //   picture: "rozsa_reka.jpg",
-      //   name: "Markolt-Rózsa Réka",
-      //   desc: "táncpedagógus",
-      //   details:
-      //     "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
-      //   education: [
-      //     "KRE, tanító",
-      //     "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
-      //     "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
-      //   ],
-      //   achievements: [],
-      //   courses: ["művészi torna, mozdulatművészet"],
-      //   hasActionPicture: true,
-      // },
+      {
+        picture: "taylor_eszti.jpg",
+        name: "Taylor Esther",
+        desc: "táncpedagógus",
+        details:
+          "Négyéves koromban írattak be a szüleim Pers Júliához. Nagyon tetszett, hogy az órák nemcsak a táncról, hanem a kreativitásról is szóltak. Szerettem volna tovább adni a gyerekeknek, amit  a művészi torna adott nekem. Ezért végeztem el egyetem mellett a Táncpedagógusok Országos Szövetségének képzését 2018-ban. 2019 óta tanítok művészi tornát, és mivel kétnyelvű családban nőttem fel, így angol nyelven is tartok órákat. Számomra nagyon fontos a sport, úgy gondolom, hogy gyermekkorban kell elkezdeni a rendszeres mozgást, és erre tökéletes a művészi torna.",
+        education: [
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezetői képzés",
+          "Testnevelési Egyetem, testnevelő-gyógytestnevelő-egészségfejlesztő tanár",
+        ],
+        achievements: [],
+        courses: ["művészi torna, mozdulatművészet, pre-balett"],
+        hasActionPicture: true,
+      },
+      {
+        picture: "rozsa_reka.jpg",
+        name: "Markolt-Rózsa Réka",
+        desc: "táncpedagógus",
+        details:
+          "Négyévesen kezdtem művészi tornázni. Egy óvodai barátnőm beszélt rá – ő hamar abbahagyta, de nekem egy életre szóló meghívást jelentett. Hosszú évekig szertornáztam, és mai napig szívesen próbálok ki más sportágakat, de sosem tudta egy sem kiváltani a mozdulatművészetet. A tánc az életem szerves részévé vált, egy olyan önkifejezési és fejlődési lehetőséggé, amiben a harmónián túl szoros baráti kapcsolatokra is leltem. Hivatásomnak érzem közel vinni a fiatalokat azokhoz az élményekhez, és átadni nekik az értékeket, amiket én is megtapasztalhattam a táncművészet kapcsán.",
+        education: [
+          "KRE, tanító",
+          "AVKF, mentálhigiénés kapcsolat-és közösségfejlesztő",
+          "Táncpedagógusok Országos Szövetsége, modern- kortárs tánc csoportvezető",
+        ],
+        achievements: [],
+        courses: ["művészi torna, mozdulatművészet"],
+        hasActionPicture: true,
+      },
       {
         picture: "david-luca.jpg",
         name: "Dávid Luca",
