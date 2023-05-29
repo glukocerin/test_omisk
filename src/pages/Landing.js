@@ -547,7 +547,7 @@ export default function Landing({ dotChange }) {
                   hétfő I kedd I szerda I csütörtök I péntek
                 </label>
                 <label className="place-program-row size-17 thin">
-                  Benis Katalin I Markolt-Rózsa Réka I Erdész- Taylor Esther
+                  Benis Katalin I Markolt-Rózsa Réka I Erdész-Taylor Esther
                 </label>
                 <label className="place-program-row size-17 thin title">
                   Mozdulatművészet

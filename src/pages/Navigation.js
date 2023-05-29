@@ -67,7 +67,7 @@ export default function Navigation(props) {
             }`}
             to="/programok/nyari-tabor"
           >
-            Nyári Tánctábor 2022
+            Nyári Tánctábor 2023
           </Link>
           <Link
             className={`${location === "/" && "active"}`}

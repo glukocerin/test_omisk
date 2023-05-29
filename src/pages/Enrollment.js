@@ -83,7 +83,8 @@ export default function Enrollment() {
                 hétfő I kedd I szerda I csütörtök I péntek
               </label>
               <label className="place-program-row size-15 thin">
-                Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Taylor Esther
+                Benis Katalin I Kovács Bea I Rácz-Lakatos Lilla I Erdész-Taylor
+                Esther
               </label>
               <label className="place-program-row size-15 thin title">
                 Mozdulatművészet
@@ -124,7 +125,7 @@ export default function Enrollment() {
               </label>
               <label className="place-program-row size-15 thin">péntek </label>
               <label className="place-program-row size-15 thin">
-                Taylor Esther
+                Erdész-Taylor Esther
               </label>
             </div>
           </div>

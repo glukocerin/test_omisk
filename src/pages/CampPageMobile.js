@@ -72,7 +72,7 @@ export default function CampPageMobile({ props }) {
                 <br></br>
                 <span>testvérkedvezmény: 3000 Ft/fő</span>
               </label>
-              <a href="http://bit.ly/taborjelentkezes">
+              <a href="https://tinyurl.com/omisktabor">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>
@@ -269,7 +269,7 @@ export default function CampPageMobile({ props }) {
                   }}
                 >
                   <button className={`${style["btn"]} ${style["secondary"]}`}>
-                    Taylor Esther
+                    Erdész-Taylor Esther
                   </button>
                 </Link>
               </div> */}
@@ -308,7 +308,7 @@ export default function CampPageMobile({ props }) {
                 A napközis táborokba az alábbi linken található{" "}
                 <strong>jelentkezési lap online kitöltésével lehet:</strong>
               </label>
-              <a href="http://bit.ly/taborjelentkezes">
+              <a href="https://tinyurl.com/omisktabor">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>

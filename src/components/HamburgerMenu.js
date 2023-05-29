@@ -37,7 +37,7 @@ export default function HamburgerMenu() {
           onClick={() => toggle(!toggled)}
           to="/programok/nyari-tabor"
         >
-          Nyári Tánctábor 2022
+          Nyári Tánctábor 2023
         </Link>
         <Link
           className={`link size-36 extra-bold ${

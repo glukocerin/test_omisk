@@ -19,13 +19,11 @@ const TeacherCards = function () {
   teachersCopy.cards = teachersCopy.cards.filter((teacher) => {
     return [
       "Solti Eszter",
-      "Bozsókiné Taylor Jennifer",
       "Benis Katalin",
-      "Dávid Luca",
-      "Csöngei Barbara",
-      "Kovács Bea",
+      "Mády Krisztina",
+      "Bozsókiné Taylor Jennifer",
+      "Erdész-Taylor Esther",
       "Markolt-Rózsa Réka",
-      "Taylor Esther",
     ].includes(teacher.name);
   });
 
@@ -266,7 +264,7 @@ export default function ProgramPage(props, isSummerCamp) {
           <Link to="/programs">Vissza programjainkra</Link>
         </label>
         <label className={`${style["header-title"]} size-90 extra-bold`}>
-          Nyári tánctábor 2022
+          Nyári tánctábor 2023
         </label>
       </div>
       <div className={style["body"]}>
@@ -317,7 +315,7 @@ export default function ProgramPage(props, isSummerCamp) {
                   __html: props.opt.content.first_block.block_desc,
                 }}
               ></label>
-              <a href="http://bit.ly/taborjelentkezes">
+              <a href="https://tinyurl.com/omisktabor">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>
@@ -352,7 +350,7 @@ export default function ProgramPage(props, isSummerCamp) {
                   __html: props.opt.content.second_block.price,
                 }}
               ></label>
-              <a href="http://bit.ly/taborjelentkezes">
+              <a href="https://tinyurl.com/omisktabor">
                 <button className={`${style["btn"]} ${style["primary"]}`}>
                   Jelentkezem
                 </button>
@@ -489,7 +487,7 @@ export default function ProgramPage(props, isSummerCamp) {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.google.com/forms/d/1hX3Hs2Ww_TuT49uu2H77qUaaZOTSO7h2OK1Ld8VWQUc/viewform?edit_requested=true"
+                href="https://docs.google.com/forms/d/1nVpb9bhyClh0Qe_7IP-ogrjk76Eoi8o5boeITYAJTgg/viewform?edit_requested=true&fbzx=-662778040755689619&fbclid=IwAR2IQDseSsi1r4Rhv-XHQpvsLhXh_2cuUGlkfdNZ8Km0E3mKTVVYuW0bAmU"
                 className={`${style["apply-link"]} size-20 extra-bold`}
               >
                 Jelentkezési lap
